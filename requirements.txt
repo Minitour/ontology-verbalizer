@@ -1,0 +1,5 @@
+rdflib
+jmespath
+fastapi
+neo4j
+rdflib-neo4j
