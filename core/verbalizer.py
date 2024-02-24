@@ -1,7 +1,6 @@
 import re
-from collections import defaultdict
+from typing import Type
 
-import pandas
 from rdflib import Graph
 from rdflib import RDFS, RDF, OWL
 from rdflib import URIRef, Literal, BNode
@@ -18,8 +17,7 @@ class Vocabulary:
         self.relationship_labels = self._get_ontology_relationship_labels()
         self.object_labels = self._get_ontology_object_labels()
         self.rephrased = rephrased or dict()
-
-        self._ignore_list = ignore
+        self._ignore_list = ignore or {}
 
     def _get_ontology_relationship_labels(self) -> dict[str, str]:
         results = self._graph.query(
@@ -109,20 +107,113 @@ class Vocabulary:
         return self._util_lookup(self.object_labels, val, default)
 
 
+class Pattern:
+
+    def __init__(self, graph: Graph, verbalizer: 'Verbalizer', vocabulary: Vocabulary):
+        self._graph = graph
+        self.verbalizer = verbalizer
+        self.vocab = vocabulary
+
+    def check(self, results) -> bool:
+        return False
+
+    def normalize(self, node: 'VerbalizationNode',
+                  triple_collector) -> list[tuple[Node, Node]]:
+        return []
+
+
+class VerbalizationEdge:
+
+    def __init__(self, relationship, node: 'VerbalizationNode'):
+        self.relationship = relationship
+        self.node = node
+        self._display = None
+
+    @property
+    def display(self):
+        return self._display
+
+    @display.setter
+    def display(self, value):
+        if not self._display:
+            self._display = value
+
+    def __repr__(self):
+        return self.display
+
+    def verbalize(self) -> str:
+        display = self.display
+
+        if not display:
+            display = ''
+
+        if display.startswith('#'):
+            display = ''
+
+        return f'{display} {self.node.verbalize()}'
+
+
+class VerbalizationNode:
+    def __init__(self, concept, parent_path=None):
+        self.concept = concept
+        if parent_path is None:
+            self._true_path = [(concept, None)]
+        else:
+            self._true_path = parent_path + [(concept, None)]
+        self.references: list[VerbalizationEdge] = []
+        self._display = None
+
+    def add_edge(self, edge: VerbalizationEdge):
+        self.references.append(edge)
+
+    def get_path(self):
+        return list(self._true_path)
+
+    def get_parent_path(self):
+        return list(self._true_path[:-1])
+
+    def get_next_node(self, relationship, concept):
+        for reference in self.references:
+            if reference.relationship == relationship and reference.node.concept == concept:
+                return reference.node
+        return None
+
+    @property
+    def display(self):
+        return self._display
+
+    @display.setter
+    def display(self, value):
+        if not self._display:
+            self._display = value
+
+    def __repr__(self):
+        return self.display
+
+    def verbalize(self) -> str:
+        sentences = [edge.verbalize() for edge in self.references]
+
+        display = self.display
+        if isinstance(self.concept, BNode):
+            display = ''
+
+        return f'{display} {" and ".join(sentences)}'
+
+
 class Verbalizer:
     prefix = 'https://zaitoun.dev/onto/'
 
-    # These are relations that should not be verbalized because they are OWL specific.
-    def __init__(self, graph: Graph, vocabulary: Vocabulary, language_model: LanguageModel = None):
+    def __init__(self, graph: Graph,
+                 vocabulary: Vocabulary,
+                 patterns: list[Type[Pattern]] = None,
+                 language_model: LanguageModel = None):
         self.graph = graph
         self.vocab = vocabulary
         self.llm = language_model
-        self.special_relations = {
-            'http://www.w3.org/1999/02/22-rdf-syntax-ns#first',
-            'http://www.w3.org/1999/02/22-rdf-syntax-ns#rest'
-        }
 
-    def verbalize(self, starting_concept, max_depth=5) -> (str, str):
+        self.patterns = [pattern(graph, self, vocabulary) for pattern in patterns or []]
+
+    def verbalize(self, starting_concept) -> (str, str):
         """
         Returns the Turtle Fragment and its corresponding textual description.
         """
@@ -132,11 +223,12 @@ class Verbalizer:
         if isinstance(starting_concept, str):
             starting_concept = URIRef(starting_concept)
 
-        self._verbalize_as_text_from([(starting_concept, None)],
-                                     sentences,
-                                     triples,
-                                     depth=max_depth,
-                                     max_depth=max_depth)
+        node = VerbalizationNode(starting_concept)
+        self._verbalize_as_text_from(node, self.vocab, triples)
+
+        for ref in node.references:
+            sentences.append(f'{node.display} {ref.verbalize()}.')
+
         text = '\n'.join(sentences)
         onto_fragment: str = self.generate_fragment(triples)
 
@@ -146,103 +238,83 @@ class Verbalizer:
 
         return onto_fragment, text
 
-    def _verbalize_as_text_from(self,
-                                current_path: list,
-                                sentence_collector: list,
-                                triple_collector: list, depth=3, max_depth=3):
-        if depth < 0:
-            return
-
-        def indent(i: int):
-            return ' ' * i * 4
-
-        def add_group(index, start=True):
-            indentation = indent(max_depth - depth)
-            group = f'group_{index}'
-            sentence_collector.append(f'{indentation}<{group}>' if start else f'{indentation}</{group}>')
-
-        query = self.query_builder(current_path)
+    def _verbalize_as_text_from(self, node: VerbalizationNode,
+                                vocab: Vocabulary,
+                                triple_collector: list):
+        query = self.next_step_query_builder(node)
         results = self.graph.query(query)
-        obj_display_1 = self._verbalize_trail(current_path)
 
-        # add spacing
-        # add_space_if_possible()
-        add_group(max_depth - depth + 1, start=True)
+        results_normalized = False
+
+        # check patterns
+        for pattern in self.patterns:
+            if not pattern.check(results):
+                continue
+
+            results = pattern.normalize(node, triple_collector)
+            results_normalized = True
+            break
+
+        # set node display
+        node.display = vocab.get_cls_label(node.concept)
+
         for result in results:
             relation, obj_2 = result
-            print(current_path[-1][0], relation, obj_2)
-            print(type(current_path[-1][0]), type(relation), type(obj_2))
-            relation_display = self.vocab.get_rel_label(relation)
+
+            relation_display = vocab.get_rel_label(relation)
 
             if relation_display == Vocabulary.IGNORE_VALUE:
                 continue
 
+            if not results_normalized:
+                # Continue to expand the graph
+                next_node = VerbalizationNode(obj_2, parent_path=node.get_parent_path() + [(node.concept, relation)])
+                edge = VerbalizationEdge(relation, next_node)
+                node.add_edge(edge)
+
+                edge.display = relation_display
+
+                # collect triple
+                triple_collector.append((node.concept, relation, next_node.concept))
+            else:
+                # we already built this part of the graph so we just need to fetch it out.
+                next_node = node.get_next_node(relation, obj_2)
+
+            print(node.concept, relation, obj_2)
+
             if isinstance(obj_2, URIRef):
-                obj_display_2 = self.vocab.get_cls_label(obj_2)
+                obj_display_2 = vocab.get_cls_label(obj_2)
             elif isinstance(obj_2, Literal):
                 obj_display_2 = obj_2.toPython()
             elif isinstance(obj_2, BNode):
-                triple_collector.append((current_path[-1][0], relation, obj_2))
-                self._verbalize_as_text_from(current_path[:-1] + [(current_path[-1][0], relation), (obj_2, None)],
-                                             sentence_collector,
-                                             triple_collector,
-                                             depth - 1,
-                                             max_depth)
-                # add_space_if_possible()
+                self._verbalize_as_text_from(next_node, vocab, triple_collector)
                 continue
             else:
                 obj_display_2 = None
 
-            if obj_display_2 == Vocabulary.IGNORE_VALUE:
-                continue
-            indentation = indent(max_depth - depth + 1)
-            if relation.toPython() in self.special_relations:
-                sentence_collector.append(f'{indentation}{obj_display_1}{obj_display_2}')
-            else:
-                sentence_collector.append(f'{indentation}{obj_display_1}-[{relation_display}]->{obj_display_2}')
-
-            # collect triple
-            triple_collector.append((current_path[-1][0], relation, obj_2))
-
-        add_group(max_depth - depth + 1, start=False)
-
-    def _verbalize_trail(self, trail: list[tuple[URIRef, URIRef]]) -> str:
-        """
-        Given a trail (A path from one node to another), generate a pseudo sentence that describes it.
-        """
-        expressions = []
-
-        for i, (t, p) in enumerate(trail):
-            is_last = i == len(trail) - 1
-
-            if is_last:
-                if isinstance(t, BNode):
-                    exp = ''
-                else:
-                    exp = f'{self.vocab.get_cls_label(t)}'
-            else:
-                if p.toPython() in self.special_relations:
-                    continue
-                if isinstance(t, BNode):
-                    exp = f'-[{self.vocab.get_rel_label(p)}]->'
-                else:
-                    exp = f'{self.vocab.get_cls_label(t)}-[{self.vocab.get_rel_label(p)}]->'
-            expressions.append(exp)
-
-        if expressions:
-            return ''.join(expressions)
-        return ''
+            next_node.display = obj_display_2
 
     @classmethod
-    def query_builder(cls, trail: list[tuple[URIRef, URIRef]]) -> str:
+    def get_reference_expression(cls, t: Node, index: int):
+        """
+        Util function
+        """
+        if isinstance(t, URIRef):
+            return f'<{t.toPython()}>'
+        if isinstance(t, BNode):
+            return f'?o{index}'
+
+        return None
+
+    @classmethod
+    def next_step_query_builder(cls, node: VerbalizationNode) -> str:
         """
         Given a list of RDF Node, where each nodes is somehow connected to the next node in the list,
         return a SPARQL query expression to get all the relationships of the last node.
         This is needed in order to traverse over Blank Nodes.
         """
-        if isinstance(trail, Node):
-            trail = [trail]
 
+        trail = node.get_path()
         expressions = []
         filters = []
         for i, (t, p) in enumerate(trail):
@@ -262,22 +334,6 @@ class Verbalizer:
 
         query = f"SELECT ?p ?o WHERE {{ {' . '.join(expressions)} . {' '.join(filters)} }}"
         return query
-
-    @classmethod
-    def get_reference_expression(cls, t: Node, index: int):
-        """
-        Util function
-        """
-        if isinstance(t, URIRef):
-            return f'<{t.toPython()}>'
-        if isinstance(t, BNode):
-            return f'?o{index}'
-
-        return None
-
-    @staticmethod
-    def _starts_with_one_of(val: str, items: list):
-        return any([val.startswith(str(e)) for e in items])
 
     def generate_fragment(self, triples: list[tuple[Node, URIRef, Node]]) -> str:
         """
@@ -300,10 +356,16 @@ class Verbalizer:
             object_node = obj
 
             if isinstance(subject, URIRef):
-                subject_node = display_to_uri(self.vocab.get_cls_label(subject))
+                subject_vocab_rep = self.vocab.get_cls_label(subject)
+                if subject_vocab_rep == Vocabulary.IGNORE_VALUE:
+                    continue
+                subject_node = display_to_uri(subject_vocab_rep)
 
             if isinstance(obj, URIRef):
-                object_node = display_to_uri(self.vocab.get_cls_label(obj))
+                object_vocab_rep = self.vocab.get_cls_label(obj)
+                if object_vocab_rep == Vocabulary.IGNORE_VALUE:
+                    continue
+                object_node = display_to_uri(object_vocab_rep)
 
             if not self._starts_with_one_of(predicate_node.toPython(), [OWL, RDF, RDFS]):
                 predicate_node = display_to_uri(self.vocab.get_rel_label(predicate))
@@ -318,3 +380,7 @@ class Verbalizer:
                 g.add((object_node, RDFS.label, Literal(self.vocab.get_cls_label(obj))))
 
         return g.serialize(format='turtle')
+
+    @staticmethod
+    def _starts_with_one_of(val: str, items: list):
+        return any([val.startswith(str(e)) for e in items])

@@ -20,17 +20,13 @@ class ChatGptModel(LanguageModel):
                     "role": "system",
                     "content":
                         """
-                        You are a data expert capable of converting simplified relation triples into a meaningful paragraph
+                        You are a data expert capable of converting pseudo English sentences into a meaningful paragraph
                         without losing any meaning or adding anything new. Group information based on the assigned groups.
 
                         Example:
-                        <group_1>
-                            <group_2>
-                                x-[relation 1]->y
-                                z-[relation 2]->x
-                            </group_2>
-                            m-[relation 3]->n
-                        </group_1>
+                        x-[relation 1]->y
+                        z-[relation 2]->x
+                        m-[relation 3]->n
 
                         Output:
                         X has this relation 1 with Y, Z shares a relation 2 with X.
