@@ -1,4 +1,5 @@
 import re
+from dataclasses import dataclass
 from typing import Type
 
 from rdflib import Graph
@@ -81,7 +82,7 @@ class Vocabulary:
             object_labels[iri_str] = label_str
         return object_labels
 
-    def _util_lookup(self, dictionary, val, default):
+    def _util_lookup(self, dictionary, val):
         if isinstance(val, URIRef):
             val = val.toPython()
 
@@ -95,19 +96,41 @@ class Vocabulary:
         if result := self.rephrased.get(val):
             return result
 
-        if default is None:
-            default = val
+        result = dictionary.get(val)
+        if result:
+            return result
 
-        return dictionary.get(val, default)
+        # result is none, try to verbalize from URI
+        return self._from_uri_to_text(val)
 
     def get_rel_label(self, val, default=None) -> str:
-        return self._util_lookup(self.relationship_labels, val, default)
+        return self._util_lookup(self.relationship_labels, val)
 
     def get_cls_label(self, val, default=None) -> str:
-        return self._util_lookup(self.object_labels, val, default)
+        return self._util_lookup(self.object_labels, val)
+
+    def _from_uri_to_text(self, uri):
+        text = None
+        if '#' in uri:
+            text = uri.split('#')[1]
+        else:
+            text = uri.split('/')[-1]
+
+        # convert underscore or camel case notation into regular text
+        text = self._camel_to_snake(text)
+        return text.replace('_', ' ')
+
+    @staticmethod
+    def _camel_to_snake(name):
+        name = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
+        return re.sub('([a-z0-9])([A-Z])', r'\1_\2', name).lower()
 
 
 class Pattern:
+    """
+    A pattern is a class used to identify patterns within the graph based on all the out going relations from a
+    specific concept.
+    """
 
     def __init__(self, graph: Graph, verbalizer: 'Verbalizer', vocabulary: Vocabulary):
         self._graph = graph
@@ -115,10 +138,21 @@ class Pattern:
         self.vocab = vocabulary
 
     def check(self, results) -> bool:
+        """
+        The check function is used to determine whether a pattern was detected or not. The "results" argument
+        includes the first-degree related objects to the subject. If more triples are needed to be fetched to
+        identify the pattern, self.graph.query can be used.
+        """
         return False
 
     def normalize(self, node: 'VerbalizationNode',
                   triple_collector) -> list[tuple[Node, Node]]:
+        """
+        The normalize function is called only if the check returned True. It is used to simplify the pattern. This
+        means that the pattern must re-arrange the connected nodes in an order that would be different from the
+        regular order. In addition to that, the implementation must also collect all the RDF triples observed
+        regardless of whether they were used or not in the construction of the nodes and edges.
+        """
         return []
 
 
@@ -150,7 +184,7 @@ class VerbalizationEdge:
         if display.startswith('#'):
             display = ''
 
-        return f'{display} {self.node.verbalize()}'
+        return f'{display} {self.node.verbalize().strip()}'
 
 
 class VerbalizationNode:
@@ -200,47 +234,66 @@ class VerbalizationNode:
         return f'{display} {" and ".join(sentences)}'
 
 
+@dataclass
+class VerbalizerModelUsageConfig:
+    min_patterns_evaluated: int = 0
+    min_statements: int = 1
+
+
+@dataclass
+class VerbalizerInstanceStats:
+    patterns_evaluated = 0
+    statements = 0
+
+
 class Verbalizer:
     prefix = 'https://zaitoun.dev/onto/'
 
     def __init__(self, graph: Graph,
                  vocabulary: Vocabulary,
                  patterns: list[Type[Pattern]] = None,
-                 language_model: LanguageModel = None):
+                 language_model: LanguageModel = None,
+                 usage_config: VerbalizerModelUsageConfig = None):
         self.graph = graph
         self.vocab = vocabulary
         self.llm = language_model
-
+        self.llm_config = usage_config or VerbalizerModelUsageConfig()
         self.patterns = [pattern(graph, self, vocabulary) for pattern in patterns or []]
 
-    def verbalize(self, starting_concept) -> (str, str):
+    def verbalize(self, starting_concept) -> (str, str, int, bool):
         """
-        Returns the Turtle Fragment and its corresponding textual description.
+        Returns the Turtle Fragment and its corresponding textual description. Also returns a number which is the
+        number of sentences
         """
         sentences = []
         triples = []
+        stats = VerbalizerInstanceStats()
 
         if isinstance(starting_concept, str):
             starting_concept = URIRef(starting_concept)
 
         node = VerbalizationNode(starting_concept)
-        self._verbalize_as_text_from(node, self.vocab, triples)
+        self._verbalize_as_text_from(node, self.vocab, triples, stats)
 
         for ref in node.references:
-            sentences.append(f'{node.display} {ref.verbalize()}.')
+            sentences.append(f'{node.display} {ref.verbalize().strip()}.')
 
         text = '\n'.join(sentences)
         onto_fragment: str = self.generate_fragment(triples)
 
+        stats.statements = len(sentences)
+
         # convert the pseudo text into proper English.
-        if self.llm:
+        use_llm = bool(self.llm and self._check_llm_usage_policy(stats))
+        if use_llm:
             text = self.llm.pseudo_to_text(text)
 
-        return onto_fragment, text
+        return onto_fragment, text, len(node.references), use_llm
 
     def _verbalize_as_text_from(self, node: VerbalizationNode,
                                 vocab: Vocabulary,
-                                triple_collector: list):
+                                triple_collector: list,
+                                stats: VerbalizerInstanceStats):
         query = self.next_step_query_builder(node)
         results = self.graph.query(query)
 
@@ -253,6 +306,7 @@ class Verbalizer:
 
             results = pattern.normalize(node, triple_collector)
             results_normalized = True
+            stats.patterns_evaluated += 1
             break
 
         # set node display
@@ -280,14 +334,12 @@ class Verbalizer:
                 # we already built this part of the graph so we just need to fetch it out.
                 next_node = node.get_next_node(relation, obj_2)
 
-            print(node.concept, relation, obj_2)
-
             if isinstance(obj_2, URIRef):
                 obj_display_2 = vocab.get_cls_label(obj_2)
             elif isinstance(obj_2, Literal):
                 obj_display_2 = obj_2.toPython()
             elif isinstance(obj_2, BNode):
-                self._verbalize_as_text_from(next_node, vocab, triple_collector)
+                self._verbalize_as_text_from(next_node, vocab, triple_collector, stats)
                 continue
             else:
                 obj_display_2 = None
@@ -335,7 +387,7 @@ class Verbalizer:
         query = f"SELECT ?p ?o WHERE {{ {' . '.join(expressions)} . {' '.join(filters)} }}"
         return query
 
-    def generate_fragment(self, triples: list[tuple[Node, URIRef, Node]]) -> str:
+    def generate_fragment(self, triples: list[tuple[Node, URIRef, Node]], add_labels=False) -> str:
         """
         Return a string that represents the triples as an ontology fragment in turtle format.
         """
@@ -361,7 +413,7 @@ class Verbalizer:
                     continue
                 subject_node = display_to_uri(subject_vocab_rep)
 
-            if isinstance(obj, URIRef):
+            if isinstance(obj, URIRef) and not obj.toPython().startswith(str(OWL)):
                 object_vocab_rep = self.vocab.get_cls_label(obj)
                 if object_vocab_rep == Vocabulary.IGNORE_VALUE:
                     continue
@@ -373,14 +425,24 @@ class Verbalizer:
             g.add((subject_node, predicate_node, object_node))
 
             # If subject or object have labels - add them as rdfs:label
-            if isinstance(subject, URIRef) and self.vocab.get_cls_label(subject, default=''):
-                g.add((subject_node, RDFS.label, Literal(self.vocab.get_cls_label(subject))))
+            if add_labels:
+                if isinstance(subject, URIRef) and self.vocab.get_cls_label(subject):
+                    g.add((subject_node, RDFS.label, Literal(self.vocab.get_cls_label(subject))))
 
-            if isinstance(obj, URIRef) and self.vocab.get_cls_label(obj, default=''):
-                g.add((object_node, RDFS.label, Literal(self.vocab.get_cls_label(obj))))
+                if isinstance(obj, URIRef) and \
+                        self.vocab.get_cls_label(obj) and \
+                        not obj.toPython().startswith(str(OWL)):
+                    g.add((object_node, RDFS.label, Literal(self.vocab.get_cls_label(obj))))
 
-        return g.serialize(format='turtle')
+        fragment = g.serialize(format='turtle')
+        return '\n'.join(fragment.split("\n")[1:])
 
     @staticmethod
     def _starts_with_one_of(val: str, items: list):
         return any([val.startswith(str(e)) for e in items])
+
+    def _check_llm_usage_policy(self, stats: VerbalizerInstanceStats) -> bool:
+        return all([
+            stats.patterns_evaluated >= self.llm_config.min_patterns_evaluated,
+            stats.statements >= self.llm_config.min_statements
+        ])

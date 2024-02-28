@@ -4,7 +4,7 @@ import pandas
 from rdflib import Graph, URIRef
 
 from core.nlp import ChatGptModel
-from core.verbalizer import Vocabulary, Verbalizer
+from core.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
 
 from core.verbalizer import Pattern, VerbalizationNode, VerbalizationEdge
 
@@ -39,7 +39,7 @@ class FirstRestOwlPattern(Pattern):
         return [(reference.relationship, reference.node.concept) for reference in node.references]
 
 
-class OboRelationPattern(Pattern):
+class RelationPattern(Pattern):
     def check(self, results) -> bool:
         expected = {
             'http://www.w3.org/2002/07/owl#onProperty',
@@ -81,8 +81,11 @@ class OboRelationPattern(Pattern):
 
 
 if __name__ == '__main__':
+    ontology_name = 'envo'
+    use_llm = True
+
     graph = Graph()
-    graph.parse('../data/envo.owl')
+    graph.parse(f'../data/{ontology_name}.owl')
 
     ignore = {
         'http://www.w3.org/2000/01/rdf-schema#seeAlso',
@@ -113,7 +116,14 @@ if __name__ == '__main__':
         'http://purl.obolibrary.org/obo/RO_0002175',
         'http://purl.obolibrary.org/obo/RO_0002161',
         'http://purl.obolibrary.org/obo/ado#from_Alzheimer_Ontology',
-        'http://xmlns.com/foaf/0.1/depicted_by'
+        'http://xmlns.com/foaf/0.1/depicted_by',
+
+        # SWEET
+        'http://data.bioontology.org/metadata/prefixIRI',
+        'http://purl.org/dc/terms/contributor',
+        'http://purl.org/dc/terms/creator',
+        'http://purl.org/dc/terms/created',
+        'http://purl.org/dc/terms/source'
     }
 
     rephrased = {
@@ -126,30 +136,53 @@ if __name__ == '__main__':
     vocab = Vocabulary(graph, ignore=ignore, rephrased=rephrased)
 
     # Use patterns to normalize the graph
-    patterns = [FirstRestOwlPattern, OboRelationPattern]
+    patterns = [FirstRestOwlPattern, RelationPattern]
 
     # Initialize language model. TODO: Use LangChain for better interoperability
-    llm = ChatGptModel(
-        api_key=os.getenv('OPENAI_API_KEY'),
-        model='gpt-4-0613',
-        temperature=0.5
-    )
-    verbalizer = Verbalizer(graph, vocab, patterns, llm)
+    llm = None
+    if use_llm:
+        llm = ChatGptModel(
+            api_key=os.getenv('OPENAI_API_KEY'),
+            model='gpt-3.5-turbo-0125',
+            temperature=0.5
+        )
 
-    # fragment, text = verbalizer.verbalize('http://purl.obolibrary.org/obo/ENVO_01001810')
+    verbalizer = Verbalizer(
+        graph, vocab, patterns,
+        language_model=llm,
+        usage_config=VerbalizerModelUsageConfig(
+            min_patterns_evaluated=1,
+            min_statements=2
+        )
+    )
+
+    # Simple test
+    # fragment, text, count = verbalizer.verbalize('http://purl.obolibrary.org/obo/ENVO_01001810')
     # print(fragment)
     # print(text)
 
+    query = """
+        SELECT ?o ?label
+        WHERE {
+            ?o a owl:Class ; rdfs:label ?label
+            FILTER NOT EXISTS {
+                ?o owl:deprecated true
+            }
+        }
+    """
     dataset = []
-    classes = [result[0] for result in graph.query('select ?o ?label where { ?o a owl:Class ; rdfs:label ?label }')]
-    for entry in classes[-10:]:
+    classes = [result[0] for result in graph.query(query)]
+    for i, entry in enumerate(classes):
         print(f'verbalizing {entry}')
-        fragment, text = verbalizer.verbalize(entry)
+        fragment, text, count, llm_used = verbalizer.verbalize(entry)
 
         print(fragment)
         print(text)
         print("****" * 20)
 
-        dataset.append({'fragment': fragment, 'text': text})
+        dataset.append({'fragment': fragment, 'text': text, 'statements': count, 'llm_used': llm_used})
+        if i % 100 == 0 and llm:
+            print(f'Cost so far: ${llm.cost}')
 
-    pandas.DataFrame(dataset).to_csv('../output/dataset_6.csv', index=False)
+    pandas.DataFrame(dataset).to_csv(f'../output/{ontology_name}{"" if use_llm else ".raw"}.csv', index=False)
+    print(f'Final cost: ${llm.cost}')
