@@ -218,7 +218,7 @@ class VerbalizationNode:
 
     @display.setter
     def display(self, value):
-        if not self._display:
+        if self._display is None:
             self._display = value
 
     def __repr__(self):
@@ -229,7 +229,7 @@ class VerbalizationNode:
 
         display = self.display
         if isinstance(self.concept, BNode):
-            display = ''
+            display = 'something that'
 
         return f'{display} {" and ".join(sentences)}'
 
