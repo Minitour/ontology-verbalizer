@@ -5,6 +5,10 @@ class LanguageModel:
     def pseudo_to_text(self, pseudo_text: str) -> str:
         return pseudo_text
 
+    @property
+    def cost(self) -> float:
+        return 0.0
+
 
 class ChatGptModel(LanguageModel):
     models = {
@@ -87,7 +91,8 @@ class ChatGptModel(LanguageModel):
                         """
                 },
                 {"role": "user", "content": pseudo_text},
-            ]
+            ],
+            temperature=self.temperature
         )
         self._in_token_usage += response.usage.prompt_tokens
         self._out_token_usage += response.usage.completion_tokens
@@ -101,3 +106,31 @@ class ChatGptModel(LanguageModel):
         out_tokens = self._out_token_usage / 1000
 
         return in_tokens * model_pricing['input'] + out_tokens * model_pricing["output"]
+
+
+class LlamaModel(LanguageModel):
+    def __init__(self, base_url, temperature=0.5):
+        self.temperature = temperature
+        self.client = OpenAI(
+            base_url=base_url,  # "http://<Your api-server IP>:port"
+            api_key="sk-no-key-required"
+        )
+
+    def pseudo_to_text(self, pseudo_text: str) -> str:
+        response = self.client.chat.completions.create(
+            model="LLaMA_CPP",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "This is a conversation between User and Agent, a friendly chatbot."
+                               " Agent is helpful and good at re-writing what it is told with precision and without adding any new information."
+                },
+                {"role": "user", "content": pseudo_text},
+            ],
+            temperature=self.temperature
+        )
+        return response.choices[0].message.content.strip()
+
+    @property
+    def cost(self) -> float:
+        return 0.0

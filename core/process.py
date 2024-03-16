@@ -1,9 +1,10 @@
 import os
+from tqdm import tqdm
 
 import pandas
 from rdflib import Graph, URIRef, Literal
 
-from core.nlp import ChatGptModel
+from core.nlp import ChatGptModel, LlamaModel
 from core.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
 
 from core.verbalizer import Pattern, VerbalizationNode, VerbalizationEdge
@@ -174,7 +175,7 @@ def get_obo_relations():
 
 if __name__ == '__main__':
     ontology_name = 'doid'
-    use_llm = False
+    use_llm = True
 
     obo_relations = get_obo_relations()
 
@@ -235,19 +236,13 @@ if __name__ == '__main__':
     patterns = [OwlFirstRestPattern, OwlRestrictionPattern]
 
     # Initialize language model. TODO: Use LangChain for better interoperability
-    llm = None
-    if use_llm:
-        llm = ChatGptModel(
-            api_key=os.getenv('OPENAI_API_KEY'),
-            model='gpt-3.5-turbo-0125',
-            temperature=0.5
-        )
+    llm = LlamaModel(base_url='http://127.0.0.1:8080/v1', temperature=0.7)
 
     verbalizer = Verbalizer(
         graph, vocab, patterns,
         language_model=llm,
         usage_config=VerbalizerModelUsageConfig(
-            min_patterns_evaluated=1,
+            min_patterns_evaluated=0,
             min_statements=2
         )
     )
@@ -269,15 +264,22 @@ if __name__ == '__main__':
     dataset = []
     classes = [result[0] for result in graph.query(query)]
     print(f'Found {len(classes)} classes.')
-    for i, entry in enumerate(classes):
-        print(f'verbalizing {entry}')
+    for i, entry in tqdm(enumerate(classes)):
+        # print(f'verbalizing {entry}')
         fragment, text, count, llm_used = verbalizer.verbalize(entry)
 
-        print(fragment)
-        print(text)
-        print("****" * 20)
+        # print(fragment)
+        # print(text)
+        # print("****" * 20)
 
-        dataset.append({'fragment': fragment, 'text': text, 'statements': count, 'llm_used': llm_used})
+        dataset.append({
+            'ontology': ontology_name,
+            'root': entry,
+            'fragment': fragment,
+            'text': text,
+            'statements': count,
+            'llm_used': llm_used
+        })
         if i % 100 == 0 and llm:
             print(f'Cost so far: ${llm.cost}')
 
