@@ -1,13 +1,13 @@
-import os
-from tqdm import tqdm
+import datetime
+from pathlib import Path
 
 import pandas
-from rdflib import Graph, URIRef, Literal
+from rdflib import Graph, URIRef
+from tqdm import tqdm
 
-from core.nlp import ChatGptModel, LlamaModel
-from core.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
-
+from core.nlp import LlamaModel, LanguageModel
 from core.verbalizer import Pattern, VerbalizationNode, VerbalizationEdge
+from core.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
 
 
 class OwlFirstRestPattern(Pattern):
@@ -20,7 +20,7 @@ class OwlFirstRestPattern(Pattern):
         current = node
         while current.concept != URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#nil'):
             query = self.verbalizer.next_step_query_builder(current)
-            results = graph.query(query)
+            results = self._graph.query(query)
             rest_node = None
             for (relation, obj) in results:
                 next_node = VerbalizationNode(obj,
@@ -62,7 +62,7 @@ class OwlRestrictionPattern(Pattern):
     def normalize(self, node: 'VerbalizationNode',
                   triple_collector):
         query = self.verbalizer.next_step_query_builder(node)
-        results = graph.query(query)
+        results = self._graph.query(query)
 
         next_node = None
         quantifier_relation = None
@@ -173,115 +173,77 @@ def get_obo_relations():
     return {result[0].toPython(): result[1].toPython() for result in ro.query(query)}
 
 
-if __name__ == '__main__':
-    ontology_name = 'doid'
-    use_llm = True
+class Processor:
 
-    obo_relations = get_obo_relations()
+    def __init__(self,
+                 llm: LanguageModel = LlamaModel(base_url='http://127.0.0.1:8080/v1', temperature=0.7),
+                 patterns: list = None,
+                 min_patterns_evaluated=0,
+                 min_statements=2,
+                 vocab_ignore: set = None,
+                 vocab_rephrased: dict = None):
+        self.llm = llm
+        self.patterns = patterns or [OwlFirstRestPattern, OwlRestrictionPattern]
+        self.verbalizer_model_usage_config = VerbalizerModelUsageConfig(min_patterns_evaluated, min_statements)
+        self.vocab_ignore = vocab_ignore
+        self.vocab_rephrase = vocab_rephrased
 
-    graph = Graph()
-    graph.parse(f'../data/{ontology_name}.owl')
+    def process(self, name: str, file_path: str, output_dir: str = './output', chunk_size=1000):
+        # current timestamp
+        now = datetime.datetime.utcnow()
+        timestamp = int(now.timestamp())
 
-    ignore = {
-        'http://www.w3.org/2000/01/rdf-schema#seeAlso',
-        'http://www.w3.org/2000/01/rdf-schema#label',
-        'http://www.w3.org/2000/01/rdf-schema#comment',
-        'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
+        # make output directory
+        out = f'{output_dir}/{name}/{timestamp}'
+        Path(out).mkdir(parents=True, exist_ok=True)
 
-        # OBO documentation related
-        'http://purl.obolibrary.org/obo/IAO_0000111',
-        'http://purl.obolibrary.org/obo/IAO_0000114',
-        'http://purl.obolibrary.org/obo/IAO_0000116',
-        'http://purl.obolibrary.org/obo/IAO_0000117',
-        'http://purl.obolibrary.org/obo/IAO_0000119',
-        'http://purl.obolibrary.org/obo/IAO_0000589',
+        graph = Graph()
+        graph.parse(file_path)
 
-        'http://www.geneontology.org/formats/oboInOwl#creation_date',
-        'http://www.geneontology.org/formats/oboInOwl#hasDbXref',
-        'http://www.geneontology.org/formats/oboInOwl#hasOBONamespace',
-        'http://www.geneontology.org/formats/oboInOwl#id',
-        'http://www.geneontology.org/formats/oboInOwl#hasAlternativeId',
-        'http://www.geneontology.org/formats/oboInOwl#inSubset',
-        'http://www.geneontology.org/formats/oboInOwl#created_by',
-        'http://purl.org/dc/elements/1.1/contributor',
-        'http://purl.org/dc/elements/1.1/creator',
-        'http://purl.org/dc/elements/1.1/date',
+        vocab = Vocabulary(graph, self.vocab_ignore, self.vocab_rephrase)
 
-        'http://purl.obolibrary.org/obo/IAO_0000412',
-        'http://purl.obolibrary.org/obo/RO_0002175',
-        'http://purl.obolibrary.org/obo/RO_0002161',
-        'http://purl.obolibrary.org/obo/ado#from_Alzheimer_Ontology',
-        'http://xmlns.com/foaf/0.1/depicted_by',
-
-        # SWEET
-        'http://data.bioontology.org/metadata/prefixIRI',
-        'http://purl.org/dc/terms/contributor',
-        'http://purl.org/dc/terms/creator',
-        'http://purl.org/dc/terms/created',
-        'http://purl.org/dc/terms/source'
-    }
-
-    rephrased = {
-        'http://www.w3.org/2002/07/owl#equivalentClass': 'is same as',
-        'http://www.w3.org/2000/01/rdf-schema#subClassOf': 'is a type of',
-        'http://purl.obolibrary.org/obo/IAO_0000115': 'has definition'
-    }
-
-    obo_relations.update(rephrased)
-
-    # create a vocabulary from the ontology.
-    vocab = Vocabulary(graph, ignore=ignore, rephrased=obo_relations)
-
-    # Use patterns to normalize the graph
-    patterns = [OwlFirstRestPattern, OwlRestrictionPattern]
-
-    # Initialize language model. TODO: Use LangChain for better interoperability
-    llm = LlamaModel(base_url='http://127.0.0.1:8080/v1', temperature=0.7)
-
-    verbalizer = Verbalizer(
-        graph, vocab, patterns,
-        language_model=llm,
-        usage_config=VerbalizerModelUsageConfig(
-            min_patterns_evaluated=0,
-            min_statements=2
+        verbalizer = Verbalizer(
+            graph,
+            vocabulary=vocab,
+            patterns=self.patterns,
+            language_model=self.llm,
+            usage_config=self.verbalizer_model_usage_config
         )
-    )
 
-    # Simple test
-    # fragment, text, count, llm_used = verbalizer.verbalize('http://purl.obolibrary.org/obo/ENVO_00000397')
-    # print(fragment)
-    # print(text)
+        classes = self._get_classes(graph)
 
-    query = """
-        SELECT ?o ?label
-        WHERE {
-            ?o a owl:Class ; rdfs:label ?label
-            FILTER NOT EXISTS {
-                ?o owl:deprecated true
-            }
-        }
-    """
-    dataset = []
-    classes = [result[0] for result in graph.query(query)]
-    print(f'Found {len(classes)} classes.')
-    for i, entry in tqdm(enumerate(classes)):
-        # print(f'verbalizing {entry}')
-        fragment, text, count, llm_used = verbalizer.verbalize(entry)
+        dataset = []
+        partition = 0
+        for entry in tqdm(classes, desc='Verbalizing Classes'):
+            fragment, text, count, llm_used = verbalizer.verbalize(entry)
 
-        # print(fragment)
-        # print(text)
-        # print("****" * 20)
+            dataset.append({
+                'ontology': name,
+                'root': entry,
+                'fragment': fragment,
+                'text': text,
+                'statements': count,
+                'llm_used': llm_used
+            })
+            if len(dataset) == chunk_size:
+                pandas.DataFrame(dataset).to_csv(f'{out}/file_{partition}.csv', index=False)
+                partition += 1
+                dataset = []
 
-        dataset.append({
-            'ontology': ontology_name,
-            'root': entry,
-            'fragment': fragment,
-            'text': text,
-            'statements': count,
-            'llm_used': llm_used
-        })
-        if i % 100 == 0 and llm:
-            print(f'Cost so far: ${llm.cost}')
+        if dataset:
+            pandas.DataFrame(dataset).to_csv(f'{out}/file_{partition}.csv', index=False)
 
-    pandas.DataFrame(dataset).to_csv(f'../output/{ontology_name}{"" if use_llm else ".raw"}.csv', index=False)
-    print(f'Final cost: ${llm.cost}')
+        print(f'Finished verbalizing. LLM usage cost: ${self.llm.cost}')
+
+    @staticmethod
+    def _get_classes(graph):
+        query = """
+                SELECT ?o ?label
+                WHERE {
+                    ?o a owl:Class ; rdfs:label ?label
+                    FILTER NOT EXISTS {
+                        ?o owl:deprecated true
+                    }
+                }
+            """
+        return [result[0] for result in graph.query(query)]

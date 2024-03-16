@@ -17,6 +17,7 @@ class Vocabulary:
         self._graph = graph
         self.relationship_labels = self._get_ontology_relationship_labels()
         self.object_labels = self._get_ontology_object_labels()
+        self.load_imports()
         self.rephrased = rephrased or dict()
         self._ignore_list = ignore or {}
 
@@ -130,6 +131,16 @@ class Vocabulary:
     def _camel_to_snake(name):
         name = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
         return re.sub('([a-z0-9])([A-Z])', r'\1_\2', name).lower()
+
+    def load_imports(self):
+        owl_imports = {o[0].toPython() for o in self._graph.query("SELECT DISTINCT ?o WHERE { ?s owl:imports ?o }")}
+        for owl_import in owl_imports:
+            print(f'LOADING IMPORT: {owl_import}')
+            graph = Graph()
+            graph.parse(owl_import, format='xml')
+            sub_vocab = self.__class__(graph)
+            self.object_labels.update(sub_vocab.object_labels)
+            self.relationship_labels.update(sub_vocab.relationship_labels)
 
 
 class Pattern:
