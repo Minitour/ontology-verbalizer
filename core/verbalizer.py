@@ -79,7 +79,13 @@ class Vocabulary:
             iri, label = result
             iri_str = iri.toPython()
             label_str = label.toPython()
+
+            # Convert label to lower case snake case and remove spaces.
+            label_str = re.sub(r'(?<!^)(?=[A-Z][a-z])', '_', label_str).lower()
+            label_str = re.sub('[^0-9a-zA-Z]+', ' ', label_str)
+
             object_labels[iri_str] = label_str
+
         return object_labels
 
     def _util_lookup(self, dictionary, val):

@@ -9,7 +9,7 @@ from core.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
 from core.verbalizer import Pattern, VerbalizationNode, VerbalizationEdge
 
 
-class FirstRestOwlPattern(Pattern):
+class OwlFirstRestPattern(Pattern):
     def check(self, results) -> bool:
         expected = {'http://www.w3.org/1999/02/22-rdf-syntax-ns#first',
                     'http://www.w3.org/1999/02/22-rdf-syntax-ns#rest'}
@@ -39,7 +39,7 @@ class FirstRestOwlPattern(Pattern):
         return [(reference.relationship, reference.node.concept) for reference in node.references]
 
 
-class RelationPattern(Pattern):
+class OwlRestrictionPattern(Pattern):
     def check(self, results) -> bool:
         expected = {
             'http://www.w3.org/2002/07/owl#onProperty',
@@ -48,11 +48,15 @@ class RelationPattern(Pattern):
             'http://www.w3.org/2002/07/owl#hasValue',
             'http://www.w3.org/2002/07/owl#cardinality',
             'http://www.w3.org/2002/07/owl#minCardinality',
-            'http://www.w3.org/2002/07/owl#maxCardinality'
+            'http://www.w3.org/2002/07/owl#maxCardinality',
+            'http://www.w3.org/2002/07/owl#qualifiedCardinality',
+            'http://www.w3.org/2002/07/owl#minQualifiedCardinality',
+            'http://www.w3.org/2002/07/owl#maxQualifiedCardinality',
+            'http://www.w3.org/2002/07/owl#onClass'
         }
         actual = {relation.toPython() for (relation, obj) in results}
 
-        return len(expected.intersection(actual)) == 2
+        return len(expected.intersection(actual)) >= 2
 
     def normalize(self, node: 'VerbalizationNode',
                   triple_collector):
@@ -63,6 +67,7 @@ class RelationPattern(Pattern):
         quantifier_relation = None
         property_relation = None
         literal_value = None
+        on_class = None
 
         for (relation, obj) in results:
 
@@ -78,11 +83,30 @@ class RelationPattern(Pattern):
 
             if relation.toPython() in {'http://www.w3.org/2002/07/owl#cardinality',
                                        'http://www.w3.org/2002/07/owl#minCardinality',
-                                       'http://www.w3.org/2002/07/owl#maxCardinality'}:
+                                       'http://www.w3.org/2002/07/owl#maxCardinality',
+                                       'http://www.w3.org/2002/07/owl#qualifiedCardinality',
+                                       'http://www.w3.org/2002/07/owl#minQualifiedCardinality',
+                                       'http://www.w3.org/2002/07/owl#maxQualifiedCardinality'
+                                       }:
                 quantifier_relation = relation
                 literal_value = obj
-                next_node = VerbalizationNode(concept='',
-                                              parent_path=node.get_parent_path() + [(node.concept, relation)])
+
+                # initialize next_node only if it hasn't be initialized yet.
+                if next_node is None:
+                    next_node = VerbalizationNode(
+                        concept='',
+                        parent_path=node.get_parent_path() + [(node.concept, relation)]
+                    )
+                    next_node.display = ''
+
+            if relation.toPython() in {
+                'http://www.w3.org/2002/07/owl#onClass'
+            }:
+                on_class = obj
+                next_node = VerbalizationNode(
+                    concept=obj,
+                    parent_path=node.get_parent_path() + [(node.concept, relation)]
+                )
                 next_node.display = ''
 
             triple_collector.append((node.concept, relation, obj))
@@ -102,7 +126,7 @@ class RelationPattern(Pattern):
         elif quantifier_relation.toPython().endswith('hasValue'):
             edge.display = f'must {property_relation_label}'
         elif quantifier_relation.toPython().lower().endswith('cardinality'):
-            edge.display = self._handle_cardinality(quantifier_relation, property_relation, literal_value)
+            edge.display = self._handle_cardinality(quantifier_relation, property_relation, literal_value, on_class)
         else:
             edge.display = f'{property_relation_label} {quantifier_relation_label}'
 
@@ -110,26 +134,49 @@ class RelationPattern(Pattern):
 
         return [(reference.relationship, reference.node.concept) for reference in node.references]
 
-    def _handle_cardinality(self, quantifier_relation, property_relation, obj_literal) -> str:
+    def _handle_cardinality(self, quantifier_relation, property_relation, obj_literal, on_class) -> str:
         property_relation_label = self.vocab.get_cls_label(property_relation)
         literal_value = obj_literal.toPython()
+        on_class_label = ' '
+
+        relation_plural_s = 's' if literal_value > 1 and not property_relation_label.endswith('s') else ''
+
         if property_relation_label.startswith('has'):
             property_relation_label = property_relation_label.replace('has ', '')
 
-        plural_s = 's' if literal_value > 1 else ''
+        if on_class:
+            on_class_label = f' {self.vocab.get_cls_label(on_class)} '
+
         if quantifier_relation.endswith('cardinality') and literal_value == 0:
-            return f'has no {property_relation_label}s'
-        elif quantifier_relation.endswith('cardinality'):
-            return f'has exactly {literal_value} {property_relation_label}{plural_s}'
-        elif quantifier_relation.endswith('minCardinality'):
-            return f'has at least {literal_value} {property_relation_label}{plural_s}'
-        elif quantifier_relation.endswith('maxCardinality'):
-            return f'has at most {literal_value} {property_relation_label}{plural_s}'
+            return f'has zero {on_class_label} {property_relation_label}s'
+        elif quantifier_relation.endswith('cardinality') or quantifier_relation.endswith('qualifiedCardinality'):
+            return f'has exactly {literal_value}{on_class_label}{property_relation_label}{relation_plural_s}'
+        elif quantifier_relation.endswith('minCardinality') or quantifier_relation.endswith('minQualifiedCardinality'):
+            return f'has at least {literal_value}{on_class_label}{property_relation_label}{relation_plural_s}'
+        elif quantifier_relation.endswith('maxCardinality') or quantifier_relation.endswith('maxQualifiedCardinality'):
+            return f'has at most {literal_value}{on_class_label}{property_relation_label}{relation_plural_s}'
+
+
+def get_obo_relations():
+    ro = Graph()
+    ro.parse(f'../data/ro.owl')
+    query = """
+            SELECT ?o ?label
+            WHERE {
+                ?o a owl:ObjectProperty ; rdfs:label ?label
+                FILTER NOT EXISTS {
+                    ?o owl:deprecated true
+                }
+            }
+        """
+    return {result[0].toPython(): result[1].toPython() for result in ro.query(query)}
 
 
 if __name__ == '__main__':
-    ontology_name = 'sweet'
+    ontology_name = 'doid'
     use_llm = False
+
+    obo_relations = get_obo_relations()
 
     graph = Graph()
     graph.parse(f'../data/{ontology_name}.owl')
@@ -179,11 +226,13 @@ if __name__ == '__main__':
         'http://purl.obolibrary.org/obo/IAO_0000115': 'has definition'
     }
 
+    obo_relations.update(rephrased)
+
     # create a vocabulary from the ontology.
-    vocab = Vocabulary(graph, ignore=ignore, rephrased=rephrased)
+    vocab = Vocabulary(graph, ignore=ignore, rephrased=obo_relations)
 
     # Use patterns to normalize the graph
-    patterns = [FirstRestOwlPattern, RelationPattern]
+    patterns = [OwlFirstRestPattern, OwlRestrictionPattern]
 
     # Initialize language model. TODO: Use LangChain for better interoperability
     llm = None
@@ -204,7 +253,7 @@ if __name__ == '__main__':
     )
 
     # Simple test
-    # fragment, text, count = verbalizer.verbalize('http://purl.obolibrary.org/obo/ENVO_01001810')
+    # fragment, text, count, llm_used = verbalizer.verbalize('http://purl.obolibrary.org/obo/ENVO_00000397')
     # print(fragment)
     # print(text)
 
@@ -219,6 +268,7 @@ if __name__ == '__main__':
     """
     dataset = []
     classes = [result[0] for result in graph.query(query)]
+    print(f'Found {len(classes)} classes.')
     for i, entry in enumerate(classes):
         print(f'verbalizing {entry}')
         fragment, text, count, llm_used = verbalizer.verbalize(entry)
