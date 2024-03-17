@@ -1,0 +1,111 @@
+ontology,root,fragment,text,statements,llm_used
+doid,http://purl.obolibrary.org/obo/DOID_9975,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cocaine_dependence rdfs:subClassOf :drug_dependence ;
+    :has_definition ""A drug dependence that is a psychological dependency on the regular use of cocaine."" .
+
+","cocaine dependence is a type of drug dependence that occurs when an individual has developed a compulsive need for cocaine and experiences withdrawal symptoms when they stop using the drug. It is characterized by a loss of control over drug use, compulsive behavior, and negative emotional states when not using the drug. Cocaine dependence can have severe consequences on physical and mental health, relationships, and work or school performance.",2,True
+doid,http://purl.obolibrary.org/obo/DOID_9976,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heroin_dependence rdfs:subClassOf :opiate_dependence ;
+    :has_definition ""An opiate dependence that involves the continued use of heroin despite problems related to use of the substance."" .
+
+","Heroin dependence, also known as opioid dependence or addiction, is a state in which the body becomes dependent on heroin and experiences withdrawal when it is not used. It can cause severe physical and mental health problems, including addiction, tolerance, overdose, and death. Heroin dependence occurs when someone regularly uses heroin, often in high doses, for an extended period of time. The body adapts to the presence of the drug, and withdrawal symptoms may occur when the person stops using it. It is important to seek professional help if you or someone you know is struggling with heroin dependence, as there are many effective treatment options available.",2,True
+doid,http://purl.obolibrary.org/obo/DOID_9977,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hallucinogen_dependence rdfs:subClassOf :drug_dependence ;
+    :has_definition ""A drug dependence that involves the continued use of hallucinogenic drugs despite problems related to use of the substance."" .
+
+",Hallucinogen dependence is a type of drug dependence that involves the continued use of hallucinogenic drugs despite problems related to their use.,2,True
+doid,http://purl.obolibrary.org/obo/DOID_9978,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acute_female_pelvic_peritonitis rdfs:subClassOf :pelvic_inflammatory_disease .
+
+",acute female pelvic peritonitis is a type of pelvic inflammatory disease.,1,False
+doid,http://purl.obolibrary.org/obo/DOID_998,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eosinophilia_myalgia_syndrome rdfs:subClassOf :hypereosinophilic_syndrome ;
+    :has_definition ""A hypereosinophilic syndrome that is characterized by subacute onset of myalgias and peripheral eosinophilia, followed by chronic neuropathy and skin induration."" ;
+    :has_exact_synonym ""Eosinophilia myalgia syndrome""@en .
+
+","Eosinophilia myalgia syndrome (EMS) is a type of hypereosinophilic syndrome that presents with subacute onset of myalgias and peripheral eosinophilia, followed by chronic neuropathy and skin induration. It is characterized by the presence of elevated levels of eosinophils in the blood, along with symptoms such as muscle pain, skin thickening, and nerve damage. EMS can be triggered by exposure to certain chemicals or drugs, and it is important for individuals who suspect they may have this condition to seek medical attention promptly.",3,True
+doid,http://purl.obolibrary.org/obo/DOID_9986,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orbit_lymphoma rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_material_basis_in ;
+            owl:someValuesFrom :lymphocyte ],
+        :lymphoma,
+        :orbital_cancer ;
+    :has_definition ""An orbital cancer that has_material_basis_in some lymphocyte."" ;
+    :has_exact_synonym ""Lymphoma of the orbit""@en .
+
+","Orbit lymphoma is a type of cancer that affects the orbit, which are the structures around the eye. It is also known as Lymphoma of the orbit. This cancer can be caused by an abnormal proliferation of white blood cells called lymphocytes in the area surrounding the eye.",5,True
+doid,http://purl.obolibrary.org/obo/DOID_9987,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orbit_sarcoma rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :derives_from ;
+            owl:someValuesFrom :embryonic_cell_metazoa_ ],
+        :orbital_cancer,
+        :sarcoma ;
+    :has_definition ""An orbital cancer that has_material_basis_in abnormally proliferating cells derived from embryonic mesoderm."" ;
+    :has_exact_synonym ""orbital sarcoma""@en .
+
+",orbit sarcoma is a type of cancer that affects the bones around the eye.,5,True
+doid,http://purl.obolibrary.org/obo/DOID_9988,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tertiary_neurosyphilis rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :transmitted_by ;
+            owl:someValuesFrom :contact_transmission ],
+        :brain_disease,
+        :spinal_cord_disease,
+        :tertiary_syphilis ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :tertiary_syphilis ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :disease_has_location ;
+                                    owl:someValuesFrom :brain ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :disease_has_location ;
+                                            owl:someValuesFrom :spinal_cord ] ;
+                                    rdf:rest :nil ] ] ] ] ;
+    :has_definition ""A tertiary syphilis that results in infection located in brain or located in spinal cord."" ;
+    :has_exact_synonym ""late neurosyphilis""@en .
+
+","Tertiary neurosyphilis is a type of spinal cord disease that occurs when the syphilis infection has progressed to the late stage. It is also known as late neurosyphilis, and it can cause a range of symptoms such as pain, weakness, and difficulty with balance and coordination. The exact synonym for tertiary neurosyphilis is ""late neurosyphilis,"" which refers to the same condition. Tertiary neurosyphilis occurs when the syphilis infection has spread to the brain or spinal cord, causing inflammation and damage to these areas. It can also cause degenerative changes to the spinal cord, leading to loss of function and mobility.",7,True
+doid,http://purl.obolibrary.org/obo/DOID_999,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hypereosinophilic_syndrome rdfs:subClassOf :leukocyte_disease ;
+    :has_definition ""A leukocyte disease that is characterized by high numbers of eosinophils which over time enter various tissues, eventually damaging organs."" ;
+    :has_exact_synonym ""Eosinophilic leukocytosis""@en,
+        ""eosinophilia""@en .
+
+","Hypereosinophilic syndrome is a type of leukocyte disease characterized by high levels of eosinophils in the blood. Over time, these excessive levels can cause damage to various organs and tissues in the body. It is also known as eosinophilic leukocytosis or simply eosinophilia.",4,True
+doid,http://purl.obolibrary.org/obo/DOID_9993,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hypoglycemia rdfs:subClassOf :glucose_metabolism_disease ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :disease ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_phenotype ;
+                                    owl:someValuesFrom :abnormal_blood_glucose_concentration ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A glucose metabolism disease that is characterized by abnormally low levels of blood glucose."" ;
+    :has_exact_synonym ""Hypoglycaemia""@en .
+
+","Hypoglycemia is a medical condition characterized by abnormally low levels of glucose in the blood. It can occur when the body produces too much insulin or when there is an imbalance in carbohydrate metabolism. Symptoms of hypoglycemia include sweating, tremors, dizziness, and confusion. If left untreated, it can lead to more severe complications such as seizures, coma, and even death. It is important for individuals with diabetes to monitor their blood glucose levels regularly and take appropriate action when necessary to prevent hypoglycemia.",4,True
+doid,http://purl.obolibrary.org/obo/DOID_9997,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peripartum_cardiomyopathy rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_symptom ;
+            owl:someValuesFrom :muscle_weakness ],
+        :dilated_cardiomyopathy ;
+    :has_definition ""A dilated cardiomyopathy that is characterized by a weakness of the heart muscle that begins sometime during the final month of pregnancy through about five months after delivery."" ;
+    :has_exact_synonym ""antepartum peripartum cardiomyopathy""@en,
+        ""postpartum peripartum cardiomyopathy""@en .
+
+","Peripartum cardiomyopathy is a type of dilated cardiomyopathy that occurs during the last month of pregnancy and up to five months after delivery. It is characterized by weakness in the heart muscle, and can lead to symptoms such as shortness of breath, swelling in the legs and ankles, and fatigue. It is also known as antepartum peripartum cardiomyopathy, and it has a similar definition to postpartum peripartum cardiomyopathy.",5,True

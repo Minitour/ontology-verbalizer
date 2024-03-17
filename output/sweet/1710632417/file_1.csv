@@ -1,0 +1,2637 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/matrEnergy/Fuel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fuel rdfs:subClassOf :energy_storage .
+
+",fuel is a type of energy storage.,1,False
+sweet,http://sweetontology.net/matrEnergy/FuelCell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fuel_cell rdfs:subClassOf :energy_storage .
+
+",fuel cell is a type of energy storage.,1,False
+sweet,http://sweetontology.net/matrEnergy/GeothermalPowerPlant,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geothermal_power_plant rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :geothermal ;
+            owl:onProperty :has_energy_source ],
+        :power_plant .
+
+","A geothermal power plant is a type of power generation facility that uses the heat produced within Earth's core and crust to generate electricity. It operates by tapping into underground reservoirs of hot water or steam, which are then used to drive turbines connected to generators, producing clean and renewable energy. Geothermal power plants can be found in various parts of the world, with some of the most notable ones located in Iceland, the United States, and Indonesia.",2,True
+sweet,http://sweetontology.net/matrEnergy/HeatExchanger,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heat_exchanger rdfs:subClassOf :energy_distribution_system .
+
+",heat exchanger is a type of energy distribution system.,1,False
+sweet,http://sweetontology.net/matrEnergy/HeatPump,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heat_pump rdfs:subClassOf :energy_distribution_system .
+
+",heat pump is a type of energy distribution system.,1,False
+sweet,http://sweetontology.net/matrEnergy/Heater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heater rdfs:subClassOf :energy_conversion_device .
+
+",heater is a type of energy conversion device.,1,False
+sweet,http://sweetontology.net/matrEnergy/HydrogenEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrogen_energy rdfs:subClassOf :energy_storage .
+
+",hydrogen energy is a type of energy storage.,1,False
+sweet,http://sweetontology.net/matrEnergy/ParabolicTrough,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parabolic_trough rdfs:subClassOf :energy_collector .
+
+",parabolic trough is a type of energy collector.,1,False
+sweet,http://sweetontology.net/matrEnergy/PhotovoltaicCell,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photovoltaic_cell rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :solar_power ;
+            owl:onProperty :has_energy_source ],
+        :energy_collector .
+
+","A photovoltaic cell (PV cell) is a device that converts sunlight, the light from the sun, directly into electricity. It is made of semiconducting materials and contains layers of silicon, which are carefully designed to absorb specific wavelengths of sunlight and release electrons when they are excited by these wavelengths. These electrons are then collected and used to produce an electrical current that can be used to power a wide range of devices, from small electronics like smartphones and laptops to larger systems such as homes and businesses. Photovoltaic cells are often grouped together in solar panels, which are connected to other components like inverters and batteries to create a complete photovoltaic system that can be used to generate electricity for various applications.",2,True
+sweet,http://sweetontology.net/matrEnergy/PowerGrid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:power_grid rdfs:subClassOf :energy_distribution_system .
+
+",power grid is a type of energy distribution system.,1,False
+sweet,http://sweetontology.net/matrEnergy/PowerPlant,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:power_plant rdfs:subClassOf :energy_conversion_device .
+
+",power plant is a type of energy conversion device.,1,False
+sweet,http://sweetontology.net/matrEnergy/PowerTransmissionFacility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:power_transmission_facility rdfs:subClassOf :infrastructure .
+
+",power transmission facility is a type of infrastructure.,1,False
+sweet,http://sweetontology.net/matrEnergy/Refrigerator,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:refrigerator rdfs:subClassOf :energy_conversion_device .
+
+",refrigerator is a type of energy conversion device.,1,False
+sweet,http://sweetontology.net/matrEnergy/SmartGrid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:smart_grid rdfs:subClassOf :power_grid .
+
+",smart grid is a type of power grid.,1,False
+sweet,http://sweetontology.net/matrEnergy/TubularCollector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tubular_collector rdfs:subClassOf :energy_collector .
+
+",tubular collector is a type of energy collector.,1,False
+sweet,http://sweetontology.net/matrEquipment/Aircraft,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aircraft rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :atmosphere ;
+            owl:onProperty :has_realm ],
+        :equipment .
+
+","Aircraft is a type of equipment that has been designed and built for the purpose of flying through the air. It typically consists of a fuselage, wings, engines, and various other components that work together to enable flight. Aircraft can vary greatly in size, shape, and design, depending on their intended use and the specific requirements of their mission. Some examples of aircraft include commercial airplanes, military fighter jets, and private planes.",2,True
+sweet,http://sweetontology.net/matrEquipment/Airplane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:airplane rdfs:subClassOf :aircraft .
+
+",airplane is a type of aircraft.,1,False
+sweet,http://sweetontology.net/matrEquipment/Antenna,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antenna rdfs:subClassOf :communications_equipment .
+
+",antenna is a type of communications equipment.,1,False
+sweet,http://sweetontology.net/matrEquipment/ArtesianWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:artesian_well rdfs:subClassOf :confined_well .
+
+",artesian well is a type of confined well.,1,False
+sweet,http://sweetontology.net/matrEquipment/Borehole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:borehole rdfs:subClassOf :equipment .
+
+",borehole is a type of equipment.,1,False
+sweet,http://sweetontology.net/matrEquipment/Car,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:car rdfs:subClassOf :vehicle .
+
+",car is a type of vehicle.,1,False
+sweet,http://sweetontology.net/matrEquipment/Communication,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:communication rdfs:subClassOf :human_activity ;
+    owl:equivalentClass :communications .
+
+","communication can take many forms, including verbal and non-verbal.
+non-verbal communication includes body language, facial expressions, and tone of voice.
+verbal communication involves the use of words to convey meaning.
+both types of communication are essential for effective communication.",2,True
+sweet,http://sweetontology.net/matrEquipment/CommunicationMethod,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:communication_method rdfs:subClassOf :communication,
+        :communications .
+
+","Communication methods can include a variety of ways to convey information, such as verbal and non-verbal cues, written or spoken language, body language, facial expressions, and even touch. Each method has its own strengths and weaknesses, depending on the context in which they are used. For example, verbal communication is useful for conveying complex ideas and emotions, while non-verbal cues can be more effective in certain situations due to their ability to convey subtle nuances of meaning.
+In general, it is important to choose a communication method that is appropriate for the situation and the intended audience. This will help ensure clear and effective communication between individuals or groups.",2,True
+sweet,http://sweetontology.net/matrEquipment/Communications,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:communications rdfs:subClassOf :human_activity .
+
+",communications is a type of human activity.,1,False
+sweet,http://sweetontology.net/matrEquipment/CommunicationsEquipment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:communications_equipment rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :communications ;
+            owl:onProperty :has_human_activity ],
+        :equipment .
+
+",equipment,2,True
+sweet,http://sweetontology.net/matrEquipment/ComputerHardware,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:computer_hardware rdfs:subClassOf :equipment .
+
+",computer hardware is a type of equipment.,1,False
+sweet,http://sweetontology.net/matrEquipment/ConfinedWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:confined_well rdfs:subClassOf :well .
+
+",confined well is a type of well.,1,False
+sweet,http://sweetontology.net/matrEquipment/DisposalWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:disposal_well rdfs:subClassOf :well .
+
+",disposal well is a type of well.,1,False
+sweet,http://sweetontology.net/matrEquipment/DrainageWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drainage_well rdfs:subClassOf :well .
+
+",drainage well is a type of well.,1,False
+sweet,http://sweetontology.net/matrEquipment/EmergencyVehicle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:emergency_vehicle rdfs:subClassOf :vehicle .
+
+",emergency vehicle is a type of vehicle.,1,False
+sweet,http://sweetontology.net/matrEquipment/Equipment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equipment rdfs:subClassOf :infrastructure .
+
+",equipment is a type of infrastructure.,1,False
+sweet,http://sweetontology.net/matrEquipment/Helicopter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:helicopter rdfs:subClassOf :aircraft .
+
+",helicopter is a type of aircraft.,1,False
+sweet,http://sweetontology.net/matrEquipment/Infrastructure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:infrastructure rdfs:subClassOf :material_thing .
+
+",infrastructure is a type of material thing.,1,False
+sweet,http://sweetontology.net/matrEquipment/InjectionWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:injection_well rdfs:subClassOf :well .
+
+",injection well is a type of well.,1,False
+sweet,http://sweetontology.net/matrEquipment/Internet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:internet rdfs:subClassOf :communication_method .
+
+",internet is a type of communication method.,1,False
+sweet,http://sweetontology.net/matrEquipment/Jet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jet rdfs:subClassOf :aircraft .
+
+",jet is a type of aircraft.,1,False
+sweet,http://sweetontology.net/matrEquipment/LandLine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_line rdfs:subClassOf :phone .
+
+",land line is a type of phone.,1,False
+sweet,http://sweetontology.net/matrEquipment/MaterialThing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:material_thing rdfs:subClassOf :substance .
+
+",material thing is a type of substance.,1,False
+sweet,http://sweetontology.net/matrEquipment/MobilePhone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mobile_phone rdfs:subClassOf :phone .
+
+",mobile phone is a type of phone.,1,False
+sweet,http://sweetontology.net/matrEquipment/MonitoringWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monitoring_well rdfs:subClassOf :well .
+
+",monitoring well is a type of well.,1,False
+sweet,http://sweetontology.net/matrEquipment/Navigation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:navigation rdfs:subClassOf :human_activity .
+
+",navigation is a type of human activity.,1,False
+sweet,http://sweetontology.net/matrEquipment/NavigationEquipment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:navigation_equipment rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :navigation ;
+            owl:onProperty :has_human_activity ],
+        :equipment .
+
+","Navigation equipment is a type of equipment used for navigating and guiding people or vehicles, such as GPS systems, compasses, and maps. It helps individuals and organizations to reach their destinations safely and efficiently while minimizing the risk of getting lost or making wrong turns.",2,True
+sweet,http://sweetontology.net/matrEquipment/Phone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phone rdfs:subClassOf :communication_method,
+        :communications_equipment .
+
+","A phone is a device that allows for the transmission of audio and sometimes video communication over long distances. It can be used to make calls, send text messages, and access various other services such as internet browsing and mobile applications.",2,True
+sweet,http://sweetontology.net/matrEquipment/Pipeline,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pipeline rdfs:subClassOf :transportation_equipment .
+
+",pipeline is a type of transportation equipment.,1,False
+sweet,http://sweetontology.net/matrEquipment/PumpingWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pumping_well rdfs:subClassOf :well .
+
+",pumping well is a type of well.,1,False
+sweet,http://sweetontology.net/matrEquipment/Radio,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radio rdfs:subClassOf :communication_method,
+        :communications_equipment .
+
+","Radio is a type of communication method and equipment that uses electromagnetic waves to transmit information from one point to another. It can be used for various purposes such as entertainment, news, and emergency services. The term ""radio"" is often associated with broadcasting, which refers to the distribution of audio and sometimes video signals to a large number of people through radio stations or satellite television. However, modern radios can also include other types of communication methods, such as internet radio and digital radio. In terms of equipment, there are different types of radios available on the market, ranging from small portable devices to larger home stereo systems.",2,True
+sweet,http://sweetontology.net/matrEquipment/Receive,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:receive rdfs:subClassOf :communication,
+        :communications ;
+    owl:equivalentClass :reception .
+
+","Receive is a verb that means to take in or accept something, like an object or information. It can also refer to the act of communicating with someone or something. Communication is the process of exchanging information, ideas, or messages between individuals or groups using verbal or non-verbal cues.",3,True
+sweet,http://sweetontology.net/matrEquipment/Receiver,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:receiver rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :reception ;
+            owl:onProperty :has_role ],
+        :communications_equipment .
+
+","A receiver is an electronic device that receives transmitted signals, such as radio or television broadcasts, and converts them into a form that can be displayed or heard. It typically consists of an antenna to receive the signal, a tuner to select the desired frequency, and a demodulator to extract the audio or video information from the received signal. Receivers are used in various applications, including home entertainment systems, radios, and satellite receivers.",2,True
+sweet,http://sweetontology.net/matrEquipment/Reception,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reception rdfs:subClassOf :communication,
+        :communications .
+
+",Reception is a type of communication.,2,True
+sweet,http://sweetontology.net/matrEquipment/RechargeWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:recharge_well rdfs:subClassOf :well .
+
+",recharge well is a type of well.,1,False
+sweet,http://sweetontology.net/matrEquipment/Rocket,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rocket rdfs:subClassOf :spacecraft .
+
+",rocket is a type of spacecraft.,1,False
+sweet,http://sweetontology.net/matrEquipment/Rover,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rover rdfs:subClassOf :vehicle .
+
+",rover is a type of vehicle.,1,False
+sweet,http://sweetontology.net/matrEquipment/Satellite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:satellite rdfs:subClassOf :spacecraft .
+
+",satellite is a type of spacecraft.,1,False
+sweet,http://sweetontology.net/matrEquipment/Ship,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ship rdfs:subClassOf :vehicle .
+
+",ship is a type of vehicle.,1,False
+sweet,http://sweetontology.net/matrEquipment/Signal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:signal rdfs:subClassOf :communication,
+        :communications .
+
+","signal is a type of communication.
+signal is a type of communications.",2,True
+sweet,http://sweetontology.net/matrEquipment/Sink,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sink rdfs:subClassOf :equipment .
+
+",sink is a type of equipment.,1,False
+sweet,http://sweetontology.net/matrEquipment/SpaceShuttle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:space_shuttle rdfs:subClassOf :spacecraft .
+
+",space shuttle is a type of spacecraft.,1,False
+sweet,http://sweetontology.net/matrEquipment/Spacecraft,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spacecraft rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :outer_space ;
+            owl:onProperty :has_realm ],
+        :transportation_equipment .
+
+","Yes, spacecraft is indeed a type of transportation equipment designed for traveling through outer space. It can be used for various purposes such as scientific exploration, transportation of crew and cargo between different locations in the solar system or even to other planets within our galaxy. Spacecraft come in different shapes and sizes, ranging from small satellites to large space shuttles or even massive space stations. They are designed with special materials and technologies that allow them to function effectively in the harsh environment of outer space, such as protecting against radiation, extreme temperatures, and vacuum conditions. Overall, spacecraft play a crucial role in advancing our understanding of the universe and expanding our capabilities for interplanetary travel.",2,True
+sweet,http://sweetontology.net/matrEquipment/Trailer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trailer rdfs:subClassOf :vehicle .
+
+",trailer is a type of vehicle.,1,False
+sweet,http://sweetontology.net/matrEquipment/Train,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:train rdfs:subClassOf :vehicle .
+
+",train is a type of vehicle.,1,False
+sweet,http://sweetontology.net/matrEquipment/Transmission,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transmission rdfs:subClassOf :communication,
+        :communications ;
+    owl:equivalentClass :transmit .
+
+","Transmission is a term used to describe the process of sending or receiving information through various channels, such as radio waves, infrared signals, or electrical wires. It can refer to the transfer of data between different devices or systems, such as from one computer to another, or within a single device, like a mobile phone or a television. The term is commonly used in fields such as electronics, telecommunications, and information technology to describe the process of sending and receiving data.",3,True
+sweet,http://sweetontology.net/matrEquipment/Transmit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transmit rdfs:subClassOf :communication,
+        :communications .
+
+",Transmission is a type of communication.,2,True
+sweet,http://sweetontology.net/matrEquipment/Transmitter,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transmitter rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :transmission ;
+            owl:onProperty :has_role ],
+        :communications_equipment .
+
+","The term ""transmitter"" refers to a device used for the transmission of signals, such as radio waves or infrared light. It can be used in various fields, including telecommunications, broadcasting, and data transfer. A transmitter typically converts some form of energy, such as electrical or mechanical, into a signal that can be transmitted through the air or another medium. Examples of transmitters include radio and television broadcasting equipment, satellite communication systems, and wireless data transmission devices like Wi-Fi routers.",2,True
+sweet,http://sweetontology.net/matrEquipment/TransportationEquipment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transportation_equipment rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :transportation ;
+            owl:onProperty :has_human_activity ],
+        :equipment .
+
+","transportation equipment includes various types of vehicles, such as cars, buses, trains, and airplanes, as well as transport-related machinery and tools like forklifts, cranes, and loading equipment. It also encompasses infrastructure like roads, bridges, and tunnels that facilitate the movement of people and goods.",2,True
+sweet,http://sweetontology.net/matrEquipment/Truck,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:truck rdfs:subClassOf :vehicle .
+
+",truck is a type of vehicle.,1,False
+sweet,http://sweetontology.net/matrEquipment/UnconfinedWell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unconfined_well rdfs:subClassOf :well .
+
+",unconfined well is a type of well.,1,False
+sweet,http://sweetontology.net/matrEquipment/Vehicle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vehicle rdfs:subClassOf :transportation_equipment .
+
+",vehicle is a type of transportation equipment.,1,False
+sweet,http://sweetontology.net/matrEquipment/Well,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:well rdfs:subClassOf :equipment .
+
+",well is a type of equipment.,1,False
+sweet,http://sweetontology.net/matrEquipment/Wireless,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wireless rdfs:subClassOf :communication_method .
+
+",wireless is a type of communication method.,1,False
+sweet,http://sweetontology.net/matrFacility/AgriculturalProductionFacility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agricultural_production_facility rdfs:subClassOf :facility .
+
+",agricultural production facility is a type of facility.,1,False
+sweet,http://sweetontology.net/matrFacility/AirTrafficControlCenter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_traffic_control_center rdfs:subClassOf :airport_facility .
+
+",air traffic control center is a type of airport facility.,1,False
+sweet,http://sweetontology.net/matrFacility/AirTrafficControlEnRouteCenter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_traffic_control_en_route_center rdfs:subClassOf :air_traffic_control_center .
+
+",air traffic control en route center is a type of air traffic control center.,1,False
+sweet,http://sweetontology.net/matrFacility/AirTrafficControlRadarRoom,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_traffic_control_radar_room rdfs:subClassOf :airport_facility .
+
+",air traffic control radar room is a type of airport facility.,1,False
+sweet,http://sweetontology.net/matrFacility/AirTrafficControlTower,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_traffic_control_tower rdfs:subClassOf :airport_facility .
+
+",air traffic control tower is a type of airport facility.,1,False
+sweet,http://sweetontology.net/matrFacility/AirTransitway,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_transitway rdfs:subClassOf :airport_facility .
+
+",air transitway is a type of airport facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Airport,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:airport rdfs:subClassOf :airport_facility .
+
+",airport is a type of airport facility.,1,False
+sweet,http://sweetontology.net/matrFacility/AirportFacility,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:airport_facility rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :air_traffic ;
+            owl:onProperty :has_human_activity ],
+        :facility .
+
+","Air traffic control is a system of air traffic management that coordinates the movement of aircraft both in the air and on the ground. It ensures safe, orderly, and efficient flow of air traffic by providing necessary information and instructions to pilots, as well as managing airspace and runway usage. Air traffic control is essential for maintaining safety standards and preventing accidents or conflicts between aircraft in the sky.",2,True
+sweet,http://sweetontology.net/matrFacility/Base,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:base rdfs:subClassOf :facility .
+
+",base is a type of facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Building,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:building rdfs:subClassOf :structure .
+
+",building is a type of structure.,1,False
+sweet,http://sweetontology.net/matrFacility/CommunicationFacility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:communication_facility rdfs:subClassOf :facility .
+
+",communication facility is a type of facility.,1,False
+sweet,http://sweetontology.net/matrFacility/CulturalFeature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cultural_feature rdfs:subClassOf :structure .
+
+",cultural feature is a type of structure.,1,False
+sweet,http://sweetontology.net/matrFacility/Dome,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dome rdfs:subClassOf :facility .
+
+",dome is a type of facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Facility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:facility rdfs:subClassOf :structure .
+
+",facility is a type of structure.,1,False
+sweet,http://sweetontology.net/matrFacility/Farm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:farm rdfs:subClassOf :agricultural_production_facility .
+
+",farm is a type of agricultural production facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Fishery,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fishery rdfs:subClassOf :agricultural_production_facility .
+
+",fishery is a type of agricultural production facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Habitat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:habitat rdfs:subClassOf :building .
+
+",habitat is a type of building.,1,False
+sweet,http://sweetontology.net/matrFacility/MeteorologicalFacility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meteorological_facility rdfs:subClassOf :facility .
+
+",meteorological facility is a type of facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Meteostation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meteostation rdfs:subClassOf :meteorological_facility .
+
+",meteostation is a type of meteorological facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Mine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mine rdfs:subClassOf :mining_facility .
+
+",mine is a type of mining facility.,1,False
+sweet,http://sweetontology.net/matrFacility/MiningFacility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mining_facility rdfs:subClassOf :facility .
+
+",mining facility is a type of facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Plantation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plantation rdfs:subClassOf :farm .
+
+",plantation is a type of farm.,1,False
+sweet,http://sweetontology.net/matrFacility/Platform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:platform rdfs:subClassOf :structure .
+
+",platform is a type of structure.,1,False
+sweet,http://sweetontology.net/matrFacility/Runway,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:runway rdfs:subClassOf :airport_facility .
+
+",runway is a type of airport facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Station,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:station rdfs:subClassOf :facility .
+
+",station is a type of facility.,1,False
+sweet,http://sweetontology.net/matrFacility/Structure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:structure rdfs:subClassOf :infrastructure .
+
+",structure is a type of infrastructure.,1,False
+sweet,http://sweetontology.net/matrFacility/TransportationFacility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transportation_facility rdfs:subClassOf :facility .
+
+",transportation facility is a type of facility.,1,False
+sweet,http://sweetontology.net/matrIndustrial/Alloy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alloy rdfs:subClassOf :solution .
+
+",alloy is a type of solution.,1,False
+sweet,http://sweetontology.net/matrIndustrial/Cement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cement rdfs:subClassOf :mixed_chemical_substance,
+        :mixture .
+
+","cement is a type of mixed chemical substance.
+cement is a type of mixture.",2,True
+sweet,http://sweetontology.net/matrIndustrial/Colloid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:colloid rdfs:subClassOf :mixed_chemical_substance,
+        :mixture .
+
+","Colloid is a type of mixture where particles are distributed throughout the solvent. These particles can be made up of different materials and have various sizes. Colloidal suspensions, for example, consist of finely divided particles that remain suspended in a liquid without settling to the bottom or clumping together. Other types of colloids include emulsions, where small droplets of one substance are dispersed throughout another substance; and sols, which are similar to emulsions but have solid particles instead of liquid ones. Colloidal systems often have unique properties that set them apart from other types of mixtures.",2,True
+sweet,http://sweetontology.net/matrIndustrial/ForestProduct,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forest_product rdfs:subClassOf :product .
+
+",forest product is a type of product.,1,False
+sweet,http://sweetontology.net/matrIndustrial/IndustrialProduct,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:industrial_product rdfs:subClassOf :product .
+
+",industrial product is a type of product.,1,False
+sweet,http://sweetontology.net/matrIndustrial/Product,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:product rdfs:subClassOf :material_thing .
+
+",product is a type of material thing.,1,False
+sweet,http://sweetontology.net/matrIndustrial/Slurry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slurry rdfs:subClassOf :mixed_chemical_substance,
+        :mixture .
+
+","Slurry is indeed a type of mixed chemical substance. However, it can also refer to any mixture that consists of finely divided particles or droplets of two or more substances suspended in a liquid medium. The term slurry is commonly used in various industries such as agriculture, mining, and food processing. In agriculture, slurries are often made by mixing chemical fertilizers with water to create a nutrient-rich solution that can be applied to crops through irrigation systems or other methods. In the mining industry, slurries are created when finely ground ore particles are mixed with water and other substances to facilitate transportation and processing. And in food processing, slurries are used to blend ingredients like sugar, cocoa powder, and milk for various confectionery products. So while it is true that slurry can refer to a type of mixed chemical substance, its broader definition encompasses many other types of mixtures as well.",2,True
+sweet,http://sweetontology.net/matrIndustrial/Supply,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supply rdfs:subClassOf :product .
+
+",supply is a type of product.,1,False
+sweet,http://sweetontology.net/matrIndustrial/Yield,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:yield rdfs:subClassOf :product .
+
+",yield is a type of product.,1,False
+sweet,http://sweetontology.net/matrInstrument/Anemometer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anemometer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :wind_speed ;
+            owl:onProperty :measures ],
+        :device,
+        :instrument .
+
+","Anemometer is a type of device or instrument that measures wind speed. It typically consists of a rotating cuff, which is mounted on a tower or other elevated structure, and is used to determine the wind speed by measuring the force exerted by the wind on the moving parts.",3,True
+sweet,http://sweetontology.net/matrInstrument/Buoy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:buoy rdfs:subClassOf :device,
+        :instrument .
+
+","Buoy is a type of device that is used to measure and monitor various oceanographic parameters such as water temperature, salinity, and currents. It is often moored at fixed positions in the water and equipped with sensors that collect data on these parameters. Buoys can also be used for navigation purposes by providing location information and warning mariners of potential hazards like rocks or shoals.",2,True
+sweet,http://sweetontology.net/matrInstrument/Device,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:device rdfs:subClassOf :equipment ;
+    owl:equivalentClass :instrument .
+
+","A device is a tool or instrument that is designed to perform specific tasks, such as measuring, analyzing, or controlling. It can refer to various types of equipment, including computers, smartphones, televisions, and other electronic devices. The term ""device"" encompasses both hardware (the physical components) and software (the programs that run on the device).",2,True
+sweet,http://sweetontology.net/matrInstrument/DopplerRadar,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:doppler_radar rdfs:subClassOf :radar .
+
+",doppler radar is a type of radar.,1,False
+sweet,http://sweetontology.net/matrInstrument/GPS,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gps rdfs:subClassOf :device,
+        :instrument ;
+    owl:equivalentClass :global_positioning_system .
+
+","That is correct! A GPS, or Global Positioning System, is a type of device that uses satellite signals to determine the location of a receiver on Earth. It can also be referred to as an instrument or system.",3,True
+sweet,http://sweetontology.net/matrInstrument/GlobalPositioningSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:global_positioning_system rdfs:subClassOf :device,
+        :instrument .
+
+","The Global Positioning System (GPS) is a satellite-based navigation system that provides location and time information anywhere on Earth. It consists of a network of satellites orbiting the planet, ground control stations, and GPS receivers, which are used by people to determine their position, track their movements, and navigate to specific locations. GPS works by emitting radio waves that travel to the Earth's surface, where they are received by GPS receivers, which then calculate the distance to the satellites based on the time it takes for the radio waves to reach the receiver. This information is used to determine the user's location and display it on a map or other visual interface.",2,True
+sweet,http://sweetontology.net/matrInstrument/Instrument,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:instrument rdfs:subClassOf :equipment .
+
+",instrument is a type of equipment.,1,False
+sweet,http://sweetontology.net/matrInstrument/LIDAR,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lidar rdfs:subClassOf :device,
+        :instrument .
+
+","Lidar, also known as Light Detection and Ranging, is a type of device that uses laser light to measure distances. It works by emitting a laser beam towards a target, and then measuring the time it takes for the laser light to bounce back from the target. By knowing the speed of light, the distance between the lidar device and the target can be calculated. Lidar is commonly used in various applications such as surveying, mapping, and autonomous vehicles. It has also been used in research for studying atmospheric aerosols, wildlife tracking, and remote sensing of vegetation.",2,True
+sweet,http://sweetontology.net/matrInstrument/Magnetogram,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetogram rdfs:subClassOf :device,
+        :instrument .
+
+","A magnetogram is a device that measures the strength and direction of magnetic fields. It's often used in geology, paleomagnetism, and other fields to study the Earth's magnetic field and its history. An instrument is a tool or apparatus used to measure, record, or analyze physical quantities, such as temperature, pressure, or light intensity. While magnetograms are indeed devices that measure magnetic fields, they can also be considered instruments in a broader sense because they are used to gather data about the Earth's magnetic field.",2,True
+sweet,http://sweetontology.net/matrInstrument/Manometer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:manometer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pressure ;
+            owl:onProperty :measures ],
+        :device,
+        :instrument .
+
+","A manometer is a type of instrument that measures pressure. Specifically, it measures the difference in pressure between two points in a fluid or gas system. Manometers can be used to measure the pressure in various systems, such as steam boilers, water supply systems, and chemical processes. There are several types of manometers, including vacuum, mercury, and aneroid. Vacuum manometers measure the difference in pressure between two points in a vacuum system, while mercury manometers use a column of liquid to show the pressure, and aneroid manometers use a bellows to indicate the pressure.",3,True
+sweet,http://sweetontology.net/matrInstrument/Microscope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microscope rdfs:subClassOf :optical_instrument .
+
+",microscope is a type of optical instrument.,1,False
+sweet,http://sweetontology.net/matrInstrument/OpticalInstrument,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:optical_instrument rdfs:subClassOf :device,
+        :instrument .
+
+","Optical instrument is a type of device that uses light to collect information and create images or other visual output. Examples include microscopes, telescopes, binoculars, and cameras.",2,True
+sweet,http://sweetontology.net/matrInstrument/Piezometer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piezometer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pressure ;
+            owl:onProperty :measures ],
+        :device,
+        :instrument .
+
+","Piezometer is a type of device that measures pressure. It is commonly used in geotechnical engineering and other fields to measure the stress and deformation of soil, rocks, and other materials. There are different types of piezometers, such as strain gauges, load cells, and capacitive sensors, which can be used depending on the specific application and measurement requirements.",3,True
+sweet,http://sweetontology.net/matrInstrument/Radar,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radar rdfs:subClassOf :device,
+        :instrument .
+
+","Radar is a type of device that uses radio waves to detect and track objects, such as aircraft or ships. It works by emitting high-frequency electromagnetic waves that bounce off objects and return to the radar system, providing information about their size, shape, and location. Radar systems are commonly used in military applications, as well as in aviation, maritime, and other industries for navigation, collision avoidance, and surveillance purposes.",2,True
+sweet,http://sweetontology.net/matrInstrument/Sensor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sensor rdfs:subClassOf :device,
+        :instrument,
+        :sensor .
+
+","A sensor is a type of device, instrument, or sensor that detects and measures physical quantities such as temperature, light, motion, humidity, or pressure. Sensors can be found in various applications including home automation systems, industrial control systems, and scientific research.
+
+In the context of home automation systems, sensors are used to detect and measure different aspects of a household's environment, such as temperature, light levels, moisture, or motion. This data is then used to control various devices within the house, such as lights, thermostats, or security cameras. For example, if a sensor detects that the temperature in a room is too high, it can trigger an air conditioning unit to turn on and cool down the space.
+
+In industrial settings, sensors are often used to monitor and control various processes, such as manufacturing equipment, water treatment plants, or power generation facilities. By continuously monitoring different physical quantities, sensors help ensure that systems operate efficiently and safely while also preventing potential issues from developing over time. For instance, a humidity sensor can detect changes in moisture levels within a factory or warehouse environment, allowing for adjustments to be made to maintain optimal conditions for the stored goods.
+
+Overall, sensors play a crucial role in our everyday lives and are essential components of modern technology. They enable us to monitor and control various aspects of our surroundings, improving efficiency and safety while also providing valuable insights into different physical phenomena.",3,True
+sweet,http://sweetontology.net/matrInstrument/Telescope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:telescope rdfs:subClassOf :optical_instrument .
+
+",telescope is a type of optical instrument.,1,False
+sweet,http://sweetontology.net/matrInstrument/Telethermometer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:telethermometer rdfs:subClassOf :thermometer .
+
+",telethermometer is a type of thermometer.,1,False
+sweet,http://sweetontology.net/matrInstrument/Tensiometer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tensiometer rdfs:subClassOf :device,
+        :instrument .
+
+","A tensiometer is a type of instrument used to measure the tension or stress on a material. It can be used in various fields, such as engineering, physics, and geology, to measure the force required to stretch a sample, gauge the stiffness of a material, or detect any changes in a material's properties. There are different types of tensiometers available, each designed for specific purposes and applications. For example, a capillary tensiometer measures the tension inside a small capillary filled with water, while a ring tensiometer uses a circular sample and applies pressure to measure the force required to deform it. Some common examples include the Kemps Tensiometer, the T-bar Tensiometer, and the Wilkeson Tensiometer.",2,True
+sweet,http://sweetontology.net/matrInstrument/Thermometer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermometer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :temperature ;
+            owl:onProperty :measures ],
+        :device,
+        :instrument .
+
+","A thermometer is a device that measures temperature. It can be used for medical purposes, such as measuring the body temperature of a person or an animal, or for scientific purposes, such as studying the temperature of a substance in a laboratory setting.
+There are different types of thermometers, including contact thermometers, which measure the heat that is emitted by the body, and non-contact thermometers, which measure the temperature of the surrounding air.
+Thermometers come in various shapes and sizes and can be used for a wide range of temperatures, from very low (-200 degrees Celsius) to extremely high (+150 degrees Celsius). They are usually made of materials that do not react with the substances being measured, such as glass or plastic, and they often have a scale on which the temperature is displayed in units like Celsius or Fahrenheit.
+In summary, a thermometer is a device used to measure temperature, and there are different types available for various applications.",3,True
+sweet,http://sweetontology.net/matrInstrument/TideGauge,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tide_gauge rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean_tide ;
+            owl:onProperty :measures ],
+        :device,
+        :instrument .
+
+","A tide gauge is a type of device that measures the level of the ocean at a particular location. It is used to monitor changes in the ocean's water levels and can provide valuable information for weather forecasting, coastal management, and other marine applications. Tide gauges typically consist of a series of sensors and instruments that measure the height of the water relative to a fixed reference point, such as the ground or a particular marker. They can be found in harbors, along coastlines, and at other locations where accurate measurements of ocean levels are required.",3,True
+sweet,http://sweetontology.net/matrIon/Anion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anion rdfs:subClassOf :ion .
+
+",anion is a type of ion.,1,False
+sweet,http://sweetontology.net/matrIon/Cation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cation rdfs:subClassOf :ion .
+
+",cation is a type of ion.,1,False
+sweet,http://sweetontology.net/matrIon/HeavyIon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heavy_ion rdfs:subClassOf :ion .
+
+",heavy ion is a type of ion.,1,False
+sweet,http://sweetontology.net/matrIon/Ion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ion rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ionized ;
+            owl:onProperty :has_state ],
+        :substance .
+
+","Ion is a type of substance, which is an atom or molecule that has gained or lost one or more electrons, giving it a positive or negative charge. Ions can be found in many different environments, including the atmosphere, water, and soil. They play important roles in various chemical reactions and processes, such as the formation of clouds and the regulation of pH levels in bodies of water.",2,True
+sweet,http://sweetontology.net/matrIon/SaltIon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:salt_ion rdfs:subClassOf :ion .
+
+",salt ion is a type of ion.,1,False
+sweet,http://sweetontology.net/matrIsotope/AlphaParticle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alpha_particle rdfs:subClassOf :energetic_particle .
+
+",alpha particle is a type of energetic particle.,1,False
+sweet,http://sweetontology.net/matrIsotope/BetaParticle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:beta_particle rdfs:subClassOf :energetic_particle .
+
+",beta particle is a type of energetic particle.,1,False
+sweet,http://sweetontology.net/matrIsotope/Isotope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isotope rdfs:subClassOf :chemical_element,
+        :element .
+
+","Isotope is a type of chemical element, specifically an atom with the same number of protons in its nucleus but a different number of neutrons. This means that isotopes of the same element have similar chemical properties, but differ in density and atomic weight. Isotopes are commonly used in various applications such as medicine, science, and industry.",2,True
+sweet,http://sweetontology.net/matrIsotope/Nuclide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nuclide rdfs:subClassOf :radioactive_substance ;
+    owl:equivalentClass :radioisotope .
+
+","That is correct. A nucleus is the central part of an atom, and a radioisotope is a variant of a given element with unstable nuclei that decay into more stable forms, releasing energy in the process. Nucleides are formed when protons and neutrons combine to form a nucleus, which can be either stable or unstable. If an unstable nucleus decays, it releases radiation in the form of alpha or beta particles, gamma rays, or other forms of electromagnetic radiation. These different types of radiation can have varying levels of energy and penetrability, depending on their wavelength and frequency. So, to sum up, a nuclide is indeed the same as a radioisotope, which is a type of radioactive substance with unstable nucleus that can decay and release radiation.",2,True
+sweet,http://sweetontology.net/matrIsotope/Radiation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiation rdfs:subClassOf :substance .
+
+",radiation is a type of substance.,1,False
+sweet,http://sweetontology.net/matrIsotope/RadioactiveSubstance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radioactive_substance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :radioactive ;
+            owl:onProperty :has_state ],
+        :substance .
+
+","A radioactive substance is a type of matter that emits radiation in the form of alpha or beta particles. These particles are high-energy photons that can ionize atoms and molecules, causing them to be unstable and emit more radiation. This process is known as radioactivity.
+
+Radioactive substances can be naturally occurring, such as uranium and thorium, or artificially created through nuclear reactions, such as in a nuclear power plant or a medical imaging facility. While some radioactive substances are beneficial, such as in the case of medical treatments like radiotherapy, others can pose a risk to human health if they come into contact with living tissue or if they are ingested or inhaled.
+
+In order to safely handle and work with radioactive substances, individuals must receive specialized training and follow strict safety protocols. This includes wearing protective gear like gloves and masks, as well as maintaining a safe distance from the source of radiation. It is also important to dispose of radioactive waste properly in order to minimize its impact on the environment and public health.",2,True
+sweet,http://sweetontology.net/matrIsotope/Radiocarbon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiocarbon rdfs:subClassOf :radioactive_substance .
+
+",radiocarbon is a type of radioactive substance.,1,False
+sweet,http://sweetontology.net/matrIsotope/Radioelement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radioelement rdfs:subClassOf :chemical_element,
+        :element,
+        :radioactive_substance .
+
+","Radioelement is a type of chemical element.
+Radioelement is a type of element.
+Radioelement is a type of radioactive substance.",3,True
+sweet,http://sweetontology.net/matrIsotope/Radioisotope,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radioisotope rdfs:subClassOf :radioactive_substance ;
+    owl:equivalentClass :radionuclide .
+
+","Radioisotope and radionuclide are not exactly the same thing, although they are related. A radioisotope is a type of radioactive substance that has unstable nucleus, which means it can decay into other elements. On the other hand, a radionuclide is any radioactive isotope or atom that has a specific atomic number and mass number, regardless of whether it decays or not. So, while radioisotopes are a subset of radionuclides, they are not exactly the same thing.",2,True
+sweet,http://sweetontology.net/matrIsotope/Radionuclide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radionuclide rdfs:subClassOf :radioactive_substance .
+
+",radionuclide is a type of radioactive substance.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Algae,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:algae rdfs:subClassOf :plant ;
+    owl:equivalentClass :algal .
+
+","Algae is a term that refers to a diverse group of photosynthetic eukaryotic organisms, typically found in aquatic environments such as oceans, lakes, and ponds. These organisms are characterized by their ability to perform photosynthesis, which allows them to convert sunlight, carbon dioxide, and water into energy and nutrients needed for growth. Algae come in various shapes and sizes, ranging from single-celled microorganisms to complex multicellular organisms such as seaweed. While algae can be found in both freshwater and saltwater environments, they are often classified based on their habitat and the specific conditions under which they grow. For instance, there are marine algae that live in open ocean waters, while others may thrive in shallow coastal areas or even inland freshwater systems. Overall, algae play an essential role in aquatic ecosystems, providing food for various species and serving as a key component of the food web.",2,True
+sweet,http://sweetontology.net/matrMicrobiota/Algal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:algal rdfs:subClassOf :plant .
+
+",algal is a type of plant.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Amoebae,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amoebae rdfs:subClassOf :microbiota_taxonomy .
+
+",amoebae is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Bacteria,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bacteria rdfs:subClassOf :microbiota_taxonomy .
+
+",bacteria is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/BlueGreenAlgae,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:blue_green_algae rdfs:subClassOf :algae,
+        :algal .
+
+","Blue-green algae, also known as cyanobacteria, are a type of bacteria that can multiply rapidly under certain conditions. They are often found in water bodies such as lakes, ponds, and rivers, as well as in soil. These bacteria can produce harmful toxins called microcystins, which can be dangerous for human and animal health if ingested or come into contact with the skin. It is important to practice safe water activities and avoid swimming or wading in areas where blue-green algae has been identified, as well as to wash hands thoroughly after coming into contact with potentially contaminated water.",2,True
+sweet,http://sweetontology.net/matrMicrobiota/Ciliate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ciliate rdfs:subClassOf :microbiota_taxonomy .
+
+",ciliate is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/ClostridiumPerfringen,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clostridium_perfringen rdfs:subClassOf :bacteria .
+
+",clostridium perfringen is a type of bacteria.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Coccolithophore,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coccolithophore rdfs:subClassOf :microbiota_taxonomy .
+
+",coccolithophore is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Coliform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coliform rdfs:subClassOf :bacteria .
+
+",coliform is a type of bacteria.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Diatom,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diatom rdfs:subClassOf :microbiota_taxonomy .
+
+",diatom is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Diazotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diazotroph rdfs:subClassOf :microbiota_taxonomy .
+
+",diazotroph is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Enterococci,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enterococci rdfs:subClassOf :bacteria .
+
+",enterococci is a type of bacteria.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/EscherichiaColi,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:escherichia_coli rdfs:subClassOf :bacteria .
+
+",escherichia coli is a type of bacteria.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/FecalColiform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fecal_coliform rdfs:subClassOf :coliform .
+
+",fecal coliform is a type of coliform.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/FecalStreptococci,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fecal_streptococci rdfs:subClassOf :bacteria .
+
+",fecal streptococci is a type of bacteria.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Flagellate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flagellate rdfs:subClassOf :microbiota_taxonomy .
+
+",flagellate is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Foraminifer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foraminifer rdfs:subClassOf :microbiota_taxonomy .
+
+",foraminifer is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/MarineMicrobiota,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_microbiota rdfs:subClassOf :marine_plant,
+        :microbiota .
+
+","Marine microbiota refers to the diverse community of microorganisms that inhabit marine environments, such as oceans, seas, and coastal areas. These microbes can include bacteria, archaea, viruses, fungi, and algae, among others. They play a crucial role in maintaining the balance of the marine ecosystem and are involved in various processes, such as nutrient cycling, oxygen production, and decomposition of organic matter. Additionally, some marine microbes have potential applications in industries like medicine, agriculture, and biotechnology.",2,True
+sweet,http://sweetontology.net/matrMicrobiota/Microalgae,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microalgae rdfs:subClassOf :microbiota_taxonomy .
+
+",microalgae is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Microbiota,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microbiota rdfs:subClassOf :plant .
+
+",microbiota is a type of plant.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/MicrobiotaTaxonomy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microbiota_taxonomy rdfs:subClassOf :microbiota .
+
+",microbiota taxonomy is a type of microbiota.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Microphyte,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microphyte rdfs:subClassOf :plant .
+
+",microphyte is a type of plant.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Mold,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mold rdfs:subClassOf :fungi_taxonomy .
+
+",mold is a type of fungi taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Phytoplankton,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phytoplankton rdfs:subClassOf :microbiota_taxonomy .
+
+",phytoplankton is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Picophytoplankton,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:picophytoplankton rdfs:subClassOf :microbiota_taxonomy .
+
+",picophytoplankton is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Plankton,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plankton rdfs:subClassOf :microbiota_taxonomy .
+
+",plankton is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Protist,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protist rdfs:subClassOf :microbiota_taxonomy .
+
+",protist is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Radiolarian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiolarian rdfs:subClassOf :microbiota_taxonomy .
+
+",radiolarian is a type of microbiota taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/SlimeMold,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slime_mold rdfs:subClassOf :mold .
+
+",slime mold is a type of mold.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Sporozoan,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sporozoan rdfs:subClassOf :fungi_taxonomy .
+
+",sporozoan is a type of fungi taxonomy.,1,False
+sweet,http://sweetontology.net/matrMicrobiota/Yeast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:yeast rdfs:subClassOf :fungi_taxonomy .
+
+",yeast is a type of fungi taxonomy.,1,False
+sweet,http://sweetontology.net/matrMineral/Abelsonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abelsonite rdfs:subClassOf :mineral .
+
+",abelsonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Abenakiite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abenakiite_ce_ rdfs:subClassOf :mineral .
+
+",abenakiite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Abernathyite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abernathyite rdfs:subClassOf :mineral .
+
+",abernathyite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Abhurite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abhurite rdfs:subClassOf :mineral .
+
+",abhurite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Abramovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abramovite rdfs:subClassOf :mineral .
+
+",abramovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Abrazite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abrazite rdfs:subClassOf :mineral .
+
+",abrazite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Abswurmbachite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abswurmbachite rdfs:subClassOf :mineral .
+
+",abswurmbachite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Abukumalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abukumalite rdfs:subClassOf :mineral .
+
+",abukumalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Acadialite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acadialite rdfs:subClassOf :mineral .
+
+",acadialite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Acanthite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acanthite rdfs:subClassOf :mineral .
+
+",acanthite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Acetamide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acetamide rdfs:subClassOf :mineral .
+
+",acetamide is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Achavalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:achavalite rdfs:subClassOf :mineral .
+
+",achavalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Achiardite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:achiardite rdfs:subClassOf :mineral .
+
+",achiardite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Achroite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:achroite rdfs:subClassOf :mineral .
+
+",achroite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Achtarandite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:achtarandite rdfs:subClassOf :mineral .
+
+",achtarandite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Acicular_iron_ore,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acicular_iron_ore rdfs:subClassOf :mineral .
+
+",acicular iron ore is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Acmite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acmite rdfs:subClassOf :mineral .
+
+",acmite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Actinolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:actinolite rdfs:subClassOf :mineral .
+
+",actinolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Acuminite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acuminite rdfs:subClassOf :mineral .
+
+",acuminite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Adamite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adamite rdfs:subClassOf :mineral .
+
+",adamite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Adamsite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adamsite_y_ rdfs:subClassOf :mineral .
+
+",adamsite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Adelite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adelite rdfs:subClassOf :mineral .
+
+",adelite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Adipite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adipite rdfs:subClassOf :mineral .
+
+",adipite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Admontite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:admontite rdfs:subClassOf :mineral .
+
+",admontite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Adranosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adranosite rdfs:subClassOf :mineral .
+
+",adranosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Adularia,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adularia rdfs:subClassOf :mineral .
+
+",adularia is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aedelforsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aedelforsite rdfs:subClassOf :mineral .
+
+",aedelforsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aedelite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aedelite rdfs:subClassOf :mineral .
+
+",aedelite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aegirine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aegirine rdfs:subClassOf :mineral .
+
+",aegirine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aegirine_augite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aegirine_augite rdfs:subClassOf :mineral .
+
+",aegirine augite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aenigmatite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aenigmatite rdfs:subClassOf :mineral .
+
+",aenigmatite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aerinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aerinite rdfs:subClassOf :mineral .
+
+",aerinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aerugite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aerugite rdfs:subClassOf :mineral .
+
+",aerugite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aeschynite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aeschynite_ce_ rdfs:subClassOf :mineral .
+
+",aeschynite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aeschynite_Nd,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aeschynite_nd_ rdfs:subClassOf :mineral .
+
+",aeschynite nd  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aeschynite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aeschynite_y_ rdfs:subClassOf :mineral .
+
+",aeschynite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Afghanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:afghanite rdfs:subClassOf :mineral .
+
+",afghanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Afwillite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:afwillite rdfs:subClassOf :mineral .
+
+",afwillite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agardite_Ca,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agardite_ca_ rdfs:subClassOf :mineral .
+
+",agardite ca  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agardite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agardite_ce_ rdfs:subClassOf :mineral .
+
+",agardite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agardite_Dy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agardite_dy_ rdfs:subClassOf :mineral .
+
+",agardite dy  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agardite_La,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agardite_la_ rdfs:subClassOf :mineral .
+
+",agardite la  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agardite_Nd,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agardite_nd_ rdfs:subClassOf :mineral .
+
+",agardite nd  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agardite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agardite_y_ rdfs:subClassOf :mineral .
+
+",agardite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agate rdfs:subClassOf :mineral .
+
+",agate is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agnolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agnolite rdfs:subClassOf :mineral .
+
+",agnolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agrellite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agrellite rdfs:subClassOf :mineral .
+
+",agrellite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Agrinierite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agrinierite rdfs:subClassOf :mineral .
+
+",agrinierite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aguilarite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aguilarite rdfs:subClassOf :mineral .
+
+",aguilarite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aheylite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aheylite rdfs:subClassOf :mineral .
+
+",aheylite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ahlfeldite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ahlfeldite rdfs:subClassOf :mineral .
+
+",ahlfeldite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ahlfeldite1,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ahlfeldite1 rdfs:subClassOf :mineral .
+
+",ahlfeldite1 is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aikinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aikinite rdfs:subClassOf :mineral .
+
+",aikinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aiolosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aiolosite rdfs:subClassOf :mineral .
+
+",aiolosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ajoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ajoite rdfs:subClassOf :mineral .
+
+",ajoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Akaganeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:akaganeite rdfs:subClassOf :mineral .
+
+",akaganeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Akatoreite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:akatoreite rdfs:subClassOf :mineral .
+
+",akatoreite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Akdalaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:akdalaite rdfs:subClassOf :mineral .
+
+",akdalaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Akermanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:akermanite rdfs:subClassOf :mineral .
+
+",akermanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Akhtenskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:akhtenskite rdfs:subClassOf :mineral .
+
+",akhtenskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Akimotoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:akimotoite rdfs:subClassOf :mineral .
+
+",akimotoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Akrochordite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:akrochordite rdfs:subClassOf :mineral .
+
+",akrochordite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aksaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aksaite rdfs:subClassOf :mineral .
+
+",aksaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aktashite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aktashite rdfs:subClassOf :mineral .
+
+",aktashite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alabandite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alabandite rdfs:subClassOf :mineral .
+
+",alabandite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alabaster,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alabaster rdfs:subClassOf :mineral .
+
+",alabaster is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alacranite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alacranite rdfs:subClassOf :mineral .
+
+",alacranite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alamosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alamosite rdfs:subClassOf :mineral .
+
+",alamosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alarsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alarsite rdfs:subClassOf :mineral .
+
+",alarsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Albite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:albite rdfs:subClassOf :mineral .
+
+",albite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Albrechtschraufite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:albrechtschraufite rdfs:subClassOf :mineral .
+
+",albrechtschraufite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aldermanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aldermanite rdfs:subClassOf :mineral .
+
+",aldermanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aldzhanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aldzhanite rdfs:subClassOf :mineral .
+
+",aldzhanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aleksite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aleksite rdfs:subClassOf :mineral .
+
+",aleksite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alexandrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alexandrite rdfs:subClassOf :mineral .
+
+",alexandrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alflarsenite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alflarsenite rdfs:subClassOf :mineral .
+
+",alflarsenite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alforsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alforsite rdfs:subClassOf :mineral .
+
+",alforsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alfredstelznerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alfredstelznerite rdfs:subClassOf :mineral .
+
+",alfredstelznerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Algodonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:algodonite rdfs:subClassOf :mineral .
+
+",algodonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aliettite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aliettite rdfs:subClassOf :mineral .
+
+",aliettite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allabogdanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allabogdanite rdfs:subClassOf :mineral .
+
+",allabogdanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allactite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allactite rdfs:subClassOf :mineral .
+
+",allactite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allanite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allanite_ce_ rdfs:subClassOf :mineral .
+
+",allanite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allanite_La,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allanite_la_ rdfs:subClassOf :mineral .
+
+",allanite la  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allanite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allanite_y_ rdfs:subClassOf :mineral .
+
+",allanite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allanpringite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allanpringite rdfs:subClassOf :mineral .
+
+",allanpringite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allargentum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allargentum rdfs:subClassOf :mineral .
+
+",allargentum is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alleghanyite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alleghanyite rdfs:subClassOf :mineral .
+
+",alleghanyite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allemontite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allemontite rdfs:subClassOf :mineral .
+
+",allemontite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allendeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allendeite rdfs:subClassOf :mineral .
+
+",allendeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allochalcoselite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allochalcoselite rdfs:subClassOf :mineral .
+
+",allochalcoselite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alloclasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alloclasite rdfs:subClassOf :mineral .
+
+",alloclasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Allophane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allophane rdfs:subClassOf :mineral .
+
+",allophane is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alloriite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alloriite rdfs:subClassOf :mineral .
+
+",alloriite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alluaivite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alluaivite rdfs:subClassOf :mineral .
+
+",alluaivite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alluaudite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alluaudite rdfs:subClassOf :mineral .
+
+",alluaudite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Almagrerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:almagrerite rdfs:subClassOf :mineral .
+
+",almagrerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Almandine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:almandine rdfs:subClassOf :mineral .
+
+",almandine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Almandite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:almandite rdfs:subClassOf :mineral .
+
+",almandite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Almarudite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:almarudite rdfs:subClassOf :mineral .
+
+",almarudite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Almbosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:almbosite rdfs:subClassOf :mineral .
+
+",almbosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Almeraite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:almeraite rdfs:subClassOf :mineral .
+
+",almeraite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alpersite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alpersite rdfs:subClassOf :mineral .
+
+",alpersite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alsakharovite_Zn,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alsakharovite_zn rdfs:subClassOf :mineral .
+
+",alsakharovite zn is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alstonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alstonite rdfs:subClassOf :mineral .
+
+",alstonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Altaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:altaite rdfs:subClassOf :mineral .
+
+",altaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Althausite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:althausite rdfs:subClassOf :mineral .
+
+",althausite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Althupite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:althupite rdfs:subClassOf :mineral .
+
+",althupite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Altisite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:altisite rdfs:subClassOf :mineral .
+
+",altisite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Altmarkite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:altmarkite rdfs:subClassOf :mineral .
+
+",altmarkite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alum_K,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alum_k_ rdfs:subClassOf :mineral .
+
+",alum k  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alum_Na,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alum_na_ rdfs:subClassOf :mineral .
+
+",alum na  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminilite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminilite rdfs:subClassOf :mineral .
+
+",aluminilite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminite rdfs:subClassOf :mineral .
+
+",aluminite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminium,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminium rdfs:subClassOf :mineral .
+
+",aluminium is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alumino_magnesiohulsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alumino_magnesiohulsite rdfs:subClassOf :mineral .
+
+",alumino magnesiohulsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alumino_magnesiotaramite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alumino_magnesiotaramite rdfs:subClassOf :mineral .
+
+",alumino magnesiotaramite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminobarroisite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminobarroisite rdfs:subClassOf :mineral .
+
+",aluminobarroisite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminoceladonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminoceladonite rdfs:subClassOf :mineral .
+
+",aluminoceladonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminocerite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminocerite_ce_ rdfs:subClassOf :mineral .
+
+",aluminocerite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminocopiapite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminocopiapite rdfs:subClassOf :mineral .
+
+",aluminocopiapite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminoferrobarroisite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminoferrobarroisite rdfs:subClassOf :mineral .
+
+",aluminoferrobarroisite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminoferrohornblende,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminoferrohornblende rdfs:subClassOf :mineral .
+
+",aluminoferrohornblende is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminoferrotschermakite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminoferrotschermakite rdfs:subClassOf :mineral .
+
+",aluminoferrotschermakite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminokatophorite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminokatophorite rdfs:subClassOf :mineral .
+
+",aluminokatophorite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminomagnesiohornblende,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminomagnesiohornblende rdfs:subClassOf :mineral .
+
+",aluminomagnesiohornblende is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminomagnesiohulsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminomagnesiohulsite rdfs:subClassOf :mineral .
+
+",aluminomagnesiohulsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminomagnesiotaramite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminomagnesiotaramite rdfs:subClassOf :mineral .
+
+",aluminomagnesiotaramite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminotaramite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminotaramite rdfs:subClassOf :mineral .
+
+",aluminotaramite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminotschermakite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminotschermakite rdfs:subClassOf :mineral .
+
+",aluminotschermakite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminowinchite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminowinchite rdfs:subClassOf :mineral .
+
+",aluminowinchite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminum rdfs:subClassOf :mineral .
+
+",aluminum is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aluminum_Sulfate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminum_sulfate rdfs:subClassOf :mineral .
+
+",aluminum sulfate is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alumoakermanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alumoakermanite rdfs:subClassOf :mineral .
+
+",alumoakermanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alumohydrocalcite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alumohydrocalcite rdfs:subClassOf :mineral .
+
+",alumohydrocalcite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alumoklyuchevskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alumoklyuchevskite rdfs:subClassOf :mineral .
+
+",alumoklyuchevskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alumopharmacosiderite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alumopharmacosiderite rdfs:subClassOf :mineral .
+
+",alumopharmacosiderite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alumotantite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alumotantite rdfs:subClassOf :mineral .
+
+",alumotantite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alumotungstite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alumotungstite rdfs:subClassOf :mineral .
+
+",alumotungstite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alunite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alunite rdfs:subClassOf :mineral .
+
+",alunite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alunogen,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alunogen rdfs:subClassOf :mineral .
+
+",alunogen is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alushtite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alushtite rdfs:subClassOf :mineral .
+
+",alushtite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Alvanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alvanite rdfs:subClassOf :mineral .
+
+",alvanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amakinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amakinite rdfs:subClassOf :mineral .
+
+",amakinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amalgam,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amalgam rdfs:subClassOf :mineral .
+
+",amalgam is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amarantite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amarantite rdfs:subClassOf :mineral .
+
+",amarantite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amarillite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amarillite rdfs:subClassOf :mineral .
+
+",amarillite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amazonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amazonite rdfs:subClassOf :mineral .
+
+",amazonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amazonstone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amazonstone rdfs:subClassOf :mineral .
+
+",amazonstone is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amber,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amber rdfs:subClassOf :mineral .
+
+",amber is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amblygonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amblygonite rdfs:subClassOf :mineral .
+
+",amblygonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ameghinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ameghinite rdfs:subClassOf :mineral .
+
+",ameghinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amesite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amesite rdfs:subClassOf :mineral .
+
+",amesite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amethyst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amethyst rdfs:subClassOf :mineral .
+
+",amethyst is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amianthus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amianthus rdfs:subClassOf :mineral .
+
+",amianthus is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amicite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amicite rdfs:subClassOf :mineral .
+
+",amicite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aminoffite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aminoffite rdfs:subClassOf :mineral .
+
+",aminoffite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ammonia_alum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ammonia_alum rdfs:subClassOf :mineral .
+
+",ammonia alum is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ammonian_arcanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ammonian_arcanite rdfs:subClassOf :mineral .
+
+",ammonian arcanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ammonioalunite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ammonioalunite rdfs:subClassOf :mineral .
+
+",ammonioalunite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ammonioborite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ammonioborite rdfs:subClassOf :mineral .
+
+",ammonioborite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ammoniojarosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ammoniojarosite rdfs:subClassOf :mineral .
+
+",ammoniojarosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ammonioleucite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ammonioleucite rdfs:subClassOf :mineral .
+
+",ammonioleucite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ammonium_hexachlorostannate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ammonium_hexachlorostannate rdfs:subClassOf :mineral .
+
+",ammonium hexachlorostannate is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amosite rdfs:subClassOf :mineral .
+
+",amosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amphigene,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amphigene rdfs:subClassOf :mineral .
+
+",amphigene is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Amstallite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amstallite rdfs:subClassOf :mineral .
+
+",amstallite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Analcidite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:analcidite rdfs:subClassOf :mineral .
+
+",analcidite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Analcime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:analcime rdfs:subClassOf :mineral .
+
+",analcime is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Analcite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:analcite rdfs:subClassOf :mineral .
+
+",analcite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Analzim,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:analzim rdfs:subClassOf :mineral .
+
+",analzim is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anandite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anandite rdfs:subClassOf :mineral .
+
+",anandite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anapaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anapaite rdfs:subClassOf :mineral .
+
+",anapaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anatase,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anatase rdfs:subClassOf :mineral .
+
+",anatase is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ancylite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ancylite_ce_ rdfs:subClassOf :mineral .
+
+",ancylite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ancylite_La,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ancylite_la_ rdfs:subClassOf :mineral .
+
+",ancylite la  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andalusite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andalusite rdfs:subClassOf :mineral .
+
+",andalusite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andersonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andersonite rdfs:subClassOf :mineral .
+
+",andersonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andesine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andesine rdfs:subClassOf :mineral .
+
+",andesine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andorite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andorite rdfs:subClassOf :mineral .
+
+",andorite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andradite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andradite rdfs:subClassOf :mineral .
+
+",andradite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andreasbergolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andreasbergolite rdfs:subClassOf :mineral .
+
+",andreasbergolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andremeyerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andremeyerite rdfs:subClassOf :mineral .
+
+",andremeyerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andreolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andreolite rdfs:subClassOf :mineral .
+
+",andreolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andrewsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andrewsite rdfs:subClassOf :mineral .
+
+",andrewsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andreyivanovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andreyivanovite rdfs:subClassOf :mineral .
+
+",andreyivanovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Androsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:androsite rdfs:subClassOf :mineral .
+
+",androsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Androsite_La,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:androsite_la_ rdfs:subClassOf :mineral .
+
+",androsite la  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anduoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anduoite rdfs:subClassOf :mineral .
+
+",anduoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Andyrobertsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andyrobertsite rdfs:subClassOf :mineral .
+
+",andyrobertsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Angastonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angastonite rdfs:subClassOf :mineral .
+
+",angastonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Angelaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angelaite rdfs:subClassOf :mineral .
+
+",angelaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Angelellite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angelellite rdfs:subClassOf :mineral .
+
+",angelellite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anglarite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anglarite rdfs:subClassOf :mineral .
+
+",anglarite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anglesite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anglesite rdfs:subClassOf :mineral .
+
+",anglesite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anhydrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anhydrite rdfs:subClassOf :mineral .
+
+",anhydrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anilite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anilite rdfs:subClassOf :mineral .
+
+",anilite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ankangite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ankangite rdfs:subClassOf :mineral .
+
+",ankangite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ankerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ankerite rdfs:subClassOf :mineral .
+
+",ankerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ankinovichite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ankinovichite rdfs:subClassOf :mineral .
+
+",ankinovichite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ankoleite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ankoleite rdfs:subClassOf :mineral .
+
+",ankoleite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Annabergite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:annabergite rdfs:subClassOf :mineral .
+
+",annabergite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Annite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:annite rdfs:subClassOf :mineral .
+
+",annite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anorthite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anorthite rdfs:subClassOf :mineral .
+
+",anorthite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anorthoclase,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anorthoclase rdfs:subClassOf :mineral .
+
+",anorthoclase is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anorthominasragrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anorthominasragrite rdfs:subClassOf :mineral .
+
+",anorthominasragrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ansermetite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ansermetite rdfs:subClassOf :mineral .
+
+",ansermetite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antarcticite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antarcticite rdfs:subClassOf :mineral .
+
+",antarcticite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anthoinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anthoinite rdfs:subClassOf :mineral .
+
+",anthoinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anthonyite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anthonyite rdfs:subClassOf :mineral .
+
+",anthonyite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anthophyllite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anthophyllite rdfs:subClassOf :mineral .
+
+",anthophyllite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anthraquinone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anthraquinone rdfs:subClassOf :mineral .
+
+",anthraquinone is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antiedrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antiedrite rdfs:subClassOf :mineral .
+
+",antiedrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antigorite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antigorite rdfs:subClassOf :mineral .
+
+",antigorite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antimonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antimonite rdfs:subClassOf :mineral .
+
+",antimonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antimonpearceite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antimonpearceite rdfs:subClassOf :mineral .
+
+",antimonpearceite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antimonselite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antimonselite rdfs:subClassOf :mineral .
+
+",antimonselite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antimonsilver,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antimonsilver rdfs:subClassOf :mineral .
+
+",antimonsilver is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antimony,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antimony rdfs:subClassOf :mineral .
+
+",antimony is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antimony_Glance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antimony_glance rdfs:subClassOf :mineral .
+
+",antimony glance is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antimony_bloom,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antimony_bloom rdfs:subClassOf :mineral .
+
+",antimony bloom is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antimony_ochre,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antimony_ochre rdfs:subClassOf :mineral .
+
+",antimony ochre is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antitaenite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antitaenite rdfs:subClassOf :mineral .
+
+",antitaenite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Antlerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antlerite rdfs:subClassOf :mineral .
+
+",antlerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anyolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anyolite rdfs:subClassOf :mineral .
+
+",anyolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Anyuiite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anyuiite rdfs:subClassOf :mineral .
+
+",anyuiite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apachite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apachite rdfs:subClassOf :mineral .
+
+",apachite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apatite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apatite rdfs:subClassOf :mineral .
+
+",apatite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apatite_CaCl,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apatite_ca_cl_ rdfs:subClassOf :mineral .
+
+",apatite ca cl  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apatite_CaF,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apatite_caf_ rdfs:subClassOf :mineral .
+
+",apatite caf  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apatite_CaOH,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apatite_caoh_ rdfs:subClassOf :mineral .
+
+",apatite caoh  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apatite_CaOH_M,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apatite_caoh_m rdfs:subClassOf :mineral .
+
+",apatite caoh m is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apatite_SrOH,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apatite_sroh_ rdfs:subClassOf :mineral .
+
+",apatite sroh  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aphthalose,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aphthalose rdfs:subClassOf :mineral .
+
+",aphthalose is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aphthitalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aphthitalite rdfs:subClassOf :mineral .
+
+",aphthitalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apjohnite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apjohnite rdfs:subClassOf :mineral .
+
+",apjohnite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aplowite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aplowite rdfs:subClassOf :mineral .
+
+",aplowite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apoanalcite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apoanalcite rdfs:subClassOf :mineral .
+
+",apoanalcite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apophyllite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apophyllite rdfs:subClassOf :mineral .
+
+",apophyllite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apophyllite_KF,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apophyllite_kf_ rdfs:subClassOf :mineral .
+
+",apophyllite kf  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apophyllite_KOH,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apophyllite_koh_ rdfs:subClassOf :mineral .
+
+",apophyllite koh  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apophyllite_NaF,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apophyllite_naf_ rdfs:subClassOf :mineral .
+
+",apophyllite naf  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Apuanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apuanite rdfs:subClassOf :mineral .
+
+",apuanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aqualite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aqualite rdfs:subClassOf :mineral .
+
+",aqualite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aquamarine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aquamarine rdfs:subClassOf :mineral .
+
+",aquamarine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aragonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aragonite rdfs:subClassOf :mineral .
+
+",aragonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arakiite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arakiite rdfs:subClassOf :mineral .
+
+",arakiite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aramayoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aramayoite rdfs:subClassOf :mineral .
+
+",aramayoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arapovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arapovite rdfs:subClassOf :mineral .
+
+",arapovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aravaipaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aravaipaite rdfs:subClassOf :mineral .
+
+",aravaipaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arcanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arcanite rdfs:subClassOf :mineral .
+
+",arcanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Archerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:archerite rdfs:subClassOf :mineral .
+
+",archerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arctite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arctite rdfs:subClassOf :mineral .
+
+",arctite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arcubisite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arcubisite rdfs:subClassOf :mineral .
+
+",arcubisite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ardaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ardaite rdfs:subClassOf :mineral .
+
+",ardaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ardealite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ardealite rdfs:subClassOf :mineral .
+
+",ardealite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ardennite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ardennite rdfs:subClassOf :mineral .
+
+",ardennite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ardennite_As,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ardennite_as_ rdfs:subClassOf :mineral .
+
+",ardennite as  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ardennite_V,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ardennite_v_ rdfs:subClassOf :mineral .
+
+",ardennite v  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arduinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arduinite rdfs:subClassOf :mineral .
+
+",arduinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arfvedsonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arfvedsonite rdfs:subClassOf :mineral .
+
+",arfvedsonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Argentite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argentite rdfs:subClassOf :mineral .
+
+",argentite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Argentojarosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argentojarosite rdfs:subClassOf :mineral .
+
+",argentojarosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Argentopentlandite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argentopentlandite rdfs:subClassOf :mineral .
+
+",argentopentlandite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Argentopyrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argentopyrite rdfs:subClassOf :mineral .
+
+",argentopyrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Argentotennantite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argentotennantite rdfs:subClassOf :mineral .
+
+",argentotennantite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Argutite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argutite rdfs:subClassOf :mineral .
+
+",argutite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Argyrodite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argyrodite rdfs:subClassOf :mineral .
+
+",argyrodite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arhbarite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arhbarite rdfs:subClassOf :mineral .
+
+",arhbarite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aricite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aricite rdfs:subClassOf :mineral .
+
+",aricite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aristarainite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aristarainite rdfs:subClassOf :mineral .
+
+",aristarainite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arizonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arizonite rdfs:subClassOf :mineral .
+
+",arizonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arkelite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arkelite rdfs:subClassOf :mineral .
+
+",arkelite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Armalcolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:armalcolite rdfs:subClassOf :mineral .
+
+",armalcolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Armangite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:armangite rdfs:subClassOf :mineral .
+
+",armangite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Armbrusterite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:armbrusterite rdfs:subClassOf :mineral .
+
+",armbrusterite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Armenite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:armenite rdfs:subClassOf :mineral .
+
+",armenite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Armstrongite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:armstrongite rdfs:subClassOf :mineral .
+
+",armstrongite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arnhemite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arnhemite rdfs:subClassOf :mineral .
+
+",arnhemite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arrojadite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrojadite rdfs:subClassOf :mineral .
+
+",arrojadite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arrojadite_BaFe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrojadite_ba_fe_ rdfs:subClassOf :mineral .
+
+",arrojadite ba fe  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arrojadite_BaNa,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrojadite_ba_na_ rdfs:subClassOf :mineral .
+
+",arrojadite ba na  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arrojadite_KFe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrojadite_k_fe_ rdfs:subClassOf :mineral .
+
+",arrojadite k fe  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arrojadite_KNa,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrojadite_k_na_ rdfs:subClassOf :mineral .
+
+",arrojadite k na  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arrojadite_NaFe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrojadite_na_fe_ rdfs:subClassOf :mineral .
+
+",arrojadite na fe  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arrojadite_PbFe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrojadite_pb_fe_ rdfs:subClassOf :mineral .
+
+",arrojadite pb fe  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arrojadite_SrFe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrojadite_sr_fe_ rdfs:subClassOf :mineral .
+
+",arrojadite sr fe  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenbrackebuschite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenbrackebuschite rdfs:subClassOf :mineral .
+
+",arsenbrackebuschite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsendescloizite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsendescloizite rdfs:subClassOf :mineral .
+
+",arsendescloizite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenic rdfs:subClassOf :mineral .
+
+",arsenic is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arseniodialyte,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arseniodialyte rdfs:subClassOf :mineral .
+
+",arseniodialyte is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arseniopleite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arseniopleite rdfs:subClassOf :mineral .
+
+",arseniopleite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arseniosiderite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arseniosiderite rdfs:subClassOf :mineral .
+
+",arseniosiderite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenobismite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenobismite rdfs:subClassOf :mineral .
+
+",arsenobismite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenoclasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenoclasite rdfs:subClassOf :mineral .
+
+",arsenoclasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenocrandallite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenocrandallite rdfs:subClassOf :mineral .
+
+",arsenocrandallite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenoflorencite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenoflorencite_ce_ rdfs:subClassOf :mineral .
+
+",arsenoflorencite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenoflorencite_La,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenoflorencite_la_ rdfs:subClassOf :mineral .
+
+",arsenoflorencite la  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenoflorencite_Nd,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenoflorencite_nd_ rdfs:subClassOf :mineral .
+
+",arsenoflorencite nd  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenogorceixite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenogorceixite rdfs:subClassOf :mineral .
+
+",arsenogorceixite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenogoyazite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenogoyazite rdfs:subClassOf :mineral .
+
+",arsenogoyazite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenohauchecornite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenohauchecornite rdfs:subClassOf :mineral .
+
+",arsenohauchecornite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenolamprite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenolamprite rdfs:subClassOf :mineral .
+
+",arsenolamprite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenolite rdfs:subClassOf :mineral .
+
+",arsenolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenopalladinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenopalladinite rdfs:subClassOf :mineral .
+
+",arsenopalladinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenopyrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenopyrite rdfs:subClassOf :mineral .
+
+",arsenopyrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenopyromorphite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenopyromorphite rdfs:subClassOf :mineral .
+
+",arsenopyromorphite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenosulvanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenosulvanite rdfs:subClassOf :mineral .
+
+",arsenosulvanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenovanmeersscheite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenovanmeersscheite rdfs:subClassOf :mineral .
+
+",arsenovanmeersscheite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenowaylandite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenowaylandite rdfs:subClassOf :mineral .
+
+",arsenowaylandite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenpolybasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenpolybasite rdfs:subClassOf :mineral .
+
+",arsenpolybasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsentsumebite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsentsumebite rdfs:subClassOf :mineral .
+
+",arsentsumebite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenuranospathite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenuranospathite rdfs:subClassOf :mineral .
+
+",arsenuranospathite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arsenuranylite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenuranylite rdfs:subClassOf :mineral .
+
+",arsenuranylite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arthurite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arthurite rdfs:subClassOf :mineral .
+
+",arthurite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Artinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:artinite rdfs:subClassOf :mineral .
+
+",artinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Artroeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:artroeite rdfs:subClassOf :mineral .
+
+",artroeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Artsmithite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:artsmithite rdfs:subClassOf :mineral .
+
+",artsmithite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arupite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arupite rdfs:subClassOf :mineral .
+
+",arupite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arzakite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arzakite rdfs:subClassOf :mineral .
+
+",arzakite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Arzrunite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arzrunite rdfs:subClassOf :mineral .
+
+",arzrunite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Asbecasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:asbecasite rdfs:subClassOf :mineral .
+
+",asbecasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Asbolane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:asbolane rdfs:subClassOf :mineral .
+
+",asbolane is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Aschamalmite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aschamalmite rdfs:subClassOf :mineral .
+
+",aschamalmite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ascharite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ascharite rdfs:subClassOf :mineral .
+
+",ascharite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ashanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ashanite rdfs:subClassOf :mineral .
+
+",ashanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ashburtonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ashburtonite rdfs:subClassOf :mineral .
+
+",ashburtonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ashcroftine_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ashcroftine_ce_ rdfs:subClassOf :mineral .
+
+",ashcroftine ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ashcroftine_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ashcroftine_y_ rdfs:subClassOf :mineral .
+
+",ashcroftine y  is a type of mineral.,1,False

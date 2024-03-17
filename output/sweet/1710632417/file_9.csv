@@ -1,0 +1,2501 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/matrMineral/Palladobismutharsenide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:palladobismutharsenide rdfs:subClassOf :mineral .
+
+",palladobismutharsenide is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Palladodymite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:palladodymite rdfs:subClassOf :mineral .
+
+",palladodymite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Palladseite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:palladseite rdfs:subClassOf :mineral .
+
+",palladseite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Palmierite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:palmierite rdfs:subClassOf :mineral .
+
+",palmierite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Palygorskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:palygorskite rdfs:subClassOf :mineral .
+
+",palygorskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Panasqueiraite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:panasqueiraite rdfs:subClassOf :mineral .
+
+",panasqueiraite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pandaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pandaite rdfs:subClassOf :mineral .
+
+",pandaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pandermite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pandermite rdfs:subClassOf :mineral .
+
+",pandermite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Panethite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:panethite rdfs:subClassOf :mineral .
+
+",panethite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Panichiite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:panichiite rdfs:subClassOf :mineral .
+
+",panichiite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Panunzite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:panunzite rdfs:subClassOf :mineral .
+
+",panunzite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paolovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paolovite rdfs:subClassOf :mineral .
+
+",paolovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Papagoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:papagoite rdfs:subClassOf :mineral .
+
+",papagoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Para_alumohydrocalcite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:para_alumohydrocalcite rdfs:subClassOf :mineral .
+
+",para alumohydrocalcite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parabariomicrolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parabariomicrolite rdfs:subClassOf :mineral .
+
+",parabariomicrolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parabrandtite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parabrandtite rdfs:subClassOf :mineral .
+
+",parabrandtite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parabutlerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parabutlerite rdfs:subClassOf :mineral .
+
+",parabutlerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paracelsian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paracelsian rdfs:subClassOf :mineral .
+
+",paracelsian is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parachrysotile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parachrysotile rdfs:subClassOf :mineral .
+
+",parachrysotile is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paracoquimbite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paracoquimbite rdfs:subClassOf :mineral .
+
+",paracoquimbite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paracostibite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paracostibite rdfs:subClassOf :mineral .
+
+",paracostibite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paradamite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paradamite rdfs:subClassOf :mineral .
+
+",paradamite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paradocrasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paradocrasite rdfs:subClassOf :mineral .
+
+",paradocrasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parafransoletite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parafransoletite rdfs:subClassOf :mineral .
+
+",parafransoletite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paragearksutite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paragearksutite rdfs:subClassOf :mineral .
+
+",paragearksutite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parageorgbokiite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parageorgbokiite rdfs:subClassOf :mineral .
+
+",parageorgbokiite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paragonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paragonite rdfs:subClassOf :mineral .
+
+",paragonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paraguanajuatite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paraguanajuatite rdfs:subClassOf :mineral .
+
+",paraguanajuatite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parahopeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parahopeite rdfs:subClassOf :mineral .
+
+",parahopeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parajamesonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parajamesonite rdfs:subClassOf :mineral .
+
+",parajamesonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parakeldyshite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parakeldyshite rdfs:subClassOf :mineral .
+
+",parakeldyshite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parakhinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parakhinite rdfs:subClassOf :mineral .
+
+",parakhinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parakutnohorite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parakutnohorite rdfs:subClassOf :mineral .
+
+",parakutnohorite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parakuzmenkoite_Fe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parakuzmenkoite_fe rdfs:subClassOf :mineral .
+
+",parakuzmenkoite fe is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paralabuntsovite_Mg,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paralabuntsovite_mg rdfs:subClassOf :mineral .
+
+",paralabuntsovite mg is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paralaurionite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paralaurionite rdfs:subClassOf :mineral .
+
+",paralaurionite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paralstonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paralstonite rdfs:subClassOf :mineral .
+
+",paralstonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paramelaconite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paramelaconite rdfs:subClassOf :mineral .
+
+",paramelaconite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paramendozavilite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paramendozavilite rdfs:subClassOf :mineral .
+
+",paramendozavilite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paramontroseite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paramontroseite rdfs:subClassOf :mineral .
+
+",paramontroseite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paranatisite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paranatisite rdfs:subClassOf :mineral .
+
+",paranatisite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paranatrolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paranatrolite rdfs:subClassOf :mineral .
+
+",paranatrolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paraniite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paraniite_y_ rdfs:subClassOf :mineral .
+
+",paraniite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paraotwayite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paraotwayite rdfs:subClassOf :mineral .
+
+",paraotwayite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parapierrotite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parapierrotite rdfs:subClassOf :mineral .
+
+",parapierrotite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pararammelsbergite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pararammelsbergite rdfs:subClassOf :mineral .
+
+",pararammelsbergite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pararealgar,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pararealgar rdfs:subClassOf :mineral .
+
+",pararealgar is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pararobertsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pararobertsite rdfs:subClassOf :mineral .
+
+",pararobertsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pararsenolamprite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pararsenolamprite rdfs:subClassOf :mineral .
+
+",pararsenolamprite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paraschachnerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paraschachnerite rdfs:subClassOf :mineral .
+
+",paraschachnerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paraschoepite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paraschoepite rdfs:subClassOf :mineral .
+
+",paraschoepite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parascholzite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parascholzite rdfs:subClassOf :mineral .
+
+",parascholzite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parascorodite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parascorodite rdfs:subClassOf :mineral .
+
+",parascorodite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parasibirskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parasibirskite rdfs:subClassOf :mineral .
+
+",parasibirskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paraspurrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paraspurrite rdfs:subClassOf :mineral .
+
+",paraspurrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parasymplesite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parasymplesite rdfs:subClassOf :mineral .
+
+",parasymplesite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paratacamite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paratacamite rdfs:subClassOf :mineral .
+
+",paratacamite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paratellurite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paratellurite rdfs:subClassOf :mineral .
+
+",paratellurite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paratooite_La,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paratooite_la_ rdfs:subClassOf :mineral .
+
+",paratooite la  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paratsepinite_Ba,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paratsepinite_ba rdfs:subClassOf :mineral .
+
+",paratsepinite ba is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paratsepinite_Na,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paratsepinite_na rdfs:subClassOf :mineral .
+
+",paratsepinite na is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paraumbite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paraumbite rdfs:subClassOf :mineral .
+
+",paraumbite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paravauxite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paravauxite rdfs:subClassOf :mineral .
+
+",paravauxite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paravinogradovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paravinogradovite rdfs:subClassOf :mineral .
+
+",paravinogradovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parawollastonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parawollastonite rdfs:subClassOf :mineral .
+
+",parawollastonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pargasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pargasite rdfs:subClassOf :mineral .
+
+",pargasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pargasite_K,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pargasite_k rdfs:subClassOf :mineral .
+
+",pargasite k is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parisite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parisite_ce_ rdfs:subClassOf :mineral .
+
+",parisite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parisite_Nd,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parisite_nd_ rdfs:subClassOf :mineral .
+
+",parisite nd  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parkerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parkerite rdfs:subClassOf :mineral .
+
+",parkerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parkinsonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parkinsonite rdfs:subClassOf :mineral .
+
+",parkinsonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parnauite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parnauite rdfs:subClassOf :mineral .
+
+",parnauite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parsettensite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parsettensite rdfs:subClassOf :mineral .
+
+",parsettensite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parsonsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parsonsite rdfs:subClassOf :mineral .
+
+",parsonsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Partheite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:partheite rdfs:subClassOf :mineral .
+
+",partheite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Partzite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:partzite rdfs:subClassOf :mineral .
+
+",partzite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parvo_mangano_edenite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parvo_mangano_edenite rdfs:subClassOf :mineral .
+
+",parvo mangano edenite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parvo_manganotremolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parvo_manganotremolite rdfs:subClassOf :mineral .
+
+",parvo manganotremolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parvowinchite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parvowinchite rdfs:subClassOf :mineral .
+
+",parvowinchite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parwanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parwanite rdfs:subClassOf :mineral .
+
+",parwanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Parwelite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parwelite rdfs:subClassOf :mineral .
+
+",parwelite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pasavaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pasavaite rdfs:subClassOf :mineral .
+
+",pasavaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pascoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pascoite rdfs:subClassOf :mineral .
+
+",pascoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Patronite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:patronite rdfs:subClassOf :mineral .
+
+",patronite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pattersonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pattersonite rdfs:subClassOf :mineral .
+
+",pattersonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pauflerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pauflerite rdfs:subClassOf :mineral .
+
+",pauflerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paulingite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paulingite rdfs:subClassOf :mineral .
+
+",paulingite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paulingite_Ca,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paulingite_ca rdfs:subClassOf :mineral .
+
+",paulingite ca is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paulingite_K,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paulingite_k rdfs:subClassOf :mineral .
+
+",paulingite k is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paulingite_Na,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paulingite_na rdfs:subClassOf :mineral .
+
+",paulingite na is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paulkellerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paulkellerite rdfs:subClassOf :mineral .
+
+",paulkellerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paulkerrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paulkerrite rdfs:subClassOf :mineral .
+
+",paulkerrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paulmooreite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paulmooreite rdfs:subClassOf :mineral .
+
+",paulmooreite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pautovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pautovite rdfs:subClassOf :mineral .
+
+",pautovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pavonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pavonite rdfs:subClassOf :mineral .
+
+",pavonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Paxite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paxite rdfs:subClassOf :mineral .
+
+",paxite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pearceite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pearceite rdfs:subClassOf :mineral .
+
+",pearceite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pearceite_M2a2b2c,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pearceite_m2a2b2c rdfs:subClassOf :mineral .
+
+",pearceite m2a2b2c is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pearceite_T2ac,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pearceite_t2ac rdfs:subClassOf :mineral .
+
+",pearceite t2ac is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pearceite_Tac,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pearceite_tac rdfs:subClassOf :mineral .
+
+",pearceite tac is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pecoraite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pecoraite rdfs:subClassOf :mineral .
+
+",pecoraite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pectolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pectolite rdfs:subClassOf :mineral .
+
+",pectolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pehrmanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pehrmanite rdfs:subClassOf :mineral .
+
+",pehrmanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Peisleyite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peisleyite rdfs:subClassOf :mineral .
+
+",peisleyite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pekoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pekoite rdfs:subClassOf :mineral .
+
+",pekoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pekovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pekovite rdfs:subClassOf :mineral .
+
+",pekovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pellouxite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pellouxite rdfs:subClassOf :mineral .
+
+",pellouxite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pellyite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pellyite rdfs:subClassOf :mineral .
+
+",pellyite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pendletonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pendletonite rdfs:subClassOf :mineral .
+
+",pendletonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Penfieldite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penfieldite rdfs:subClassOf :mineral .
+
+",penfieldite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pengzhizhongite_24R,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pengzhizhongite_24r rdfs:subClassOf :mineral .
+
+",pengzhizhongite 24r is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pengzhizhongite_6H,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pengzhizhongite_6h rdfs:subClassOf :mineral .
+
+",pengzhizhongite 6h is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pengzhizhongite_6T,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pengzhizhongite_6t rdfs:subClassOf :mineral .
+
+",pengzhizhongite 6t is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Penikisite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penikisite rdfs:subClassOf :mineral .
+
+",penikisite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Penkvilksite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penkvilksite rdfs:subClassOf :mineral .
+
+",penkvilksite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pennantite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pennantite rdfs:subClassOf :mineral .
+
+",pennantite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pennine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pennine rdfs:subClassOf :mineral .
+
+",pennine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Penobsquisite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penobsquisite rdfs:subClassOf :mineral .
+
+",penobsquisite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Penroseite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penroseite rdfs:subClassOf :mineral .
+
+",penroseite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pentagonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pentagonite rdfs:subClassOf :mineral .
+
+",pentagonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pentahydrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pentahydrite rdfs:subClassOf :mineral .
+
+",pentahydrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pentahydroborite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pentahydroborite rdfs:subClassOf :mineral .
+
+",pentahydroborite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pentlandite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pentlandite rdfs:subClassOf :mineral .
+
+",pentlandite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Penwithite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penwithite rdfs:subClassOf :mineral .
+
+",penwithite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Penzhinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penzhinite rdfs:subClassOf :mineral .
+
+",penzhinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Peprossiite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peprossiite_ce_ rdfs:subClassOf :mineral .
+
+",peprossiite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Percleveite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:percleveite_ce_ rdfs:subClassOf :mineral .
+
+",percleveite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Percylite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:percylite rdfs:subClassOf :mineral .
+
+",percylite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Peretaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peretaite rdfs:subClassOf :mineral .
+
+",peretaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perhamite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perhamite rdfs:subClassOf :mineral .
+
+",perhamite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Periclase,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:periclase rdfs:subClassOf :mineral .
+
+",periclase is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Peridot,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peridot rdfs:subClassOf :mineral .
+
+",peridot is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perite rdfs:subClassOf :mineral .
+
+",perite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perlialite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perlialite rdfs:subClassOf :mineral .
+
+",perlialite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perloffite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perloffite rdfs:subClassOf :mineral .
+
+",perloffite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Permanganogrunerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:permanganogrunerite rdfs:subClassOf :mineral .
+
+",permanganogrunerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Permingeatite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:permingeatite rdfs:subClassOf :mineral .
+
+",permingeatite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perofskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perofskite rdfs:subClassOf :mineral .
+
+",perofskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perovskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perovskite rdfs:subClassOf :mineral .
+
+",perovskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perraultite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perraultite rdfs:subClassOf :mineral .
+
+",perraultite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perrierite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perrierite_ce_ rdfs:subClassOf :mineral .
+
+",perrierite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perroudite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perroudite rdfs:subClassOf :mineral .
+
+",perroudite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Perryite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perryite rdfs:subClassOf :mineral .
+
+",perryite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pertlikite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pertlikite rdfs:subClassOf :mineral .
+
+",pertlikite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pertsevite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pertsevite rdfs:subClassOf :mineral .
+
+",pertsevite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petalite rdfs:subClassOf :mineral .
+
+",petalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petarasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petarasite rdfs:subClassOf :mineral .
+
+",petarasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petedunnite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petedunnite rdfs:subClassOf :mineral .
+
+",petedunnite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Peterbaylissite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peterbaylissite rdfs:subClassOf :mineral .
+
+",peterbaylissite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petersenite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petersenite_ce_ rdfs:subClassOf :mineral .
+
+",petersenite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petersite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petersite_y_ rdfs:subClassOf :mineral .
+
+",petersite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petewilliamsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petewilliamsite rdfs:subClassOf :mineral .
+
+",petewilliamsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petitjeanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petitjeanite rdfs:subClassOf :mineral .
+
+",petitjeanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petrovicite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petrovicite rdfs:subClassOf :mineral .
+
+",petrovicite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petrovskaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petrovskaite rdfs:subClassOf :mineral .
+
+",petrovskaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petrukite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petrukite rdfs:subClassOf :mineral .
+
+",petrukite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petscheckite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petscheckite rdfs:subClassOf :mineral .
+
+",petscheckite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petterdite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petterdite rdfs:subClassOf :mineral .
+
+",petterdite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Petzite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petzite rdfs:subClassOf :mineral .
+
+",petzite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pezzottaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pezzottaite rdfs:subClassOf :mineral .
+
+",pezzottaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phacellite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phacellite rdfs:subClassOf :mineral .
+
+",phacellite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pharmacolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pharmacolite rdfs:subClassOf :mineral .
+
+",pharmacolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pharmacosiderite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pharmacosiderite rdfs:subClassOf :mineral .
+
+",pharmacosiderite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phaunouxite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phaunouxite rdfs:subClassOf :mineral .
+
+",phaunouxite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phenakite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phenakite rdfs:subClassOf :mineral .
+
+",phenakite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phenenthrene,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phenenthrene rdfs:subClassOf :mineral .
+
+",phenenthrene is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Philipsbornite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:philipsbornite rdfs:subClassOf :mineral .
+
+",philipsbornite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Philipsburgite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:philipsburgite rdfs:subClassOf :mineral .
+
+",philipsburgite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phillipsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phillipsite rdfs:subClassOf :mineral .
+
+",phillipsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phillipsite_Ca,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phillipsite_ca rdfs:subClassOf :mineral .
+
+",phillipsite ca is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phillipsite_K,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phillipsite_k rdfs:subClassOf :mineral .
+
+",phillipsite k is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phillipsite_Na,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phillipsite_na rdfs:subClassOf :mineral .
+
+",phillipsite na is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Philolithite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:philolithite rdfs:subClassOf :mineral .
+
+",philolithite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phlogopite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phlogopite rdfs:subClassOf :mineral .
+
+",phlogopite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phlogopite_Na,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phlogopite_na rdfs:subClassOf :mineral .
+
+",phlogopite na is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phoenicochroite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phoenicochroite rdfs:subClassOf :mineral .
+
+",phoenicochroite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosgenite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosgenite rdfs:subClassOf :mineral .
+
+",phosgenite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosinaite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosinaite_ce_ rdfs:subClassOf :mineral .
+
+",phosinaite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphammite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphammite rdfs:subClassOf :mineral .
+
+",phosphammite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphate_walpurgite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphate_walpurgite rdfs:subClassOf :mineral .
+
+",phosphate walpurgite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphoellenbergerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphoellenbergerite rdfs:subClassOf :mineral .
+
+",phosphoellenbergerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphoferrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphoferrite rdfs:subClassOf :mineral .
+
+",phosphoferrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphofibrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphofibrite rdfs:subClassOf :mineral .
+
+",phosphofibrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphogartrellite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphogartrellite rdfs:subClassOf :mineral .
+
+",phosphogartrellite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphohedyphane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphohedyphane rdfs:subClassOf :mineral .
+
+",phosphohedyphane is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphoinnelite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphoinnelite rdfs:subClassOf :mineral .
+
+",phosphoinnelite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphomimetite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphomimetite rdfs:subClassOf :mineral .
+
+",phosphomimetite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphophyllite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphophyllite rdfs:subClassOf :mineral .
+
+",phosphophyllite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphorrosslerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphorrosslerite rdfs:subClassOf :mineral .
+
+",phosphorrosslerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphosiderite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphosiderite rdfs:subClassOf :mineral .
+
+",phosphosiderite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphovanadylite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphovanadylite rdfs:subClassOf :mineral .
+
+",phosphovanadylite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphowalpurgite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphowalpurgite rdfs:subClassOf :mineral .
+
+",phosphowalpurgite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phosphuranylite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphuranylite rdfs:subClassOf :mineral .
+
+",phosphuranylite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phthalimide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phthalimide rdfs:subClassOf :mineral .
+
+",phthalimide is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phuralumite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phuralumite rdfs:subClassOf :mineral .
+
+",phuralumite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phurcalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phurcalite rdfs:subClassOf :mineral .
+
+",phurcalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Phyllotungstite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phyllotungstite rdfs:subClassOf :mineral .
+
+",phyllotungstite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pianlinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pianlinite rdfs:subClassOf :mineral .
+
+",pianlinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Picene,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:picene rdfs:subClassOf :mineral .
+
+",picene is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pickeringite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pickeringite rdfs:subClassOf :mineral .
+
+",pickeringite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Picotpaulite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:picotpaulite rdfs:subClassOf :mineral .
+
+",picotpaulite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Picroilmenite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:picroilmenite rdfs:subClassOf :mineral .
+
+",picroilmenite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Picromerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:picromerite rdfs:subClassOf :mineral .
+
+",picromerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Picropharmacolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:picropharmacolite rdfs:subClassOf :mineral .
+
+",picropharmacolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Picrosmine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:picrosmine rdfs:subClassOf :mineral .
+
+",picrosmine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Piedmontite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piedmontite rdfs:subClassOf :mineral .
+
+",piedmontite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Piemontite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piemontite rdfs:subClassOf :mineral .
+
+",piemontite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Piemontite_Sr,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piemontite_sr_ rdfs:subClassOf :mineral .
+
+",piemontite sr  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Piergorite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piergorite_ce_ rdfs:subClassOf :mineral .
+
+",piergorite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pierrotite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pierrotite rdfs:subClassOf :mineral .
+
+",pierrotite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pigeonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pigeonite rdfs:subClassOf :mineral .
+
+",pigeonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pillaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pillaite rdfs:subClassOf :mineral .
+
+",pillaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pilsenite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pilsenite rdfs:subClassOf :mineral .
+
+",pilsenite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pimelite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pimelite rdfs:subClassOf :mineral .
+
+",pimelite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pinakiolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pinakiolite rdfs:subClassOf :mineral .
+
+",pinakiolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pinalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pinalite rdfs:subClassOf :mineral .
+
+",pinalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pinchite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pinchite rdfs:subClassOf :mineral .
+
+",pinchite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pingguite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pingguite rdfs:subClassOf :mineral .
+
+",pingguite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pinnoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pinnoite rdfs:subClassOf :mineral .
+
+",pinnoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pintadoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pintadoite rdfs:subClassOf :mineral .
+
+",pintadoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Piotine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piotine rdfs:subClassOf :mineral .
+
+",piotine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Piretite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piretite rdfs:subClassOf :mineral .
+
+",piretite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pirquitasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pirquitasite rdfs:subClassOf :mineral .
+
+",pirquitasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pirssonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pirssonite rdfs:subClassOf :mineral .
+
+",pirssonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pistacite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pistacite rdfs:subClassOf :mineral .
+
+",pistacite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pistanite_copper_bearing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pistanite_copper_bearing_ rdfs:subClassOf :mineral .
+
+",pistanite copper bearing  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pitiglianoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pitiglianoite rdfs:subClassOf :mineral .
+
+",pitiglianoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pitticite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pitticite rdfs:subClassOf :mineral .
+
+",pitticite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pittongite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pittongite rdfs:subClassOf :mineral .
+
+",pittongite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Piypite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piypite rdfs:subClassOf :mineral .
+
+",piypite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pizgrischite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pizgrischite rdfs:subClassOf :mineral .
+
+",pizgrischite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Placodine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:placodine rdfs:subClassOf :mineral .
+
+",placodine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plagioclase,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plagioclase rdfs:subClassOf :mineral .
+
+",plagioclase is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plagionite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plagionite rdfs:subClassOf :mineral .
+
+",plagionite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plancheite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plancheite rdfs:subClassOf :mineral .
+
+",plancheite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Planerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planerite rdfs:subClassOf :mineral .
+
+",planerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Planoferrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planoferrite rdfs:subClassOf :mineral .
+
+",planoferrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plasma,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plasma rdfs:subClassOf :mineral .
+
+",plasma is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Platarsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:platarsite rdfs:subClassOf :mineral .
+
+",platarsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Platiniridium,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:platiniridium rdfs:subClassOf :mineral .
+
+",platiniridium is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Platinum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:platinum rdfs:subClassOf :mineral .
+
+",platinum is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plattnerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plattnerite rdfs:subClassOf :mineral .
+
+",plattnerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Platynite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:platynite rdfs:subClassOf :mineral .
+
+",platynite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Playfairite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:playfairite rdfs:subClassOf :mineral .
+
+",playfairite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plazolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plazolite rdfs:subClassOf :mineral .
+
+",plazolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pleonaste,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pleonaste rdfs:subClassOf :mineral .
+
+",pleonaste is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plessite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plessite rdfs:subClassOf :mineral .
+
+",plessite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plimerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plimerite rdfs:subClassOf :mineral .
+
+",plimerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plombierite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plombierite rdfs:subClassOf :mineral .
+
+",plombierite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumalsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumalsite rdfs:subClassOf :mineral .
+
+",plumalsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbago,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbago rdfs:subClassOf :mineral .
+
+",plumbago is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumboagardite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumboagardite rdfs:subClassOf :mineral .
+
+",plumboagardite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbobetafite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbobetafite rdfs:subClassOf :mineral .
+
+",plumbobetafite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumboferrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumboferrite rdfs:subClassOf :mineral .
+
+",plumboferrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbogummite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbogummite rdfs:subClassOf :mineral .
+
+",plumbogummite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbojarosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbojarosite rdfs:subClassOf :mineral .
+
+",plumbojarosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbomicrolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbomicrolite rdfs:subClassOf :mineral .
+
+",plumbomicrolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbonacrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbonacrite rdfs:subClassOf :mineral .
+
+",plumbonacrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbopalladinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbopalladinite rdfs:subClassOf :mineral .
+
+",plumbopalladinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbophyllite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbophyllite rdfs:subClassOf :mineral .
+
+",plumbophyllite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbopyrochlore,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbopyrochlore rdfs:subClassOf :mineral .
+
+",plumbopyrochlore is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbotellurite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbotellurite rdfs:subClassOf :mineral .
+
+",plumbotellurite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbotsumite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbotsumite rdfs:subClassOf :mineral .
+
+",plumbotsumite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumbum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumbum rdfs:subClassOf :mineral .
+
+",plumbum is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Plumosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plumosite rdfs:subClassOf :mineral .
+
+",plumosite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Podlesnoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:podlesnoite rdfs:subClassOf :mineral .
+
+",podlesnoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Poitevinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poitevinite rdfs:subClassOf :mineral .
+
+",poitevinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pokrovskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pokrovskite rdfs:subClassOf :mineral .
+
+",pokrovskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polarite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polarite rdfs:subClassOf :mineral .
+
+",polarite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Poldervaartite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poldervaartite rdfs:subClassOf :mineral .
+
+",poldervaartite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polhemusite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polhemusite rdfs:subClassOf :mineral .
+
+",polhemusite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polianite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polianite rdfs:subClassOf :mineral .
+
+",polianite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polkanovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polkanovite rdfs:subClassOf :mineral .
+
+",polkanovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polkovicite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polkovicite rdfs:subClassOf :mineral .
+
+",polkovicite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pollucite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pollucite rdfs:subClassOf :mineral .
+
+",pollucite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polyakovite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyakovite_ce_ rdfs:subClassOf :mineral .
+
+",polyakovite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polybasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polybasite rdfs:subClassOf :mineral .
+
+",polybasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polybasite_M2a2b2c,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polybasite_m2a2b2c rdfs:subClassOf :mineral .
+
+",polybasite m2a2b2c is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polybasite_T2ac,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polybasite_t2ac rdfs:subClassOf :mineral .
+
+",polybasite t2ac is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polybasite_Tac,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polybasite_tac rdfs:subClassOf :mineral .
+
+",polybasite tac is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polycrase_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polycrase_y_ rdfs:subClassOf :mineral .
+
+",polycrase y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polydymite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polydymite rdfs:subClassOf :mineral .
+
+",polydymite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polyhalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyhalite rdfs:subClassOf :mineral .
+
+",polyhalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polylithionite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polylithionite rdfs:subClassOf :mineral .
+
+",polylithionite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polymignite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polymignite rdfs:subClassOf :mineral .
+
+",polymignite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polyphite_VII,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyphite_vii rdfs:subClassOf :mineral .
+
+",polyphite vii is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polyphite_VIII,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyphite_viii rdfs:subClassOf :mineral .
+
+",polyphite viii is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Polysphaerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polysphaerite rdfs:subClassOf :mineral .
+
+",polysphaerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ponomarevite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ponomarevite rdfs:subClassOf :mineral .
+
+",ponomarevite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Poppiite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poppiite rdfs:subClassOf :mineral .
+
+",poppiite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Portlandite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:portlandite rdfs:subClassOf :mineral .
+
+",portlandite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Posnjakite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:posnjakite rdfs:subClassOf :mineral .
+
+",posnjakite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potarite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potarite rdfs:subClassOf :mineral .
+
+",potarite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potash_Alum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potash_alum rdfs:subClassOf :mineral .
+
+",potash alum is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potash_Mica,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potash_mica rdfs:subClassOf :mineral .
+
+",potash mica is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassic_carpholite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassic_carpholite rdfs:subClassOf :mineral .
+
+",potassic carpholite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassic_chlorohastingsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassic_chlorohastingsite rdfs:subClassOf :mineral .
+
+",potassic chlorohastingsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassic_chloropargasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassic_chloropargasite rdfs:subClassOf :mineral .
+
+",potassic chloropargasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassic_ferropargasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassic_ferropargasite rdfs:subClassOf :mineral .
+
+",potassic ferropargasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassic_fluororichterite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassic_fluororichterite rdfs:subClassOf :mineral .
+
+",potassic fluororichterite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassic_magnesiohastingsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassic_magnesiohastingsite rdfs:subClassOf :mineral .
+
+",potassic magnesiohastingsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassic_magnesiosadanagaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassic_magnesiosadanagaite rdfs:subClassOf :mineral .
+
+",potassic magnesiosadanagaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassicarfvedsonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassicarfvedsonite rdfs:subClassOf :mineral .
+
+",potassicarfvedsonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassiccarpholite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassiccarpholite rdfs:subClassOf :mineral .
+
+",potassiccarpholite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassicferrisadanagaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassicferrisadanagaite rdfs:subClassOf :mineral .
+
+",potassicferrisadanagaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassicleakeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassicleakeite rdfs:subClassOf :mineral .
+
+",potassicleakeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassicpargasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassicpargasite rdfs:subClassOf :mineral .
+
+",potassicpargasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassicrichterite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassicrichterite rdfs:subClassOf :mineral .
+
+",potassicrichterite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassicsadanagaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassicsadanagaite rdfs:subClassOf :mineral .
+
+",potassicsadanagaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassium_alum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassium_alum rdfs:subClassOf :mineral .
+
+",potassium alum is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassium_autunite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassium_autunite rdfs:subClassOf :mineral .
+
+",potassium autunite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potassium_fluor_richterite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potassium_fluor_richterite rdfs:subClassOf :mineral .
+
+",potassium fluor richterite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Potosiite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potosiite rdfs:subClassOf :mineral .
+
+",potosiite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pottsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pottsite rdfs:subClassOf :mineral .
+
+",pottsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Poubaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poubaite rdfs:subClassOf :mineral .
+
+",poubaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Poudretteite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poudretteite rdfs:subClassOf :mineral .
+
+",poudretteite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Poughite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poughite rdfs:subClassOf :mineral .
+
+",poughite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Povondraite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:povondraite rdfs:subClassOf :mineral .
+
+",povondraite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Powellite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:powellite rdfs:subClassOf :mineral .
+
+",powellite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Poyarkovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poyarkovite rdfs:subClassOf :mineral .
+
+",poyarkovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prase,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prase rdfs:subClassOf :mineral .
+
+",prase is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prassoite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prassoite rdfs:subClassOf :mineral .
+
+",prassoite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pravdite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pravdite rdfs:subClassOf :mineral .
+
+",pravdite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Precious_opal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:precious_opal rdfs:subClassOf :mineral .
+
+",precious opal is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prehnite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prehnite rdfs:subClassOf :mineral .
+
+",prehnite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Preisingerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:preisingerite rdfs:subClassOf :mineral .
+
+",preisingerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Preiswerkite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:preiswerkite rdfs:subClassOf :mineral .
+
+",preiswerkite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Preobrazhenskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:preobrazhenskite rdfs:subClassOf :mineral .
+
+",preobrazhenskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pretulite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pretulite rdfs:subClassOf :mineral .
+
+",pretulite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prewittite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prewittite rdfs:subClassOf :mineral .
+
+",prewittite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Priazovite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:priazovite rdfs:subClassOf :mineral .
+
+",priazovite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Priceite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:priceite rdfs:subClassOf :mineral .
+
+",priceite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Priderite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:priderite rdfs:subClassOf :mineral .
+
+",priderite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pringleite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pringleite rdfs:subClassOf :mineral .
+
+",pringleite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prismatine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prismatine rdfs:subClassOf :mineral .
+
+",prismatine is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prixite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prixite rdfs:subClassOf :mineral .
+
+",prixite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Probertite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:probertite rdfs:subClassOf :mineral .
+
+",probertite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prochlorite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prochlorite rdfs:subClassOf :mineral .
+
+",prochlorite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Proshchenkoite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proshchenkoite_y_ rdfs:subClassOf :mineral .
+
+",proshchenkoite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prosopite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prosopite rdfs:subClassOf :mineral .
+
+",prosopite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Prosperite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prosperite rdfs:subClassOf :mineral .
+
+",prosperite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Protasite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protasite rdfs:subClassOf :mineral .
+
+",protasite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Protoallophane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protoallophane rdfs:subClassOf :mineral .
+
+",protoallophane is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Protoanthophyllite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protoanthophyllite rdfs:subClassOf :mineral .
+
+",protoanthophyllite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Protoantigorite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protoantigorite rdfs:subClassOf :mineral .
+
+",protoantigorite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Protoferro_anthophyllite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protoferro_anthophyllite rdfs:subClassOf :mineral .
+
+",protoferro anthophyllite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Protojoseite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protojoseite rdfs:subClassOf :mineral .
+
+",protojoseite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Protomangano_ferro_anthophyllite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protomangano_ferro_anthophyllite rdfs:subClassOf :mineral .
+
+",protomangano ferro anthophyllite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Proudite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proudite rdfs:subClassOf :mineral .
+
+",proudite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Proustite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proustite rdfs:subClassOf :mineral .
+
+",proustite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Przhevalskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:przhevalskite rdfs:subClassOf :mineral .
+
+",przhevalskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudo_autunite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudo_autunite rdfs:subClassOf :mineral .
+
+",pseudo autunite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudoboehmite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudoboehmite rdfs:subClassOf :mineral .
+
+",pseudoboehmite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudoboleite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudoboleite rdfs:subClassOf :mineral .
+
+",pseudoboleite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudobrookite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudobrookite rdfs:subClassOf :mineral .
+
+",pseudobrookite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudocotunnite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudocotunnite rdfs:subClassOf :mineral .
+
+",pseudocotunnite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudograndreefite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudograndreefite rdfs:subClassOf :mineral .
+
+",pseudograndreefite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudojohannite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudojohannite rdfs:subClassOf :mineral .
+
+",pseudojohannite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudolaueite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudolaueite rdfs:subClassOf :mineral .
+
+",pseudolaueite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudomalachite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudomalachite rdfs:subClassOf :mineral .
+
+",pseudomalachite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudonatrolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudonatrolite rdfs:subClassOf :mineral .
+
+",pseudonatrolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudorutile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudorutile rdfs:subClassOf :mineral .
+
+",pseudorutile is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pseudosinhalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudosinhalite rdfs:subClassOf :mineral .
+
+",pseudosinhalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Psilomelane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:psilomelane rdfs:subClassOf :mineral .
+
+",psilomelane is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ptilolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ptilolite rdfs:subClassOf :mineral .
+
+",ptilolite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pucherite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pucherite rdfs:subClassOf :mineral .
+
+",pucherite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pumpellyite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pumpellyite rdfs:subClassOf :mineral .
+
+",pumpellyite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pumpellyite_Al,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pumpellyite_al_ rdfs:subClassOf :mineral .
+
+",pumpellyite al  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pumpellyite_Feplusplus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pumpellyite_fe_ rdfs:subClassOf :mineral .
+
+",pumpellyite fe  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pumpellyite_Feplusplusplus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pumpellyite_fe_ rdfs:subClassOf :mineral .
+
+",pumpellyite fe  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pumpellyite_Mg,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pumpellyite_mg_ rdfs:subClassOf :mineral .
+
+",pumpellyite mg  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pumpellyite_Mnplusplus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pumpellyite_mn_ rdfs:subClassOf :mineral .
+
+",pumpellyite mn  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Punkaruaivite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:punkaruaivite rdfs:subClassOf :mineral .
+
+",punkaruaivite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Purpurite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:purpurite rdfs:subClassOf :mineral .
+
+",purpurite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pushcharovskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pushcharovskite rdfs:subClassOf :mineral .
+
+",pushcharovskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Putoranite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:putoranite rdfs:subClassOf :mineral .
+
+",putoranite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Putzite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:putzite rdfs:subClassOf :mineral .
+
+",putzite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyatenkoite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyatenkoite_y_ rdfs:subClassOf :mineral .
+
+",pyatenkoite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pycnite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pycnite rdfs:subClassOf :mineral .
+
+",pycnite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrantimonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrantimonite rdfs:subClassOf :mineral .
+
+",pyrantimonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrargyrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrargyrite rdfs:subClassOf :mineral .
+
+",pyrargyrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrite rdfs:subClassOf :mineral .
+
+",pyrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyroaurite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyroaurite rdfs:subClassOf :mineral .
+
+",pyroaurite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrobelonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrobelonite rdfs:subClassOf :mineral .
+
+",pyrobelonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrochlore,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrochlore rdfs:subClassOf :mineral .
+
+",pyrochlore is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrochroite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrochroite rdfs:subClassOf :mineral .
+
+",pyrochroite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrocoproite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrocoproite rdfs:subClassOf :mineral .
+
+",pyrocoproite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrolusite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrolusite rdfs:subClassOf :mineral .
+
+",pyrolusite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyromorphite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyromorphite rdfs:subClassOf :mineral .
+
+",pyromorphite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrope rdfs:subClassOf :mineral .
+
+",pyrope is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrophanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrophanite rdfs:subClassOf :mineral .
+
+",pyrophanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrophosphite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrophosphite rdfs:subClassOf :mineral .
+
+",pyrophosphite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrophyllite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrophyllite rdfs:subClassOf :mineral .
+
+",pyrophyllite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrosmalite_Fe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrosmalite_fe_ rdfs:subClassOf :mineral .
+
+",pyrosmalite fe  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrosmalite_Mn,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrosmalite_mn_ rdfs:subClassOf :mineral .
+
+",pyrosmalite mn  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrostilpnite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrostilpnite rdfs:subClassOf :mineral .
+
+",pyrostilpnite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyroxene,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyroxene rdfs:subClassOf :mineral .
+
+",pyroxene is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyroxferroite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyroxferroite rdfs:subClassOf :mineral .
+
+",pyroxferroite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyroxmangite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyroxmangite rdfs:subClassOf :mineral .
+
+",pyroxmangite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Pyrrhotite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrrhotite rdfs:subClassOf :mineral .
+
+",pyrrhotite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Qandilite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qandilite rdfs:subClassOf :mineral .
+
+",qandilite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Qaqarssukite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qaqarssukite_ce_ rdfs:subClassOf :mineral .
+
+",qaqarssukite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Qilianshanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qilianshanite rdfs:subClassOf :mineral .
+
+",qilianshanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Qingheiite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qingheiite rdfs:subClassOf :mineral .
+
+",qingheiite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Qitianlingite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qitianlingite rdfs:subClassOf :mineral .
+
+",qitianlingite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quadratite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quadratite rdfs:subClassOf :mineral .
+
+",quadratite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quadridavyne,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quadridavyne rdfs:subClassOf :mineral .
+
+",quadridavyne is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quadruphite_VII,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quadruphite_vii rdfs:subClassOf :mineral .
+
+",quadruphite vii is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quadruphite_VIII,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quadruphite_viii rdfs:subClassOf :mineral .
+
+",quadruphite viii is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quartx,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quartx rdfs:subClassOf :mineral .
+
+",quartx is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quartz,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quartz rdfs:subClassOf :mineral .
+
+",quartz is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quecksilber,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quecksilber rdfs:subClassOf :mineral .
+
+",quecksilber is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Queitite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:queitite rdfs:subClassOf :mineral .
+
+",queitite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quenselite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quenselite rdfs:subClassOf :mineral .
+
+",quenselite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quenstedtite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quenstedtite rdfs:subClassOf :mineral .
+
+",quenstedtite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quetenite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quetenite rdfs:subClassOf :mineral .
+
+",quetenite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quetzalcoatlite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quetzalcoatlite rdfs:subClassOf :mineral .
+
+",quetzalcoatlite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quicksilver,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quicksilver rdfs:subClassOf :mineral .
+
+",quicksilver is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quintinite_2H,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quintinite_2h rdfs:subClassOf :mineral .
+
+",quintinite 2h is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Quintinite_3T,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quintinite_3t rdfs:subClassOf :mineral .
+
+",quintinite 3t is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Qusongite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qusongite rdfs:subClassOf :mineral .
+
+",qusongite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Raadeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raadeite rdfs:subClassOf :mineral .
+
+",raadeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rabbittite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rabbittite rdfs:subClassOf :mineral .
+
+",rabbittite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rabejacite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rabejacite rdfs:subClassOf :mineral .
+
+",rabejacite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Radhakrishnaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radhakrishnaite rdfs:subClassOf :mineral .
+
+",radhakrishnaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Radiobarite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiobarite rdfs:subClassOf :mineral .
+
+",radiobarite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Radovanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radovanite rdfs:subClassOf :mineral .
+
+",radovanite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Radtkeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radtkeite rdfs:subClassOf :mineral .
+
+",radtkeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rafaelite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rafaelite rdfs:subClassOf :mineral .
+
+",rafaelite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Raguinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raguinite rdfs:subClassOf :mineral .
+
+",raguinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Raite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raite rdfs:subClassOf :mineral .
+
+",raite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rajite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rajite rdfs:subClassOf :mineral .
+
+",rajite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ralstonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ralstonite rdfs:subClassOf :mineral .
+
+",ralstonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ramanite_Cs,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ramanite_cs_ rdfs:subClassOf :mineral .
+
+",ramanite cs  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ramanite_Rb,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ramanite_rb_ rdfs:subClassOf :mineral .
+
+",ramanite rb  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rambergite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rambergite rdfs:subClassOf :mineral .
+
+",rambergite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ramdohrite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ramdohrite rdfs:subClassOf :mineral .
+
+",ramdohrite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rameauite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rameauite rdfs:subClassOf :mineral .
+
+",rameauite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rammelsbergite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rammelsbergite rdfs:subClassOf :mineral .
+
+",rammelsbergite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ramsayite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ramsayite rdfs:subClassOf :mineral .
+
+",ramsayite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ramsbeckite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ramsbeckite rdfs:subClassOf :mineral .
+
+",ramsbeckite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ramsdellite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ramsdellite rdfs:subClassOf :mineral .
+
+",ramsdellite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rancieite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rancieite rdfs:subClassOf :mineral .
+
+",rancieite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rankachite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rankachite rdfs:subClassOf :mineral .
+
+",rankachite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rankamaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rankamaite rdfs:subClassOf :mineral .
+
+",rankamaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rankinite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rankinite rdfs:subClassOf :mineral .
+
+",rankinite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ranquilite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ranquilite rdfs:subClassOf :mineral .
+
+",ranquilite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ransomite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ransomite rdfs:subClassOf :mineral .
+
+",ransomite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ranunculite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ranunculite rdfs:subClassOf :mineral .
+
+",ranunculite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rapidcreekite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rapidcreekite rdfs:subClassOf :mineral .
+
+",rapidcreekite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rappoldite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rappoldite rdfs:subClassOf :mineral .
+
+",rappoldite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Raslakite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raslakite rdfs:subClassOf :mineral .
+
+",raslakite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rasorite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rasorite rdfs:subClassOf :mineral .
+
+",rasorite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Raspite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raspite rdfs:subClassOf :mineral .
+
+",raspite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rastsvetaevite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rastsvetaevite rdfs:subClassOf :mineral .
+
+",rastsvetaevite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rasvumite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rasvumite rdfs:subClassOf :mineral .
+
+",rasvumite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rathite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rathite rdfs:subClassOf :mineral .
+
+",rathite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rathite_1a,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rathite_1a rdfs:subClassOf :mineral .
+
+",rathite 1a is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rathite_I,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rathite_i rdfs:subClassOf :mineral .
+
+",rathite i is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rathite_II,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rathite_ii rdfs:subClassOf :mineral .
+
+",rathite ii is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rathite_IV,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rathite_iv rdfs:subClassOf :mineral .
+
+",rathite iv is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rauenthalite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rauenthalite rdfs:subClassOf :mineral .
+
+",rauenthalite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rauvite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rauvite rdfs:subClassOf :mineral .
+
+",rauvite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Ravatite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ravatite rdfs:subClassOf :mineral .
+
+",ravatite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rayite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rayite rdfs:subClassOf :mineral .
+
+",rayite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Realgar,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:realgar rdfs:subClassOf :mineral .
+
+",realgar is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rebulite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rebulite rdfs:subClassOf :mineral .
+
+",rebulite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rectorite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rectorite rdfs:subClassOf :mineral .
+
+",rectorite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reddingite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reddingite rdfs:subClassOf :mineral .
+
+",reddingite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Redgillite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:redgillite rdfs:subClassOf :mineral .
+
+",redgillite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Redingtonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:redingtonite rdfs:subClassOf :mineral .
+
+",redingtonite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Redledgeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:redledgeite rdfs:subClassOf :mineral .
+
+",redledgeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reederite_Y,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reederite_y_ rdfs:subClassOf :mineral .
+
+",reederite y  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reedmergnerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reedmergnerite rdfs:subClassOf :mineral .
+
+",reedmergnerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reevesite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reevesite rdfs:subClassOf :mineral .
+
+",reevesite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Refikite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:refikite rdfs:subClassOf :mineral .
+
+",refikite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reichardite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reichardite rdfs:subClassOf :mineral .
+
+",reichardite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reichenbachite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reichenbachite rdfs:subClassOf :mineral .
+
+",reichenbachite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reidite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reidite rdfs:subClassOf :mineral .
+
+",reidite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reinerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reinerite rdfs:subClassOf :mineral .
+
+",reinerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reinhardbraunsite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reinhardbraunsite rdfs:subClassOf :mineral .
+
+",reinhardbraunsite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Remondite_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:remondite_ce_ rdfs:subClassOf :mineral .
+
+",remondite ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Remondite_La,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:remondite_la_ rdfs:subClassOf :mineral .
+
+",remondite la  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Renardite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:renardite rdfs:subClassOf :mineral .
+
+",renardite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rengeite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rengeite rdfs:subClassOf :mineral .
+
+",rengeite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Renierite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:renierite rdfs:subClassOf :mineral .
+
+",renierite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reniforite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reniforite rdfs:subClassOf :mineral .
+
+",reniforite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reppiaite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reppiaite rdfs:subClassOf :mineral .
+
+",reppiaite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Resin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resin rdfs:subClassOf :mineral .
+
+",resin is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Retgersite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:retgersite rdfs:subClassOf :mineral .
+
+",retgersite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Retzian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:retzian rdfs:subClassOf :mineral .
+
+",retzian is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Retzian_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:retzian_ce_ rdfs:subClassOf :mineral .
+
+",retzian ce  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Retzian_La,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:retzian_la_ rdfs:subClassOf :mineral .
+
+",retzian la  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Retzian_Nd,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:retzian_nd_ rdfs:subClassOf :mineral .
+
+",retzian nd  is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Revdanskite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:revdanskite rdfs:subClassOf :mineral .
+
+",revdanskite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Revdite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:revdite rdfs:subClassOf :mineral .
+
+",revdite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Revised,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:revised rdfs:subClassOf :mineral .
+
+",revised is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Reyerite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reyerite rdfs:subClassOf :mineral .
+
+",reyerite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rhabdite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rhabdite rdfs:subClassOf :mineral .
+
+",rhabdite is a type of mineral.,1,False
+sweet,http://sweetontology.net/matrMineral/Rhabdophane_Ce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rhabdophane_ce_ rdfs:subClassOf :mineral .
+
+",rhabdophane ce  is a type of mineral.,1,False

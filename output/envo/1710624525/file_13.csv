@@ -1,0 +1,596 @@
+ontology,root,fragment,text,statements,llm_used
+envo,http://purl.obolibrary.org/obo/UBERON_0018674,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heart_vasculature rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :heart ],
+        :vasculature_of_organ,
+        :vasculature_of_trunk ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :vasculature ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :heart ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""An interconnected tubular multi-tissue structure that contains fluid that is actively transported around the heart."" ;
+    :has_exact_synonym ""cardiac vasculature"" .
+
+","The heart vasculature refers to the network of blood vessels that supplies oxygen and nutrients to the heart muscle. It includes the coronary arteries, which arise from the aorta and supply blood to the outer portion of the heart (the epicardial surface), as well as the smaller arterioles that branch off from the coronary arteries and supply blood to the inner portion of the heart (the endocardium). The heart vasculature is an essential component of cardiovascular health, as it ensures proper functioning of the heart muscle and prevents various cardiac diseases.",6,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019042,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reproductive_system_mucosa rdfs:subClassOf :mucosa,
+        :reproductive_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :mucosa ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :reproductive_system ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_exact_synonym ""genital mucosa"" .
+
+","reproductive system mucosa is the mucosal lining of the reproductive organs, such as the uterus and ovaries. It plays a role in protecting and nourishing these organs, as well as facilitating the exchange of nutrients and waste products between them and the rest of the body. Genital mucosa is a specific type of reproductive system mucosa that is found in the female reproductive tract, including the vagina, cervix, and fallopian tubes.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019204,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_epithelium rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :zone_of_skin ],
+        :ecto_epithelium ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :epithelium ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :zone_of_skin ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Any region of epithelium that is part of a skin region."" .
+
+","The skin epithelium is a part of the epidermis, which is one of the three layers that make up the skin. The other two layers are the dermis and the hypodermis. The epidermis is the outermost layer, and it is made up of cells called keratinocytes. These cells produce a protein called keratin, which gives the skin its strength and resistance to abrasions.
+The skin epithelium also plays a role in protecting the body from environmental factors such as UV rays, heat, cold, and chemicals. It acts as a barrier that prevents harmful substances from entering the body while allowing nutrients and oxygen to pass through. In addition, the skin epithelium helps regulate the body's temperature by trapping a layer of insulating fat underneath it.
+Overall, the skin epithelium is an essential part of the skin that provides protection, insulation, and regulates the body's temperature.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019207,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chorioretinal_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :optic_choroid ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :eyeball_of_camera_type_eye ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :retina ],
+        :caro_0000000,
+        :ectoderm_derived_structure,
+        :multi_tissue_structure,
+        :structure_with_developmental_contribution_from_neural_crest ;
+    :has_definition ""The part of the eye that consists of both the retina and the optic choroid."" ;
+    :has_exact_synonym ""chorioretina"",
+        ""choroid and retina"",
+        ""retinachoroid"",
+        ""retinachoroidal region"" .
+
+","Chorioretinal region refers to the part of the eye that consists of both the retina and the optic choroid. It is a type of ectoderm-derived structure with developmental contribution from neural crest, and at least part of some camera type eyes have this structure. The term is also used synonymously with choroid and retina, as well as retinachoroid, which further emphasizes the close relationship between these structures.",12,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019264,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gray_matter_of_forebrain rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :forebrain ],
+        :brain_gray_matter ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :gray_matter ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :forebrain ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The gray matter of the forebrain is a part of the brain that is responsible for various functions such as cognitive processing, memory, attention, and motor control. It is located in the frontal lobes of the brain and is composed of neurons and glial cells. The term ""gray matter"" refers to the tissue's color, which appears gray due to the presence of many neurons.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019269,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gray_matter_of_diencephalon rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :diencephalon ],
+        :gray_matter_of_forebrain ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :gray_matter ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :diencephalon ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The gray matter of the diencephalon is not the same as the intersection of the gray matter and the thalamus. The gray matter of the diencephalon is a type of gray matter found in the forebrain, specifically within the brain's midbrain region.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019304,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sensory_organ_epithelium rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :sense_organ ],
+        :epithelium ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :epithelium ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :sense_organ ] ;
+                            rdf:rest :nil ] ] ] .
+
+","Sensory organ epithelium refers to the specialized tissue that covers the surface of a sense organ. It is a type of epithelium, which is a layer of cells that cover internal and external surfaces in an animal's body. The sensory organ epithelium plays a crucial role in protecting the underlying sense organ from damage and providing a means for sensation. For example, the eyelid contains sensory organ epithelium which is responsible for detecting touch and pressure on the eye. In summary, sensory organ epithelium is a type of epithelium that covers the surface of sense organs and plays an essential role in sensory perception.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034768,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:morphological_feature rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :multicellular_organism ],
+        :anatomical_structure ;
+    :has_definition ""A part of an organism or organ that is continuous with its surroundings and distinguished from its surroundings based on morphology."" .
+
+","Morphological features are anatomical structures that can be observed and measured using morphometrics, a branch of biology concerned with the study of shape and size. Morphological features can be used to compare different organisms or populations within a species, and they play an important role in evolutionary studies. Examples of morphological features include body size, shape, coloration, and texture. These features can vary widely between individuals and populations, providing valuable information about the genetic diversity and adaptation of a species.
+<|endoftext|>",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034878,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prechordal_mesoderm rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :axial_mesoderm ],
+        :embryonic_structure ;
+    :has_definition ""The area of axial mesoderm that develops into the prechordal plate."" ;
+    :has_exact_synonym ""prechordal mesenchyme"" .
+
+",Prechordal mesoderm is a type of embryonic structure that refers to the area of axial mesoderm that develops into the prechordal plate. It is also known as prechordal mesenchyme.,4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034921,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multi_organ_part_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :organ_part ],
+        :multicellular_anatomical_structure ;
+    :has_definition ""An multicellular anatomical structure that has subparts of multiple organs as a part."" ;
+    :has_related_synonym ""anatomical cluster"" .
+
+","A multi-organ part structure is a type of anatomical structure that consists of multiple organ parts. This can include various organs and tissues, as well as other body structures that are essential for the proper functioning of the body. For example, the circulatory system includes the heart, blood vessels, and lungs, all of which work together to transport oxygen and nutrients throughout the body. Other examples of multi-organ part structures include the digestive system, which consists of the mouth, esophagus, stomach, intestines, liver, pancreas, and kidneys, as well as other organs that help process food and eliminate waste products.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034923,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:disconnected_anatomical_group rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :anatomical_structure ],
+        :material_anatomical_entity ;
+    :has_definition ""Material anatomical entity consisting of multiple anatomical structures that are not connected to each other."" .
+
+",A disconnected anatomical group is a type of material anatomical entity made up of multiple anatomical structures that are not connected to each other.,3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034925,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anatomical_collection rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :anatomical_structure ],
+        :material_anatomical_entity ;
+    :has_definition ""A collection of anatomical structures that are alike in terms of their morphology or developmental origin."" .
+
+","An anatomical collection is a group of body parts that share similar morphological or developmental properties. It can include bones, muscles, organs, and other tissues that are organized in a particular way within the body. An example of an anatomical collection is the skeletal system, which consists of bones, joints, cartilage, and other connective tissues that support and protect the body's internal organs and enable movement.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034929,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:external_soft_tissue_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :vasculature ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :nerve ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :musculature ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :organism_subdivision ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :zone_of_skin ],
+        :caro_0000000,
+        :multicellular_anatomical_structure ;
+    :has_definition ""A region or zone on the surface of an organism that encompasses skin and any adnexa, down through muscles and bounded by underlying skeletal support structures."" .
+
+","The term ""external soft tissue zone"" refers to a specific region or zone on the surface of an organism that includes skin and any adnexa, as well as muscles and underlying skeletal support structures. This zone is typically considered to be the outermost layer of an animal's body, and it serves various functions such as protection, movement, and sensation.",8,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034944,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zone_of_organ rdfs:subClassOf :organ_part ;
+    :has_exact_synonym ""organ sector"",
+        ""organ zonal region"",
+        ""organ zone"" ;
+    :has_related_synonym ""organ region with floating fiat boundary"" .
+
+","Here is a rewritten version of the information you provided:
+
+A ""zone of organ"" refers to a specific part of an organ. This term has several synonyms, including ""organ sector,"" ""organ zonal region,"" and ""organ zone."" Additionally, ""organ region with floating fiat boundary"" can also be considered a related term for ""zone of organ.""",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034995,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jaw_mesenchyme rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :jaw_region ],
+        :head_mesenchyme ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :mesenchyme ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :jaw_region ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Mesenchyme that is part of a developing jaw [Automatically generated definition]."" .
+
+",Jaw mesenchyme is a type of head mesenchyme that is part of a developing jaw.,4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0035037,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jaw_epithelium rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :jaw_region ],
+        :digestive_tract_epithelium ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :epithelium ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :jaw_region ] ;
+                            rdf:rest :nil ] ] ] .
+
+",Jaw epithelium is a type of digestive tract epithelium that is found in the jaw region. It plays a role in the process of digestion and absorption of nutrients.,3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0035804,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:future_mouth rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :stomodeum ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :presumptive_gut ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :endoderm ],
+        :caro_0000000,
+        :subdivision_of_tube ;
+    :has_definition ""The primordial mouth region of the developing head."" ;
+    :has_exact_synonym ""primitive mouth"",
+        ""primordial mouth"" .
+
+","Future mouth, also known as the primitive oral cavity, is a developmental structure that forms from the ectoderm during embryonic development. It is the precursor to the mouth and pharynx in vertebrates. The future mouth is formed through the process of invagination, where the ectoderm folds inwards to form the walls of the oral cavity. As the embryo develops, the future mouth becomes the mouth and pharynx, which are essential for feeding and respiration. It is also thought that the future mouth may have played a role in the evolution of jawed fishes, as it has been suggested that some jawed fish may have started out as gill-breathing fish with a primitive oral cavity.",8,True
+envo,http://purl.obolibrary.org/obo/UBERON_0035965,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_blood_vessel rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :blood_vessel_layer ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :blood_vessel ],
+        :anatomical_wall,
+        :caro_0000000,
+        :mesoderm_derived_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :blood_vessel ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_exact_synonym ""blood vessel wall"" ;
+    :has_related_synonym ""vascular wall"" .
+
+","The correct answer is:
+
+* wall of blood vessel is a type of anatomical wall.
+* wall of blood vessel is a type of mesoderm derived structure.
+* wall of blood vessel has exact synonym blood vessel wall.
+* wall of blood vessel has related synonym vascular wall.",8,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036016,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:honey rdfs:subClassOf :regurgitated_substance ;
+    :has_definition ""A sweet viscid material elaborated out of the nectar of flowers in the honey sac of various bees."" .
+
+","honey is a type of food that bees produce using the nectar from flowers. It is stored in their honey sac and later regurgitated for consumption by the bee colony. Honey has a sweet taste and a viscous texture, making it a popular natural sweetener in many cultures.",2,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036017,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regurgitated_substance rdfs:subClassOf :organism_substance ;
+    :has_definition ""A bodily fluid consisting of the contents of the digestive tract expulsed through the anterior portion of the digestive tract."" ;
+    :has_related_synonym ""regurgitate"" .
+
+","Regurgitated substance is a term used to describe the process of expelling food from the digestive system through the mouth. It can also refer to any bodily fluid or substance that is expelled in this manner, such as vomit or bile. The related synonym for regurgitate is ""vomit"".",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036146,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cardiopharyngeal_field rdfs:subClassOf :anlage,
+        :embryonic_structure,
+        :embryonic_tissue,
+        :mesoderm_derived_structure ;
+    :has_definition ""An region of the mesoderm that includes anterior lateral mesoderm of the first heart field plus contiguous pharyngeal mesoderm that gives rise to second-heart-field-derived regions of the heart and branchiomeric muscles."" .
+
+","Cardiopharyngeal field is a type of embryonic structure that develops into various cardiovascular and pharyngeal structures. It is derived from the mesoderm, specifically from the anterior lateral mesoderm of the first heart field, and contiguous pharyngeal mesoderm. The cardiopharyngeal field gives rise to the second-heart-field-derived regions of the heart and branchiomeric muscles.",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036215,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anatomical_surface_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :anatomical_structure ],
+        :material_anatomical_entity ;
+    :has_definition ""Material anatomical entity that forms the outermost boundary of an anatomical structure."" .
+
+","An anatomical surface region is a part of an organ or tissue that forms the outer boundary of an anatomical structure. It can be a flat, concave, or uneven surface, and may be covered in hair, scales, or other protective structures. Examples of anatomical surfaces include the epidermis (outermost layer of skin), the lining of the gastrointestinal tract, and the outer coating of nerves. An anatomical surface region is important for various functions such as protection, absorption, and excretion. It also plays a role in the sense organs like touch and vision.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036244,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:secretion_of_serous_membrane rdfs:subClassOf :transudate ;
+    :has_broad_synonym ""serous fluid"" ;
+    :has_definition ""A transudate found in the serous sac."" ;
+    :has_exact_synonym ""serous sac fluid"" .
+
+","Secretion of the serous membrane is a type of transudate, which is a fluid that is excreted by the body. This type of fluid is typically found in the serous sac, which is located near the internal organs and helps to protect them from injury or infection. The term ""serous"" refers to a thin, clear, and watery fluid that is produced by the body's serous membrane, which is a thin layer of tissue that lines the cavities and surfaces of organs in the body.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036253,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orifice_of_skull rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :skull ],
+        :orifice ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :orifice ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :skull ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_exact_synonym ""cranial orifice"",
+        ""skull orifice"" .
+
+","The orifice of the skull, also known as the cranial orifice or skull orifice, is a passageway that connects the brain to the outside environment. It serves as an exit for waste products and allows for the exchange of gases such as carbon dioxide and oxygen. The orifice is typically located at the base of the skull and is surrounded by protective bone structures, including the cranium and the foramen magnum.",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036302,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vasculature_of_central_nervous_system_plus_retina rdfs:subClassOf :vasculature ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :vasculature_of_retina ;
+                    rdf:rest [ rdf:first :vasculature_of_central_nervous_system ;
+                            rdf:rest :nil ] ] ] .
+
+","The statement you made is not entirely correct. The vasculature of the central nervous system and that of the retina are quite different from each other, both in structure and function.
+The central nervous system primarily consists of the brain and spinal cord, which contains a complex network of blood vessels called the cerebrovascular system. This system is responsible for supplying oxygen and nutrients to the neurons in the brain and maintaining proper circulation. The blood-brain barrier also plays a crucial role in protecting the brain from harmful substances, such as toxins or pathogens.
+On the other hand, the retina is a specialized layer of tissue at the back of the eye that detects light and converts it into electrical signals that are transmitted to the brain via the optic nerve. The vasculature of the retina consists of a complex network of blood vessels called the choroid, which provides oxygen and nutrients to the retinal neurons. However, the central nervous system and the retina have different types of blood vessels, with distinct functions and structures.
+In summary, while there may be some similarities between the vasculature of the central nervous system and that of the retina, they are fundamentally different in terms of their functions, structures, and relationships to other tissues within the body.",2,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036303,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vasculature_of_central_nervous_system rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :central_nervous_system ],
+        :vasculature_of_central_nervous_system_plus_retina ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :vasculature ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :central_nervous_system ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The vasculature of the central nervous system refers to the blood vessels that supply blood and nutrients to the brain, spinal cord, and retina.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036654,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_lateral_ventricle rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :telencephalic_ventricle ],
+        :structure_with_developmental_contribution_from_neural_crest,
+        :wall_of_ventricular_system_of_brain ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :telencephalic_ventricle ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The wall of the lateral ventricle is indeed an anatomical structure that has a developmental contribution from neural crest cells, and it is part of the ventricular system in the brain. The lateral ventricles are interconnected spaces within the cerebral hemispheres, and they help to channel cerebrospinal fluid (CSF) through the brain. CSF serves as a fluid barrier for the brain, helping to protect it from potential damage caused by rapid changes in blood pressure or injury. The wall of the lateral ventricle is important for maintaining proper circulation and regulating the volume of CSF within the brain.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036661,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_ventricular_system_of_brain rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :ventricular_system_of_brain ],
+        :anatomical_wall,
+        :ectoderm_derived_structure,
+        :ventricle_of_nervous_system ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :ventricular_system_of_brain ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The wall of the ventricular system in the brain is made up of the same material as the intersection of an anatomical wall and part of the ventricular system. In other words, it is a type of ectoderm-derived structure that is also considered to be a part of the ventricular system.",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036925,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_eyeball rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :eyeball_of_camera_type_eye ],
+        :anatomical_wall,
+        :ectoderm_derived_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :eyeball_of_camera_type_eye ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_exact_synonym ""eyeball wall"" .
+
+","The ""wall of eyeball"" is a type of anatomical wall that is found in the eye. It is also known as the ""eye lens."" The wall of eyeball is made up of connective tissue and helps to support the eye lens, which is responsible for focusing light onto the retina.",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0037144,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_heart rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :heart ],
+        :anatomical_wall,
+        :mesoderm_derived_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :heart ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Wall of organ which has as its parts the endocardium, myocardium , epicardium, and the cardiac septum, surrounded by the pericardial sac proper and is continuous with the walls of the systemic and pulmonary arterial and venous trees."" ;
+    :has_exact_synonym ""cardiac wall"" .
+
+","The term ""wall of heart"" refers to the anatomical structure that forms the dividing barrier between the two atria (chambers) of the heart. It is made up of cardiac muscle, and it plays a crucial role in maintaining the proper functioning of the heart by regulating blood flow into the ventricles (the lower chambers of the heart that pump blood to the lungs and rest of the body). The wall of heart is also known as the cardiac wall or the myocardium, which is a layer of muscular tissue found in the walls of the heart.",6,True
+envo,http://purl.obolibrary.org/obo/UBERON_1000021,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_of_face rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :face ],
+        :skin_of_head ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :zone_of_skin ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :face ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A zone of skin that is part of the face."" ;
+    :has_exact_synonym ""face skin"" ;
+    :has_related_synonym ""facial skin"" .
+
+","The skin of the face is a type of facial skin, which refers to the area covering the head and the visible portion of the face. It is a crucial part of human anatomy that serves various functions such as protecting the body from environmental factors, maintaining a healthy temperature, and providing sensory input through touch, pressure, and pain signals. The skin of the face is often characterized by its distinctive texture and color variations, which are influenced by genetics, sun exposure, and other factors. In addition to its practical functions, the skin of the face also plays an essential role in self-expression through facial features such as eyes, nose, mouth, and hairline. Overall, the skin of the face is a vital component of human physiology that contributes significantly to our overall well-being and appearance.",6,True
+envo,http://purl.obolibrary.org/obo/UBERON_1100000,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:digestive_tract_junction rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :connects ;
+            owl:someValuesFrom :subdivision_of_digestive_tract ],
+        :anatomical_junction ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_junction ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :connects ;
+                                    owl:someValuesFrom :subdivision_of_digestive_tract ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""An anatomical junction between two parts of the digestive tract."" .
+
+","The term ""digestive tract junction"" refers to the anatomical junction between two parts of the digestive tract. It is a point where different parts of the digestive system come together, such as the stomach and small intestine or the large intestine and rectum. This junction plays a crucial role in the proper functioning of the digestive system by allowing for the absorption of nutrients and the elimination of waste products.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_3000961,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:external_integument_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :integument ],
+        :surface_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :surface_structure ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :integument ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Structures of the dermis, epidermis, glands and pigment cells recognizable on the external surfaces of the integument."" .
+
+","The statement you provided is a bit confusing, but I understand that you are referring to the outermost layer of skin. The external integument structure, also known as the epidermis, is a thin and protective layer of skin that covers the entire body surface. It consists of several layers, including the stratum corneum (the outermost layer), which contains dead cells and lipids that help to prevent water loss from the body. The epidermis also functions as an immune barrier, protecting the body from external pathogens and allergens.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_3000972,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:head_external_integument_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :head ],
+        :external_integument_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :external_integument_structure ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :head ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Dermal, epidermal, glandular and pigment structures of the external head integument."" .
+
+","The head external integument structure is the same as an intersection of the external integument structure and at least a part of the head. It can be described as a type of external integument structure, and it has a definition that includes Dermal, epidermal, glandular, and pigment structures of the external head integument.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_3000977,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:body_external_integument_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :trunk ],
+        :external_integument_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :external_integument_structure ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :trunk ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Dermal, epidermal, glandular and pigment structures of the body integument."" .
+
+",The statement you provided is not grammatically correct. Could you please rephrase it in a clearer manner or provide more context?,4,True
+envo,http://purl.obolibrary.org/obo/UBERON_3010200,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vasculature_of_respiratory_integument rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :integument ],
+        :respiratory_system_blood_vessel ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :blood_vessel ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :respiratory_system ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :part_of ;
+                                            owl:someValuesFrom :integument ] ;
+                                    rdf:rest :nil ] ] ] ] ;
+    :has_definition ""Blood vessels in respiratory skin."" .
+
+","The vascular structure of the respiratory integument is made up of blood vessels that intersect with the branches of a network, which includes at least part of some respiratory system and some integument. The term ""vasculature of respiratory integument"" refers to these blood vessels that are found in the skin of the respiratory system.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_4100000,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skeletal_element_projection rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :skeletal_element ],
+        :anatomical_projection ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_projection ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :skeletal_element ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Anatomical projection that is composed of bone or cartilage tissue."" .
+
+",The skeletal element projection is the same as the intersection of an anatomical projection and at least part of a skeletal element. It can be considered as a type of anatomical projection and also as something that at least part of some skeletal element. The definition of skeletal element projection is an anatomical projection composed of bone or cartilage tissue.,4,True
+envo,http://purl.obolibrary.org/obo/UBERON_8410024,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intestinal_junction rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :intestine ],
+        :digestive_tract_junction ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_junction ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :intestine ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :connects ;
+                                            owl:someValuesFrom :subdivision_of_digestive_tract ] ;
+                                    rdf:rest :nil ] ] ] ] ;
+    :has_definition ""An anatomical junction between two parts of the intestine."" ;
+    :has_exact_synonym ""junction of intestine"" .
+
+",User's input is incoherent and contains multiple concepts that are not clearly defined or related. It would be helpful to provide more specific information or clarify the intended meaning for a more accurate response.,5,True
+envo,http://purl.obolibrary.org/obo/UBERON_8450002,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:excretory_system rdfs:subClassOf :anatomical_system ;
+    :has_definition ""An anatomical system that eliminates waste products that arise as a result of metabolic activity."" .
+
+","The excretory system is a biological system that serves the purpose of eliminating waste products from an organism. It includes all of the organs, tubes, and other structures involved in the removal of metabolic waste products from the body. Some examples of organs within the excretory system include the kidneys, liver, and lungs. The process of elimination typically occurs through urine or fecal matter, depending on the type of organism and its location within the body.
+Excretion is an essential process for maintaining proper bodily function and overall health. By removing waste products from the body, the excretory system helps to prevent the buildup of harmful substances, which can lead to various health problems if left unchecked. Additionally, the excretory system also plays a role in regulating fluid balance within the body, as it works in conjunction with other systems such as the cardiovascular and renal systems.",2,True
+envo,http://purl.obolibrary.org/obo/UBERON_8480025,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_of_clavicle_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :pectoral_girdle_region ],
+        :zone_of_skin ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :zone_of_skin ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :pectoral_girdle_region ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A zone of skin that is above the clavicle zone in the pectoral girdle region."" .
+
+","The skin of the clavicle region is located above the clavicle zone in the pectoral girdle region. It is a type of zone of skin, which is part of the larger pectoral girdle region. The pectoral girdle region is the area where the upper body and forelimbs attach to the axial skeleton.",4,True

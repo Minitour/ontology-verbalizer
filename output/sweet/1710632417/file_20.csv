@@ -1,0 +1,1508 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/reprSpaceGeometry/Rectangle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rectangle rdfs:subClassOf :polygon .
+
+",rectangle is a type of polygon.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Region,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:region rdfs:subClassOf :geometrical_object .
+
+",region is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Ridge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ridge rdfs:subClassOf :geometrical_object .
+
+",ridge is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Route,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:route rdfs:subClassOf :path,
+        :trajectory .
+
+","route is a specific path that is taken by something or someone. It can be a physical path, such as the route that a car or train takes to reach its destination, or it can be a metaphorical path, such as the route that a person takes in their life or career. In general, a route refers to a well-defined path that is followed by something or someone. Is there anything specific you would like to know about routes?",2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/SmallCircle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:small_circle rdfs:subClassOf :circle .
+
+",small circle is a type of circle.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Spiral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spiral rdfs:subClassOf :arc .
+
+",spiral is a type of arc.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Square,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:square rdfs:subClassOf :rectangle .
+
+",square is a type of rectangle.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Star,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:star rdfs:subClassOf :geometrical_object_2d .
+
+",star is a type of geometrical object 2d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Surface,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surface rdfs:subClassOf :geometrical_object .
+
+",surface is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Swarm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:swarm rdfs:subClassOf :collection .
+
+",swarm is a type of collection.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Trajectory,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trajectory rdfs:subClassOf :curve .
+
+",trajectory is a type of curve.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Trough,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trough rdfs:subClassOf :geometrical_object .
+
+",trough is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Zone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zone rdfs:subClassOf :region .
+
+",zone is a type of region.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/AirSpace,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_space rdfs:subClassOf :geometrical_object_3d .
+
+",air space is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Belt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:belt rdfs:subClassOf :geometrical_object_3d .
+
+",belt is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Body,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:body rdfs:subClassOf :geometrical_object_3d .
+
+",body is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Bowl,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bowl rdfs:subClassOf :geometrical_object_3d .
+
+",bowl is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Cavity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cavity rdfs:subClassOf :geometrical_object_3d .
+
+",cavity is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Cone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cone rdfs:subClassOf :geometrical_object_3d .
+
+",cone is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Corkscrew,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:corkscrew rdfs:subClassOf :geometrical_object_3d .
+
+",corkscrew is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Cylinder,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cylinder rdfs:subClassOf :geometrical_object_3d .
+
+",cylinder is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Dipole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dipole rdfs:subClassOf :geometrical_object_3d .
+
+",dipole is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Dome,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dome rdfs:subClassOf :geometrical_object_3d .
+
+",dome is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Ellipsoid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ellipsoid rdfs:subClassOf :geometrical_object_3d .
+
+",ellipsoid is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Envelope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:envelope rdfs:subClassOf :layer .
+
+",envelope is a type of layer.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/FluxTube,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flux_tube rdfs:subClassOf :tube .
+
+",flux tube is a type of tube.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/GeometricalObject_3D,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geometrical_object_3d rdfs:subClassOf :d,
+        :geometrical_object .
+
+",Geometrical object 3D is a type of three-dimensional object.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Hemisphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hemisphere rdfs:subClassOf :geometrical_object_3d .
+
+",hemisphere is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Layer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:layer rdfs:subClassOf :geometrical_object_3d .
+
+",layer is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Polyhedron,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyhedron rdfs:subClassOf :geometrical_object_3d .
+
+",polyhedron is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/ReferenceEllipsoid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reference_ellipsoid rdfs:subClassOf :ellipsoid .
+
+",reference ellipsoid is a type of ellipsoid.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Ring,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ring rdfs:subClassOf :geometrical_object_3d .
+
+",ring is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Shell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shell rdfs:subClassOf :layer .
+
+",shell is a type of layer.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Sphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sphere rdfs:subClassOf :geometrical_object_3d .
+
+",sphere is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Spheroid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spheroid rdfs:subClassOf :geometrical_object_3d .
+
+",spheroid is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Strata,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strata rdfs:subClassOf :layer .
+
+",strata is a type of layer.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Striation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:striation rdfs:subClassOf :geometrical_object_3d .
+
+",striation is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Torus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:torus rdfs:subClassOf :geometrical_object_3d .
+
+",torus is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Tube,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tube rdfs:subClassOf :geometrical_object_3d .
+
+",tube is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceReferenceSystem/HorizontalCoordinateSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:horizontal_coordinate_system rdfs:subClassOf :spatial_reference_system .
+
+",horizontal coordinate system is a type of spatial reference system.,1,False
+sweet,http://sweetontology.net/reprSpaceReferenceSystem/PolarCoordinates,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polar_coordinates rdfs:subClassOf :horizontal_coordinate_system .
+
+",polar coordinates is a type of horizontal coordinate system.,1,False
+sweet,http://sweetontology.net/reprSpaceReferenceSystem/SpatialReferenceSystem,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_reference_system rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :space ;
+            owl:onProperty :has_dimension ],
+        :reference_frame .
+
+","A Spatial Reference System (SRS) is a coordinate system used to represent three-dimensional space. It provides a way to define points, lines, and planes in the world around us. SRS can be absolute or relative, with absolute SRS being based on external coordinates such as geographic coordinates or satellite coordinates, while relative SRS uses relative positions within a coordinate system. SRS are commonly used in GIS (Geographic Information System) for mapping and analyzing spatial data.",2,True
+sweet,http://sweetontology.net/reprSpaceReferenceSystem/VerticalCoordinateSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertical_coordinate_system rdfs:subClassOf :spatial_reference_system .
+
+",vertical coordinate system is a type of spatial reference system.,1,False
+sweet,http://sweetontology.net/reprTime/Duration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:duration rdfs:subClassOf :numerical_entity ;
+    owl:equivalentClass :temporal_entity .
+
+","duration is not same as temporal entity. duration is a concept that refers to the amount of time elapsed between two events or the time it takes for something to be completed. Temporal entities refer to specific points in time, such as years, months, days, hours, and seconds.
+
+While duration can refer to any amount of time, temporal entities typically refer to a more specific time period. For example, ""the duration of the movie was two hours,"" refers to the time it took for the movie to be completed, while ""I went to the store for two hours"" refers to the time elapsed during which the person was at the store.
+
+In summary, while duration is a concept that can refer to any amount of time, temporal entities are more specific points in time.",2,True
+sweet,http://sweetontology.net/reprTime/Local,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:local rdfs:subClassOf :local_time .
+
+",local is a type of local time.,1,False
+sweet,http://sweetontology.net/reprTime/LocalTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:local_time rdfs:subClassOf :time_zone .
+
+",local time is a type of time zone.,1,False
+sweet,http://sweetontology.net/reprTime/SolarTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_time rdfs:subClassOf :local_time .
+
+",solar time is a type of local time.,1,False
+sweet,http://sweetontology.net/reprTime/TemporalEntity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_entity rdfs:subClassOf :numerical_entity .
+
+",temporal entity is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprTime/TemporalReference,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_reference rdfs:subClassOf :duration,
+        :temporal_entity ;
+    owl:equivalentClass :time_reference .
+
+","Temporal reference, also known as time reference or time scale, refers to a specific point in time or duration that is used as a standard for measurement and comparison. It serves as a common frame of reference from which other temporal entities, such as events, objects, and durations, can be compared and understood. In general, a temporal reference does not change over time, although it may vary between different cultures and historical periods. For example, the Gregorian calendar is a common temporal reference used in many parts of the world, but other cultures may have their own calendars with different time scales.",3,True
+sweet,http://sweetontology.net/reprTime/Time,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :second ;
+            owl:onProperty :has_default_unit ],
+        :dimension .
+
+","Time is a dimension, just like length, width, and height. It is a measure of the duration between events or actions. The default unit for time is the second, but it can be expressed in other units such as hours, minutes, days, etc.",2,True
+sweet,http://sweetontology.net/reprTime/TimeFrame,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_frame rdfs:subClassOf :reference_frame,
+        :time .
+
+","A time frame is a reference frame that helps to organize and understand the passage of time. It can be used in various contexts, such as scientific research, historical analysis, or personal planning. Time frames often consist of specific intervals or periods, which can range from minutes to centuries. By using time frames, individuals can better visualize and manage their schedules, set goals and priorities, and make informed decisions about their lives.
+
+In physics, a frame of reference is a coordinate system used to describe the motion of objects. Time frames are closely related to frames of reference, as both provide a framework for understanding how time affects our lives. The terms ""frame of reference"" and ""time frame"" may be used interchangeably in some contexts, although they generally refer to different concepts.
+
+<|endoftext|>",2,True
+sweet,http://sweetontology.net/reprTime/TimeReference,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_reference rdfs:subClassOf :duration,
+        :temporal_entity .
+
+","Yes, time reference is a concept that refers to the starting point of an interval or duration in which an event occurs. It allows us to compare different points in time and understand their relative positions within a certain period. Time references are often used in mathematics, computer science, and other fields where precise measurement of time is necessary.
+
+For example, when using a computer system, the current time reference is usually based on the system's clock or the local time zone setting. This ensures that events are scheduled correctly and that calculations involving time are accurate according to the system's standard. Time references can also be used in various programming languages to convert between different time zones or to track the progress of tasks over time.
+
+In summary, a time reference is a concept that helps us understand the relationship between different points in time by providing a starting point for measuring intervals or durations. It is an essential tool when working with time-related data and calculations in various fields.",2,True
+sweet,http://sweetontology.net/reprTime/TimeZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_zone rdfs:subClassOf :temporal_reference,
+        :time_reference .
+
+","A time zone is a region on Earth that observes the same time, which allows people to coordinate activities and communicate with each other. It's also known as a ""time zone reference"" or just ""time zone.""",2,True
+sweet,http://sweetontology.net/reprTimeDay/Dawn,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dawn rdfs:subClassOf :twilight .
+
+",dawn is a type of twilight.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Day,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:day rdfs:subClassOf :proper_interval .
+
+",day is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Daytime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:daytime rdfs:subClassOf :proper_interval .
+
+",daytime is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Dusk,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dusk rdfs:subClassOf :twilight .
+
+",dusk is a type of twilight.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Evening,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evening rdfs:subClassOf :nighttime,
+        :nocturnal .
+
+","Evening is a time of the day that comes after afternoon and before night. It is considered as part of the nocturnal period, but it's not exactly the same as nighttime.",2,True
+sweet,http://sweetontology.net/reprTimeDay/Midnight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:midnight rdfs:subClassOf :instant .
+
+",midnight is a type of instant.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Morning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:morning rdfs:subClassOf :daytime .
+
+",morning is a type of daytime.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Nighttime,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nighttime rdfs:subClassOf :proper_interval ;
+    owl:equivalentClass :nocturnal .
+
+","Nighttime is the period between sunset and sunrise, while nocturnal refers to a person's natural sleep cycle that occurs during night hours. Proper interval typically refers to a specific time frame or duration.",2,True
+sweet,http://sweetontology.net/reprTimeDay/Nocturnal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nocturnal rdfs:subClassOf :proper_interval .
+
+",nocturnal is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Noon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:noon rdfs:subClassOf :instant .
+
+",noon is a type of instant.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Sunrise,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sunrise rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :start_of ;
+            owl:someValuesFrom :morning ],
+        :instant .
+
+","Sunrise is a natural phenomenon that occurs when the sun rises above the horizon, signaling the beginning of a new day. It is typically associated with the beauty and tranquility of nature and often used as a symbol of hope and renewal.",2,True
+sweet,http://sweetontology.net/reprTimeDay/Sunset,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sunset rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :start_of ;
+            owl:someValuesFrom :evening ],
+        :instant .
+
+","sunset is a time of day that occurs at the end of the day when the sun is below the horizon. It marks the transition from day to night and typically has warm, golden-hued light.",2,True
+sweet,http://sweetontology.net/reprTimeDay/Twilight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:twilight rdfs:subClassOf :proper_interval .
+
+",twilight is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeSeason/ColdestMonth,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coldest_month rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_minimum ;
+            owl:someValuesFrom :temperature ],
+        [ a owl:Restriction ;
+            owl:hasValue :month ;
+            owl:onProperty :has_unit ],
+        :time .
+
+",The coldest month is January.,3,True
+sweet,http://sweetontology.net/reprTimeSeason/DrySeason,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_season rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dry ;
+            owl:onProperty :has_state ],
+        :season .
+
+","Dry season is a period of time characterized by little to no precipitation, which can result in low water levels and less lush vegetation compared to other seasons. It typically occurs during the late summer or early fall months in many parts of the world, and can last for several weeks or even months depending on the location and climate.",2,True
+sweet,http://sweetontology.net/reprTimeSeason/Equinox,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equinox rdfs:subClassOf :instant .
+
+",equinox is a type of instant.,1,False
+sweet,http://sweetontology.net/reprTimeSeason/Season,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:season rdfs:subClassOf :proper_interval .
+
+",season is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeSeason/Solstice,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solstice rdfs:subClassOf :instant .
+
+",solstice is a type of instant.,1,False
+sweet,http://sweetontology.net/reprTimeSeason/WarmestMonth,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:warmest_month rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :month ;
+            owl:onProperty :has_unit ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_maximum ;
+            owl:someValuesFrom :temperature ],
+        :time .
+
+","Warmest month is a type of time that occurs in the calendar year and is usually associated with the summer season. It can vary depending on the location, but generally, it refers to the period when the average temperature is at its highest.",3,True
+sweet,http://sweetontology.net/reprTimeSeason/WetSeason,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wet_season rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :wet ;
+            owl:onProperty :has_state ],
+        :season .
+
+","Wet season is a type of season that typically occurs during the late summer and early fall months. It is characterized by high humidity, increased rainfall, and potentially stormy weather.",2,True
+sweet,http://sweetontology.net/state/BinaryState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binary_state rdfs:subClassOf :state .
+
+",binary state is a type of state.,1,False
+sweet,http://sweetontology.net/state/State,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:state rdfs:subClassOf owl:Thing .
+
+",state is a type of thing.,1,False
+sweet,http://sweetontology.net/stateBiological/BiologicalState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biological_state rdfs:subClassOf :state .
+
+",biological state is a type of state.,1,False
+sweet,http://sweetontology.net/stateChemical/BiochemicalState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biochemical_state rdfs:subClassOf :biological_state,
+        :chemical_state .
+
+","biochemical state is a term used to describe the chemical composition of an organism, including its proteins and other molecules. It can be influenced by factors such as diet, genetics, and environment. The concept of homeostasis refers to the maintenance of a stable internal environment in an organism despite changes in the external environment. This involves various feedback mechanisms that regulate physiological processes, including the balance between different biochemical pathways within the body. For example, the body may adjust its metabolic rate and other functions based on factors such as energy intake, temperature, and stress levels to maintain a stable internal state.",2,True
+sweet,http://sweetontology.net/stateChemical/ChemicalState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_state rdfs:subClassOf :state .
+
+",chemical state is a type of state.,1,False
+sweet,http://sweetontology.net/stateDataProcessing/Archived,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:archived rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :archive ],
+        :data_state .
+
+","Archived data refers to information that has been saved and stored in a way that it is not easily accessible or up-to-date. This type of data can include old emails, documents, or other records that have historical value but are no longer relevant or useful for current purposes. It can be helpful to archive data to free up space on servers and storage devices and to maintain organization within a system.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Binned,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binned rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :binning ],
+        :data_state .
+
+","Binned is a term used to describe data that has been grouped or categorized into distinct classes or segments based on certain characteristics or features. This process, known as binning, helps in simplifying complex data sets and making it easier to analyze and visualize the data. Binned data can be useful for various purposes such as clustering analysis, feature selection, and dimensionality reduction.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Calibrated,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:calibrated rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :calibration ],
+        :data_state .
+
+","Calibration is the process of adjusting the performance of a machine learning model to improve its accuracy and generalization capabilities. It typically involves training the model on a separate dataset that has similar characteristics to the one it will be applied to in production, but with known labels or annotations. By tuning various hyperparameters and parameters of the model during this process, it is possible to optimize its performance for a specific task or domain. The term ""calibrated"" refers to a machine learning model that has gone through this calibration process and has been fine-tuned to perform well in a particular context or scenario.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Clustered,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clustered rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :clustering ],
+        :data_state .
+
+","Clustered is indeed a data state or an organization of data. It represents a group of data points that are related and share similar characteristics, making them easier to analyze, interpret, and manage. In data science and machine learning, clustering is a common technique used to uncover hidden patterns in large datasets by grouping similar instances together into clusters.
+
+There are several types of clustering methods, such as k-means, hierarchical clustering, and density-based spatial clustering of applications with noise (DBSCAN). Each method has its own advantages and disadvantages, depending on the specific problem at hand. In general, clustering helps to identify patterns and structure in the data that might not be immediately apparent from a simple analysis of individual data points.
+
+To give an example, let's say we have a dataset containing information about customers who purchased products from an online store. By using clustering techniques, we can group together customers with similar shopping habits or preferences, allowing us to better understand their behavior and tailor our marketing efforts accordingly. This can lead to improved customer satisfaction and increased sales for the business.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/DataState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_state rdfs:subClassOf :system_state .
+
+",data state is a type of system state.,1,False
+sweet,http://sweetontology.net/stateDataProcessing/Georeferenced,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:georeferenced rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :georeferencing ],
+        :data_state .
+
+","Georeferenced data is a type of data that has been associated with geographical coordinates, usually in the form of latitude and longitude values. This type of data can be used for various purposes such as mapping, location-based services, and spatial analysis. Georeferencing processes involve attaching location information to non-spatial data sets, such as textual or image files, so that they can be visualized on a map.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Gridded,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gridded rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :gridding ],
+        :data_state .
+
+","Gridded refers to data that is organized in a grid-like structure, typically with rows and columns. This type of data state can be used for various purposes such as storing and accessing information efficiently. The term ""gridding"" can refer to the process of organizing or structuring data into a grid format, which may involve grouping similar data together or creating relationships between different pieces of information. In general, gridded data is often used in applications where organization, accessibility, and ease of use are important factors for users or systems.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Interpolated,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interpolated rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :interpolation ],
+        :data_state .
+
+","Interpolated data is a type of data that has been processed or estimated in some way to fill in gaps or make predictions. It can be used in various fields such as statistics, machine learning, and data analysis to improve the accuracy of models and calculations.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/L1,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:l1 rdfs:subClassOf :processing_level ;
+    owl:equivalentClass :level1 .
+
+","l1 is a level of processing, not necessarily the same as ""level1"". Processing levels are generally used in the context of computer hardware or software to describe different stages of execution. For example, in a CPU, the ""level 1"" cache is closer to the memory and provides faster access to data, while ""level 2"" and ""level 3"" caches are farther away and provide slower access but can hold more data.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/L2,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:l2 rdfs:subClassOf :processing_level ;
+    owl:equivalentClass :level2 .
+
+","L2 is not the same as level2, L2 refers to Level 2 of a network, while level2 is just a generic term for a second level.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/L3,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:l3 rdfs:subClassOf :processing_level ;
+    owl:equivalentClass :level3 .
+
+","You are correct that ""l3"" can refer to a third level of processing, but it is also commonly used as an abbreviation for the third level in some contexts. In general, ""level 3"" and ""l3"" both refer to the same thing - the third level of a hierarchy or system. However, using ""l3"" as an abbreviation can make your writing clearer and more concise, especially when you need to use it frequently.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/L4,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:l4 rdfs:subClassOf :processing_level ;
+    owl:equivalentClass :level4 .
+
+","L4 is a reference to the fourth level of language processing. It refers to the stage in which language understanding becomes more sophisticated, as it involves abstract thinking and reasoning. This level is often associated with human-like comprehension and communication abilities.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Level1,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level1 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :geolocation ],
+        :processing_level .
+
+","I'm sorry, but I'm not sure what you are asking. Could you please provide more context or clarify your question?",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Level2,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level2 rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :swath ;
+            owl:onProperty :has_data_model ],
+        [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :parameterization ],
+        :processing_level .
+
+","Level 2 is a type of processing level. At least, it processes some parameterization and has data model swath.",3,True
+sweet,http://sweetontology.net/stateDataProcessing/Level3,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level3 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :gridding ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :grid ;
+            owl:onProperty :has_data_model ],
+        :processing_level .
+
+","Level 3 processing refers to a higher level of data processing than Level 1 or Level 2. It typically involves more complex algorithms and techniques that can extract more information from the input data, such as noise reduction, feature extraction, or anomaly detection. In your description, it seems like you are referring to data models on a grid, which could be related to geospatial data analysis or other applications where gridded data is used. However, it is not clear how Level 3 processing specifically relates to the use of data models on a grid.",3,True
+sweet,http://sweetontology.net/stateDataProcessing/Level4,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level4 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :assimilation ],
+        :processing_level .
+
+","Level 4 refers to the fourth level of processing in cognitive psychology, which involves a higher level of abstraction and analysis. It is believed that Level 4 processing is involved in tasks such as problem-solving, decision-making, and understanding complex information. At this level, individuals are able to analyze and synthesize information from multiple sources, and make connections between different concepts or ideas.
+
+Level 4 processing requires a certain amount of expertise, knowledge, and experience in the field being studied or analyzed. It is often associated with advanced academic or professional skills, such as lawyers, doctors, scientists, and engineers. In general, Level 4 processing involves a deeper understanding of complex concepts and the ability to integrate different pieces of information into a cohesive whole.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Mapped,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mapped rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :mapping ],
+        :data_state .
+
+","Yes, ""mapped"" is a type of data state. It refers to the process of mapping or relating data from one format or system to another. This can be useful for integrating different datasets or systems and ensuring that they are consistent with each other. Do you have any specific questions related to this concept?",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Mined,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mined rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :mining ],
+        :data_state .
+
+","Mined is indeed a type of data state. It can refer to the processed and extracted information from various sources, such as raw data, online content, social media posts, or other digital media. The term ""mined"" suggests that the data has been excavated or mined from these sources and refined into a more structured and organized form for further analysis and utilization. This could be used in industries like marketing, finance, research, and many others where accurate data is essential to decision-making and strategy development.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Normalized,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normalized rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :normalization ],
+        :data_state .
+
+","Normalization refers to the process of organizing and structuring data in a consistent and efficient manner. It involves transforming data from its original form into a more standardized format, often to improve data quality, reduce redundancy, and facilitate integration with other systems or applications. Normalization typically involves dividing the data into smaller components, defining relationships between them using keys, and organizing the data into tables or structures that adhere to specific rules and conventions.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Parameterized,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parameterized rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :parameterize ],
+        :data_state .
+
+","Parameterized can refer to a type of data that has been defined with specific parameters, or it can refer to the act of defining or processing such data. It is often used in contexts where precise control over variables is important, such as scientific research or software development. In general, parameterized data allows for more flexible and adaptable models than those based solely on fixed values.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Plotted,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plotted rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :plot ],
+        :data_state .
+
+","I'm sorry, but I don't understand what you are trying to say. Could you please rephrase your question or provide more context?",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Processed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:processed rdfs:subClassOf :data_state .
+
+",processed is a type of data state.,1,False
+sweet,http://sweetontology.net/stateDataProcessing/Reanalyzed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reanalyzed rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :reanalysis ],
+        :data_state .
+
+","Reanalyzed is a term used to describe data that has been analyzed or processed multiple times, often with different methods or techniques. It suggests that the data may have been subject to multiple interpretations or analyses, each bringing new insights or perspectives to the table. In some contexts, reanalyzed data can be more reliable than original data because it has undergone multiple levels of scrutiny and validation, reducing the likelihood of errors or inconsistencies.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Reconstructed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reconstructed rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :reconstruction ],
+        :data_state .
+
+","Reconstructed refers to data that has undergone reconstruction or reprocessing, often after being damaged or corrupted. The term is used in various fields such as computer science, cryptography, and linguistics to describe the process of restoring original data from a compromised or altered form. In computer science, for example, reconstructed code refers to software that has been repaired or modified after being damaged by a virus or other malicious software.<|end_of_topic|>",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Reformatted,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reformatted rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :reformat ],
+        :data_state .
+
+","Understood. Reformatted data is a type of information that has been processed and organized in a specific format, possibly for easier analysis or storage. It could also refer to data that has been re-presented in a different way, such as a table or graph, to make it more visually appealing or accessible.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Regridded,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regridded rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :regridding ],
+        :data_state .
+
+","Regridding is a process of converting data from one grid format to another. It's often used in geospatial analysis and mapping, where different grids can represent the same data with different levels of precision or resolution. The term ""regridded"" refers to data that has undergone this process, and it typically implies that some transformation or adjustment has been made to the original data to make it compatible with a new grid format.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Scaled,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scaled rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :scaling ],
+        :data_state .
+
+","It seems that you are asking about ""scaled"" as a type of data state or something that has undergone scaling. I can confirm that ""scaled"" is not an inherent property of data states, but rather a process applied to them in order to achieve better performance and efficiency. Scaling refers to the process of increasing or decreasing the size of data states based on various factors such as processing power, memory usage, and network connectivity.
+
+In summary, ""scaled"" is not a property of data states but rather a description of a transformation applied to them. It implies that the data state has been optimized in terms of size or capacity according to specific requirements.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Subsetted,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subsetted rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :subset ],
+        :data_state .
+
+","It seems like you're asking about a term called ""subsetted"". However, I cannot find information on the meaning or usage of this term. It appears to be an invented word and not commonly used in any field or context that I am aware of.
+If you can provide more context or clarify what you meant by ""subsetted"", I would be happy to try to assist further.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Trained,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trained rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :training ],
+        :data_state .
+
+","trained is a type of data state.
+trained is a type of something that at least had process some training.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Validated,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:validated rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :validation ],
+        :data_state .
+
+","Validated data is information that has been reviewed and checked for accuracy, completeness, and consistency according to a set of predefined criteria or rules. It is an important concept in various fields such as finance, healthcare, and software development, where accurate and reliable data is crucial for making informed decisions and ensuring compliance with regulations.
+In the context of machine learning, validated data refers to the use of labeled training data that has been carefully curated and reviewed by domain experts or human annotators to ensure its accuracy and relevance. This helps in improving the performance and reliability of machine learning models, as they can be trained on high-quality data that is free from errors or inconsistencies.
+Moreover, validated data can also refer to the results or findings of research studies or experiments, which have been reviewed and approved by peers or experts in the field before publication or dissemination. This process helps in ensuring that the research is conducted according to best practices and meets the standards of rigor and accuracy required in scientific inquiry.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Verifed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:verifed rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :verification ],
+        :data_state .
+
+","Verified data is information that has undergone a verification process, which helps ensure its accuracy and reliability. This can include data from various sources, such as personal identification documents, financial transactions, or other types of records. By verifying this data, individuals and organizations can make informed decisions based on accurate and reliable information.",2,True
+sweet,http://sweetontology.net/stateEnergyFlux/AClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:a_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.00000001 ;
+            owl:onProperty :has_lower_bound ],
+        [ a owl:Restriction ;
+            owl:hasValue 0.0000001 ;
+            owl:onProperty :has_upper_bound ],
+        :flare_class .
+
+","A class is a user-defined data type in programming that defines the properties and behavior of an object. It is not necessarily related to physical objects like fire or flares, but rather serves as a way to organize and manipulate data within a program. The statement ""a class is a type of flare class"" does not make sense as classes are used in software development and have no relation to the physical properties of fireworks or flares. Similarly, the statements ""a class is a type of something that must has lower bound 1E-8"" and ""a class is a type of something that must has upper bound 1E-7"" do not accurately describe what a class is in programming.",3,True
+sweet,http://sweetontology.net/stateEnergyFlux/BClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:b_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.000001 ;
+            owl:onProperty :has_upper_bound ],
+        [ a owl:Restriction ;
+            owl:hasValue 0.0000001 ;
+            owl:onProperty :has_lower_bound ],
+        :flare_class .
+
+","It seems like you're referring to a theoretical class of objects called ""b-classes"" which may have unusual properties. However, I am not aware of any standard definition or context for this term outside of your statement. If you could provide more information or clarify your question, I would be happy to help further.",3,True
+sweet,http://sweetontology.net/stateEnergyFlux/CClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:c_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.000001 ;
+            owl:onProperty :has_lower_bound ],
+        [ a owl:Restriction ;
+            owl:hasValue 0.00001 ;
+            owl:onProperty :has_upper_bound ],
+        :flare_class .
+
+","It looks like you are trying to define a custom class in C, but your definition is incorrect. A ""flare"" class is not a standard type in the C programming language.
+Instead, it seems that you may be referring to a ""c-class,"" which is a concept related to optimization and mathematical programming. However, based on the information provided, I cannot accurately determine what you are trying to define or accomplish with your code.
+If you provide more context or clarify your intentions, I would be happy to help you further.",3,True
+sweet,http://sweetontology.net/stateEnergyFlux/MClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:m_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.00001 ;
+            owl:onProperty :has_lower_bound ],
+        [ a owl:Restriction ;
+            owl:hasValue 0.0001 ;
+            owl:onProperty :has_upper_bound ],
+        :flare_class .
+
+","It seems you are trying to describe a mathematical concept using an analogy with the word ""flare class"". A flare is typically used to signal distress or danger, so it's not a common term for math classes.
+However, I can understand that you might be referring to a concept like ""lower bound"" and ""upper bound"" in mathematics. These terms are used to describe the minimum and maximum values of a set of data. So, if you meant to say that ""m class has a lower bound of 0.00001 and an upper bound of 0.0001,"" I can understand your statement as:
+""The m class is a type of mathematical concept where the minimum value (lower bound) is 0.00001, and the maximum value (upper bound) is 0.0001.""",3,True
+sweet,http://sweetontology.net/stateEnergyFlux/XClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:x_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.0001 ;
+            owl:onProperty :has_lower_bound ],
+        :flare_class .
+
+","x class is a type of a flare class, which is an abstract base class for all other classes that must have a lower bound of 0.0001.",2,True
+sweet,http://sweetontology.net/stateFluid/FluidEquilibriumState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluid_equilibrium_state rdfs:subClassOf :equilibrium_state,
+        :fluid_state .
+
+","Fluid equilibrium state is a dynamic steady state where the thermodynamic properties of a system remain constant over time, and there is no net flow of matter or energy. This type of equilibrium can be achieved in various situations, such as when two immiscible liquids are mixed together in a container without heating or cooling the mixture. The fluid behavior in the equilibrium state depends on the temperature, pressure, and composition of the system.",2,True
+sweet,http://sweetontology.net/stateFluid/FluidState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluid_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :fluid ;
+            owl:onProperty :has_state ],
+        :physical_state .
+
+","Fluid state is a term used to describe the behavior of certain substances, such as gases and fluids, when they are subjected to external forces or changes in temperature. In fluid dynamics, this type of behavior is modeled using differential equations that account for the effects of viscosity, pressure, and other factors on the motion of the fluid. Fluid state can also refer to a broader category of states that have some degree of continuity and can be described by mathematical models, including statistical mechanics and thermodynamics.",2,True
+sweet,http://sweetontology.net/statePhysical/MoistureState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moisture_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :physical_state .
+
+","Moisture state refers to the condition of a substance (usually water) in terms of its content or concentration, such as vapor, liquid, or solid. The moisture state can have varying degrees and may be affected by factors like temperature, pressure, and the presence of other substances or particles that influence the movement of water molecules.",2,True
+sweet,http://sweetontology.net/statePhysical/PhysicalState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physical_state rdfs:subClassOf :state .
+
+",physical state is a type of state.,1,False
+sweet,http://sweetontology.net/statePhysical/RainState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rain_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :ordinal_property .
+
+","Rain is a state of water droplets suspended in the air. It's a type of precipitation, and it requires the presence of water vapor in the atmosphere to form. The rain state refers to the state of the atmosphere where rainfall occurs, which can be influenced by various meteorological factors such as temperature, humidity, wind speed, and atmospheric pressure.",2,True
+sweet,http://sweetontology.net/statePhysical/SpeedState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:speed_state rdfs:subClassOf :physical_state .
+
+",speed state is a type of physical state.,1,False
+sweet,http://sweetontology.net/statePhysical/StateOfMatter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:state_of_matter rdfs:subClassOf :physical_state .
+
+",state of matter is a type of physical state.,1,False
+sweet,http://sweetontology.net/statePhysical/SubstanceForm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:substance_form rdfs:subClassOf :physical_state .
+
+",substance form is a type of physical state.,1,False
+sweet,http://sweetontology.net/statePhysical/WaveState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wave_state rdfs:subClassOf :physical_state .
+
+",wave state is a type of physical state.,1,False
+sweet,http://sweetontology.net/stateRealm/RealmConfiguration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:realm_configuration rdfs:subClassOf :physical_state .
+
+",realm configuration is a type of physical state.,1,False
+sweet,http://sweetontology.net/stateRole/ConductionRole,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conduction_role rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :conduction ;
+            owl:onProperty :has_process ],
+        :ordinal_property,
+        :physical_role .
+
+","Conduction role is a term used to describe the property of objects that facilitate heat transfer through conduction. It is an ordinal property, meaning it describes a certain order or arrangement of particles within an object, which enables heat transfer to take place effectively.
+Physical roles refer to the different ways in which objects interact with each other and their environment. Conduction role specifically refers to the physical role that allows for heat transfer through conduction. It is important to note that not all materials exhibit conduction, as some materials may block or absorb heat instead of allowing it to pass through.
+In summary, conduction role is a type of ordinal property that describes the ability of an object to facilitate heat transfer through conduction.",3,True
+sweet,http://sweetontology.net/stateRole/PhysicalRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physical_role rdfs:subClassOf :role .
+
+",physical role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRole/ProvenanceRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:provenance_role rdfs:subClassOf :role .
+
+",provenance role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Autotroph,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:autotroph rdfs:subClassOf :biological_role ;
+    owl:disjointWith :heterotroph .
+
+","Autotrophs are organisms that can produce their own food, typically through the process of photosynthesis or chemosynthesis. They are distinguished from heterotrophic organisms, which depend on other organisms for their nutrition. Some examples of autotrophic organisms include plants, algae, and certain types of bacteria. These organisms play a crucial role in the ecosystem by converting sunlight, carbon dioxide, and water into organic matter, which serves as food for other organisms in the food chain.",2,True
+sweet,http://sweetontology.net/stateRoleBiological/BiologicalRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biological_role rdfs:subClassOf :role .
+
+",biological role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Chemoautotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemoautotroph rdfs:subClassOf :autotroph .
+
+",chemoautotroph is a type of autotroph.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Chemoheterotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemoheterotroph rdfs:subClassOf :heterotroph .
+
+",chemoheterotroph is a type of heterotroph.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Consumer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consumer rdfs:subClassOf :biological_role .
+
+",consumer is a type of biological role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Habitat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:habitat rdfs:subClassOf :biological_role .
+
+",habitat is a type of biological role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Heterotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heterotroph rdfs:subClassOf :biological_role .
+
+",heterotroph is a type of biological role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Photoautotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photoautotroph rdfs:subClassOf :autotroph .
+
+",photoautotroph is a type of autotroph.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Photoheterotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photoheterotroph rdfs:subClassOf :heterotroph .
+
+",photoheterotroph is a type of heterotroph.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Producer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:producer rdfs:subClassOf :biological_role .
+
+",producer is a type of biological role.,1,False
+sweet,http://sweetontology.net/stateRoleChemical/ChemicalRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_role rdfs:subClassOf :role .
+
+",chemical role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Barrier,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barrier rdfs:subClassOf :geographic_role .
+
+",barrier is a type of geographic role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Boundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boundary rdfs:subClassOf :barrier ;
+    owl:equivalentClass :edge,
+        :face .
+
+","A boundary is a line or surface that marks the limits of an area, and it can refer to different things depending on the context. In mathematics, a boundary is a set of points that define the edge or limit of a region. In physics, a boundary is a dividing line that separates two different regions of space. In geography, a boundary is a political or natural division between countries or territories. And in colloquial language, a boundary can refer to any mark or division that separates things or defines their limits.
+So, the statement ""boundary is same as edge"" could be interpreted in different ways depending on the context. Is it referring to the mathematical definition of a boundary as an edge? Or is it referring to the concept of a boundary as a dividing line between two regions?",3,True
+sweet,http://sweetontology.net/stateRoleGeographic/Collector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:collector rdfs:subClassOf :geographic_role .
+
+",collector is a type of geographic role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Edge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:edge rdfs:subClassOf :barrier .
+
+",edge is a type of barrier.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Face,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:face rdfs:subClassOf :barrier .
+
+",face is a type of barrier.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Fringe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fringe rdfs:subClassOf :margin ;
+    owl:equivalentClass :periphery .
+
+","fringe can also refer to the outer edge or border of something, often in a metaphorical sense. In the context of the conversation you provided, ""periphery"" and ""fringe"" may be used interchangeably to describe the outer edges or borders of an organization or group. Additionally, it is worth noting that both ""periphery"" and ""fringe"" can also refer to the outer limits or boundaries of a given area, but in this context it appears you are using them metaphorically.",2,True
+sweet,http://sweetontology.net/stateRoleGeographic/GeographicRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geographic_role rdfs:subClassOf :role .
+
+",geographic role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Highway,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:highway rdfs:subClassOf :geographic_role .
+
+",highway is a type of geographic role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Margin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:margin rdfs:subClassOf :boundary,
+        :edge,
+        :face .
+
+","Margin can be defined as the space or area that separates two things, typically used in the context of design and layout. It refers to the edge or border that exists between elements on a page, such as text and images, or different sections within a document. In architecture and engineering, margin is often used to describe the space between different structures or components of a building or other physical objects. Overall, margin serves as a boundary or limit that helps define the relationships and interactions between various elements, whether they are physical, visual, or textual in nature.",3,True
+sweet,http://sweetontology.net/stateRoleGeographic/Obstruction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:obstruction rdfs:subClassOf :barrier .
+
+",obstruction is a type of barrier.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Periphery,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:periphery rdfs:subClassOf :margin .
+
+",periphery is a type of margin.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Separation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:separation rdfs:subClassOf :barrier .
+
+",separation is a type of barrier.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Tributary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tributary rdfs:subClassOf :collector .
+
+",tributary is a type of collector.,1,False
+sweet,http://sweetontology.net/stateRoleRepresentative/RepresentativeRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:representative_role rdfs:subClassOf :ordinal_property,
+        :role .
+
+",representative role is a type of ordinal property.,2,True
+sweet,http://sweetontology.net/stateSolid/SolidState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solid_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        :physical_state .
+
+","Solid state refers to a type of matter, specifically a non-fluid state where the constituent particles are closely packed together and do not have significant thermal motion. This includes all solid materials such as metals, ceramics, and most types of rocks. The term ""solid"" generally implies that the material has a defined shape and volume, and is generally rigid and difficult to change its shape.",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Antumbra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antumbra rdfs:subClassOf :shadow .
+
+",antumbra is a type of shadow.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Basal,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basal rdfs:subClassOf :minimum ;
+    owl:equivalentClass :bottom .
+
+","I understand that you are asking about the meaning of ""basal."" Basal refers to the lowest or minimum level of something, such as basal metabolism which is the minimal amount of energy required by an organism to perform basic life functions. It can also refer to the bottom or foundation of something, such as a basal cell in biology being the first stage of development for a particular type of cell. Is there anything else you would like me to clarify?",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Base,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:base rdfs:subClassOf :minimum ;
+    owl:equivalentClass :bottom .
+
+","The base of a pyramid is the foundation on which it rests. It is typically the largest and widest part of the structure, providing stability and support for the weight of the pyramid's upper layers. The shape and size of the base can vary depending on the design and purpose of the pyramid, but it generally serves as a solid foundation that connects the pyramid to the ground.",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Bottom,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bottom rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :down ;
+            owl:onProperty :has_direction ],
+        :minimum ;
+    owl:equivalentClass :floor .
+
+","In this context, ""bottom"" is being used as a synonym for the word ""floor."" It refers to the lowest level or surface of a room, structure, or other enclosed space. The term ""bottom"" is often used in everyday language to describe the floor of a building, but it can also be applied more generally to any lower boundary or limit. For example, one might speak of the ""bottom line"" as a reference to the most fundamental or essential aspect of something.",3,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Flank,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flank rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+","Flank can refer to both a type of configuration and a spatial configuration. In the context you provided, it appears that you may be asking about flank as a spatial configuration.
+
+In this sense, ""flank"" refers to the sides or edges of an object or space, which are the areas that are not directly adjacent to another object or space. For example, if we consider a square with a side length of 5 units, then its corners (the points where two sides meet) would be part of its flank, while the remaining three sides and their corresponding interior angles would not be considered part of the flank.
+
+In this sense, ""flank"" is a noun that describes a spatial configuration rather than an adjective describing another type of configuration. Is there anything else you would like to know about flank as a spatial configuration?",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Floor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:floor rdfs:subClassOf :minimum .
+
+",floor is a type of minimum.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Juxtaposition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:juxtaposition rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+","Juxtaposition is a term that refers to the arrangement of two or more things in close proximity to each other, often with contrasting elements. It can be used in various contexts, such as art, design, and language. In terms of configuration, juxtaposition involves arranging different components or elements side by side, often to create visual interest, emphasize certain aspects, or highlight differences between the items. Spatial configuration is a broader concept that refers to organizing or rearranging physical space in order to achieve specific goals, such as efficient use of resources, accessibility, and comfort for users. Juxtaposition can be an important aspect of spatial configuration when designing spaces like offices, homes, or public areas, as it helps create a visually appealing environment that caters to the needs of individuals using the space.",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Penumbra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penumbra rdfs:subClassOf :shadow .
+
+",penumbra is a type of shadow.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Projection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:projection rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+","Projection is a process in which an object or image is projected onto a surface. It can be used in various contexts, such as in a classroom for teaching purposes or in a theater for entertainment. In a spatial configuration sense, projection refers to the way objects are arranged and positioned in relation to one another within a given space. This can include concepts like perspective, depth perception, and how our brains interpret visual information.",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Relief,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:relief rdfs:subClassOf :projection .
+
+",relief is a type of projection.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Rim,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rim rdfs:subClassOf :maximum ;
+    owl:equivalentClass :top .
+
+","rim is a type of maximum, which means it represents the highest point or limit. It can be used in various contexts such as mathematics, engineering, and business, to refer to something that cannot be surpassed or exceeded.",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Shadow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shadow rdfs:subClassOf :projection .
+
+",shadow is a type of projection.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Side,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:side rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+","side is a term used in the context of a conversation.
+side can refer to a person or entity participating in or supporting an action, decision, or idea.
+In the context of a conversation, side may also refer to a viewpoint or perspective from which something is being discussed or evaluated.
+Overall, side can play a crucial role in shaping the nature and direction of a discussion, as it influences who is involved and what perspectives are considered.
+For example, in a political debate, different sides may represent opposing viewpoints on an issue, with each side advocating for their own stance or policy proposal.
+In a scientific discussion, different sides might represent competing hypotheses or theories, with researchers presenting evidence and data to support their positions.
+Moreover, in any conversation, individuals can take on multiple ""sides"" if they are involved in discussions about multiple topics or issues at the same time.
+In summary, side is a versatile term that can be used in various contexts to describe participants, perspectives, and viewpoints within a conversation.",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Top,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:top rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :bottom ;
+            owl:onProperty :above ],
+        [ a owl:Restriction ;
+            owl:hasValue :up ;
+            owl:onProperty :has_direction ],
+        :maximum .
+
+","Top is a concept that refers to the highest point or position in a given context. It can be used in various fields such as mathematics, physics, and even metaphysics. In math, top is used to describe the upper limit of a set. In physics, it can refer to the peak of an object or surface. Metaphysically, ""top"" may represent the highest state of existence or consciousness.",3,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Umbra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:umbra rdfs:subClassOf :shadow .
+
+",umbra is a type of shadow.,1,False
+sweet,http://sweetontology.net/stateSpectralBand/BandLimited,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:band_limited rdfs:subClassOf :spectral_band ;
+    owl:equivalentClass :narrow_spectrum .
+
+","Band limited refers to a narrow range of frequencies, which can be compared to a limited or restricted spectrum. It is often used in the context of audio and signal processing, where a band-limited signal has a frequency spectrum that does not extend beyond a certain range. In other words, it is a type of spectral band that restricts the possible values of a signal's frequency components within a specific range.",2,True
+sweet,http://sweetontology.net/stateSpectralBand/Bolometric,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bolometric rdfs:subClassOf :broad_band,
+        :broad_spectrum,
+        :white_light .
+
+","Bolometric is a type of broadband, which refers to the range of wavelengths in a light spectrum. It can also refer to a type of white light, where all visible colors are present simultaneously. However, ""bolometer"" specifically refers to a device used to measure temperature based on the amount of infrared radiation absorbed or reflected by a material. These terms may be related but they have different meanings and uses in science and engineering.",3,True
+sweet,http://sweetontology.net/stateSpectralBand/BroadBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:broad_band rdfs:subClassOf :spectral_band ;
+    owl:equivalentClass :broad_spectrum .
+
+","Broad band and broad spectrum are indeed related concepts. Broadband refers to the range of frequencies or channels that a system, such as an electrical signal or communication channel, can transmit or receive simultaneously. It is essentially a wide range of frequencies that are utilized in a single transmission.
+On the other hand, broad spectrum typically refers to the range of wavelengths or colors found within the light spectrum. Both concepts encompass a vast array of values and represent a comprehensive perspective on their respective fields.",2,True
+sweet,http://sweetontology.net/stateSpectralBand/BroadSpectrum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:broad_spectrum rdfs:subClassOf :spectral_band ;
+    owl:equivalentClass :white_light .
+
+","Broad spectrum is not the same as white light. White light includes all visible colors of the spectrum, while broad spectrum refers to a wide range of wavelengths that may or may not include visible colors. It can refer to the total electromagnetic radiation in a given direction, which encompasses both visible and invisible wavelengths.",2,True
+sweet,http://sweetontology.net/stateSpectralBand/Monochromatic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monochromatic rdfs:subClassOf :band_limited,
+        :narrow_band,
+        :narrow_spectrum .
+
+","Monochromatic refers to a band-limited or narrow spectrum of light, typically characterized by a single dominant wavelength. This means that the light has a limited range of frequencies and can be described as having a ""color"" that is different from what is commonly seen in nature. Examples of monochromatic light sources include lasers, LEDs, and some types of artificial lighting.
+It's important to note that while monochromatic light can appear uniform or similar across different angles, it may still exhibit slight variations in intensity due to factors such as manufacturing tolerances or imperfections in the light-emitting material.",3,True
+sweet,http://sweetontology.net/stateSpectralBand/NarrowBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:narrow_band rdfs:subClassOf :spectral_band ;
+    owl:equivalentClass :narrow_spectrum .
+
+","Narrow band and narrow spectrum are similar concepts, as they both refer to a limited range of frequencies. A narrow band is indeed a type of spectral band, which is a range of frequencies within the electromagnetic spectrum where certain properties or behaviors can be observed. These properties might include specific wavelengths, intensities, or signal-to-noise ratios that are relevant to a particular application or scientific study.
+In general, the term ""spectral band"" refers to a continuous range of frequencies within the electromagnetic spectrum. It can encompass a wide variety of frequency ranges and corresponding properties, depending on the context in which it is used. For example, in telecommunications, the term ""band"" often refers specifically to a particular frequency range that has been allocated for a particular type of communication (e.g., radio, television, or internet). On the other hand, in astronomy, spectral bands might be used to describe different wavelength ranges observed by space-based telescopes.
+So while it's true that ""narrow band"" and ""spectral band"" are related concepts, they don't necessarily have the same meaning or application in every context.",2,True
+sweet,http://sweetontology.net/stateSpectralBand/NarrowSpectrum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:narrow_spectrum rdfs:subClassOf :spectral_band .
+
+",narrow spectrum is a type of spectral band.,1,False
+sweet,http://sweetontology.net/stateSpectralBand/Polychromatic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polychromatic rdfs:subClassOf :broad_band,
+        :broad_spectrum,
+        :white_light .
+
+","Polychromatic refers to something that produces a wide range of colors, often due to the presence of multiple wavelengths or frequencies. It is most commonly associated with light sources such as white light, which contains all visible colors in equal proportions. The term can also be used in other contexts to describe materials or substances that exhibit a wide range of colors when subjected to various stimuli, such as different temperatures or chemical reactions.",3,True
+sweet,http://sweetontology.net/stateSpectralBand/WhiteLight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:white_light rdfs:subClassOf :spectral_band .
+
+",white light is a type of spectral band.,1,False
+sweet,http://sweetontology.net/stateStorm/BeaufortScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:beaufort_scale rdfs:subClassOf :wind_scale .
+
+",beaufort scale is a type of wind scale.,1,False
+sweet,http://sweetontology.net/stateStorm/EnhancedFujitaScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enhanced_fujita_scale rdfs:subClassOf :tornado_scale .
+
+",enhanced fujita scale is a type of tornado scale.,1,False
+sweet,http://sweetontology.net/stateStorm/FujitaPearsonScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fujita_pearson_scale rdfs:subClassOf :tornado_scale .
+
+",fujita pearson scale is a type of tornado scale.,1,False
+sweet,http://sweetontology.net/stateStorm/HurricaneScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hurricane_scale rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :hurricane ;
+            owl:onProperty :has_phenomena ],
+        :wind_scale .
+
+","Hurricane Scale is a measure used to classify hurricanes based on their wind speeds. It consists of five categories: Category 1 (winds 74-95 mph or 62-82 knots), Category 2 (winds 96-110 mph or 83-96 knots), Category 3 (winds 111-129 mph or 96-103 knots), Category 4 (winds 130-156 mph or 114-127 knots), and Category 5 (winds greater than 157 mph or 137 knots). Hurricanes are classified based on their maximum sustained wind speed, with each category representing increasingly stronger winds and potential damage.",2,True
+sweet,http://sweetontology.net/stateStorm/SaffirSimpsonScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saffir_simpson_scale rdfs:subClassOf :hurricane_scale .
+
+",saffir simpson scale is a type of hurricane scale.,1,False
+sweet,http://sweetontology.net/stateStorm/TornadoScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tornado_scale rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :tornado ;
+            owl:onProperty :has_phenomena ],
+        :wind_scale .
+
+","The Tornado Scale is a method of classifying and measuring tornadoes based on their intensity. It ranges from F0 (the least intense) to F5 (the most intense). The scale was developed by the United States National Weather Service and is used in conjunction with other factors, such as damage surveys, to determine the strength of a tornado after it has occurred.",2,True
+sweet,http://sweetontology.net/stateStorm/WindScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_scale rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :wind ;
+            owl:onProperty :measure_of ],
+        :ordinal_scale .
+
+","The wind scale, also known as the Beaufort Scale, is a measure of wind speed and direction. It was developed in 1805 by Francis Beaufort, an officer in the British Navy, to provide a standardized way of describing the intensity of winds for sailors. The scale consists of 13 categories, each with a descriptive name and corresponding numerical value, which ranges from 0 (no wind) to 12 (hurricane force).
+It is important to note that while the wind scale provides useful information about wind speed, it does not provide any information about the actual strength or intensity of the wind. For example, a Category 5 hurricane has a much greater impact than a Category 1 gale, even though both have the same Beaufort rating.
+In summary, the wind scale is a measure of wind speed and direction that was developed by the British Navy in 1805. It consists of 13 categories, each with a descriptive name and corresponding numerical value, which ranges from 0 (no wind) to 12 (hurricane force). However, it does not provide any information about the actual strength or intensity of the wind.",2,True
+sweet,http://sweetontology.net/stateSystem/Coherent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coherent rdfs:subClassOf :system_state .
+
+",coherent is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Complex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:complex rdfs:subClassOf :system_state .
+
+",complex is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Deficit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deficit rdfs:subClassOf :system_state ;
+    owl:disjointWith :excess .
+
+","Correct, a deficit is a condition in which there is an insufficient amount of something, such as resources or funds. It is the opposite of excess, where there is more than enough of something.",2,True
+sweet,http://sweetontology.net/stateSystem/EquilibriumState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equilibrium_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :equilibrium ;
+            owl:onProperty :has_state ],
+        :system_state .
+
+","Equilibrium state refers to a stable condition in which the system's internal and external conditions remain constant over time. This state is reached when the forces acting on the system are in balance, resulting in no net change or a steady rate of change. In thermodynamics, equilibrium is often used to describe the state where the system's energy is at its highest possible level, while in other fields such as economics and ecology, it may refer to a state of balance between different factors or variables.
+It is important to note that not all systems can reach an equilibrium state, and some may never do so. Additionally, even if a system is in equilibrium, external influences can still cause changes or disturbances to the system's internal dynamics.",2,True
+sweet,http://sweetontology.net/stateSystem/Excess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:excess rdfs:subClassOf :system_state .
+
+",excess is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Homeostasis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:homeostasis rdfs:subClassOf :system_state .
+
+",homeostasis is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Instability,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:instability rdfs:subClassOf :system_state ;
+    owl:equivalentClass :unstable .
+
+","Instability can be described as a state of disorder or lack of stability in a system. It is important to note that instability and unstable are related, but unstable implies a more extreme level of instability. The term instability can refer to different aspects of a system, such as the balance between order and chaos or the presence of fluctuations and randomness. In some contexts, instability might be used to describe a transient or temporary state, while in others it could refer to a more persistent or long-term condition.",2,True
+sweet,http://sweetontology.net/stateSystem/Overflow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overflow rdfs:subClassOf :system_state .
+
+",overflow is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Resilient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resilient rdfs:subClassOf :system_state .
+
+",resilient is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Stability,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stability rdfs:subClassOf :system_state ;
+    owl:disjointWith :unstable ;
+    owl:equivalentClass :stable .
+
+","That is correct. Stability refers to a state of stability in which a system remains relatively constant over time, as opposed to an unstable state where the system is constantly changing or experiencing fluctuations. It is important for many systems, such as ecosystems and economies, to maintain stability in order to support long-term sustainability and growth.",3,True
+sweet,http://sweetontology.net/stateSystem/Stable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stable rdfs:subClassOf :system_state .
+
+",stable is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/SystemState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:system_state rdfs:subClassOf :state .
+
+",system state is a type of state.,1,False
+sweet,http://sweetontology.net/stateSystem/Unstable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unstable rdfs:subClassOf :system_state .
+
+",unstable is a type of system state.,1,False
+sweet,http://sweetontology.net/stateThermodynamic/ThermodynamicState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermodynamic_state rdfs:subClassOf :physical_state .
+
+",thermodynamic state is a type of physical state.,1,False
+sweet,http://sweetontology.net/stateTime/Age,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:age rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :epoch ],
+        :geologic_time_unit .
+
+","Age is a unit of measurement that indicates the amount of time that has elapsed since a specific starting point, such as the birth of Jesus Christ or the beginning of the Holocene epoch. It is typically used to describe periods of thousands or millions of years.",2,True
+sweet,http://sweetontology.net/stateTime/Eon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eon rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :supereon ],
+        :geologic_time_unit .
+
+","""Eon"" is a term used in geology to refer to an extended period of time, usually millions or billions of years. It is subdivided into eras and epochs, which are further divided into periods, ages, and stages. The current eon is known as the Holocene, which began around 10,000 BCE and is still ongoing.",2,True
+sweet,http://sweetontology.net/stateTime/Epoch,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epoch rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :period ],
+        :geologic_time_unit .
+
+","Epoch refers to a specific period in time, often used as a temporal reference in science and history. It can be further divided into smaller units called ""eras."" For example, the Holocene epoch is the current geological era, which began after the last ice age.",2,True
+sweet,http://sweetontology.net/stateTime/Era,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:era rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :eon ],
+        :geologic_time_unit .
+
+","The term ""era"" refers to a specific time period within the geologic time scale. It is used to divide the Earth's history into smaller, more manageable segments. The era is typically defined by a specific event or a series of events that mark the boundary between two different eras. For example, the Pleistocene Epoch ended with the last glacial period and the Holocene began with the end of the last glacial period.
+
+The term ""era"" can also be used more broadly to refer to a specific time period in the history of the Earth or the universe as a whole. For example, the Paleozoic Era refers to a time period that spans from about 542 million years ago to 251 million years ago, during which the first complex multicellular organisms appeared and diversified.
+
+In summary, ""era"" is a term used in geology to divide the Earth's history into smaller segments, typically defined by specific events or periods. It can also be used more broadly to refer to larger time periods in the Earth's or universe's history.",2,True
+sweet,http://sweetontology.net/stateTime/GeologicTimeUnit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geologic_time_unit rdfs:subClassOf :duration,
+        :duration_description,
+        :time_interval .
+
+","Geologic time is a unit of measurement used by geologists to measure the age of rocks and other geological formations. It is based on the study of the decay of radioactive elements, such as uranium and potassium, which are found in many rocks. The geologic time scale is divided into several major periods, including the Hadean Eon (which predates the formation of the Earth), the Archaean Eon (the earliest known rock formations), the Proterozoic Eon (when multi-celled organisms first appeared), the Paleozoic Eon (when complex multicellular animals emerged), the Mesozoic Eon (when dinosaurs roamed the Earth), and the Cenozoic Eon (which includes the present day). Each period is further divided into smaller time intervals, such as the Cambrian Period, the Ordovician Period, and the Jurassic Period. Geologic time units are used to help scientists understand the relative ages of different rocks and fossils, and how they fit into the overall history of the Earth.",3,True
+sweet,http://sweetontology.net/stateTime/NeotectonicPeriod,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neotectonic_period rdfs:subClassOf :temporal_reference,
+        :time_reference .
+
+","The Neotectonic period is a term used to describe the most recent time period in which tectonic forces were active. It refers to a period of time that began around 200,000 years ago and continues until the present day. During this time, the Earth's crust has been actively shaped by the movement of tectonic plates, resulting in the formation of new land masses and changes in the distribution of existing ones. The Neotectonic period is characterized by ongoing tectonic activity, including the creation of new faults and the uplift or subsidence of previously stable areas. It is an important time period in the Earth's history as it has had a significant impact on the development of ecosystems, climate, and human populations around the world.",2,True
+sweet,http://sweetontology.net/stateTime/Period,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:period rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :era ],
+        :geologic_time_unit .
+
+","A period is a subdivision of geologic time, usually representing a span of millions or billions of years. It is part of the larger classification system used to describe the Earth's history and evolution. There are various types of periods in the geological timescale, such as the Paleozoic, Mesozoic, and Cenozoic eras, each representing a specific time span within the overall history of the planet.",2,True
+sweet,http://sweetontology.net/stateTime/Supereon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supereon rdfs:subClassOf :geologic_time_unit .
+
+",supereon is a type of geologic time unit.,1,False
+sweet,http://sweetontology.net/stateTimeCycle/ElNino,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:el_nino rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :enso ],
+        :oscillation_state .
+
+","El Niño is a phenomenon that occurs in the Pacific Ocean, characterized by abnormal warming of the surface water. It is caused by a combination of atmospheric and oceanic factors, including changes in wind patterns and the interaction between the warm surface waters of the tropical Pacific and colder subsurface waters. El Niño events can have significant impacts on global weather patterns and climate, leading to droughts or floods in some regions and affecting agriculture, fisheries, and transportation.",2,True
+sweet,http://sweetontology.net/stateTimeCycle/HighTide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:high_tide rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :tide ],
+        :oscillation_state .
+
+","High tide is a natural phenomenon that occurs when the gravitational force of the moon, sun, and Earth cause the ocean's water levels to rise. This can lead to flooding along coastlines and affect the behavior of marine life in those areas. Understanding the causes and patterns of high tide is crucial for predicting and mitigating its effects on coastal communities and ecosystems.",2,True
+sweet,http://sweetontology.net/stateTimeCycle/IceAge,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_age rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :ice_age_cycle ],
+        :oscillation_state .
+
+","I'm sorry, but it seems like you are trying to say that an ice age is a type of oscillation or cycle. An ice age is actually a period of time when the Earth experiences colder temperatures than usual, typically caused by a buildup of ice and snow in the Arctic region. It is characterized by the advance of glaciers and the retreat of warmer climate species. Is there something specific you would like me to help with?",2,True
+sweet,http://sweetontology.net/stateTimeCycle/Interglacial,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interglacial rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :ice_age_cycle ],
+        :oscillation_state .
+
+","Interglacial is a period of time between two glacial periods, during which the Earth's climate is warmer than average. It occurs when the Earth's orbit around the Sun is at its closest point to the ecliptic plane. During an interglacial period, there is usually more ice melting and a higher sea level compared to the end of a glacial period. The current interglacial period, known as the Holocene, began about 11,700 years ago and is still ongoing.",2,True
+sweet,http://sweetontology.net/stateTimeCycle/LaNina,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:la_nina rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :enso ],
+        :oscillation_state .
+
+","La Niña is a natural climate pattern that occurs in the tropical Pacific Ocean. It is characterized by cooler-than-average sea surface temperatures, which can lead to changes in atmospheric circulation and weather patterns around the world. La Niña typically develops during the Northern Hemisphere winter months and persists into the spring. It is one of the three main climate modes, along with El Niño and neutral, that help regulate global climate patterns.",2,True
+sweet,http://sweetontology.net/stateTimeCycle/LowTide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:low_tide rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :tide ],
+        :oscillation_state .
+
+","Low tide is a natural phenomenon that occurs when the water level in a given location is at its lowest point. It often occurs twice daily, once during high and low slack tide. During low tide, the water recedes to reveal more of the shoreline, which can expose rocks, sandbars, or other underwater hazards that may not be visible when the tide is at its highest. Low tide also affects the tidal currents, with stronger and faster flow in some areas and weaker currents in others due to the difference in water depth. It's important for boaters and fishermen to pay attention to low tide schedules and be aware of the potential hazards that may be exposed during this time.",2,True
+sweet,http://sweetontology.net/stateTimeCycle/MaunderMinimum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maunder_minimum rdfs:subClassOf :solar_minimum .
+
+",maunder minimum is a type of solar minimum.,1,False
+sweet,http://sweetontology.net/stateTimeCycle/NeapTide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neap_tide rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :high_tide ],
+        [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :low_tide ],
+        :oscillation_state .
+
+","Neap tide is a type of oceanic tidal pattern characterized by relatively low amplitude and long-period waves. It occurs when the sun, moon, and Earth are in alignment, resulting in a minimal variation in the tidal force on the Earth's surface. Neap tides are named after the word ""neap,"" which is short for ""niwan"" or ""newen,"" meaning ""low water"" in Old English. During neap tides, the range of high and low tide levels tends to be relatively stable, with a smaller difference between them compared to other tidal patterns like spring tides.",3,True
+sweet,http://sweetontology.net/stateTimeCycle/OscillationState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oscillation_state rdfs:subClassOf :physical_state .
+
+",oscillation state is a type of physical state.,1,False
+sweet,http://sweetontology.net/stateTimeCycle/SolarMaximum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_maximum rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :solar_cycle ],
+        :oscillation_state .
+
+","Solar maximum is a term used to describe the peak of the solar cycle, which occurs every 11 years. During this time, the sun's activity and the release of solar radiation are at their highest levels. This can have an impact on Earth, causing changes in climate patterns, increased chances of solar flares and coronal mass ejections, and potential disruptions to electrical grids and communication systems. It is important for scientists and engineers to monitor the solar maximum closely and be prepared for any potential effects it may have on our planet.",2,True
+sweet,http://sweetontology.net/stateTimeCycle/SolarMinimum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_minimum rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :solar_cycle ],
+        :oscillation_state .
+
+","Solar minimum is a natural period of low activity on the Sun, characterized by reduced sunspot formation and a weak solar wind. It typically lasts for about 10 years and occurs at the beginning of each new solar cycle. The term ""solar maximum"" refers to the opposite state, where the Sun has the highest level of activity and the most sunspots are visible on its surface.",2,True
+sweet,http://sweetontology.net/stateTimeCycle/SpringTide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spring_tide rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :high_tide ],
+        [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :low_tide ],
+        :oscillation_state .
+
+","Spring tide is a type of oscillation state that occurs when the Earth, Moon, and Sun are in alignment, causing the tides to reach their highest and lowest points. This phenomenon typically happens twice a year during the full moon and new moon.",3,True
