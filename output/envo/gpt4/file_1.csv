@@ -1,0 +1,3300 @@
+ontology,root,fragment,text,statements,llm_used
+envo,http://purl.obolibrary.org/obo/CHEBI_33646,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkadiene rdfs:subClassOf :acyclic_olefin .
+
+",alkadiene is a type of acyclic olefin.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33653,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aliphatic_compound rdfs:subClassOf :organic_molecular_entity .
+
+",aliphatic compound is a type of organic molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33655,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aromatic_compound rdfs:subClassOf :cyclic_compound ;
+    :has_definition ""A cyclically conjugated molecular entity with a stability (due to delocalization) significantly greater than that of a hypothetical localized structure (e.g. Kekule structure) is said to possess aromatic character."" ;
+    :has_exact_synonym ""aromatic compounds"",
+        ""aromatic molecular entity"" ;
+    :has_related_synonym ""aromatics"",
+        ""aromatische Verbindungen"" .
+
+","An aromatic compound is a type of cyclic compound characterized by a cyclically conjugated molecular entity with a stability significantly greater than that of a hypothetical localized structure (e.g., Kekulé structure), which is said to possess aromatic character. It has exact synonyms such as ""aromatic compounds"" and ""aromatic molecular entity."" Additionally, it has related synonyms like ""aromatics"" and ""aromatische Verbindungen.""",6,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33658,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arene rdfs:subClassOf :cyclic_hydrocarbon,
+        :organic_aromatic_compound .
+
+",Arene is a type of organic aromatic compound as well as a type of cyclic hydrocarbon.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33659,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_aromatic_compound rdfs:subClassOf :aromatic_compound,
+        :organic_cyclic_compound .
+
+",An organic aromatic compound is a type of aromatic compound and also a type of organic cyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33661,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monocyclic_compound rdfs:subClassOf :cyclic_compound .
+
+",monocyclic compound is a type of cyclic compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33662,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:annulene rdfs:subClassOf :monocyclic_hydrocarbon .
+
+",annulene is a type of monocyclic hydrocarbon.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33663,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclic_hydrocarbon rdfs:subClassOf :carbocyclic_compound,
+        :hydrocarbon .
+
+",Cyclic hydrocarbon is both a type of hydrocarbon and a type of carbocyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33664,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monocyclic_hydrocarbon rdfs:subClassOf :cyclic_hydrocarbon .
+
+",monocyclic hydrocarbon is a type of cyclic hydrocarbon.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33666,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polycyclic_hydrocarbon rdfs:subClassOf :carbopolycyclic_compound,
+        :cyclic_hydrocarbon .
+
+",Polycyclic hydrocarbon is both a type of cyclic hydrocarbon and a type of carbopolycyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33670,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heteromonocyclic_compound rdfs:subClassOf :heterocyclic_compound,
+        :monocyclic_compound .
+
+",A heteromonocyclic compound is a type of monocyclic compound and also a type of heterocyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33671,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heteropolycyclic_compound rdfs:subClassOf :heterocyclic_compound,
+        :polycyclic_compound .
+
+",A heteropolycyclic compound is a type of polycyclic compound as well as a type of heterocyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33672,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heterobicyclic_compound rdfs:subClassOf :bicyclic_compound,
+        :heterocyclic_compound .
+
+",A heterobicyclic compound is a type of bicyclic compound as well as a type of heterocyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33673,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zinc_group_molecular_entity rdfs:subClassOf :d_block_molecular_entity .
+
+",zinc group molecular entity is a type of d block molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33674,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:s_block_molecular_entity rdfs:subClassOf :main_group_molecular_entity ;
+    :has_definition ""An s-block molecular entity is a molecular entity containing one or more atoms of an s-block element."" ;
+    :has_exact_synonym ""s-block molecular entity"" ;
+    :has_related_synonym ""s-block compounds"",
+        ""s-block molecular entities"" .
+
+","An s-block molecular entity is a type of main group molecular entity, defined as a molecular entity containing one or more atoms of an s-block element. It is exactly synonymous with ""s-block molecular entity"" and is also related to synonyms such as ""s-block compounds"" and ""s-block molecular entities.""",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33675,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:p_block_molecular_entity rdfs:subClassOf :main_group_molecular_entity ;
+    :has_definition ""A main group molecular entity that contains one or more atoms of a p-block element."" ;
+    :has_related_synonym ""p-block compounds"",
+        ""p-block molecular entities"",
+        ""p-block molecular entitiy"" .
+
+","A p-block molecular entity is a type of main group molecular entity defined as a main group molecular entity that contains one or more atoms of a p-block element. Furthermore, it is related to synonyms such as p-block compounds, p-block molecular entities, and p-block molecular entity.",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33676,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:d_block_molecular_entity rdfs:subClassOf :transition_element_molecular_entity ;
+    :has_definition ""A d-block molecular entity is a molecular entity containing one or more atoms of a d-block element."" ;
+    :has_exact_synonym ""d-block molecular entity"" ;
+    :has_related_synonym ""d-block compounds"",
+        ""d-block molecular entities"" .
+
+","A d-block molecular entity is a type of transition element molecular entity and is defined as a molecular entity containing one or more atoms of a d-block element. It has an exact synonym ""d-block molecular entity"" and related synonyms including ""d-block compounds"" and ""d-block molecular entities.""",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33677,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:f_block_molecular_entity rdfs:subClassOf :transition_element_molecular_entity .
+
+",f block molecular entity is a type of transition element molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33679,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:helium_molecular_entity rdfs:subClassOf :noble_gas_molecular_entity,
+        :s_block_molecular_entity .
+
+",Helium molecular entity is a type of noble gas molecular entity and also a type of s block molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33680,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_helium rdfs:subClassOf :helium_molecular_entity .
+
+",elemental helium is a type of helium molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33687,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diatomic_helium rdfs:subClassOf :elemental_helium .
+
+",diatomic helium is a type of elemental helium.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33692,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrides rdfs:subClassOf :heteroatomic_molecular_entity,
+        :hydrogen_molecular_entity ;
+    :has_definition ""Hydrides are chemical compounds of hydrogen with other chemical elements."" .
+
+",Hydrides are a type of hydrogen molecular entity and also a type of heteroatomic molecular entity. They are defined as chemical compounds of hydrogen with other chemical elements.,3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33693,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oxygen_hydride rdfs:subClassOf :chalcogen_hydride .
+
+",oxygen hydride is a type of chalcogen hydride.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33694,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biomacromolecule rdfs:subClassOf :macromolecule,
+        :organic_molecular_entity ;
+    :has_definition ""A macromolecule formed by a living organism."" ;
+    :has_exact_synonym ""biopolymer"" ;
+    :has_related_synonym ""Biopolymere"",
+        ""biomacromolecules"",
+        ""biopolymers"" .
+
+","A biomacromolecule is both a type of macromolecule and a type of organic molecular entity, defined as a macromolecule formed by a living organism. It is exactly synonymous with biopolymer, and also has related synonyms such as Biopolymere, biomacromolecules, and biopolymers.",7,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33702,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyatomic_cation rdfs:subClassOf :cation,
+        :polyatomic_ion .
+
+",A polyatomic cation is a type of polyatomic ion and also a type of cation.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33703,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amino_acid_cation rdfs:subClassOf :polyatomic_cation .
+
+",amino acid cation is a type of polyatomic cation.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33704,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alpha_amino_acid rdfs:subClassOf :amino_acid .
+
+",alpha amino acid is a type of amino acid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33709,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amino_acid rdfs:subClassOf :carboxylic_acid,
+        :organic_amino_compound .
+
+",Amino acid is a type of carboxylic acid and also a type of organic amino compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33719,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alpha_amino_acid_cation rdfs:subClassOf :amino_acid_cation .
+
+",alpha amino acid cation is a type of amino acid cation.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33741,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chromium_group_molecular_entity rdfs:subClassOf :d_block_molecular_entity .
+
+",chromium group molecular entity is a type of d block molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33743,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:manganese_group_molecular_entity rdfs:subClassOf :d_block_molecular_entity .
+
+",manganese group molecular entity is a type of d block molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33744,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:iron_group_molecular_entity rdfs:subClassOf :d_block_molecular_entity ;
+    :has_exact_synonym ""iron group molecular entity"" ;
+    :has_related_synonym ""iron group molecular entities"" .
+
+","An iron group molecular entity is a type of d block molecular entity. It has the exact synonym ""iron group molecular entity"" and is also relatedly referred to as ""iron group molecular entities.""",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33745,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:copper_group_molecular_entity rdfs:subClassOf :d_block_molecular_entity .
+
+",copper group molecular entity is a type of d block molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33746,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vanadium_group_molecular_entity rdfs:subClassOf :d_block_molecular_entity .
+
+",vanadium group molecular entity is a type of d block molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33747,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nickel_group_molecular_entity rdfs:subClassOf :d_block_molecular_entity .
+
+",nickel group molecular entity is a type of d block molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33749,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:platinum_molecular_entity rdfs:subClassOf :nickel_group_molecular_entity .
+
+",platinum molecular entity is a type of nickel group molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33768,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:titanium_group_molecular_entity rdfs:subClassOf :d_block_molecular_entity .
+
+",titanium group molecular entity is a type of d block molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33822,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_hydroxy_compound rdfs:subClassOf :hydroxides,
+        :organic_molecular_entity .
+
+",An organic hydroxy compound is a type of hydroxide and also a type of organic molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33832,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_cyclic_compound rdfs:subClassOf :cyclic_compound,
+        :organic_molecule .
+
+",An organic cyclic compound is both a type of cyclic compound and a type of organic molecule.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33833,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heteroarene rdfs:subClassOf :organic_aromatic_compound,
+        :organic_heterocyclic_compound .
+
+",Heteroarene is a type of organic compound that is both heterocyclic and aromatic.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33836,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:benzenoid_aromatic_compound rdfs:subClassOf :carbocyclic_compound,
+        :organic_aromatic_compound .
+
+",A benzenoid aromatic compound is a type of carbocyclic compound and is also classified as a type of organic aromatic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33839,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:macromolecule rdfs:subClassOf :polyatomic_entity ;
+    :has_definition ""A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass."" ;
+    :has_exact_synonym ""macromolecule"" ;
+    :has_related_synonym ""macromolecules"",
+        ""polymer"",
+        ""polymer molecule"",
+        ""polymers"" .
+
+","A macromolecule is a type of polyatomic entity, defined as a molecule of high relative molecular mass. Its structure essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass. It is also exactly synonymous with itself, macromolecule, and has related synonyms including macromolecules, polymer, polymer molecule, and polymers.",7,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33842,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aromatic_annulene rdfs:subClassOf :annulene,
+        :monocyclic_arene .
+
+",Aromatic annulene is both a type of annulene and a type of monocyclic arene.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33847,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monocyclic_arene rdfs:subClassOf :arene .
+
+",monocyclic arene is a type of arene.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33848,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polycyclic_arene rdfs:subClassOf :arene,
+        :polycyclic_hydrocarbon .
+
+",Polycyclic arene is a type of arene and also a type of polycyclic hydrocarbon.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33861,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transition_element_coordination_entity rdfs:subClassOf :coordination_entity,
+        :transition_element_molecular_entity .
+
+",A transition element coordination entity is both a type of coordination entity and a type of transition element molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33893,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reagent rdfs:subClassOf :application .
+
+",reagent is a type of application.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33909,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metallotetrapyrrole rdfs:subClassOf :cyclic_tetrapyrrole .
+
+",metallotetrapyrrole is a type of cyclic tetrapyrrole.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33937,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:macronutrient rdfs:subClassOf :nutrient ;
+    :has_definition ""Any nutrient required in large quantities by organisms throughout their life in order to orchestrate a range of physiological functions. Macronutrients are usually chemical elements (carbon, hydrogen, nitrogen, oxygen, phosphorus and sulfur) that humans consume in the largest quantities. Calcium, sodium, magnesium and potassium are sometimes included as macronutrients because they are required in relatively large quantities compared with other vitamins and minerals."" ;
+    :has_related_synonym ""macronutrients"" .
+
+","A macronutrient is a type of nutrient defined as any nutrient required in large quantities by organisms throughout their life in order to orchestrate a range of physiological functions. Macronutrients, usually chemical elements such as carbon, hydrogen, nitrogen, oxygen, phosphorus, and sulfur, are consumed by humans in the largest quantities. Additionally, elements like calcium, sodium, magnesium, and potassium are sometimes included as macronutrients because they are required in relatively large quantities compared with other vitamins and minerals. The term ""macronutrients"" is also used as a related synonym for macronutrient.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33958,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:halide_salt rdfs:subClassOf :halide,
+        :salt .
+
+",Halide salt is a type of salt and also a type of halide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_33969,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gold_molecular_entity rdfs:subClassOf :copper_group_molecular_entity .
+
+",gold molecular entity is a type of copper group molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33970,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_gold rdfs:subClassOf :gold_molecular_entity .
+
+",elemental gold is a type of gold molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_33976,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnesium_coordination_entity rdfs:subClassOf :alkaline_earth_coordination_entity,
+        :magnesium_molecular_entity .
+
+",A magnesium coordination entity is a type of magnesium molecular entity and also a type of alkaline earth coordination entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_34970,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saxitoxin rdfs:subClassOf :carbamate_ester,
+        :paralytic_shellfish_toxin .
+
+",Saxitoxin is a type of paralytic shellfish toxin and also a type of carbamate ester.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35106,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrogen_hydride rdfs:subClassOf :nitrogen_molecular_entity,
+        :pnictogen_hydride ;
+    :has_related_synonym ""nitrogen hydrides"" .
+
+","Nitrogen hydride is a type of pnictogen hydride and also a type of nitrogen molecular entity. Additionally, it has a related synonym: nitrogen hydrides.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35107,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:azane rdfs:subClassOf :nitrogen_hydride ;
+    :has_definition ""Saturated acyclic nitrogen hydrides having the general formula NnHn+2."" ;
+    :has_related_synonym ""azanes"" .
+
+","Azane is a type of nitrogen hydride that is defined as saturated acyclic nitrogen hydrides with the general formula NnHn+2. It is also related to the synonym ""azanes.""",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35131,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aldose_phosphate rdfs:subClassOf :phospho_sugar .
+
+",aldose phosphate is a type of phospho sugar.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35156,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:calcium_salt rdfs:subClassOf :alkaline_earth_salt,
+        :calcium_molecular_entity .
+
+",Calcium salt is a type of calcium molecular entity as well as a type of alkaline earth salt.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35163,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclic_carotene rdfs:subClassOf :carotene .
+
+",cyclic carotene is a type of carotene.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35170,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vanadium_0_ rdfs:subClassOf :elemental_vanadium .
+
+",vanadium 0  is a type of elemental vanadium.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35171,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_vanadium rdfs:subClassOf :vanadium_molecular_entity .
+
+",elemental vanadium is a type of vanadium molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35175,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sulfate_salt rdfs:subClassOf :salt,
+        :sulfates .
+
+",Sulfate salt is a type of salt and also a type of sulfates.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35186,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terpene rdfs:subClassOf :hydrocarbon,
+        :isoprenoid .
+
+",Terpene is a type of hydrocarbon and is also a type of isoprenoid.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35193,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tetraterpene rdfs:subClassOf :terpene .
+
+",tetraterpene is a type of terpene.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35195,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surfactant rdfs:subClassOf :emulsifier .
+
+",surfactant is a type of emulsifier.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35196,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrogen_oxide rdfs:subClassOf :inorganic_oxide,
+        :nitrogen_molecular_entity .
+
+",Nitrogen oxide is both a type of inorganic oxide and a type of nitrogen molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35204,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tracer rdfs:subClassOf :application .
+
+",tracer is a type of application.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35209,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:label rdfs:subClassOf :application .
+
+",label is a type of application.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35217,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkaline_earth_coordination_entity rdfs:subClassOf :alkaline_earth_molecular_entity,
+        :main_group_coordination_entity .
+
+",An alkaline earth coordination entity is a type of alkaline earth molecular entity and also a type of main group coordination entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35222,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inhibitor rdfs:subClassOf :biological_role .
+
+",inhibitor is a type of biological role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35230,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fossil_fuel rdfs:subClassOf :fuel .
+
+",fossil fuel is a type of fuel.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35274,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ammonium_ion_derivative rdfs:subClassOf :nitrogen_molecular_entity,
+        :polyatomic_cation .
+
+",Ammonium ion derivative is a type of polyatomic cation and also a type of nitrogen molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35293,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fused_compound rdfs:subClassOf :polycyclic_compound .
+
+",fused compound is a type of polycyclic compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35294,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbopolycyclic_compound rdfs:subClassOf :carbocyclic_compound,
+        :homopolycyclic_compound .
+
+",A carbopolycyclic compound is a type of carbocyclic compound and also a type of homopolycyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35295,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:homopolycyclic_compound rdfs:subClassOf :homocyclic_compound,
+        :polycyclic_compound .
+
+",A homopolycyclic compound is both a type of homocyclic compound and a type of polycyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35296,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ortho_fused_polycyclic_arene rdfs:subClassOf :ortho_fused_polycyclic_hydrocarbon,
+        :polycyclic_arene .
+
+",Ortho fused polycyclic arene is a type of polycyclic arene and also a type of ortho fused polycyclic hydrocarbon.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35307,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epoxycarotenol rdfs:subClassOf :carotenol,
+        :epoxycarotenoid .
+
+",Epoxycarotenol is a type of epoxycarotenoid and also a type of carotenol.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35341,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:steroid rdfs:subClassOf :lipid,
+        :organic_polycyclic_compound .
+
+",Steroid is a type of lipid and also a type of organic polycyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35343,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:17beta_hydroxy_steroid rdfs:subClassOf :17_hydroxy_steroid .
+
+",17beta hydroxy steroid is a type of 17 hydroxy steroid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35350,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydroxy_steroid rdfs:subClassOf :organic_hydroxy_compound,
+        :steroid .
+
+",Hydroxy steroid is a type of organic hydroxy compound and also a type of steroid.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35352,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organonitrogen_compound rdfs:subClassOf :heteroorganic_entity,
+        :nitrogen_molecular_entity .
+
+",An organonitrogen compound is a type of heteroorganic entity and also a type of nitrogen molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35366,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fatty_acid rdfs:subClassOf :lipid,
+        :monocarboxylic_acid .
+
+",Fatty acid is a type of lipid and also a type of monocarboxylic acid.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35402,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chromium_oxoanion rdfs:subClassOf :chromium_coordination_entity,
+        :transition_element_oxoanion .
+
+",Chromium oxoanion is a type of chromium coordination entity and also falls under the category of transition element oxoanions.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35403,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chromium_coordination_entity rdfs:subClassOf :chromium_molecular_entity,
+        :transition_element_coordination_entity .
+
+",Chromium coordination entity is a type of chromium molecular entity and also a type of transition element coordination entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35404,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chromate_2_ rdfs:subClassOf :chromium_oxoanion,
+        :divalent_inorganic_anion .
+
+",Chromate 2 is a type of chromium oxoanion and a divalent inorganic anion.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35405,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transition_element_oxoanion rdfs:subClassOf :inorganic_anion,
+        :oxoanion,
+        :transition_element_coordination_entity .
+
+","A transition element oxoanion is a type of inorganic anion, oxoanion, and transition element coordination entity.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35406,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oxoanion rdfs:subClassOf :oxide,
+        :polyatomic_anion ;
+    :has_definition ""An oxoanion is an anion derived from an oxoacid by loss of hydron(s) bound to oxygen."" ;
+    :has_exact_synonym ""oxoanion"" ;
+    :has_related_synonym ""oxoacid anions"",
+        ""oxoanions"" .
+
+","An oxoanion is a type of oxide and also a type of polyatomic anion. It is defined as an anion derived from an oxoacid by the loss of hydron(s) bound to oxygen. The term ""oxoanion"" itself is considered an exact synonym, while ""oxoacid anions"" and ""oxoanions"" are related synonyms.",6,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35426,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ortho_fused_bicyclic_arene rdfs:subClassOf :ortho_fused_bicyclic_hydrocarbon,
+        :ortho_fused_polycyclic_arene .
+
+",Ortho fused bicyclic arene is a type of both ortho fused polycyclic arene and ortho fused bicyclic hydrocarbon.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35427,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ortho_fused_polycyclic_hydrocarbon rdfs:subClassOf :ortho_fused_compound .
+
+",ortho fused polycyclic hydrocarbon is a type of ortho fused compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35428,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ortho_fused_bicyclic_hydrocarbon rdfs:subClassOf :carbobicyclic_compound,
+        :ortho_fused_compound .
+
+",Ortho fused bicyclic hydrocarbon is a type of ortho fused compound and also a type of carbobicyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35441,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antiinfective_agent rdfs:subClassOf :drug .
+
+",antiinfective agent is a type of drug.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35479,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkali_metal_salt rdfs:subClassOf :alkali_metal_molecular_entity,
+        :salt .
+
+",Alkali metal salt is a type of salt and also a type of alkali metal molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35480,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:analgesic rdfs:subClassOf :drug,
+        :pharmacological_role .
+
+",Analgesic is a type of drug that also serves a pharmacological role.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35552,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heterocyclic_organic_fundamental_parent rdfs:subClassOf :organic_fundamental_parent .
+
+",heterocyclic organic fundamental parent is a type of organic fundamental parent.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35554,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cardiovascular_drug rdfs:subClassOf :drug .
+
+",cardiovascular drug is a type of drug.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35604,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_oxoanion rdfs:subClassOf :organic_anion,
+        :organooxygen_compound,
+        :oxoanion .
+
+","Carbon oxoanion is a type of organic anion, an oxoanion, and an organooxygen compound.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35605,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_oxoacid rdfs:subClassOf :organooxygen_compound,
+        :oxoacid .
+
+",Carbon oxoacid is a type of oxoacid and also falls under the category of organooxygen compounds.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35620,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vasodilator_agent rdfs:subClassOf :cardiovascular_drug .
+
+",vasodilator agent is a type of cardiovascular drug.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35681,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:secondary_alcohol rdfs:subClassOf :alcohol .
+
+",secondary alcohol is a type of alcohol.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35701,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ester rdfs:subClassOf :organooxygen_compound .
+
+",ester is a type of organooxygen compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35715,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitro_compound rdfs:subClassOf :nitrogen_molecular_entity .
+
+",nitro compound is a type of nitrogen molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35716,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:c_nitro_compound rdfs:subClassOf :nitro_compound,
+        :organic_molecule .
+
+",C nitro compound is a type of nitro compound and also a type of organic molecule.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35757,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monocarboxylic_acid_anion rdfs:subClassOf :carboxylic_acid_anion .
+
+",monocarboxylic acid anion is a type of carboxylic acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35776,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arsenic_oxoanion rdfs:subClassOf :arsenic_molecular_entity,
+        :pnictogen_oxoanion .
+
+",Arsenic oxoanion is a type of arsenic molecular entity and also a type of pnictogen oxoanion.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35780,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphate_ion rdfs:subClassOf :phosphorus_oxoanion .
+
+",phosphate ion is a type of phosphorus oxoanion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_35789,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oxo_steroid rdfs:subClassOf :ketone,
+        :steroid .
+
+",Oxo steroid is a type of steroid and ketone.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35875,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:imidazopyrimidine rdfs:subClassOf :heteroarene,
+        :organic_heterobicyclic_compound,
+        :organonitrogen_heterocyclic_compound .
+
+","Imidazopyrimidine is a type of organic heterobicyclic compound, heteroarene, and organonitrogen heterocyclic compound.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_35881,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pnictogen_hydride rdfs:subClassOf :inorganic_hydride,
+        :pnictogen_molecular_entity ;
+    :has_exact_synonym ""pnictogen hydride"" ;
+    :has_related_synonym ""pnictogen hydrides"" .
+
+","Pnictogen hydride is a type of inorganic hydride and also falls under the category of pnictogen molecular entities. It is exactly synonymous with ""pnictogen hydride"" and is relatedly known as ""pnictogen hydrides.""",4,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36059,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydroxy_monocarboxylic_acid_anion rdfs:subClassOf :monocarboxylic_acid_anion .
+
+",hydroxy monocarboxylic acid anion is a type of monocarboxylic acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36093,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_chloride rdfs:subClassOf :chloride_salt,
+        :inorganic_salt .
+
+",Inorganic chloride is a type of chloride salt and also a type of inorganic salt.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36125,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclitol_carboxylic_acid_anion rdfs:subClassOf :monocarboxylic_acid_anion .
+
+",cyclitol carboxylic acid anion is a type of monocarboxylic acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36244,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dicarboxylic_acid_monoester rdfs:subClassOf :carboxylic_acid,
+        :carboxylic_ester,
+        :dicarboxylic_acids_and_o_substituted_derivatives .
+
+","Dicarboxylic acid monoester is a type of dicarboxylic acids and o substituted derivatives, carboxylic ester, and also a type of carboxylic acid.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36309,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclic_tetrapyrrole rdfs:subClassOf :cyclic_polypyrrole,
+        :tetrapyrrole .
+
+",Cyclic tetrapyrrole is a type of tetrapyrrole and also a type of cyclic polypyrrole.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36338,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lepton rdfs:subClassOf :fermion,
+        :fundamental_particle .
+
+",Lepton is a type of fundamental particle and also a type of fermion.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36339,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:baryon rdfs:subClassOf :fermion,
+        :hadron .
+
+",A baryon is both a type of fermion and a type of hadron.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36340,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fermion rdfs:subClassOf :subatomic_particle .
+
+",fermion is a type of subatomic particle.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36341,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boson rdfs:subClassOf :subatomic_particle .
+
+",boson is a type of subatomic particle.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36342,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subatomic_particle rdfs:subClassOf :material_entity ;
+    :has_definition ""A particle smaller than an atom."" ;
+    :has_related_synonym ""subatomic particles"" .
+
+",A subatomic particle is a type of material entity defined as a particle smaller than an atom. It is also referred to synonymously as subatomic particles.,3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36343,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:composite_particle rdfs:subClassOf :subatomic_particle .
+
+",composite particle is a type of subatomic particle.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36344,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hadron rdfs:subClassOf :composite_particle .
+
+",hadron is a type of composite particle.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36347,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nuclear_particle rdfs:subClassOf :subatomic_particle .
+
+",nuclear particle is a type of subatomic particle.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36352,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neutrino rdfs:subClassOf :lepton .
+
+",neutrino is a type of lepton.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36357,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyatomic_entity rdfs:subClassOf :molecular_entity ;
+    :has_definition ""Any molecular entity consisting of more than one atom."" ;
+    :has_related_synonym ""polyatomic entities"" .
+
+","A polyatomic entity is a type of molecular entity, defined as any molecular entity consisting of more than one atom. It is also related to the synonym ""polyatomic entities.""",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36358,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyatomic_ion rdfs:subClassOf :ion,
+        :polyatomic_entity ;
+    :has_definition ""An ion consisting of more than one atom."" ;
+    :has_related_synonym ""polyatomic ions"" .
+
+","A polyatomic ion is a type of ion and a type of polyatomic entity, defined as an ion consisting of more than one atom. It is also related to the synonym ""polyatomic ions.""",4,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36359,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphorus_oxoacid_derivative rdfs:subClassOf :oxoacid_derivative,
+        :phosphorus_oxoacids_and_derivatives ;
+    :has_exact_synonym ""phosphorus oxoacid derivative"" .
+
+","Phosphorus oxoacid derivative is a type of oxoacid derivative and also falls under the category of phosphorus oxoacids and derivatives. Additionally, it is exactly synonymous with phosphorus oxoacid derivative.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36360,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphorus_oxoacids_and_derivatives rdfs:subClassOf :phosphorus_molecular_entity .
+
+",phosphorus oxoacids and derivatives is a type of phosphorus molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36364,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkaline_earth_salt rdfs:subClassOf :alkaline_earth_molecular_entity,
+        :salt .
+
+",Alkaline earth salt is a type of salt and also a type of alkaline earth molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36388,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saturated_organic_heterocyclic_parent rdfs:subClassOf :heterocyclic_organic_fundamental_parent .
+
+",saturated organic heterocyclic parent is a type of heterocyclic organic fundamental parent.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36389,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saturated_organic_heteromonocyclic_parent rdfs:subClassOf :organic_heteromonocyclic_compound,
+        :saturated_organic_heterocyclic_parent .
+
+",A saturated organic heteromonocyclic parent is both a type of organic heteromonocyclic compound and a type of saturated organic heterocyclic parent.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36468,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polycyclic_ether rdfs:subClassOf :cyclic_ether,
+        :organic_heteropolycyclic_compound .
+
+",Polycyclic ether is a type of cyclic ether and is also a type of organic heteropolycyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36562,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:main_group_coordination_entity rdfs:subClassOf :coordination_entity,
+        :main_group_molecular_entity .
+
+",A main group coordination entity is both a type of coordination entity and a type of main group molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36586,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbonyl_compound rdfs:subClassOf :organic_oxo_compound,
+        :organooxygen_compound .
+
+",A carbonyl compound is a type of organic oxo compound as well as a type of organooxygen compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36587,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_oxo_compound rdfs:subClassOf :organic_molecule .
+
+",organic oxo compound is a type of organic molecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36683,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organochlorine_compound rdfs:subClassOf :chlorine_molecular_entity,
+        :organohalogen_compound .
+
+",An organochlorine compound is a type of organohalogen compound and a type of chlorine molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36688,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heterotricyclic_compound rdfs:subClassOf :heteropolycyclic_compound .
+
+",heterotricyclic compound is a type of heteropolycyclic compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36785,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbobicyclic_compound rdfs:subClassOf :bicyclic_compound,
+        :carbopolycyclic_compound .
+
+",A carbobicyclic compound is a type of bicyclic compound and also a type of carbopolycyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36830,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monoanion rdfs:subClassOf :anion .
+
+",monoanion is a type of anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36838,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:17_hydroxy_steroid rdfs:subClassOf :hydroxy_steroid .
+
+",17 hydroxy steroid is a type of hydroxy steroid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36871,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_radical rdfs:subClassOf :inorganic_molecular_entity,
+        :radical .
+
+",An inorganic radical is a type of radical as well as a type of inorganic molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36874,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radical_cation rdfs:subClassOf :cation,
+        :radical_ion .
+
+",A radical cation is both a type of radical ion and a type of cation.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36875,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radical_ion rdfs:subClassOf :ion,
+        :radical .
+
+",A radical ion is both a type of ion and a type of radical.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36878,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_radical_ion rdfs:subClassOf :inorganic_radical,
+        :radical_ion .
+
+",An inorganic radical ion is both a type of inorganic radical and a type of radical ion.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36879,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_radical_cation rdfs:subClassOf :inorganic_radical_ion,
+        :radical_cation .
+
+",An inorganic radical cation is both a type of radical cation and a type of inorganic radical ion.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36892,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_fluorine rdfs:subClassOf :elemental_halogen .
+
+",elemental fluorine is a type of elemental halogen.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36895,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monoatomic_fluorine rdfs:subClassOf :elemental_fluorine .
+
+",monoatomic fluorine is a type of elemental fluorine.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36902,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chalcogen_hydride rdfs:subClassOf :chalcogen_molecular_entity,
+        :inorganic_hydride .
+
+",Chalcogen hydride is both a type of inorganic hydride and a type of chalcogen molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36907,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neon_molecular_entity rdfs:subClassOf :noble_gas_molecular_entity .
+
+",neon molecular entity is a type of noble gas molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36908,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argon_molecular_entity rdfs:subClassOf :noble_gas_molecular_entity .
+
+",argon molecular entity is a type of noble gas molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36909,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:krypton_molecular_entity rdfs:subClassOf :noble_gas_molecular_entity .
+
+",krypton molecular entity is a type of noble gas molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36914,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_ion rdfs:subClassOf :inorganic_molecular_entity,
+        :ion ;
+    :has_related_synonym ""inorganic ions"" .
+
+","Inorganic ion is a type of inorganic molecular entity and also a type of ion. Additionally, it has a related synonym, inorganic ions.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36915,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_cation rdfs:subClassOf :cation,
+        :inorganic_ion ;
+    :has_related_synonym ""inorganic cations"" .
+
+","An inorganic cation is a type of inorganic ion as well as a type of cation. Additionally, it is synonymously referred to as inorganic cations.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36916,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cation rdfs:subClassOf :ion ;
+    :has_definition ""A monoatomic or polyatomic species having one or more elementary charges of the proton."" ;
+    :has_exact_synonym ""Cation"",
+        ""cation"" ;
+    :has_related_synonym ""Kation"",
+        ""Kationen"",
+        ""cationes"",
+        ""cations"" .
+
+","A cation is a type of ion characterized by being either a monoatomic or polyatomic species with one or more elementary charges of the proton. It is precisely defined as such and is exactly synonymous with both ""Cation"" and ""cation"" in a lowercase form. Additionally, cation is relatedly synonymous with ""Kation,"" ""Kationen,"" ""cationes,"" and ""cations,"" indicating a variety of ways it can be referred to.",8,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36927,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_14_atom rdfs:subClassOf :carbon_atom .
+
+",carbon 14 atom is a type of carbon atom.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36928,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_13_atom rdfs:subClassOf :carbon_atom .
+
+",carbon 13 atom is a type of carbon atom.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36934,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrogen_15_atom rdfs:subClassOf :nitrogen_atom .
+
+",nitrogen 15 atom is a type of nitrogen atom.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36961,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chalcocarbonic_acid rdfs:subClassOf :organochalcogen_compound .
+
+",chalcocarbonic acid is a type of organochalcogen compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36962,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organochalcogen_compound rdfs:subClassOf :chalcogen_molecular_entity,
+        :heteroorganic_entity ;
+    :has_definition ""An organochalcogen compound is a compound containing at least one carbon-chalcogen bond."" ;
+    :has_exact_synonym ""organochalcogen compound"" ;
+    :has_related_synonym ""organochalcogen compounds"" .
+
+","An organochalcogen compound is a type of heteroorganic entity and also a type of chalcogen molecular entity. It is defined as a compound containing at least one carbon-chalcogen bond. Additionally, ""organochalcogen compound"" is an exact synonym for itself, and it has a related synonym, ""organochalcogen compounds.""",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36963,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organooxygen_compound rdfs:subClassOf :organochalcogen_compound,
+        :oxygen_molecular_entity ;
+    :has_definition ""An organochalcogen compound containing at least one carbon-oxygen bond."" ;
+    :has_exact_synonym ""organooxygen compound"" ;
+    :has_related_synonym ""organooxygen compounds"" .
+
+","An organooxygen compound is a type of oxygen molecular entity and also a type of organochalcogen compound. It is defined as an organochalcogen compound containing at least one carbon-oxygen bond. Additionally, ""organooxygen compound"" is an exact synonym for itself, and it has a related synonym, ""organooxygen compounds.""",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_36976,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nucleotide rdfs:subClassOf :nucleoside_phosphate .
+
+",nucleotide is a type of nucleoside phosphate.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_36980,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyridine_nucleotide rdfs:subClassOf :nucleotide,
+        :pyridines .
+
+",Pyridine nucleotide is a type of pyridines and also a type of nucleotide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37007,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nicotinamide_dinucleotide rdfs:subClassOf :dinucleotide,
+        :nicotinamide_nucleotide .
+
+",Nicotinamide dinucleotide is a type of nicotinamide nucleotide and also a type of dinucleotide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37015,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ribonucleoside_5_phosphate rdfs:subClassOf :nucleoside_5_phosphate,
+        :ribonucleotide .
+
+",Ribonucleoside 5 phosphate is a type of nucleoside 5 phosphate and also a type of ribonucleotide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37022,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amino_acid_anion rdfs:subClassOf :carboxylic_acid_anion,
+        :organonitrogen_compound .
+
+",Amino acid anion is a type of carboxylic acid anion and is also a type of organonitrogen compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37045,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:purine_ribonucleoside_5_triphosphate rdfs:subClassOf :purine_ribonucleoside_triphosphate,
+        :purine_ribonucleotide,
+        :ribonucleoside_5_triphosphate .
+
+","Purine ribonucleoside 5 triphosphate is a type of purine ribonucleoside triphosphate, purine ribonucleotide, and ribonucleoside 5 triphosphate.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37076,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ribonucleoside_5_triphosphate rdfs:subClassOf :ribonucleoside_5_phosphate .
+
+",ribonucleoside 5 triphosphate is a type of ribonucleoside 5 phosphate.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37096,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adenosine_5_phosphate rdfs:subClassOf :adenosine_phosphate .
+
+",adenosine 5 phosphate is a type of adenosine phosphate.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37121,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:guanosine_5_phosphate rdfs:subClassOf :guanosine_phosphate .
+
+",guanosine 5 phosphate is a type of guanosine phosphate.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37133,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barium_molecular_entity rdfs:subClassOf :alkaline_earth_molecular_entity .
+
+",barium molecular entity is a type of alkaline earth molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37134,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_barium rdfs:subClassOf :barium_molecular_entity .
+
+",elemental barium is a type of barium molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37143,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organofluorine_compound rdfs:subClassOf :fluorine_molecular_entity,
+        :organohalogen_compound .
+
+",An organofluorine compound is a type of organohalogen compound and also a type of fluorine molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37163,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glucan rdfs:subClassOf :homopolysaccharide .
+
+",glucan is a type of homopolysaccharide.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37164,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:homopolysaccharide rdfs:subClassOf :polysaccharide .
+
+",homopolysaccharide is a type of polysaccharide.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37175,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_hydride rdfs:subClassOf :hydrides .
+
+",organic hydride is a type of hydrides.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37176,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mononuclear_parent_hydride rdfs:subClassOf :hydrides ;
+    :has_exact_synonym ""mononuclear parent hydrides"" ;
+    :has_related_synonym ""mononuclear hydride"",
+        ""mononuclear hydrides"" .
+
+","Mononuclear parent hydride is a type of hydrides and has an exact synonym, mononuclear parent hydrides. Additionally, it has related synonyms including mononuclear hydride and mononuclear hydrides.",4,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37190,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:silicon_coordination_entity rdfs:subClassOf :main_group_coordination_entity,
+        :silicon_molecular_entity .
+
+",Silicon coordination entity is a type of silicon molecular entity and also a type of main group coordination entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37191,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:silicon_oxoanion rdfs:subClassOf :inorganic_anion,
+        :oxoanion,
+        :silicon_coordination_entity .
+
+","Silicon oxoanion is a type of inorganic anion, oxoanion, and silicon coordination entity.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37193,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_lead rdfs:subClassOf :lead_molecular_entity .
+
+",elemental lead is a type of lead molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37217,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:titanium_molecular_entity rdfs:subClassOf :titanium_group_molecular_entity .
+
+",titanium molecular entity is a type of titanium group molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37332,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tropane_alkaloid rdfs:subClassOf :alkaloid,
+        :azabicycloalkane .
+
+",Tropane alkaloid is a type of alkaloid and also a type of azabicycloalkane.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37349,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphorus_oxide rdfs:subClassOf :phosphorus_molecular_entity .
+
+",phosphorus oxide is a type of phosphorus molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37376,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tetraphosphorus_decaoxide rdfs:subClassOf :phosphorus_oxide .
+
+",tetraphosphorus decaoxide is a type of phosphorus oxide.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37395,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mucopolysaccharide rdfs:subClassOf :glycosaminoglycan .
+
+",mucopolysaccharide is a type of glycosaminoglycan.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37403,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:copper_coordination_entity rdfs:subClassOf :copper_molecular_entity,
+        :transition_element_coordination_entity .
+
+","Copper coordination entity is a type of copper molecular entity, and it is also a type of transition element coordination entity.",2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37404,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_copper rdfs:subClassOf :copper_molecular_entity .
+
+",elemental copper is a type of copper molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37407,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclic_ether rdfs:subClassOf :ether,
+        :oxacycle .
+
+",Cyclic ether is a type of ether and is also a type of oxacycle.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37527,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acid rdfs:subClassOf :chemical_role .
+
+",acid is a type of chemical role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37577,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heteroatomic_molecular_entity rdfs:subClassOf :polyatomic_entity ;
+    :has_definition ""A molecular entity consisting of two or more chemical elements."" ;
+    :has_related_synonym ""chemical compound"",
+        ""heteroatomic molecular entities"" .
+
+","A heteroatomic molecular entity is a type of polyatomic entity and has the definition of being a molecular entity consisting of two or more chemical elements. Additionally, it is related to the synonym ""chemical compound"" and also referred to as ""heteroatomic molecular entities.""",4,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37578,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:halide rdfs:subClassOf :halogen_molecular_entity,
+        :heteroatomic_molecular_entity .
+
+",Halide is both a type of halogen molecular entity and a type of heteroatomic molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37602,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allenes rdfs:subClassOf :olefinic_compound .
+
+",allenes is a type of olefinic compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37622,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carboxamide rdfs:subClassOf :organonitrogen_compound,
+        :organooxygen_compound,
+        :primary_amide .
+
+","Carboxamide is a type of primary amide, an organonitrogen compound, and an organooxygen compound.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37734,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphoric_ester rdfs:subClassOf :ester,
+        :phosphoric_acid_derivative .
+
+",Phosphoric ester is a type of ester that is also a derivative of phosphoric acid.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_37826,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sulfuric_acid_derivative rdfs:subClassOf :sulfur_oxoacid_derivative .
+
+",sulfuric acid derivative is a type of sulfur oxoacid derivative.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_37997,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:homopolymer_macromolecule rdfs:subClassOf :macromolecule .
+
+",homopolymer macromolecule is a type of macromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38077,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polypyrrole rdfs:subClassOf :organonitrogen_heterocyclic_compound .
+
+",polypyrrole is a type of organonitrogen heterocyclic compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38101,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organonitrogen_heterocyclic_compound rdfs:subClassOf :organic_heterocyclic_compound,
+        :organonitrogen_compound .
+
+",An organonitrogen heterocyclic compound is a type of organic heterocyclic compound and also a type of organonitrogen compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_38104,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oxacycle rdfs:subClassOf :organic_heterocyclic_compound,
+        :organooxygen_compound .
+
+",Oxacycle is a type of organic heterocyclic compound and also a type of organooxygen compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_38166,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_heteropolycyclic_compound rdfs:subClassOf :heteropolycyclic_compound,
+        :organic_heterocyclic_compound .
+
+","An organic heteropolycyclic compound is a type of organic heterocyclic compound, as well as a type of heteropolycyclic compound.",2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_38180,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polycyclic_heteroarene rdfs:subClassOf :heteroarene .
+
+",polycyclic heteroarene is a type of heteroarene.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38201,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bacteriochlorophyll rdfs:subClassOf :chlorophyll .
+
+",bacteriochlorophyll is a type of chlorophyll.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38206,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chlorophyllide rdfs:subClassOf :chlorophyll .
+
+",chlorophyllide is a type of chlorophyll.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38222,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrocarbyl_anion rdfs:subClassOf :organic_anion .
+
+",hydrocarbyl anion is a type of organic anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38251,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnesium_tetrapyrrole rdfs:subClassOf :magnesium_coordination_entity,
+        :metallotetrapyrrole .
+
+",Magnesium tetrapyrrole is a type of metallotetrapyrrole and also a type of magnesium coordination entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_38252,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phorbines rdfs:subClassOf :cyclic_tetrapyrrole .
+
+",phorbines is a type of cyclic tetrapyrrole.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38263,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:2_amino_3_hydroxybutanoic_acid rdfs:subClassOf :alpha_amino_acid .
+
+",2 amino 3 hydroxybutanoic acid is a type of alpha amino acid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38295,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:azabicycloalkane rdfs:subClassOf :organic_heterobicyclic_compound,
+        :organonitrogen_heterocyclic_compound .
+
+",Azabicycloalkane is a type of organic heterobicyclic compound as well as an organonitrogen heterocyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_38460,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:methylindole rdfs:subClassOf :indoles .
+
+",methylindole is a type of indoles.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38496,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electron_transport_chain_inhibitor rdfs:subClassOf :pathway_inhibitor .
+
+",electron transport chain inhibitor is a type of pathway inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38497,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:respiratory_chain_inhibitor rdfs:subClassOf :electron_transport_chain_inhibitor .
+
+",respiratory chain inhibitor is a type of electron transport chain inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38669,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrazolopyrimidine rdfs:subClassOf :organic_heterobicyclic_compound,
+        :organonitrogen_heterocyclic_compound .
+
+",Pyrazolopyrimidine is a type of organic heterobicyclic compound and an organonitrogen heterocyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_38702,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_sodium_salt rdfs:subClassOf :inorganic_salt,
+        :sodium_salt .
+
+",Inorganic sodium salt is a type of inorganic salt and also a type of sodium salt.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_38773,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quinolinemonocarboxylate rdfs:subClassOf :monocarboxylic_acid_anion .
+
+",quinolinemonocarboxylate is a type of monocarboxylic acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38867,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anaesthetic rdfs:subClassOf :drug .
+
+",anaesthetic is a type of drug.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38869,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:general_anaesthetic rdfs:subClassOf :anaesthetic .
+
+",general anaesthetic is a type of anaesthetic.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38870,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inhalation_anaesthetic rdfs:subClassOf :general_anaesthetic .
+
+",inhalation anaesthetic is a type of general anaesthetic.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38975,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:methylbenzene rdfs:subClassOf :alkylbenzene .
+
+",methylbenzene is a type of alkylbenzene.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_38976,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkylbenzene rdfs:subClassOf :benzenes,
+        :monocyclic_arene .
+
+",Alkylbenzene is a type of benzenes and also a type of monocyclic arene.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_39141,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bronsted_acid rdfs:subClassOf :acid,
+        :donor .
+
+",A Bronsted acid is a type of acid that acts as a donor.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_39142,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bronsted_base rdfs:subClassOf :acceptor,
+        :base .
+
+",A Bronsted base is both a type of acceptor and a type of base.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_39143,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lewis_acid rdfs:subClassOf :acceptor,
+        :acid .
+
+",Lewis acid is a type of acid that acts as an acceptor.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_39144,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lewis_base rdfs:subClassOf :base,
+        :donor .
+
+",A Lewis base is both a type of donor and a type of base.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_39285,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chloropicrin rdfs:subClassOf :c_nitro_compound,
+        :one_carbon_compound,
+        :organochlorine_compound .
+
+","Chloropicrin is a type of C nitro compound, an organochlorine compound, and also a one carbon compound.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_39418,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:straight_chain_saturated_fatty_acid rdfs:subClassOf :saturated_fatty_acid,
+        :straight_chain_fatty_acid .
+
+",A straight chain saturated fatty acid is a type of both saturated fatty acid and straight chain fatty acid.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_39478,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:buta_1_3_diene rdfs:subClassOf :butadiene .
+
+",buta 1 3 diene is a type of butadiene.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_39479,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:butadiene rdfs:subClassOf :alkadiene .
+
+",butadiene is a type of alkadiene.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_3992,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclic_ketone rdfs:subClassOf :ketone .
+
+",cyclic ketone is a type of ketone.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_41609,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbonate rdfs:subClassOf :carbon_oxoanion .
+
+",carbonate is a type of carbon oxoanion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_43098,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heptane rdfs:subClassOf :alkane,
+        :volatile_organic_compound .
+
+",Heptane is a type of volatile organic compound and is also a type of alkane.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_43474,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrogenphosphate rdfs:subClassOf :divalent_inorganic_anion,
+        :phosphate_ion .
+
+",Hydrogenphosphate is a type of phosphate ion and a divalent inorganic anion.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_44882,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peridinin rdfs:subClassOf :allenes,
+        :epoxycarotenol .
+
+",Peridinin is a type of epoxycarotenol and also a type of allenes.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_45696,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrogensulfate rdfs:subClassOf :sulfur_oxoanion .
+
+",hydrogensulfate is a type of sulfur oxoanion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46661,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:asbestos rdfs:subClassOf :silicate_mineral .
+
+",asbestos is a type of silicate mineral.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46662,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mineral rdfs:subClassOf :chemical_substance ;
+    :has_definition ""In general, a mineral is a chemical substance that is normally crystalline formed and has been formed as a result of geological processes. The term also includes metamict substances (naturally occurring, formerly crystalline substances whose crystallinity has been destroyed by ionising radiation) and can include naturally occurring amorphous substances that have never been crystalline ('mineraloids') such as georgite and calciouranoite as well as substances formed by the action of geological processes on bigenic compounds ('biogenic minerals')."" ;
+    :has_exact_synonym ""mineral"" ;
+    :has_related_synonym ""Minerale"",
+        ""minerales"",
+        ""minerals"",
+        ""mineraux"" .
+
+","A mineral is a type of chemical substance generally defined as a chemical substance that is normally crystalline formed and has been formed as a result of geological processes. This term encompasses metamict substances (naturally occurring, formerly crystalline substances whose crystallinity has been destroyed by ionizing radiation) and may also include naturally occurring amorphous substances that have never been crystalline ('mineraloids') such as georgite and calciouranoite, as well as substances formed by the action of geological processes on biogenic compounds ('biogenic minerals'). Moreover, ""mineral"" has an exact synonym which is ""mineral"" itself and is relatedly synonymized with ""Minerale"", ""minerales"", ""minerals"", and ""mineraux"".",7,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46663,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:silicate_mineral rdfs:subClassOf :mineral .
+
+",silicate mineral is a type of mineral.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46664,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chrysotile rdfs:subClassOf :serpentine_asbestos .
+
+",chrysotile is a type of serpentine asbestos.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46665,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:riebeckite rdfs:subClassOf :silicate_mineral .
+
+",riebeckite is a type of silicate mineral.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46666,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crocidolite_asbestos rdfs:subClassOf :amphibole_asbestos,
+        :riebeckite .
+
+",Crocidolite asbestos is a type of riebeckite and also a type of amphibole asbestos.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46670,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:serpentine_mineral rdfs:subClassOf :silicate_mineral .
+
+",serpentine mineral is a type of silicate mineral.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46676,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tremolite_asbestos rdfs:subClassOf :amphibole_asbestos .
+
+",tremolite asbestos is a type of amphibole asbestos.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46677,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amphibole_asbestos rdfs:subClassOf :asbestos .
+
+",amphibole asbestos is a type of asbestos.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46678,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amosite_asbestos rdfs:subClassOf :amphibole_asbestos,
+        :gruenerite .
+
+",Amosite asbestos is a type of amphibole asbestos and is also a type of gruenerite.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46679,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gruenerite rdfs:subClassOf :silicate_mineral .
+
+",gruenerite is a type of silicate mineral.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46680,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:serpentine_asbestos rdfs:subClassOf :asbestos,
+        :serpentine_mineral .
+
+",Serpentine asbestos is a type of asbestos and also a type of serpentine mineral.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46681,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anthophyllite rdfs:subClassOf :silicate_mineral .
+
+",anthophyllite is a type of silicate mineral.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46682,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anthophyllite_asbestos rdfs:subClassOf :amphibole_asbestos,
+        :anthophyllite .
+
+",Anthophyllite asbestos is both a type of anthophyllite and a type of amphibole asbestos.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46683,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:actinolite rdfs:subClassOf :silicate_mineral .
+
+",actinolite is a type of silicate mineral.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46684,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:actinolite_asbestos rdfs:subClassOf :actinolite,
+        :amphibole_asbestos .
+
+",Actinolite asbestos is a type of amphibole asbestos and also a type of actinolite.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46717,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sulfide_mineral rdfs:subClassOf :mineral,
+        :sulfide .
+
+",Sulfide mineral is a type of sulfide and also a type of mineral.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46718,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sulfide_salt rdfs:subClassOf :salt .
+
+",sulfide salt is a type of salt.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46721,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbonate_salt rdfs:subClassOf :carbonates .
+
+",carbonate salt is a type of carbonates.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46787,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solvent rdfs:subClassOf :application,
+        :chemical_role ;
+    :has_definition ""A liquid that can dissolve other substances (solutes) without any change in their chemical composition."" ;
+    :has_related_synonym ""Loesungsmittel"",
+        ""solvant"",
+        ""solvents"" .
+
+","Solvent is categorized as an application and also plays a chemical role. It is defined as a liquid that can dissolve other substances (solutes) without any change in their chemical composition. Additionally, solvent is related to synonyms such as Loesungsmittel, solvant, and solvents.",6,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46890,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:silicon_hydroxide rdfs:subClassOf :silicon_molecular_entity .
+
+",silicon hydroxide is a type of silicon molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_46923,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dioxane rdfs:subClassOf :dioxanes,
+        :saturated_organic_heteromonocyclic_parent .
+
+",Dioxane is a type of saturated organic heteromonocyclic parent and is also classified under dioxanes.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_46926,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dioxanes rdfs:subClassOf :organic_heteromonocyclic_compound,
+        :oxacycle .
+
+",Dioxanes is a type of organic heteromonocyclic compound and also a type of oxacycle.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_47032,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:1_4_dioxane rdfs:subClassOf :dioxane,
+        :volatile_organic_compound .
+
+","1,4-Dioxane is a type of dioxane and a volatile organic compound.",2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_47622,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acetate_ester rdfs:subClassOf :carboxylic_ester .
+
+",acetate ester is a type of carboxylic ester.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_47788,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:3_oxo_steroid rdfs:subClassOf :cyclic_ketone,
+        :oxo_steroid .
+
+",3-Oxo steroid is both a type of oxo steroid and a type of cyclic ketone.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_47867,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:indicator rdfs:subClassOf :application .
+
+",indicator is a type of application.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_47882,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclic_polypyrrole rdfs:subClassOf :polypyrrole .
+
+",cyclic polypyrrole is a type of polypyrrole.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_47885,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dinucleotide rdfs:subClassOf :nucleotide .
+
+",dinucleotide is a type of nucleotide.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_47901,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkanesulfonic_acid rdfs:subClassOf :organosulfonic_acid .
+
+",alkanesulfonic acid is a type of organosulfonic acid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_47909,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:3_oxo_delta_4_steroid rdfs:subClassOf :3_oxo_steroid,
+        :enone .
+
+",A 3-oxo-delta-4 steroid is a type of 3-oxo steroid and also a type of enone.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_48041,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microcystin rdfs:subClassOf :heterodetic_cyclic_peptide .
+
+",microcystin is a type of heterodetic cyclic peptide.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_48107,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitric_acid rdfs:subClassOf :nitrogen_oxoacid .
+
+",nitric acid is a type of nitrogen oxoacid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_48109,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrobenzenes rdfs:subClassOf :benzenes,
+        :c_nitro_compound .
+
+",Nitrobenzenes is a type of benzenes and also a type of c nitro compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_48123,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:silicate_ion rdfs:subClassOf :silicon_oxoanion .
+
+",silicate ion is a type of silicon oxoanion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_48154,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sulfur_oxide rdfs:subClassOf :inorganic_oxide,
+        :sulfur_molecular_entity ;
+    :has_related_synonym ""Schwefeloxide"",
+        ""oxides of sulfur"",
+        ""sulfur oxides"" .
+
+","Sulfur oxide is a type of inorganic oxide and also a type of sulfur molecular entity. It has related synonyms such as Schwefeloxide, oxides of sulfur, and sulfur oxides.",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_48218,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antiseptic_drug rdfs:subClassOf :antiinfective_agent .
+
+",antiseptic drug is a type of antiinfective agent.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_48219,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:disinfectant rdfs:subClassOf :antimicrobial_agent .
+
+",disinfectant is a type of antimicrobial agent.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_48354,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polar_solvent rdfs:subClassOf :solvent .
+
+",polar solvent is a type of solvent.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_48356,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protic_solvent rdfs:subClassOf :bronsted_acid,
+        :polar_solvent .
+
+",A protic solvent is both a type of Bronsted acid and a type of polar solvent.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_48359,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protophilic_solvent rdfs:subClassOf :bronsted_base,
+        :polar_solvent .
+
+",A protophilic solvent is both a type of Bronsted base and a type of polar solvent.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_48360,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amphiprotic_solvent rdfs:subClassOf :protic_solvent,
+        :protophilic_solvent .
+
+",An amphiprotic solvent is both a type of protic solvent and a type of protophilic solvent.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_48706,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antagonist rdfs:subClassOf :pharmacological_role .
+
+",antagonist is a type of pharmacological role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_48730,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminosilicate_mineral rdfs:subClassOf :silicate_mineral .
+
+",aluminosilicate mineral is a type of silicate mineral.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_49202,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_platinum rdfs:subClassOf :platinum_molecular_entity .
+
+",elemental platinum is a type of platinum molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_49470,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminium_3_ rdfs:subClassOf :aluminium_cation,
+        :monoatomic_aluminium,
+        :monoatomic_trication .
+
+","Aluminium 3 is a type of monoatomic trication, monoatomic aluminium, and an aluminium cation.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49475,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argon_atom rdfs:subClassOf :noble_gas_atom,
+        :p_block_element_atom .
+
+",An argon atom is both a type of noble gas atom and a type of p block element atom.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49637,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrogen_atom rdfs:subClassOf :inorganic_molecular_entity,
+        :nonmetal_atom,
+        :s_block_element_atom .
+
+","The hydrogen atom is a type of inorganic molecular entity, a type of nonmetal atom, and a type of s block element atom.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49828,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:praseodymium_atom rdfs:subClassOf :f_block_element_atom,
+        :lanthanoid_atom .
+
+",A praseodymium atom is both a type of lanthanoid atom and a type of f block element atom.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49936,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:uranium_0_ rdfs:subClassOf :monoatomic_uranium .
+
+",uranium 0  is a type of monoatomic uranium.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_49976,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zinc_dichloride rdfs:subClassOf :inorganic_chloride,
+        :zinc_molecular_entity .
+
+",Zinc dichloride is a type of zinc molecular entity and also a type of inorganic chloride.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49986,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_krypton rdfs:subClassOf :krypton_molecular_entity .
+
+",elemental krypton is a type of krypton molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_49987,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monoatomic_krypton rdfs:subClassOf :elemental_krypton,
+        :monoatomic_entity .
+
+",Monoatomic krypton is both a type of monoatomic entity and a type of elemental krypton.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49990,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monoatomic_argon rdfs:subClassOf :elemental_argon,
+        :monoatomic_entity .
+
+",Monoatomic argon is both a type of monoatomic entity and a type of elemental argon.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49991,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_argon rdfs:subClassOf :argon_molecular_entity .
+
+",elemental argon is a type of argon molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_49992,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:argon_1_ rdfs:subClassOf :inorganic_radical_cation,
+        :monoatomic_argon .
+
+",Argon 1 is a type of inorganic radical cation and a type of monoatomic argon.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49994,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monoatomic_neon rdfs:subClassOf :elemental_neon,
+        :monoatomic_entity .
+
+",Monoatomic neon is both a type of monoatomic entity and a type of elemental neon.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_49995,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_neon rdfs:subClassOf :neon_molecular_entity .
+
+",elemental neon is a type of neon molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50047,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_amino_compound rdfs:subClassOf :organonitrogen_compound .
+
+",organic amino compound is a type of organonitrogen compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50094,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sulfur_coordination_entity rdfs:subClassOf :sulfur_molecular_entity .
+
+",sulfur coordination entity is a type of sulfur molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50183,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:p450_inhibitor rdfs:subClassOf :ec_1_14_14_1_unspecific_monooxygenase_inhibitor .
+
+",p450 inhibitor is a type of ec 1 14 14 1 unspecific monooxygenase inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50312,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:onium_compound rdfs:subClassOf :heteroatomic_molecular_entity .
+
+",onium compound is a type of heteroatomic molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50313,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:onium_cation rdfs:subClassOf :onium_compound ;
+    :has_definition ""Mononuclear cations derived by addition of a hydron to a mononuclear parent hydride of the pnictogen, chalcogen and halogen families."" ;
+    :has_exact_synonym ""onium cations"" ;
+    :has_related_synonym ""onium cations"",
+        ""onium ion"",
+        ""onium ions"" .
+
+","Onium cation is a type of onium compound, defined as mononuclear cations derived by the addition of a hydron to a mononuclear parent hydride of the pnictogen, chalcogen, and halogen families. It is exactly and relatedly synonymous with onium cations, and also relatedly synonymous with onium ion and onium ions.",6,True
+envo,http://purl.obolibrary.org/obo/CHEBI_50325,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proteinogenic_amino_acid_side_chain_group rdfs:subClassOf :organyl_group .
+
+",proteinogenic amino acid side chain group is a type of organyl group.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50335,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_nitrogen_anion rdfs:subClassOf :organic_anion,
+        :organonitrogen_compound .
+
+",The organic nitrogen anion is a type of organic anion as well as a type of organonitrogen compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_50402,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:androstanoid rdfs:subClassOf :steroid .
+
+",androstanoid is a type of steroid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50406,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:probe rdfs:subClassOf :application .
+
+",probe is a type of application.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50558,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monoatomic_uranium rdfs:subClassOf :elemental_uranium .
+
+",monoatomic uranium is a type of elemental uranium.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50559,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_uranium rdfs:subClassOf :uranium_molecular_entity .
+
+",elemental uranium is a type of uranium molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50584,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkyl_alcohol rdfs:subClassOf :aliphatic_alcohol .
+
+",alkyl alcohol is a type of aliphatic alcohol.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50594,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_nanotube rdfs:subClassOf :carbon_nanostructure,
+        :nanotube .
+
+",A carbon nanotube is a type of nanotube and also a type of carbon nanostructure.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_50795,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nanostructure rdfs:subClassOf :polyatomic_entity .
+
+",nanostructure is a type of polyatomic entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50796,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nanotube rdfs:subClassOf :nanostructure .
+
+",nanotube is a type of nanostructure.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50812,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_nanostructure rdfs:subClassOf :elemental_carbon,
+        :nanostructure .
+
+",Carbon nanostructure is a type of elemental carbon and a type of nanostructure.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_50816,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:iron_oxide rdfs:subClassOf :iron_molecular_entity .
+
+",iron oxide is a type of iron molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50860,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_molecular_entity rdfs:subClassOf :carbon_group_molecular_entity ;
+    :has_definition ""Any molecular entity that contains carbon."" ;
+    :has_related_synonym ""organic compounds"",
+        ""organic entity"",
+        ""organic molecular entities"" .
+
+","An organic molecular entity is a type of carbon group molecular entity and is defined as any molecular entity that contains carbon. Additionally, it is related to synonyms such as organic compounds, organic entity, and organic molecular entities.",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_50902,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:genotoxin rdfs:subClassOf :aetiopathogenetic_role .
+
+",genotoxin is a type of aetiopathogenetic role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50904,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allergen rdfs:subClassOf :aetiopathogenetic_role .
+
+",allergen is a type of aetiopathogenetic role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_50906,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:role rdfs:subClassOf :role ;
+    :has_definition ""A role is particular behaviour which a material entity may exhibit."" .
+
+",A role is a type of role and it has the definition that a role is particular behavior which a material entity may exhibit.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_50910,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neurotoxin rdfs:subClassOf :aetiopathogenetic_role,
+        :poison .
+
+",Neurotoxin serves a dual purpose: it is a type of aetiopathogenetic role and also a type of poison.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_50996,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tertiary_amino_compound rdfs:subClassOf :organic_amino_compound .
+
+",tertiary amino compound is a type of organic amino compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_51082,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrate_salt rdfs:subClassOf :salt .
+
+",nitrate salt is a type of salt.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_51084,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_nitrate_salt rdfs:subClassOf :inorganic_salt,
+        :nitrate_salt .
+
+",Inorganic nitrate salt is a type of inorganic salt and also a type of nitrate salt.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_51086,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_role rdfs:subClassOf :role ;
+    :has_definition ""A role played by the molecular entity or part thereof within a chemical context."" .
+
+","Chemical role is a type of role, which is defined as a role played by the molecular entity or part thereof within a chemical context.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_51129,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrohydrocarbon rdfs:subClassOf :c_nitro_compound .
+
+",nitrohydrocarbon is a type of c nitro compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_51132,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitroarene rdfs:subClassOf :nitrohydrocarbon .
+
+",nitroarene is a type of nitrohydrocarbon.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_51143,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrogen_molecular_entity rdfs:subClassOf :pnictogen_molecular_entity ;
+    :has_related_synonym ""Nitrogenous compounds"",
+        ""nitrogen compounds"",
+        ""nitrogen molecular entities"" .
+
+","A nitrogen molecular entity is a type of pnictogen molecular entity and has related synonyms including Nitrogenous compounds, nitrogen compounds, and nitrogen molecular entities.",4,True
+envo,http://purl.obolibrary.org/obo/CHEBI_51447,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_univalent_group rdfs:subClassOf :organic_group .
+
+",organic univalent group is a type of organic group.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_51580,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phthalocyanines rdfs:subClassOf :cyclic_tetrapyrrole .
+
+",phthalocyanines is a type of cyclic tetrapyrrole.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_51584,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metallophthalocyanines rdfs:subClassOf :metallotetrapyrrole,
+        :phthalocyanines .
+
+",Metallophthalocyanines are a type of both metallotetrapyrrole and phthalocyanines.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_51585,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metallophthalocyanine rdfs:subClassOf :metallophthalocyanines .
+
+",metallophthalocyanine is a type of metallophthalocyanines.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_51688,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enal rdfs:subClassOf :alpha_beta_unsaturated_aldehyde,
+        :olefinic_compound .
+
+",Enal is a type of olefinic compound and an alpha beta unsaturated aldehyde.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_51689,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enone rdfs:subClassOf :alpha_beta_unsaturated_ketone,
+        :olefinic_compound .
+
+",Enone is a type of alpha beta unsaturated ketone and is also an olefinic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_51718,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alpha_beta_unsaturated_aldehyde rdfs:subClassOf :aldehyde .
+
+",alpha beta unsaturated aldehyde is a type of aldehyde.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_51721,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alpha_beta_unsaturated_ketone rdfs:subClassOf :ketone .
+
+",alpha beta unsaturated ketone is a type of ketone.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_5186,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fucoxanthin rdfs:subClassOf :acetate_ester,
+        :allenes,
+        :epoxycarotenol,
+        :secondary_alcohol,
+        :tertiary_alcohol .
+
+","Fucoxanthin is a type of tertiary alcohol, secondary alcohol, and an acetate ester. Additionally, it is a type of epoxycarotenol and falls under the category of allenes.",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_51958,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_polycyclic_compound rdfs:subClassOf :organic_cyclic_compound,
+        :polycyclic_compound .
+
+",An organic polycyclic compound is a type of polycyclic compound as well as a type of organic cyclic compound.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_51959,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_tricyclic_compound rdfs:subClassOf :organic_polycyclic_compound .
+
+",organic tricyclic compound is a type of organic polycyclic compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_52206,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biochemical_role rdfs:subClassOf :biological_role .
+
+",biochemical role is a type of biological role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_52208,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biophysical_role rdfs:subClassOf :biological_role .
+
+",biophysical role is a type of biological role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_52209,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aetiopathogenetic_role rdfs:subClassOf :biological_role .
+
+",aetiopathogenetic role is a type of biological role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_52210,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pharmacological_role rdfs:subClassOf :biological_role .
+
+",pharmacological role is a type of biological role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_52211,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physiological_role rdfs:subClassOf :biological_role .
+
+",physiological role is a type of biological role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_52214,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ligand rdfs:subClassOf :chemical_role .
+
+",ligand is a type of chemical role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_52217,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pharmaceutical rdfs:subClassOf :application .
+
+",pharmaceutical is a type of application.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_52625,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_hydroxy_compound rdfs:subClassOf :hydroxides,
+        :inorganic_molecular_entity .
+
+",Inorganic hydroxy compound is a type of hydroxides and is also a type of inorganic molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_53000,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epitope rdfs:subClassOf :biological_role .
+
+",epitope is a type of biological role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53225,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poly_alkylene_macromolecule rdfs:subClassOf :homopolymer_macromolecule .
+
+",poly alkylene macromolecule is a type of homopolymer macromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53226,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyethylene_macromolecule rdfs:subClassOf :poly_alkylene_macromolecule .
+
+",polyethylene macromolecule is a type of poly alkylene macromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53242,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vinyl_polymer_macromolecule rdfs:subClassOf :polyethylene_macromolecule .
+
+",vinyl polymer macromolecule is a type of polyethylene macromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53243,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poly_vinyl_chloride_ rdfs:subClassOf :vinyl_polymer_macromolecule .
+
+",poly vinyl chloride  is a type of vinyl polymer macromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53310,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:copolymer_macromolecule rdfs:subClassOf :macromolecule .
+
+",copolymer macromolecule is a type of macromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53387,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poly_hydroxyalkanoate_ rdfs:subClassOf :polyester_macromolecule .
+
+",poly hydroxyalkanoate  is a type of polyester macromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53388,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poly_hydroxybutyrate_ rdfs:subClassOf :poly_hydroxyalkanoate_ .
+
+",poly hydroxybutyrate  is a type of poly hydroxyalkanoate.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53448,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:methyl_cellulose rdfs:subClassOf :beta_d_glucan .
+
+",methyl cellulose is a type of beta d glucan.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_53550,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poly_propylene_ rdfs:subClassOf :polyethylene_macromolecule .
+
+",poly propylene  is a type of polyethylene macromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_5686,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heterocyclic_compound rdfs:subClassOf :cyclic_compound ;
+    :has_definition ""A cyclic compound having as ring members atoms of at least two different elements."" ;
+    :has_exact_synonym ""Heterocyclic compound"" ;
+    :has_related_synonym ""compuesto heterociclico"",
+        ""compuestos heterociclicos"",
+        ""heterocycle"",
+        ""heterocyclic compounds"" .
+
+","A heterocyclic compound is a type of cyclic compound defined as a cyclic compound having ring members that include atoms of at least two different elements. It is exactly synonymous with ""Heterocyclic compound"" and has related synonyms including ""compuesto heterociclico,"" ""compuestos heterociclicos,"" ""heterocycle,"" and ""heterocyclic compounds.""",7,True
+envo,http://purl.obolibrary.org/obo/CHEBI_58072,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_monoxide_1_ rdfs:subClassOf :organic_cation .
+
+",carbon monoxide 1  is a type of organic cation.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_58416,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chlorophyll_a_1_ rdfs:subClassOf :chlorophyll_1_ .
+
+",chlorophyll a 1  is a type of chlorophyll 1.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_58454,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kynurenate rdfs:subClassOf :quinolinemonocarboxylate .
+
+",kynurenate is a type of quinolinemonocarboxylate.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_58941,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclic_tetrapyrrole_anion rdfs:subClassOf :organic_anion .
+
+",cyclic tetrapyrrole anion is a type of organic anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_58950,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:very_long_chain_fatty_acid_anion rdfs:subClassOf :fatty_acid_anion .
+
+",very long chain fatty acid anion is a type of fatty acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_58953,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saturated_fatty_acid_anion rdfs:subClassOf :fatty_acid_anion .
+
+",saturated fatty acid anion is a type of fatty acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_58954,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:straight_chain_saturated_fatty_acid_anion rdfs:subClassOf :saturated_fatty_acid_anion .
+
+",straight chain saturated fatty acid anion is a type of saturated fatty acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_59163,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biomarker rdfs:subClassOf :indicator .
+
+",biomarker is a type of indicator.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_59202,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:straight_chain_fatty_acid rdfs:subClassOf :fatty_acid .
+
+",straight chain fatty acid is a type of fatty acid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_59739,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electrophilic_reagent rdfs:subClassOf :lewis_acid,
+        :reagent .
+
+",An electrophilic reagent is a type of reagent and also a type of Lewis acid.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_59740,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nucleophilic_reagent rdfs:subClassOf :lewis_base,
+        :reagent .
+
+",A nucleophilic reagent is a type of reagent and also a type of Lewis base.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_59999,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_substance rdfs:subClassOf :chemical_entity ;
+    :has_definition ""A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types."" ;
+    :has_related_synonym ""Chemische Substanz"" .
+
+","A chemical substance is a type of chemical entity and is defined as a portion of matter of constant composition, composed of molecular entities of the same type or of different types. Additionally, ""Chemische Substanz"" is a related synonym for a chemical substance.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_60004,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixture rdfs:subClassOf :chemical_substance ;
+    :has_definition ""A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind."" ;
+    :has_related_synonym ""Mischung"" .
+
+","A mixture is a type of chemical substance defined as a chemical substance composed of multiple molecules, at least two of which are of a different kind. It is also related to the synonym ""Mischung"".",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_60027,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polymer rdfs:subClassOf :mixture ;
+    :has_definition ""A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc.."" ;
+    :has_exact_synonym ""Polymer"" ;
+    :has_related_synonym ""Kunststoff"" .
+
+","A polymer, which can also be exactly referred to as Polymer and is relatedly known as Kunststoff, is a type of mixture. It is defined as a mixture composed of macromolecules of different kinds that may be differentiated by composition, length, degree of branching, among other characteristics.",4,True
+envo,http://purl.obolibrary.org/obo/CHEBI_60029,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:homopolymer rdfs:subClassOf :polymer .
+
+",homopolymer is a type of polymer.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_60031,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poly_alkylene_polymer rdfs:subClassOf :homopolymer .
+
+",poly alkylene polymer is a type of homopolymer.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_60034,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyethylene_polymer rdfs:subClassOf :poly_alkylene_polymer .
+
+",polyethylene polymer is a type of poly alkylene polymer.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_60160,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyester_polymer rdfs:subClassOf :polymer .
+
+",polyester polymer is a type of polymer.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_60242,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monovalent_inorganic_cation rdfs:subClassOf :inorganic_cation ;
+    :has_definition ""An atom or small molecule with a positive charge that does not contain carbon in covalent linkage, with a valency of one."" ;
+    :has_related_synonym ""a monovalent cation"" .
+
+","A monovalent inorganic cation is a type of inorganic cation defined as an atom or small molecule with a positive charge that does not contain carbon in covalent linkage and has a valency of one. It is also related to the synonym ""a monovalent cation.""",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_60272,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminium_ion rdfs:subClassOf :elemental_aluminium,
+        :inorganic_ion .
+
+",Aluminium ion is a type of elemental aluminium and also a type of inorganic ion.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_60643,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nmda_receptor_antagonist rdfs:subClassOf :excitatory_amino_acid_antagonist .
+
+",nmda receptor antagonist is a type of excitatory amino acid antagonist.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_60737,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyurethane_polymer rdfs:subClassOf :homopolymer .
+
+",polyurethane polymer is a type of homopolymer.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_60798,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:excitatory_amino_acid_antagonist rdfs:subClassOf :antagonist .
+
+",excitatory amino acid antagonist is a type of antagonist.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_60926,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amino_monosaccharide rdfs:subClassOf :amino_sugar .
+
+",amino monosaccharide is a type of amino sugar.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_61120,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nucleobase_containing_molecular_entity rdfs:subClassOf :heteroarene,
+        :nitrogen_molecular_entity .
+
+",A nucleobase containing molecular entity is a type of heteroarene and also a type of nitrogen molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_61250,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brevetoxin_a rdfs:subClassOf :ciguatoxin .
+
+",brevetoxin a is a type of ciguatoxin.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_61275,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ciguatoxin rdfs:subClassOf :polycyclic_ether .
+
+",ciguatoxin is a type of polycyclic ether.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_61292,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:guanyl_nucleotide rdfs:subClassOf :purine_nucleotide .
+
+",guanyl nucleotide is a type of purine nucleotide.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_61293,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adenyl_nucleotide rdfs:subClassOf :purine_nucleotide .
+
+",adenyl nucleotide is a type of purine nucleotide.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_61295,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:guanyl_ribonucleotide rdfs:subClassOf :guanyl_nucleotide,
+        :purine_ribonucleotide .
+
+",Guanyl ribonucleotide is a type of purine ribonucleotide and also a type of guanyl nucleotide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_61296,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adenyl_ribonucleotide rdfs:subClassOf :adenyl_nucleotide,
+        :purine_ribonucleotide .
+
+",Adenyl ribonucleotide is a type of purine ribonucleotide and also a type of adenyl nucleotide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_61452,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poly_ethylene_terephthalate_polymer rdfs:subClassOf :polyester_polymer .
+
+",poly ethylene terephthalate polymer is a type of polyester polymer.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_61614,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vinyl_polymer rdfs:subClassOf :polyethylene_polymer .
+
+",vinyl polymer is a type of polyethylene polymer.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_61642,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polystyrene_polymer rdfs:subClassOf :vinyl_polymer .
+
+",polystyrene polymer is a type of vinyl polymer.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_62488,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:signalling_molecule rdfs:subClassOf :molecular_messenger .
+
+",signalling molecule is a type of molecular messenger.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_62764,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reactive_nitrogen_species rdfs:subClassOf :nitrogen_molecular_entity .
+
+",reactive nitrogen species is a type of nitrogen molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_62967,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amorphous_cellulose rdfs:subClassOf :_1_4_beta_d_glucan,
+        :exopolysaccharide .
+
+",Amorphous cellulose is a type of 1 4 beta d glucan and also a type of exopolysaccharide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_62968,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crystalline_cellulose rdfs:subClassOf :_1_4_beta_d_glucan,
+        :exopolysaccharide .
+
+",Crystalline cellulose is a type of 1 4 beta d glucan and it is also a type of exopolysaccharide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_63046,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:emulsifier rdfs:subClassOf :chemical_role .
+
+",emulsifier is a type of chemical role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_63062,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aluminium_cation rdfs:subClassOf :aluminium_ion,
+        :metal_cation .
+
+",Aluminium cation is a type of metal cation and is also a type of aluminium ion.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_63248,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oxidising_agent rdfs:subClassOf :chemical_role ;
+    :has_definition ""A substance that removes electrons from another reactant in a redox reaction."" ;
+    :has_related_synonym ""oxidant"",
+        ""oxidants"",
+        ""oxidiser"",
+        ""oxidisers"",
+        ""oxidising agents"",
+        ""oxidizer"",
+        ""oxidizers"",
+        ""oxidizing agent"",
+        ""oxidizing agents"" .
+
+","An oxidising agent is a type of chemical role defined as a substance that removes electrons from another reactant in a redox reaction. It is related to several synonyms including oxidant, oxidants, oxidiser, oxidisers, oxidising agents, oxidizer, oxidizers, oxidizing agent, and oxidizing agents.",11,True
+envo,http://purl.obolibrary.org/obo/CHEBI_63299,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbohydrate_derivative rdfs:subClassOf :carbohydrates_and_carbohydrate_derivatives .
+
+",carbohydrate derivative is a type of carbohydrates and carbohydrate derivatives.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_63367,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monosaccharide_derivative rdfs:subClassOf :carbohydrate_derivative .
+
+",monosaccharide derivative is a type of carbohydrate derivative.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_63409,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pentose_derivative rdfs:subClassOf :monosaccharide_derivative .
+
+",pentose derivative is a type of monosaccharide derivative.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_63471,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:branched_chain_amino_acid_anion rdfs:subClassOf :amino_acid_anion .
+
+",branched chain amino acid anion is a type of amino acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_63732,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:1_1_diol rdfs:subClassOf :alcohol .
+
+",1 1 diol is a type of alcohol.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_63734,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ketone_hydrate rdfs:subClassOf :1_1_diol .
+
+",ketone hydrate is a type of 1 1 diol.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_64047,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:food_additive rdfs:subClassOf :application,
+        :food_component .
+
+",A food additive serves as both an application and a type of food component.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_64708,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:one_carbon_compound rdfs:subClassOf :organic_molecular_entity .
+
+",one carbon compound is a type of organic molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_64709,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_acid rdfs:subClassOf :organic_molecular_entity .
+
+",organic acid is a type of organic molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_64712,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trivalent_inorganic_cation rdfs:subClassOf :inorganic_cation .
+
+",trivalent inorganic cation is a type of inorganic cation.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_64909,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poison rdfs:subClassOf :biological_role ;
+    :has_definition ""Any substance that causes disturbance to organisms by chemical reaction or other activity on the molecular scale, when a sufficient quantity is absorbed by the organism."" ;
+    :has_related_synonym ""poisonous agent"",
+        ""poisonous agents"",
+        ""poisonous substance"",
+        ""poisonous substances"",
+        ""poisons"",
+        ""toxic agent"",
+        ""toxic agents"",
+        ""toxic substance"",
+        ""toxic substances"" .
+
+","Poison is identified as a type of biological role and is defined as any substance that causes disturbance to organisms through a chemical reaction or other activity on the molecular scale, provided a sufficient quantity is absorbed by the organism. Furthermore, poison is associated with several synonyms including poisonous agent, poisonous agents, poisonous substance, poisonous substances, poisons, toxic agent, toxic agents, toxic substance, and toxic substances.",11,True
+envo,http://purl.obolibrary.org/obo/CHEBI_65212,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polysaccharide_derivative rdfs:subClassOf :biomacromolecule,
+        :carbohydrate_derivative,
+        :glycan .
+
+","A polysaccharide derivative is a type of glycan, a type of biomacromolecule, and also a type of carbohydrate derivative.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_66933,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:n_alkylglycine rdfs:subClassOf :glycine_derivative,
+        :non_proteinogenic_alpha_amino_acid .
+
+",N alkylglycine is a type of glycine derivative and a non-proteinogenic alpha amino acid.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_72695,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_molecule rdfs:subClassOf :molecule,
+        :organic_molecular_entity .
+
+",An organic molecule is both a type of molecule and a type of organic molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_72813,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exopolysaccharide rdfs:subClassOf :biomacromolecule .
+
+",exopolysaccharide is a type of biomacromolecule.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_73113,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:divinyl_chlorophyll_a rdfs:subClassOf :chlorophyll,
+        :methyl_ester .
+
+",Divinyl chlorophyll a is a type of chlorophyll and also a methyl ester.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_73115,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:divinyl_chlorophyll_b rdfs:subClassOf :chlorophyll,
+        :methyl_ester .
+
+",Divinyl chlorophyll b is a type of chlorophyll and also a type of methyl ester.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_75763,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eukaryotic_metabolite rdfs:subClassOf :metabolite .
+
+",eukaryotic metabolite is a type of metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_75767,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:animal_metabolite rdfs:subClassOf :eukaryotic_metabolite .
+
+",animal metabolite is a type of eukaryotic metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_75768,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mammalian_metabolite rdfs:subClassOf :animal_metabolite .
+
+",mammalian metabolite is a type of animal metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_75787,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prokaryotic_metabolite rdfs:subClassOf :metabolite .
+
+",prokaryotic metabolite is a type of metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_75896,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:iron_sulfides rdfs:subClassOf :iron_molecular_entity,
+        :sulfide_salt .
+
+",Iron sulfides are a type of iron molecular entity and also a type of sulfide salt.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_75897,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:iron_2_sulfides rdfs:subClassOf :iron_sulfides .
+
+",iron 2 sulfides is a type of iron sulfides.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76413,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:greenhouse_gas rdfs:subClassOf :chemical_role .
+
+",greenhouse gas is a type of chemical role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76414,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:propellant rdfs:subClassOf :application .
+
+",propellant is a type of application.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76725,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ec_1_oxidoreductase_inhibitor rdfs:subClassOf :enzyme_inhibitor .
+
+",ec 1 oxidoreductase inhibitor is a type of enzyme inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76741,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ec_1_14_oxidoreductase_acting_on_paired_donors_with_incorporation_or_reduction_of_molecular_oxygen_inhibitor rdfs:subClassOf :ec_1_oxidoreductase_inhibitor .
+
+",ec 1 14 oxidoreductase acting on paired donors with incorporation or reduction of molecular oxygen inhibitor is a type of ec 1 oxidoreductase inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76759,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ec_3_hydrolase_inhibitor rdfs:subClassOf :enzyme_inhibitor .
+
+",ec 3 hydrolase inhibitor is a type of enzyme inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76764,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ec_3_5_hydrolases_acting_on_non_peptide_c_n_bonds_inhibitor rdfs:subClassOf :ec_3_hydrolase_inhibitor .
+
+",ec 3 5 hydrolases acting on non peptide c n bonds inhibitor is a type of ec 3 hydrolase inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76807,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ec_3_5_1_non_peptide_linear_amide_c_n_hydrolase_inhibitor rdfs:subClassOf :ec_3_5_hydrolases_acting_on_non_peptide_c_n_bonds_inhibitor .
+
+",ec 3 5 1 non peptide linear amide c n hydrolase inhibitor is a type of ec 3 5 hydrolases acting on non peptide c n bonds inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76838,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ec_1_14_14_oxidoreductase_acting_on_paired_donors_incorporating_of_1_atom_of_oxygen_with_reduced_flavin_or_flavoprotein_as_one_donor_inhibitor rdfs:subClassOf :ec_1_14_oxidoreductase_acting_on_paired_donors_with_incorporation_or_reduction_of_molecular_oxygen_inhibitor .
+
+",ec 1 14 14 oxidoreductase acting on paired donors incorporating of 1 atom of oxygen with reduced flavin or flavoprotein as one donor inhibitor is a type of ec 1 14 oxidoreductase acting on paired donors with incorporation or reduction of molecular oxygen inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76898,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ec_1_14_14_1_unspecific_monooxygenase_inhibitor rdfs:subClassOf :ec_1_14_14_oxidoreductase_acting_on_paired_donors_incorporating_of_1_atom_of_oxygen_with_reduced_flavin_or_flavoprotein_as_one_donor_inhibitor .
+
+",ec 1 14 14 1 unspecific monooxygenase inhibitor is a type of ec 1 14 14 oxidoreductase acting on paired donors incorporating of 1 atom of oxygen with reduced flavin or flavoprotein as one donor inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76932,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pathway_inhibitor rdfs:subClassOf :enzyme_inhibitor .
+
+",pathway inhibitor is a type of enzyme inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76946,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fungal_metabolite rdfs:subClassOf :eukaryotic_metabolite .
+
+",fungal metabolite is a type of eukaryotic metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_76969,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bacterial_metabolite rdfs:subClassOf :prokaryotic_metabolite .
+
+",bacterial metabolite is a type of prokaryotic metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_77746,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:human_metabolite rdfs:subClassOf :mammalian_metabolite .
+
+",human metabolite is a type of mammalian metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_77941,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ec_3_5_1_4_amidase_inhibitor rdfs:subClassOf :ec_3_5_1_non_peptide_linear_amide_c_n_hydrolase_inhibitor .
+
+",ec 3 5 1 4 amidase inhibitor is a type of ec 3 5 1 non peptide linear amide c n hydrolase inhibitor.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_77971,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raising_agent rdfs:subClassOf :food_additive .
+
+",raising agent is a type of food additive.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_77974,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:food_packaging_gas rdfs:subClassOf :food_additive .
+
+",food packaging gas is a type of food additive.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_78017,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:food_propellant rdfs:subClassOf :food_additive,
+        :propellant .
+
+",Food propellant is both a type of food additive and a type of propellant.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_78130,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fatty_acid_anion_28_0 rdfs:subClassOf :saturated_fatty_acid_anion .
+
+",fatty acid anion 28 0 is a type of saturated fatty acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_78295,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:food_component rdfs:subClassOf :physiological_role ;
+    :has_definition ""A physiological role played by any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants."" ;
+    :has_related_synonym ""dietary component"",
+        ""dietary components"",
+        ""food components"" .
+
+","A food component is a type of physiological role, defined as a physiological role played by any substance that is distributed in foodstuffs. This includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants. Additionally, ""food component"" is synonymously related to ""dietary component,"" ""dietary components,"" and ""food components.""",5,True
+envo,http://purl.obolibrary.org/obo/CHEBI_78298,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_contaminant rdfs:subClassOf :chemical_role .
+
+",environmental contaminant is a type of chemical role.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_78433,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:refrigerant rdfs:subClassOf :application ;
+    :has_definition ""A substance used in a thermodynamic heat pump cycle or refrigeration cycle that undergoes a phase change from a gas to a liquid and back. Refrigerants are used in air-conditioning systems and freezers or refrigerators and are assigned a \""R\"" number (by ASHRAE - formerly the American Society of Heating, Refrigerating and Air Conditioning Engineers), which is determined systematically according to their molecular structure."" ;
+    :has_related_synonym ""refrigerants"" .
+
+","Refrigerant is identified as a type of application and is defined as a substance used in a thermodynamic heat pump cycle or refrigeration cycle that undergoes a phase change from a gas to a liquid and back. This substance is utilized in air-conditioning systems and freezers or refrigerators and is assigned a ""R"" number by ASHRAE, formerly known as the American Society of Heating, Refrigerating and Air Conditioning Engineers, which is determined systematically according to their molecular structure. Additionally, ""refrigerants"" is a related synonym for refrigerant.",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_78616,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbohydrates_and_carbohydrate_derivatives rdfs:subClassOf :organooxygen_compound ;
+    :has_definition ""Any organooxygen compound that is a polyhydroxy-aldehyde or -ketone, or a compound derived from one. Carbohydrates contain only carbon, hydrogen and oxygen and usually have an empirical formula Cm(H2O)n; carbohydrate derivatives may contain other elements by substitution or condensation."" ;
+    :has_related_synonym ""carbohydrates and derivatives"",
+        ""carbohydrates and their derivatives"" .
+
+","Carbohydrates and carbohydrate derivatives are a type of organooxygen compound, defined as any organooxygen compound that is a polyhydroxy-aldehyde or -ketone, or a compound derived from one. They contain only carbon, hydrogen, and oxygen and usually have an empirical formula Cm(H2O)n; carbohydrate derivatives may contain other elements by substitution or condensation. Furthermore, carbohydrates and carbohydrate derivatives are also related to synonyms such as carbohydrates and derivatives, as well as carbohydrates and their derivatives.",4,True
+envo,http://purl.obolibrary.org/obo/CHEBI_78840,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:olefinic_compound rdfs:subClassOf :organic_molecular_entity .
+
+",olefinic compound is a type of organic molecular entity.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_79387,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trivalent_inorganic_anion rdfs:subClassOf :inorganic_anion .
+
+",trivalent inorganic anion is a type of inorganic anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_79388,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:divalent_inorganic_anion rdfs:subClassOf :inorganic_anion ;
+    :has_definition ""Any inorganic anion with a valency of two."" ;
+    :has_related_synonym ""divalent inorganic anions"" .
+
+","A divalent inorganic anion is a type of inorganic anion that is defined as any inorganic anion with a valency of two. It is also related to the synonym ""divalent inorganic anions.""",3,True
+envo,http://purl.obolibrary.org/obo/CHEBI_79389,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monovalent_inorganic_anion rdfs:subClassOf :inorganic_anion .
+
+",monovalent inorganic anion is a type of inorganic anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_80043,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nodularin rdfs:subClassOf :ether .
+
+",nodularin is a type of ether.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_8006,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peptidoglycan_n_acetyl_d_glucosamine_ rdfs:subClassOf :polyol .
+
+",peptidoglycan n acetyl d glucosamine  is a type of polyol.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_80770,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brevetoxin_b rdfs:subClassOf :ciguatoxin .
+
+",brevetoxin b is a type of ciguatoxin.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_8108,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pheophytin rdfs:subClassOf :phorbines .
+
+",pheophytin is a type of phorbines.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_82661,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diatomaceous_earth rdfs:subClassOf :mineral,
+        :silicon_dioxide .
+
+",Diatomaceous earth is a type of mineral that consists of silicon dioxide.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_82663,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elemental_iron rdfs:subClassOf :elemental_molecular_entity,
+        :iron_molecular_entity .
+
+",Elemental iron is a type of iron molecular entity and is also a type of elemental molecular entity.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_82664,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:iron_0_ rdfs:subClassOf :elemental_iron .
+
+",iron 0  is a type of elemental iron.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83039,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crustacean_metabolite rdfs:subClassOf :animal_metabolite .
+
+",crustacean metabolite is a type of animal metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83056,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:daphnia_magna_metabolite rdfs:subClassOf :daphnia_metabolite .
+
+",daphnia magna metabolite is a type of daphnia metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83057,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:daphnia_metabolite rdfs:subClassOf :crustacean_metabolite .
+
+",daphnia metabolite is a type of crustacean metabolite.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83348,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chlorophyllide_a_2_ rdfs:subClassOf :chlorophyllide_2_ .
+
+",chlorophyllide a 2  is a type of chlorophyllide 2.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83628,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:n_acylammonia rdfs:subClassOf :carboxamide .
+
+",n acylammonia is a type of carboxamide.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83811,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proteinogenic_amino_acid_derivative rdfs:subClassOf :amino_acid_derivative .
+
+",proteinogenic amino acid derivative is a type of amino acid derivative.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83820,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:non_proteinogenic_amino_acid rdfs:subClassOf :amino_acid .
+
+",non proteinogenic amino acid is a type of amino acid.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83821,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amino_acid_derivative rdfs:subClassOf :organonitrogen_compound .
+
+",amino acid derivative is a type of organonitrogen compound.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_83925,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:non_proteinogenic_alpha_amino_acid rdfs:subClassOf :alpha_amino_acid,
+        :non_proteinogenic_amino_acid .
+
+",Non proteinogenic alpha amino acid is both a type of alpha amino acid and a type of non proteinogenic amino acid.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_84055,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pentose_phosphate rdfs:subClassOf :pentose_derivative,
+        :phospho_sugar .
+
+",Pentose phosphate is a type of phospho sugar and also a type of pentose derivative.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_86471,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyrite rdfs:subClassOf :iron_2_sulfides,
+        :sulfide_mineral .
+
+",Pyrite is a type of sulfide mineral and is also a type of iron 2 sulfides.,2,True
+envo,http://purl.obolibrary.org/obo/CHEBI_88184,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metal_allergen rdfs:subClassOf :metal_atom .
+
+",metal allergen is a type of metal atom.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_91007,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aromatic_carboxylate rdfs:subClassOf :carboxylic_acid_anion .
+
+",aromatic carboxylate is a type of carboxylic acid anion.,1,False
+envo,http://purl.obolibrary.org/obo/CHEBI_9171,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skatole rdfs:subClassOf :methylindole .
+
+",skatole is a type of methylindole.,1,False
+envo,http://purl.obolibrary.org/obo/ENVO_00000000,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:geographic_feature rdfs:subClassOf :astronomical_body_part ;
+    :has_definition ""An astrononmical body part which delimited by physical discontinuities with its surroundings.""@en ;
+    :has_exact_synonym ""macroscopic spatial feature""^^xsd:string .
+
+","A geographic feature is a type of astronomical body part, defined as an astronomical body part that is delimited by physical discontinuities with its surroundings. Additionally, it has an exact synonym: macroscopic spatial feature.",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000001,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bedding_plane_cave rdfs:subClassOf :cave ;
+    :has_definition ""A cavity developed along a bedding-plane and elongate in cross-section as a result.""^^xsd:string .
+
+",A bedding plane cave is a type of cave characterized by a cavity developed along a bedding-plane and elongate in cross-section.,2,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000002,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:anthropogenic_geographic_feature rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :formed_as_result_of ;
+            owl:someValuesFrom :anthropisation ],
+        :geographic_feature ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :geographic_feature ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :formed_as_result_of ;
+                                    owl:someValuesFrom :anthropisation ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""An anthropogenic geographic feature is a geographic feature resulting from the influence of human beings on nature.""^^xsd:string ;
+    :has_related_synonym ""man-made feature""^^xsd:string,
+        ""manmade feature""^^xsd:string .
+
+","An anthropogenic geographic feature is the same as something that is the intersection of a geographic feature and something that, at least in part, formed as a result of anthropisation. It is a type of geographic feature and also a type of something that has formed, at least partially, due to anthropisation. An anthropogenic geographic feature is defined as a geographic feature resulting from the influence of human beings on nature. Additionally, it has related synonyms including ""man-made feature"" and ""manmade feature.""",6,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000003,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mine_tailing rdfs:subClassOf :anthropogenic_environmental_material ;
+    :has_broad_synonym ""tailing""^^xsd:string ;
+    :has_definition ""Mine tailings are the materials left over after the process of separating the valuable fraction from the uneconomic fraction (gangue) of an ore.""^^xsd:string .
+
+","Mine tailing, also broadly known as tailing, is a type of anthropogenic environmental material. It is defined as the materials left over after the process of separating the valuable fraction from the uneconomic fraction (gangue) of an ore.",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000004,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:administrative_region rdfs:subClassOf :site ;
+    :has_exact_synonym ""administrative area""^^xsd:string ;
+    :has_related_synonym ""administrative division""^^xsd:string,
+        ""administrative entity""^^xsd:string,
+        ""boundary region""^^xsd:string,
+        ""civil area""^^xsd:string,
+        ""district""^^xsd:string,
+        ""free trade zone""^^xsd:string,
+        ""governed place""^^xsd:string,
+        ""leased area (government)""^^xsd:string,
+        ""leased zone (government)""^^xsd:string,
+        ""neutral zone (political)""^^xsd:string,
+        ""prefecture""^^xsd:string,
+        ""protectorate""^^xsd:string,
+        ""sheikdom""^^xsd:string,
+        ""sultanate""^^xsd:string,
+        ""trade zone""^^xsd:string .
+
+","An administrative region is a type of site, which is exactly synonymous with an administrative area. It is also relatedly synonymous with various terms including administrative division, administrative entity, boundary region, civil area, district, free trade zone, governed place, leased area (government), leased zone (government), neutral zone (political), prefecture, protectorate, sheikdom, sultanate, and trade zone. These synonyms suggest a wide range of governance and administrative concepts associated with an administrative region.",17,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000005,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:first_order_administrative_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :national_geopolitical_entity ],
+        :administrative_region ;
+    :has_definition ""A primary administrative division of a country, such as a state in the United States.""^^xsd:string ;
+    :has_related_synonym ""countries, 1st order division""^^xsd:string,
+        ""first level subdivision""^^xsd:string,
+        ""first-order administrative division""^^xsd:string .
+
+","A first order administrative region is a type of administrative region and also a type of something that constitutes at least part of a national geopolitical entity. It is defined as a primary administrative division of a country, such as a state in the United States. Moreover, it is related to synonyms such as countries, 1st order division, first level subdivision, and first-order administrative division.",6,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000006,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:second_order_administrative_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :first_order_administrative_region ],
+        :administrative_region ;
+    :has_definition ""A subdivision of a first-order administrative division.""^^xsd:string ;
+    :has_related_synonym ""countries, 2nd order division""^^xsd:string,
+        ""second level subdivision""^^xsd:string,
+        ""second-order administrative division""^^xsd:string .
+
+","A second-order administrative region is a type of administrative region and is also considered a type of entity that constitutes at least part of some first-order administrative region. It is defined as a subdivision of a first-order administrative division. Furthermore, it is related to synonyms such as countries, 2nd order division, second level subdivision, and second-order administrative division.",6,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000007,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:third_order_administrative_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :second_order_administrative_region ],
+        :administrative_region ;
+    :has_definition ""A subdivision of a second-order administrative division.""^^xsd:string ;
+    :has_related_synonym ""barrio""^^xsd:string,
+        ""countries, 3rd order division""^^xsd:string,
+        ""third level subdivision""^^xsd:string,
+        ""third-order administrative division""^^xsd:string .
+
+","A third-order administrative region is a type of administrative region and is also considered a type of entity that constitutes at least part of a second-order administrative region. It is defined as a subdivision of a second-order administrative division. This region is also related to several synonyms including barrio, countries, 3rd order division, third level subdivision, and third-order administrative division.",7,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000008,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fourth_order_administrative_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :third_order_administrative_region ],
+        :administrative_region ;
+    :has_definition ""A subdivision of a third-order administrative division.""^^xsd:string ;
+    :has_related_synonym ""countries, 4th order division""^^xsd:string,
+        ""fourth level subdivision""^^xsd:string,
+        ""fourth-order administrative division""^^xsd:string .
+
+","A fourth order administrative region is a type of administrative region and also a kind that forms at least part of a third order administrative region. It is defined as a subdivision of a third-order administrative division. Additionally, it is related to and synonymous with terms such as countries, 4th order division, fourth level subdivision, and fourth-order administrative division.",6,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000009,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:national_geopolitical_entity rdfs:subClassOf :political_entity ;
+    :has_definition ""A political association with effective dominion over a geographic area.""^^xsd:string ;
+    :has_exact_synonym ""nation""^^xsd:string ;
+    :has_narrow_synonym ""independent nation""^^xsd:string,
+        ""independent political entity""^^xsd:string,
+        ""independent sovereign nation""^^xsd:string ;
+    :has_related_synonym ""country""^^xsd:string,
+        ""political entity""^^xsd:string,
+        ""state""^^xsd:string .
+
+","A national geopolitical entity is a type of political entity characterized by having effective dominion over a geographic area. This entity is exactly synonymous with a nation and has several narrow synonyms, including independent nation, independent political entity, and independent sovereign nation. Additionally, it is relatedly synonymous with a country, political entity, and state.",9,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000010,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:transport_feature rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :participates_in ;
+            owl:someValuesFrom :usage_of_an_environment_for_transportation ],
+        :human_construction ;
+    :has_definition ""A construction which enables the movement of humans, their animals or their vehicles.""^^xsd:string .
+
+","A transport feature is a type of human construction and is also a type of something that at least participates in some usage of an environment for transportation. It is defined as a construction that enables the movement of humans, their animals, or their vehicles.",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000011,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:garden rdfs:subClassOf :anthropogenic_geographic_feature ;
+    :has_definition ""An enclosure for displaying selected plant or animal life.""^^xsd:string ;
+    :has_related_synonym ""PARK""^^xsd:string,
+        ""cropland""^^xsd:string,
+        ""park""^^xsd:string .
+
+",A garden is a type of anthropogenic geographic feature defined as an enclosure for displaying selected plant or animal life. It is related to and synonymous with park and cropland.,5,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000012,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrographic_feature rdfs:subClassOf :geographic_feature ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :geographic_feature ;
+                    rdf:rest [ rdf:first [ owl:unionOf [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :partially_surrounded_by ;
+                                                    owl:someValuesFrom :liquid_water ] ;
+                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                            owl:onProperty :adjacent_to ;
+                                                            owl:someValuesFrom :water_body ] ;
+                                                    rdf:rest :nil ] ] ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A geographical feature associated with water.""^^xsd:string ;
+    :has_related_synonym ""fluvial feature""^^xsd:string .
+
+","A hydrographic feature is defined as a geographical feature associated with water, which is the same as something that is an intersection of a geographic feature and something that is a union of something at least partially surrounded by liquid water and something at least adjacent to a water body. Furthermore, a hydrographic feature is a type of geographic feature and has a related synonym, fluvial feature.",4,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000013,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cave_system rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :cave ],
+        :surface_landform ;
+    :has_definition ""A collection of caves interconnected by enterable passages or linked hydrologically or a cave with an extensive complex of chambers and passages.""^^xsd:string .
+
+","A cave system is a type of surface landform and also a type of entity that includes at least a part of some cave. It is defined as a collection of caves interconnected by enterable passages or linked hydrologically, or as a cave with an extensive complex of chambers and passages.",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000014,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:canal rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_quality ;
+            owl:someValuesFrom :elongated ],
+        :watercourse ;
+    :has_definition ""Artificial watercourse with no flow or a controlled flow used for navigation, drainage or irrigation.""^^xsd:string .
+
+","A canal is a type of watercourse and also a type of entity that possesses some elongated quality. It is defined as an artificial watercourse with no flow or a controlled flow, used for navigation, drainage, or irrigation.",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000015,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ocean rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :composed_primarily_of ;
+            owl:someValuesFrom :sea_water ],
+        :marine_water_body,
+        :saline_water_body ;
+    :has_definition ""A marine water body which is constitutes the majority of an astronomical body's hydrosphere.""^^xsd:string ;
+    :has_related_synonym ""ocean region""^^xsd:string .
+
+","An ocean is a type of marine, saline water body that is at least composed primarily of sea water. It is defined as a marine water body that constitutes the majority of an astronomical body's hydrosphere. Additionally, the term ""ocean region"" is related as a synonym to ocean.",5,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000016,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sea rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :composed_primarily_of ;
+            owl:someValuesFrom :sea_water ],
+        :marine_water_body,
+        :saline_water_body ;
+    :has_definition ""A large expanse of saline water usually connected with an ocean.""^^xsd:string ;
+    :has_narrow_synonym ""channel""^^xsd:string,
+        ""closed sea""^^xsd:string,
+        ""marginal sea""^^xsd:string,
+        ""open sea""^^xsd:string,
+        ""open sound""^^xsd:string,
+        ""open water""^^xsd:string .
+
+","The sea is categorized as a type of marine, saline water body that is at least composed primarily of seawater. It is defined as a large expanse of saline water usually connected with an ocean. Furthermore, the sea has several narrow synonyms including channel, closed sea, marginal sea, open sea, open sound, and open water.",10,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000017,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:saline_hydrographic_feature rdfs:subClassOf :hydrographic_feature ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first [ owl:intersectionOf [ rdf:first :hydrographic_feature ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :adjacent_to ;
+                                                    owl:someValuesFrom [ owl:intersectionOf [ rdf:first :water_body ;
+                                                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                                                    owl:onProperty :composed_primarily_of ;
+                                                                                    owl:someValuesFrom :saline_water ] ;
+                                                                            rdf:rest :nil ] ] ] ] ;
+                                            rdf:rest :nil ] ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :partially_surrounded_by ;
+                                    owl:someValuesFrom :saline_water ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A geographical feature associated with water with a halinity above 30 ppt (roughly 35 g/L).""^^xsd:string .
+
+","A saline hydrographic feature is identical to a feature that represents the union of features at the intersection of a hydrographic feature and those at least adjacent to an entity that is at the intersection of a water body and features that are at least composed primarily of saline water and those that are at least partially surrounded by saline water. Furthermore, a saline hydrographic feature is categorized as a type of hydrographic feature. Additionally, it is defined as a geographical feature associated with water, having a salinity above 30 parts per thousand (roughly 35 grams per liter).",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000019,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:saline_lake rdfs:subClassOf :lake,
+        :saline_water_body ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :lake ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :composed_primarily_of ;
+                                    owl:someValuesFrom :saline_water ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A lake whose water contains a considerable concentration of dissolved salts.""^^xsd:string ;
+    :has_exact_synonym ""salt lake""^^xsd:string ;
+    :has_related_synonym ""salina""^^xsd:string,
+        ""soda lake""^^xsd:string .
+
+","A saline lake, which is also known as a salt lake, and has related synonyms such as salina and soda lake, is a type of lake and a type of saline water body. It is defined as a lake whose water contains a considerable concentration of dissolved salts. This term is synonymous with something that intersects a lake and something that is at least composed primarily of saline water.",7,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000020,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lake rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :partially_surrounded_by ;
+            owl:someValuesFrom :planetary_landmass ],
+        [ a owl:Restriction ;
+            owl:onProperty :located_in ;
+            owl:someValuesFrom [ owl:intersectionOf [ rdf:first :depressed_landform ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :part_of ;
+                                            owl:someValuesFrom :planetary_landmass ] ;
+                                    rdf:rest :nil ] ] ] ],
+        :lentic_water_body ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :lentic_water_body ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :partially_surrounded_by ;
+                                    owl:someValuesFrom :planetary_landmass ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :located_in ;
+                                            owl:someValuesFrom [ owl:intersectionOf [ rdf:first :depressed_landform ;
+                                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                                            owl:onProperty :part_of ;
+                                                                            owl:someValuesFrom :planetary_landmass ] ;
+                                                                    rdf:rest :nil ] ] ] ] ;
+                                    rdf:rest :nil ] ] ] ] ;
+    :has_definition ""A body of water or other liquid of considerable size contained in a depression on a landmass.""^^xsd:string ;
+    :has_narrow_synonym ""catch basin""^^xsd:string,
+        ""open water""^^xsd:string,
+        ""tarn""^^xsd:string ;
+    :has_related_synonym ""broad""^^xsd:string,
+        ""llyn""^^xsd:string,
+        ""loch""^^xsd:string,
+        ""lochan""^^xsd:string,
+        ""lough""^^xsd:string,
+        ""mere""^^xsd:string,
+        ""mortlake""^^xsd:string,
+        ""pasteuer lake""^^xsd:string .
+
+","A lake is identified as an entity that intersects with several characteristics: it is a lentic water body, at least partially surrounded by a planetary landmass, and situated in a location that is both a depressed landform and part of a planetary landmass. Being a type of lentic water body, a lake is inherently connected with water bodies that are stationary or have limited flow. Additionally, its characterization as partly enclosed by land and existing within a depression on a landmass further refines its definition. A comprehensive definition of a lake is a body of water or other liquid of considerable size contained in a depression on a landmass.
+
+In terms of terminology, a lake is closely associated with a variety of more specific or related terms. Narrow synonyms include 'catch basin,' 'open water,' and 'tarn,' which refer to specific types of lakes or similar water bodies. Furthermore, it shares related synonyms such as 'broad,' 'llyn,' 'loch,' 'lochan,' 'lough,' 'mere,' 'mortlake,' and 'pasteuer lake.' These terms highlight the cultural and geographical diversity in naming conventions for lakes, reflecting the broad spectrum of lake types and characteristics found globally.",16,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000021,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:freshwater_lake rdfs:subClassOf :fresh_water_body,
+        :lake ;
+    :has_definition ""A lake of whose water contains low concentrations of salts.""^^xsd:string ;
+    :has_exact_synonym ""FreshwaterLake""^^xsd:string .
+
+","A freshwater lake is a type of lake and also a type of fresh water body, defined as a lake whose water contains low concentrations of salts. It has the exact synonym ""FreshwaterLake.""",4,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000022,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:river rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :adjacent_to ;
+            owl:someValuesFrom :river_bank ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :river_channel ],
+        :stream ;
+    :has_definition ""A stream which, through permanent or seasonal flow processes, moves from elevated land towards lower elevations through a definite channel and empties either into a sea, lake, or another river or ends on land as bed seepage and evapotranspiration exceed water supply.""^^xsd:string ;
+    :has_exact_synonym ""rio""^^xsd:string ;
+    :has_narrow_synonym ""braided river""^^xsd:string .
+
+","A river is a type of stream and it is also a type of something that is at least continuous with some river channel and adjacent to some river bank. It is defined as a stream which, through permanent or seasonal flow processes, moves from elevated land towards lower elevations through a definite channel, and empties either into a sea, lake, or another river, or ends on land as bed seepage and evapotranspiration exceed water supply. Furthermore, river has an exact synonym ""rio"" and a narrow synonym ""braided river.""",6,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000023,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stream rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_quality ;
+            owl:someValuesFrom :linear ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :stream_channel ],
+        :watercourse ;
+    :has_broad_synonym ""watercourse""^^xsd:string ;
+    :has_definition ""A watercourse which is linear and flows across the solid portion of a planetary surface.""^^xsd:string ;
+    :has_exact_synonym ""streams""^^xsd:string ;
+    :has_narrow_synonym ""braided stream""^^xsd:string,
+        ""fork (hydrographic""^^xsd:string,
+        ""lode""^^xsd:string,
+        ""millstream""^^xsd:string,
+        ""stream bend""^^xsd:string,
+        ""streamlet""@en ;
+    :has_related_synonym ""Creek""^^xsd:string,
+        ""beck""^^xsd:string,
+        ""brook""^^xsd:string,
+        ""burn (hydrographic)""^^xsd:string,
+        ""creek""^^xsd:string,
+        ""rivulet""^^xsd:string .
+
+","A stream is a type of watercourse, also broadly synonymous with watercourse and exactly synonymous with streams. It is characterized as a type of entity that must have some linear quality and be continuous with a stream channel. The definition of a stream is a watercourse that is linear and flows across the solid portion of a planetary surface. Narrow synonyms for stream include braided stream, fork (hydrographic), lode, millstream, stream bend, and streamlet. Additionally, stream has related synonyms such as Creek, beck, brook, burn (hydrographic), creek, and rivulet.",18,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000025,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reservoir rdfs:subClassOf :artificial_lake ;
+    :has_broad_synonym ""lake""^^xsd:string ;
+    :has_definition ""An artificial body of water, often contained by a dam, constructed for the purpose of water storage.""^^xsd:string ;
+    :has_narrow_synonym ""covered reservoir""^^xsd:string .
+
+","A reservoir is a type of artificial lake and is defined as an artificial body of water, often contained by a dam, constructed for the purpose of water storage. It is broadly synonymous with the term lake and has a more specific synonym, covered reservoir.",4,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000026,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:well rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom [ owl:unionOf [ rdf:first :tunnel ;
+                            rdf:rest [ rdf:first :depressed_landform ;
+                                    rdf:rest [ rdf:first :borehole ;
+                                            rdf:rest :nil ] ] ] ] ],
+        :anthropogenic_geographic_feature ;
+    :has_definition ""A cylindrical hole, pit, or tunnel drilled or dug down to a depth from which water, oil, or gas can be pumped or brought to the surface.""^^xsd:string .
+
+","A well is recognized as an anthropogenic geographic feature, which is categorized under entities that at least partially consist of elements that are a combination of tunnels, depressed landforms, and boreholes. Additionally, a well is defined as a cylindrical hole, pit, or tunnel that is drilled or dug down to a certain depth from which water, oil, or gas can be extracted or brought to the surface.",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000027,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:spring rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :solid_surface_layer ],
+        :surface_landform ;
+    :has_definition ""A surface landform which provides an egress for groundwater or steam to flow out of the ground.""@en ;
+    :has_related_synonym ""seep""^^xsd:string .
+
+","Spring is a type of surface landform and also a type of something that at least partly comprises some solid surface layer. It is defined as a surface landform which provides an egress for groundwater or steam to flow out of the ground. Additionally, spring is synonymously related to seep.",4,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000028,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sand_pit_quarry rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :capable_of ;
+            owl:someValuesFrom [ owl:intersectionOf [ rdf:first :material_extraction_process ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_output ;
+                                            owl:someValuesFrom :sand ] ;
+                                    rdf:rest :nil ] ] ] ],
+        :quarry ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :quarry ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :capable_of ;
+                                    owl:someValuesFrom [ owl:intersectionOf [ rdf:first :material_extraction_process ;
+                                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                                    owl:onProperty :has_output ;
+                                                                    owl:someValuesFrom :sand ] ;
+                                                            rdf:rest :nil ] ] ] ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A quarry from which sand is extracted.""^^xsd:string ;
+    :has_related_synonym ""sand pit""^^xsd:string .
+
+","A sand pit quarry is the same as an entity that intersects with both a quarry and an entity that is at least capable of a process which is the intersection of a material extraction process and having an output of sand. It is a type of quarry and also a type of entity that is at least capable of a process that combines material extraction with an output of sand. The definition of a sand pit quarry is a quarry from which sand is extracted. Additionally, sand pit quarry is synonymously related to sand pit.",5,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000029,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:watercourse rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :channel_of_a_watercourse ],
+        :lotic_water_body ;
+    :has_definition ""A flowing body of water.""^^xsd:string ;
+    :has_narrow_synonym ""culvert""^^xsd:string,
+        ""dredged channel""^^xsd:string,
+        ""fork""^^xsd:string,
+        ""gulch""^^xsd:string,
+        ""gully""^^xsd:string,
+        ""gut""^^xsd:string,
+        ""gutter""^^xsd:string,
+        ""kill""^^xsd:string,
+        ""lode""^^xsd:string,
+        ""narrows""^^xsd:string,
+        ""overflow channel""^^xsd:string,
+        ""passage""^^xsd:string,
+        ""pup""^^xsd:string,
+        ""race""^^xsd:string,
+        ""ravine""^^xsd:string,
+        ""reach""^^xsd:string,
+        ""rill""^^xsd:string,
+        ""rivulet""^^xsd:string,
+        ""run""^^xsd:string,
+        ""runnel""^^xsd:string,
+        ""seachannel""^^xsd:string,
+        ""seaway""^^xsd:string,
+        ""spillway""^^xsd:string,
+        ""stream""^^xsd:string,
+        ""tideway""^^xsd:string,
+        ""wash""^^xsd:string,
+        ""water gap""^^xsd:string ;
+    :has_related_synonym ""awawa""^^xsd:string,
+        ""barranca""^^xsd:string,
+        ""beck""^^xsd:string,
+        ""branch""^^xsd:string,
+        ""brook""^^xsd:string,
+        ""course""^^xsd:string,
+        ""draw""^^xsd:string,
+        ""moat""^^xsd:string,
+        ""narrows""^^xsd:string,
+        ""narrows (hydrographic)""^^xsd:string .
+
+","A watercourse is a type of lotic water body, which is defined as a flowing body of water that is at least continuous with some channel of a watercourse. It has narrow synonyms such as culvert, dredged channel, fork, gulch, gully, gut, gutter, kill, lode, narrows, overflow channel, passage, pup, race, ravine, reach, rill, rivulet, run, runnel, seachannel, seaway, spillway, stream, tideway, wash, and water gap. Additionally, watercourse has related synonyms including awawa, barranca, beck, branch, brook, course, draw, moat, and narrows (hydrographic).",40,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000030,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dead_cave rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_quality ;
+            owl:someValuesFrom :dry ],
+        :cave ;
+    owl:disjointWith :live_cave ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :cave ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_quality ;
+                                    owl:someValuesFrom :dry ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A cave without streams or drips of water.""^^xsd:string ;
+    :has_exact_synonym ""dry cave""^^xsd:string .
+
+","Dead cave is equivalent to an intersection of a cave and something that at least has the quality of being somewhat dry. It is a specific type of cave as well as a type of entity that possesses some dryness. Dead cave is distinctly separate from a live cave, indicating that these two types of caves do not overlap. Additionally, dead cave is defined as a cave without streams or drips of water and is exactly synonymous with the term ""dry cave.""",6,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000031,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wadi rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :contains_process ;
+            owl:someValuesFrom [ owl:intersectionOf [ rdf:first :water_accumulation_process ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_quality ;
+                                            owl:someValuesFrom :discontinuous ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :contains_process ;
+            owl:someValuesFrom [ owl:intersectionOf [ rdf:first :water_flow_process ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_quality ;
+                                            owl:someValuesFrom :discontinuous ] ;
+                                    rdf:rest :nil ] ] ] ],
+        :valley ;
+    :has_definition ""A valley or ravine, bounded by relatively steep banks, which in the rainy season becomes a watercourse.""^^xsd:string ;
+    :has_exact_synonym ""wadis""^^xsd:string ;
+    :has_narrow_synonym ""wadi bend""^^xsd:string,
+        ""wadi junction""^^xsd:string,
+        ""wadi mouth""^^xsd:string ;
+    :has_related_synonym ""arroyo""^^xsd:string,
+        ""coulee""^^xsd:string,
+        ""gully""^^xsd:string,
+        ""nullah""^^xsd:string,
+        ""wash""^^xsd:string .
+
+","A wadi is a type of valley characterized by certain processes and qualities. Specifically, it involves processes that intersect with both water flow and water accumulation, and it possesses the quality of being discontinuous. Wadi is defined as a valley or ravine, bounded by relatively steep banks, which becomes a watercourse in the rainy season. It is exactly synonymous with ""wadis"" and has narrow synonyms including ""wadi bend,"" ""wadi junction,"" and ""wadi mouth."" Additionally, related synonyms for wadi include ""arroyo,"" ""coulee,"" ""gully,"" ""nullah,"" and ""wash.""",13,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000032,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bay rdfs:subClassOf :coastal_inlet ;
+    :has_definition ""An area of water bordered by land on three sides.""^^xsd:string ;
+    :has_related_synonym ""bahia""^^xsd:string,
+        ""embayment""^^xsd:string,
+        ""firth""^^xsd:string,
+        ""inlet""^^xsd:string,
+        ""sea loch""^^xsd:string,
+        ""sea lough""^^xsd:string .
+
+","A bay is a type of coastal inlet, defined as an area of water bordered by land on three sides. It is also related to several synonyms including bahia, embayment, firth, inlet, sea loch, and sea lough.",8,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000033,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pond rdfs:subClassOf :lentic_water_body ;
+    :has_broad_synonym ""lake""^^xsd:string ;
+    :has_definition ""A body of water, usually of smaller size than a lake.""^^xsd:string ;
+    :has_exact_synonym ""Pond""^^xsd:string ;
+    :has_narrow_synonym ""pool (water body)""^^xsd:string ;
+    :has_related_synonym ""POOL""^^xsd:string,
+        ""millpond""^^xsd:string,
+        ""pond""^^xsd:string,
+        ""ponds""^^xsd:string,
+        ""pool""^^xsd:string,
+        ""pool (water body)""^^xsd:string .
+
+","A pond is a type of lentic water body and is defined as a body of water, usually of smaller size than a lake. It has an exact synonym ""Pond"" and a broad synonym ""lake,"" while ""pool (water body)"" is considered a narrow synonym. Related synonyms for pond include ""POOL,"" ""millpond,"" ""pond,"" ""ponds,"" and ""pool"" as well as ""pool (water body).""",11,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000034,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rapids rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :stream ],
+        :hydroform ;
+    :has_definition ""An area of broken, fast flowing water in a stream, where the slope of the bed increases (but without a prominent break of slope which might result in a waterfall), or where a gently dipping bar of harder rock outcrops.""^^xsd:string ;
+    :has_related_synonym ""cataract""^^xsd:string,
+        ""torrent""^^xsd:string .
+
+","Rapids are a type of hydroform and also a part of some streams. They are defined as an area of broken, fast-flowing water in a stream, where the slope of the bed increases (but without a prominent break of slope which might result in a waterfall), or where a gently dipping bar of harder rock outcrops. Additionally, rapids are synonymously related to both cataract and torrent.",5,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000035,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:marsh rdfs:subClassOf :wetland_ecosystem ;
+    :has_broad_synonym ""wetland""^^xsd:string ;
+    :has_definition ""A wetland ecosystem which includes communities of grasses, rushes, reeds, typhas, sedges, and other herbaceous plants (possibly with low-growing woody plants).""^^xsd:string ;
+    :has_related_synonym ""Marsh""^^xsd:string,
+        ""marsh""^^xsd:string,
+        ""quagmire""^^xsd:string .
+
+","Marsh is a type of wetland ecosystem, defined as a wetland ecosystem that includes communities of grasses, rushes, reeds, typhas, sedges, and other herbaceous plants, and may include low-growing woody plants. It has a broad synonym, ""wetland."" Additionally, related synonyms for marsh include ""Marsh,"" ""marsh,"" and ""quagmire.""",6,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000036,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:irrigation_canal rdfs:subClassOf :canal ;
+    :has_broad_synonym ""canal""^^xsd:string ;
+    :has_definition ""Artificial watercourse with no flow or a controlled flow used irrigation.""^^xsd:string .
+
+","An irrigation canal is a type of canal, which is defined as an artificial watercourse with no flow or a controlled flow used for irrigation. Moreover, it has a broad synonym: canal.",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000037,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ditch rdfs:subClassOf :artificial_channel ;
+    :has_definition ""A small, human-made channel which has been dug for draining or irrigating the land.""^^xsd:string .
+
+","A ditch is a type of artificial channel and it is defined as a small, human-made channel which has been dug for draining or irrigating the land.",2,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000038,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lagoon rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :coastal_wetland_ecosystem ],
+        [ a owl:Restriction ;
+            owl:onProperty :composed_primarily_of ;
+            owl:someValuesFrom :saline_water ],
+        [ a owl:Restriction ;
+            owl:onProperty :adjacent_to ;
+            owl:someValuesFrom :shore ],
+        :aquatic_layer ;
+    :has_definition ""A sheet of saline water separated from the open sea by sand or shingle banks. The sheet of water between an offshore reef, especially of coral and mainland. The sheet of water within a ring or horseshoe shaped atoll.""^^xsd:string ;
+    :has_exact_synonym ""lagoons""^^xsd:string,
+        ""laguna""^^xsd:string ;
+    :has_related_synonym ""barrier lagoon""^^xsd:string .
+
+","A lagoon is a type of aquatic layer that forms part of, or is adjacent to, some coastal wetland ecosystems and shores. It is primarily composed of saline water. Lagoons are defined as sheets of saline water separated from the open sea by sand or shingle banks, positioned between an offshore reef, especially of coral and the mainland, or within a ring or horseshoe-shaped atoll. The terms ""lagoons"" and ""laguna"" are exact synonyms for lagoon, and it is also related to the term ""barrier lagoon.""",8,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000039,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fjord rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :adjacent_to ;
+            owl:someValuesFrom :slope ],
+        [ a owl:Restriction ;
+            owl:onProperty :formed_as_result_of ;
+            owl:someValuesFrom :glacial_erosion_process ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_quality ;
+            owl:someValuesFrom :elongated ],
+        :coastal_inlet ;
+    :has_definition ""A long and narrow sea inlet with high steeply sloped walled sides. A fjord is a landform created during a period of glaciation.""^^xsd:string .
+
+","A fjord is a type of coastal inlet that is elongated and adjacent to slopes. It is formed as a result of glacial erosion processes. The definition of a fjord is a long and narrow sea inlet with high, steeply sloped walled sides, created during a period of glaciation.",5,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000040,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:waterfall rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :stream ],
+        :hydroform,
+        :lotic_water_body ;
+    :has_definition ""A sudden descent of water over a step or ledge in the bed of a river.""^^xsd:string ;
+    :has_exact_synonym ""WATERFALL""^^xsd:string,
+        ""force""^^xsd:string,
+        ""linn""^^xsd:string,
+        ""waterfalls""^^xsd:string ;
+    :has_related_synonym ""cascade""^^xsd:string,
+        ""cataract""^^xsd:string,
+        ""fall""^^xsd:string,
+        ""falls""^^xsd:string .
+
+","A waterfall is a type of lotic water body, hydroform, and something that is at least part of some stream. It is defined as a sudden descent of water over a step or ledge in the bed of a river. Waterfall has exact synonyms including WATERFALL, force, linn, and waterfalls. Moreover, it has related synonyms such as cascade, cataract, fall, and falls.",12,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000041,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tidal_creek rdfs:subClassOf :tidal_watercourse ;
+    :has_broad_synonym ""stream""^^xsd:string ;
+    :has_definition ""A tidal water channel. Creeks may often dry to a muddy channel with little or no flow at low tide, but often with significant depth of water at high tide.""^^xsd:string .
+
+","A tidal creek is a type of tidal watercourse, defined as a tidal water channel. These creeks may often dry to a muddy channel with little or no flow at low tide, but often with a significant depth of water at high tide. Additionally, a tidal creek is broadly synonymous with a stream.",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000042,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drainage_canal rdfs:subClassOf :canal ;
+    :has_broad_synonym ""canal""^^xsd:string ;
+    :has_definition ""Artificial watercourse with no flow or a controlled flow used drainage.""^^xsd:string .
+
+","A drainage canal is a type of canal defined as an artificial watercourse with no flow or a controlled flow used for drainage. It is broadly synonymous with the term ""canal.""",3,True
+envo,http://purl.obolibrary.org/obo/ENVO_00000043,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wetland_area rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :overlaps ;
+            owl:someValuesFrom :wetland_ecosystem ],
+        :vegetated_area ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :vegetated_area ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :overlaps ;
+                                    owl:someValuesFrom :wetland_ecosystem ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""An vegetated area which overlaps a wetland ecosystem.""^^xsd:string ;
+    :has_related_synonym ""WetlandRegion""^^xsd:string .
+
+","A wetland area is defined as a vegetated area that overlaps a wetland ecosystem, essentially being an intersection of a vegetated area and something that at least overlaps some wetland ecosystem. It is a type of vegetated area and also a type of area that at least overlaps some wetland ecosystem. Furthermore, a wetland area is synonymous with WetlandRegion.",5,True

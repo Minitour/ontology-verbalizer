@@ -1,0 +1,3295 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/realmGeolConstituent/CorrosionRim,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:corrosion_rim rdfs:subClassOf :corona .
+
+",corrosion rim is a type of corona.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/CrystallineFramework,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crystalline_framework rdfs:subClassOf :particulate_constituent .
+
+",crystalline framework is a type of particulate constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Dropstone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dropstone rdfs:subClassOf :structural_configuration .
+
+",dropstone is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Epimatrix,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epimatrix rdfs:subClassOf :matrix .
+
+",epimatrix is a type of matrix.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/FloatingClast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:floating_clast rdfs:subClassOf :structural_configuration .
+
+",floating clast is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/GranularFramework,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:granular_framework rdfs:subClassOf :particulate_constituent .
+
+",granular framework is a type of particulate constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Groundmass,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:groundmass rdfs:subClassOf :rock_constituent .
+
+",groundmass is a type of rock constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Inclusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inclusion rdfs:subClassOf :structural_configuration .
+
+",inclusion is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/InterstitialConstituent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interstitial_constituent rdfs:subClassOf :rock_constituent .
+
+",interstitial constituent is a type of rock constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Irregular,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:irregular rdfs:subClassOf :structural_configuration .
+
+",irregular is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/KelyphiticRim,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kelyphitic_rim rdfs:subClassOf :corona .
+
+",kelyphitic rim is a type of corona.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Layer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:layer rdfs:subClassOf :structural_configuration .
+
+",layer is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Matrix,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:matrix rdfs:subClassOf :rock_constituent .
+
+",matrix is a type of rock constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Megacryst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:megacryst rdfs:subClassOf :particulate_constituent .
+
+",megacryst is a type of particulate constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Oikocryst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oikocryst rdfs:subClassOf :particulate_constituent .
+
+",oikocryst is a type of particulate constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Orthomatrix,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orthomatrix rdfs:subClassOf :matrix .
+
+",orthomatrix is a type of matrix.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Overgrowth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overgrowth rdfs:subClassOf :structural_configuration .
+
+",overgrowth is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/ParticulateConstituent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:particulate_constituent rdfs:subClassOf :rock_constituent .
+
+",particulate constituent is a type of rock constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Phenoclast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phenoclast rdfs:subClassOf :particulate_constituent .
+
+",phenoclast is a type of particulate constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Phenocryst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phenocryst rdfs:subClassOf :megacryst .
+
+",phenocryst is a type of megacryst.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Porphyroblast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:porphyroblast rdfs:subClassOf :megacryst .
+
+",porphyroblast is a type of megacryst.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Porphyroclast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:porphyroclast rdfs:subClassOf :megacryst .
+
+",porphyroclast is a type of megacryst.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Protomatrix,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protomatrix rdfs:subClassOf :matrix .
+
+",protomatrix is a type of matrix.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Pseudomatrix,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudomatrix rdfs:subClassOf :matrix .
+
+",pseudomatrix is a type of matrix.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/RockConstituent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rock_constituent rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rock ;
+            owl:onProperty :has_substance ],
+        :constituent .
+
+",A rock constituent is a type of constituent that is specifically a type of something which solely comprises the substance rock.,2,True
+sweet,http://sweetontology.net/realmGeolConstituent/SedimentaryRockCement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sedimentary_rock_cement rdfs:subClassOf :rock_constituent .
+
+",sedimentary rock cement is a type of rock constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/SmallConcretion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:small_concretion rdfs:subClassOf :structural_configuration .
+
+",small concretion is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/StructuralConfiguration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:structural_configuration rdfs:subClassOf :rock_constituent .
+
+",structural configuration is a type of rock constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Vein,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vein rdfs:subClassOf :structural_configuration .
+
+",vein is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Vug,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vug rdfs:subClassOf :cavity,
+        :structural_configuration .
+
+",Vug is a type of structural configuration and is also a type of cavity.,2,True
+sweet,http://sweetontology.net/realmGeolContinental/ActiveContinent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:active_continent rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :continental_lithosphere ;
+            owl:onProperty :part_of ],
+        :geologic_province .
+
+",An active continent is a type of geologic province and is considered a type of entity that is only part of the continental lithosphere.,2,True
+sweet,http://sweetontology.net/realmGeolContinental/ContinentalCrust,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_crust rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_rock ;
+            owl:someValuesFrom :felsic ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :continental_lithosphere ;
+            owl:onProperty :part_of ],
+        :continental,
+        :crust,
+        :skin_layer .
+
+","Continental crust is a type of continental, crust, and skin layer. It is characterized by being at least partially composed of felsic rock and is uniquely a part of the continental lithosphere.",5,True
+sweet,http://sweetontology.net/realmGeolContinental/ContinentalLithosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_lithosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :craton ;
+            owl:onProperty :has_planetary_structure ],
+        :continental,
+        :lithosphere .
+
+","The continental lithosphere is a type of continental feature and a type of lithosphere. Additionally, it is a type of entity that exclusively possesses the planetary structure known as craton.",3,True
+sweet,http://sweetontology.net/realmGeolContinental/ContinentalMargin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_margin rdfs:subClassOf :margin .
+
+",continental margin is a type of margin.,1,False
+sweet,http://sweetontology.net/realmGeolContinental/ContinentalPlatform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_platform rdfs:subClassOf :geologic_province .
+
+",continental platform is a type of geologic province.,1,False
+sweet,http://sweetontology.net/realmGeolContinental/ContinentalRift,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_rift rdfs:subClassOf :divergent_boundary,
+        :divergent_plate_boundary,
+        :rift .
+
+","A continental rift is a type of divergent boundary, divergent plate boundary, and rift.",3,True
+sweet,http://sweetontology.net/realmGeolContinental/Craton,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:craton rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :continental_crust ;
+            owl:onProperty :part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :shield ;
+            owl:onProperty :has_planetary_structure ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :continental_platform ;
+            owl:onProperty :has_planetary_structure ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :kimberlite ;
+            owl:onProperty :has_substance ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :intracratonic_basin ;
+            owl:onProperty :has_planetary_structure ],
+        :geologic_province .
+
+","A craton is a type of geologic province that is part of the continental crust. It uniquely contains the substance kimberlite and has specific planetary structures, including intracratonic basins, continental platforms, and shields.",6,True
+sweet,http://sweetontology.net/realmGeolContinental/Shield,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shield rdfs:subClassOf :geologic_province .
+
+",shield is a type of geologic province.,1,False
+sweet,http://sweetontology.net/realmGeolContinental/StableContinent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stable_continent rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :continental_lithosphere ;
+            owl:onProperty :part_of ],
+        :geologic_province .
+
+","A stable continent is a type of geologic province, and it is also classified as something that forms only a part of the continental lithosphere.",2,True
+sweet,http://sweetontology.net/realmGeolContinental/Supercontinent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supercontinent rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :craton ;
+            owl:onProperty :has_planetary_structure ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :continental_lithosphere ;
+            owl:onProperty :has_realm ],
+        :geologic_province .
+
+","A supercontinent is a type of geologic province, which exclusively encompasses realms of the continental lithosphere and is distinguished by its planetary structure, known as a craton.",3,True
+sweet,http://sweetontology.net/realmGeolOrogen/Arc,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arc rdfs:subClassOf :arc,
+        :geologic_feature .
+
+","An arc is a type of geologic feature, and it is also a type of arc itself.",2,True
+sweet,http://sweetontology.net/realmGeolOrogen/ArcAxis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arc_axis rdfs:subClassOf :axis .
+
+",arc axis is a type of axis.,1,False
+sweet,http://sweetontology.net/realmGeolOrogen/BackArc,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:back_arc rdfs:subClassOf :arc ;
+    owl:equivalentClass :rear_arc,
+        :retro_arc .
+
+","Back arc, which is also known as rear arc or retro arc, is a type of arc.",3,True
+sweet,http://sweetontology.net/realmGeolOrogen/ForeArc,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fore_arc rdfs:subClassOf :arc,
+        :supra_subduction_zone_complex .
+
+",Fore arc is a type of arc and also a type of supra subduction zone complex.,2,True
+sweet,http://sweetontology.net/realmGeolOrogen/MagmaticArc,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magmatic_arc rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_planetary_structure ;
+            owl:someValuesFrom :rear_arc ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_planetary_structure ;
+            owl:someValuesFrom :fore_arc ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :arc_axis ;
+            owl:onProperty :has_axis ],
+        :arc .
+
+","A magmatic arc is a type of arc that incorporates several specific elements related to planetary structures. It includes, at minimum, some fore arc and some rear arc as part of its planetary structure. Additionally, a magmatic arc is characterized by having only an axis referred to as the arc axis.",4,True
+sweet,http://sweetontology.net/realmGeolOrogen/Orogen,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orogen rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :orogenic_collapse ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_planetary_structure ;
+            owl:someValuesFrom :suture ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_planetary_structure ;
+            owl:someValuesFrom :foreland_basin ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_planetary_structure ;
+            owl:someValuesFrom :thrust_system ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :deformation ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_planetary_structure ;
+            owl:someValuesFrom :terrane ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :orogeny ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_substance ;
+            owl:someValuesFrom :melange ],
+        :geologic_province .
+
+","Orogen is a type of geologic province that encompasses various phenomena and structures. It is characterized by phenomena such as orogenic collapse, orogeny, and deformation. Additionally, orogen contains substances like melange and features several planetary structures, including terrane, foreland basin, suture, and thrust system.",9,True
+sweet,http://sweetontology.net/realmGeolOrogen/RearArc,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rear_arc rdfs:subClassOf :arc .
+
+",rear arc is a type of arc.,1,False
+sweet,http://sweetontology.net/realmGeolOrogen/RemnantArc,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:remnant_arc rdfs:subClassOf :arc .
+
+",remnant arc is a type of arc.,1,False
+sweet,http://sweetontology.net/realmGeolOrogen/RetroArc,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:retro_arc rdfs:subClassOf :arc .
+
+",retro arc is a type of arc.,1,False
+sweet,http://sweetontology.net/realmHydro/Aquiclude,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aquiclude rdfs:subClassOf :hydrosphere_feature .
+
+",aquiclude is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/Aquifer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aquifer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :saturated_zone ;
+            owl:onProperty :part_of ],
+        :hydrosphere_feature .
+
+",An aquifer is a type of feature within the hydrosphere and is specifically a part of the saturated zone.,2,True
+sweet,http://sweetontology.net/realmHydro/Aquifuge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aquifuge rdfs:subClassOf :hydrosphere_feature .
+
+",aquifuge is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/Aquitard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aquitard rdfs:subClassOf :hydrosphere_feature .
+
+",aquitard is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/Bank,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bank rdfs:subClassOf :hydrosphere_feature .
+
+",bank is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/CascadingWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cascading_water rdfs:subClassOf :groundwater,
+        :hydrosphere_feature .
+
+",Cascading water is both a type of groundwater and a feature of the hydrosphere.,2,True
+sweet,http://sweetontology.net/realmHydro/ConeOfDepression,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cone_of_depression rdfs:subClassOf :hydrosphere_feature,
+        :trough .
+
+",A cone of depression is both a type of hydrosphere feature and a type of trough.,2,True
+sweet,http://sweetontology.net/realmHydro/ConeOfImpression,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cone_of_impression rdfs:subClassOf :hydrosphere_feature,
+        :ridge .
+
+",The cone of impression is a type of hydrosphere feature and is also a type of ridge.,2,True
+sweet,http://sweetontology.net/realmHydro/ConfinedAquifer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:confined_aquifer rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :confined ;
+            owl:onProperty :has_spatial_configuration ],
+        :aquifer .
+
+",A confined aquifer is a type of aquifer and is also a type of something that must have a spatial configuration that is confined.,2,True
+sweet,http://sweetontology.net/realmHydro/ConfinedBed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:confined_bed rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :confined ;
+            owl:onProperty :has_spatial_configuration ],
+        :hydrosphere_feature .
+
+",A confined bed is a type of hydrosphere feature that must have a spatial configuration that is confined.,2,True
+sweet,http://sweetontology.net/realmHydro/ConfinedUnit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:confined_unit rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :confined ;
+            owl:onProperty :has_spatial_configuration ],
+        :hydrosphere_feature .
+
+",A confined unit is a type of hydrosphere feature that must have a spatial configuration that is confined.,2,True
+sweet,http://sweetontology.net/realmHydro/ConfinedZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:confined_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :confined ;
+            owl:onProperty :has_spatial_configuration ],
+        :hydrosphere_feature .
+
+",A confined zone is a feature of the hydrosphere and is a type of entity that must have a spatial configuration that is confined.,2,True
+sweet,http://sweetontology.net/realmHydro/Dike,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dike rdfs:subClassOf :bank ;
+    owl:equivalentClass :dyke,
+        :embankment,
+        :flood_bank,
+        :levee,
+        :raised_bank .
+
+","Dike, which is the same as dyke, embankment, flood bank, levee, and raised bank, is a type of bank.",6,True
+sweet,http://sweetontology.net/realmHydro/Dyke,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dyke rdfs:subClassOf :bank .
+
+",dyke is a type of bank.,1,False
+sweet,http://sweetontology.net/realmHydro/Embankment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:embankment rdfs:subClassOf :bank .
+
+",embankment is a type of bank.,1,False
+sweet,http://sweetontology.net/realmHydro/FloodBank,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flood_bank rdfs:subClassOf :bank .
+
+",flood bank is a type of bank.,1,False
+sweet,http://sweetontology.net/realmHydro/GroundwaterLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:groundwater_level rdfs:subClassOf :hydrosphere_feature,
+        :planetary_boundary,
+        :planetary_surface_level .
+
+","Groundwater level serves as a type of planetary boundary, planetary surface level, and hydrosphere feature.",3,True
+sweet,http://sweetontology.net/realmHydro/HydrosphereFeature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrosphere_feature rdfs:subClassOf :planetary_realm .
+
+",hydrosphere feature is a type of planetary realm.,1,False
+sweet,http://sweetontology.net/realmHydro/Levee,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:levee rdfs:subClassOf :bank .
+
+",levee is a type of bank.,1,False
+sweet,http://sweetontology.net/realmHydro/PotentiometricSurface,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potentiometric_surface rdfs:subClassOf :hydrosphere_feature .
+
+",potentiometric surface is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/RaisedBank,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raised_bank rdfs:subClassOf :bank .
+
+",raised bank is a type of bank.,1,False
+sweet,http://sweetontology.net/realmHydro/SaturatedZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saturated_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :aquifer ;
+            owl:onProperty :part_of ],
+        :hydrosphere_feature .
+
+",The saturated zone is a type of hydrosphere feature and is also considered a part of an aquifer.,2,True
+sweet,http://sweetontology.net/realmHydro/SeepageFace,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seepage_face rdfs:subClassOf :boundary,
+        :edge,
+        :face .
+
+","A seepage face is recognized as a type of boundary, edge, and face.",3,True
+sweet,http://sweetontology.net/realmHydro/SurfaceWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surface_water rdfs:subClassOf :hydrosphere_feature .
+
+",surface water is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/UnconfinedAquifer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unconfined_aquifer rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :unconfined ;
+            owl:onProperty :has_spatial_configuration ],
+        :aquifer ;
+    owl:equivalentClass :water_table_aquifer .
+
+","An unconfined aquifer, which is the same as a water table aquifer, is a type of aquifer. Furthermore, it must have a spatial configuration that is unconfined.",3,True
+sweet,http://sweetontology.net/realmHydro/UndergroundWater,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:underground_water rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vadose_zone ;
+            owl:onProperty :inside ],
+        :groundwater .
+
+","Underground water is a type of groundwater, which exists exclusively within the vadose zone.",2,True
+sweet,http://sweetontology.net/realmHydro/UnsaturatedZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unsaturated_zone rdfs:subClassOf :hydrosphere_feature ;
+    owl:equivalentClass :vadose_zone .
+
+","The unsaturated zone, which is the same as the vadose zone, is a type of feature within the hydrosphere.",2,True
+sweet,http://sweetontology.net/realmHydro/VadoseZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vadose_zone rdfs:subClassOf :hydrosphere_feature .
+
+",vadose zone is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/WarmPool,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:warm_pool rdfs:subClassOf :hydrosphere_feature .
+
+",warm pool is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/WaterColumn,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_column rdfs:subClassOf :hydrosphere_feature .
+
+",water column is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/WaterTable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_table rdfs:subClassOf :hydrosphere_feature .
+
+",water table is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydro/WaterTableAquifer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_table_aquifer rdfs:subClassOf :aquifer .
+
+",water table aquifer is a type of aquifer.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Aqueduct,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aqueduct rdfs:subClassOf :channel .
+
+",aqueduct is a type of channel.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Arroyo,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arroyo rdfs:subClassOf :body_of_water .
+
+",arroyo is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/BarrierLagoon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barrier_lagoon rdfs:subClassOf :lagoon .
+
+",barrier lagoon is a type of lagoon.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Basin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basin rdfs:subClassOf :body_of_water .
+
+",basin is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Bay,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bay rdfs:subClassOf :body_of_water .
+
+",bay is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/BlanketBog,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:blanket_bog rdfs:subClassOf :bog .
+
+",blanket bog is a type of bog.,1,False
+sweet,http://sweetontology.net/realmHydroBody/BodyOfWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:body_of_water rdfs:subClassOf :hydrosphere_feature .
+
+",body of water is a type of hydrosphere feature.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Bog,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bog rdfs:subClassOf :wetland .
+
+",bog is a type of wetland.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Bolson,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bolson rdfs:subClassOf :basin .
+
+",bolson is a type of basin.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Canal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:canal rdfs:subClassOf :body_of_water .
+
+",canal is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/CarbonateCompensationLevel,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbonate_compensation_level rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level ;
+    owl:equivalentClass :water_body_boundary .
+
+",The carbonate compensation level is the same as the water body boundary and is a type of planetary boundary as well as a planetary surface level.,3,True
+sweet,http://sweetontology.net/realmHydroBody/Channel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:channel rdfs:subClassOf :body_of_water .
+
+",channel is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/CheckDam,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:check_dam rdfs:subClassOf :dam ;
+    :definition [ ] .
+
+","A check dam is a type of dam, defined as something that.",2,True
+sweet,http://sweetontology.net/realmHydroBody/Creek,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:creek rdfs:subClassOf :stream .
+
+",creek is a type of stream.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Dam,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dam rdfs:subClassOf :structure ;
+    :definition [ ] .
+
+","A dam is a type of structure, defined as something that.",2,True
+sweet,http://sweetontology.net/realmHydroBody/Estuary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:estuary rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sediment ;
+            owl:onProperty :has_substance ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_substance ;
+            owl:someValuesFrom :brackish_water ],
+        :body_of_water .
+
+",An estuary is a type of body of water that is characterized by having brackish water and solely contains sediment as its substance.,3,True
+sweet,http://sweetontology.net/realmHydroBody/Fiord,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fiord rdfs:subClassOf :estuary ;
+    owl:equivalentClass :fjord .
+
+","Fiord, which is the same as fjord, is a type of estuary.",2,True
+sweet,http://sweetontology.net/realmHydroBody/Fjord,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fjord rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :glacier ;
+            owl:onProperty :has_realm ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :valley ;
+            owl:onProperty :has_realm ],
+        :estuary .
+
+","A fjord is a type of estuary, and it is specifically a type that exists only within the realms of glaciers and valleys.",3,True
+sweet,http://sweetontology.net/realmHydroBody/FreshwaterLake,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:freshwater_lake rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :fresh_water ;
+            owl:onProperty :has_substance ],
+        :lake .
+
+",A freshwater lake is a type of lake that is characterized by having only fresh water as its substance.,2,True
+sweet,http://sweetontology.net/realmHydroBody/Inlet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inlet rdfs:subClassOf :estuary .
+
+",inlet is a type of estuary.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Lagoon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lagoon rdfs:subClassOf :body_of_water .
+
+",lagoon is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Lake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lake rdfs:subClassOf :body_of_water .
+
+",lake is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Marsh,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marsh rdfs:subClassOf :wetland .
+
+",marsh is a type of wetland.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Mouth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mouth rdfs:subClassOf :body_of_water .
+
+",mouth is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Peatland,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peatland rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :peat ;
+            owl:onProperty :has_substance ],
+        :wetland .
+
+",Peatland is a type of wetland that is characterized exclusively by the presence of peat substance.,2,True
+sweet,http://sweetontology.net/realmHydroBody/Pond,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pond rdfs:subClassOf :body_of_water,
+        :channel .
+
+",A pond is both a type of body of water and a type of channel.,2,True
+sweet,http://sweetontology.net/realmHydroBody/RaisedBog,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raised_bog rdfs:subClassOf :bog .
+
+",raised bog is a type of bog.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Reservoir,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reservoir rdfs:subClassOf :body_of_water .
+
+",reservoir is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/River,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:river rdfs:subClassOf :body_of_water .
+
+",river is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/SeaSurface,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_surface rdfs:subClassOf :carbonate_compensation_level,
+        :planetary_surface,
+        :subaerial,
+        :water_body_boundary .
+
+","The sea surface is a type of planetary surface, subaerial, carbonate compensation level, and water body boundary.",4,True
+sweet,http://sweetontology.net/realmHydroBody/Sound,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sound rdfs:subClassOf :body_of_water .
+
+",sound is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Spring,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spring rdfs:subClassOf :body_of_water .
+
+",spring is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Strait,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strait rdfs:subClassOf :channel .
+
+",strait is a type of channel.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Stream,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stream rdfs:subClassOf :body_of_water .
+
+",stream is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmHydroBody/Swamp,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:swamp rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vegetation ;
+            owl:onProperty :has_species ],
+        [ a owl:Restriction ;
+            owl:hasValue :saturation ;
+            owl:onProperty :has_state ],
+        :wetland .
+
+","A swamp is a type of wetland, characterized by its unique vegetation species and a state of saturation.",3,True
+sweet,http://sweetontology.net/realmHydroBody/ValleyBog,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:valley_bog rdfs:subClassOf :bog .
+
+",valley bog is a type of bog.,1,False
+sweet,http://sweetontology.net/realmHydroBody/WaterBodyBoundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_body_boundary rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :has_realm ],
+        :planetary_boundary,
+        :planetary_surface_level .
+
+","Water body boundary serves as a type of planetary boundary and is also a type of planetary surface level. Additionally, it is a type of entity that exclusively belongs to the realm of the ocean.",3,True
+sweet,http://sweetontology.net/realmHydroBody/Wetland,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wetland rdfs:subClassOf :body_of_water .
+
+",wetland is a type of body of water.,1,False
+sweet,http://sweetontology.net/realmLandAeolian/Aeolian,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aeolian rdfs:subClassOf :weathering ;
+    owl:equivalentClass :eolian .
+
+","Aeolian, which is the same as eolian, refers to a type of weathering.",2,True
+sweet,http://sweetontology.net/realmLandAeolian/AeolianLandform,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aeolian_landform rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :eolian ;
+            owl:onProperty :has_phenomena ],
+        :landform .
+
+",An aeolian landform is a type of landform that exclusively features aeolian phenomena.,2,True
+sweet,http://sweetontology.net/realmLandAeolian/Barchan,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barchan rdfs:subClassOf :dune,
+        :sand_dune .
+
+","A barchan is a type of dune, specifically a type of sand dune.",2,True
+sweet,http://sweetontology.net/realmLandAeolian/Desert,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:desert rdfs:subClassOf :aeolian_landform .
+
+",desert is a type of aeolian landform.,1,False
+sweet,http://sweetontology.net/realmLandAeolian/Dune,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dune rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sand ;
+            owl:onProperty :has_substance ],
+        :aeolian_landform ;
+    owl:equivalentClass :sand_dune .
+
+","Dune, which is the same as a sand dune, is a type of aeolian landform. Additionally, it is specifically a type of formation that solely consists of the substance sand.",3,True
+sweet,http://sweetontology.net/realmLandAeolian/Eolian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eolian rdfs:subClassOf :weathering .
+
+",eolian is a type of weathering.,1,False
+sweet,http://sweetontology.net/realmLandAeolian/Erg,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:erg rdfs:subClassOf :aeolian_landform .
+
+",erg is a type of aeolian landform.,1,False
+sweet,http://sweetontology.net/realmLandAeolian/HighDesert,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:high_desert rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :elevation ;
+            owl:onProperty :has_spatial_extent ],
+        :desert .
+
+",High desert is a type of desert that is characterized by only having spatial extent elevation.,2,True
+sweet,http://sweetontology.net/realmLandAeolian/SandDune,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sand_dune rdfs:subClassOf :aeolian_landform .
+
+",sand dune is a type of aeolian landform.,1,False
+sweet,http://sweetontology.net/realmLandAeolian/Seif,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seif rdfs:subClassOf :dune,
+        :sand_dune .
+
+","Seif is a type of dune, specifically a type of sand dune.",2,True
+sweet,http://sweetontology.net/realmLandAeolian/Slack,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slack rdfs:subClassOf :aeolian_landform .
+
+",slack is a type of aeolian landform.,1,False
+sweet,http://sweetontology.net/realmLandAeolian/SlipFace,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slip_face rdfs:subClassOf :aeolian_landform .
+
+",slip face is a type of aeolian landform.,1,False
+sweet,http://sweetontology.net/realmLandAeolian/Yardang,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:yardang rdfs:subClassOf :aeolian_landform .
+
+",yardang is a type of aeolian landform.,1,False
+sweet,http://sweetontology.net/realmLandCoastal/Atoll,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atoll rdfs:subClassOf :island .
+
+",atoll is a type of island.,1,False
+sweet,http://sweetontology.net/realmLandCoastal/Bar,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bar rdfs:subClassOf :delta,
+        :spit ;
+    owl:equivalentClass :delta_bar .
+
+",Bar is the same as delta bar and is a type of both delta and spit.,3,True
+sweet,http://sweetontology.net/realmLandCoastal/BarrierIsland,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barrier_island rdfs:subClassOf :island .
+
+",barrier island is a type of island.,1,False
+sweet,http://sweetontology.net/realmLandCoastal/Beach,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:beach rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :body_of_water ;
+            owl:onProperty :is_adjacent_to ],
+        :landform .
+
+",A beach is a type of landform that is specifically adjacent to a body of water.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Coastal,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coastal rdfs:subClassOf :planetary_realm ;
+    owl:equivalentClass :coastal_region .
+
+",Coastal is the same as a coastal region and is a type of planetary realm.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/CoastalLandform,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coastal_landform rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :coastal_region ],
+        :landform .
+
+",A coastal landform is a type of landform and is also a type of something that at least has a realm in some coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/CoastalMargin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coastal_margin rdfs:subClassOf :coastal,
+        :coastal_region,
+        :margin .
+
+","A coastal margin is a type of coastal and coastal region, as well as a type of margin.",3,True
+sweet,http://sweetontology.net/realmLandCoastal/CoastalPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coastal_plain rdfs:subClassOf :coastal,
+        :coastal_region,
+        :plain .
+
+",Coastal plain is a type of coastal region and also a type of plain.,3,True
+sweet,http://sweetontology.net/realmLandCoastal/CoastalRegion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coastal_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_common2_d_border_with ;
+            owl:someValuesFrom :land ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_common2_d_border_with ;
+            owl:someValuesFrom :ocean_region ],
+        :planetary_realm .
+
+",A coastal region is a type of planetary realm that shares at least a common 2D border with both some land and an ocean region.,3,True
+sweet,http://sweetontology.net/realmLandCoastal/Cove,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cove rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",Cove is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Delta,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:delta rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :river ],
+        :coastal_landform .
+
+",Delta is a type of coastal landform and it is also a type of entity that at least intersects with the realm of a river.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/DeltaBar,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:delta_bar rdfs:subClassOf :delta,
+        :spit .
+
+",Delta bar is both a type of delta and a type of spit.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Harbor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:harbor rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",A harbor is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Hinterland,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hinterland rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","Hinterland is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandCoastal/Intertidal,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intertidal rdfs:subClassOf :coastal,
+        :coastal_region ;
+    owl:equivalentClass :intertidal_zone .
+
+","The intertidal, also known as the intertidal zone, is a type of coastal region.",3,True
+sweet,http://sweetontology.net/realmLandCoastal/IntertidalZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intertidal_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean_tide ;
+            owl:onProperty :has_phenomena ],
+        :coastal,
+        :coastal_region ;
+    owl:equivalentClass :littoral,
+        :littoral_zone,
+        :tide_pool .
+
+","The intertidal zone, also known as the littoral or littoral zone, is equivalent to a tide pool. This zone is a type of coastal or coastal region that is characterized by phenomena exclusive to ocean tides.",6,True
+sweet,http://sweetontology.net/realmLandCoastal/Island,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:island rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :body_of_water ;
+            owl:onProperty :surrounded_by ],
+        :landform .
+
+",An island is a type of landform that is entirely surrounded by a body of water.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/IslandArc,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:island_arc rdfs:subClassOf :coastal_landform .
+
+",island arc is a type of coastal landform.,1,False
+sweet,http://sweetontology.net/realmLandCoastal/Isthmus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isthmus rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",An isthmus is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Key,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:key rdfs:subClassOf :island .
+
+",key is a type of island.,1,False
+sweet,http://sweetontology.net/realmLandCoastal/Littoral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:littoral rdfs:subClassOf :coastal,
+        :coastal_region .
+
+","Littoral is a type of coastal region, which is also a type of coastal area.",2,True
+sweet,http://sweetontology.net/realmLandCoastal/LittoralZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:littoral_zone rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",The littoral zone is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/MudFlat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mud_flat rdfs:subClassOf :coastal_landform .
+
+",mud flat is a type of coastal landform.,1,False
+sweet,http://sweetontology.net/realmLandCoastal/Riparian,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:riparian rdfs:subClassOf :coastal,
+        :coastal_region ;
+    owl:equivalentClass :riparian_zone .
+
+","Riparian is the same as a riparian zone and is a type of coastal region, also referred to simply as coastal.",3,True
+sweet,http://sweetontology.net/realmLandCoastal/RiparianZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:riparian_zone rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",The riparian zone is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Shoal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shoal rdfs:subClassOf :coastal_landform .
+
+",shoal is a type of coastal landform.,1,False
+sweet,http://sweetontology.net/realmLandCoastal/Shore,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shore rdfs:subClassOf :coastal,
+        :coastal_region,
+        :land,
+        :land_region,
+        :land_surface,
+        :surface_region ;
+    owl:equivalentClass :shoreline .
+
+","Shore is synonymous with shoreline and is a type of coastal, coastal region, land, land region, land surface, and surface region.",7,True
+sweet,http://sweetontology.net/realmLandCoastal/ShorePlatform,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shore_platform rdfs:subClassOf :coastal,
+        :coastal_region ;
+    owl:equivalentClass :wave_cut_platform .
+
+","A shore platform, which is the same as a wave cut platform, is a type of coastal region.",3,True
+sweet,http://sweetontology.net/realmLandCoastal/Shoreline,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shoreline rdfs:subClassOf :coastal,
+        :coastal_region,
+        :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","Shoreline is a type of coastal, coastal region, land, land region, land surface, and surface region.",6,True
+sweet,http://sweetontology.net/realmLandCoastal/Spit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spit rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",A spit is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Supratidal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supratidal rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",Supratidal is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Terracette,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terracette rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",Terracette is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Tidal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tidal rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",Tidal is a type of coastal and also a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/TidePool,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tide_pool rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",A tide pool is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Tombolo,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tombolo rdfs:subClassOf :bar,
+        :delta_bar .
+
+",A tombolo is both a type of bar and a type of delta bar.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/Updrift,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:updrift rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",Updrift is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/WaveAttackZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wave_attack_zone rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",The wave attack zone is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandCoastal/WaveCutPlatform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wave_cut_platform rdfs:subClassOf :coastal,
+        :coastal_region .
+
+",A wave cut platform is a type of coastal region.,2,True
+sweet,http://sweetontology.net/realmLandFluvial/Alluvial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alluvial rdfs:subClassOf :sediment_formation .
+
+",alluvial is a type of sediment formation.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/AlluvialFan,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alluvial_fan rdfs:subClassOf :piedmont_slope .
+
+",alluvial fan is a type of piedmont slope.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/AlluvialPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alluvial_plain rdfs:subClassOf :fluvial_plain,
+        :piedmont_slope .
+
+",An alluvial plain is both a type of fluvial plain and a type of piedmont slope.,2,True
+sweet,http://sweetontology.net/realmLandFluvial/Bajada,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bajada rdfs:subClassOf :piedmont_slope .
+
+",bajada is a type of piedmont slope.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Bedform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bedform rdfs:subClassOf :fluvial_landform .
+
+",bedform is a type of fluvial landform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Canyon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:canyon rdfs:subClassOf :fluvial_landform .
+
+",canyon is a type of fluvial landform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Catchment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:catchment rdfs:subClassOf :drainage_basin,
+        :watershed .
+
+",A catchment is a type of drainage basin and also a type of watershed.,2,True
+sweet,http://sweetontology.net/realmLandFluvial/Cave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cave rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :contains ;
+            owl:someValuesFrom :tunnel ],
+        :cavity,
+        :fluvial_landform .
+
+","A cave is a type of fluvial landform, a type of cavity, and a type of structure that contains at least some tunnel.",3,True
+sweet,http://sweetontology.net/realmLandFluvial/DrainageBasin,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drainage_basin rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region ;
+    owl:equivalentClass :watershed .
+
+","A drainage basin, which is also known as a watershed, is a type of land, land region, land surface, and surface region.",5,True
+sweet,http://sweetontology.net/realmLandFluvial/DryLake,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_lake rdfs:subClassOf :fluvial_plain ;
+    owl:equivalentClass :playa .
+
+","A dry lake, which is the same as a playa, is a type of fluvial plain.",2,True
+sweet,http://sweetontology.net/realmLandFluvial/FloodPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flood_plain rdfs:subClassOf :fluvial_plain .
+
+",flood plain is a type of fluvial plain.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/FluvialLandform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluvial_landform rdfs:subClassOf :landform .
+
+",fluvial landform is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/FluvialPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluvial_plain rdfs:subClassOf :plain .
+
+",fluvial plain is a type of plain.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Gorge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gorge rdfs:subClassOf :canyon .
+
+",gorge is a type of canyon.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/KarstLandform,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:karst_landform rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :karst ],
+        :landform .
+
+",Karst landform is a type of landform and is characterized by having at least some karst phenomena.,2,True
+sweet,http://sweetontology.net/realmLandFluvial/LacustrinePlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lacustrine_plain rdfs:subClassOf :fluvial_plain .
+
+",lacustrine plain is a type of fluvial plain.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/PiedmontSlope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:piedmont_slope rdfs:subClassOf :fluvial_landform .
+
+",piedmont slope is a type of fluvial landform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Playa,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:playa rdfs:subClassOf :fluvial_plain ;
+    owl:equivalentClass :salt_lake .
+
+",A playa is the same as a salt lake and is a type of fluvial plain.,2,True
+sweet,http://sweetontology.net/realmLandFluvial/Ripple,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ripple rdfs:subClassOf :bedform .
+
+",ripple is a type of bedform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/RiverBed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:river_bed rdfs:subClassOf :bedform .
+
+",river bed is a type of bedform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Sabkha,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sabkha rdfs:subClassOf :salt_flat .
+
+",sabkha is a type of salt flat.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/SaltFlat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:salt_flat rdfs:subClassOf :fluvial_landform .
+
+",salt flat is a type of fluvial landform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/SaltLake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:salt_lake rdfs:subClassOf :fluvial_plain .
+
+",salt lake is a type of fluvial plain.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/ScrollPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scroll_plain rdfs:subClassOf :fluvial_plain .
+
+",scroll plain is a type of fluvial plain.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Trench,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trench rdfs:subClassOf :canyon .
+
+",trench is a type of canyon.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Tunnel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tunnel rdfs:subClassOf :fluvial_landform,
+        :tube .
+
+",A tunnel is a type of fluvial landform and also a type of tube.,2,True
+sweet,http://sweetontology.net/realmLandFluvial/Turbidite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:turbidite rdfs:subClassOf :fluvial_landform .
+
+",turbidite is a type of fluvial landform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Valley,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:valley rdfs:subClassOf :fluvial_landform .
+
+",valley is a type of fluvial landform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Wall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall rdfs:subClassOf :fluvial_landform .
+
+",wall is a type of fluvial landform.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Wash,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wash rdfs:subClassOf :piedmont_slope .
+
+",wash is a type of piedmont slope.,1,False
+sweet,http://sweetontology.net/realmLandFluvial/Watershed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:watershed rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","A watershed is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandGlacial/Arete,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arete rdfs:subClassOf :glacial_landform .
+
+",arete is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/Cirque,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cirque rdfs:subClassOf :glacial_landform .
+
+",cirque is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/Esker,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:esker rdfs:subClassOf :glacial_landform .
+
+",esker is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/GlacialLandform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacial_landform rdfs:subClassOf :landform .
+
+",glacial landform is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/GlacialMoraine,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacial_moraine rdfs:subClassOf :glacial_landform ;
+    owl:equivalentClass :moraine .
+
+",Glacial moraine is the same as moraine and it is a type of glacial landform.,2,True
+sweet,http://sweetontology.net/realmLandGlacial/GlacialOutwashPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacial_outwash_plain rdfs:subClassOf :glacial_plain .
+
+",glacial outwash plain is a type of glacial plain.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/GlacialPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacial_plain rdfs:subClassOf :glacial_landform,
+        :plain .
+
+",A glacial plain is a type of plain and also a type of glacial landform.,2,True
+sweet,http://sweetontology.net/realmLandGlacial/Kame,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kame rdfs:subClassOf :glacial_landform .
+
+",kame is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/Moraine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moraine rdfs:subClassOf :glacial_landform .
+
+",moraine is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/OutwashFan,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outwash_fan rdfs:subClassOf :glacial_landform .
+
+",outwash fan is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/RockGlacier,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rock_glacier rdfs:subClassOf :glacial_landform .
+
+",rock glacier is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/Sandur,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sandur rdfs:subClassOf :glacial_outwash_plain .
+
+",sandur is a type of glacial outwash plain.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/Thermokarst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermokarst rdfs:subClassOf :glacial_landform .
+
+",thermokarst is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/Till,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:till rdfs:subClassOf :glacial_plain ;
+    owl:equivalentClass :till_plain .
+
+","Till is the same as till plain, which is a type of glacial plain.",2,True
+sweet,http://sweetontology.net/realmLandGlacial/TillPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:till_plain rdfs:subClassOf :glacial_plain .
+
+",till plain is a type of glacial plain.,1,False
+sweet,http://sweetontology.net/realmLandGlacial/UShapedValley,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:u_shaped_valley rdfs:subClassOf :glacial_landform .
+
+",u shaped valley is a type of glacial landform.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Alpine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alpine rdfs:subClassOf :mountain_region .
+
+",alpine is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Bluff,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bluff rdfs:subClassOf :hill .
+
+",bluff is a type of hill.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Butte,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:butte rdfs:subClassOf :hill .
+
+",butte is a type of hill.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Cliff,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cliff rdfs:subClassOf :hill .
+
+",cliff is a type of hill.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Foothill,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foothill rdfs:subClassOf :mountain_region .
+
+",foothill is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Hill,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hill rdfs:subClassOf :landform .
+
+",hill is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Hummock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hummock rdfs:subClassOf :landform .
+
+",hummock is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Mesa,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesa rdfs:subClassOf :mountain_region .
+
+",mesa is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Mountain,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain rdfs:subClassOf :landform ;
+    owl:equivalentClass :orography .
+
+",Mountain is the same as orography and is a type of landform.,2,True
+sweet,http://sweetontology.net/realmLandOrographic/MountainRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mountain ;
+            owl:onProperty :cluster_of ],
+        :cluster,
+        :family,
+        :swarm .
+
+","A mountain range is a type of cluster, family, and swarm. Additionally, it is a type of something that only a cluster of mountains can be.",4,True
+sweet,http://sweetontology.net/realmLandOrographic/MountainRegion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mountain ;
+            owl:onProperty :has_realm ],
+        :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","Mountain region is a type of land, land region, and land surface, as well as a type of surface region. Additionally, it is defined as a type of something that exclusively belongs to the realm of mountains.",5,True
+sweet,http://sweetontology.net/realmLandOrographic/NonOrographic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:non_orographic rdfs:subClassOf :landform ;
+    owl:disjointWith :orographic .
+
+",Non orographic is a type of landform and is disjoint with orographic.,2,True
+sweet,http://sweetontology.net/realmLandOrographic/Orographic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orographic rdfs:subClassOf :landform ;
+    owl:equivalentClass :orography .
+
+","Orographic, which is the same as orography, is a type of landform.",2,True
+sweet,http://sweetontology.net/realmLandOrographic/Orography,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orography rdfs:subClassOf :landform .
+
+",orography is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Pass,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pass rdfs:subClassOf :mountain_region .
+
+",pass is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Plateau,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plateau rdfs:subClassOf :mountain_region .
+
+",plateau is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Protrusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protrusion rdfs:subClassOf :ridge .
+
+",protrusion is a type of ridge.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Ridge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ridge rdfs:subClassOf :mountain_region .
+
+",ridge is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Summit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:summit rdfs:subClassOf :mountain_region .
+
+",summit is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/Talus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:talus rdfs:subClassOf :mountain_region .
+
+",talus is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandOrographic/TopographicalRegion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:topographical_region rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","A topographical region is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandOrographic/Ubac,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ubac rdfs:subClassOf :mountain_region .
+
+",ubac is a type of mountain region.,1,False
+sweet,http://sweetontology.net/realmLandProtected/CityPark,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:city_park rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :city ;
+            owl:onProperty :has_jurisdiction ],
+        :park,
+        :parkland .
+
+","City park is a type of park and parkland, and it is a type of something that has jurisdiction only within the city.",3,True
+sweet,http://sweetontology.net/realmLandProtected/CountyPark,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:county_park rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :county ;
+            owl:onProperty :has_jurisdiction ],
+        :park,
+        :parkland .
+
+","A county park is a type of park, parkland, and something that only falls under county jurisdiction.",3,True
+sweet,http://sweetontology.net/realmLandProtected/LandReserve,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_reserve rdfs:subClassOf :administrative_region,
+        :land_resource .
+
+",A land reserve is both a type of administrative region and a type of land resource.,2,True
+sweet,http://sweetontology.net/realmLandProtected/MPA,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mpa rdfs:subClassOf :water_reserve ;
+    owl:equivalentClass :marine_protected_area .
+
+","An MPA, which stands for Marine Protected Area, is recognized as a type of water reserve.",2,True
+sweet,http://sweetontology.net/realmLandProtected/MarineProtectedArea,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_protected_area rdfs:subClassOf :water_reserve .
+
+",marine protected area is a type of water reserve.,1,False
+sweet,http://sweetontology.net/realmLandProtected/NationalForest,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:national_forest rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :country ;
+            owl:onProperty :has_jurisdiction ],
+        :land_reserve .
+
+",A national forest is a type of land reserve and is a type of entity that falls under the jurisdiction of only one country.,2,True
+sweet,http://sweetontology.net/realmLandProtected/NationalMonument,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:national_monument rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :country ;
+            owl:onProperty :has_jurisdiction ],
+        :land_reserve .
+
+",A national monument is both a type of land reserve and a type of entity that falls under the exclusive jurisdiction of a country.,2,True
+sweet,http://sweetontology.net/realmLandProtected/NationalPark,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:national_park rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :country ;
+            owl:onProperty :has_jurisdiction ],
+        :park,
+        :parkland .
+
+","A national park is a type of park, parkland, and something that is exclusively under the jurisdiction of a country.",3,True
+sweet,http://sweetontology.net/realmLandProtected/Park,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:park rdfs:subClassOf :land_reserve ;
+    owl:equivalentClass :parkland .
+
+",Park is synonymous with parkland and it is a type of land reserve.,2,True
+sweet,http://sweetontology.net/realmLandProtected/Parkland,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parkland rdfs:subClassOf :land_reserve .
+
+",parkland is a type of land reserve.,1,False
+sweet,http://sweetontology.net/realmLandProtected/StateForest,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:state_forest rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :state ;
+            owl:onProperty :has_jurisdiction ],
+        :land_reserve .
+
+",State forest is a type of land reserve that only has jurisdiction at the state level.,2,True
+sweet,http://sweetontology.net/realmLandProtected/StatePark,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:state_park rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :state ;
+            owl:onProperty :has_jurisdiction ],
+        :park,
+        :parkland .
+
+","A state park is a type of park, parkland, and something that only has jurisdiction at the state level.",3,True
+sweet,http://sweetontology.net/realmLandProtected/WaterReserve,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_reserve rdfs:subClassOf :administrative_region,
+        :water_resource .
+
+",Water reserve is both a type of administrative region and a type of water resource.,2,True
+sweet,http://sweetontology.net/realmLandProtected/WildlifeRefuge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wildlife_refuge rdfs:subClassOf :land_reserve .
+
+",wildlife refuge is a type of land reserve.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/AseismicRidge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aseismic_ridge rdfs:subClassOf :ridge .
+
+",aseismic ridge is a type of ridge.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/ConvergentBoundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convergent_boundary rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :subsidence ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :asymmetric_heat_flow ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_geologic_province ;
+            owl:someValuesFrom :orogen ],
+        :plate_boundary ;
+    owl:equivalentClass :convergent_margin,
+        :convergent_plate_boundary .
+
+","A convergent boundary, also known as a convergent margin or convergent plate boundary, is a type of plate boundary. This kind of boundary is characterized by certain phenomena, including asymmetric heat flow and subsidence. Additionally, a convergent boundary is associated with a geologic province known as an orogen.",6,True
+sweet,http://sweetontology.net/realmLandTectonic/ConvergentMargin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convergent_margin rdfs:subClassOf :plate_boundary .
+
+",convergent margin is a type of plate boundary.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/ConvergentPlateBoundary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convergent_plate_boundary rdfs:subClassOf :plate_boundary .
+
+",convergent plate boundary is a type of plate boundary.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/Diapir,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diapir rdfs:subClassOf :geologic_feature .
+
+",diapir is a type of geologic feature.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/DivergentBoundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:divergent_boundary rdfs:subClassOf :plate_boundary ;
+    owl:equivalentClass :divergent_plate_boundary .
+
+","A divergent boundary, also known as a divergent plate boundary, is a type of plate boundary.",2,True
+sweet,http://sweetontology.net/realmLandTectonic/DivergentPlateBoundary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:divergent_plate_boundary rdfs:subClassOf :plate_boundary .
+
+",divergent plate boundary is a type of plate boundary.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/FaultZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fault_zone rdfs:subClassOf :geologic_boundary ;
+    owl:equivalentClass :fracture_zone .
+
+","A fault zone, which is the same as a fracture zone, represents a type of geologic boundary.",2,True
+sweet,http://sweetontology.net/realmLandTectonic/FloodBasalt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flood_basalt rdfs:subClassOf :landform .
+
+",flood basalt is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/Footwall,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:footwall rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :fracture_zone ;
+            owl:onProperty :part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :fault ;
+            owl:onProperty :below ],
+        :geologic_feature ;
+    owl:disjointWith :hanging_wall .
+
+","Footwall is a type of geologic feature that is a part of a fracture zone and is located below a fault. Additionally, the footwall is disjoint with the hanging wall.",4,True
+sweet,http://sweetontology.net/realmLandTectonic/FossilPlateBoundary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fossil_plate_boundary rdfs:subClassOf :plate_boundary .
+
+",fossil plate boundary is a type of plate boundary.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/FractureZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fracture_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :fracture ;
+            owl:onProperty :has_phenomena ],
+        :geologic_boundary .
+
+","A fracture zone is a type of geologic boundary, and it is a type of entity that only has the phenomenon of fracture.",2,True
+sweet,http://sweetontology.net/realmLandTectonic/HangingWall,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hanging_wall rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :fracture_zone ;
+            owl:onProperty :part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :fault ;
+            owl:onProperty :above ],
+        :geologic_feature .
+
+",A hanging wall is a type of geologic feature that is part of a fracture zone and is located above a fault.,3,True
+sweet,http://sweetontology.net/realmLandTectonic/LIP,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lip rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :flood_basalt ],
+        :land,
+        :land_region,
+        :land_surface,
+        :surface_region ;
+    owl:equivalentClass :large_igneous_province .
+
+","LIP, which stands for Large Igneous Province, is a type of land, land region, land surface, and surface region. It is characterized as something that encompasses at least a realm of some flood basalt.",6,True
+sweet,http://sweetontology.net/realmLandTectonic/LargeIgneousProvince,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:large_igneous_province rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","A large igneous province is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandTectonic/Ophiolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ophiolite rdfs:subClassOf :geologic_feature .
+
+",ophiolite is a type of geologic feature.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/PairedMetamorphicBelt,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paired_metamorphic_belt rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :asymmetric_heat_flow ;
+            owl:onProperty :has_phenomena ],
+        :geologic_feature .
+
+",A paired metamorphic belt is a type of geologic feature and is a type of phenomenon that only has asymmetric heat flow.,2,True
+sweet,http://sweetontology.net/realmLandTectonic/Plate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plate rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :lithosphere ;
+            owl:onProperty :part_of ],
+        :geologic_province .
+
+",A plate is a type of geologic province and is also a type of entity that constitutes only a part of the lithosphere.,2,True
+sweet,http://sweetontology.net/realmLandTectonic/PlateBoundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plate_boundary rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_geomorphological_type ;
+            owl:someValuesFrom :tectonic_landform ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :triple_junction ;
+            owl:onProperty :has_planetary_structure ],
+        :geologic_boundary .
+
+","A plate boundary is a type of geologic boundary and is also a type of entity that at least has a geomorphological type characterized by some tectonic landform. Additionally, a plate boundary is the type of entity that exclusively possesses a planetary structure known as a triple junction.",3,True
+sweet,http://sweetontology.net/realmLandTectonic/Rift,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rift rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :anorogenic_igneous_rock ;
+            owl:onProperty :has_substance ],
+        :fault_zone,
+        :fracture_zone,
+        :geologic_boundary .
+
+","Rift is a type of geologic boundary, fault zone, and fracture zone. Additionally, rift is a type of something that only has substance in anorogenic igneous rock.",4,True
+sweet,http://sweetontology.net/realmLandTectonic/RiftValley,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rift_valley rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :tectonic_landform ;
+            owl:onProperty :has_geomorphological_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :continental_rift ;
+            owl:onProperty :has_outer_boundary ],
+        :geologic_feature .
+
+","A rift valley is a type of geologic feature that is exclusively categorized as a tectonic landform with geomorphological characteristics. Furthermore, it is defined by having a specific outer boundary known as a continental rift.",3,True
+sweet,http://sweetontology.net/realmLandTectonic/StressRegime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stress_regime rdfs:subClassOf :geologic_boundary .
+
+",stress regime is a type of geologic boundary.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/SubductionZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subduction_zone rdfs:subClassOf :geologic_province .
+
+",subduction zone is a type of geologic province.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/SupraSubductionZoneComplex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supra_subduction_zone_complex rdfs:subClassOf :geologic_province .
+
+",supra subduction zone complex is a type of geologic province.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/Suture,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:suture rdfs:subClassOf :fault_zone,
+        :fossil_plate_boundary,
+        :fracture_zone .
+
+","Suture is a type of fault zone, a type of fossil plate boundary, and also a type of fracture zone.",3,True
+sweet,http://sweetontology.net/realmLandTectonic/TectonicLandform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tectonic_landform rdfs:subClassOf :landform .
+
+",tectonic landform is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/ThrustSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thrust_system rdfs:subClassOf :fault_zone,
+        :fracture_zone .
+
+",The thrust system is both a type of fault zone and a type of fracture zone.,2,True
+sweet,http://sweetontology.net/realmLandTectonic/TransformBoundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transform_boundary rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_basin ;
+            owl:someValuesFrom :transpressional_basin ],
+        :plate_boundary ;
+    owl:equivalentClass :transform_margin,
+        :transform_plate_boundary .
+
+","Transform boundaries are equivalent to both transform margins and transform plate boundaries, indicating a type of plate boundary. Furthermore, transform boundaries represent a category that encompasses entities with at least one basin, specifically a transpressional basin.",4,True
+sweet,http://sweetontology.net/realmLandTectonic/TransformFault,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transform_fault rdfs:subClassOf :fault,
+        :fault_line .
+
+",A transform fault is a type of fault and also a type of fault line.,2,True
+sweet,http://sweetontology.net/realmLandTectonic/TransformMargin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transform_margin rdfs:subClassOf :plate_boundary .
+
+",transform margin is a type of plate boundary.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/TransformPlateBoundary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transform_plate_boundary rdfs:subClassOf :plate_boundary .
+
+",transform plate boundary is a type of plate boundary.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/TranspressionalStressRegime,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transpressional_stress_regime rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :melange ;
+            owl:onProperty :has_substance ],
+        :stress_regime .
+
+",The transpressional stress regime is a type of stress regime that is exclusively associated with the substance melange.,2,True
+sweet,http://sweetontology.net/realmLandTectonic/TranstensionalStressRegime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transtensional_stress_regime rdfs:subClassOf :stress_regime .
+
+",transtensional stress regime is a type of stress regime.,1,False
+sweet,http://sweetontology.net/realmLandTectonic/TripleJunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:triple_junction rdfs:subClassOf :geologic_boundary .
+
+",triple junction is a type of geologic boundary.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/Caldera,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:caldera rdfs:subClassOf :geologic_feature .
+
+",caldera is a type of geologic feature.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/CentralVolcano,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:central_volcano rdfs:subClassOf :volcano .
+
+",central volcano is a type of volcano.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/CompositeVolcano,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:composite_volcano rdfs:subClassOf :volcano ;
+    owl:equivalentClass :compound_volcano .
+
+","A composite volcano, also known as a compound volcano, is a type of volcano.",2,True
+sweet,http://sweetontology.net/realmLandVolcanic/CompoundVolcano,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compound_volcano rdfs:subClassOf :volcano .
+
+",compound volcano is a type of volcano.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/Fumarole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fumarole rdfs:subClassOf :vent .
+
+",fumarole is a type of vent.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/Geothermal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geothermal rdfs:subClassOf :geologic_feature,
+        :heat,
+        :heat_energy,
+        :thermal_energy .
+
+","Geothermal is a type of heat, heat energy, and thermal energy, as well as a type of geologic feature.",4,True
+sweet,http://sweetontology.net/realmLandVolcanic/Geyser,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geyser rdfs:subClassOf :vent .
+
+",geyser is a type of vent.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/HotSpot,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hot_spot rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :anorogenic_igneous_rock ;
+            owl:onProperty :has_substance ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :linear_volcanic_chain ;
+            owl:onProperty :has_realm ],
+        :geologic_feature .
+
+",A hot spot is a type of geologic feature that is characterized by only having the realm of a linear volcanic chain and is exclusively associated with the substance of anorogenic igneous rock.,3,True
+sweet,http://sweetontology.net/realmLandVolcanic/LavaPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lava_plain rdfs:subClassOf :geologic_feature .
+
+",lava plain is a type of geologic feature.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/LinearVolcanicChain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:linear_volcanic_chain rdfs:subClassOf :volcanic_arc,
+        :volcanic_chain .
+
+",A linear volcanic chain is both a type of volcanic arc and a type of volcanic chain.,2,True
+sweet,http://sweetontology.net/realmLandVolcanic/Monogenetic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monogenetic rdfs:subClassOf :volcano .
+
+",monogenetic is a type of volcano.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/ShieldVolcano,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shield_volcano rdfs:subClassOf :volcano .
+
+",shield volcano is a type of volcano.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/Stratovolcano,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stratovolcano rdfs:subClassOf :volcano .
+
+",stratovolcano is a type of volcano.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/SubaqueousVolcano,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subaqueous_volcano rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :has_realm ],
+        :volcano ;
+    owl:equivalentClass :submarine_volcano .
+
+","A subaqueous volcano, which is the same as a submarine volcano, represents a specific category of volcanoes. This type is unique to the realm of the ocean, indicating that its existence is solely within marine environments.",3,True
+sweet,http://sweetontology.net/realmLandVolcanic/SubmarineVolcano,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:submarine_volcano rdfs:subClassOf :volcano .
+
+",submarine volcano is a type of volcano.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/Tumulus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tumulus rdfs:subClassOf :landform .
+
+",tumulus is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/Vent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vent rdfs:subClassOf :crack,
+        :geologic_feature .
+
+",A vent is both a type of crack and a type of geologic feature.,2,True
+sweet,http://sweetontology.net/realmLandVolcanic/VolcanicArc,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_arc rdfs:subClassOf :geologic_province ;
+    owl:equivalentClass :volcanic_chain .
+
+",A volcanic arc is the same as a volcanic chain and is a type of geologic province.,2,True
+sweet,http://sweetontology.net/realmLandVolcanic/VolcanicChain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_chain rdfs:subClassOf :geologic_province .
+
+",volcanic chain is a type of geologic province.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/VolcanicField,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_field rdfs:subClassOf :geologic_province .
+
+",volcanic field is a type of geologic province.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/VolcanicSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_system rdfs:subClassOf :geologic_feature .
+
+",volcanic system is a type of geologic feature.,1,False
+sweet,http://sweetontology.net/realmLandVolcanic/Volcano,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcano rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_primary_substance ;
+            owl:someValuesFrom :magma ],
+        :volcanic_field .
+
+",A volcano is a type of volcanic field and is also a type of entity that has at least magma as its primary substance.,2,True
+sweet,http://sweetontology.net/realmLandform/CentralCreekCrater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:central_creek_crater rdfs:subClassOf :crater .
+
+",central creek crater is a type of crater.,1,False
+sweet,http://sweetontology.net/realmLandform/ComplexCrater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:complex_crater rdfs:subClassOf :crater .
+
+",complex crater is a type of crater.,1,False
+sweet,http://sweetontology.net/realmLandform/Continent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continent rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","A continent is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandform/Crater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crater rdfs:subClassOf :cavity,
+        :landform .
+
+",Crater is a type of landform and also a type of cavity.,2,True
+sweet,http://sweetontology.net/realmLandform/DebrisBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:debris_basin rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","A debris basin is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandform/DeflationZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deflation_zone rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","Deflation zone is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandform/Dryland,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dryland rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","Dryland is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandform/Field,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:field rdfs:subClassOf :landform .
+
+",field is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandform/Highland,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:highland rdfs:subClassOf :landform ;
+    owl:disjointWith :lowland .
+
+","Highland is a type of landform, and it is disjoint with lowland.",2,True
+sweet,http://sweetontology.net/realmLandform/ImpactBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:impact_basin rdfs:subClassOf :landform .
+
+",impact basin is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandform/ImpactCrater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:impact_crater rdfs:subClassOf :crater .
+
+",impact crater is a type of crater.,1,False
+sweet,http://sweetontology.net/realmLandform/Lamination,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lamination rdfs:subClassOf :landform .
+
+",lamination is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandform/Land,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land rdfs:subClassOf :region ;
+    owl:equivalentClass :land_region,
+        :land_surface,
+        :surface_region .
+
+","Land is the same as land region, land surface, and surface region, and it is a type of region.",4,True
+sweet,http://sweetontology.net/realmLandform/LandCover,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_cover rdfs:subClassOf :landform .
+
+",land cover is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandform/LandRegion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_region rdfs:subClassOf :region .
+
+",land region is a type of region.,1,False
+sweet,http://sweetontology.net/realmLandform/LandSurface,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_surface rdfs:subClassOf :region .
+
+",land surface is a type of region.,1,False
+sweet,http://sweetontology.net/realmLandform/Landform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:landform rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","A landform is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/realmLandform/Landscape,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:landscape rdfs:subClassOf :landform .
+
+",landscape is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandform/Lowland,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lowland rdfs:subClassOf :landform .
+
+",lowland is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandform/Mare,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mare rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dark ;
+            owl:onProperty :has_visibility ],
+        :plain .
+
+",Mare is a type of plain that must have a dark visibility.,2,True
+sweet,http://sweetontology.net/realmLandform/PedestalCrater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pedestal_crater rdfs:subClassOf :crater .
+
+",pedestal crater is a type of crater.,1,False
+sweet,http://sweetontology.net/realmLandform/PitCrater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pit_crater rdfs:subClassOf :crater .
+
+",pit crater is a type of crater.,1,False
+sweet,http://sweetontology.net/realmLandform/Plain,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plain rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :flat ;
+            owl:onProperty :has_spatial_configuration ],
+        :landform .
+
+",A plain is a type of landform that must have a spatial configuration that is flat.,2,True
+sweet,http://sweetontology.net/realmLandform/Prarie,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prarie rdfs:subClassOf :plain .
+
+",prarie is a type of plain.,1,False
+sweet,http://sweetontology.net/realmLandform/RockyPitFloorCrater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rocky_pit_floor_crater rdfs:subClassOf :pit_crater .
+
+",rocky pit floor crater is a type of pit crater.,1,False
+sweet,http://sweetontology.net/realmLandform/ShatterCone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shatter_cone rdfs:subClassOf :landform .
+
+",shatter cone is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandform/Spall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spall rdfs:subClassOf :landform .
+
+",spall is a type of landform.,1,False
+sweet,http://sweetontology.net/realmLandform/SurfaceRegion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surface_region rdfs:subClassOf :region .
+
+",surface region is a type of region.,1,False
+sweet,http://sweetontology.net/realmOcean/Abyss,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abyss rdfs:subClassOf :water_body_layer ;
+    owl:equivalentClass :abyssal .
+
+","Abyss is the same as abyssal, and it is a type of water body layer.",2,True
+sweet,http://sweetontology.net/realmOcean/Abyssal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abyssal rdfs:subClassOf :water_body_layer .
+
+",abyssal is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/AbyssopelagicZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abyssopelagic_zone rdfs:subClassOf :water_body_layer .
+
+",abyssopelagic zone is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/AphoticZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aphotic_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :photic_zone ;
+            owl:onProperty :below ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :turbidity ;
+            owl:onProperty :has_quantity ],
+        :water_body_layer .
+
+",The aphotic zone is a type of water body layer characterized by its turbidity and is situated below the photic zone.,3,True
+sweet,http://sweetontology.net/realmOcean/BarrierLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barrier_layer rdfs:subClassOf :water_body_layer .
+
+",barrier layer is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/Bathyal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bathyal rdfs:subClassOf :water_body_layer .
+
+",bathyal is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/BathypelagicZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bathypelagic_zone rdfs:subClassOf :water_body_layer .
+
+",bathypelagic zone is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/BenthicZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:benthic_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :demersal_zone ;
+            owl:onProperty :below ],
+        :water_body_layer .
+
+",The benthic zone is a type of water body layer that is situated below the demersal zone.,2,True
+sweet,http://sweetontology.net/realmOcean/DemersalZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:demersal_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :benthic_zone ;
+            owl:onProperty :above ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :profundal_zone ;
+            owl:onProperty :has_realm ],
+        :water_body_layer .
+
+",The demersal zone is a type of water body layer that is exclusively above the benthic zone and solely encompasses the realm of the profundal zone.,3,True
+sweet,http://sweetontology.net/realmOcean/EuphoticZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:euphotic_zone rdfs:subClassOf :water_body_layer ;
+    owl:equivalentClass :photic_zone .
+
+","The euphotic zone, which is the same as the photic zone, is a type of water body layer.",2,True
+sweet,http://sweetontology.net/realmOcean/Hadal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hadal rdfs:subClassOf :water_body_layer .
+
+",hadal is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/Halocline,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:halocline rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :salinity ;
+            owl:onProperty :has_gradient ],
+        :water_body_layer .
+
+",A halocline is a type of water body layer that is characterized by having only a gradient in salinity.,2,True
+sweet,http://sweetontology.net/realmOcean/LimneticZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:limnetic_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :profundal_zone ;
+            owl:onProperty :above ],
+        :water_body_layer .
+
+",The limnetic zone is a type of water body layer that exists above the profundal zone.,2,True
+sweet,http://sweetontology.net/realmOcean/MesopelagicZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesopelagic_zone rdfs:subClassOf :water_body_layer .
+
+",mesopelagic zone is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/MixedLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixed_layer rdfs:subClassOf :water_body_layer .
+
+",mixed layer is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/NeriticZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neritic_zone rdfs:subClassOf :water_body_layer .
+
+",neritic zone is a type of water body layer.,1,False
+sweet,http://sweetontology.net/realmOcean/OceanRegion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :has_realm ],
+        :planetary_realm .
+
+",The ocean region is a type of planetary realm and is specifically a type of entity that only encompasses the realm of the ocean.,2,True
+sweet,http://sweetontology.net/realmOcean/OpenOcean,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:open_ocean rdfs:subClassOf :ocean_region .
+
+",open ocean is a type of ocean region.,1,False
+sweet,http://sweetontology.net/realmOcean/PelagicSubZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pelagic_sub_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pelagic_zone ;
+            owl:onProperty :part_of ],
+        :ocean_region .
+
+",The pelagic sub zone is a type of ocean region that specifically constitutes a part of the pelagic zone.,2,True
+sweet,http://sweetontology.net/realmOcean/PelagicZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pelagic_zone rdfs:subClassOf :ocean_region .
+
+",pelagic zone is a type of ocean region.,1,False
+sweet,http://sweetontology.net/realmOcean/PhoticZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photic_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :turbidity ;
+            owl:onProperty :has_quantity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :photosynthesis ;
+            owl:onProperty :has_phenomena ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :aphotic_zone ;
+            owl:onProperty :above ],
+        :water_body_layer .
+
+","The photic zone is a type of water body layer characterized by phenomena such as photosynthesis and has a specific quantity of turbidity. Additionally, it is situated above the aphotic zone.",4,True
+sweet,http://sweetontology.net/realmOcean/Polynya,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polynya rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sea_ice ;
+            owl:onProperty :surrounded_by ],
+        :ocean_region .
+
+",A polynya is a type of ocean region that is only surrounded by sea ice.,2,True
+sweet,http://sweetontology.net/realmOcean/ProfundalZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:profundal_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :aphotic_zone ;
+            owl:onProperty :has_realm ],
+        :water_body_layer .
+
+","The profundal zone is a type of water body layer, which is characterized as a part of the realm that comprises only the aphotic zone.",2,True
+sweet,http://sweetontology.net/realmOcean/Pycnocline,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pycnocline rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :salinity ;
+            owl:onProperty :has_gradient ],
+        :water_body_layer .
+
+",Pycnocline is a type of water body layer that is characterized by having only gradient salinity.,2,True
+sweet,http://sweetontology.net/realmOcean/Thermocline,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermocline rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :temperature_gradient ;
+            owl:onProperty :has_quantity ],
+        :water_body_layer .
+
+",Thermocline is a type of water body layer which is characterized specifically by having only a temperature gradient as its quantity.,2,True
+sweet,http://sweetontology.net/realmOcean/WaterBodyLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_body_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :has_realm ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+","The water body layer is a type of global planetary layer and a type of planetary layer. Additionally, it is a type of something that only exists in the realm of the ocean.",3,True
+sweet,http://sweetontology.net/realmOceanFeature/EarthEasternBoundaryCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:earth_eastern_boundary_current rdfs:subClassOf :earth_ocean_current,
+        :eastern_boundary_current .
+
+",The Earth Eastern Boundary Current is a type of Eastern Boundary Current and also a type of Earth Ocean Current.,2,True
+sweet,http://sweetontology.net/realmOceanFeature/EarthOcean,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:earth_ocean rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :earth ;
+            owl:onProperty :has_astronomical_body ],
+        :ocean .
+
+",Earth ocean is a type of ocean that must have the astronomical body Earth.,2,True
+sweet,http://sweetontology.net/realmOceanFeature/EarthOceanCurrent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:earth_ocean_current rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :earth ;
+            owl:onProperty :has_astronomical_body ],
+        :ocean_current .
+
+","The Earth Ocean Current is a type of ocean current that is associated specifically with the astronomical body, Earth.",2,True
+sweet,http://sweetontology.net/realmOceanFeature/EarthWesternBoundaryCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:earth_western_boundary_current rdfs:subClassOf :earth_ocean_current,
+        :western_boundary_current .
+
+",The Earth's western boundary current is a type of western boundary current and is also a type of Earth ocean current.,2,True
+sweet,http://sweetontology.net/realmOceanFeature/KamchatkaCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kamchatka_current rdfs:subClassOf :ocean_current .
+
+",kamchatka current is a type of ocean current.,1,False
+sweet,http://sweetontology.net/realmOceanFeature/OceanArea,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_area rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :million_km2 ;
+            owl:onProperty :has_unit ],
+        :area .
+
+",Ocean area is a type of area and is also a type of something that must have a unit measured in million km².,2,True
+sweet,http://sweetontology.net/realmOceanFeature/OceanDepth,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_depth rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter ;
+            owl:onProperty :has_unit ],
+        :depth .
+
+",Ocean depth is a type of depth and must have the unit meter.,2,True
+sweet,http://sweetontology.net/realmOceanFeature/OceanVolume,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_volume rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :million_km3 ;
+            owl:onProperty :has_unit ],
+        :volume .
+
+",Ocean volume is a type of volume that must have a unit of million km^3.,2,True
+sweet,http://sweetontology.net/realmOceanFeature/YellowSeaWarmCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:yellow_sea_warm_current rdfs:subClassOf :ocean_current .
+
+",yellow sea warm current is a type of ocean current.,1,False
+sweet,http://sweetontology.net/realmOceanFloor/AbyssalHill,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abyssal_hill rdfs:subClassOf :hill,
+        :ocean_floor,
+        :sea_floor,
+        :seabed .
+
+","An abyssal hill is a type of hill, ocean floor, sea floor, and seabed.",4,True
+sweet,http://sweetontology.net/realmOceanFloor/AbyssalPlain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abyssal_plain rdfs:subClassOf :ocean_floor,
+        :plain,
+        :sea_floor,
+        :seabed .
+
+","An abyssal plain is a type of plain, ocean floor, sea floor, and seabed.",4,True
+sweet,http://sweetontology.net/realmOceanFloor/AbyssalTrench,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abyssal_trench rdfs:subClassOf :ocean_floor,
+        :sea_floor,
+        :seabed,
+        :trench ;
+    owl:equivalentClass :deep_sea_trench .
+
+","An abyssal trench is the same as a deep sea trench and is a type of trench. Furthermore, it is a type of ocean floor, sea floor, and seabed.",5,True
+sweet,http://sweetontology.net/realmOceanFloor/AlgalFlat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:algal_flat rdfs:subClassOf :ocean_floor,
+        :sea_floor,
+        :seabed .
+
+","Algal flat is a type of ocean floor, sea floor, and seabed.",3,True
+sweet,http://sweetontology.net/realmOceanFloor/ColdSeep,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cold_seep rdfs:subClassOf :fissure,
+        :ocean_floor,
+        :sea_floor,
+        :seabed .
+
+","A cold seep is a type of fissure, ocean floor, sea floor, and seabed.",4,True
+sweet,http://sweetontology.net/realmOceanFloor/ContinentalRise,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_rise rdfs:subClassOf :ocean_floor,
+        :sea_floor,
+        :seabed .
+
+","The continental rise is a type of ocean floor, sea floor, and seabed.",3,True
+sweet,http://sweetontology.net/realmOceanFloor/ContinentalShelf,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_shelf rdfs:subClassOf :ocean_floor,
+        :sea_floor,
+        :seabed .
+
+","The Continental Shelf is a type of ocean floor, sea floor, and seabed.",3,True
+sweet,http://sweetontology.net/realmOceanFloor/ContinentalSlope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_slope rdfs:subClassOf :ocean_floor,
+        :sea_floor,
+        :seabed .
+
+","The continental slope is a type of ocean floor, sea floor, and seabed.",3,True
+sweet,http://sweetontology.net/realmOceanFloor/DeepOceanBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deep_ocean_basin rdfs:subClassOf :ocean_floor,
+        :sea_floor,
+        :seabed .
+
+","The deep ocean basin is a type of ocean floor, sea floor, and seabed.",3,True
+sweet,http://sweetontology.net/realmOceanFloor/DeepSeaTrench,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deep_sea_trench rdfs:subClassOf :ocean_floor,
+        :sea_floor,
+        :seabed,
+        :trench .
+
+","A deep sea trench is a type of trench, ocean floor, sea floor, and seabed.",4,True
+sweet,http://sweetontology.net/realmOceanFloor/Guyot,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:guyot rdfs:subClassOf :seamount .
+
+",guyot is a type of seamount.,1,False
+sweet,http://sweetontology.net/realmOceanFloor/HydrothermalVent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrothermal_vent rdfs:subClassOf :geyser,
+        :ocean_floor,
+        :sea_floor,
+        :seabed .
+
+","A hydrothermal vent is a type of geyser, ocean floor, sea floor, and seabed.",4,True
+sweet,http://sweetontology.net/realmOceanFloor/MidOceanRidge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mid_ocean_ridge rdfs:subClassOf :ocean_ridge .
+
+",mid ocean ridge is a type of ocean ridge.,1,False
+sweet,http://sweetontology.net/realmOceanFloor/OceanFloor,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_floor rdfs:subClassOf :carbonate_compensation_level,
+        :water_body_boundary ;
+    owl:equivalentClass :sea_floor .
+
+","The ocean floor, which is the same as the sea floor, is categorized as a type of carbonate compensation level and is also considered a type of water body boundary.",3,True
+sweet,http://sweetontology.net/realmOceanFloor/OceanRidge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_ridge rdfs:subClassOf :ocean_floor,
+        :ridge,
+        :sea_floor,
+        :seabed .
+
+","An ocean ridge is a type of ridge, ocean floor, sea floor, and seabed.",4,True
+sweet,http://sweetontology.net/realmOceanFloor/OceanicPlateau,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oceanic_plateau rdfs:subClassOf :ocean_ridge .
+
+",oceanic plateau is a type of ocean ridge.,1,False
+sweet,http://sweetontology.net/realmOceanFloor/Reef,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reef rdfs:subClassOf :ocean_ridge .
+
+",reef is a type of ocean ridge.,1,False
+sweet,http://sweetontology.net/realmOceanFloor/SeaFloor,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_floor rdfs:subClassOf :carbonate_compensation_level,
+        :water_body_boundary ;
+    owl:equivalentClass :seabed .
+
+","The sea floor, also known as the seabed, is a type of carbonate compensation level and a type of water body boundary.",3,True
+sweet,http://sweetontology.net/realmOceanFloor/Seabed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seabed rdfs:subClassOf :carbonate_compensation_level,
+        :water_body_boundary .
+
+",The seabed serves as both a type of carbonate compensation level and a type of water body boundary.,2,True
+sweet,http://sweetontology.net/realmOceanFloor/Seamount,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seamount rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sea_floor ;
+            owl:onProperty :has_realm ],
+        :mountain,
+        :orographic,
+        :orography .
+
+","Seamount is a type of mountain, orographic, and orography. Additionally, it is a type of something that exclusively belongs to the realm of the sea floor.",4,True
+sweet,http://sweetontology.net/realmOceanFloor/SubmarineCanyon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:submarine_canyon rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sea_floor ;
+            owl:onProperty :has_realm ],
+        :canyon .
+
+",A submarine canyon is a type of canyon that is exclusively found in the realm of the sea floor.,2,True
+sweet,http://sweetontology.net/realmRegion/Austral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:austral rdfs:subClassOf :south_latitude_band .
+
+",austral is a type of south latitude band.,1,False
+sweet,http://sweetontology.net/realmRegion/Borealis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:borealis rdfs:subClassOf :north_latitude_band .
+
+",borealis is a type of north latitude band.,1,False
+sweet,http://sweetontology.net/realmRegion/LatitudeBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:latitude_band rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :degrees ;
+            owl:onProperty :has_unit ],
+        :physical_quantity,
+        :region .
+
+",Latitude band is a type of physical quantity and a type of region that must have units in degrees.,3,True
+sweet,http://sweetontology.net/realmRegion/LatitudeLine,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:latitude_line rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :degrees ;
+            owl:onProperty :has_unit ],
+        :physical_quantity,
+        :region .
+
+","Latitude line is a type of physical quantity and a type of region. Additionally, it is a type of something that must have units in degrees.",3,True
+sweet,http://sweetontology.net/realmRegion/NorthLatitudeBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:north_latitude_band rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0 ;
+            owl:onProperty :has_lower_bound ],
+        :latitude_band .
+
+","The North Latitude Band is a type of latitude band, which must have a lower bound of 0.",2,True
+sweet,http://sweetontology.net/realmRegion/NorthLatitudeLine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:north_latitude_line rdfs:subClassOf :latitude_line .
+
+",north latitude line is a type of latitude line.,1,False
+sweet,http://sweetontology.net/realmRegion/NorthernHemisphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:northern_hemisphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 90 ;
+            owl:onProperty :has_upper_bound ],
+        :north_latitude_band .
+
+",The Northern Hemisphere is identified as a type of north latitude band that must have an upper bound of 90.,2,True
+sweet,http://sweetontology.net/realmRegion/SouthLatitudeBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:south_latitude_band rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0 ;
+            owl:onProperty :has_upper_bound ],
+        :latitude_band .
+
+",South latitude band is a type of latitude band and is also a type of something that must have an upper bound of 0.,2,True
+sweet,http://sweetontology.net/realmRegion/SouthLatitudeLine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:south_latitude_line rdfs:subClassOf :latitude_line .
+
+",south latitude line is a type of latitude line.,1,False
+sweet,http://sweetontology.net/realmRegion/SouthernHemisphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:southern_hemisphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue -90 ;
+            owl:onProperty :has_lower_bound ],
+        :south_latitude_band .
+
+",The Southern Hemisphere is a type of south latitude band and is characterized as something that must have a lower bound of -90.,2,True
+sweet,http://sweetontology.net/realmSoil/A_Horizon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:a_horizon rdfs:subClassOf :soil_layer ;
+    owl:equivalentClass :topsoil .
+
+","A horizon, which is a type of soil layer, is the same as topsoil.",2,True
+sweet,http://sweetontology.net/realmSoil/ActiveLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:active_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :permafrost ],
+        :soil_layer .
+
+",The active layer is a type of soil layer that constitutes at least part of some permafrost.,2,True
+sweet,http://sweetontology.net/realmSoil/Alfisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alfisol rdfs:subClassOf :soil_order .
+
+",alfisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/Andisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andisol rdfs:subClassOf :soil_order .
+
+",andisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/Aridisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aridisol rdfs:subClassOf :soil_order .
+
+",aridisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/B_Horizon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:b_horizon rdfs:subClassOf :soil_layer ;
+    owl:equivalentClass :subsoil .
+
+","B horizon, which is a type of soil layer, is the same as subsoil.",2,True
+sweet,http://sweetontology.net/realmSoil/C_Horizon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:c_horizon rdfs:subClassOf :soil_layer ;
+    owl:equivalentClass :parent_rock .
+
+",C horizon is a type of soil layer that is the same as the parent rock.,2,True
+sweet,http://sweetontology.net/realmSoil/Cryosol,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cryosol rdfs:subClassOf :soil_order ;
+    owl:equivalentClass :gelisol .
+
+","Cryosol, which is the same as Gelisol, is a type of soil order.",2,True
+sweet,http://sweetontology.net/realmSoil/Entisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:entisol rdfs:subClassOf :soil_order .
+
+",entisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/Gelisol,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gelisol rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cryoturbation ;
+            owl:onProperty :has_process ],
+        :soil_order .
+
+",Gelisol is a type of soil order that is characterized by the process of cryoturbation.,2,True
+sweet,http://sweetontology.net/realmSoil/Ground,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ground rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        :soil_layer .
+
+",Ground is a type of soil layer and it is also a type of something that must have a solid state.,2,True
+sweet,http://sweetontology.net/realmSoil/Histisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:histisol rdfs:subClassOf :soil_order .
+
+",histisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/Inceptisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inceptisol rdfs:subClassOf :soil_order .
+
+",inceptisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/Mollisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mollisol rdfs:subClassOf :soil_order .
+
+",mollisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/O_Horizon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:o_horizon rdfs:subClassOf :soil_layer ;
+    owl:equivalentClass :organic_matter .
+
+","The O horizon, which is the same as organic matter, is a type of soil layer.",2,True
+sweet,http://sweetontology.net/realmSoil/OrganicMatter,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_matter rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :above ;
+            owl:someValuesFrom :p_horizon ],
+        [ a owl:Restriction ;
+            owl:onProperty :above ;
+            owl:someValuesFrom :topsoil ],
+        :soil_layer .
+
+","Organic matter is a type of soil layer, which is positioned at least above some P horizon and some topsoil.",3,True
+sweet,http://sweetontology.net/realmSoil/Oxisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oxisol rdfs:subClassOf :soil_order .
+
+",oxisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/P_Horizon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:p_horizon rdfs:subClassOf :soil_layer .
+
+",p horizon is a type of soil layer.,1,False
+sweet,http://sweetontology.net/realmSoil/Paleosol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paleosol rdfs:subClassOf :soil_order .
+
+",paleosol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/ParentRock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parent_rock rdfs:subClassOf :soil_layer .
+
+",parent rock is a type of soil layer.,1,False
+sweet,http://sweetontology.net/realmSoil/Permafrost,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:permafrost rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :frozen ;
+            owl:onProperty :has_state ],
+        :soil_layer .
+
+",Permafrost is a type of soil layer that must be in a frozen state.,2,True
+sweet,http://sweetontology.net/realmSoil/Regolith,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regolith rdfs:subClassOf :soil_layer .
+
+",regolith is a type of soil layer.,1,False
+sweet,http://sweetontology.net/realmSoil/SoilHorizon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:soil_horizon rdfs:subClassOf :soil_layer .
+
+",soil horizon is a type of soil layer.,1,False
+sweet,http://sweetontology.net/realmSoil/SoilLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:soil_layer rdfs:subClassOf :global_planetary_layer,
+        :planetary_layer .
+
+",The soil layer is a type of global planetary layer and also a type of planetary layer.,2,True
+sweet,http://sweetontology.net/realmSoil/SoilOrder,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:soil_order rdfs:subClassOf :category,
+        :classification .
+
+",Soil order is a type of category and classification.,2,True
+sweet,http://sweetontology.net/realmSoil/Spodosol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spodosol rdfs:subClassOf :soil_order .
+
+",spodosol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/Subsoil,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subsoil rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :above ;
+            owl:someValuesFrom :parent_rock ],
+        :soil_layer .
+
+",Subsoil is a type of soil layer and is situated above some parent rock.,2,True
+sweet,http://sweetontology.net/realmSoil/Substrata,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:substrata rdfs:subClassOf :soil_layer ;
+    owl:equivalentClass :substratum .
+
+","Substrata, which is the same as substratum, is a type of soil layer.",2,True
+sweet,http://sweetontology.net/realmSoil/Substratum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:substratum rdfs:subClassOf :soil_layer .
+
+",substratum is a type of soil layer.,1,False
+sweet,http://sweetontology.net/realmSoil/SurfaceSoil,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surface_soil rdfs:subClassOf :soil_layer ;
+    owl:equivalentClass :topsoil .
+
+","Surface soil, which is the same as topsoil, is a type of soil layer.",2,True
+sweet,http://sweetontology.net/realmSoil/Talik,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:talik rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :permafrost ;
+            owl:onProperty :part_of ],
+        :soil_layer .
+
+",Talik is a type of soil layer and is something that is only part of permafrost.,2,True
+sweet,http://sweetontology.net/realmSoil/Topsoil,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:topsoil rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :above ;
+            owl:someValuesFrom :subsoil ],
+        :soil_layer .
+
+",Topsoil is a type of soil layer that is positioned above some subsoil.,2,True
+sweet,http://sweetontology.net/realmSoil/Ultisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ultisol rdfs:subClassOf :soil_order .
+
+",ultisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/realmSoil/Vertisol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertisol rdfs:subClassOf :soil_order .
+
+",vertisol is a type of soil order.,1,False
+sweet,http://sweetontology.net/repr/CardinalScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cardinal_scale rdfs:subClassOf :quantitative_scale .
+
+",cardinal scale is a type of quantitative scale.,1,False
+sweet,http://sweetontology.net/repr/CategoricalScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:categorical_scale rdfs:subClassOf :measurement_scale,
+        :scale ;
+    owl:disjointWith :ordinal_scale,
+        :quantitative_scale .
+
+",A categorical scale is both a type of measurement scale and a type of scale itself. It is disjoint from both ordinal and quantitative scales.,4,True
+sweet,http://sweetontology.net/repr/Component,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:component rdfs:subClassOf :scalar ;
+    owl:equivalentClass :coordinate .
+
+",A component is the same as a coordinate and is a type of scalar.,2,True
+sweet,http://sweetontology.net/repr/Coordinate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coordinate rdfs:subClassOf :scalar .
+
+",coordinate is a type of scalar.,1,False
+sweet,http://sweetontology.net/repr/CoordinateSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coordinate_system rdfs:subClassOf :reference_frame .
+
+",coordinate system is a type of reference frame.,1,False
+sweet,http://sweetontology.net/repr/Coordinates,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coordinates rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :coordinate ;
+            owl:onProperty :each_element_has_type ],
+        :array .
+
+",Coordinates is a type of array where each element exclusively has the type coordinate.,2,True
+sweet,http://sweetontology.net/repr/DependentVariable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dependent_variable rdfs:subClassOf :variable .
+
+",dependent variable is a type of variable.,1,False
+sweet,http://sweetontology.net/repr/Dimension,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dimension rdfs:subClassOf :representation .
+
+",dimension is a type of representation.,1,False
+sweet,http://sweetontology.net/repr/IndependentVariable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:independent_variable rdfs:subClassOf :variable .
+
+",independent variable is a type of variable.,1,False
+sweet,http://sweetontology.net/repr/IntervalScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interval_scale rdfs:subClassOf :quantitative_scale .
+
+",interval scale is a type of quantitative scale.,1,False
+sweet,http://sweetontology.net/repr/Knowledge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:knowledge rdfs:subClassOf :representation .
+
+",knowledge is a type of representation.,1,False
+sweet,http://sweetontology.net/repr/LogarithmicScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:logarithmic_scale rdfs:subClassOf :quantitative_scale .
+
+",logarithmic scale is a type of quantitative scale.,1,False
+sweet,http://sweetontology.net/repr/Measurement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:measurement rdfs:subClassOf :representation .
+
+",measurement is a type of representation.,1,False
+sweet,http://sweetontology.net/repr/MeasurementScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:measurement_scale rdfs:subClassOf :representation ;
+    owl:equivalentClass :scale .
+
+","A measurement scale, which is the same as a scale, is a type of representation.",2,True
+sweet,http://sweetontology.net/repr/OrdinalScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ordinal_scale rdfs:subClassOf :measurement_scale,
+        :scale ;
+    owl:disjointWith :quantitative_scale .
+
+",The ordinal scale is a type of measurement scale and also a type of scale. It is disjoint with the quantitative scale.,3,True
+sweet,http://sweetontology.net/repr/Qualitative,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qualitative rdfs:subClassOf :measurement_scale,
+        :scale .
+
+",Qualitative is a type of measurement scale and also a type of scale.,2,True
+sweet,http://sweetontology.net/repr/QuantitativeScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quantitative_scale rdfs:subClassOf :measurement_scale,
+        :scale .
+
+",A quantitative scale is a type of measurement scale and is also a type of scale.,2,True
+sweet,http://sweetontology.net/repr/RatioScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ratio_scale rdfs:subClassOf :measurement_scale,
+        :scale .
+
+",The ratio scale is a type of measurement scale and is also considered a type of scale.,2,True
+sweet,http://sweetontology.net/repr/ReferenceFrame,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reference_frame rdfs:subClassOf :numerical_entity .
+
+",reference frame is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/repr/Representation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:representation rdfs:subClassOf owl:Thing .
+
+",representation is a type of thing.,1,False
+sweet,http://sweetontology.net/repr/Scale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scale rdfs:subClassOf :representation .
+
+",scale is a type of representation.,1,False
+sweet,http://sweetontology.net/reprDataFormat/ByteOrder,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:byte_order rdfs:subClassOf :representation .
+
+",byte order is a type of representation.,1,False
+sweet,http://sweetontology.net/reprDataFormat/File,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:file rdfs:subClassOf :representation .
+
+",file is a type of representation.,1,False
+sweet,http://sweetontology.net/reprDataFormat/Format,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:format rdfs:subClassOf :representation .
+
+",format is a type of representation.,1,False
+sweet,http://sweetontology.net/reprDataFormat/Header,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:header rdfs:subClassOf :representation .
+
+",header is a type of representation.,1,False
+sweet,http://sweetontology.net/reprDataFormat/SelfDescribingFormat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:self_describing_format rdfs:subClassOf :format .
+
+",self describing format is a type of format.,1,False
+sweet,http://sweetontology.net/reprDataModel/Array,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:array rdfs:subClassOf :data_structure .
+
+",array is a type of data structure.,1,False
+sweet,http://sweetontology.net/reprDataModel/Cell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cell rdfs:subClassOf :data_model .
+
+",cell is a type of data model.,1,False
+sweet,http://sweetontology.net/reprDataModel/Character,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:character rdfs:subClassOf :representation .
+
+",character is a type of representation.,1,False
+sweet,http://sweetontology.net/reprDataModel/Column,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:column rdfs:subClassOf :dimension .
+
+",column is a type of dimension.,1,False
+sweet,http://sweetontology.net/reprDataModel/DataModel,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_model rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :data ;
+            owl:onProperty :representation_of ],
+        :model,
+        :scientific_model .
+
+","A data model is a type of model and scientific model, specifically it is a type of entity that only represents data.",3,True
+sweet,http://sweetontology.net/reprDataModel/DataStructure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_structure rdfs:subClassOf :representation .
+
+",data structure is a type of representation.,1,False
+sweet,http://sweetontology.net/reprDataModel/Delimiter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:delimiter rdfs:subClassOf :character .
+
+",delimiter is a type of character.,1,False
+sweet,http://sweetontology.net/reprDataModel/Field,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:field rdfs:subClassOf :data_model .
+
+",field is a type of data model.,1,False
+sweet,http://sweetontology.net/reprDataModel/Grid,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:grid rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_geometrical_object ;
+            owl:someValuesFrom :rectangle ],
+        :data_model,
+        :raster .
+
+","Grid is a type of data model and a type of raster. Moreover, it is a type of something that at least has a geometrical object, specifically a rectangle.",3,True
+sweet,http://sweetontology.net/reprDataModel/Increment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:increment rdfs:subClassOf :measurement_scale,
+        :scale .
+
+",Increment is both a type of measurement scale and a type of scale.,2,True
+sweet,http://sweetontology.net/reprDataModel/Parameter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parameter rdfs:subClassOf :dimension .
+
+",parameter is a type of dimension.,1,False
+sweet,http://sweetontology.net/reprDataModel/Point,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:point rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :point ;
+            owl:onProperty :has_geometrical_object ],
+        :data_model .
+
+",Point is a type of data model and is specifically a type of something that only encompasses the geometrical object point.,2,True
+sweet,http://sweetontology.net/reprDataModel/Raster,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:raster rdfs:subClassOf :data_model .
+
+",raster is a type of data model.,1,False
+sweet,http://sweetontology.net/reprDataModel/ReducedGrid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reduced_grid rdfs:subClassOf :grid .
+
+",reduced grid is a type of grid.,1,False
+sweet,http://sweetontology.net/reprDataModel/Resolution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resolution rdfs:subClassOf :increment .
+
+",resolution is a type of increment.,1,False
+sweet,http://sweetontology.net/reprDataModel/Row,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:row rdfs:subClassOf :dimension .
+
+",row is a type of dimension.,1,False
+sweet,http://sweetontology.net/reprDataModel/SpatialRepresentation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_representation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :space ;
+            owl:onProperty :representation_of ],
+        :representation .
+
+",Spatial representation is a type of representation that is exclusively concerned with the representation of space.,2,True
+sweet,http://sweetontology.net/reprDataModel/Structure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:structure rdfs:subClassOf :data_structure .
+
+",structure is a type of data structure.,1,False
+sweet,http://sweetontology.net/reprDataModel/Swath,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:swath rdfs:subClassOf :data_model .
+
+",swath is a type of data model.,1,False
+sweet,http://sweetontology.net/reprDataModel/Swath_2D,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:swath_2d rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :geometrical_object_2d ;
+            owl:onProperty :has_geometrical_object ],
+        :swath .
+
+",Swath 2D is a type of swath and is specifically a type of something that only has geometrical object 2D.,2,True
+sweet,http://sweetontology.net/reprDataModel/Swath_3D,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:swath_3d rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :geometrical_object_3d ;
+            owl:onProperty :has_geometrical_object ],
+        :swath .
+
+","Swath 3D is a type of swath and is exclusively associated with something that possesses the geometrical object, Geometrical Object 3D.",2,True
+sweet,http://sweetontology.net/reprDataModel/TemporalRepresentation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_representation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :time ;
+            owl:onProperty :representation_of ],
+        :representation .
+
+",Temporal representation is a type of representation that is solely concerned with the representation of time.,2,True
+sweet,http://sweetontology.net/reprDataModel/Trajectory,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trajectory rdfs:subClassOf :data_model .
+
+",trajectory is a type of data model.,1,False
+sweet,http://sweetontology.net/reprDataModel/Vector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector rdfs:subClassOf :data_model .
+
+",vector is a type of data model.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Archive,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:archive rdfs:subClassOf :collection ;
+    owl:equivalentClass :archiving .
+
+",Archive is synonymous with archiving and is a type of collection.,2,True
+sweet,http://sweetontology.net/reprDataProduct/Archiving,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:archiving rdfs:subClassOf :collection .
+
+",archiving is a type of collection.,1,False
+sweet,http://sweetontology.net/reprDataProduct/CDR,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cdr rdfs:subClassOf :collection ;
+    owl:equivalentClass :climate_data_record .
+
+",A Climate Data Record (CDR) is a type of collection that is the same as a climate data record.,2,True
+sweet,http://sweetontology.net/reprDataProduct/ClimateDataRecord,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:climate_data_record rdfs:subClassOf :collection .
+
+",climate data record is a type of collection.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Collection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:collection rdfs:subClassOf :data .
+
+",collection is a type of data.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Curate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:curate rdfs:subClassOf :collection ;
+    owl:equivalentClass :curation .
+
+",Curate is the same as curation and is a type of collection.,2,True
+sweet,http://sweetontology.net/reprDataProduct/Curation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:curation rdfs:subClassOf :collection .
+
+",curation is a type of collection.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Data,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data rdfs:subClassOf :realization .
+
+",data is a type of realization.,1,False
+sweet,http://sweetontology.net/reprDataProduct/DataProduct,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_product rdfs:subClassOf :collection .
+
+",data product is a type of collection.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Dataset,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dataset rdfs:subClassOf :data_product .
+
+",dataset is a type of data product.,1,False
+sweet,http://sweetontology.net/reprDataProduct/ESDR,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:esdr rdfs:subClassOf :collection ;
+    owl:equivalentClass :earth_science_data_record .
+
+",The Earth Science Data Record (ESDR) is the same as an earth science data record and it is a type of collection.,2,True
+sweet,http://sweetontology.net/reprDataProduct/EarthScienceDataRecord,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:earth_science_data_record rdfs:subClassOf :collection .
+
+",earth science data record is a type of collection.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Ensemble,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ensemble rdfs:subClassOf :collection .
+
+",ensemble is a type of collection.,1,False

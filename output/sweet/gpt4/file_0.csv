@@ -1,0 +1,2951 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/human/Behavior,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:behavior rdfs:subClassOf :psychological_parameter .
+
+",behavior is a type of psychological parameter.,1,False
+sweet,http://sweetontology.net/human/Census,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:census rdfs:subClassOf :human_activity .
+
+",census is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/CivilDisturbance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:civil_disturbance rdfs:subClassOf :social_activity .
+
+",civil disturbance is a type of social activity.,1,False
+sweet,http://sweetontology.net/human/Colonization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:colonization rdfs:subClassOf :human_activity .
+
+",colonization is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/ConsumptiveUse,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consumptive_use rdfs:subClassOf :human_activity .
+
+",consumptive use is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/EnergyEndUse,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_end_use rdfs:subClassOf :human_activity .
+
+",energy end use is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/HumanActivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:human_activity rdfs:subClassOf owl:Thing .
+
+",human activity is a type of thing.,1,False
+sweet,http://sweetontology.net/human/HumanCapital,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:human_capital rdfs:subClassOf :human_activity,
+        :knowledge .
+
+",Human capital is a type of human activity and knowledge.,2,True
+sweet,http://sweetontology.net/human/HumanNeed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:human_need rdfs:subClassOf :human_activity .
+
+",human need is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/Manned,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:manned rdfs:subClassOf :human_activity ;
+    owl:disjointWith :unmanned .
+
+",Manned is a type of human activity and is disjoint with unmanned.,2,True
+sweet,http://sweetontology.net/human/Mapping,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mapping rdfs:subClassOf :human_activity .
+
+",mapping is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/Profession,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:profession rdfs:subClassOf :human_activity .
+
+",profession is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/PsychologicalParameter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:psychological_parameter rdfs:subClassOf :social_activity .
+
+",psychological parameter is a type of social activity.,1,False
+sweet,http://sweetontology.net/human/Recreation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:recreation rdfs:subClassOf :social_activity .
+
+",recreation is a type of social activity.,1,False
+sweet,http://sweetontology.net/human/Service,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:service rdfs:subClassOf :human_activity .
+
+",service is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/SocialActivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:social_activity rdfs:subClassOf :human_activity .
+
+",social activity is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/SocialBehavior,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:social_behavior rdfs:subClassOf :social_activity .
+
+",social behavior is a type of social activity.,1,False
+sweet,http://sweetontology.net/human/SpaceCooling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:space_cooling rdfs:subClassOf :energy_end_use .
+
+",space cooling is a type of energy end use.,1,False
+sweet,http://sweetontology.net/human/SpaceHeating,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:space_heating rdfs:subClassOf :energy_end_use .
+
+",space heating is a type of energy end use.,1,False
+sweet,http://sweetontology.net/human/Unmanned,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unmanned rdfs:subClassOf :human_activity .
+
+",unmanned is a type of human activity.,1,False
+sweet,http://sweetontology.net/human/WaterHeating,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_heating rdfs:subClassOf :energy_end_use .
+
+",water heating is a type of energy end use.,1,False
+sweet,http://sweetontology.net/human/Work,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:work rdfs:subClassOf :human_activity .
+
+",work is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanAgriculture/AnimalProduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:animal_production rdfs:subClassOf :agriculture .
+
+",animal production is a type of agriculture.,1,False
+sweet,http://sweetontology.net/humanAgriculture/Apiculture,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:apiculture rdfs:subClassOf :animal_production ;
+    owl:equivalentClass :beekeeping .
+
+","Apiculture, which is the same as beekeeping, falls under the category of animal production.",2,True
+sweet,http://sweetontology.net/humanAgriculture/Aquaculture,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aquaculture rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :marine_animal ;
+            owl:onProperty :has_species ],
+        :agriculture .
+
+",Aquaculture is a type of agriculture that specifically involves marine animal species.,2,True
+sweet,http://sweetontology.net/humanAgriculture/Beekeeping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:beekeeping rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :bee ;
+            owl:onProperty :has_species ],
+        :animal_production .
+
+",Beekeeping is a type of animal production that is unique because it only involves the species bee.,2,True
+sweet,http://sweetontology.net/humanAgriculture/Breeding,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:breeding rdfs:subClassOf :animal_production .
+
+",breeding is a type of animal production.,1,False
+sweet,http://sweetontology.net/humanAgriculture/CropProduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crop_production rdfs:subClassOf :plant_production .
+
+",crop production is a type of plant production.,1,False
+sweet,http://sweetontology.net/humanAgriculture/Cultivation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cultivation rdfs:subClassOf :agriculture .
+
+",cultivation is a type of agriculture.,1,False
+sweet,http://sweetontology.net/humanAgriculture/DripIrrigation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drip_irrigation rdfs:subClassOf :agriculture .
+
+",drip irrigation is a type of agriculture.,1,False
+sweet,http://sweetontology.net/humanAgriculture/FishProduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fish_production rdfs:subClassOf :animal_production,
+        :aquaculture .
+
+",Fish production is a type of animal production and also a type of aquaculture.,2,True
+sweet,http://sweetontology.net/humanAgriculture/Fishing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fishing rdfs:subClassOf :production .
+
+",fishing is a type of production.,1,False
+sweet,http://sweetontology.net/humanAgriculture/Harvesting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:harvesting rdfs:subClassOf :plant_production .
+
+",harvesting is a type of plant production.,1,False
+sweet,http://sweetontology.net/humanAgriculture/Horticulture,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:horticulture rdfs:subClassOf :agriculture .
+
+",horticulture is a type of agriculture.,1,False
+sweet,http://sweetontology.net/humanAgriculture/Irrigation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:irrigation rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :soil_cultivation .
+
+","Irrigation is a type of soil cultivation that involves the use of a substance, specifically water.",2,True
+sweet,http://sweetontology.net/humanAgriculture/Logging,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:logging rdfs:subClassOf :production .
+
+",logging is a type of production.,1,False
+sweet,http://sweetontology.net/humanAgriculture/Overfishing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overfishing rdfs:subClassOf :fishing .
+
+",overfishing is a type of fishing.,1,False
+sweet,http://sweetontology.net/humanAgriculture/PlantProduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plant_production rdfs:subClassOf :agriculture .
+
+",plant production is a type of agriculture.,1,False
+sweet,http://sweetontology.net/humanAgriculture/Sericulture,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sericulture rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :silkworm ;
+            owl:onProperty :has_species ],
+        :animal_production .
+
+",Sericulture is a type of animal production that specifically involves the species silkworm.,2,True
+sweet,http://sweetontology.net/humanAgriculture/ShellfishProduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shellfish_production rdfs:subClassOf :animal_production,
+        :aquaculture .
+
+",Shellfish production is both a type of animal production and a form of aquaculture.,2,True
+sweet,http://sweetontology.net/humanAgriculture/SoilCultivation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:soil_cultivation rdfs:subClassOf :agriculture .
+
+",soil cultivation is a type of agriculture.,1,False
+sweet,http://sweetontology.net/humanCommerce/Assembly,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:assembly rdfs:subClassOf :production .
+
+",assembly is a type of production.,1,False
+sweet,http://sweetontology.net/humanCommerce/CapacityBuiiding,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:capacity_buiiding rdfs:subClassOf :human_activity .
+
+",capacity buiiding is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/ClearCutting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clear_cutting rdfs:subClassOf :forestry .
+
+",clear cutting is a type of forestry.,1,False
+sweet,http://sweetontology.net/humanCommerce/Construction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:construction rdfs:subClassOf :production .
+
+",construction is a type of production.,1,False
+sweet,http://sweetontology.net/humanCommerce/ConsumptiveUse,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consumptive_use rdfs:subClassOf :human_activity .
+
+",consumptive use is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Demand,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:demand rdfs:subClassOf :human_activity .
+
+",demand is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Development,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:development rdfs:subClassOf :human_activity .
+
+",development is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Dig,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dig rdfs:subClassOf :extraction,
+        :resource_extraction .
+
+",Dig is both a type of extraction and a type of resource extraction.,2,True
+sweet,http://sweetontology.net/humanCommerce/Drill,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drill rdfs:subClassOf :extraction,
+        :resource_extraction .
+
+",Drill is a type of resource extraction and also a type of extraction.,2,True
+sweet,http://sweetontology.net/humanCommerce/EngineeringActivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:engineering_activity rdfs:subClassOf :production .
+
+",engineering activity is a type of production.,1,False
+sweet,http://sweetontology.net/humanCommerce/Exploration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exploration rdfs:subClassOf :engineering_activity .
+
+",exploration is a type of engineering activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Extraction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extraction rdfs:subClassOf :engineering_activity ;
+    owl:equivalentClass :resource_extraction .
+
+","Extraction, which is the same as resource extraction, is a type of engineering activity.",2,True
+sweet,http://sweetontology.net/humanCommerce/Forestry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forestry rdfs:subClassOf :human_activity .
+
+",forestry is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/FossilFuelBurning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fossil_fuel_burning rdfs:subClassOf :human_activity .
+
+",fossil fuel burning is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Grading,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:grading rdfs:subClassOf :processing .
+
+",grading is a type of processing.,1,False
+sweet,http://sweetontology.net/humanCommerce/InSitu,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:in_situ rdfs:subClassOf :human_activity ;
+    owl:equivalentClass :on_site .
+
+","In situ, which is the same as on-site, represents a type of human activity.",2,True
+sweet,http://sweetontology.net/humanCommerce/Industrialization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:industrialization rdfs:subClassOf :human_activity .
+
+",industrialization is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/LandUse,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_use rdfs:subClassOf :human_activity .
+
+",land use is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Manafacturing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:manafacturing rdfs:subClassOf :production .
+
+",manafacturing is a type of production.,1,False
+sweet,http://sweetontology.net/humanCommerce/Management,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:management rdfs:subClassOf :human_activity .
+
+",management is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/ManagementSystem,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:management_system rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :management ;
+            owl:onProperty :has_human_activity ],
+        :human_activity .
+
+",A management system is a type of human activity and is specifically a type of activity that only involves human activity management.,2,True
+sweet,http://sweetontology.net/humanCommerce/Mining,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mining rdfs:subClassOf :extraction,
+        :resource_extraction .
+
+",Mining is a type of extraction as well as a type of resource extraction.,2,True
+sweet,http://sweetontology.net/humanCommerce/OnSite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:on_site rdfs:subClassOf :human_activity .
+
+",on site is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Packaging,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:packaging rdfs:subClassOf :production .
+
+",packaging is a type of production.,1,False
+sweet,http://sweetontology.net/humanCommerce/Processing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:processing rdfs:subClassOf :production .
+
+",processing is a type of production.,1,False
+sweet,http://sweetontology.net/humanCommerce/Production,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:production rdfs:subClassOf :human_activity .
+
+",production is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Productivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:productivity rdfs:subClassOf :human_activity .
+
+",productivity is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/Prospecting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prospecting rdfs:subClassOf :exploration .
+
+",prospecting is a type of exploration.,1,False
+sweet,http://sweetontology.net/humanCommerce/ResourceExtraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resource_extraction rdfs:subClassOf :engineering_activity .
+
+",resource extraction is a type of engineering activity.,1,False
+sweet,http://sweetontology.net/humanCommerce/StripMining,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strip_mining rdfs:subClassOf :mining .
+
+",strip mining is a type of mining.,1,False
+sweet,http://sweetontology.net/humanCommerce/SustainableDevelopment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sustainable_development rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sustainable ;
+            owl:onProperty :has_human_activity ],
+        :development .
+
+",Sustainable development is a type of development that is characterized exclusively by human activity that is sustainable.,2,True
+sweet,http://sweetontology.net/humanCommerce/Urbanization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:urbanization rdfs:subClassOf :human_activity .
+
+",urbanization is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Allocation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allocation rdfs:subClassOf :decision_activity .
+
+",allocation is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Attribute,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:attribute rdfs:subClassOf :decision_activity .
+
+",attribute is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/BeliefNetwork,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:belief_network rdfs:subClassOf :decision_activity .
+
+",belief network is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Choice,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:choice rdfs:subClassOf :decision_activity .
+
+",choice is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/ConsumerBehavior,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consumer_behavior rdfs:subClassOf :social_behavior .
+
+",consumer behavior is a type of social behavior.,1,False
+sweet,http://sweetontology.net/humanDecision/ControlStrategy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:control_strategy rdfs:subClassOf :decision_activity .
+
+",control strategy is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Criteria,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:criteria rdfs:subClassOf :decision_activity .
+
+",criteria is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/DSS,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dss rdfs:subClassOf :decision_activity ;
+    owl:equivalentClass :decision_support_system .
+
+","DSS, which is the same as a decision support system, is a type of decision activity.",2,True
+sweet,http://sweetontology.net/humanDecision/Decision,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:decision rdfs:subClassOf :decision_activity .
+
+",decision is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/DecisionActivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:decision_activity rdfs:subClassOf :human_activity .
+
+",decision activity is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanDecision/DecisionMaker,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:decision_maker rdfs:subClassOf :decision_activity,
+        :role .
+
+",A decision maker is both a type of decision activity and a type of role.,2,True
+sweet,http://sweetontology.net/humanDecision/DecisionSupportSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:decision_support_system rdfs:subClassOf :decision_activity .
+
+",decision support system is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/DecisionTree,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:decision_tree rdfs:subClassOf :decision_activity,
+        :tree .
+
+",A decision tree is both a type of decision activity and a type of tree.,2,True
+sweet,http://sweetontology.net/humanDecision/EnvironmentalControlObjective,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_control_objective rdfs:subClassOf :control_strategy,
+        :objective .
+
+",The environmental control objective is both a type of control strategy and a type of objective.,2,True
+sweet,http://sweetontology.net/humanDecision/Evaluation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evaluation rdfs:subClassOf :decision_activity .
+
+",evaluation is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/GroupConsensus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:group_consensus rdfs:subClassOf :decision_activity .
+
+",group consensus is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/LocationAllocation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:location_allocation rdfs:subClassOf :allocation .
+
+",location allocation is a type of allocation.,1,False
+sweet,http://sweetontology.net/humanDecision/Multiattribute,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multiattribute rdfs:subClassOf :decision_activity .
+
+",multiattribute is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Multiobjective,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multiobjective rdfs:subClassOf :decision_activity .
+
+",multiobjective is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/MultipleDecisionMaker,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multiple_decision_maker rdfs:subClassOf :decision_activity .
+
+",multiple decision maker is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Objective,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:objective rdfs:subClassOf :decision_activity .
+
+",objective is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Optimization,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:optimization rdfs:subClassOf :decision_activity,
+        :operation_on_function ;
+    owl:equivalentClass :optimize .
+
+","Optimization, which is the same as to optimize, is recognized both as a type of decision activity and as a type of operation on a function.",3,True
+sweet,http://sweetontology.net/humanDecision/Optimize,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:optimize rdfs:subClassOf :decision_activity,
+        :operation_on_function .
+
+",Optimize is a type of decision activity and also a type of operation on function.,2,True
+sweet,http://sweetontology.net/humanDecision/Preference,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:preference rdfs:subClassOf :decision_activity .
+
+",preference is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Ranking,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ranking rdfs:subClassOf :decision_activity .
+
+",ranking is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/ResourceAllocation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resource_allocation rdfs:subClassOf :allocation .
+
+",resource allocation is a type of allocation.,1,False
+sweet,http://sweetontology.net/humanDecision/Scenario,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scenario rdfs:subClassOf :decision_activity .
+
+",scenario is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Screening,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:screening rdfs:subClassOf :decision_activity .
+
+",screening is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/SolutionStrategy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solution_strategy rdfs:subClassOf :decision_activity .
+
+",solution strategy is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Valuation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:valuation rdfs:subClassOf :decision_activity .
+
+",valuation is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanDecision/Weighting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:weighting rdfs:subClassOf :decision_activity .
+
+",weighting is a type of decision activity.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/CEMS,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cems rdfs:subClassOf :environmental_assessment ;
+    owl:equivalentClass :continous_emission_monitoring_system .
+
+","CEMS, which stands for Continuous Emission Monitoring System, is a type of environmental assessment.",2,True
+sweet,http://sweetontology.net/humanEnvirAssessment/CarbonNeutral,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_neutral rdfs:subClassOf :environmental_assessment ;
+    owl:equivalentClass :carbon_neutrality .
+
+","Carbon neutral, which is the same as carbon neutrality, is a type of environmental assessment.",2,True
+sweet,http://sweetontology.net/humanEnvirAssessment/CarbonNeutrality,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_neutrality rdfs:subClassOf :environmental_assessment .
+
+",carbon neutrality is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/ContinousEmissionMonitoringSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continous_emission_monitoring_system rdfs:subClassOf :environmental_assessment .
+
+",continous emission monitoring system is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/CostBenefitAnalysis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cost_benefit_analysis rdfs:subClassOf :environmental_assessment .
+
+",cost benefit analysis is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/EmissionInventory,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:emission_inventory rdfs:subClassOf :environmental_assessment .
+
+",emission inventory is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/EnvironmentalAssessment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_assessment rdfs:subClassOf :assessment .
+
+",environmental assessment is a type of assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/EnvironmentalImpactStatement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_impact_statement rdfs:subClassOf :environmental_assessment .
+
+",environmental impact statement is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/EnvironmentalMonitoring,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_monitoring rdfs:subClassOf :monitor,
+        :monitoring .
+
+",Environmental monitoring is both a type of monitor and a type of monitoring.,2,True
+sweet,http://sweetontology.net/humanEnvirAssessment/HRA,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hra rdfs:subClassOf :environmental_assessment ;
+    owl:equivalentClass :health_risk_assessment .
+
+","HRA, which is the same as Health Risk Assessment, is a type of environmental assessment.",2,True
+sweet,http://sweetontology.net/humanEnvirAssessment/HealthRiskAssessment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:health_risk_assessment rdfs:subClassOf :environmental_assessment .
+
+",health risk assessment is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/ImpactAssessment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:impact_assessment rdfs:subClassOf :environmental_assessment .
+
+",impact assessment is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/NOAEL,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:noael rdfs:subClassOf :health_risk_assessment,
+        :hra ;
+    owl:equivalentClass :no_observed_adverse_effect_level .
+
+","NOAEL, which stands for No Observed Adverse Effect Level, is a type of Health Risk Assessment (HRA). It is essential in the context of HRA, indicating a level of exposure at which there is no significant risk of adverse health effects.",3,True
+sweet,http://sweetontology.net/humanEnvirAssessment/NOEL,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:noel rdfs:subClassOf :health_risk_assessment,
+        :hra ;
+    owl:equivalentClass :no_observed_effect_level .
+
+","NOEL, which stands for No Observed Effect Level, is a type of Health Risk Assessment (HRA).",3,True
+sweet,http://sweetontology.net/humanEnvirAssessment/NSR,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nsr rdfs:subClassOf :environmental_assessment ;
+    owl:equivalentClass :new_source_review .
+
+","NSR, which stands for New Source Review, is a type of environmental assessment.",2,True
+sweet,http://sweetontology.net/humanEnvirAssessment/NationalToxicsInventory,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:national_toxics_inventory rdfs:subClassOf :emission_inventory .
+
+",national toxics inventory is a type of emission inventory.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/NaturalCapital,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:natural_capital rdfs:subClassOf :environmental_assessment .
+
+",natural capital is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/NewSourceReview,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:new_source_review rdfs:subClassOf :environmental_assessment .
+
+",new source review is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/NoObservedAdverseEffectLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:no_observed_adverse_effect_level rdfs:subClassOf :health_risk_assessment,
+        :hra .
+
+",No observed adverse effect level is both a type of HRA and a type of health risk assessment.,2,True
+sweet,http://sweetontology.net/humanEnvirAssessment/NoObservedEffectLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:no_observed_effect_level rdfs:subClassOf :health_risk_assessment,
+        :hra .
+
+",No observed effect level is both a type of HRA and a type of health risk assessment.,2,True
+sweet,http://sweetontology.net/humanEnvirAssessment/StatusAssessment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:status_assessment rdfs:subClassOf :environmental_assessment .
+
+",status assessment is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/SuitabilityAssessment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:suitability_assessment rdfs:subClassOf :environmental_assessment .
+
+",suitability assessment is a type of environmental assessment.,1,False
+sweet,http://sweetontology.net/humanEnvirAssessment/URF,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:urf rdfs:subClassOf :health_risk_assessment,
+        :hra ;
+    owl:equivalentClass :unit_risk_factor .
+
+","URF, which stands for Unit Risk Factor, is a type of Health Risk Assessment (HRA).",3,True
+sweet,http://sweetontology.net/humanEnvirAssessment/UnitRiskFactor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unit_risk_factor rdfs:subClassOf :health_risk_assessment,
+        :hra .
+
+",Unit risk factor is a type of Health Risk Assessment (HRA).,2,True
+sweet,http://sweetontology.net/humanEnvirConservation/Conservation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conservation rdfs:subClassOf :management .
+
+",conservation is a type of management.,1,False
+sweet,http://sweetontology.net/humanEnvirConservation/HabitatManagement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:habitat_management rdfs:subClassOf :land_management .
+
+",habitat management is a type of land management.,1,False
+sweet,http://sweetontology.net/humanEnvirConservation/LandManagement,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_management rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :land ],
+        :management .
+
+",Land management is a type of management that pertains to a realm which encompasses at least some land.,2,True
+sweet,http://sweetontology.net/humanEnvirConservation/LandPreservation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_preservation rdfs:subClassOf :land_management .
+
+",land preservation is a type of land management.,1,False
+sweet,http://sweetontology.net/humanEnvirConservation/LandTenure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_tenure rdfs:subClassOf :land_management .
+
+",land tenure is a type of land management.,1,False
+sweet,http://sweetontology.net/humanEnvirConservation/Protection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:protection rdfs:subClassOf :role,
+        :sustainability,
+        :sustainable .
+
+","Protection serves as a type of sustainability, a form of sustainable action, and also plays a role.",3,True
+sweet,http://sweetontology.net/humanEnvirConservation/Stewardship,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stewardship rdfs:subClassOf :management .
+
+",stewardship is a type of management.,1,False
+sweet,http://sweetontology.net/humanEnvirConservation/Sustainability,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sustainability rdfs:subClassOf :human_activity ;
+    owl:equivalentClass :sustainable .
+
+","Sustainability, which is the same as sustainable, is a type of human activity.",2,True
+sweet,http://sweetontology.net/humanEnvirConservation/Sustainable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sustainable rdfs:subClassOf :human_activity .
+
+",sustainable is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Abatement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abatement rdfs:subClassOf :environmental_control_strategy .
+
+",abatement is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Afforestation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:afforestation rdfs:subClassOf :environmental_control_strategy .
+
+",afforestation is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/AirTreatmentProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_treatment_process rdfs:subClassOf :environmental_control_strategy,
+        :treatment .
+
+",The air treatment process is both a type of environmental control strategy and a type of treatment.,2,True
+sweet,http://sweetontology.net/humanEnvirControl/BACT,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bact rdfs:subClassOf :environmental_control_strategy ;
+    owl:equivalentClass :best_availabl_control_technology .
+
+",BACT is the same as the best available control technology and is a type of environmental control strategy.,2,True
+sweet,http://sweetontology.net/humanEnvirControl/BestAvailablControlTechnology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:best_availabl_control_technology rdfs:subClassOf :environmental_control_strategy .
+
+",best availabl control technology is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Biosequestration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biosequestration rdfs:subClassOf :carbon_sequestration .
+
+",biosequestration is a type of carbon sequestration.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/CapAndTrade,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cap_and_trade rdfs:subClassOf :environmental_control_strategy .
+
+",cap and trade is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/CarbonOffset,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_offset rdfs:subClassOf :environmental_control_strategy .
+
+",carbon offset is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/CarbonSequestration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_sequestration rdfs:subClassOf :sequester .
+
+",carbon sequestration is a type of sequester.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/CloudSeeding,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud_seeding rdfs:subClassOf :environmental_control_strategy .
+
+",cloud seeding is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Compliance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compliance rdfs:subClassOf :environmental_control_strategy .
+
+",compliance is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/ControlledBurn,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:controlled_burn rdfs:subClassOf :environmental_control_strategy .
+
+",controlled burn is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Distillation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:distillation rdfs:subClassOf :water_treatment_process .
+
+",distillation is a type of water treatment process.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/DryScrubbing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_scrubbing rdfs:subClassOf :scrubbing .
+
+",dry scrubbing is a type of scrubbing.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/EnvironmentalControlStrategy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_control_strategy rdfs:subClassOf :control_strategy .
+
+",environmental control strategy is a type of control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Flocculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flocculation rdfs:subClassOf :water_treatment_process .
+
+",flocculation is a type of water treatment process.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/MACT,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mact rdfs:subClassOf :environmental_control_strategy ;
+    owl:equivalentClass :maximum_achievable_control_technology .
+
+","MACT, which stands for Maximum Achievable Control Technology, is a type of environmental control strategy.",2,True
+sweet,http://sweetontology.net/humanEnvirControl/MaximumAchievableControlTechnology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maximum_achievable_control_technology rdfs:subClassOf :environmental_control_strategy .
+
+",maximum achievable control technology is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Pretreatment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pretreatment rdfs:subClassOf :environmental_control_strategy .
+
+",pretreatment is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/PrimaryTreatment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:primary_treatment rdfs:subClassOf :water_treatment_process .
+
+",primary treatment is a type of water treatment process.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Reclamation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reclamation rdfs:subClassOf :environmental_control_strategy .
+
+",reclamation is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Reforestation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reforestation rdfs:subClassOf :revegetation .
+
+",reforestation is a type of revegetation.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Remediation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:remediation rdfs:subClassOf :environmental_control_strategy .
+
+",remediation is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Restoration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:restoration rdfs:subClassOf :environmental_control_strategy .
+
+",restoration is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Revegetation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:revegetation rdfs:subClassOf :environmental_control_strategy .
+
+",revegetation is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Scrubbing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scrubbing rdfs:subClassOf :air_treatment_process .
+
+",scrubbing is a type of air treatment process.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/SecondaryTreatment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:secondary_treatment rdfs:subClassOf :water_treatment_process .
+
+",secondary treatment is a type of water treatment process.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Sequester,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sequester rdfs:subClassOf :environmental_control_strategy .
+
+",sequester is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/StateImplementationPlan,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:state_implementation_plan rdfs:subClassOf :environmental_control_strategy .
+
+",state implementation plan is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/TertiaryTreatment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tertiary_treatment rdfs:subClassOf :water_treatment_process .
+
+",tertiary treatment is a type of water treatment process.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/Treatment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:treatment rdfs:subClassOf :environmental_control_strategy .
+
+",treatment is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/WastewaterTreatment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wastewater_treatment rdfs:subClassOf :treatment .
+
+",wastewater treatment is a type of treatment.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/WaterManagement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_management rdfs:subClassOf :management .
+
+",water management is a type of management.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/WaterTreatmentProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_treatment_process rdfs:subClassOf :environmental_control_strategy,
+        :treatment .
+
+",The water treatment process is a type of treatment and an environmental control strategy.,2,True
+sweet,http://sweetontology.net/humanEnvirControl/WellInjection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:well_injection rdfs:subClassOf :environmental_control_strategy .
+
+",well injection is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirControl/WetScrubbing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wet_scrubbing rdfs:subClassOf :scrubbing .
+
+",wet scrubbing is a type of scrubbing.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/AAQS,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aaqs rdfs:subClassOf :environmental_standard ;
+    owl:equivalentClass :ambient_air_quality_standard .
+
+",The Ambient Air Quality Standard (AAQS) is the same as the ambient air quality standard and is a type of environmental standard.,2,True
+sweet,http://sweetontology.net/humanEnvirStandards/ADI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adi rdfs:subClassOf :acceptable_level ;
+    owl:equivalentClass :acceptable_daily_intake .
+
+","ADI, which stands for acceptable daily intake, is a type of acceptable level.",2,True
+sweet,http://sweetontology.net/humanEnvirStandards/ATCM,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atcm rdfs:subClassOf :environmental_control_strategy ;
+    owl:equivalentClass :airborne_toxic_control_measure .
+
+","ATCM, which stands for Airborne Toxic Control Measure, is identified as a type of environmental control strategy.",2,True
+sweet,http://sweetontology.net/humanEnvirStandards/AcceptableDailyIntake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acceptable_daily_intake rdfs:subClassOf :acceptable_level .
+
+",acceptable daily intake is a type of acceptable level.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/AcceptableLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acceptable_level rdfs:subClassOf :environmental_standard .
+
+",acceptable level is a type of environmental standard.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/AirQualityStandard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_quality_standard rdfs:subClassOf :environmental_standard .
+
+",air quality standard is a type of environmental standard.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/AirborneToxicControlMeasure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:airborne_toxic_control_measure rdfs:subClassOf :environmental_control_strategy .
+
+",airborne toxic control measure is a type of environmental control strategy.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/AmbientAirQualityStandard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ambient_air_quality_standard rdfs:subClassOf :environmental_standard .
+
+",ambient air quality standard is a type of environmental standard.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/EnvironmentalLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_law rdfs:subClassOf :human_law .
+
+",environmental law is a type of human law.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/EnvironmentalStandard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_standard rdfs:subClassOf :environmental_control_strategy,
+        :standard .
+
+",Environmental standard is a type of environmental control strategy and is also a type of standard.,2,True
+sweet,http://sweetontology.net/humanEnvirStandards/EnvironmentalStandardsBody,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_standards_body rdfs:subClassOf :standards_body .
+
+",environmental standards body is a type of standards body.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/NSPS,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nsps rdfs:subClassOf :environmental_standard ;
+    owl:equivalentClass :new_source_performance_standard .
+
+","NSPS, which stands for New Source Performance Standard, is a type of environmental standard.",2,True
+sweet,http://sweetontology.net/humanEnvirStandards/NationalAmbientAirQualityStandard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:national_ambient_air_quality_standard rdfs:subClassOf :aaqs,
+        :ambient_air_quality_standard .
+
+",The National Ambient Air Quality Standard is a type of Ambient Air Quality Standard (AAQS).,2,True
+sweet,http://sweetontology.net/humanEnvirStandards/NewSourcePerformanceStandard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:new_source_performance_standard rdfs:subClassOf :environmental_standard .
+
+",new source performance standard is a type of environmental standard.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/NonAttainmentArea,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:non_attainment_area rdfs:subClassOf :land,
+        :land_region,
+        :land_surface,
+        :surface_region .
+
+","A non-attainment area is a type of land, land region, land surface, and surface region.",4,True
+sweet,http://sweetontology.net/humanEnvirStandards/REC,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rec rdfs:subClassOf :environmental_standard ;
+    owl:equivalentClass :reference_exposure_concentration .
+
+",REC is an environmental standard that is equivalent to the reference exposure concentration.,2,True
+sweet,http://sweetontology.net/humanEnvirStandards/REL,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rel rdfs:subClassOf :environmental_standard ;
+    owl:equivalentClass :reference_exposure_level .
+
+","REL, which stands for reference exposure level, is a type of environmental standard.",2,True
+sweet,http://sweetontology.net/humanEnvirStandards/ReferenceDose,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reference_dose rdfs:subClassOf :dosage,
+        :dose ;
+    owl:equivalentClass :rfd .
+
+","The reference dose, which is the same as RFD, is a type of dosage and dose.",3,True
+sweet,http://sweetontology.net/humanEnvirStandards/ReferenceExposureConcentration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reference_exposure_concentration rdfs:subClassOf :environmental_standard .
+
+",reference exposure concentration is a type of environmental standard.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/ReferenceExposureLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reference_exposure_level rdfs:subClassOf :environmental_standard .
+
+",reference exposure level is a type of environmental standard.,1,False
+sweet,http://sweetontology.net/humanEnvirStandards/RfD,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rfd rdfs:subClassOf :dosage,
+        :dose .
+
+","RFD is a type of dosage, and it is also a type of dose.",2,True
+sweet,http://sweetontology.net/humanEnvirStandards/WaterQualityStandard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_quality_standard rdfs:subClassOf :environmental_standard .
+
+",water quality standard is a type of environmental standard.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/AdministrativeRegion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:administrative_region rdfs:subClassOf :jurisdiction,
+        :region .
+
+",An administrative region is both a type of jurisdiction and a type of region.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/CSA,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:csa rdfs:subClassOf :metropolitan_area ;
+    owl:equivalentClass :combined_statistical_area .
+
+",A Combined Statistical Area (CSA) is the same as a CSA and is a type of metropolitan area.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/City,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:city rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :state ;
+            owl:onProperty :inside ],
+        :administrative_region .
+
+",A city is a type of administrative region that exists solely within a state.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/Civil,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:civil rdfs:subClassOf :jurisdiction ;
+    owl:disjointWith :military ;
+    owl:equivalentClass :civilian .
+
+","Civil is equivalent to civilian and represents a type of jurisdiction. Additionally, civil is mutually exclusive with military.",3,True
+sweet,http://sweetontology.net/humanJurisdiction/Civilian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:civilian rdfs:subClassOf :jurisdiction .
+
+",civilian is a type of jurisdiction.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/CombinedStatisticalArea,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:combined_statistical_area rdfs:subClassOf :metropolitan_area .
+
+",combined statistical area is a type of metropolitan area.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Continent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continent rdfs:subClassOf :administrative_region .
+
+",continent is a type of administrative region.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Country,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:country rdfs:subClassOf :administrative_region .
+
+",country is a type of administrative region.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/County,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:county rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :state ;
+            owl:onProperty :inside ],
+        :administrative_region .
+
+",A county is a type of administrative region that exists solely within a state.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/Enforcement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enforcement rdfs:subClassOf :govt_activity .
+
+",enforcement is a type of govt activity.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Federal,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:federal rdfs:subClassOf :governing_body ;
+    owl:equivalentClass :federal_governing_body .
+
+",Federal is the same as the federal governing body and is a type of governing body.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/FederalGoverningBody,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:federal_governing_body rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :country ;
+            owl:onProperty :has_jurisdiction ],
+        :governing_body .
+
+",A federal governing body is a type of governing body that only has jurisdiction over a country.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/GoverningBody,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:governing_body rdfs:subClassOf :human_activity .
+
+",governing body is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/GoverningBodyProduct,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:governing_body_product rdfs:subClassOf :human_activity .
+
+",governing body product is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Government,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:government rdfs:subClassOf :human_activity .
+
+",government is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/GovtActivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:govt_activity rdfs:subClassOf :human_activity .
+
+",govt activity is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/HumanLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:human_law rdfs:subClassOf :governing_body_product,
+        :knowledge .
+
+",Human law is both a type of governing body product and a type of knowledge.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/Jurisdiction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jurisdiction rdfs:subClassOf :human_activity .
+
+",jurisdiction is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/MSA,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:msa rdfs:subClassOf :metropolitan_area ;
+    owl:equivalentClass :metropolitan_statistical_area .
+
+","MSA, which stands for Metropolitan Statistical Area, is a type of metropolitan area.",2,True
+sweet,http://sweetontology.net/humanJurisdiction/MetropolitanArea,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metropolitan_area rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :country ;
+            owl:onProperty :inside ],
+        :administrative_region .
+
+",A metropolitan area is a type of administrative region that exists solely within a country.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/MetropolitanStatisticalArea,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metropolitan_statistical_area rdfs:subClassOf :metropolitan_area .
+
+",metropolitan statistical area is a type of metropolitan area.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Military,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:military rdfs:subClassOf :jurisdiction .
+
+",military is a type of jurisdiction.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Penalty,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penalty rdfs:subClassOf :enforcement .
+
+",penalty is a type of enforcement.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Permit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:permit rdfs:subClassOf :govt_activity .
+
+",permit is a type of govt activity.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Policy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:policy rdfs:subClassOf :governing_body_product .
+
+",policy is a type of governing body product.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/Province,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:province rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :country ;
+            owl:onProperty :inside ],
+        :administrative_region .
+
+",A province is a type of administrative region that exists only within a country.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/Regulation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regulation rdfs:subClassOf :human_law .
+
+",regulation is a type of human law.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/SAR,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sar rdfs:subClassOf :administrative_region ;
+    owl:equivalentClass :special_administration_region .
+
+","SAR, which stands for Special Administration Region, is a type of administrative region.",2,True
+sweet,http://sweetontology.net/humanJurisdiction/SMSA,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:smsa rdfs:subClassOf :metropolitan_area ;
+    owl:equivalentClass :standard_metropolitan_statistical_area .
+
+","SMSA, which stands for Standard Metropolitan Statistical Area, is a type of metropolitan area.",2,True
+sweet,http://sweetontology.net/humanJurisdiction/SpecialAdministrationRegion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:special_administration_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :country ;
+            owl:onProperty :inside ],
+        :administrative_region .
+
+",A Special Administrative Region is a type of administrative region that exists only within a country.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/Standard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:standard rdfs:subClassOf :governing_body_product .
+
+",standard is a type of governing body product.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/StandardMetropolitanStatisticalArea,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:standard_metropolitan_statistical_area rdfs:subClassOf :metropolitan_area .
+
+",standard metropolitan statistical area is a type of metropolitan area.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/StandardsBody,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:standards_body rdfs:subClassOf :governing_body .
+
+",standards body is a type of governing body.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/State,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:state rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :country ;
+            owl:onProperty :inside ],
+        :administrative_region .
+
+",A state is a type of administrative region that exists only inside a country.,2,True
+sweet,http://sweetontology.net/humanJurisdiction/Treaty,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:treaty rdfs:subClassOf :human_law .
+
+",treaty is a type of human law.,1,False
+sweet,http://sweetontology.net/humanJurisdiction/UrbanArea,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:urban_area rdfs:subClassOf :administrative_region .
+
+",urban area is a type of administrative region.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Anatomy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anatomy rdfs:subClassOf :biology .
+
+",anatomy is a type of biology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/AtmosphericScience,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_science rdfs:subClassOf :planetary_science,
+        :planetology .
+
+",Atmospheric science is a type of planetary science as well as a type of planetology.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/BehavioralScience,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:behavioral_science rdfs:subClassOf :knowledge_domain .
+
+",behavioral science is a type of knowledge domain.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Biochemistry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biochemistry rdfs:subClassOf :biology .
+
+",biochemistry is a type of biology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Biogeochemistry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biogeochemistry rdfs:subClassOf :biology,
+        :geochemistry .
+
+",Biogeochemistry is a type of biology and also a type of geochemistry.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Biology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biology rdfs:subClassOf :science .
+
+",biology is a type of science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Chemistry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemistry rdfs:subClassOf :science .
+
+",chemistry is a type of science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Climatology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:climatology rdfs:subClassOf :planetary_science,
+        :planetology .
+
+",Climatology is both a type of planetary science and planetology.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Dynamics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dynamics rdfs:subClassOf :physics .
+
+",dynamics is a type of physics.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Ecology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ecology rdfs:subClassOf :biology .
+
+",ecology is a type of biology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Economics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:economics rdfs:subClassOf :behavioral_science .
+
+",economics is a type of behavioral science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Epidemiology,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epidemiology rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :disease ;
+            owl:onProperty :study_of ],
+        :biology .
+
+",Epidemiology is a type of biology and is specifically focused on the study of disease.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Genetics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:genetics rdfs:subClassOf :biology .
+
+",genetics is a type of biology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Geochemistry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geochemistry rdfs:subClassOf :chemistry,
+        :geology .
+
+",Geochemistry is a type of chemistry as well as a type of geology.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Geodesy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geodesy rdfs:subClassOf :planetary_science,
+        :planetology ;
+    owl:equivalentClass :geodetic_science,
+        :geodetics .
+
+",Geodesy is synonymous with geodetic science and geodetics. It is a type of planetary science and planetology.,4,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/GeodeticScience,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geodetic_science rdfs:subClassOf :planetary_science,
+        :planetology .
+
+",Geodetic science is a type of planetary science as well as a type of planetology.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Geodetics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geodetics rdfs:subClassOf :planetary_science,
+        :planetology .
+
+","Geodetics is a type of planetary science, as well as a type of planetology.",2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Geology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geology rdfs:subClassOf :science .
+
+",geology is a type of science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Geophysics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geophysics rdfs:subClassOf :geology,
+        :physics .
+
+",Geophysics is a type of geology and also a type of physics.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/HumanDimension,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:human_dimension rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :human_activity ;
+            owl:onProperty :study_of ],
+        :knowledge_domain .
+
+",Human dimension is a type of knowledge domain that focuses exclusively on the study of human activity.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Hydrology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrology rdfs:subClassOf :planetary_science,
+        :planetology .
+
+",Hydrology is a type of planetary science and also a type of planetology.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/KnowledgeDomain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:knowledge_domain rdfs:subClassOf :knowledge .
+
+",knowledge domain is a type of knowledge.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/LandscapeEcology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:landscape_ecology rdfs:subClassOf :ecology .
+
+",landscape ecology is a type of ecology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Limnology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:limnology rdfs:subClassOf :hydrology .
+
+",limnology is a type of hydrology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Lithology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lithology rdfs:subClassOf :petrology .
+
+",lithology is a type of petrology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/MarineScience,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_science rdfs:subClassOf :planetary_science,
+        :planetology ;
+    owl:equivalentClass :oceanography .
+
+","Marine science, which is the same as oceanography, is a type of planetary science as well as a type of planetology.",3,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Mechanics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mechanics rdfs:subClassOf :physics .
+
+",mechanics is a type of physics.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Meteorology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meteorology rdfs:subClassOf :atmospheric_science .
+
+",meteorology is a type of atmospheric science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Mineralogy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mineralogy rdfs:subClassOf :science .
+
+",mineralogy is a type of science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Neotectonics,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neotectonics rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :neotectonic_period ;
+            owl:onProperty :has_time_reference ],
+        :tectonics .
+
+","Neotectonics is a type of tectonics that specifically relates to the neotectonic period, indicating its time reference.",2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/NutritionScience,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nutrition_science rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :food ;
+            owl:onProperty :study_of ],
+        :biology .
+
+",Nutrition science is a type of biology and is specifically the study of food.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Oceanography,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oceanography rdfs:subClassOf :planetary_science,
+        :planetology .
+
+",Oceanography is a type of planetary science as well as a type of planetology.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Oceanology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oceanology rdfs:subClassOf :marine_science,
+        :oceanography .
+
+",Oceanology is a type of marine science and also a type of oceanography.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Paleoclimatology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paleoclimatology rdfs:subClassOf :climatology .
+
+",paleoclimatology is a type of climatology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Paleontology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paleontology rdfs:subClassOf :biology .
+
+",paleontology is a type of biology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Petrography,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petrography rdfs:subClassOf :petrology .
+
+",petrography is a type of petrology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Petrology,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:petrology rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rock ;
+            owl:onProperty :study_of ],
+        :geology .
+
+",Petrology is a type of geology and it is specifically the study of rocks.,2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Phenology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phenology rdfs:subClassOf :climatology .
+
+",phenology is a type of climatology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Photochemistry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photochemistry rdfs:subClassOf :chemistry .
+
+",photochemistry is a type of chemistry.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Physics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physics rdfs:subClassOf :science .
+
+",physics is a type of science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Physiology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physiology rdfs:subClassOf :biology .
+
+",physiology is a type of biology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/PlanetaryScience,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_science rdfs:subClassOf :science ;
+    owl:equivalentClass :planetology .
+
+","Planetary science, which is the same as planetology, is a type of science.",2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Planetology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetology rdfs:subClassOf :science .
+
+",planetology is a type of science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/PlateTectonics,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plate_tectonics rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :lithosphere ;
+            owl:onProperty :has_realm ],
+        :tectonics .
+
+","Plate tectonics is a type of tectonics, and it is a type that exclusively involves the lithosphere realm.",2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Psychology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:psychology rdfs:subClassOf :behavioral_science .
+
+",psychology is a type of behavioral science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Rheology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rheology rdfs:subClassOf :physics .
+
+",rheology is a type of physics.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Science,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:science rdfs:subClassOf :knowledge_domain .
+
+",science is a type of knowledge domain.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Seismology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seismology rdfs:subClassOf :geology .
+
+",seismology is a type of geology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Sociology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sociology rdfs:subClassOf :behavioral_science .
+
+",sociology is a type of behavioral science.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Stratigraphy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stratigraphy rdfs:subClassOf :petrology .
+
+",stratigraphy is a type of petrology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Tectonics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tectonics rdfs:subClassOf :geology .
+
+",tectonics is a type of geology.,1,False
+sweet,http://sweetontology.net/humanKnowledgeDomain/Thermodynamics,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermodynamics rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heat ;
+            owl:onProperty :study_of ],
+        :physics .
+
+","Thermodynamics is a type of physics, specifically focusing exclusively on the study of heat.",2,True
+sweet,http://sweetontology.net/humanKnowledgeDomain/Toxicology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:toxicology rdfs:subClassOf :biology .
+
+",toxicology is a type of biology.,1,False
+sweet,http://sweetontology.net/humanResearch/Analysis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:analysis rdfs:subClassOf :research .
+
+",analysis is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/AppliedResearch,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:applied_research rdfs:subClassOf :research .
+
+",applied research is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/Assessment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:assessment rdfs:subClassOf :investigate,
+        :investigation .
+
+",Assessment is both a type of investigate and a type of investigation.,2,True
+sweet,http://sweetontology.net/humanResearch/Campaign,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:campaign rdfs:subClassOf :experiment_activity .
+
+",campaign is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/humanResearch/Correction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:correction rdfs:subClassOf :experiment_activity .
+
+",correction is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/humanResearch/Difference,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:difference rdfs:subClassOf :experiment_activity .
+
+",difference is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/humanResearch/EndToEndEnvironment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:end_to_end_environment rdfs:subClassOf :research_setting ;
+    owl:disjointWith :laboratory_environment .
+
+","An end-to-end environment is a type of research setting, which is disjoint with a laboratory environment.",2,True
+sweet,http://sweetontology.net/humanResearch/Evidence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evidence rdfs:subClassOf :assessment .
+
+",evidence is a type of assessment.,1,False
+sweet,http://sweetontology.net/humanResearch/Experiment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:experiment rdfs:subClassOf :investigate,
+        :investigation .
+
+",An experiment is a type of investigation.,2,True
+sweet,http://sweetontology.net/humanResearch/ExperimentActivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:experiment_activity rdfs:subClassOf :experiment .
+
+",experiment activity is a type of experiment.,1,False
+sweet,http://sweetontology.net/humanResearch/HypothesisTest,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hypothesis_test rdfs:subClassOf :experiment_activity .
+
+",hypothesis test is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/humanResearch/Investigate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:investigate rdfs:subClassOf :research ;
+    owl:equivalentClass :investigation .
+
+","Investigate is synonymous with investigation, and it is a type of research.",2,True
+sweet,http://sweetontology.net/humanResearch/Investigation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:investigation rdfs:subClassOf :research .
+
+",investigation is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/LaboratoryEnvironment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:laboratory_environment rdfs:subClassOf :research_setting ;
+    owl:disjointWith :mission_tested_environment,
+        :operational_environment,
+        :representative_environment,
+        :verified_validated_environment .
+
+","A laboratory environment is a type of research setting that is distinct and separate from a mission tested environment, an operational environment, a representative environment, and a verified validated environment.",5,True
+sweet,http://sweetontology.net/humanResearch/MissionTestedEnvironment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mission_tested_environment rdfs:subClassOf :research_setting .
+
+",mission tested environment is a type of research setting.,1,False
+sweet,http://sweetontology.net/humanResearch/Monitor,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monitor rdfs:subClassOf :research ;
+    owl:equivalentClass :monitoring .
+
+","Monitoring is the same as a monitor, which is a type of research.",2,True
+sweet,http://sweetontology.net/humanResearch/Monitoring,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monitoring rdfs:subClassOf :research .
+
+",monitoring is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/Observation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:observation rdfs:subClassOf :investigate,
+        :investigation ;
+    owl:equivalentClass :observe .
+
+",Observation is the same as observe and is a type of both investigate and investigation.,3,True
+sweet,http://sweetontology.net/humanResearch/Observe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:observe rdfs:subClassOf :investigate,
+        :investigation .
+
+","Observe is a type of investigate, and it is also a type of investigation.",2,True
+sweet,http://sweetontology.net/humanResearch/OperationalEnvironment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:operational_environment rdfs:subClassOf :research_setting .
+
+",operational environment is a type of research setting.,1,False
+sweet,http://sweetontology.net/humanResearch/Project,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:project rdfs:subClassOf :research .
+
+",project is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/Proof,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proof rdfs:subClassOf :validation .
+
+",proof is a type of validation.,1,False
+sweet,http://sweetontology.net/humanResearch/ProofOfConcept,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proof_of_concept rdfs:subClassOf :proof,
+        :research .
+
+",Proof of concept is both a type of proof and a type of research.,2,True
+sweet,http://sweetontology.net/humanResearch/Publication,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:publication rdfs:subClassOf :research .
+
+",publication is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/Realization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:realization rdfs:subClassOf :experiment_activity .
+
+",realization is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/humanResearch/RepresentativeEnvironment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:representative_environment rdfs:subClassOf :research_setting .
+
+",representative environment is a type of research setting.,1,False
+sweet,http://sweetontology.net/humanResearch/Research,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:research rdfs:subClassOf :human_activity .
+
+",research is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanResearch/ResearchSetting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:research_setting rdfs:subClassOf :research .
+
+",research setting is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/Residual,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:residual rdfs:subClassOf :research .
+
+",residual is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/Result,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:result rdfs:subClassOf :research .
+
+",result is a type of research.,1,False
+sweet,http://sweetontology.net/humanResearch/Sample,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sample rdfs:subClassOf :act_of_sampling,
+        :experiment_activity .
+
+",Sample is a type of experiment activity and also acts as an act of sampling.,2,True
+sweet,http://sweetontology.net/humanResearch/Validation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:validation rdfs:subClassOf :experiment_activity .
+
+",validation is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/humanResearch/Variable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:variable rdfs:subClassOf :representation .
+
+",variable is a type of representation.,1,False
+sweet,http://sweetontology.net/humanResearch/VerifiedValidatedEnvironment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:verified_validated_environment rdfs:subClassOf :research_setting .
+
+",verified validated environment is a type of research setting.,1,False
+sweet,http://sweetontology.net/humanResearch/WeightOfEvidence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:weight_of_evidence rdfs:subClassOf :assessment .
+
+",weight of evidence is a type of assessment.,1,False
+sweet,http://sweetontology.net/humanTechReadiness/TRL,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trl rdfs:subClassOf :ordinal_scale ;
+    owl:equivalentClass :technology_readiness_level .
+
+","TRL, which is the same as Technology Readiness Level, is a type of ordinal scale.",2,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL1,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl1 rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :result ;
+            owl:onProperty :success_in ],
+        [ a owl:Restriction ;
+            owl:hasValue 1 ;
+            owl:onProperty :has_trl ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL1 is a type of Technology Readiness Level (TRL), which is a measure used to assess the maturity level of a particular technology. TRL1 is specifically categorized as a type that only achieves success in results and necessitates having a TRL 1 status.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL2,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl2 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 2 ;
+            owl:onProperty :has_trl ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :applied_research ;
+            owl:onProperty :success_in ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL2 is a type of Technology Readiness Level, which is also known as TRL. It is categorized as something that only achieves success in applied research and must have TRL 2.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL3,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl3 rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :proof_of_concept ;
+            owl:onProperty :success_in ],
+        [ a owl:Restriction ;
+            owl:hasValue 3 ;
+            owl:onProperty :has_trl ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL3 is a type of Technology Readiness Level and is also referred to as TRL. It is characterized by the successful proof of concept. Moreover, it must achieve a TRL of 3.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL4,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl4 rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :laboratory_environment ;
+            owl:onProperty :success_in ],
+        [ a owl:Restriction ;
+            owl:hasValue 4 ;
+            owl:onProperty :has_trl ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL4, which stands for Technology Readiness Level 4, is a specific type of TRL that signifies a technology has only succeeded in a laboratory environment. Additionally, it implies that something must attain TRL 4 status.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL5,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl5 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 5 ;
+            owl:onProperty :has_trl ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :representative_environment ;
+            owl:onProperty :success_in ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL5 is a type of Technology Readiness Level (TRL), which is categorized as something that only achieves success in a representative environment. Additionally, TRL5 is a requirement that must be met for this specific level.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL6,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl6 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 6 ;
+            owl:onProperty :has_trl ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :end_to_end_environment ;
+            owl:onProperty :success_in ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL6 is a type of Technology Readiness Level, which is a classification within the broader category of TRL. It is distinguished as a type that only achieves success in an end-to-end environment. Moreover, TRL6 is a type that must have TRL 6 characteristics.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL7,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl7 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 7 ;
+            owl:onProperty :has_trl ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :operational_environment ;
+            owl:onProperty :success_in ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL7 is a type of Technology Readiness Level, which is a classification within the broader category of TRLs. It is specifically characterized as something that has achieved success in an operational environment and fundamentally requires attaining TRL 7 status.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL8,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl8 rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :verified_validated_environment ;
+            owl:onProperty :success_in ],
+        [ a owl:Restriction ;
+            owl:hasValue 8 ;
+            owl:onProperty :has_trl ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL8 is a type of TRL, which stands for Technology Readiness Level. It is specifically associated with technologies that have found success in a verified and validated environment. Additionally, for a technology to be classified under TRL8, it must meet the criteria of TRL 8.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/TRL9,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trl9 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 9 ;
+            owl:onProperty :has_trl ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :mission_tested_environment ;
+            owl:onProperty :success_in ],
+        :technology_readiness_level,
+        :trl .
+
+","TRL9 is a type of TRL, which stands for Technology Readiness Level. It is identified as a type that only achieves success in a mission-tested environment. Furthermore, it is mandated that TRL9 must have TRL 9.",4,True
+sweet,http://sweetontology.net/humanTechReadiness/Technology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:technology rdfs:subClassOf :infrastructure .
+
+",technology is a type of infrastructure.,1,False
+sweet,http://sweetontology.net/humanTechReadiness/TechnologyReadiness,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:technology_readiness rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :technology ;
+            owl:onProperty :readiness_of ],
+        :knowledge .
+
+",Technology readiness is a type of knowledge that is specifically focused on the readiness of technology.,2,True
+sweet,http://sweetontology.net/humanTechReadiness/TechnologyReadinessLevel,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:technology_readiness_level rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :technology_readiness ;
+            owl:onProperty :measure_of ],
+        :ordinal_scale .
+
+","Technology readiness level is a type of ordinal scale, which is specifically a measure of technology readiness.",2,True
+sweet,http://sweetontology.net/humanTransportation/AirTraffic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_traffic rdfs:subClassOf :human_activity .
+
+",air traffic is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanTransportation/AirTrafficControl,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_traffic_control rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :air_traffic ;
+            owl:onProperty :has_human_activity ],
+        :management .
+
+",Air traffic control is a type of management that is a form of human activity specifically focused on air traffic.,2,True
+sweet,http://sweetontology.net/humanTransportation/AirTransportation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_transportation rdfs:subClassOf :transportation .
+
+",air transportation is a type of transportation.,1,False
+sweet,http://sweetontology.net/humanTransportation/Arrival,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arrival rdfs:subClassOf :human_activity .
+
+",arrival is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanTransportation/Ascent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ascent rdfs:subClassOf :departure .
+
+",ascent is a type of departure.,1,False
+sweet,http://sweetontology.net/humanTransportation/Aviation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aviation rdfs:subClassOf :human_activity .
+
+",aviation is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanTransportation/CivilAviation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:civil_aviation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :civil ;
+            owl:onProperty :has_jurisdiction ],
+        :aviation .
+
+",Civil aviation is a type of aviation and a type of something that only has jurisdiction civil.,2,True
+sweet,http://sweetontology.net/humanTransportation/Departure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:departure rdfs:subClassOf :human_activity .
+
+",departure is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanTransportation/Descent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:descent rdfs:subClassOf :arrival .
+
+",descent is a type of arrival.,1,False
+sweet,http://sweetontology.net/humanTransportation/Evacuation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evacuation rdfs:subClassOf :human_activity .
+
+",evacuation is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanTransportation/Flight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flight rdfs:subClassOf :air_transportation .
+
+",flight is a type of air transportation.,1,False
+sweet,http://sweetontology.net/humanTransportation/GroundTransportation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ground_transportation rdfs:subClassOf :transportation .
+
+",ground transportation is a type of transportation.,1,False
+sweet,http://sweetontology.net/humanTransportation/Landing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:landing rdfs:subClassOf :arrival .
+
+",landing is a type of arrival.,1,False
+sweet,http://sweetontology.net/humanTransportation/Liftoff,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:liftoff rdfs:subClassOf :departure .
+
+",liftoff is a type of departure.,1,False
+sweet,http://sweetontology.net/humanTransportation/MilitaryAviation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:military_aviation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :military ;
+            owl:onProperty :has_jurisdiction ],
+        :aviation .
+
+",Military aviation is a type of aviation that exclusively falls under military jurisdiction.,2,True
+sweet,http://sweetontology.net/humanTransportation/SpaceProgram,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:space_program rdfs:subClassOf :human_activity .
+
+",space program is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanTransportation/SpaceTravel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:space_travel rdfs:subClassOf :space_program .
+
+",space travel is a type of space program.,1,False
+sweet,http://sweetontology.net/humanTransportation/Takeoff,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:takeoff rdfs:subClassOf :departure .
+
+",takeoff is a type of departure.,1,False
+sweet,http://sweetontology.net/humanTransportation/Transit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transit rdfs:subClassOf :transportation .
+
+",transit is a type of transportation.,1,False
+sweet,http://sweetontology.net/humanTransportation/Transport,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transport rdfs:subClassOf :human_activity .
+
+",transport is a type of human activity.,1,False
+sweet,http://sweetontology.net/humanTransportation/Transportation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transportation rdfs:subClassOf :human_activity .
+
+",transportation is a type of human activity.,1,False
+sweet,http://sweetontology.net/matr/Air,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air rdfs:subClassOf :mixed_chemical_substance,
+        :mixture .
+
+",Air is both a type of mixed chemical substance and a mixture.,2,True
+sweet,http://sweetontology.net/matr/BDOC,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bdoc rdfs:subClassOf :dissolved_organic_carbon,
+        :doc ;
+    owl:equivalentClass :biodegradable_dissolved_organic_carbon .
+
+",Biodegradable dissolved organic carbon (BDOC) is the same as biodegradable dissolved organic carbon and is a type of dissolved organic carbon (DOC). BDOC is also a type of DOC.,3,True
+sweet,http://sweetontology.net/matr/BiodegradableDissolvedOrganicCarbon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biodegradable_dissolved_organic_carbon rdfs:subClassOf :dissolved_organic_carbon,
+        :doc .
+
+",Biodegradable dissolved organic carbon is a type of dissolved organic carbon (DOC).,2,True
+sweet,http://sweetontology.net/matr/Chemical,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical rdfs:subClassOf :substance ;
+    owl:equivalentClass :chemical_substance .
+
+","A chemical, which is the same as a chemical substance, is a type of substance.",2,True
+sweet,http://sweetontology.net/matr/ChemicalSubstance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_substance rdfs:subClassOf :substance .
+
+",chemical substance is a type of substance.,1,False
+sweet,http://sweetontology.net/matr/DO,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:do rdfs:subClassOf :dissolved_substance ;
+    owl:equivalentClass :dissolved_oxygen .
+
+","Dissolved oxygen, also known as DO, is a type of dissolved substance.",2,True
+sweet,http://sweetontology.net/matr/DOC,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:doc rdfs:subClassOf :dissolved_substance ;
+    owl:equivalentClass :dissolved_organic_carbon .
+
+","Doc, which is the same as dissolved organic carbon, is a type of dissolved substance.",2,True
+sweet,http://sweetontology.net/matr/DissolvedGas,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dissolved_gas rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :gas ;
+            owl:onProperty :has_state ],
+        :dissolved_substance .
+
+",Dissolved gas is a type of dissolved substance and it is something that must have a gaseous state.,2,True
+sweet,http://sweetontology.net/matr/DissolvedOrganicCarbon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dissolved_organic_carbon rdfs:subClassOf :dissolved_substance .
+
+",dissolved organic carbon is a type of dissolved substance.,1,False
+sweet,http://sweetontology.net/matr/DissolvedOxygen,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dissolved_oxygen rdfs:subClassOf :dissolved_substance .
+
+",dissolved oxygen is a type of dissolved substance.,1,False
+sweet,http://sweetontology.net/matr/DissolvedSolid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dissolved_solid rdfs:subClassOf :dissolved_substance,
+        :solid_substance .
+
+",A dissolved solid is a type of both dissolved substance and solid substance.,2,True
+sweet,http://sweetontology.net/matr/DissolvedSubstance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dissolved_substance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dissolved ;
+            owl:onProperty :has_state ],
+        :substance .
+
+",A dissolved substance is a type of substance that must have a dissolved state.,2,True
+sweet,http://sweetontology.net/matr/GreenhouseGas,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:greenhouse_gas rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :gas ;
+            owl:onProperty :has_state ],
+        :chemical,
+        :chemical_substance .
+
+","Greenhouse gas is a type of chemical and chemical substance, and it must exist in a gaseous state.",3,True
+sweet,http://sweetontology.net/matr/Inorganic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic rdfs:subClassOf :chemical,
+        :chemical_substance ;
+    owl:equivalentClass :inorganic_substance .
+
+","Inorganic refers to a type of chemical and is synonymous with an inorganic substance, which is a type of chemical substance.",3,True
+sweet,http://sweetontology.net/matr/InorganicSubstance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_substance rdfs:subClassOf :chemical,
+        :chemical_substance ;
+    owl:disjointWith :organic_substance .
+
+","Inorganic substances are categorized as a type of chemical and chemical substance, distinctively separate from organic substances.",3,True
+sweet,http://sweetontology.net/matr/Medium,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:medium rdfs:subClassOf :substance .
+
+",medium is a type of substance.,1,False
+sweet,http://sweetontology.net/matr/MixedChemicalSubstance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixed_chemical_substance rdfs:subClassOf :chemical,
+        :chemical_substance ;
+    owl:equivalentClass :mixture .
+
+","A mixed chemical substance, which is the same as a mixture, is classified as a type of chemical and also as a type of chemical substance.",3,True
+sweet,http://sweetontology.net/matr/Mixture,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixture rdfs:subClassOf :chemical,
+        :chemical_substance .
+
+",Mixture is a type of chemical and also a type of chemical substance.,2,True
+sweet,http://sweetontology.net/matr/NeutralGas,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neutral_gas rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :gas ;
+            owl:onProperty :has_state ],
+        [ a owl:Restriction ;
+            owl:hasValue :neutral ;
+            owl:onProperty :has_state ],
+        :chemical,
+        :chemical_substance .
+
+",Neutral gas is a type of chemical and chemical substance that must have a state of gas and be neutral.,4,True
+sweet,http://sweetontology.net/matr/OrganicLoading,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organic_loading rdfs:subClassOf :dissolved_substance .
+
+",organic loading is a type of dissolved substance.,1,False
+sweet,http://sweetontology.net/matr/SolidSubstance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solid_substance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        :substance .
+
+",A solid substance is a type of substance that must have a solid state.,2,True
+sweet,http://sweetontology.net/matr/Solution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solution rdfs:subClassOf :mixed_chemical_substance,
+        :mixture .
+
+",A solution is both a type of mixed chemical substance and a type of mixture.,2,True
+sweet,http://sweetontology.net/matr/Substance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:substance rdfs:subClassOf owl:Thing .
+
+",substance is a type of thing.,1,False
+sweet,http://sweetontology.net/matr/SuspendedGas,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:suspended_gas rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :gas ;
+            owl:onProperty :has_state ],
+        :suspended_substance .
+
+",Suspended gas is a type of suspended substance and it is something that must have a gaseous state.,2,True
+sweet,http://sweetontology.net/matr/SuspendedSolid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:suspended_solid rdfs:subClassOf :solid_substance,
+        :suspended_substance .
+
+",A suspended solid is both a type of solid substance and a type of suspended substance.,2,True
+sweet,http://sweetontology.net/matr/SuspendedSubstance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:suspended_substance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :suspended ;
+            owl:onProperty :has_state ],
+        :substance .
+
+",A suspended substance is a type of substance and it must have a suspended state.,2,True
+sweet,http://sweetontology.net/matr/TraceGas,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trace_gas rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :gas ;
+            owl:onProperty :has_state ],
+        :trace_substance .
+
+","Trace gas is a type of trace substance and is characterized by its state, which must be gaseous.",2,True
+sweet,http://sweetontology.net/matr/TraceSubstance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trace_substance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :trace ;
+            owl:onProperty :has_role ],
+        :substance .
+
+",A trace substance is a type of substance that must have the role of a trace.,2,True
+sweet,http://sweetontology.net/matrAerosol/Aerosol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aerosol rdfs:subClassOf :suspended_substance .
+
+",aerosol is a type of suspended substance.,1,False
+sweet,http://sweetontology.net/matrAerosol/Ash,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ash rdfs:subClassOf :solid_substance .
+
+",ash is a type of solid substance.,1,False
+sweet,http://sweetontology.net/matrAerosol/BlackCarbon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:black_carbon rdfs:subClassOf :particulate ;
+    owl:equivalentClass :soot .
+
+","Black carbon, which is the same as soot, is a type of particulate.",2,True
+sweet,http://sweetontology.net/matrAerosol/CCN,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ccn rdfs:subClassOf :condensation_nuclei ;
+    owl:equivalentClass :cloud_condensation_nuclei .
+
+","CCN, which is the same as cloud condensation nuclei, represents a type of condensation nuclei.",2,True
+sweet,http://sweetontology.net/matrAerosol/CloudCondensationNuclei,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud_condensation_nuclei rdfs:subClassOf :condensation_nuclei .
+
+",cloud condensation nuclei is a type of condensation nuclei.,1,False
+sweet,http://sweetontology.net/matrAerosol/CondensationNuclei,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:condensation_nuclei rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :coalescence ;
+            owl:onProperty :has_role ],
+        :solid_substance .
+
+",Condensation nuclei are a type of solid substance that only have the role of coalescence.,2,True
+sweet,http://sweetontology.net/matrAerosol/ContinentalAerosol,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_aerosol rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :land ;
+            owl:onProperty :has_realm ],
+        :aerosol .
+
+",Continental aerosol is a type of aerosol and is also a type of entity that exclusively pertains to the land realm.,2,True
+sweet,http://sweetontology.net/matrAerosol/Dust,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dust rdfs:subClassOf :solid_substance .
+
+",dust is a type of solid substance.,1,False
+sweet,http://sweetontology.net/matrAerosol/FugitiveDust,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fugitive_dust rdfs:subClassOf :dust .
+
+",fugitive dust is a type of dust.,1,False
+sweet,http://sweetontology.net/matrAerosol/Grain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:grain rdfs:subClassOf :solid_substance,
+        :substance_form .
+
+",Grain is a type of solid substance and also a form of substance.,2,True
+sweet,http://sweetontology.net/matrAerosol/PM1,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pm1 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :diameter ],
+        :particulate .
+
+",PM1 is a type of particulate that must have a specific diameter.,2,True
+sweet,http://sweetontology.net/matrAerosol/PM10,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pm10 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :diameter ],
+        :particulate .
+
+",PM10 is a type of particulate and is characterized by its diameter.,2,True
+sweet,http://sweetontology.net/matrAerosol/PM2point5,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pm2point5 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :diameter ],
+        :particulate .
+
+",PM2.5 is a type of particulate that must have a specific diameter.,2,True
+sweet,http://sweetontology.net/matrAerosol/Particulate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:particulate rdfs:subClassOf :suspended_substance .
+
+",particulate is a type of suspended substance.,1,False
+sweet,http://sweetontology.net/matrAerosol/Pollen,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pollen rdfs:subClassOf :particulate .
+
+",pollen is a type of particulate.,1,False
+sweet,http://sweetontology.net/matrAerosol/Smoke,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:smoke rdfs:subClassOf :suspended_substance .
+
+",smoke is a type of suspended substance.,1,False
+sweet,http://sweetontology.net/matrAerosol/Soot,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:soot rdfs:subClassOf :particulate .
+
+",soot is a type of particulate.,1,False
+sweet,http://sweetontology.net/matrAerosol/Spray,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spray rdfs:subClassOf :aerosol .
+
+",spray is a type of aerosol.,1,False
+sweet,http://sweetontology.net/matrAnimal/AcornWorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acorn_worm rdfs:subClassOf :invertebrate .
+
+",acorn worm is a type of invertebrate.,1,False
+sweet,http://sweetontology.net/matrAnimal/Amphibian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amphibian rdfs:subClassOf :animal .
+
+",amphibian is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Anemone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anemone rdfs:subClassOf :animal .
+
+",anemone is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Animal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:animal rdfs:subClassOf :organism .
+
+",animal is a type of organism.,1,False
+sweet,http://sweetontology.net/matrAnimal/Arachnid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arachnid rdfs:subClassOf :animal .
+
+",arachnid is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Arthropod,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arthropod rdfs:subClassOf :animal .
+
+",arthropod is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Bee,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bee rdfs:subClassOf :insect .
+
+",bee is a type of insect.,1,False
+sweet,http://sweetontology.net/matrAnimal/Bird,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bird rdfs:subClassOf :animal .
+
+",bird is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Centipede,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:centipede rdfs:subClassOf :animal .
+
+",centipede is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Coral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coral rdfs:subClassOf :animal .
+
+",coral is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Cow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cow rdfs:subClassOf :animal .
+
+",cow is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Crustacean,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crustacean rdfs:subClassOf :animal .
+
+",crustacean is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Dairy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dairy rdfs:subClassOf :animal .
+
+",dairy is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Echinoderm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:echinoderm rdfs:subClassOf :animal .
+
+",echinoderm is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/ExoticSpecies,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exotic_species rdfs:subClassOf :animal .
+
+",exotic species is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Fauna,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fauna rdfs:subClassOf :animal .
+
+",fauna is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Fish,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fish rdfs:subClassOf :marine_animal .
+
+",fish is a type of marine animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Flatworm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flatworm rdfs:subClassOf :animal .
+
+",flatworm is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Human,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:human rdfs:subClassOf :mammal .
+
+",human is a type of mammal.,1,False
+sweet,http://sweetontology.net/matrAnimal/IndigenousSpecies,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:indigenous_species rdfs:subClassOf :animal .
+
+",indigenous species is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Insect,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:insect rdfs:subClassOf :animal .
+
+",insect is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Invertebrate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:invertebrate rdfs:subClassOf :animal .
+
+",invertebrate is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Jellyfish,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jellyfish rdfs:subClassOf :marine_animal .
+
+",jellyfish is a type of marine animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Livestock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:livestock rdfs:subClassOf :animal .
+
+",livestock is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Mammal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mammal rdfs:subClassOf :animal .
+
+",mammal is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/MarineAnimal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_animal rdfs:subClassOf :animal .
+
+",marine animal is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/MarineBird,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_bird rdfs:subClassOf :marine_animal .
+
+",marine bird is a type of marine animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/MarineInvertebrate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_invertebrate rdfs:subClassOf :marine_animal .
+
+",marine invertebrate is a type of marine animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/MarineMammal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_mammal rdfs:subClassOf :marine_animal .
+
+",marine mammal is a type of marine animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Mesozooplankton,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesozooplankton rdfs:subClassOf :zooplankton .
+
+",mesozooplankton is a type of zooplankton.,1,False
+sweet,http://sweetontology.net/matrAnimal/Microzooplankton,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microzooplankton rdfs:subClassOf :zooplankton .
+
+",microzooplankton is a type of zooplankton.,1,False
+sweet,http://sweetontology.net/matrAnimal/Millipede,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:millipede rdfs:subClassOf :animal .
+
+",millipede is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Mollusk,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mollusk rdfs:subClassOf :animal .
+
+",mollusk is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Poultry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poultry rdfs:subClassOf :animal .
+
+",poultry is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Reptile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reptile rdfs:subClassOf :animal .
+
+",reptile is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Roundworm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:roundworm rdfs:subClassOf :animal .
+
+",roundworm is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/SegmentedWorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:segmented_worm rdfs:subClassOf :animal .
+
+",segmented worm is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Silkworm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:silkworm rdfs:subClassOf :invertebrate .
+
+",silkworm is a type of invertebrate.,1,False
+sweet,http://sweetontology.net/matrAnimal/Sponge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sponge rdfs:subClassOf :animal .
+
+",sponge is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Vertebrate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertebrate rdfs:subClassOf :animal .
+
+",vertebrate is a type of animal.,1,False
+sweet,http://sweetontology.net/matrAnimal/Zooplankton,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zooplankton rdfs:subClassOf :animal .
+
+",zooplankton is a type of animal.,1,False
+sweet,http://sweetontology.net/matrBiomass/AnimalWaste,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:animal_waste rdfs:subClassOf :biomass .
+
+",animal waste is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/AquaticOrganism,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aquatic_organism rdfs:subClassOf :organism .
+
+",aquatic organism is a type of organism.,1,False
+sweet,http://sweetontology.net/matrBiomass/Bioindicator,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bioindicator rdfs:subClassOf :species ;
+    owl:equivalentClass :indicator_species .
+
+","Bioindicator, which is the same as indicator species, is a type of species.",2,True
+sweet,http://sweetontology.net/matrBiomass/Biomass,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biomass rdfs:subClassOf :living_entity .
+
+",biomass is a type of living entity.,1,False
+sweet,http://sweetontology.net/matrBiomass/Detritus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:detritus rdfs:subClassOf :biomass .
+
+",detritus is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/Feed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:feed rdfs:subClassOf :food .
+
+",feed is a type of food.,1,False
+sweet,http://sweetontology.net/matrBiomass/Fertilizer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fertilizer rdfs:subClassOf :biomass .
+
+",fertilizer is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/Food,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:food rdfs:subClassOf :biomass .
+
+",food is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/Gelbstoff,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gelbstoff rdfs:subClassOf :biomass .
+
+",gelbstoff is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/Honey,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:honey rdfs:subClassOf :food .
+
+",honey is a type of food.,1,False
+sweet,http://sweetontology.net/matrBiomass/Humus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:humus rdfs:subClassOf :biomass .
+
+",humus is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/IndicatorSpecies,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:indicator_species rdfs:subClassOf :species .
+
+",indicator species is a type of species.,1,False
+sweet,http://sweetontology.net/matrBiomass/Litter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:litter rdfs:subClassOf :biomass .
+
+",litter is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/LivingEntity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:living_entity rdfs:subClassOf :substance .
+
+",living entity is a type of substance.,1,False
+sweet,http://sweetontology.net/matrBiomass/Manure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:manure rdfs:subClassOf :biomass .
+
+",manure is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/Organism,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organism rdfs:subClassOf :living_entity .
+
+",organism is a type of living entity.,1,False
+sweet,http://sweetontology.net/matrBiomass/Species,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:species rdfs:subClassOf :organism .
+
+",species is a type of organism.,1,False
+sweet,http://sweetontology.net/matrBiomass/Wood,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wood rdfs:subClassOf :biomass .
+
+",wood is a type of biomass.,1,False
+sweet,http://sweetontology.net/matrBiomass/WoodDebris,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wood_debris rdfs:subClassOf :wood .
+
+",wood debris is a type of wood.,1,False
+sweet,http://sweetontology.net/matrCompound/ChemicalCompound,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_compound rdfs:subClassOf :chemical,
+        :chemical_substance ;
+    owl:equivalentClass :compound .
+
+",A chemical compound is the same as a compound and is a type of chemical as well as a type of chemical substance.,3,True
+sweet,http://sweetontology.net/matrCompound/Clathrate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clathrate rdfs:subClassOf :inorganic_compound .
+
+",clathrate is a type of inorganic compound.,1,False
+sweet,http://sweetontology.net/matrCompound/Compound,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compound rdfs:subClassOf :chemical,
+        :chemical_substance .
+
+","A compound is a type of chemical, which is also a type of chemical substance.",2,True
+sweet,http://sweetontology.net/matrCompound/InorganicAcid,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_acid rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :acid ;
+            owl:onProperty :has_state ],
+        :inorganic_compound .
+
+",Inorganic acid is a type of inorganic compound and is also a type of substance that must have an acidic state.,2,True
+sweet,http://sweetontology.net/matrCompound/InorganicCompound,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inorganic_compound rdfs:subClassOf :chemical_compound,
+        :compound .
+
+",An inorganic compound is a type of chemical compound as well as a type of compound.,2,True
+sweet,http://sweetontology.net/matrCompound/Perchlorate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:perchlorate rdfs:subClassOf :inorganic_acid .
+
+",perchlorate is a type of inorganic acid.,1,False
+sweet,http://sweetontology.net/matrCompound/Peroxide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peroxide rdfs:subClassOf :inorganic_compound .
+
+",peroxide is a type of inorganic compound.,1,False
+sweet,http://sweetontology.net/matrElement/Actinoid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:actinoid rdfs:subClassOf :chemical_element,
+        :element .
+
+",Actinoid is a type of chemical element and also a type of element.,2,True
+sweet,http://sweetontology.net/matrElement/AlkaliMetal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkali_metal rdfs:subClassOf :metal .
+
+",alkali metal is a type of metal.,1,False
+sweet,http://sweetontology.net/matrElement/AlkalineEarthMetal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkaline_earth_metal rdfs:subClassOf :metal .
+
+",alkaline earth metal is a type of metal.,1,False
+sweet,http://sweetontology.net/matrElement/Atmophile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmophile rdfs:subClassOf :chemical_element,
+        :element .
+
+","Atmophile is a type of chemical element, which is also a type of element.",2,True
+sweet,http://sweetontology.net/matrElement/Chalcogen,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chalcogen rdfs:subClassOf :chemical_element,
+        :element .
+
+",Chalcogen is a type of chemical element and also a type of element.,2,True
+sweet,http://sweetontology.net/matrElement/Chalcophile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chalcophile rdfs:subClassOf :chemical_element,
+        :element .
+
+","Chalcophile is a type of chemical element, as well as a type of element.",2,True
+sweet,http://sweetontology.net/matrElement/ChemicalElement,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_element rdfs:subClassOf :chemical,
+        :chemical_substance ;
+    owl:equivalentClass :element .
+
+",A chemical element is the same as an element and is a type of both chemical and chemical substance.,3,True
+sweet,http://sweetontology.net/matrElement/Element,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:element rdfs:subClassOf :chemical,
+        :chemical_substance .
+
+",An element is a type of chemical substance.,2,True
+sweet,http://sweetontology.net/matrElement/Ha,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ha rdfs:subClassOf :chemical_element,
+        :element ;
+    owl:equivalentClass :halogen .
+
+","Ha is the same as halogen, which is a type of chemical element and also a type of element.",3,True
+sweet,http://sweetontology.net/matrElement/Halogen,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:halogen rdfs:subClassOf :chemical_element,
+        :element .
+
+",Halogen is a type of chemical element.,2,True
+sweet,http://sweetontology.net/matrElement/HeavyMetal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heavy_metal rdfs:subClassOf :metal .
+
+",heavy metal is a type of metal.,1,False
+sweet,http://sweetontology.net/matrElement/Lithophile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lithophile rdfs:subClassOf :chemical_element,
+        :element .
+
+",Lithophile is a type of chemical element and also a type of element.,2,True
+sweet,http://sweetontology.net/matrElement/Metal,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metal rdfs:subClassOf :chemical_element,
+        :element ;
+    owl:disjointWith :metalloid,
+        :nonmetal .
+
+",Metal is a type of chemical element and is also classified as a type of element. It is distinct and separate from metalloids and nonmetals.,4,True
+sweet,http://sweetontology.net/matrElement/Metalloid,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metalloid rdfs:subClassOf :chemical_element,
+        :element ;
+    owl:disjointWith :nonmetal .
+
+","A metalloid is a type of chemical element and also a type of element. Additionally, metalloids are disjoint with nonmetals.",3,True
+sweet,http://sweetontology.net/matrElement/NobleGas,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:noble_gas rdfs:subClassOf :chemical_element,
+        :element .
+
+",Noble gas is a type of chemical element and is also a type of element.,2,True
+sweet,http://sweetontology.net/matrElement/Nonmetal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nonmetal rdfs:subClassOf :chemical_element,
+        :element .
+
+",Nonmetal is a type of chemical element and also a type of element.,2,True
+sweet,http://sweetontology.net/matrElement/PostTransitionMetal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:post_transition_metal rdfs:subClassOf :metal .
+
+",post transition metal is a type of metal.,1,False
+sweet,http://sweetontology.net/matrElement/Prictogen,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prictogen rdfs:subClassOf :chemical_element,
+        :element .
+
+",Prictogen is a type of chemical element and also a type of element.,2,True
+sweet,http://sweetontology.net/matrElement/RareEarthElement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rare_earth_element rdfs:subClassOf :chemical_element,
+        :element .
+
+",Rare earth element is a type of chemical element and also a type of element.,2,True
+sweet,http://sweetontology.net/matrElement/Siderophile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:siderophile rdfs:subClassOf :chemical_element,
+        :element .
+
+",Siderophile is a type of chemical element and a type of element.,2,True
+sweet,http://sweetontology.net/matrElement/TraceMetal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trace_metal rdfs:subClassOf :metal,
+        :trace_substance .
+
+",Trace metal is a type of trace substance and is also a type of metal.,2,True
+sweet,http://sweetontology.net/matrElement/TransitionMetal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transition_metal rdfs:subClassOf :metal .
+
+",transition metal is a type of metal.,1,False
+sweet,http://sweetontology.net/matrElementalMolecule/Allotrope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:allotrope rdfs:subClassOf :chemical,
+        :chemical_substance .
+
+",Allotrope is a type of chemical substance.,2,True
+sweet,http://sweetontology.net/matrEnergy/Battery,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:battery rdfs:subClassOf :energy_storage .
+
+",battery is a type of energy storage.,1,False
+sweet,http://sweetontology.net/matrEnergy/Biodiesel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biodiesel rdfs:subClassOf :biofuel .
+
+",biodiesel is a type of biofuel.,1,False
+sweet,http://sweetontology.net/matrEnergy/Biofuel,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biofuel rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :biomass ;
+            owl:onProperty :has_energy_source ],
+        :fuel .
+
+",Biofuel is a type of fuel that exclusively utilizes biomass as its energy source.,2,True
+sweet,http://sweetontology.net/matrEnergy/Biomass,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biomass rdfs:subClassOf :energy_storage .
+
+",biomass is a type of energy storage.,1,False
+sweet,http://sweetontology.net/matrEnergy/CompundParabolicConcentrator,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compund_parabolic_concentrator rdfs:subClassOf :energy_collector .
+
+",compund parabolic concentrator is a type of energy collector.,1,False
+sweet,http://sweetontology.net/matrEnergy/EnergyCollector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_collector rdfs:subClassOf :infrastructure .
+
+",energy collector is a type of infrastructure.,1,False
+sweet,http://sweetontology.net/matrEnergy/EnergyConversionDevice,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_conversion_device rdfs:subClassOf :infrastructure .
+
+",energy conversion device is a type of infrastructure.,1,False
+sweet,http://sweetontology.net/matrEnergy/EnergyDistributionSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_distribution_system rdfs:subClassOf :infrastructure .
+
+",energy distribution system is a type of infrastructure.,1,False
+sweet,http://sweetontology.net/matrEnergy/EnergyStorage,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_storage rdfs:subClassOf :reservoir,
+        :storage .
+
+",Energy storage serves as a type of reservoir and is also a form of storage.,2,True
+sweet,http://sweetontology.net/matrEnergy/Ethanol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ethanol rdfs:subClassOf :biofuel .
+
+",ethanol is a type of biofuel.,1,False
+sweet,http://sweetontology.net/matrEnergy/FlatPlateCollector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flat_plate_collector rdfs:subClassOf :energy_collector .
+
+",flat plate collector is a type of energy collector.,1,False

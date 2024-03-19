@@ -1,0 +1,1455 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/reprSpaceGeometry/Rectangle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rectangle rdfs:subClassOf :polygon .
+
+",rectangle is a type of polygon.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Region,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:region rdfs:subClassOf :geometrical_object .
+
+",region is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Ridge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ridge rdfs:subClassOf :geometrical_object .
+
+",ridge is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Route,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:route rdfs:subClassOf :path,
+        :trajectory .
+
+",A route is a type of path and also a type of trajectory.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/SmallCircle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:small_circle rdfs:subClassOf :circle .
+
+",small circle is a type of circle.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Spiral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spiral rdfs:subClassOf :arc .
+
+",spiral is a type of arc.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Square,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:square rdfs:subClassOf :rectangle .
+
+",square is a type of rectangle.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Star,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:star rdfs:subClassOf :geometrical_object_2d .
+
+",star is a type of geometrical object 2d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Surface,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surface rdfs:subClassOf :geometrical_object .
+
+",surface is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Swarm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:swarm rdfs:subClassOf :collection .
+
+",swarm is a type of collection.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Trajectory,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trajectory rdfs:subClassOf :curve .
+
+",trajectory is a type of curve.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Trough,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trough rdfs:subClassOf :geometrical_object .
+
+",trough is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Zone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zone rdfs:subClassOf :region .
+
+",zone is a type of region.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/AirSpace,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_space rdfs:subClassOf :geometrical_object_3d .
+
+",air space is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Belt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:belt rdfs:subClassOf :geometrical_object_3d .
+
+",belt is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Body,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:body rdfs:subClassOf :geometrical_object_3d .
+
+",body is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Bowl,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bowl rdfs:subClassOf :geometrical_object_3d .
+
+",bowl is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Cavity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cavity rdfs:subClassOf :geometrical_object_3d .
+
+",cavity is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Cone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cone rdfs:subClassOf :geometrical_object_3d .
+
+",cone is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Corkscrew,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:corkscrew rdfs:subClassOf :geometrical_object_3d .
+
+",corkscrew is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Cylinder,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cylinder rdfs:subClassOf :geometrical_object_3d .
+
+",cylinder is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Dipole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dipole rdfs:subClassOf :geometrical_object_3d .
+
+",dipole is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Dome,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dome rdfs:subClassOf :geometrical_object_3d .
+
+",dome is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Ellipsoid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ellipsoid rdfs:subClassOf :geometrical_object_3d .
+
+",ellipsoid is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Envelope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:envelope rdfs:subClassOf :layer .
+
+",envelope is a type of layer.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/FluxTube,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flux_tube rdfs:subClassOf :tube .
+
+",flux tube is a type of tube.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/GeometricalObject_3D,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geometrical_object_3d rdfs:subClassOf :d,
+        :geometrical_object .
+
+",A geometrical object 3D is a type of geometrical object and also a type of D.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Hemisphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hemisphere rdfs:subClassOf :geometrical_object_3d .
+
+",hemisphere is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Layer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:layer rdfs:subClassOf :geometrical_object_3d .
+
+",layer is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Polyhedron,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polyhedron rdfs:subClassOf :geometrical_object_3d .
+
+",polyhedron is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/ReferenceEllipsoid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reference_ellipsoid rdfs:subClassOf :ellipsoid .
+
+",reference ellipsoid is a type of ellipsoid.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Ring,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ring rdfs:subClassOf :geometrical_object_3d .
+
+",ring is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Shell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shell rdfs:subClassOf :layer .
+
+",shell is a type of layer.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Sphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sphere rdfs:subClassOf :geometrical_object_3d .
+
+",sphere is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Spheroid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spheroid rdfs:subClassOf :geometrical_object_3d .
+
+",spheroid is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Strata,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strata rdfs:subClassOf :layer .
+
+",strata is a type of layer.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Striation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:striation rdfs:subClassOf :geometrical_object_3d .
+
+",striation is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Torus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:torus rdfs:subClassOf :geometrical_object_3d .
+
+",torus is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry3D/Tube,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tube rdfs:subClassOf :geometrical_object_3d .
+
+",tube is a type of geometrical object 3d.,1,False
+sweet,http://sweetontology.net/reprSpaceReferenceSystem/HorizontalCoordinateSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:horizontal_coordinate_system rdfs:subClassOf :spatial_reference_system .
+
+",horizontal coordinate system is a type of spatial reference system.,1,False
+sweet,http://sweetontology.net/reprSpaceReferenceSystem/PolarCoordinates,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polar_coordinates rdfs:subClassOf :horizontal_coordinate_system .
+
+",polar coordinates is a type of horizontal coordinate system.,1,False
+sweet,http://sweetontology.net/reprSpaceReferenceSystem/SpatialReferenceSystem,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_reference_system rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :space ;
+            owl:onProperty :has_dimension ],
+        :reference_frame .
+
+",A spatial reference system is a type of reference frame and is also a type of something that only has dimension space.,2,True
+sweet,http://sweetontology.net/reprSpaceReferenceSystem/VerticalCoordinateSystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertical_coordinate_system rdfs:subClassOf :spatial_reference_system .
+
+",vertical coordinate system is a type of spatial reference system.,1,False
+sweet,http://sweetontology.net/reprTime/Duration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:duration rdfs:subClassOf :numerical_entity ;
+    owl:equivalentClass :temporal_entity .
+
+",Duration is the same as a temporal entity and is a type of numerical entity.,2,True
+sweet,http://sweetontology.net/reprTime/Local,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:local rdfs:subClassOf :local_time .
+
+",local is a type of local time.,1,False
+sweet,http://sweetontology.net/reprTime/LocalTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:local_time rdfs:subClassOf :time_zone .
+
+",local time is a type of time zone.,1,False
+sweet,http://sweetontology.net/reprTime/SolarTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_time rdfs:subClassOf :local_time .
+
+",solar time is a type of local time.,1,False
+sweet,http://sweetontology.net/reprTime/TemporalEntity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_entity rdfs:subClassOf :numerical_entity .
+
+",temporal entity is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprTime/TemporalReference,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_reference rdfs:subClassOf :duration,
+        :temporal_entity ;
+    owl:equivalentClass :time_reference .
+
+","Temporal reference, which is the same as time reference, is both a type of duration and a type of temporal entity.",3,True
+sweet,http://sweetontology.net/reprTime/Time,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :second ;
+            owl:onProperty :has_default_unit ],
+        :dimension .
+
+",Time is a type of dimension and it is also a type of something that must have the default unit of a second.,2,True
+sweet,http://sweetontology.net/reprTime/TimeFrame,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_frame rdfs:subClassOf :reference_frame,
+        :time .
+
+",A time frame is both a type of reference frame and a type of time.,2,True
+sweet,http://sweetontology.net/reprTime/TimeReference,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_reference rdfs:subClassOf :duration,
+        :temporal_entity .
+
+",Time reference is both a type of duration and a type of temporal entity.,2,True
+sweet,http://sweetontology.net/reprTime/TimeZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_zone rdfs:subClassOf :temporal_reference,
+        :time_reference .
+
+",Time zone is both a type of temporal reference and a type of time reference.,2,True
+sweet,http://sweetontology.net/reprTimeDay/Dawn,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dawn rdfs:subClassOf :twilight .
+
+",dawn is a type of twilight.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Day,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:day rdfs:subClassOf :proper_interval .
+
+",day is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Daytime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:daytime rdfs:subClassOf :proper_interval .
+
+",daytime is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Dusk,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dusk rdfs:subClassOf :twilight .
+
+",dusk is a type of twilight.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Evening,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evening rdfs:subClassOf :nighttime,
+        :nocturnal .
+
+",Evening is a type of nighttime and also a type of nocturnal.,2,True
+sweet,http://sweetontology.net/reprTimeDay/Midnight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:midnight rdfs:subClassOf :instant .
+
+",midnight is a type of instant.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Morning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:morning rdfs:subClassOf :daytime .
+
+",morning is a type of daytime.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Nighttime,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nighttime rdfs:subClassOf :proper_interval ;
+    owl:equivalentClass :nocturnal .
+
+",Nighttime is synonymous with nocturnal and is classified as a type of proper interval.,2,True
+sweet,http://sweetontology.net/reprTimeDay/Nocturnal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nocturnal rdfs:subClassOf :proper_interval .
+
+",nocturnal is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Noon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:noon rdfs:subClassOf :instant .
+
+",noon is a type of instant.,1,False
+sweet,http://sweetontology.net/reprTimeDay/Sunrise,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sunrise rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :start_of ;
+            owl:someValuesFrom :morning ],
+        :instant .
+
+",Sunrise is a type of instant and is something that at least marks the start of some morning.,2,True
+sweet,http://sweetontology.net/reprTimeDay/Sunset,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sunset rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :start_of ;
+            owl:someValuesFrom :evening ],
+        :instant .
+
+",Sunset is a type of instant and is something that marks the start of an evening.,2,True
+sweet,http://sweetontology.net/reprTimeDay/Twilight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:twilight rdfs:subClassOf :proper_interval .
+
+",twilight is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeSeason/ColdestMonth,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coldest_month rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :month ;
+            owl:onProperty :has_unit ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_minimum ;
+            owl:someValuesFrom :temperature ],
+        :time .
+
+","The coldest month is a type of time, characterized by having at least a minimum temperature and is specifically identified by the unit month.",3,True
+sweet,http://sweetontology.net/reprTimeSeason/DrySeason,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_season rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dry ;
+            owl:onProperty :has_state ],
+        :season .
+
+",The dry season is a type of season characterized by a state of dryness.,2,True
+sweet,http://sweetontology.net/reprTimeSeason/Equinox,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equinox rdfs:subClassOf :instant .
+
+",equinox is a type of instant.,1,False
+sweet,http://sweetontology.net/reprTimeSeason/Season,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:season rdfs:subClassOf :proper_interval .
+
+",season is a type of proper interval.,1,False
+sweet,http://sweetontology.net/reprTimeSeason/Solstice,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solstice rdfs:subClassOf :instant .
+
+",solstice is a type of instant.,1,False
+sweet,http://sweetontology.net/reprTimeSeason/WarmestMonth,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:warmest_month rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_maximum ;
+            owl:someValuesFrom :temperature ],
+        [ a owl:Restriction ;
+            owl:hasValue :month ;
+            owl:onProperty :has_unit ],
+        :time .
+
+","The warmest month is categorized as a type of time, which is defined as something that must at least have a maximum temperature and necessarily has the unit of a month.",3,True
+sweet,http://sweetontology.net/reprTimeSeason/WetSeason,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wet_season rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :wet ;
+            owl:onProperty :has_state ],
+        :season .
+
+",The wet season is a type of season characterized by its state of being wet.,2,True
+sweet,http://sweetontology.net/state/BinaryState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binary_state rdfs:subClassOf :state .
+
+",binary state is a type of state.,1,False
+sweet,http://sweetontology.net/state/State,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:state rdfs:subClassOf owl:Thing .
+
+",state is a type of thing.,1,False
+sweet,http://sweetontology.net/stateBiological/BiologicalState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biological_state rdfs:subClassOf :state .
+
+",biological state is a type of state.,1,False
+sweet,http://sweetontology.net/stateChemical/BiochemicalState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biochemical_state rdfs:subClassOf :biological_state,
+        :chemical_state .
+
+",A biochemical state is both a type of biological state and a type of chemical state.,2,True
+sweet,http://sweetontology.net/stateChemical/ChemicalState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_state rdfs:subClassOf :state .
+
+",chemical state is a type of state.,1,False
+sweet,http://sweetontology.net/stateDataProcessing/Archived,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:archived rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :archive ],
+        :data_state .
+
+",Archived is a type of data state and refers to something that has undergone some form of archiving process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Binned,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binned rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :binning ],
+        :data_state .
+
+",Binned refers to a type of data state and also indicates something that has undergone some form of binning process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Calibrated,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:calibrated rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :calibration ],
+        :data_state .
+
+",Calibrated is a type of data state and it refers to something that has undergone some form of calibration process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Clustered,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clustered rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :clustering ],
+        :data_state .
+
+",Clustered is a type of data state and is considered as such because it has undergone some clustering process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/DataState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_state rdfs:subClassOf :system_state .
+
+",data state is a type of system state.,1,False
+sweet,http://sweetontology.net/stateDataProcessing/Georeferenced,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:georeferenced rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :georeferencing ],
+        :data_state .
+
+",Georeferenced is a type of data state and refers to something that has undergone some georeferencing process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Gridded,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gridded rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :gridding ],
+        :data_state .
+
+",Gridded is a type of data state and it indicates something that has undergone at least some gridding process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Interpolated,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interpolated rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :interpolation ],
+        :data_state .
+
+",Interpolated is a type of data state and refers to something that has undergone some form of interpolation process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/L1,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:l1 rdfs:subClassOf :processing_level ;
+    owl:equivalentClass :level1 .
+
+","L1, which is the same as level1, is identified as a type of processing level.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/L2,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:l2 rdfs:subClassOf :processing_level ;
+    owl:equivalentClass :level2 .
+
+","L2, which is the same as level2, is a type of processing level.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/L3,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:l3 rdfs:subClassOf :processing_level ;
+    owl:equivalentClass :level3 .
+
+","L3, which is the same as level 3, is a type of processing level.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/L4,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:l4 rdfs:subClassOf :processing_level ;
+    owl:equivalentClass :level4 .
+
+","L4, which is the same as level 4, is a type of processing level.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Level1,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level1 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :geolocation ],
+        :processing_level .
+
+",Level1 is a type of processing level that at least had processed some geolocation.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Level2,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level2 rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :swath ;
+            owl:onProperty :has_data_model ],
+        [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :parameterization ],
+        :processing_level .
+
+",Level2 is a type of processing level that is characterized by having undergone some parameterization and exclusively possessing data model swath.,3,True
+sweet,http://sweetontology.net/stateDataProcessing/Level3,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level3 rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :grid ;
+            owl:onProperty :has_data_model ],
+        [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :gridding ],
+        :processing_level .
+
+","Level3 is a type of processing level characterized by having undergone some gridding. Furthermore, it is exclusively associated with a data model grid.",3,True
+sweet,http://sweetontology.net/stateDataProcessing/Level4,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level4 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :assimilation ],
+        :processing_level .
+
+",Level4 is a type of processing level and is something that has undergone some form of assimilation processing.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Mapped,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mapped rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :mapping ],
+        :data_state .
+
+",Mapped is a type of data state and is something that has undergone some form of mapping process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Mined,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mined rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :mining ],
+        :data_state .
+
+",Mined is a type of data state and also refers to something that has undergone some mining process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Normalized,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normalized rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :normalization ],
+        :data_state .
+
+",Normalized is a type of data state and is something that has undergone some normalization process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Parameterized,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parameterized rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :parameterize ],
+        :data_state .
+
+","Parameterized is a type of data state, and it is also a type of something that has, at the very least, processed some parameterization.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Plotted,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plotted rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :plot ],
+        :data_state .
+
+",Plotted is a type of data state and is also a type of something that has at least had some plot processed.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Processed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:processed rdfs:subClassOf :data_state .
+
+",processed is a type of data state.,1,False
+sweet,http://sweetontology.net/stateDataProcessing/Reanalyzed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reanalyzed rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :reanalysis ],
+        :data_state .
+
+",Reanalyzed is a type of data state that signifies something that has undergone some form of reanalysis.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Reconstructed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reconstructed rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :reconstruction ],
+        :data_state .
+
+",Reconstructed is a type of data state and signifies something that has undergone some form of reconstruction process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Reformatted,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reformatted rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :reformat ],
+        :data_state .
+
+","Reformatted is a type of data state, indicating it is something that has undergone some reformat process.",2,True
+sweet,http://sweetontology.net/stateDataProcessing/Regridded,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regridded rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :regridding ],
+        :data_state .
+
+",Regridded is a type of data state and is something that has undergone a regridding process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Scaled,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scaled rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :scaling ],
+        :data_state .
+
+",Scaled is a type of data state and also refers to something that has undergone some form of scaling process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Subsetted,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subsetted rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :subset ],
+        :data_state .
+
+",Subsetted is a type of data state and is also a characteristic of something that has undergone the process of subsetting at least once.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Trained,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trained rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :training ],
+        :data_state .
+
+",Trained is a type of data state and refers to something that has undergone some training process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Validated,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:validated rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :validation ],
+        :data_state .
+
+",Validated is a type of data state that represents something that has undergone some form of validation process.,2,True
+sweet,http://sweetontology.net/stateDataProcessing/Verifed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:verifed rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :had_process ;
+            owl:someValuesFrom :verification ],
+        :data_state .
+
+",Verified is a type of data state that signifies something has undergone a verification process.,2,True
+sweet,http://sweetontology.net/stateEnergyFlux/AClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:a_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.0000001 ;
+            owl:onProperty :has_upper_bound ],
+        [ a owl:Restriction ;
+            owl:hasValue 0.00000001 ;
+            owl:onProperty :has_lower_bound ],
+        :flare_class .
+
+",A class is a type of flare class that must have a lower bound of 1E-8 and an upper bound of 1E-7.,3,True
+sweet,http://sweetontology.net/stateEnergyFlux/BClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:b_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.000001 ;
+            owl:onProperty :has_upper_bound ],
+        [ a owl:Restriction ;
+            owl:hasValue 0.0000001 ;
+            owl:onProperty :has_lower_bound ],
+        :flare_class .
+
+",B class is a type of flare class which must have a lower bound of 1E-7 and an upper bound of 0.000001.,3,True
+sweet,http://sweetontology.net/stateEnergyFlux/CClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:c_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.00001 ;
+            owl:onProperty :has_upper_bound ],
+        [ a owl:Restriction ;
+            owl:hasValue 0.000001 ;
+            owl:onProperty :has_lower_bound ],
+        :flare_class .
+
+","C class is a type of flare class, which must have a lower bound of 0.000001 and an upper bound of 0.00001.",3,True
+sweet,http://sweetontology.net/stateEnergyFlux/MClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:m_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.0001 ;
+            owl:onProperty :has_upper_bound ],
+        [ a owl:Restriction ;
+            owl:hasValue 0.00001 ;
+            owl:onProperty :has_lower_bound ],
+        :flare_class .
+
+",The M class is a type of flare class that must have a lower bound of 0.00001 and an upper bound of 0.0001.,3,True
+sweet,http://sweetontology.net/stateEnergyFlux/XClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:x_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0.0001 ;
+            owl:onProperty :has_lower_bound ],
+        :flare_class .
+
+",The X class is a type of flare class and it is characterized by having a lower bound of 0.0001.,2,True
+sweet,http://sweetontology.net/stateFluid/FluidEquilibriumState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluid_equilibrium_state rdfs:subClassOf :equilibrium_state,
+        :fluid_state .
+
+",Fluid equilibrium state is both a type of fluid state and a type of equilibrium state.,2,True
+sweet,http://sweetontology.net/stateFluid/FluidState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluid_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :fluid ;
+            owl:onProperty :has_state ],
+        :physical_state .
+
+","Fluid state is a type of physical state, and it is something that must have a fluid state.",2,True
+sweet,http://sweetontology.net/statePhysical/MoistureState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moisture_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :physical_state .
+
+",Moisture state is a type of physical state and is characterized as something that must contain water substance.,2,True
+sweet,http://sweetontology.net/statePhysical/PhysicalState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physical_state rdfs:subClassOf :state .
+
+",physical state is a type of state.,1,False
+sweet,http://sweetontology.net/statePhysical/RainState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rain_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :ordinal_property .
+
+",Rain state is a type of ordinal property and is something that must have substance water.,2,True
+sweet,http://sweetontology.net/statePhysical/SpeedState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:speed_state rdfs:subClassOf :physical_state .
+
+",speed state is a type of physical state.,1,False
+sweet,http://sweetontology.net/statePhysical/StateOfMatter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:state_of_matter rdfs:subClassOf :physical_state .
+
+",state of matter is a type of physical state.,1,False
+sweet,http://sweetontology.net/statePhysical/SubstanceForm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:substance_form rdfs:subClassOf :physical_state .
+
+",substance form is a type of physical state.,1,False
+sweet,http://sweetontology.net/statePhysical/WaveState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wave_state rdfs:subClassOf :physical_state .
+
+",wave state is a type of physical state.,1,False
+sweet,http://sweetontology.net/stateRealm/RealmConfiguration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:realm_configuration rdfs:subClassOf :physical_state .
+
+",realm configuration is a type of physical state.,1,False
+sweet,http://sweetontology.net/stateRole/ConductionRole,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conduction_role rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :conduction ;
+            owl:onProperty :has_process ],
+        :ordinal_property,
+        :physical_role .
+
+","The conduction role is an ordinal property, a physical role, and specifically pertains to something that only has process conduction.",3,True
+sweet,http://sweetontology.net/stateRole/PhysicalRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physical_role rdfs:subClassOf :role .
+
+",physical role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRole/ProvenanceRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:provenance_role rdfs:subClassOf :role .
+
+",provenance role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Autotroph,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:autotroph rdfs:subClassOf :biological_role ;
+    owl:disjointWith :heterotroph .
+
+","An autotroph is a type of biological role, which is disjoint from a heterotroph, indicating that they are mutually exclusive categories.",2,True
+sweet,http://sweetontology.net/stateRoleBiological/BiologicalRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biological_role rdfs:subClassOf :role .
+
+",biological role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Chemoautotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemoautotroph rdfs:subClassOf :autotroph .
+
+",chemoautotroph is a type of autotroph.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Chemoheterotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemoheterotroph rdfs:subClassOf :heterotroph .
+
+",chemoheterotroph is a type of heterotroph.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Consumer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consumer rdfs:subClassOf :biological_role .
+
+",consumer is a type of biological role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Habitat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:habitat rdfs:subClassOf :biological_role .
+
+",habitat is a type of biological role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Heterotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heterotroph rdfs:subClassOf :biological_role .
+
+",heterotroph is a type of biological role.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Photoautotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photoautotroph rdfs:subClassOf :autotroph .
+
+",photoautotroph is a type of autotroph.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Photoheterotroph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photoheterotroph rdfs:subClassOf :heterotroph .
+
+",photoheterotroph is a type of heterotroph.,1,False
+sweet,http://sweetontology.net/stateRoleBiological/Producer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:producer rdfs:subClassOf :biological_role .
+
+",producer is a type of biological role.,1,False
+sweet,http://sweetontology.net/stateRoleChemical/ChemicalRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_role rdfs:subClassOf :role .
+
+",chemical role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Barrier,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barrier rdfs:subClassOf :geographic_role .
+
+",barrier is a type of geographic role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Boundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boundary rdfs:subClassOf :barrier ;
+    owl:equivalentClass :edge,
+        :face .
+
+","Boundary is the same as edge and face, and it is also a type of barrier.",3,True
+sweet,http://sweetontology.net/stateRoleGeographic/Collector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:collector rdfs:subClassOf :geographic_role .
+
+",collector is a type of geographic role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Edge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:edge rdfs:subClassOf :barrier .
+
+",edge is a type of barrier.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Face,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:face rdfs:subClassOf :barrier .
+
+",face is a type of barrier.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Fringe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fringe rdfs:subClassOf :margin ;
+    owl:equivalentClass :periphery .
+
+",Fringe is the same as periphery and is also a type of margin.,2,True
+sweet,http://sweetontology.net/stateRoleGeographic/GeographicRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geographic_role rdfs:subClassOf :role .
+
+",geographic role is a type of role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Highway,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:highway rdfs:subClassOf :geographic_role .
+
+",highway is a type of geographic role.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Margin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:margin rdfs:subClassOf :boundary,
+        :edge,
+        :face .
+
+","Margin is a type of boundary, edge, and face.",3,True
+sweet,http://sweetontology.net/stateRoleGeographic/Obstruction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:obstruction rdfs:subClassOf :barrier .
+
+",obstruction is a type of barrier.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Periphery,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:periphery rdfs:subClassOf :margin .
+
+",periphery is a type of margin.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Separation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:separation rdfs:subClassOf :barrier .
+
+",separation is a type of barrier.,1,False
+sweet,http://sweetontology.net/stateRoleGeographic/Tributary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tributary rdfs:subClassOf :collector .
+
+",tributary is a type of collector.,1,False
+sweet,http://sweetontology.net/stateRoleRepresentative/RepresentativeRole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:representative_role rdfs:subClassOf :ordinal_property,
+        :role .
+
+",The representative role serves as both a type of role and a type of ordinal property.,2,True
+sweet,http://sweetontology.net/stateSolid/SolidState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solid_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        :physical_state .
+
+","Solid state is a type of physical state, which is a condition something must have to be considered solid.",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Antumbra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antumbra rdfs:subClassOf :shadow .
+
+",antumbra is a type of shadow.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Basal,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basal rdfs:subClassOf :minimum ;
+    owl:equivalentClass :bottom .
+
+",Basal is the same as the bottom and is a type of minimum.,2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Base,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:base rdfs:subClassOf :minimum ;
+    owl:equivalentClass :bottom .
+
+",Base is the same as the bottom and is a type of minimum.,2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Bottom,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bottom rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :down ;
+            owl:onProperty :has_direction ],
+        :minimum ;
+    owl:equivalentClass :floor .
+
+","The bottom is synonymous with the floor and is characterized as a type of minimum. Additionally, it is defined as a type of entity that necessarily has a downward direction.",3,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Flank,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flank rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+","Flank is a type of configuration and specifically, it is a type of spatial configuration.",2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Floor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:floor rdfs:subClassOf :minimum .
+
+",floor is a type of minimum.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Juxtaposition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:juxtaposition rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+",Juxtaposition is a type of configuration as well as a type of spatial configuration.,2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Penumbra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:penumbra rdfs:subClassOf :shadow .
+
+",penumbra is a type of shadow.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Projection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:projection rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+",Projection is both a type of configuration and a type of spatial configuration.,2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Relief,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:relief rdfs:subClassOf :projection .
+
+",relief is a type of projection.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Rim,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rim rdfs:subClassOf :maximum ;
+    owl:equivalentClass :top .
+
+",Rim is the same as top and is a type of maximum.,2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Shadow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shadow rdfs:subClassOf :projection .
+
+",shadow is a type of projection.,1,False
+sweet,http://sweetontology.net/stateSpaceConfiguration/Side,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:side rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+",Side is both a type of configuration and a type of spatial configuration.,2,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Top,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:top rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :up ;
+            owl:onProperty :has_direction ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :bottom ;
+            owl:onProperty :above ],
+        :maximum .
+
+","Top is a type of maximum and is something that only exists above the bottom. Additionally, it is defined as something that must have an upward direction.",3,True
+sweet,http://sweetontology.net/stateSpaceConfiguration/Umbra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:umbra rdfs:subClassOf :shadow .
+
+",umbra is a type of shadow.,1,False
+sweet,http://sweetontology.net/stateSpectralBand/BandLimited,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:band_limited rdfs:subClassOf :spectral_band ;
+    owl:equivalentClass :narrow_spectrum .
+
+","Band limited, which is the same as narrow spectrum, is a type of spectral band.",2,True
+sweet,http://sweetontology.net/stateSpectralBand/Bolometric,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bolometric rdfs:subClassOf :broad_band,
+        :broad_spectrum,
+        :white_light .
+
+","Bolometric is a type of broad band, broad spectrum, and white light.",3,True
+sweet,http://sweetontology.net/stateSpectralBand/BroadBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:broad_band rdfs:subClassOf :spectral_band ;
+    owl:equivalentClass :broad_spectrum .
+
+",Broadband is the same as a broad spectrum and is a type of spectral band.,2,True
+sweet,http://sweetontology.net/stateSpectralBand/BroadSpectrum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:broad_spectrum rdfs:subClassOf :spectral_band ;
+    owl:equivalentClass :white_light .
+
+",Broad spectrum is the same as white light and is a type of spectral band.,2,True
+sweet,http://sweetontology.net/stateSpectralBand/Monochromatic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monochromatic rdfs:subClassOf :band_limited,
+        :narrow_band,
+        :narrow_spectrum .
+
+","Monochromatic is a type of band that is limited, narrow in band, and narrow in spectrum.",3,True
+sweet,http://sweetontology.net/stateSpectralBand/NarrowBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:narrow_band rdfs:subClassOf :spectral_band ;
+    owl:equivalentClass :narrow_spectrum .
+
+",Narrow band is the same as narrow spectrum and is a type of spectral band.,2,True
+sweet,http://sweetontology.net/stateSpectralBand/NarrowSpectrum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:narrow_spectrum rdfs:subClassOf :spectral_band .
+
+",narrow spectrum is a type of spectral band.,1,False
+sweet,http://sweetontology.net/stateSpectralBand/Polychromatic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polychromatic rdfs:subClassOf :broad_band,
+        :broad_spectrum,
+        :white_light .
+
+","Polychromatic is a type of broad band, broad spectrum, and white light.",3,True
+sweet,http://sweetontology.net/stateSpectralBand/WhiteLight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:white_light rdfs:subClassOf :spectral_band .
+
+",white light is a type of spectral band.,1,False
+sweet,http://sweetontology.net/stateStorm/BeaufortScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:beaufort_scale rdfs:subClassOf :wind_scale .
+
+",beaufort scale is a type of wind scale.,1,False
+sweet,http://sweetontology.net/stateStorm/EnhancedFujitaScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enhanced_fujita_scale rdfs:subClassOf :tornado_scale .
+
+",enhanced fujita scale is a type of tornado scale.,1,False
+sweet,http://sweetontology.net/stateStorm/FujitaPearsonScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fujita_pearson_scale rdfs:subClassOf :tornado_scale .
+
+",fujita pearson scale is a type of tornado scale.,1,False
+sweet,http://sweetontology.net/stateStorm/HurricaneScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hurricane_scale rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :hurricane ;
+            owl:onProperty :has_phenomena ],
+        :wind_scale .
+
+",The hurricane scale is a type of wind scale that exclusively deals with the phenomena of hurricanes.,2,True
+sweet,http://sweetontology.net/stateStorm/SaffirSimpsonScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saffir_simpson_scale rdfs:subClassOf :hurricane_scale .
+
+",saffir simpson scale is a type of hurricane scale.,1,False
+sweet,http://sweetontology.net/stateStorm/TornadoScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tornado_scale rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :tornado ;
+            owl:onProperty :has_phenomena ],
+        :wind_scale .
+
+",The tornado scale is a type of wind scale that is exclusively categorized for the phenomenon of tornadoes.,2,True
+sweet,http://sweetontology.net/stateStorm/WindScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_scale rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :wind ;
+            owl:onProperty :measure_of ],
+        :ordinal_scale .
+
+",Wind scale is a type of ordinal scale that exclusively measures wind.,2,True
+sweet,http://sweetontology.net/stateSystem/Coherent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coherent rdfs:subClassOf :system_state .
+
+",coherent is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Complex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:complex rdfs:subClassOf :system_state .
+
+",complex is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Deficit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deficit rdfs:subClassOf :system_state ;
+    owl:disjointWith :excess .
+
+",Deficit is a type of system state and is disjoint with excess.,2,True
+sweet,http://sweetontology.net/stateSystem/EquilibriumState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equilibrium_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :equilibrium ;
+            owl:onProperty :has_state ],
+        :system_state .
+
+","An equilibrium state is a type of system state, which is a kind of something that must have state equilibrium.",2,True
+sweet,http://sweetontology.net/stateSystem/Excess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:excess rdfs:subClassOf :system_state .
+
+",excess is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Homeostasis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:homeostasis rdfs:subClassOf :system_state .
+
+",homeostasis is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Instability,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:instability rdfs:subClassOf :system_state ;
+    owl:equivalentClass :unstable .
+
+","Instability, which is the same as being unstable, is a type of system state.",2,True
+sweet,http://sweetontology.net/stateSystem/Overflow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overflow rdfs:subClassOf :system_state .
+
+",overflow is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Resilient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resilient rdfs:subClassOf :system_state .
+
+",resilient is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/Stability,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stability rdfs:subClassOf :system_state ;
+    owl:disjointWith :unstable ;
+    owl:equivalentClass :stable .
+
+","Stability is synonymous with being stable and represents a type of system state. Furthermore, stability is mutually exclusive with being unstable.",3,True
+sweet,http://sweetontology.net/stateSystem/Stable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stable rdfs:subClassOf :system_state .
+
+",stable is a type of system state.,1,False
+sweet,http://sweetontology.net/stateSystem/SystemState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:system_state rdfs:subClassOf :state .
+
+",system state is a type of state.,1,False
+sweet,http://sweetontology.net/stateSystem/Unstable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unstable rdfs:subClassOf :system_state .
+
+",unstable is a type of system state.,1,False
+sweet,http://sweetontology.net/stateThermodynamic/ThermodynamicState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermodynamic_state rdfs:subClassOf :physical_state .
+
+",thermodynamic state is a type of physical state.,1,False
+sweet,http://sweetontology.net/stateTime/Age,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:age rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :epoch ],
+        :geologic_time_unit .
+
+","Age is a type of geologic time unit, and it serves as at least a temporal part of some epoch.",2,True
+sweet,http://sweetontology.net/stateTime/Eon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eon rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :supereon ],
+        :geologic_time_unit .
+
+",An eon is a type of geologic time unit and it is also a type of something that constitutes at least a temporal part of some supereon.,2,True
+sweet,http://sweetontology.net/stateTime/Epoch,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epoch rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :period ],
+        :geologic_time_unit .
+
+",An epoch is a type of geologic time unit and is also recognized as a type of entity that constitutes at least a temporal part of some period.,2,True
+sweet,http://sweetontology.net/stateTime/Era,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:era rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :eon ],
+        :geologic_time_unit .
+
+",An era is a type of geologic time unit that represents at least a temporal part of some eon.,2,True
+sweet,http://sweetontology.net/stateTime/GeologicTimeUnit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geologic_time_unit rdfs:subClassOf :duration,
+        :duration_description,
+        :time_interval .
+
+","A geologic time unit is a type of duration, duration description, and time interval.",3,True
+sweet,http://sweetontology.net/stateTime/NeotectonicPeriod,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neotectonic_period rdfs:subClassOf :temporal_reference,
+        :time_reference .
+
+",The neotectonic period serves as both a temporal and time reference.,2,True
+sweet,http://sweetontology.net/stateTime/Period,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:period rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :temporal_part_of ;
+            owl:someValuesFrom :era ],
+        :geologic_time_unit .
+
+",A period is a type of geologic time unit and serves as at least a temporal part of some era.,2,True
+sweet,http://sweetontology.net/stateTime/Supereon,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supereon rdfs:subClassOf :geologic_time_unit .
+
+",supereon is a type of geologic time unit.,1,False
+sweet,http://sweetontology.net/stateTimeCycle/ElNino,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:el_nino rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :enso ],
+        :oscillation_state .
+
+",El Nino is a type of oscillation state and is also a type of something that is at most the maximum of some ENSO.,2,True
+sweet,http://sweetontology.net/stateTimeCycle/HighTide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:high_tide rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :tide ],
+        :oscillation_state .
+
+",High tide is a type of oscillation state and is also a type of something that is at least the maximum of some tide.,2,True
+sweet,http://sweetontology.net/stateTimeCycle/IceAge,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_age rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :ice_age_cycle ],
+        :oscillation_state .
+
+","An ice age is a type of oscillation state and also represents a phase that occurs at the peak, or maximum, of some ice age cycles.",2,True
+sweet,http://sweetontology.net/stateTimeCycle/Interglacial,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interglacial rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :ice_age_cycle ],
+        :oscillation_state .
+
+",An interglacial is a type of oscillation state and represents a phase within an ice age cycle with at least a minimum amount of ice.,2,True
+sweet,http://sweetontology.net/stateTimeCycle/LaNina,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:la_nina rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :enso ],
+        :oscillation_state .
+
+",La Nina is a type of oscillation state and is considered a type of phenomenon that represents at least a minimum aspect of some ENSO.,2,True
+sweet,http://sweetontology.net/stateTimeCycle/LowTide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:low_tide rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :tide ],
+        :oscillation_state .
+
+",Low tide is both a type of oscillation state and something that represents at least the minimum of some tide.,2,True
+sweet,http://sweetontology.net/stateTimeCycle/MaunderMinimum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maunder_minimum rdfs:subClassOf :solar_minimum .
+
+",maunder minimum is a type of solar minimum.,1,False
+sweet,http://sweetontology.net/stateTimeCycle/NeapTide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neap_tide rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :high_tide ],
+        [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :low_tide ],
+        :oscillation_state .
+
+",Neap tide is a type of oscillation state that represents at least the maximum of some low tide and at least the minimum of some high tide.,3,True
+sweet,http://sweetontology.net/stateTimeCycle/OscillationState,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oscillation_state rdfs:subClassOf :physical_state .
+
+",oscillation state is a type of physical state.,1,False
+sweet,http://sweetontology.net/stateTimeCycle/SolarMaximum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_maximum rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :solar_cycle ],
+        :oscillation_state .
+
+",Solar maximum is a type of oscillation state and represents a phase that occurs at the peak of some solar cycle.,2,True
+sweet,http://sweetontology.net/stateTimeCycle/SolarMinimum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_minimum rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :solar_cycle ],
+        :oscillation_state .
+
+",Solar minimum is a type of oscillation state and represents at least the minimum of some solar cycle.,2,True
+sweet,http://sweetontology.net/stateTimeCycle/SpringTide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spring_tide rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :maximum_of ;
+            owl:someValuesFrom :high_tide ],
+        [ a owl:Restriction ;
+            owl:onProperty :minimum_of ;
+            owl:someValuesFrom :low_tide ],
+        :oscillation_state .
+
+",Spring tide is a type of oscillation state that represents at least the maximum of some high tides and at least the minimum of some low tides.,3,True

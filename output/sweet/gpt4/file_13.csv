@@ -1,0 +1,3180 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/matrRock/Molasse,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:molasse rdfs:subClassOf :sedimentary .
+
+",molasse is a type of sedimentary.,1,False
+sweet,http://sweetontology.net/matrRock/Regolith,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regolith rdfs:subClassOf :mixed_chemical_substance,
+        :mixture ;
+    owl:disjointWith :rock .
+
+","Regolith is a type of mixed chemical substance and also a type of mixture. However, regolith is distinct and different from rock.",3,True
+sweet,http://sweetontology.net/matrRock/Rock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rock rdfs:subClassOf :mixed_chemical_substance,
+        :mixture,
+        :solid_substance .
+
+","Rock is a type of mixed chemical substance, mixture, and solid substance.",3,True
+sweet,http://sweetontology.net/matrRock/RockBody,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rock_body rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rock ;
+            owl:onProperty :has_substance ],
+        :mixed_chemical_substance,
+        :mixture,
+        :solid_substance .
+
+","A rock body is a type of mixed chemical substance, mixture, and solid substance. It is also a type of something that only has substance rock.",4,True
+sweet,http://sweetontology.net/matrRock/SedimentaryRock,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sedimentary_rock rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sedimentary ;
+            owl:onProperty :has_genesis ],
+        :rock .
+
+",Sedimentary rock is a type of rock that exclusively undergoes a genesis process termed sedimentary.,2,True
+sweet,http://sweetontology.net/matrRock/Serpentinite,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:serpentinite rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :serpentinization ;
+            owl:onProperty :has_genesis ],
+        :metamorphic_rock .
+
+",Serpentinite is a type of metamorphic rock that is characterized by a specific genesis known as serpentinization.,2,True
+sweet,http://sweetontology.net/matrRock/Serpentinization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:serpentinization rdfs:subClassOf :metamorphic .
+
+",serpentinization is a type of metamorphic.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Aa,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aa rdfs:subClassOf :extrusive_rock,
+        :lava .
+
+",Aa is a type of extrusive rock and is also a type of lava.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/Andesite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:andesite rdfs:subClassOf :volcanic_rock .
+
+",andesite is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/AnorogenicIgneousRock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anorogenic_igneous_rock rdfs:subClassOf :intrusive_rock .
+
+",anorogenic igneous rock is a type of intrusive rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Anorthosite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anorthosite rdfs:subClassOf :igneous_rock .
+
+",anorthosite is a type of igneous rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Aphanite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aphanite rdfs:subClassOf :igneous_rock .
+
+",aphanite is a type of igneous rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Basalt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basalt rdfs:subClassOf :extrusive_rock .
+
+",basalt is a type of extrusive rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/CinderCone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cinder_cone rdfs:subClassOf :volcanic_cone .
+
+",cinder cone is a type of volcanic cone.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/CompositeCone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:composite_cone rdfs:subClassOf :volcanic_cone .
+
+",composite cone is a type of volcanic cone.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Dacite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dacite rdfs:subClassOf :volcanic_rock .
+
+",dacite is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/ExtrusiveRock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extrusive_rock rdfs:subClassOf :igneous_rock .
+
+",extrusive rock is a type of igneous rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Felsic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:felsic rdfs:subClassOf :igneous_rock ;
+    owl:disjointWith :mafic .
+
+",Felsic is a type of igneous rock and it is disjoint with mafic.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/Hypabyssal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hypabyssal rdfs:subClassOf :igneous_rock .
+
+",hypabyssal is a type of igneous rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/IgneousRock,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:igneous_rock rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :igneous ;
+            owl:onProperty :has_genesis ],
+        :rock .
+
+",Igneous rock is a type of rock that is exclusively categorized under the genesis igneous.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/IntrusiveRock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intrusive_rock rdfs:subClassOf :igneous_rock .
+
+",intrusive rock is a type of igneous rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Kimberlite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kimberlite rdfs:subClassOf :igneous_rock .
+
+",kimberlite is a type of igneous rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Lava,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lava rdfs:subClassOf :extrusive_rock,
+        :volcanic_rock .
+
+",Lava is a type of extrusive rock and also a type of volcanic rock.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/Mafic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mafic rdfs:subClassOf :igneous_rock .
+
+",mafic is a type of igneous rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Magma,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magma rdfs:subClassOf :volcanic_rock .
+
+",magma is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Obsidian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:obsidian rdfs:subClassOf :extrusive_rock,
+        :lava .
+
+",Obsidian is a type of extrusive rock and also a type of lava.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/Pahoehoe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pahoehoe rdfs:subClassOf :extrusive_rock,
+        :lava .
+
+",Pahoehoe is both a type of extrusive rock and a type of lava.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/Peridotite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peridotite rdfs:subClassOf :igneous_rock .
+
+",peridotite is a type of igneous rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/PillowLava,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pillow_lava rdfs:subClassOf :extrusive_rock,
+        :lava .
+
+",Pillow lava is a type of extrusive rock and a type of lava.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/Pluton,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pluton rdfs:subClassOf :intrusive_rock ;
+    owl:equivalentClass :plutonic_rock .
+
+",Pluton is the same as plutonic rock and is a type of intrusive rock.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/PlutonicRock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plutonic_rock rdfs:subClassOf :intrusive_rock .
+
+",plutonic rock is a type of intrusive rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Pumice,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pumice rdfs:subClassOf :volcanic_rock .
+
+",pumice is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Pyroclastic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pyroclastic rdfs:subClassOf :extrusive_rock,
+        :volcanic_rock .
+
+",Pyroclastic is a type of extrusive rock and also a type of volcanic rock.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/Rhyolite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rhyolite rdfs:subClassOf :volcanic_rock .
+
+",rhyolite is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/SpatterCone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatter_cone rdfs:subClassOf :volcanic_rock .
+
+",spatter cone is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Tephra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tephra rdfs:subClassOf :extrusive_rock,
+        :volcanic_rock .
+
+",Tephra is a type of extrusive rock and also a type of volcanic rock.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/Trachyandesite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trachyandesite rdfs:subClassOf :volcanic_rock .
+
+",trachyandesite is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Trachybasalt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trachybasalt rdfs:subClassOf :volcanic_rock .
+
+",trachybasalt is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Trachyte,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trachyte rdfs:subClassOf :volcanic_rock .
+
+",trachyte is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Tuff,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tuff rdfs:subClassOf :pyroclastic .
+
+",tuff is a type of pyroclastic.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/TuffCone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tuff_cone rdfs:subClassOf :volcanic_cone .
+
+",tuff cone is a type of volcanic cone.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/TuffRing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tuff_ring rdfs:subClassOf :volcanic_rock .
+
+",tuff ring is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Ultramaphic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ultramaphic rdfs:subClassOf :extrusive_rock,
+        :volcanic_rock .
+
+",Ultramaphic is a type of extrusive and volcanic rock.,2,True
+sweet,http://sweetontology.net/matrRockIgneous/VolcanicCone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_cone rdfs:subClassOf :volcanic_rock .
+
+",volcanic cone is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/VolcanicNeck,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_neck rdfs:subClassOf :volcanic_rock .
+
+",volcanic neck is a type of volcanic rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/VolcanicRock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_rock rdfs:subClassOf :extrusive_rock .
+
+",volcanic rock is a type of extrusive rock.,1,False
+sweet,http://sweetontology.net/matrRockIgneous/Xenocryst,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xenocryst rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :crystal ;
+            owl:onProperty :has_state ],
+        :mixed_chemical_substance,
+        :mixture .
+
+","Xenocryst is a type of mixture and a mixed chemical substance, which must have a crystalline state.",3,True
+sweet,http://sweetontology.net/matrRockIgneous/Xenolith,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xenolith rdfs:subClassOf :rock .
+
+",xenolith is a type of rock.,1,False
+sweet,http://sweetontology.net/matrSediment/Alluvium,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alluvium rdfs:subClassOf :sediment .
+
+",alluvium is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/AshFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ash_flow rdfs:subClassOf :debris_flow .
+
+",ash flow is a type of debris flow.,1,False
+sweet,http://sweetontology.net/matrSediment/Ashfall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ashfall rdfs:subClassOf :ejecta .
+
+",ashfall is a type of ejecta.,1,False
+sweet,http://sweetontology.net/matrSediment/Bentonite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bentonite rdfs:subClassOf :clay .
+
+",bentonite is a type of clay.,1,False
+sweet,http://sweetontology.net/matrSediment/Block,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:block rdfs:subClassOf :ejecta .
+
+",block is a type of ejecta.,1,False
+sweet,http://sweetontology.net/matrSediment/Bomb,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bomb rdfs:subClassOf :ejecta .
+
+",bomb is a type of ejecta.,1,False
+sweet,http://sweetontology.net/matrSediment/Boulder,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boulder rdfs:subClassOf :sediment .
+
+",boulder is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Clast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clast rdfs:subClassOf :sediment .
+
+",clast is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Clay,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clay rdfs:subClassOf :sediment .
+
+",clay is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Cobble,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cobble rdfs:subClassOf :sediment .
+
+",cobble is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Colluvium,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:colluvium rdfs:subClassOf :sediment .
+
+",colluvium is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Debris,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:debris rdfs:subClassOf :sediment .
+
+",debris is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/DebrisAvalanche,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:debris_avalanche rdfs:subClassOf :debris_flow .
+
+",debris avalanche is a type of debris flow.,1,False
+sweet,http://sweetontology.net/matrSediment/DebrisFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:debris_flow rdfs:subClassOf :mixed_chemical_substance,
+        :mixture .
+
+",Debris flow is a type of mixture and a mixed chemical substance.,2,True
+sweet,http://sweetontology.net/matrSediment/DrillingMud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drilling_mud rdfs:subClassOf :mud .
+
+",drilling mud is a type of mud.,1,False
+sweet,http://sweetontology.net/matrSediment/Ejecta,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ejecta rdfs:subClassOf :mixed_chemical_substance,
+        :mixture .
+
+","Ejecta is a type of mixture, specifically a mixed chemical substance.",2,True
+sweet,http://sweetontology.net/matrSediment/Gibber,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gibber rdfs:subClassOf :sediment .
+
+",gibber is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Granule,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:granule rdfs:subClassOf :gravel .
+
+",granule is a type of gravel.,1,False
+sweet,http://sweetontology.net/matrSediment/Gravel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gravel rdfs:subClassOf :sediment .
+
+",gravel is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/HydrogenousSediment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrogenous_sediment rdfs:subClassOf :sediment .
+
+",hydrogenous sediment is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Hypoclastite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hypoclastite rdfs:subClassOf :volcanic_deposit .
+
+",hypoclastite is a type of volcanic deposit.,1,False
+sweet,http://sweetontology.net/matrSediment/Lahar,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lahar rdfs:subClassOf :mudflow .
+
+",lahar is a type of mudflow.,1,False
+sweet,http://sweetontology.net/matrSediment/Loam,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:loam rdfs:subClassOf :sediment .
+
+",loam is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Loess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:loess rdfs:subClassOf :sediment .
+
+",loess is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/MarineSediment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_sediment rdfs:subClassOf :sediment .
+
+",marine sediment is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Mud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mud rdfs:subClassOf :sediment .
+
+",mud is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Mudflow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mudflow rdfs:subClassOf :debris_flow .
+
+",mudflow is a type of debris flow.,1,False
+sweet,http://sweetontology.net/matrSediment/Peat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peat rdfs:subClassOf :sediment .
+
+",peat is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Pebble,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pebble rdfs:subClassOf :gravel .
+
+",pebble is a type of gravel.,1,False
+sweet,http://sweetontology.net/matrSediment/Sand,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sand rdfs:subClassOf :sediment .
+
+",sand is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Sediment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sediment rdfs:subClassOf :mixed_chemical_substance,
+        :mixture .
+
+",Sediment is a type of mixture and a mixed chemical substance.,2,True
+sweet,http://sweetontology.net/matrSediment/Silt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:silt rdfs:subClassOf :sediment .
+
+",silt is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/Soil,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:soil rdfs:subClassOf :sediment .
+
+",soil is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/TerrigenousSediment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terrigenous_sediment rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :erosion ;
+            owl:onProperty :has_genesis ],
+        :sediment .
+
+",Terrigenous sediment is a type of sediment that is exclusively generated through genesis erosion.,2,True
+sweet,http://sweetontology.net/matrSediment/Varve,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:varve rdfs:subClassOf :sediment .
+
+",varve is a type of sediment.,1,False
+sweet,http://sweetontology.net/matrSediment/VolcanicDeposit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_deposit rdfs:subClassOf :substance .
+
+",volcanic deposit is a type of substance.,1,False
+sweet,http://sweetontology.net/matrWater/BlackWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:black_water rdfs:subClassOf :water_mixture .
+
+",black water is a type of water mixture.,1,False
+sweet,http://sweetontology.net/matrWater/BrackishWater,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brackish_water rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :brackish ;
+            owl:onProperty :has_state ],
+        :salt_water .
+
+",Brackish water is a type of salt water that must have a state that is brackish.,2,True
+sweet,http://sweetontology.net/matrWater/Brine,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brine rdfs:subClassOf :salt_water ;
+    owl:disjointWith :saline_water .
+
+","Brine is a type of salt water, which is disjoint from saline water.",2,True
+sweet,http://sweetontology.net/matrWater/CloudDrop,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud_drop rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :diameter ],
+        :drop .
+
+",A cloud drop is a type of drop that must have a specific diameter.,2,True
+sweet,http://sweetontology.net/matrWater/DepthHoar,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:depth_hoar rdfs:subClassOf :ice_crystal,
+        :ice_particle .
+
+",Depth hoar is a type of ice crystal and a type of ice particle.,2,True
+sweet,http://sweetontology.net/matrWater/Dew,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dew rdfs:subClassOf :liquid_water .
+
+",dew is a type of liquid water.,1,False
+sweet,http://sweetontology.net/matrWater/DrinkingWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drinking_water rdfs:subClassOf :human_need,
+        :water_mixture .
+
+",Drinking water is both a type of human need and a type of water mixture.,2,True
+sweet,http://sweetontology.net/matrWater/DrizzleDrop,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drizzle_drop rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :diameter ],
+        :drop .
+
+",Drizzle drop is a type of drop that must diameter something.,2,True
+sweet,http://sweetontology.net/matrWater/Drop,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drop rdfs:subClassOf :liquid_water .
+
+",drop is a type of liquid water.,1,False
+sweet,http://sweetontology.net/matrWater/Effluent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:effluent rdfs:subClassOf :water_mixture .
+
+",effluent is a type of water mixture.,1,False
+sweet,http://sweetontology.net/matrWater/Firn,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:firn rdfs:subClassOf :ice_crystal,
+        :ice_particle .
+
+",Firn is a type of ice crystal and also a type of ice particle.,2,True
+sweet,http://sweetontology.net/matrWater/FreshWater,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fresh_water rdfs:subClassOf :water_substance ;
+    owl:disjointWith :salt_water .
+
+","Fresh water is a type of water substance, and it is distinct from salt water.",2,True
+sweet,http://sweetontology.net/matrWater/Frost,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frost rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :frozen ;
+            owl:onProperty :has_state ],
+        :water_substance .
+
+",Frost is a type of water substance that must have a state of being frozen.,2,True
+sweet,http://sweetontology.net/matrWater/GranularIce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:granular_ice rdfs:subClassOf :ice .
+
+",granular ice is a type of ice.,1,False
+sweet,http://sweetontology.net/matrWater/GrayWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gray_water rdfs:subClassOf :water_mixture .
+
+",gray water is a type of water mixture.,1,False
+sweet,http://sweetontology.net/matrWater/Groundwater,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:groundwater rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :planetary_surface ;
+            owl:onProperty :below ],
+        :liquid_water .
+
+",Groundwater is a type of liquid water and it is something that exists only below the planetary surface.,2,True
+sweet,http://sweetontology.net/matrWater/HoarCrystal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hoar_crystal rdfs:subClassOf :ice_crystal,
+        :ice_particle .
+
+",Hoar crystal is a type of ice crystal and also a type of ice particle.,2,True
+sweet,http://sweetontology.net/matrWater/Hydrate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrate rdfs:subClassOf :water_substance .
+
+",hydrate is a type of water substance.,1,False
+sweet,http://sweetontology.net/matrWater/Ice,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        :water_substance .
+
+",Ice is a type of water substance and is something that must have a solid state.,2,True
+sweet,http://sweetontology.net/matrWater/IceCrystal,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_crystal rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :crystal ;
+            owl:onProperty :has_state ],
+        :ice ;
+    owl:equivalentClass :ice_particle .
+
+","An ice crystal is the same as an ice particle and is a type of ice. Additionally, an ice crystal is a type of entity that must have a crystal state.",3,True
+sweet,http://sweetontology.net/matrWater/IceParticle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_particle rdfs:subClassOf :ice .
+
+",ice particle is a type of ice.,1,False
+sweet,http://sweetontology.net/matrWater/LiquidWater,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:liquid_water rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :liquid ;
+            owl:onProperty :has_state ],
+        :water_substance .
+
+",Liquid water is a type of water substance and it is a type of something that must have a liquid state.,2,True
+sweet,http://sweetontology.net/matrWater/RainDrop,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rain_drop rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :diameter ],
+        :drop .
+
+",A rain drop is a type of drop and is something that must have a diameter.,2,True
+sweet,http://sweetontology.net/matrWater/Rainwater,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rainwater rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rainfall ;
+            owl:onProperty :has_source ],
+        :liquid_water .
+
+",Rainwater is a type of liquid water and it is something that only has the source of rainfall.,2,True
+sweet,http://sweetontology.net/matrWater/Rime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rime rdfs:subClassOf :ice .
+
+",rime is a type of ice.,1,False
+sweet,http://sweetontology.net/matrWater/SalineWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saline_water rdfs:subClassOf :salt_water .
+
+",saline water is a type of salt water.,1,False
+sweet,http://sweetontology.net/matrWater/SaltWater,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:salt_water rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :saline ;
+            owl:onProperty :has_state ],
+        :water_substance .
+
+",Salt water is a type of water substance and is characterized by having a saline state.,2,True
+sweet,http://sweetontology.net/matrWater/SeaWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_water rdfs:subClassOf :salt_water .
+
+",sea water is a type of salt water.,1,False
+sweet,http://sweetontology.net/matrWater/Sewage,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sewage rdfs:subClassOf :effluent .
+
+",sewage is a type of effluent.,1,False
+sweet,http://sweetontology.net/matrWater/Snow,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snow rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        :water_substance .
+
+",Snow is a type of water substance that must have a solid state.,2,True
+sweet,http://sweetontology.net/matrWater/SnowFacies,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snow_facies rdfs:subClassOf :ice_crystal,
+        :ice_particle .
+
+",Snow facies is a type of ice crystal and ice particle.,2,True
+sweet,http://sweetontology.net/matrWater/SnowGrain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snow_grain rdfs:subClassOf :snow .
+
+",snow grain is a type of snow.,1,False
+sweet,http://sweetontology.net/matrWater/Steam,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:steam rdfs:subClassOf :water_substance ;
+    owl:equivalentClass :water_vapor .
+
+",Steam is the same as water vapor and is a type of water substance.,2,True
+sweet,http://sweetontology.net/matrWater/Wastewater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wastewater rdfs:subClassOf :effluent .
+
+",wastewater is a type of effluent.,1,False
+sweet,http://sweetontology.net/matrWater/WaterMixture,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_mixture rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :h2o ;
+            owl:onProperty :has_chemical_1 ],
+        :mixed_chemical_substance,
+        :mixture .
+
+",Water mixture is a type of mixed chemical substance and a type of mixture that must contain the chemical H2O.,3,True
+sweet,http://sweetontology.net/matrWater/WaterSubstance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_substance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_chemical ],
+        :substance .
+
+",Water substance is a type of substance and it is something that must have chemical water.,2,True
+sweet,http://sweetontology.net/matrWater/WaterVapor,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_vapor rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :gas ;
+            owl:onProperty :has_state ],
+        :water_substance .
+
+","Water vapor is a type of water substance, which is specifically in a gaseous state.",2,True
+sweet,http://sweetontology.net/phen/AirSeaExchange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_sea_exchange rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_source ;
+            owl:someValuesFrom :atmosphere ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_source ;
+            owl:someValuesFrom :ocean ],
+        :exchange,
+        :phenomena ;
+    owl:equivalentClass :atmosphere_ocean_exchange .
+
+","Air-sea exchange, which is also known as atmosphere-ocean exchange, is a type of phenomena and exchange. This exchange is a process that involves at least the atmosphere and the ocean as its sources.",5,True
+sweet,http://sweetontology.net/phen/AtmosphereLandExchange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmosphere_land_exchange rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_source ;
+            owl:someValuesFrom :land ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_source ;
+            owl:someValuesFrom :atmosphere ],
+        :exchange,
+        :phenomena .
+
+",Atmosphere-land exchange is a type of phenomenon and a type of exchange that involves at least some source from both the atmosphere and the land.,4,True
+sweet,http://sweetontology.net/phen/AtmosphereOceanExchange,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmosphere_ocean_exchange rdfs:subClassOf :exchange,
+        :phenomena .
+
+",Atmosphere-ocean exchange is both a type of phenomena and a type of exchange.,2,True
+sweet,http://sweetontology.net/phen/BrownianMotion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brownian_motion rdfs:subClassOf :stochastic_process .
+
+",brownian motion is a type of stochastic process.,1,False
+sweet,http://sweetontology.net/phen/DynamicalPhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dynamical_phenomena rdfs:subClassOf :phenomena .
+
+",dynamical phenomena is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phen/Event,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:event rdfs:subClassOf :phenomena ;
+    owl:equivalentClass :occurrence .
+
+",An event is the same as an occurrence and is a type of phenomena.,2,True
+sweet,http://sweetontology.net/phen/ExtremeEvent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extreme_event rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :infrequent ;
+            owl:onProperty :has_frequency ],
+        :event,
+        :occurrence .
+
+","An extreme event is a type of event, occurrence, and something that must have an infrequent frequency.",3,True
+sweet,http://sweetontology.net/phen/Flash,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flash rdfs:subClassOf :phenomena .
+
+",flash is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phen/Occurrence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:occurrence rdfs:subClassOf :phenomena .
+
+",occurrence is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phen/Phenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phenomena rdfs:subClassOf owl:Thing .
+
+",phenomena is a type of thing.,1,False
+sweet,http://sweetontology.net/phen/PlanetaryPhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :planetary_scale ;
+            owl:onProperty :has_spatial_scale ],
+        :phenomena .
+
+",Planetary phenomena are a type of phenomena that necessarily have a spatial scale of planetary scale.,2,True
+sweet,http://sweetontology.net/phen/Precipitation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:precipitation rdfs:subClassOf :phenomena .
+
+",precipitation is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phen/RadiationalCooling,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiational_cooling rdfs:subClassOf :cooling,
+        :radiant_flux,
+        :radiative_forcing ;
+    owl:equivalentClass :radiative_cooling .
+
+","Radiational cooling, which is the same as radiative cooling, is a type of cooling that also falls under the categories of radiant flux and radiative forcing.",4,True
+sweet,http://sweetontology.net/phen/RadiationalHeating,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiational_heating rdfs:subClassOf :heating,
+        :radiant_flux,
+        :radiative_forcing ;
+    owl:equivalentClass :radiative_heating .
+
+","Radiational heating, which is the same as radiative heating, is a type of heating that is also considered a form of radiant flux and radiative forcing.",4,True
+sweet,http://sweetontology.net/phen/RadiativeCooling,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiative_cooling rdfs:subClassOf :cooling,
+        :radiant_flux,
+        :radiative_forcing ;
+    owl:disjointWith :radiative_heating .
+
+","Radiative cooling is a type of cooling, radiant flux, and radiative forcing. Moreover, radiative cooling is disjoint with radiative heating.",4,True
+sweet,http://sweetontology.net/phen/RadiativeHeating,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiative_heating rdfs:subClassOf :heating,
+        :radiant_flux,
+        :radiative_forcing .
+
+","Radiative heating is a type of heating, radiant flux, and radiative forcing.",3,True
+sweet,http://sweetontology.net/phen/StochasticProcess,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stochastic_process rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :stochastic ;
+            owl:onProperty :has_state ],
+        :dynamical_phenomena .
+
+",A stochastic process is a type of dynamical phenomena and is something that must have a state stochastic.,2,True
+sweet,http://sweetontology.net/phen/Teleconnection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:teleconnection rdfs:subClassOf :planetary_phenomena .
+
+",teleconnection is a type of planetary phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/AirMass,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_mass rdfs:subClassOf :air,
+        :model,
+        :scientific_model .
+
+","An air mass is a type of air, model, and scientific model.",3,True
+sweet,http://sweetontology.net/phenAtmo/AtmosphericDisturbance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_disturbance rdfs:subClassOf :atmospheric_wave .
+
+",atmospheric disturbance is a type of atmospheric wave.,1,False
+sweet,http://sweetontology.net/phenAtmo/AtmosphericPhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_phenomena rdfs:subClassOf :planetary_phenomena .
+
+",atmospheric phenomena is a type of planetary phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/AtmosphericWave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_wave rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :atmosphere ;
+            owl:onProperty :has_realm ],
+        :fluid_wave .
+
+",An atmospheric wave is a type of fluid wave that exists solely within the realm of the atmosphere.,2,True
+sweet,http://sweetontology.net/phenAtmo/CappingInversion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:capping_inversion rdfs:subClassOf :meteorological_phenomena .
+
+",capping inversion is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/EasterlyWave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:easterly_wave rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :easterly_wind ;
+            owl:onProperty :has_phenomena ],
+        :atmospheric_wave .
+
+",An easterly wave is a type of atmospheric wave and is a phenomenon that only involves easterly wind.,2,True
+sweet,http://sweetontology.net/phenAtmo/FoehnWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foehn_wave rdfs:subClassOf :mountain_wave .
+
+",foehn wave is a type of mountain wave.,1,False
+sweet,http://sweetontology.net/phenAtmo/FrontalWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frontal_wave rdfs:subClassOf :atmospheric_wave .
+
+",frontal wave is a type of atmospheric wave.,1,False
+sweet,http://sweetontology.net/phenAtmo/GroundInversion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ground_inversion rdfs:subClassOf :meteorological_phenomena .
+
+",ground inversion is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/Icing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:icing rdfs:subClassOf :meteorological_phenomena .
+
+",icing is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/KillingFreeze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:killing_freeze rdfs:subClassOf :frost .
+
+",killing freeze is a type of frost.,1,False
+sweet,http://sweetontology.net/phenAtmo/LeeWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lee_wave rdfs:subClassOf :mountain_wave .
+
+",lee wave is a type of mountain wave.,1,False
+sweet,http://sweetontology.net/phenAtmo/LightFreeze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:light_freeze rdfs:subClassOf :frost .
+
+",light freeze is a type of frost.,1,False
+sweet,http://sweetontology.net/phenAtmo/LightFrost,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:light_frost rdfs:subClassOf :frost .
+
+",light frost is a type of frost.,1,False
+sweet,http://sweetontology.net/phenAtmo/MesoscaleDisturbance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesoscale_disturbance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :mesoscale ;
+            owl:onProperty :has_spatial_scale ],
+        :atmospheric_disturbance .
+
+",A mesoscale disturbance is a type of atmospheric disturbance that is characterized by its mesoscale spatial scale.,2,True
+sweet,http://sweetontology.net/phenAtmo/MeteorologicalPhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meteorological_phenomena rdfs:subClassOf :atmospheric_phenomena .
+
+",meteorological phenomena is a type of atmospheric phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/MixedLayerCappingInversion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixed_layer_capping_inversion rdfs:subClassOf :capping_inversion .
+
+",mixed layer capping inversion is a type of capping inversion.,1,False
+sweet,http://sweetontology.net/phenAtmo/MixedLayerEvolution,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixed_layer_evolution rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mixed_layer ;
+            owl:onProperty :has_realm ],
+        :evolution .
+
+",Mixed layer evolution is a type of evolution that pertains exclusively to the realm of the mixed layer.,2,True
+sweet,http://sweetontology.net/phenAtmo/MoisturePooling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moisture_pooling rdfs:subClassOf :meteorological_phenomena .
+
+",moisture pooling is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/MountainWave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_wave rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mountain ;
+            owl:onProperty :has_realm ],
+        :atmospheric_wave .
+
+",Mountain wave is a type of atmospheric wave and is a phenomenon that exclusively pertains to the mountain realm.,2,True
+sweet,http://sweetontology.net/phenAtmo/NocturnalCooling,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nocturnal_cooling rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :nocturnal ;
+            owl:onProperty :has_time ],
+        :radiational_cooling,
+        :radiative_cooling .
+
+","Nocturnal cooling is a type of radiational and radiative cooling, which is a process that only occurs during the nocturnal time.",3,True
+sweet,http://sweetontology.net/phenAtmo/Obscuration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:obscuration rdfs:subClassOf :fog .
+
+",obscuration is a type of fog.,1,False
+sweet,http://sweetontology.net/phenAtmo/OrographicLifting,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orographic_lifting rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :orographic ],
+        :lift,
+        :lifting .
+
+","Orographic lifting is a type of lift, also known as a type of lifting, and it is a type of phenomenon that involves some orographic aspects.",3,True
+sweet,http://sweetontology.net/phenAtmo/Rainbow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rainbow rdfs:subClassOf :meteorological_phenomena .
+
+",rainbow is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/Sunlight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sunlight rdfs:subClassOf :radiational_heating,
+        :radiative_heating .
+
+","Sunlight is a type of radiational heating, also known as radiative heating.",2,True
+sweet,http://sweetontology.net/phenAtmo/Sunlit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sunlit rdfs:subClassOf :weather,
+        :weather_condition .
+
+","Sunlit is a type of weather, also referred to as a type of weather condition.",2,True
+sweet,http://sweetontology.net/phenAtmo/Thermal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal rdfs:subClassOf :meteorological_phenomena .
+
+",thermal is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/Weather,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:weather rdfs:subClassOf :meteorological_phenomena ;
+    owl:equivalentClass :weather_condition .
+
+","Weather, which is the same as weather condition, is a type of meteorological phenomena.",2,True
+sweet,http://sweetontology.net/phenAtmo/WeatherCondition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:weather_condition rdfs:subClassOf :meteorological_phenomena .
+
+",weather condition is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmo/Whiteout,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:whiteout rdfs:subClassOf :obscuration .
+
+",whiteout is a type of obscuration.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Altostratus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:altostratus rdfs:subClassOf :stratiform .
+
+",altostratus is a type of stratiform.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/AnvilCloud,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anvil_cloud rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cumulonimbus ;
+            owl:onProperty :upper_part_of ],
+        :cloud .
+
+",An anvil cloud is a type of cloud that is exclusively the upper part of a cumulonimbus.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/BannerCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:banner_cloud rdfs:subClassOf :cloud .
+
+",banner cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/BaroclinicLeaf,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:baroclinic_leaf rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cyclogenesis ;
+            owl:onProperty :has_phenomena ],
+        :cloud .
+
+",A baroclinic leaf is a type of cloud and also a type of phenomenon that only involves cyclogenesis.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/BillowCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:billow_cloud rdfs:subClassOf :cloud .
+
+",billow cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/BlackShearedAnvil,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:black_sheared_anvil rdfs:subClassOf :cumulonimbus .
+
+",black sheared anvil is a type of cumulonimbus.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Cirrostratus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cirrostratus rdfs:subClassOf :stratiform .
+
+",cirrostratus is a type of stratiform.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Cirrus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cirrus rdfs:subClassOf :cloud .
+
+",cirrus is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Cloud,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_substance ;
+            owl:someValuesFrom :cloud_condensation_nuclei ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_substance ;
+            owl:someValuesFrom :ice ],
+        :meteorological_phenomena .
+
+","Cloud is a type of meteorological phenomena, which is a type of something that at least has some substance such as cloud condensation nuclei and ice.",3,True
+sweet,http://sweetontology.net/phenAtmoCloud/Cumulonimbus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cumulonimbus rdfs:subClassOf :cloud .
+
+",cumulonimbus is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Cumulus,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cumulus rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :convection ;
+            owl:onProperty :has_phenomena ],
+        :cloud .
+
+","Cumulus is a type of cloud, and it is a type of something that only involves the phenomena of convection.",2,True
+sweet,http://sweetontology.net/phenAtmoCloud/FlankingLine,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flanking_line rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cumulonimbus ;
+            owl:onProperty :has_phenomena ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :cumulus ;
+            owl:onProperty :has_phenomena ],
+        :meteorological_phenomena .
+
+",Flanking line is a type of meteorological phenomena that only has phenomena related to cumulonimbus and cumulus.,3,True
+sweet,http://sweetontology.net/phenAtmoCloud/FoehnCloud,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foehn_cloud rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :foehn ;
+            owl:onProperty :has_phenomena ],
+        :cloud,
+        :lenticular_cloud ;
+    owl:equivalentClass :foehn_wall,
+        :moazagotl .
+
+","Foehn cloud, also known as foehn wall and moazagotl, is a type of cloud. It is specifically a type of lenticular cloud and is characterized by a phenomenon known as foehn.",5,True
+sweet,http://sweetontology.net/phenAtmoCloud/FoehnWall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foehn_wall rdfs:subClassOf :cloud,
+        :lenticular_cloud .
+
+","A foehn wall is a type of cloud and specifically, it is a type of lenticular cloud.",2,True
+sweet,http://sweetontology.net/phenAtmoCloud/ForcedCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forced_cloud rdfs:subClassOf :cumulus .
+
+",forced cloud is a type of cumulus.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/FunnelCloud,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:funnel_cloud rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rotation ;
+            owl:onProperty :has_process ],
+        :cloud .
+
+",A funnel cloud is a type of cloud and it is a type of something that only undergoes the process of rotation.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/KelvinHelmholtzBillows,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kelvin_helmholtz_billows rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :kelvin_helmholtz_instability ;
+            owl:onProperty :has_state ],
+        :cloud .
+
+",Kelvin Helmholtz billows represent a type of cloud that is specifically associated with the state of Kelvin Helmholtz instability.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/LaSerpe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:la_serpe rdfs:subClassOf :cloud .
+
+",la serpe is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/LayerCloud,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:layer_cloud rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :capping_inversion ;
+            owl:onProperty :has_phenomena ],
+        :cloud .
+
+",Layer cloud is a type of cloud and is also a type of something that only has the phenomena of capping inversion.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/LenticularCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lenticular_cloud rdfs:subClassOf :cloud .
+
+",lenticular cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Mamma,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mamma rdfs:subClassOf :cloud .
+
+",mamma is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/MaritimeCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maritime_cloud rdfs:subClassOf :cloud .
+
+",maritime cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/MixedCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixed_cloud rdfs:subClassOf :cloud .
+
+",mixed cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/MixingCloud,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixing_cloud rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :mixing ],
+        :cloud .
+
+",A mixing cloud is a type of cloud and is categorized as something that exhibits at least some mixing phenomena.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/Moazagotl,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moazagotl rdfs:subClassOf :cloud,
+        :lenticular_cloud .
+
+","Moazagotl is a type of cloud, specifically a type of lenticular cloud.",2,True
+sweet,http://sweetontology.net/phenAtmoCloud/MountainWaveCloud,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_wave_cloud rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mountain_wave ;
+            owl:onProperty :has_phenomena ],
+        :cloud .
+
+",A mountain wave cloud is a type of cloud that is exclusively associated with the phenomenon known as mountain wave.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/Nacreous,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nacreous rdfs:subClassOf :cloud .
+
+",nacreous is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Nimbostratus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nimbostratus rdfs:subClassOf :cloud .
+
+",nimbostratus is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/NoctilucentCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:noctilucent_cloud rdfs:subClassOf :cloud .
+
+",noctilucent cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/OrographicCloud,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orographic_cloud rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :orographic ;
+            owl:onProperty :has_phenomena ],
+        :cloud .
+
+",An orographic cloud is a type of cloud that is exclusively associated with orographic phenomena.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/OvershootingTop,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overshooting_top rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :anvil_cloud ;
+            owl:onProperty :upper_part_of ],
+        :cloud .
+
+",An overshooting top is a type of cloud that represents the part that only overshoots the upper portion of an anvil cloud.,2,True
+sweet,http://sweetontology.net/phenAtmoCloud/PassiveCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:passive_cloud rdfs:subClassOf :cumulus .
+
+",passive cloud is a type of cumulus.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/RollCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:roll_cloud rdfs:subClassOf :cloud .
+
+",roll cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/SelfCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:self_cloud rdfs:subClassOf :cloud .
+
+",self cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Stratiform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stratiform rdfs:subClassOf :cloud .
+
+",stratiform is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Stratocumulus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stratocumulus rdfs:subClassOf :stratiform .
+
+",stratocumulus is a type of stratiform.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Stratus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stratus rdfs:subClassOf :stratiform .
+
+",stratus is a type of stratiform.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/Towering,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:towering rdfs:subClassOf :meteorological_phenomena .
+
+",towering is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoCloud/WallCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_cloud rdfs:subClassOf :cloud .
+
+",wall cloud is a type of cloud.,1,False
+sweet,http://sweetontology.net/phenAtmoFog/AdvectionFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:advection_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :advection ;
+            owl:onProperty :has_phenomena ],
+        :fog .
+
+",Advection fog is a type of fog that is specifically a phenomenon of advection.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/BrownCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brown_cloud rdfs:subClassOf :smog .
+
+",brown cloud is a type of smog.,1,False
+sweet,http://sweetontology.net/phenAtmoFog/EvaporationFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evaporation_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :evaporation ;
+            owl:onProperty :has_state_change ],
+        :fog .
+
+",Evaporation fog is a type of fog and is a kind of phenomenon that exclusively involves the state change of evaporation.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/Fog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :planetary_surface ;
+            owl:onProperty :has_realm ],
+        :stratiform .
+
+","Fog is a type of stratiform, and it is also a type of phenomenon that exists solely within the realm of the planetary surface.",2,True
+sweet,http://sweetontology.net/phenAtmoFog/FreezingFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:freezing_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :freezing ;
+            owl:onProperty :has_state_change ],
+        :fog .
+
+",Freezing fog is a type of fog that is characterized by the state change of freezing.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/FrontalFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frontal_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :front ;
+            owl:onProperty :has_phenomena ],
+        :fog .
+
+",Frontal fog is a type of fog and a type of phenomenon that only occurs at the front.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/Garua,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:garua rdfs:subClassOf :fog .
+
+",garua is a type of fog.,1,False
+sweet,http://sweetontology.net/phenAtmoFog/GroundFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ground_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :planetary_surface ;
+            owl:onProperty :near ],
+        :fog .
+
+",Ground fog is a type of fog that exists only near a planetary surface.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/Haar,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:haar rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :coastal ;
+            owl:onProperty :has_realm ],
+        :fog .
+
+",Haar is a type of fog that is specific to coastal realms.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/Haze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:haze rdfs:subClassOf :fog .
+
+",haze is a type of fog.,1,False
+sweet,http://sweetontology.net/phenAtmoFog/HighFog,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:high_fog rdfs:subClassOf :mountain_fog,
+        :orographic_fog .
+
+","High fog is a type of mountain fog, which also falls under the category of orographic fog.",2,True
+sweet,http://sweetontology.net/phenAtmoFog/IceFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ice ;
+            owl:onProperty :has_substance ],
+        :fog .
+
+",Ice fog is a type of fog and a type of something that only has the substance ice.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/MixingFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixing_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :mixing ],
+        :fog .
+
+",Mixing fog is a type of fog and is categorized under phenomena that involve some form of mixing.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/MonsoonFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monsoon_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :advection ;
+            owl:onProperty :has_phenomena ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :monsoon ;
+            owl:onProperty :has_phenomena ],
+        :fog .
+
+",Monsoon fog is a type of fog that is exclusively associated with the phenomena of monsoon and advection.,3,True
+sweet,http://sweetontology.net/phenAtmoFog/MountainFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :mountain ],
+        :fog ;
+    owl:equivalentClass :orographic_fog .
+
+","Mountain fog, which is a type of fog occurring in regions that at least have some mountainous realm, is the same as orographic fog.",3,True
+sweet,http://sweetontology.net/phenAtmoFog/OrographicFog,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orographic_fog rdfs:subClassOf :fog .
+
+",orographic fog is a type of fog.,1,False
+sweet,http://sweetontology.net/phenAtmoFog/RadiationFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiation_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :radiational_cooling ;
+            owl:onProperty :has_phenomena ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :land ;
+            owl:onProperty :has_realm ],
+        :fog .
+
+",Radiation fog is a type of fog that occurs exclusively in areas with radiational cooling phenomena and is confined to the land realm.,3,True
+sweet,http://sweetontology.net/phenAtmoFog/SaltHaze,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:salt_haze rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :salt ;
+            owl:onProperty :has_substance ],
+        :haze .
+
+",Salt haze is a type of haze that must contain the substance salt.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/SandHaze,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sand_haze rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_substance ;
+            owl:someValuesFrom :sand ],
+        :haze .
+
+",Sand haze is a type of haze that contains at least some substance of sand.,2,True
+sweet,http://sweetontology.net/phenAtmoFog/Smog,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:smog rdfs:subClassOf :fog .
+
+",smog is a type of fog.,1,False
+sweet,http://sweetontology.net/phenAtmoFog/UpslopeFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upslope_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :upslope_wind ;
+            owl:onProperty :has_phenomena ],
+        :fog .
+
+",Upslope fog is a type of fog that is exclusively associated with the phenomenon of upslope wind.,2,True
+sweet,http://sweetontology.net/phenAtmoFront/ColdFront,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cold_front rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cooling ;
+            owl:onProperty :has_phenomena ],
+        :front ;
+    owl:disjointWith :warm_front .
+
+","A cold front is a type of front and is a type of entity that exclusively has phenomena involving cooling. Moreover, a cold front is disjoint with a warm front.",3,True
+sweet,http://sweetontology.net/phenAtmoFront/Damming,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:damming rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :orography ;
+            owl:onProperty :has_realm ],
+        :front .
+
+",Damming is a type of front which is a category of something that exclusively pertains to the realm of orography.,2,True
+sweet,http://sweetontology.net/phenAtmoFront/Dryline,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dryline rdfs:subClassOf :front .
+
+",dryline is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/FalseWarmSector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:false_warm_sector rdfs:subClassOf :meteorological_phenomena .
+
+",false warm sector is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/Front,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:front rdfs:subClassOf :discontinuity,
+        :discontinuous,
+        :meteorological_phenomena .
+
+","Front is a type of meteorological phenomena, a type of discontinuity, and a type of discontinuous.",3,True
+sweet,http://sweetontology.net/phenAtmoFront/FrontRegion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:front_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :front ;
+            owl:onProperty :component_of ],
+        :meteorological_phenomena .
+
+",The front region is a type of meteorological phenomena and is also considered a type of entity that is exclusively a component of the front.,2,True
+sweet,http://sweetontology.net/phenAtmoFront/FrontalLifting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frontal_lifting rdfs:subClassOf :lift,
+        :lifting .
+
+",Frontal lifting is a type of lift and also a type of lifting.,2,True
+sweet,http://sweetontology.net/phenAtmoFront/KataFront,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kata_front rdfs:subClassOf :front .
+
+",kata front is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/KatabaticFront,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:katabatic_front rdfs:subClassOf :front .
+
+",katabatic front is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/MediterraneanFront,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mediterranean_front rdfs:subClassOf :front .
+
+",mediterranean front is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/MeiyuFront,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meiyu_front rdfs:subClassOf :front .
+
+",meiyu front is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/Microfront,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microfront rdfs:subClassOf :front .
+
+",microfront is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/MoistTongue,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moist_tongue rdfs:subClassOf :meteorological_phenomena .
+
+",moist tongue is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/OccludedFront,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:occluded_front rdfs:subClassOf :front .
+
+",occluded front is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/OutflowBoundary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outflow_boundary rdfs:subClassOf :front .
+
+",outflow boundary is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/SeaBreezeFront,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_breeze_front rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sea_breeze ;
+            owl:onProperty :has_phenomena ],
+        :front .
+
+",A sea breeze front is a type of front that is exclusively characterized by the phenomenon of sea breeze.,2,True
+sweet,http://sweetontology.net/phenAtmoFront/Seclusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seclusion rdfs:subClassOf :front .
+
+",seclusion is a type of front.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/TransitionZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transition_zone rdfs:subClassOf :meteorological_phenomena .
+
+",transition zone is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/TriplePoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:triple_point rdfs:subClassOf :meteorological_phenomena .
+
+",triple point is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoFront/WarmFront,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:warm_front rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heating ;
+            owl:onProperty :has_phenomena ],
+        :front .
+
+",A warm front is a type of front that is a type of phenomenon characterized exclusively by heating.,2,True
+sweet,http://sweetontology.net/phenAtmoFront/WarmSector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:warm_sector rdfs:subClassOf :front_region .
+
+",warm sector is a type of front region.,1,False
+sweet,http://sweetontology.net/phenAtmoLightning/BallLightning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ball_lightning rdfs:subClassOf :lightning .
+
+",ball lightning is a type of lightning.,1,False
+sweet,http://sweetontology.net/phenAtmoLightning/BeadedLightning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:beaded_lightning rdfs:subClassOf :lightning .
+
+",beaded lightning is a type of lightning.,1,False
+sweet,http://sweetontology.net/phenAtmoLightning/BlueJet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:blue_jet rdfs:subClassOf :lightning .
+
+",blue jet is a type of lightning.,1,False
+sweet,http://sweetontology.net/phenAtmoLightning/JunctionStreamer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:junction_streamer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :lightning ;
+            owl:onProperty :has_phenomena ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :thunderstorm ;
+            owl:onProperty :has_phenomena ],
+        :lightning .
+
+",Junction streamer is a type of lightning and is a phenomenon exclusive to both lightning and thunderstorms.,3,True
+sweet,http://sweetontology.net/phenAtmoLightning/Lightning,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lightning rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :thunder ;
+            owl:onProperty :has_phenomena ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :electric_potential ],
+        :meteorological_phenomena .
+
+",Lightning is a type of meteorological phenomena characterized by having at least some electric potential and is exclusively associated with the phenomena of thunder.,3,True
+sweet,http://sweetontology.net/phenAtmoLightning/ReturnStroke,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:return_stroke rdfs:subClassOf :lightning .
+
+",return stroke is a type of lightning.,1,False
+sweet,http://sweetontology.net/phenAtmoLightning/Thunder,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thunder rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sound ;
+            owl:onProperty :has_phenomena ],
+        :meteorological_phenomena .
+
+",Thunder is a type of meteorological phenomena characterized exclusively by sound.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/AtmosphericPrecipitation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_precipitation rdfs:subClassOf :atmospheric_phenomena,
+        :precipitation .
+
+",Atmospheric precipitation is both a type of precipitation and a type of atmospheric phenomena.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Blizzard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:blizzard rdfs:subClassOf :snowfall .
+
+",blizzard is a type of snowfall.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/CloudBurst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud_burst rdfs:subClassOf :heavy_rainfall .
+
+",cloud burst is a type of heavy rainfall.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/ConvectiveStorm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convective_storm rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :convection ],
+        :storm .
+
+",A convective storm is a type of storm that is categorized as a type of phenomena that exhibits at least some convection.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Drizzle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drizzle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :light ;
+            owl:onProperty :has_impact ],
+        :rain,
+        :rainfall .
+
+","Drizzle is a type of rain and rainfall, which is characterized by having a light impact.",3,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Ecnephias,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ecnephias rdfs:subClassOf :thunderstorm .
+
+",ecnephias is a type of thunderstorm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/FamilyOfTornadoes,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:family_of_tornadoes rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :tornado ;
+            owl:onProperty :cluster_of ],
+        :cluster,
+        :family,
+        :swarm .
+
+","A family of tornadoes is a type of cluster, family, and swarm. Additionally, it is a type of entity that only a cluster of tornadoes can be.",4,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/FreezingRain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:freezing_rain rdfs:subClassOf :atmospheric_precipitation .
+
+",freezing rain is a type of atmospheric precipitation.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/GoslingBlast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gosling_blast rdfs:subClassOf :atmospheric_precipitation .
+
+",gosling blast is a type of atmospheric precipitation.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/GowkStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gowk_storm rdfs:subClassOf :storm .
+
+",gowk storm is a type of storm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Graupel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:graupel rdfs:subClassOf :ice .
+
+",graupel is a type of ice.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/GreenThunderstorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:green_thunderstorm rdfs:subClassOf :thunderstorm .
+
+",green thunderstorm is a type of thunderstorm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Hail,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hail rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ice ;
+            owl:onProperty :has_substance ],
+        [ a owl:Restriction ;
+            owl:hasValue :heavy ;
+            owl:onProperty :has_impact ],
+        :atmospheric_precipitation .
+
+",Hail is a type of atmospheric precipitation that only consists of ice and is characterized by having a heavy impact.,3,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/HailStorm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hail_storm rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :hail ;
+            owl:onProperty :has_phenomena ],
+        :storm .
+
+",A hail storm is a type of storm that is exclusively characterized by the phenomenon of hail.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/HeatThunderstorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heat_thunderstorm rdfs:subClassOf :thunderstorm .
+
+",heat thunderstorm is a type of thunderstorm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/HeavyRainfall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heavy_rainfall rdfs:subClassOf :rain,
+        :rainfall .
+
+",Heavy rainfall is a type of rain and also a type of rainfall.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/HeavySnowfall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heavy_snowfall rdfs:subClassOf :snowfall .
+
+",heavy snowfall is a type of snowfall.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/HighLevelThunderstorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:high_level_thunderstorm rdfs:subClassOf :thunderstorm .
+
+",high level thunderstorm is a type of thunderstorm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Hurricane,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hurricane rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :atlantic_ocean ;
+            owl:onProperty :originates_from ],
+        [ a owl:Restriction ;
+            owl:hasValue :hazard ;
+            owl:onProperty :has_impact ],
+        :tropical_cyclone .
+
+",A hurricane is a type of tropical cyclone that must originate from the Atlantic Ocean and has an impact hazard.,3,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/HurricaneBand,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hurricane_band rdfs:subClassOf :hurricane .
+
+",hurricane band is a type of hurricane.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/IcePellet,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_pellet rdfs:subClassOf :atmospheric_precipitation,
+        :ice ;
+    owl:equivalentClass :sleet .
+
+","Ice pellet, which is the same as sleet, is a type of ice and a form of atmospheric precipitation.",3,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/IceStorm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_storm rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ice ;
+            owl:onProperty :has_substance ],
+        :storm .
+
+",An ice storm is a type of storm that exclusively consists of the substance ice.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Kaavie,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kaavie rdfs:subClassOf :heavy_snowfall .
+
+",kaavie is a type of heavy snowfall.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Kelsher,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kelsher rdfs:subClassOf :heavy_rainfall .
+
+",kelsher is a type of heavy rainfall.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/LakeEffect,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lake_effect rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :lake ;
+            owl:onProperty :originates_from ],
+        :meteorological_phenomena .
+
+",Lake effect is a type of meteorological phenomena that only originates from a lake.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/LakeEffectSnow,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lake_effect_snow rdfs:subClassOf :lake_effect,
+        :snowfall ;
+    owl:equivalentClass :lake_effect_snowstorm .
+
+","Lake effect snow, which is the same as a lake effect snowstorm, is a type of lake effect as well as a type of snowfall.",3,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/LakeEffectSnowstorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lake_effect_snowstorm rdfs:subClassOf :lake_effect,
+        :snowfall .
+
+",A lake effect snowstorm is a type of lake effect and also a type of snowfall.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/LambingStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lambing_storm rdfs:subClassOf :snowfall .
+
+",lambing storm is a type of snowfall.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/LandLash,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_lash rdfs:subClassOf :rain,
+        :rainfall .
+
+",Land lash is a type of rain and also a type of rainfall.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Landspout,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:landspout rdfs:subClassOf :tornado .
+
+",landspout is a type of tornado.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/LocalStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:local_storm rdfs:subClassOf :storm .
+
+",local storm is a type of storm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/MesocycloneSignature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesocyclone_signature rdfs:subClassOf :meteorological_phenomena .
+
+",mesocyclone signature is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Mist,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mist rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :light ;
+            owl:onProperty :has_impact ],
+        :atmospheric_precipitation .
+
+",Mist is a type of atmospheric precipitation and it is also something that must impact light.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Monsoon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monsoon rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :hazard ;
+            owl:onProperty :has_impact ],
+        :storm .
+
+",Monsoon is a type of storm that must have an impact hazard.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/MulticellConvectiveStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multicell_convective_storm rdfs:subClassOf :splitting_convective_storm .
+
+",multicell convective storm is a type of splitting convective storm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/NonSupercellTornado,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:non_supercell_tornado rdfs:subClassOf :tornado .
+
+",non supercell tornado is a type of tornado.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/NortheastStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:northeast_storm rdfs:subClassOf :storm .
+
+",northeast storm is a type of storm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/PopUpThunderstorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pop_up_thunderstorm rdfs:subClassOf :thunderstorm .
+
+",pop up thunderstorm is a type of thunderstorm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/PrefrontalSquallLine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prefrontal_squall_line rdfs:subClassOf :squall_line .
+
+",prefrontal squall line is a type of squall line.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Rain,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rain rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :liquid_water ;
+            owl:onProperty :has_substance ],
+        :atmospheric_precipitation ;
+    owl:equivalentClass :rainfall .
+
+","Rain, which is the same as rainfall, is a type of atmospheric precipitation and is exclusively characterized as a form of substance that consists only of liquid water.",3,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Rainband,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rainband rdfs:subClassOf :rain,
+        :rainfall .
+
+",Rainband is a type of rain and also a type of rainfall.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Rainfall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rainfall rdfs:subClassOf :atmospheric_precipitation .
+
+",rainfall is a type of atmospheric precipitation.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Shower,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shower rdfs:subClassOf :rain,
+        :rainfall .
+
+",A shower is a type of rain and also a type of rainfall.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Sleet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sleet rdfs:subClassOf :atmospheric_precipitation,
+        :ice .
+
+",Sleet is a type of ice and a type of atmospheric precipitation.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Snowfall,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snowfall rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :snow ;
+            owl:onProperty :has_substance ],
+        :atmospheric_precipitation .
+
+",Snowfall is a type of atmospheric precipitation and is a type of something that only has the substance snow.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/SplittingConvectiveStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:splitting_convective_storm rdfs:subClassOf :storm .
+
+",splitting convective storm is a type of storm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/SquallLine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:squall_line rdfs:subClassOf :thunderstorm .
+
+",squall line is a type of thunderstorm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Storm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:storm rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :heavy ;
+            owl:onProperty :has_impact ],
+        :atmospheric_precipitation .
+
+",A storm is a type of atmospheric precipitation and is something that must have a heavy impact.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/SupercellConvectiveStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supercell_convective_storm rdfs:subClassOf :convective_storm .
+
+",supercell convective storm is a type of convective storm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Thunderstorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thunderstorm rdfs:subClassOf :storm .
+
+",thunderstorm is a type of storm.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Tornado,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tornado rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :hazard ;
+            owl:onProperty :has_impact ],
+        :storm .
+
+",A tornado is a type of storm that is also classified as a type of phenomenon which must have an impact hazard.,2,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/TropicalStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tropical_storm rdfs:subClassOf :tropical_cyclone .
+
+",tropical storm is a type of tropical cyclone.,1,False
+sweet,http://sweetontology.net/phenAtmoPrecipitation/Typhoon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:typhoon rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :pacific_ocean ;
+            owl:onProperty :originates_from ],
+        [ a owl:Restriction ;
+            owl:hasValue :hazard ;
+            owl:onProperty :has_impact ],
+        :tropical_cyclone .
+
+",A typhoon is a type of tropical cyclone that must originate from the Pacific Ocean and have an impact hazard.,3,True
+sweet,http://sweetontology.net/phenAtmoPrecipitation/WaterSpout,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_spout rdfs:subClassOf :tornado .
+
+",water spout is a type of tornado.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/AtmosphericAnticyclone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_anticyclone rdfs:subClassOf :anticyclone,
+        :atmospheric_phenomena .
+
+",An atmospheric anticyclone is a type of atmospheric phenomena and also a type of anticyclone.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/AtmosphericCyclone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_cyclone rdfs:subClassOf :atmospheric_phenomena,
+        :cyclone .
+
+",An atmospheric cyclone is a type of atmospheric phenomena and also a type of cyclone.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/AtmosphericHighPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_high_pressure rdfs:subClassOf :atmospheric_phenomena,
+        :high_pressure,
+        :ridge .
+
+","Atmospheric high pressure is a type of atmospheric phenomena, high pressure, and ridge.",3,True
+sweet,http://sweetontology.net/phenAtmoPressure/AtmosphericLowPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_low_pressure rdfs:subClassOf :atmospheric_phenomena,
+        :low_pressure .
+
+",Atmospheric low pressure is a type of atmospheric phenomena and also a type of low pressure.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/AtmosphericRidge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_ridge rdfs:subClassOf :atmospheric_phenomena,
+        :high_pressure,
+        :ridge .
+
+",An atmospheric ridge is a type of atmospheric phenomena that is characterized as a type of high pressure and is also a type of ridge.,3,True
+sweet,http://sweetontology.net/phenAtmoPressure/AtmosphericTrough,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_trough rdfs:subClassOf :atmospheric_phenomena,
+        :trough .
+
+",An atmospheric trough is a type of atmospheric phenomena and is also a type of trough.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/Barometric,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barometric rdfs:subClassOf :meteorological_phenomena .
+
+",barometric is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/Blocking,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:blocking rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cyclone ;
+            owl:onProperty :has_phenomena ],
+        :meteorological_phenomena .
+
+",Blocking is a type of meteorological phenomena that is specifically associated with the phenomenon of cyclones.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/BowEcho,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bow_echo rdfs:subClassOf :cell_cluster .
+
+",bow echo is a type of cell cluster.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/ConvectionCell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convection_cell rdfs:subClassOf :cell_cluster .
+
+",convection cell is a type of cell cluster.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/CutOffHigh,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cut_off_high rdfs:subClassOf :atmospheric_high_pressure .
+
+",cut off high is a type of atmospheric high pressure.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/CutOffLow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cut_off_low rdfs:subClassOf :atmospheric_low_pressure .
+
+",cut off low is a type of atmospheric low pressure.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/Cyclogenesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclogenesis rdfs:subClassOf :meteorological_phenomena .
+
+",cyclogenesis is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/DeepConvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deep_convection rdfs:subClassOf :convection .
+
+",deep convection is a type of convection.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/Deepening,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deepening rdfs:subClassOf :meteorological_phenomena .
+
+",deepening is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/DryConvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_convection rdfs:subClassOf :convection .
+
+",dry convection is a type of convection.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/ElevatedConvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elevated_convection rdfs:subClassOf :convection .
+
+",elevated convection is a type of convection.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/ExtratropicalCyclone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extratropical_cyclone rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :extratropics ;
+            owl:onProperty :originates_from ],
+        :atmospheric_cyclone .
+
+",An extratropical cyclone is a type of atmospheric cyclone that originates from the extratropics.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/KatallobaticCenter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:katallobatic_center rdfs:subClassOf :atmospheric_low_pressure .
+
+",katallobatic center is a type of atmospheric low pressure.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/LeesideConvergence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:leeside_convergence rdfs:subClassOf :convergence .
+
+",leeside convergence is a type of convergence.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/LongmontAnticyclone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:longmont_anticyclone rdfs:subClassOf :atmospheric_anticyclone .
+
+",longmont anticyclone is a type of atmospheric anticyclone.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/Mesoanticyclone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesoanticyclone rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :convection ],
+        [ a owl:Restriction ;
+            owl:hasValue :mesoscale ;
+            owl:onProperty :has_spatial_scale ],
+        :atmospheric_anticyclone .
+
+",A mesoanticyclone is a type of atmospheric anticyclone that at least has some convection phenomena and must have a spatial scale defined as mesoscale.,3,True
+sweet,http://sweetontology.net/phenAtmoPressure/Mesocyclone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesocyclone rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :mesoscale ;
+            owl:onProperty :has_spatial_scale ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :convection ],
+        :atmospheric_cyclone .
+
+",A mesocyclone is a type of atmospheric cyclone that is characterized by phenomena such as convection and operates on a mesoscale spatial scale.,3,True
+sweet,http://sweetontology.net/phenAtmoPressure/Mesolow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesolow rdfs:subClassOf :atmospheric_low_pressure .
+
+",mesolow is a type of atmospheric low pressure.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/MesoscaleCellularConvection,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesoscale_cellular_convection rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :mesoscale ;
+            owl:onProperty :has_spatial_scale ],
+        :cell_cluster .
+
+",Mesoscale cellular convection is a type of cell cluster that must have a spatial scale classified as mesoscale.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/MesoscaleConvectiveComplex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesoscale_convective_complex rdfs:subClassOf :mesoscale_convective_system .
+
+",mesoscale convective complex is a type of mesoscale convective system.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/MesoscaleConvectiveSystem,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesoscale_convective_system rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :mesoscale ;
+            owl:onProperty :has_spatial_scale ],
+        :storm .
+
+",A mesoscale convective system is a type of storm that must have a spatial scale classified as mesoscale.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/MiniSupercell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mini_supercell rdfs:subClassOf :convective_storm .
+
+",mini supercell is a type of convective storm.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/MinorRidge,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:minor_ridge rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :minor ;
+            owl:onProperty :has_role ],
+        :atmospheric_ridge .
+
+","A minor ridge is a type of atmospheric ridge, which is classified as something that must have a minor role.",2,True
+sweet,http://sweetontology.net/phenAtmoPressure/MinorTrough,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:minor_trough rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :minor ;
+            owl:onProperty :has_role ],
+        :atmospheric_trough .
+
+",A minor trough is a type of atmospheric trough and is characterized as a type of something that must have a minor role.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/MoistConvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moist_convection rdfs:subClassOf :convection .
+
+",moist convection is a type of convection.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/MonsoonDepression,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monsoon_depression rdfs:subClassOf :monsoon .
+
+",monsoon depression is a type of monsoon.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/MonsoonGyre,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monsoon_gyre rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :convection ],
+        :circulation .
+
+",A monsoon gyre is a type of circulation that is a form of phenomenon involving at least some convection.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/MonsoonLow,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monsoon_low rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :monsoon ;
+            owl:onProperty :has_phenomena ],
+        :atmospheric_low_pressure .
+
+",Monsoon low is a type of atmospheric low pressure and is a phenomenon that only pertains to the monsoon.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/Multivortex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multivortex rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vortex ;
+            owl:onProperty :cluster_of ],
+        :cluster,
+        :family,
+        :swarm .
+
+","Multivortex is a type of cluster, family, and swarm; it is also characterized as something that only a cluster of vortex can be.",4,True
+sweet,http://sweetontology.net/phenAtmoPressure/PolarCyclone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polar_cyclone rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :polar ;
+            owl:onProperty :originates_from ],
+        :atmospheric_cyclone .
+
+",A polar cyclone is a type of atmospheric cyclone that must originate from polar regions.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/PolarLow,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polar_low rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :polar ;
+            owl:onProperty :originates_from ],
+        :atmospheric_low_pressure .
+
+",A polar low is a type of atmospheric low pressure that must originate from the polar regions.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/ShallowConvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shallow_convection rdfs:subClassOf :convection .
+
+",shallow convection is a type of convection.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/SubtropicalCyclone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subtropical_cyclone rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :subtropics ;
+            owl:onProperty :originates_from ],
+        :atmospheric_cyclone .
+
+",A subtropical cyclone is a type of atmospheric cyclone that originates from the subtropics.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/TUTT,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tutt rdfs:subClassOf :tropical_cyclone ;
+    owl:equivalentClass :tropical_upper_tropospheric_trough .
+
+","The tropical upper tropospheric trough, also known as TUTT, is a type of tropical cyclone.",2,True
+sweet,http://sweetontology.net/phenAtmoPressure/TropicalCyclone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tropical_cyclone rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :tropics ;
+            owl:onProperty :originates_from ],
+        :atmospheric_cyclone .
+
+",A tropical cyclone is a type of atmospheric cyclone and something that must originate from the tropics.,2,True
+sweet,http://sweetontology.net/phenAtmoPressure/TropicalUpperTroposphericTrough,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tropical_upper_tropospheric_trough rdfs:subClassOf :tropical_cyclone .
+
+",tropical upper tropospheric trough is a type of tropical cyclone.,1,False
+sweet,http://sweetontology.net/phenAtmoPressure/UpdraftCurtain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:updraft_curtain rdfs:subClassOf :convection .
+
+",updraft curtain is a type of convection.,1,False
+sweet,http://sweetontology.net/phenAtmoTransport/AcidFog,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acid_fog rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :acid ;
+            owl:onProperty :has_substance ],
+        :fog ;
+    owl:equivalentClass :acid_haze .
+
+","Acid fog, which is the same as acid haze, is a type of fog that must contain the substance acid.",3,True
+sweet,http://sweetontology.net/phenAtmoTransport/AcidHaze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acid_haze rdfs:subClassOf :fog .
+
+",acid haze is a type of fog.,1,False
+sweet,http://sweetontology.net/phenAtmoTransport/AcidRain,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acid_rain rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :acid ;
+            owl:onProperty :has_substance ],
+        :wet_deposition .
+
+",Acid rain is a type of wet deposition and is characterized by having acidic substances.,2,True
+sweet,http://sweetontology.net/phenAtmoTransport/MixedLayerVenting,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixed_layer_venting rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mixed_layer ;
+            owl:onProperty :has_phenomena ],
+        :removal .
+
+",Mixed layer venting is a type of removal and is a phenomenon that exclusively occurs within the mixed layer.,2,True
+sweet,http://sweetontology.net/phenAtmoTransport/NucleationScavenging,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nucleation_scavenging rdfs:subClassOf :scavenging_by_precipitation .
+
+",nucleation scavenging is a type of scavenging by precipitation.,1,False
+sweet,http://sweetontology.net/phenAtmoTransport/Rainout,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rainout rdfs:subClassOf :scavenging_by_precipitation ;
+    owl:equivalentClass :washout .
+
+","Rainout, which is the same as a washout, is a type of scavenging by precipitation.",2,True
+sweet,http://sweetontology.net/phenAtmoTransport/ScavengingByPrecipitation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scavenging_by_precipitation rdfs:subClassOf :wet_deposition .
+
+",scavenging by precipitation is a type of wet deposition.,1,False
+sweet,http://sweetontology.net/phenAtmoTransport/Washout,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:washout rdfs:subClassOf :scavenging_by_precipitation .
+
+",washout is a type of scavenging by precipitation.,1,False
+sweet,http://sweetontology.net/phenAtmoTransport/WetDeposition,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wet_deposition rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :precipitation ;
+            owl:onProperty :has_phenomena ],
+        :atmosphere_land_exchange .
+
+",Wet deposition is a type of atmosphere-land exchange that is a kind of phenomena limited only to precipitation.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/AgeostrophicWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ageostrophic_wind rdfs:subClassOf :wind .
+
+",ageostrophic wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/AtmosphericCirculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_circulation rdfs:subClassOf :circulation,
+        :meteorological_phenomena .
+
+",Atmospheric circulation is a type of meteorological phenomena and is also a type of circulation.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/AtmosphericPumping,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_pumping rdfs:subClassOf :global_wind_circulation .
+
+",atmospheric pumping is a type of global wind circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/Blowing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:blowing rdfs:subClassOf :wind .
+
+",blowing is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/CrossWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cross_wind rdfs:subClassOf :wind .
+
+",cross wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/Derecho,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:derecho rdfs:subClassOf :wind_storm .
+
+",derecho is a type of wind storm.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/Downdraft,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:downdraft rdfs:subClassOf :wind .
+
+",downdraft is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/DrainageWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drainage_wind rdfs:subClassOf :wind .
+
+",drainage wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/DustDevil,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dust_devil rdfs:subClassOf :dust_storm .
+
+",dust devil is a type of dust storm.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/DustStorm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dust_storm rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :dust ;
+            owl:onProperty :has_substance ],
+        :local_wind .
+
+",A dust storm is a type of local wind and is characterized by being a phenomenon that solely consists of the substance dust.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/EasterlyWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:easterly_wind rdfs:subClassOf :global_wind_circulation .
+
+",easterly wind is a type of global wind circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/EulerianWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eulerian_wind rdfs:subClassOf :wind .
+
+",eulerian wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/GeostrophicWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geostrophic_wind rdfs:subClassOf :global_wind_circulation .
+
+",geostrophic wind is a type of global wind circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/GlobalWindCirculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:global_wind_circulation rdfs:subClassOf :atmospheric_circulation .
+
+",global wind circulation is a type of atmospheric circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/Gust,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gust rdfs:subClassOf :wind ;
+    owl:equivalentClass :wind_gust .
+
+",Gust is the same as wind gust and is a type of wind.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/HadleyCirculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hadley_circulation rdfs:subClassOf :global_wind_circulation .
+
+",hadley circulation is a type of global wind circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/HeadWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:head_wind rdfs:subClassOf :wind .
+
+",head wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/HotWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hot_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heating ;
+            owl:onProperty :has_phenomena ],
+        :wind .
+
+",Hot wind is a type of wind that is specifically a type of phenomenon characterized by heating.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/JetEffectWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jet_effect_wind rdfs:subClassOf :wind .
+
+",jet effect wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/JetStreak,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jet_streak rdfs:subClassOf :jet_stream,
+        :jet_stream_wind .
+
+",A jet streak is a type of jet stream wind.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/JetStream,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jet_stream rdfs:subClassOf :atmospheric_wave,
+        :global_wind_circulation ;
+    owl:equivalentClass :jet_stream_wind .
+
+","Jet stream, also known as jet stream wind, is a type of atmospheric wave and a form of global wind circulation.",3,True
+sweet,http://sweetontology.net/phenAtmoWind/JetStreamAxis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jet_stream_axis rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :jet_stream ;
+            owl:onProperty :has_phenomena ],
+        :axis .
+
+",The jet stream axis is a type of axis that is exclusively associated with the phenomena jet stream.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/JetStreamWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jet_stream_wind rdfs:subClassOf :atmospheric_wave,
+        :global_wind_circulation .
+
+",Jet stream wind is a type of atmospheric wave and is also a type of global wind circulation.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/LocalWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:local_wind rdfs:subClassOf :wind .
+
+",local wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/MeridionalWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meridional_wind rdfs:subClassOf :wind .
+
+",meridional wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/Microburst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:microburst rdfs:subClassOf :wind .
+
+",microburst is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/SandStorm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sand_storm rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sand ;
+            owl:onProperty :has_substance ],
+        :wind .
+
+",A sand storm is a type of wind that consists solely of the substance sand.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/Tailwind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tailwind rdfs:subClassOf :wind .
+
+",tailwind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/TertiaryCirculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tertiary_circulation rdfs:subClassOf :atmospheric_circulation .
+
+",tertiary circulation is a type of atmospheric circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/ThermalWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_wind rdfs:subClassOf :wind .
+
+",thermal wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/TradeWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trade_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :atmospheric_circulation ;
+            owl:onProperty :has_phenomena ],
+        :global_wind_circulation .
+
+","Trade wind is a type of global wind circulation, which is a phenomenon of atmospheric circulation.",2,True
+sweet,http://sweetontology.net/phenAtmoWind/VeeringWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:veering_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rotation ;
+            owl:onProperty :has_phenomena ],
+        :wind .
+
+",Veering wind is a type of wind that is a phenomenon only characterized by rotation.,2,True
+sweet,http://sweetontology.net/phenAtmoWind/WalkerCell,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:walker_cell rdfs:subClassOf :global_wind_circulation ;
+    owl:equivalentClass :walker_circulation .
+
+","The Walker cell, also known as the Walker circulation, is a type of global wind circulation.",2,True
+sweet,http://sweetontology.net/phenAtmoWind/WalkerCirculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:walker_circulation rdfs:subClassOf :global_wind_circulation .
+
+",walker circulation is a type of global wind circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/WarmConveyorBelt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:warm_conveyor_belt rdfs:subClassOf :global_wind_circulation .
+
+",warm conveyor belt is a type of global wind circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/Wind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pressure_gradient ;
+            owl:onProperty :has_cause ],
+        :meteorological_phenomena .
+
+","Wind is a type of meteorological phenomena and is also a type of something that only has a cause, which is the pressure gradient.",2,True
+sweet,http://sweetontology.net/phenAtmoWind/WindGust,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_gust rdfs:subClassOf :wind .
+
+",wind gust is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/WindStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_storm rdfs:subClassOf :wind .
+
+",wind storm is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/Windborne,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:windborne rdfs:subClassOf :meteorological_phenomena .
+
+",windborne is a type of meteorological phenomena.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/ZonalFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zonal_flow rdfs:subClassOf :global_wind_circulation .
+
+",zonal flow is a type of global wind circulation.,1,False
+sweet,http://sweetontology.net/phenAtmoWind/ZonalWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zonal_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :zonal_flow ;
+            owl:onProperty :has_phenomena ],
+        :global_wind_circulation .
+
+",Zonal wind is a type of global wind circulation and is specifically a type of phenomenon that only exhibits zonal flow.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/AnabaticWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anabatic_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heating ;
+            owl:onProperty :has_process ],
+        :mountain_wind .
+
+",Anabatic wind is a type of mountain wind and is a phenomenon that only occurs due to process heating.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/BarrierJet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barrier_jet rdfs:subClassOf :mountain_wind .
+
+",barrier jet is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/BlackSquall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:black_squall rdfs:subClassOf :squall .
+
+",black squall is a type of squall.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/BookEndVorticities,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:book_end_vorticities rdfs:subClassOf :atmospheric_phenomena,
+        :vortex .
+
+",Book end vorticities is a type of atmospheric phenomena and also a type of vortex.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Bora,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bora rdfs:subClassOf :fall_wind .
+
+",bora is a type of fall wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/CanyonWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:canyon_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cooling ;
+            owl:onProperty :has_process ],
+        :mountain_wind .
+
+",Canyon wind is a type of mountain wind and is also a type of phenomenon that only involves process cooling.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/CherguiWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chergui_wind rdfs:subClassOf :desert_wind .
+
+",chergui wind is a type of desert wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/ChinookWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chinook_wind rdfs:subClassOf :mountain_wind ;
+    owl:equivalentClass :foehn .
+
+","Chinook wind, which is the same as Foehn, is a type of mountain wind.",2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/DesertWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:desert_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :desert ;
+            owl:onProperty :has_realm ],
+        :mesoscale_wind .
+
+",Desert wind is a type of mesoscale wind that is specifically characterized by its occurrence solely within the realm of the desert.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/DownslopeWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:downslope_wind rdfs:subClassOf :mountain_wind .
+
+",downslope wind is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/DownslopeWindStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:downslope_wind_storm rdfs:subClassOf :downslope_wind .
+
+",downslope wind storm is a type of downslope wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/FallWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fall_wind rdfs:subClassOf :katabatic_wind,
+        :mountain_wind .
+
+",Fall wind is a type of katabatic wind and also a type of mountain wind.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Foehn,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foehn rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heating ;
+            owl:onProperty :has_process ],
+        :mountain_wind .
+
+",Foehn is a type of mountain wind that is characterized by process heating.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/FogWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fog_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :fog ;
+            owl:onProperty :has_phenomena ],
+        :squall .
+
+",Fog wind is a type of squall and is also a type of something that only has the phenomena fog.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Forano,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forano rdfs:subClassOf :sea_breeze .
+
+",forano is a type of sea breeze.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Galerne,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:galerne rdfs:subClassOf :squall .
+
+",galerne is a type of squall.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Gallego,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gallego rdfs:subClassOf :mountain_wind .
+
+",gallego is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Garbin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:garbin rdfs:subClassOf :sea_breeze .
+
+",garbin is a type of sea breeze.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Gending,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gending rdfs:subClassOf :mountain_wind .
+
+",gending is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Gharbi,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gharbi rdfs:subClassOf :ocean_wind .
+
+",gharbi is a type of ocean wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Gharra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gharra rdfs:subClassOf :squall .
+
+",gharra is a type of squall.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Ghibli,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ghibli rdfs:subClassOf :desert_wind .
+
+",ghibli is a type of desert wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/GlacierWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacier_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :glacier ;
+            owl:onProperty :has_realm ],
+        :gravity_wind .
+
+",Glacier wind is a type of gravity wind and is something that only exists within the realm of glaciers.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/GorgeWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gorge_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :gorge ;
+            owl:onProperty :has_realm ],
+        :mesoscale_wind .
+
+",Gorge wind is a type of mesoscale wind and is a phenomenon that exclusively occurs within the realm of a gorge.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/GravityWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gravity_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :gravity ;
+            owl:onProperty :has_process ],
+        :mountain_wind .
+
+",Gravity wind is a type of mountain wind and is a phenomenon that exclusively involves the process of gravity.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Greco,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:greco rdfs:subClassOf :ocean_wind .
+
+",greco is a type of ocean wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Gregale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gregale rdfs:subClassOf :mesoscale_wind .
+
+",gregale is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/GregauWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gregau_wind rdfs:subClassOf :mesoscale_wind .
+
+",gregau wind is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/GullySquall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gully_squall rdfs:subClassOf :mountain_wind,
+        :squall .
+
+",Gully squall is both a type of mountain wind and a type of squall.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Haboob,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:haboob rdfs:subClassOf :mesoscale_wind .
+
+",haboob is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/IbeWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ibe_wind rdfs:subClassOf :chinook_wind,
+        :foehn .
+
+",Ibe wind is a type of Chinook wind and also a type of foehn.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/InlandSeaBreeze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inland_sea_breeze rdfs:subClassOf :sea_breeze .
+
+",inland sea breeze is a type of sea breeze.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Kachchan,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kachchan rdfs:subClassOf :chinook_wind,
+        :foehn .
+
+",Kachchan is a type of Chinook wind and is also a type of Foehn.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/KalBaisakhi,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kal_baisakhi rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :monsoon ;
+            owl:onProperty :has_phenomena ],
+        :squall .
+
+","Kal Baisakhi is a type of squall, which is exclusively associated with the phenomena of the monsoon.",2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Karaburan,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:karaburan rdfs:subClassOf :mesoscale_wind .
+
+",karaburan is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Karajol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:karajol rdfs:subClassOf :mesoscale_wind .
+
+",karajol is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Karema,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:karema rdfs:subClassOf :mesoscale_wind .
+
+",karema is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Karif,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:karif rdfs:subClassOf :mesoscale_wind .
+
+",karif is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/KatabaticWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:katabatic_wind rdfs:subClassOf :mountain_wind .
+
+",katabatic wind is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Kaus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kaus rdfs:subClassOf :mesoscale_wind .
+
+",kaus is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Khamsin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:khamsin rdfs:subClassOf :desert_wind .
+
+",khamsin is a type of desert wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/KloofWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kloof_wind rdfs:subClassOf :mesoscale_wind .
+
+",kloof wind is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/KnikWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:knik_wind rdfs:subClassOf :mesoscale_wind .
+
+",knik wind is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Koembang,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:koembang rdfs:subClassOf :mesoscale_wind .
+
+",koembang is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Kona,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kona rdfs:subClassOf :mesoscale_wind .
+
+",kona is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Kossava,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kossava rdfs:subClassOf :squall .
+
+",kossava is a type of squall.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/KrakatoaWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:krakatoa_wind rdfs:subClassOf :mesoscale_wind .
+
+",krakatoa wind is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Labbe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:labbe rdfs:subClassOf :mesoscale_wind .
+
+",labbe is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Laheimar,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:laheimar rdfs:subClassOf :squall .
+
+",laheimar is a type of squall.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/LakeBreeze,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lake_breeze rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :lake ;
+            owl:onProperty :originates_from ],
+        :mesoscale_wind .
+
+",Lake breeze is a type of mesoscale wind that only originates from a lake.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/LandBreeze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_breeze rdfs:subClassOf :offshore_wind .
+
+",land breeze is a type of offshore wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Leste,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:leste rdfs:subClassOf :mesoscale_wind .
+
+",leste is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Levante,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:levante rdfs:subClassOf :mesoscale_wind .
+
+",levante is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Levantera,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:levantera rdfs:subClassOf :mesoscale_wind .
+
+",levantera is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Leveche,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:leveche rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heating ;
+            owl:onProperty :has_process ],
+        :mesoscale_wind .
+
+",Leveche is a type of mesoscale wind and is characterized as a type of phenomenon that exclusively involves process heating.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Libeccio,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:libeccio rdfs:subClassOf :mesoscale_wind .
+
+",libeccio is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Liberator,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:liberator rdfs:subClassOf :mesoscale_wind .
+
+",liberator is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/LineSquall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:line_squall rdfs:subClassOf :squall .
+
+",line squall is a type of squall.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Lombarde,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lombarde rdfs:subClassOf :mountain_wind .
+
+",lombarde is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/LongShoreWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:long_shore_wind rdfs:subClassOf :mesoscale_wind .
+
+",long shore wind is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MackerelBreeze,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mackerel_breeze rdfs:subClassOf :ocean_wind ;
+    owl:equivalentClass :mackerel_gale .
+
+","Mackerel breeze, which is the same as mackerel gale, is a type of ocean wind.",2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MackerelGale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mackerel_gale rdfs:subClassOf :ocean_wind .
+
+",mackerel gale is a type of ocean wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Maestro,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maestro rdfs:subClassOf :mesoscale_wind .
+
+",maestro is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MajolaWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:majola_wind rdfs:subClassOf :mountain_wind .
+
+",majola wind is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MalojaWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maloja_wind rdfs:subClassOf :mesoscale_wind .
+
+",maloja wind is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Mamatele,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mamatele rdfs:subClassOf :mesoscale_wind .
+
+",mamatele is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Marin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marin rdfs:subClassOf :mesoscale_wind .
+
+",marin is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MatanuskaWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:matanuska_wind rdfs:subClassOf :mesoscale_wind .
+
+",matanuska wind is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Matinal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:matinal rdfs:subClassOf :mesoscale_wind .
+
+",matinal is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Meltem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meltem rdfs:subClassOf :mesoscale_wind .
+
+",meltem is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Mergozzo,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mergozzo rdfs:subClassOf :mesoscale_wind .
+
+",mergozzo is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Mesojet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesojet rdfs:subClassOf :mesoscale_wind .
+
+",mesojet is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MesoscaleWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesoscale_wind rdfs:subClassOf :wind .
+
+",mesoscale wind is a type of wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Miejour,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:miejour rdfs:subClassOf :sea_breeze .
+
+",miejour is a type of sea breeze.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MoazagotlWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moazagotl_wind rdfs:subClassOf :mountain_wind .
+
+",moazagotl wind is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Molan,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:molan rdfs:subClassOf :mesoscale_wind .
+
+",molan is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MonsoonSurge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monsoon_surge rdfs:subClassOf :mountain_wind .
+
+",monsoon surge is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Morget,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:morget rdfs:subClassOf :land_breeze .
+
+",morget is a type of land breeze.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MountainBreeze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_breeze rdfs:subClassOf :mountain_wind .
+
+",mountain breeze is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MountainGapWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_gap_wind rdfs:subClassOf :mountain_wind .
+
+",mountain gap wind is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MountainPlainWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_plain_wind rdfs:subClassOf :mountain_wind .
+
+",mountain plain wind is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MountainValleyWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_valley_wind rdfs:subClassOf :mountain_wind .
+
+",mountain valley wind is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/MountainWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mountain_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mountain ;
+            owl:onProperty :has_realm ],
+        :mesoscale_wind .
+
+","Mountain wind is a type of mesoscale wind, and it is a type of phenomenon that only pertains to the mountain realm.",2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/N_aschi,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:n_aschi rdfs:subClassOf :mesoscale_wind .
+
+",n aschi is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Narbonnais,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:narbonnais rdfs:subClassOf :mesoscale_wind .
+
+",narbonnais is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/NightWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:night_wind rdfs:subClassOf :mesoscale_wind .
+
+",night wind is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Nortada,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nortada rdfs:subClassOf :mesoscale_wind .
+
+",nortada is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Norte,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:norte rdfs:subClassOf :mesoscale_wind .
+
+",norte is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/NorthFoehn,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:north_foehn rdfs:subClassOf :chinook_wind,
+        :foehn .
+
+",North foehn is a type of foehn as well as a type of chinook wind.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Northeaster,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:northeaster rdfs:subClassOf :mesoscale_wind .
+
+",northeaster is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Norther,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:norther rdfs:subClassOf :mesoscale_wind .
+
+",norther is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Northwester,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:northwester rdfs:subClassOf :mesoscale_wind .
+
+",northwester is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/OceanWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :has_realm ],
+        :mesoscale_wind .
+
+",Ocean wind is a type of mesoscale wind that exclusively pertains to the ocean realm.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/OffshoreWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:offshore_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :land ;
+            owl:onProperty :originates_from ],
+        :mesoscale_wind .
+
+",Offshore wind is a type of mesoscale wind that only originates from land.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/OnshoreWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:onshore_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :originates_from ],
+        :mesoscale_wind .
+
+",Onshore wind is a type of mesoscale wind that originates only from the ocean.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/OutflowJet,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outflow_jet rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :canyon ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :valley ],
+        :mesoscale_wind .
+
+","An outflow jet is a type of mesoscale wind that is associated with canyons and valleys, indicating its relevance in these specific realms.",3,True

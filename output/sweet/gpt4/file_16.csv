@@ -1,0 +1,3357 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/propCharge/ElectricCurrent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electric_current rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ampere ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity .
+
+",Electric current is a type of electromagnetic quantity and is something that must have the default unit of ampere.,2,True
+sweet,http://sweetontology.net/propCharge/ElectricCurrentDensity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electric_current_density rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ampere_per_meter_squared ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity .
+
+",Electric current density is a type of electromagnetic quantity and is something that must have the default unit of ampere per meter squared.,2,True
+sweet,http://sweetontology.net/propCharge/ElectricDipoleMoment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electric_dipole_moment rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :coulomb_meter ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity,
+        :vector_quantity .
+
+",The electric dipole moment is a type of electromagnetic quantity and a type of vector quantity. It is something that must have the default unit of coulomb meter.,3,True
+sweet,http://sweetontology.net/propCharge/ElectricFieldStrength,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electric_field_strength rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :volt_per_meter ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity .
+
+",Electric field strength is a type of electromagnetic quantity and must have the default unit of volts per meter.,2,True
+sweet,http://sweetontology.net/propCharge/ElectricFluxDensity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electric_flux_density rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :coulomb_per_meter_squared ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity,
+        :flux .
+
+","Electric flux density is a type of electromagnetic quantity and a type of flux, which must have the default unit of Coulomb per meter squared.",3,True
+sweet,http://sweetontology.net/propCharge/ElectricPotential,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electric_potential rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :charge_distribution ;
+            owl:onProperty :measure_of ],
+        [ a owl:Restriction ;
+            owl:hasValue :volt ;
+            owl:onProperty :has_default_unit ],
+        :scalar_potential .
+
+","Electric potential is a type of scalar potential and something that only measures charge distribution. Additionally, it must have the default unit of volt.",3,True
+sweet,http://sweetontology.net/propCharge/ExchangeCapacity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exchange_capacity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :per_kilogram_mole ;
+            owl:onProperty :has_default_unit ],
+        :reaction_property .
+
+","Exchange capacity is a type of reaction property that must have a default unit per kilogram mole, indicating it is a specific type of something.",2,True
+sweet,http://sweetontology.net/propCharge/Inductance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inductance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :henry ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :magnetism ;
+            owl:onProperty :has_process ],
+        :electromagnetic_quantity .
+
+","Inductance is a type of electromagnetic quantity that is specifically involved in processes involving magnetism and, by default, is measured in the unit henry.",3,True
+sweet,http://sweetontology.net/propCharge/MagnetiGradient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magneti_gradient rdfs:subClassOf :electromagnetic_quantity .
+
+",magneti gradient is a type of electromagnetic quantity.,1,False
+sweet,http://sweetontology.net/propCharge/MagneticDipoleMoment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_dipole_moment rdfs:subClassOf :magnetic_moment .
+
+",magnetic dipole moment is a type of magnetic moment.,1,False
+sweet,http://sweetontology.net/propCharge/MagneticFieldStrength,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_field_strength rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ampere_per_meter ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity .
+
+",Magnetic field strength is a type of electromagnetic quantity and must have the default unit of ampere per meter.,2,True
+sweet,http://sweetontology.net/propCharge/MagneticFlux,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_flux rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :weber ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity,
+        :flux .
+
+","Magnetic flux is a type of electromagnetic quantity and a type of flux, which must have the default unit of weber.",3,True
+sweet,http://sweetontology.net/propCharge/MagneticFluxDensity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_flux_density rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :tesla ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity,
+        :flux .
+
+","Magnetic flux density is a type of electromagnetic quantity and a type of flux, which must have the default unit of Tesla.",3,True
+sweet,http://sweetontology.net/propCharge/MagneticMoment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_moment rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :joule_per_tesla ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity,
+        :vector_quantity .
+
+",Magnetic moment is a type of electromagnetic and vector quantity that must have the default unit of joules per tesla.,3,True
+sweet,http://sweetontology.net/propCharge/Permeability,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:permeability rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :henry_per_meter ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity .
+
+",Permeability is a type of electromagnetic quantity that must have the default unit of henry per meter.,2,True
+sweet,http://sweetontology.net/propCharge/Permittivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:permittivity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :farad_per_meter ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity .
+
+",Permittivity is a type of electromagnetic quantity that must have the default unit of farad per meter.,2,True
+sweet,http://sweetontology.net/propChemical/Abundance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abundance rdfs:subClassOf :composition .
+
+",abundance is a type of composition.,1,False
+sweet,http://sweetontology.net/propChemical/Acidity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acidity rdfs:subClassOf :chemical_property .
+
+",acidity is a type of chemical property.,1,False
+sweet,http://sweetontology.net/propChemical/Alkalic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkalic rdfs:subClassOf :chemical_property ;
+    owl:equivalentClass :alkalinity .
+
+","Alkalic, which is the same as alkalinity, is a type of chemical property.",2,True
+sweet,http://sweetontology.net/propChemical/Alkaline,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkaline rdfs:subClassOf :chemical_property ;
+    owl:equivalentClass :alkalinity .
+
+",Alkaline is the same as alkalinity and is a type of chemical property.,2,True
+sweet,http://sweetontology.net/propChemical/Alkalinity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alkalinity rdfs:subClassOf :chemical_property ;
+    owl:equivalentClass :basic,
+        :basicity .
+
+","Alkalinity is the same as basic and basicity, which is a type of chemical property.",3,True
+sweet,http://sweetontology.net/propChemical/BOD,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bod rdfs:subClassOf :oxygen_demand ;
+    owl:equivalentClass :biological_oxygen_demand .
+
+","BOD, which stands for biological oxygen demand, is a type of oxygen demand.",2,True
+sweet,http://sweetontology.net/propChemical/Basic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basic rdfs:subClassOf :chemical_property .
+
+",basic is a type of chemical property.,1,False
+sweet,http://sweetontology.net/propChemical/Basicity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basicity rdfs:subClassOf :chemical_property .
+
+",basicity is a type of chemical property.,1,False
+sweet,http://sweetontology.net/propChemical/BedLoad,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bed_load rdfs:subClassOf :load ;
+    owl:disjointWith :suspended_load .
+
+","Bed load is a type of load, which is disjoint from suspended load.",2,True
+sweet,http://sweetontology.net/propChemical/BiochemicalOxygenDemand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biochemical_oxygen_demand rdfs:subClassOf :oxygen_demand ;
+    owl:equivalentClass :biological_oxygen_demand .
+
+","Biochemical oxygen demand, which is the same as biological oxygen demand, is a type of oxygen demand.",2,True
+sweet,http://sweetontology.net/propChemical/BiologicalOxygenDemand,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biological_oxygen_demand rdfs:subClassOf :oxygen_demand .
+
+",biological oxygen demand is a type of oxygen demand.,1,False
+sweet,http://sweetontology.net/propChemical/COD,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cod rdfs:subClassOf :oxygen_demand ;
+    owl:equivalentClass :chemical_oxygen_demand .
+
+","COD, which stands for Chemical Oxygen Demand, is a type of oxygen demand.",2,True
+sweet,http://sweetontology.net/propChemical/CarbonateAlkalinity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbonate_alkalinity rdfs:subClassOf :alkalic,
+        :alkaline,
+        :alkalinity,
+        :basic,
+        :basicity .
+
+","Carbonate alkalinity is a type of alkalic, alkaline, alkalinity, basic, and basicity.",5,True
+sweet,http://sweetontology.net/propChemical/ChemicalOxygenDemand,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_oxygen_demand rdfs:subClassOf :oxygen_demand .
+
+",chemical oxygen demand is a type of oxygen demand.,1,False
+sweet,http://sweetontology.net/propChemical/Composition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:composition rdfs:subClassOf :chemical_property .
+
+",composition is a type of chemical property.,1,False
+sweet,http://sweetontology.net/propChemical/Constituent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:constituent rdfs:subClassOf :component,
+        :consistence_property,
+        :coordinate .
+
+","Constituent is a type of consistence property, a type of component, and also a type of coordinate.",3,True
+sweet,http://sweetontology.net/propChemical/DissolvedLoad,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dissolved_load rdfs:subClassOf :dissolved_solid,
+        :load .
+
+",Dissolved load is a type of dissolved solid and also a type of load.,2,True
+sweet,http://sweetontology.net/propChemical/HplusConcentration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hplus_concentration rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :hplus ;
+            owl:onProperty :has_substance ],
+        :chemical_quantity .
+
+",Hplus concentration is a type of chemical quantity that must have the substance Hplus.,2,True
+sweet,http://sweetontology.net/propChemical/IonComposition,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ion_composition rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ionized_state ;
+            owl:onProperty :has_state ],
+        :composition .
+
+",Ion composition is a type of composition that must have an ionized state.,2,True
+sweet,http://sweetontology.net/propChemical/Load,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:load rdfs:subClassOf :density,
+        :mass_concentration .
+
+",Load is both a type of density and a type of mass concentration.,2,True
+sweet,http://sweetontology.net/propChemical/Moisture,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moisture rdfs:subClassOf :water_concentration .
+
+",moisture is a type of water concentration.,1,False
+sweet,http://sweetontology.net/propChemical/OxygenDemand,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oxygen_demand rdfs:subClassOf :density,
+        :mass_concentration .
+
+",Oxygen demand is both a type of density and a type of mass concentration.,2,True
+sweet,http://sweetontology.net/propChemical/Purity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:purity rdfs:subClassOf :chemical_property .
+
+",purity is a type of chemical property.,1,False
+sweet,http://sweetontology.net/propChemical/Reactivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reactivity rdfs:subClassOf :reaction_property .
+
+",reactivity is a type of reaction property.,1,False
+sweet,http://sweetontology.net/propChemical/SAR,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sar rdfs:subClassOf :water_quality_index ;
+    owl:equivalentClass :sodium_adsorption_ratio .
+
+","SAR, which stands for sodium adsorption ratio, is a type of water quality index.",2,True
+sweet,http://sweetontology.net/propChemical/Salinity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:salinity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :per_mil ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :salt_ion ;
+            owl:onProperty :has_substance ],
+        :density,
+        :mass_concentration .
+
+",Salinity is a type of density and a type of mass concentration. It is also defined as a type of substance that only contains salt ions and must have a default unit per mil.,4,True
+sweet,http://sweetontology.net/propChemical/SaturationPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saturation_point rdfs:subClassOf :saturation_property .
+
+",saturation point is a type of saturation property.,1,False
+sweet,http://sweetontology.net/propChemical/SaturationProperty,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saturation_property rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :saturation ;
+            owl:onProperty :has_property ],
+        :property .
+
+",The saturation property is a type of property that inherently must have property saturation.,2,True
+sweet,http://sweetontology.net/propChemical/Sodicity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sodicity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :sodium ;
+            owl:onProperty :has_substance ],
+        :density,
+        :mass_concentration .
+
+","Sodicity is a type of density and also a type of mass concentration. Additionally, it is a type of something that must have substance sodium.",3,True
+sweet,http://sweetontology.net/propChemical/SodiumAdsorptionRatio,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sodium_adsorption_ratio rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sodicity ;
+            owl:onProperty :measure_of ],
+        :water_quality_index .
+
+",The sodium adsorption ratio is a type of water quality index and it specifically measures sodicity.,2,True
+sweet,http://sweetontology.net/propChemical/Solubility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solubility rdfs:subClassOf :reaction_property .
+
+",solubility is a type of reaction property.,1,False
+sweet,http://sweetontology.net/propChemical/SuspendedLoad,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:suspended_load rdfs:subClassOf :load,
+        :suspended_solid ;
+    owl:disjointWith :wash_load ;
+    owl:equivalentClass :suspension_load .
+
+","Suspended load is the same as suspension load and is a type of suspended solid as well as a type of load. Additionally, suspended load is disjoint with wash load.",4,True
+sweet,http://sweetontology.net/propChemical/SuspensionLoad,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:suspension_load rdfs:subClassOf :load,
+        :suspended_solid .
+
+",Suspension load is a type of load and a type of suspended solid.,2,True
+sweet,http://sweetontology.net/propChemical/TotalAlkalinity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:total_alkalinity rdfs:subClassOf :alkalic,
+        :alkaline,
+        :alkalinity,
+        :basic,
+        :basicity .
+
+","Total alkalinity is a type of alkalic, alkaline, alkalinity, basic, and basicity.",5,True
+sweet,http://sweetontology.net/propChemical/TotalDissolvedSolids,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:total_dissolved_solids rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :dissolved_solid ;
+            owl:onProperty :has_substance ],
+        :density,
+        :mass_concentration .
+
+","Total dissolved solids are a type of density and mass concentration, characterized by being a substance composed solely of dissolved solids.",3,True
+sweet,http://sweetontology.net/propChemical/TotalSuspendedSolids,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:total_suspended_solids rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :suspended_solid ;
+            owl:onProperty :has_substance ],
+        :density,
+        :mass_concentration .
+
+","Total suspended solids is a type of density and a type of mass concentration. Additionally, it is a type of something that only has the substance suspended solid.",3,True
+sweet,http://sweetontology.net/propChemical/WashLoad,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wash_load rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :floating ;
+            owl:onProperty :has_state ],
+        :load .
+
+",A wash load is a type of load that must have the state of floating.,2,True
+sweet,http://sweetontology.net/propChemical/WaterConcentration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_concentration rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :density,
+        :mass_concentration .
+
+","Water concentration is a type of density and also a type of mass concentration. Additionally, it is a type of something that must have substance water.",3,True
+sweet,http://sweetontology.net/propChemical/Zoomass,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zoomass rdfs:subClassOf :dry_weight .
+
+",zoomass is a type of dry weight.,1,False
+sweet,http://sweetontology.net/propChemical/pH,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ph rdfs:subClassOf :chemical_quantity .
+
+",ph is a type of chemical quantity.,1,False
+sweet,http://sweetontology.net/propConductivity/Conductance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conductance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :siemens ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_quantity .
+
+",Conductance is a type of electromagnetic quantity and is something that must have the default unit of Siemens.,2,True
+sweet,http://sweetontology.net/propConductivity/Conductivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conductivity rdfs:subClassOf :physical_quantity .
+
+",conductivity is a type of physical quantity.,1,False
+sweet,http://sweetontology.net/propConductivity/ElectricalConductivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electrical_conductivity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :siemens_per_meter ;
+            owl:onProperty :has_default_unit ],
+        :conductivity,
+        :electromagnetic_quantity .
+
+","Electrical conductivity is a type of conductivity and electromagnetic quantity. Moreover, it is a type of something that must have the default unit of siemens per meter.",3,True
+sweet,http://sweetontology.net/propConductivity/HallConductivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hall_conductivity rdfs:subClassOf :electrical_conductivity .
+
+",hall conductivity is a type of electrical conductivity.,1,False
+sweet,http://sweetontology.net/propConductivity/HydraulicConductivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydraulic_conductivity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_per_second ;
+            owl:onProperty :has_default_unit ],
+        :conductivity,
+        :consistence_property .
+
+","Hydraulic conductivity is a type of conductivity and a type of consistency property. Additionally, it is a type of attribute that must have the default unit of meter per second.",3,True
+sweet,http://sweetontology.net/propConductivity/Impedance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:impedance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ohm ;
+            owl:onProperty :has_default_unit ],
+        :physical_quantity .
+
+",Impedance is a type of physical quantity and something that must have the default unit of ohm.,2,True
+sweet,http://sweetontology.net/propConductivity/PedersenConductivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pedersen_conductivity rdfs:subClassOf :electrical_conductivity .
+
+",pedersen conductivity is a type of electrical conductivity.,1,False
+sweet,http://sweetontology.net/propConductivity/Resistance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resistance rdfs:subClassOf :impedance .
+
+",resistance is a type of impedance.,1,False
+sweet,http://sweetontology.net/propConductivity/Resistivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resistivity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ohm_meter ;
+            owl:onProperty :has_default_unit ],
+        :physical_quantity .
+
+",Resistivity is a type of physical quantity that must have the default unit of ohm meter.,2,True
+sweet,http://sweetontology.net/propConductivity/SpecificConductance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_conductance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :siemens_per_kilogram ;
+            owl:onProperty :has_default_unit ],
+        :physical_quantity .
+
+",Specific conductance is a type of physical quantity that must have the default unit of siemens per kilogram.,2,True
+sweet,http://sweetontology.net/propConductivity/ThermalConductivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_conductivity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :watt_per_meter_per_kelvin ;
+            owl:onProperty :has_default_unit ],
+        :conductivity,
+        :thermodynamic_quantity .
+
+","Thermal conductivity is a type of conductivity and a thermodynamic quantity. Moreover, it is a type of something that must have the default unit watt per meter per kelvin.",3,True
+sweet,http://sweetontology.net/propCount/AtomicNeutralNumberDensity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atomic_neutral_number_density rdfs:subClassOf :neutral_number_density .
+
+",atomic neutral number density is a type of neutral number density.,1,False
+sweet,http://sweetontology.net/propCount/CarryingCapacity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carrying_capacity rdfs:subClassOf :population .
+
+",carrying capacity is a type of population.,1,False
+sweet,http://sweetontology.net/propCount/Count,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:count rdfs:subClassOf :discrete,
+        :discrete_function .
+
+","Count is a type of discrete function, which also falls under the broader category of discrete.",2,True
+sweet,http://sweetontology.net/propCount/EnergyLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_level rdfs:subClassOf :count .
+
+",energy level is a type of count.,1,False
+sweet,http://sweetontology.net/propCount/Fluence,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluence rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :per_meter_squared ;
+            owl:onProperty :has_default_unit ],
+        :quantitative_property,
+        :quantity .
+
+",Fluence is a type of quantitative property and quantity that must have a default unit per meter squared.,3,True
+sweet,http://sweetontology.net/propCount/MolecularNeutralNumberDensity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:molecular_neutral_number_density rdfs:subClassOf :neutral_number_density .
+
+",molecular neutral number density is a type of neutral number density.,1,False
+sweet,http://sweetontology.net/propCount/NeutralNumberDensity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neutral_number_density rdfs:subClassOf :number_density .
+
+",neutral number density is a type of number density.,1,False
+sweet,http://sweetontology.net/propCount/NumberDensity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:number_density rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :per_meter_cubed ;
+            owl:onProperty :has_default_unit ],
+        :quantitative_property,
+        :quantity .
+
+","Number density is a type of quantitative property and a type of quantity. Furthermore, it is a type of something that must have a default unit per meter cubed.",3,True
+sweet,http://sweetontology.net/propCount/Population,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:population rdfs:subClassOf :count .
+
+",population is a type of count.,1,False
+sweet,http://sweetontology.net/propCount/SunspotNumber,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sunspot_number rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :solar_activity ;
+            owl:onProperty :measure_of ],
+        :count .
+
+",Sunspot number is a type of count that serves as a measure of solar activity exclusively.,2,True
+sweet,http://sweetontology.net/propCount/TotalElectronContent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:total_electron_content rdfs:subClassOf :number_density .
+
+",total electron content is a type of number density.,1,False
+sweet,http://sweetontology.net/propDifference/Amplitude,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:amplitude rdfs:subClassOf :deviation,
+        :wave_property .
+
+",Amplitude is both a type of wave property and a type of deviation.,2,True
+sweet,http://sweetontology.net/propDifference/Anomaly,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anomaly rdfs:subClassOf :deviation .
+
+",anomaly is a type of deviation.,1,False
+sweet,http://sweetontology.net/propDifference/Bias,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bias rdfs:subClassOf :deviation,
+        :error .
+
+",Bias is both a type of error and a type of deviation.,2,True
+sweet,http://sweetontology.net/propDifference/Deviation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deviation rdfs:subClassOf :difference,
+        :error .
+
+",Deviation is a type of error and also a type of difference.,2,True
+sweet,http://sweetontology.net/propDifference/Difference,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:difference rdfs:subClassOf :difference,
+        :subtraction .
+
+",Difference is both a type of difference and a form of subtraction.,2,True
+sweet,http://sweetontology.net/propDifference/SaturationDeficit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saturation_deficit rdfs:subClassOf :saturation_property .
+
+",saturation deficit is a type of saturation property.,1,False
+sweet,http://sweetontology.net/propDifference/Tolerance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tolerance rdfs:subClassOf :deviation,
+        :error .
+
+",Tolerance is both a type of error and a type of deviation.,2,True
+sweet,http://sweetontology.net/propDifference/Undulation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:undulation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :geoid ;
+            owl:onProperty :has_first_operand ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :reference_ellipsoid ;
+            owl:onProperty :has_second_operand ],
+        :difference,
+        :subtraction .
+
+",Undulation is a type of difference and subtraction. It is a type of something that only has the first operand geoid and only has the second operand reference ellipsoid.,4,True
+sweet,http://sweetontology.net/propDiffusivity/Confluence,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:confluence rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :convergence ],
+        :diffusivity_quantity .
+
+",Confluence is a type of diffusivity quantity and is also a type of something that at least has some phenomena of convergence.,2,True
+sweet,http://sweetontology.net/propDiffusivity/Diffluence,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diffluence rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :divergence ],
+        :diffusivity_quantity .
+
+","Diffluence is a type of diffusivity quantity and is also a type of something that, at the very least, encompasses phenomena exhibiting some divergence.",2,True
+sweet,http://sweetontology.net/propDiffusivity/Diffusivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diffusivity rdfs:subClassOf :diffusivity_quantity .
+
+",diffusivity is a type of diffusivity quantity.,1,False
+sweet,http://sweetontology.net/propDiffusivity/DiffusivityQuantity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diffusivity_quantity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_squared_per_second ;
+            owl:onProperty :has_default_unit ],
+        :physical_quantity .
+
+",Diffusivity quantity is a type of physical quantity that must have the default unit of meter squared per second.,2,True
+sweet,http://sweetontology.net/propDiffusivity/EddyDiffusivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eddy_diffusivity rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :eddy ],
+        :diffusivity .
+
+",Eddy diffusivity is a type of diffusivity and is a type of something that at least has some phenomena related to eddy.,2,True
+sweet,http://sweetontology.net/propDiffusivity/KinematicViscosity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kinematic_viscosity rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :viscous_force ;
+            owl:onProperty :measure_of ],
+        :diffusivity_quantity .
+
+",Kinematic viscosity is a type of diffusivity quantity and is specifically a measure of viscous force.,2,True
+sweet,http://sweetontology.net/propDiffusivity/MeridionalOvertuningStreamfunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meridional_overtuning_streamfunction rdfs:subClassOf :streamfunction .
+
+",meridional overtuning streamfunction is a type of streamfunction.,1,False
+sweet,http://sweetontology.net/propDiffusivity/Streamfunction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:streamfunction rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_cubed_per_second ;
+            owl:onProperty :has_default_unit ],
+        :vector_quantity .
+
+",The streamfunction is a type of vector quantity that must have the default unit of meters cubed per second.,2,True
+sweet,http://sweetontology.net/propDiffusivity/ThermalDiffusivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_diffusivity rdfs:subClassOf :diffusivity,
+        :thermodynamic_quantity .
+
+",Thermal diffusivity is a type of diffusivity and a thermodynamic quantity.,2,True
+sweet,http://sweetontology.net/propDiffusivity/Transmissivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transmissivity rdfs:subClassOf :diffusivity_quantity .
+
+",transmissivity is a type of diffusivity quantity.,1,False
+sweet,http://sweetontology.net/propDiffusivity/VelocityPotential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:velocity_potential rdfs:subClassOf :diffusivity_quantity,
+        :vector_quantity .
+
+",Velocity potential is both a type of diffusivity quantity and a vector quantity.,2,True
+sweet,http://sweetontology.net/propDimensionlessRatio/BowenRatio,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bowen_ratio rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sensible_heat ;
+            owl:onProperty :has_first_operand ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :latent_heat ;
+            owl:onProperty :has_second_operand ],
+        :ratio .
+
+",The Bowen ratio is a type of ratio that uniquely has sensible heat as its first operand and latent heat as its second operand.,3,True
+sweet,http://sweetontology.net/propDimensionlessRatio/ChiSquareValue,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chi_square_value rdfs:subClassOf :statistical_score .
+
+",chi square value is a type of statistical score.,1,False
+sweet,http://sweetontology.net/propDimensionlessRatio/DimensionlessRatio,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dimensionless_ratio rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dimensionless_unit ;
+            owl:onProperty :has_default_unit ],
+        :ratio .
+
+","A dimensionless ratio is a type of ratio that inherently has the default unit of a dimensionless unit, indicating it is a specific category of something.",2,True
+sweet,http://sweetontology.net/propDimensionlessRatio/ReducedChiSquareValue,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reduced_chi_square_value rdfs:subClassOf :chi_square_value .
+
+",reduced chi square value is a type of chi square value.,1,False
+sweet,http://sweetontology.net/propDimensionlessRatio/StatisticalScore,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:statistical_score rdfs:subClassOf :statistical_summary .
+
+",statistical score is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propDimensionlessRatio/ZScore,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:z_score rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :z_test ;
+            owl:onProperty :has_test ],
+        :statistical_score .
+
+",A z score is a type of statistical score and is something that is only associated with the z test.,2,True
+sweet,http://sweetontology.net/propDimensionlessRatio/tScore,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:t_score rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :t_test ;
+            owl:onProperty :has_test ],
+        :statistical_score .
+
+",A t score is a type of statistical score and is exclusively associated with the test t test.,2,True
+sweet,http://sweetontology.net/propEnergy/AvailablePotentialEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:available_potential_energy rdfs:subClassOf :potential_energy .
+
+",available potential energy is a type of potential energy.,1,False
+sweet,http://sweetontology.net/propEnergy/BindingEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binding_energy rdfs:subClassOf :chemical_energy,
+        :potential_energy .
+
+",Binding energy is both a type of chemical energy and a type of potential energy.,2,True
+sweet,http://sweetontology.net/propEnergy/ChemicalEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_energy rdfs:subClassOf :chemical_property,
+        :energy .
+
+",Chemical energy is both a type of chemical property and a type of energy.,2,True
+sweet,http://sweetontology.net/propEnergy/ConvectiveInhibition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convective_inhibition rdfs:subClassOf :energy .
+
+",convective inhibition is a type of energy.,1,False
+sweet,http://sweetontology.net/propEnergy/Energy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :joule ;
+            owl:onProperty :has_default_unit ],
+        :extensive_property .
+
+",Energy is a type of extensive property and is something that must have the default unit of joule.,2,True
+sweet,http://sweetontology.net/propEnergy/EnergyBudget,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_budget rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :energy ;
+            owl:onProperty :has_property ],
+        :balance_equation,
+        :budget,
+        :budget_equation .
+
+","The energy budget is a type of balance equation, budget, and budget equation, which is something that only has the property energy.",4,True
+sweet,http://sweetontology.net/propEnergy/EnergyDensity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_density rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :joule_per_meter_squared ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :area ;
+            owl:onProperty :has_second_operand ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :energy ;
+            owl:onProperty :has_first_operand ],
+        :intensive_property,
+        :ratio .
+
+","Energy density is a type of intensive property and a type of ratio. It is defined as something that only has energy as its first operand and area as its second operand. Furthermore, energy density is characterized by a default unit of measurement, which is joule per meter squared.",5,True
+sweet,http://sweetontology.net/propEnergy/Enthalpy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enthalpy rdfs:subClassOf :chemical_energy .
+
+",enthalpy is a type of chemical energy.,1,False
+sweet,http://sweetontology.net/propEnergy/Entropy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:entropy rdfs:subClassOf :energy .
+
+",entropy is a type of energy.,1,False
+sweet,http://sweetontology.net/propEnergy/EvaporativeAvailablePotentialEnergy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evaporative_available_potential_energy rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :evaporation ;
+            owl:onProperty :has_state_change ],
+        :available_potential_energy .
+
+",Evaporative available potential energy is a type of available potential energy and is a type of something that only has the state change of evaporation.,2,True
+sweet,http://sweetontology.net/propEnergy/Geopotential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geopotential rdfs:subClassOf :gravitational_potential .
+
+",geopotential is a type of gravitational potential.,1,False
+sweet,http://sweetontology.net/propEnergy/GibbsFreeEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gibbs_free_energy rdfs:subClassOf :chemical_energy .
+
+",gibbs free energy is a type of chemical energy.,1,False
+sweet,http://sweetontology.net/propEnergy/GravitationalPotential,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gravitational_potential rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_squared_per_second_squared ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :gravity ;
+            owl:onProperty :has_process ],
+        :scalar_potential .
+
+",Gravitational potential is a type of scalar potential that only involves the process of gravity and must have the default unit of meter squared per second squared.,3,True
+sweet,http://sweetontology.net/propEnergy/Hamiltonian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hamiltonian rdfs:subClassOf :energy .
+
+",hamiltonian is a type of energy.,1,False
+sweet,http://sweetontology.net/propEnergy/Heat,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heat rdfs:subClassOf :energy,
+        :thermodynamic_quantity ;
+    owl:equivalentClass :heat_energy,
+        :thermal_energy .
+
+","Heat, which is the same as heat energy and also known as thermal energy, is a type of energy and a thermodynamic quantity.",4,True
+sweet,http://sweetontology.net/propEnergy/HeatBudget,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heat_budget rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heat ;
+            owl:onProperty :has_property ],
+        :energy_budget .
+
+","A heat budget is a type of energy budget, and it is also a type of something that exclusively possesses the property of heat.",2,True
+sweet,http://sweetontology.net/propEnergy/HeatEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heat_energy rdfs:subClassOf :energy,
+        :thermodynamic_quantity .
+
+",Heat energy is both a type of energy and a type of thermodynamic quantity.,2,True
+sweet,http://sweetontology.net/propEnergy/InternalEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:internal_energy rdfs:subClassOf :energy .
+
+",internal energy is a type of energy.,1,False
+sweet,http://sweetontology.net/propEnergy/IonizationEnergy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ionization_energy rdfs:subClassOf :chemical_energy,
+        :potential_energy ;
+    owl:equivalentClass :ionization_potential .
+
+","Ionization energy, which is identical to ionization potential, is a form of chemical energy as well as a type of potential energy.",3,True
+sweet,http://sweetontology.net/propEnergy/IonizationPotential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ionization_potential rdfs:subClassOf :chemical_energy,
+        :potential_energy .
+
+",Ionization potential is a type of chemical energy and also a type of potential energy.,2,True
+sweet,http://sweetontology.net/propEnergy/KineticEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kinetic_energy rdfs:subClassOf :energy,
+        :motion_property .
+
+",Kinetic energy is a type of energy and a property of motion.,2,True
+sweet,http://sweetontology.net/propEnergy/Lagrangian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lagrangian rdfs:subClassOf :energy .
+
+",lagrangian is a type of energy.,1,False
+sweet,http://sweetontology.net/propEnergy/LatentHeat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:latent_heat rdfs:subClassOf :heat,
+        :heat_energy,
+        :thermal_energy .
+
+","Latent heat is a type of heat, heat energy, and thermal energy.",3,True
+sweet,http://sweetontology.net/propEnergy/Luminosity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:luminosity rdfs:subClassOf :electromagnetic_radiation_quantity,
+        :power .
+
+",Luminosity is a type of power and also a type of electromagnetic radiation quantity.,2,True
+sweet,http://sweetontology.net/propEnergy/MatricPotential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:matric_potential rdfs:subClassOf :consistence_property,
+        :energy .
+
+",Matric potential is a type of energy and also a type of consistence property.,2,True
+sweet,http://sweetontology.net/propEnergy/PotentialEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potential_energy rdfs:subClassOf :energy .
+
+",potential energy is a type of energy.,1,False
+sweet,http://sweetontology.net/propEnergy/Power,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:power rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :watt ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :energy ;
+            owl:onProperty :has_first_operand ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :time ;
+            owl:onProperty :has_second_operand ],
+        :extensive_property,
+        :ratio .
+
+","Power is an extensive property and a type of ratio. It is defined as something that only uses energy as its first operand and time as its second operand. Additionally, power must have watt as its default unit.",5,True
+sweet,http://sweetontology.net/propEnergy/RadiantEnergy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiant_energy rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :radiation ;
+            owl:onProperty :has_process ],
+        :energy .
+
+",Radiant energy is a type of energy that is characterized solely by the process of radiation.,2,True
+sweet,http://sweetontology.net/propEnergy/SensibleHeat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sensible_heat rdfs:subClassOf :heat,
+        :heat_energy,
+        :thermal_energy .
+
+","Sensible heat is a type of heat, which is also known as a type of heat energy and a type of thermal energy.",3,True
+sweet,http://sweetontology.net/propEnergy/SpecificEnergy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_energy rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :joule_per_kilogram ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :energy ;
+            owl:onProperty :has_first_operand ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :mass ;
+            owl:onProperty :has_second_operand ],
+        :intensive_property,
+        :ratio .
+
+","Specific energy is a type of intensive property and a type of ratio. It is characterized by having energy as its only first operand and mass as its only second operand. Furthermore, specific energy must have the default unit of joule per kilogram.",5,True
+sweet,http://sweetontology.net/propEnergy/SpecificPotentialEnergy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_potential_energy rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :potential_energy ;
+            owl:onProperty :has_first_operand ],
+        :specific_energy .
+
+",Specific potential energy is a type of specific energy and it is also a type of something that only has potential energy as its first operand.,2,True
+sweet,http://sweetontology.net/propEnergy/ThermalEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_energy rdfs:subClassOf :energy,
+        :thermodynamic_quantity .
+
+",Thermal energy is a type of energy and also a type of thermodynamic quantity.,2,True
+sweet,http://sweetontology.net/propEnergy/ThermochemicalEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermochemical_energy rdfs:subClassOf :chemical_energy .
+
+",thermochemical energy is a type of chemical energy.,1,False
+sweet,http://sweetontology.net/propEnergy/TotalSoilWaterPotential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:total_soil_water_potential rdfs:subClassOf :hydrogeological_property .
+
+",total soil water potential is a type of hydrogeological property.,1,False
+sweet,http://sweetontology.net/propEnergy/Work,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:work rdfs:subClassOf :energy .
+
+",work is a type of energy.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/AbsorbedSolarRadiation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:absorbed_solar_radiation rdfs:subClassOf :solar_radiation .
+
+",absorbed solar radiation is a type of solar radiation.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/AbsorptionCoefficient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:absorption_coefficient rdfs:subClassOf :radiation_medium_interaction_quantity ;
+    owl:equivalentClass :opacity .
+
+","The absorption coefficient, which is a type of radiation medium interaction quantity, is the same as opacity.",2,True
+sweet,http://sweetontology.net/propEnergyFlux/Brightness,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brightness rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :watt_per_meter_squared_per_steradian_per_wavelength ;
+            owl:onProperty :has_default_unit ],
+        :luminance ;
+    owl:equivalentClass :specific_intensity .
+
+","Brightness is equivalent to specific intensity and is categorized as a type of luminance. Moreover, it is also a type of attribute that necessarily has the default unit of watt per meter squared per steradian per wavelength.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/BulkHeatFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bulk_heat_flux rdfs:subClassOf :heat_flow,
+        :heat_flux,
+        :thermal_flux .
+
+","Bulk heat flux is a type of heat flow, a type of heat flux, and a type of thermal flux.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/CloudForcing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud_forcing rdfs:subClassOf :radiant_flux,
+        :radiative_forcing .
+
+",Cloud forcing is both a type of radiant flux and a type of radiative forcing.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/EarthquakeScale,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:earthquake_scale rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :db ;
+            owl:onProperty :has_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :earthquake ;
+            owl:onProperty :has_phenomena ],
+        :logarithmic_scale .
+
+",The earthquake scale is a type of logarithmic scale specifically designed for the phenomena of earthquakes and necessarily uses the unit decibels (db).,3,True
+sweet,http://sweetontology.net/propEnergyFlux/EnergyFlux,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_flux rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :transport_of ;
+            owl:someValuesFrom :energy ],
+        :flux .
+
+",Energy flux is a type of flux that involves the transportation of some energy.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/EnergyFlux_Wm2,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_flux_wm2 rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :watt_per_meter_squared ;
+            owl:onProperty :has_unit ],
+        :energy_flux .
+
+",Energy flux wm2 is a type of energy flux and it is something that must have the unit watt per meter squared.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/FluxDensity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flux_density rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :watt_per_meter_squared ;
+            owl:onProperty :has_default_unit ],
+        :flux ;
+    owl:equivalentClass :intensity .
+
+","Flux density, which is a type of flux, shares the same meaning as intensity and is a kind of measurement that inherently has the default unit of watt per meter squared.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/HeatFlow,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heat_flow rdfs:subClassOf :energy_flux,
+        :thermodynamic_quantity ;
+    owl:equivalentClass :thermal_flux .
+
+","Heat flow, which is the same as thermal flux, is a type of energy flux and also a type of thermodynamic quantity.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/HeatFlux,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heat_flux rdfs:subClassOf :energy_flux,
+        :thermodynamic_quantity ;
+    owl:equivalentClass :thermal_flux .
+
+","Heat flux, which is the same as thermal flux, is a type of energy flux and also a type of thermodynamic quantity.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/Illuminance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:illuminance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :lux ;
+            owl:onProperty :has_default_unit ],
+        :energy_flux .
+
+",Illuminance is a type of energy flux and is something that must have the default unit lux.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/Insolation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:insolation rdfs:subClassOf :solar_radiation .
+
+",insolation is a type of solar radiation.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/Intensity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intensity rdfs:subClassOf :flux .
+
+",intensity is a type of flux.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/Irradiance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:irradiance rdfs:subClassOf :electromagnetic_radiation_quantity,
+        :flux_density,
+        :intensity .
+
+","Irradiance is a type of flux density, intensity, and an electromagnetic radiation quantity.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/Luminance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:luminance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :candela_per_meter_squared ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_radiation_quantity .
+
+",Luminance is a type of electromagnetic radiation quantity and it must have the default unit of candela per meter squared.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/LuminousFlux,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:luminous_flux rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :lumen ;
+            owl:onProperty :has_default_unit ],
+        :energy_flux .
+
+",Luminous flux is a type of energy flux and something that must have the default unit of lumen.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/LuminousIntensity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:luminous_intensity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :candela ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_radiation_quantity .
+
+",Luminous intensity is a type of electromagnetic radiation quantity and must have the default unit of candela.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/Opacity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:opacity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_squared_per_kilogram ;
+            owl:onProperty :has_default_unit ],
+        :radiation_medium_interaction_quantity .
+
+","Opacity is a type of radiation-medium interaction quantity, which must have a default unit of meter squared per kilogram.",2,True
+sweet,http://sweetontology.net/propEnergyFlux/PoyntingVector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:poynting_vector rdfs:subClassOf :flux_density,
+        :intensity .
+
+",The Poynting vector is a type of flux density as well as a type of intensity.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/Radiance,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiance rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :watt_per_meter_squared_per_steradian ;
+            owl:onProperty :has_default_unit ],
+        :electromagnetic_radiation_quantity .
+
+",Radiance is a type of electromagnetic radiation quantity and it must have the default unit of watt per meter squared per steradian.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/RadiantFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiant_flux rdfs:subClassOf :flux_density,
+        :intensity,
+        :radiative_forcing .
+
+","Radiant flux is a type of flux density, a type of intensity, and a type of radiative forcing.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/RadiativeFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiative_flux rdfs:subClassOf :energy_flux,
+        :radiant_flux,
+        :radiative_forcing .
+
+","Radiative flux is a type of energy flux, radiant flux, and radiative forcing.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/RadiativeForcing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiative_forcing rdfs:subClassOf :flux_density,
+        :intensity,
+        :radiant_flux .
+
+","Radiative forcing is a type of flux density, intensity, and radiant flux.",3,True
+sweet,http://sweetontology.net/propEnergyFlux/RichterScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:richter_scale rdfs:subClassOf :earthquake_scale .
+
+",richter scale is a type of earthquake scale.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/SolarFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_flux rdfs:subClassOf :radiative_flux .
+
+",solar flux is a type of radiative flux.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/SolarForcing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_forcing rdfs:subClassOf :radiant_flux,
+        :radiative_forcing .
+
+",Solar forcing is both a type of radiant flux and a type of radiative forcing.,2,True
+sweet,http://sweetontology.net/propEnergyFlux/SolarRadiation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_radiation rdfs:subClassOf :electromagnetic_radiation_quantity .
+
+",solar radiation is a type of electromagnetic radiation quantity.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/SpecificIntensity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_intensity rdfs:subClassOf :luminance .
+
+",specific intensity is a type of luminance.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/SpectralRadiance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectral_radiance rdfs:subClassOf :radiance .
+
+",spectral radiance is a type of radiance.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/TerrestrialRadiation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terrestrial_radiation rdfs:subClassOf :radiative_flux .
+
+",terrestrial radiation is a type of radiative flux.,1,False
+sweet,http://sweetontology.net/propEnergyFlux/ThermalFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_flux rdfs:subClassOf :energy_flux,
+        :thermodynamic_quantity .
+
+",Thermal flux is both a type of energy flux and a type of thermodynamic quantity.,2,True
+sweet,http://sweetontology.net/propFraction/Absorptance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:absorptance rdfs:subClassOf :fractional_quantity,
+        :wave_property .
+
+",Absorptance is both a type of wave property and a type of fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/Absorptivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:absorptivity rdfs:subClassOf :fractional_quantity,
+        :wave_property .
+
+",Absorptivity is both a type of wave property and a type of fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/AirSpaceRatio,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_space_ratio rdfs:subClassOf :consistence_property,
+        :fractional_quantity .
+
+",Air space ratio is a type of fractional quantity and a type of consistence property.,2,True
+sweet,http://sweetontology.net/propFraction/Albedo,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:albedo rdfs:subClassOf :fractional_quantity,
+        :radiation_medium_interaction_quantity .
+
+",Albedo is a type of fractional quantity and also a type of radiation medium interaction quantity.,2,True
+sweet,http://sweetontology.net/propFraction/AvailableWaterCapacity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:available_water_capacity rdfs:subClassOf :consistence_property,
+        :fractional_quantity .
+
+",Available water capacity is both a type of fractional quantity and a consistence property.,2,True
+sweet,http://sweetontology.net/propFraction/Bioavailability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bioavailability rdfs:subClassOf :biological_property,
+        :fractional_quantity .
+
+",Bioavailability is a type of biological property and a fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/BivariateStatisticalSummary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bivariate_statistical_summary rdfs:subClassOf :statistical_summary .
+
+",bivariate statistical summary is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFraction/BondAlbedo,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bond_albedo rdfs:subClassOf :albedo .
+
+",bond albedo is a type of albedo.,1,False
+sweet,http://sweetontology.net/propFraction/CapacityFactor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:capacity_factor rdfs:subClassOf :fractional_quantity .
+
+",capacity factor is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/CloudCover,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud_cover rdfs:subClassOf :fractional_quantity .
+
+",cloud cover is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/Coherence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coherence rdfs:subClassOf :bivariate_statistical_summary .
+
+",coherence is a type of bivariate statistical summary.,1,False
+sweet,http://sweetontology.net/propFraction/ConditionalProbability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conditional_probability rdfs:subClassOf :probability .
+
+",conditional probability is a type of probability.,1,False
+sweet,http://sweetontology.net/propFraction/Correlation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:correlation rdfs:subClassOf :bivariate_statistical_summary .
+
+",correlation is a type of bivariate statistical summary.,1,False
+sweet,http://sweetontology.net/propFraction/Covariance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:covariance rdfs:subClassOf :bivariate_statistical_summary .
+
+",covariance is a type of bivariate statistical summary.,1,False
+sweet,http://sweetontology.net/propFraction/CrossCorrelation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cross_correlation rdfs:subClassOf :correlation .
+
+",cross correlation is a type of correlation.,1,False
+sweet,http://sweetontology.net/propFraction/DegreeOfIonization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:degree_of_ionization rdfs:subClassOf :fractional_quantity .
+
+",degree of ionization is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/DifferentialWaterCapacity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:differential_water_capacity rdfs:subClassOf :consistence_property,
+        :fractional_quantity .
+
+",Differential water capacity is a type of fractional quantity and a type of consistence property.,2,True
+sweet,http://sweetontology.net/propFraction/EffectivePorosity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:effective_porosity rdfs:subClassOf :porosity,
+        :porousness .
+
+",Effective porosity is a type of porosity and is also considered a type of porousness.,2,True
+sweet,http://sweetontology.net/propFraction/Efficiency,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:efficiency rdfs:subClassOf :fractional_quantity .
+
+",efficiency is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/Emissivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:emissivity rdfs:subClassOf :electromagnetic_radiation_quantity,
+        :fractional_quantity ;
+    owl:equivalentClass :emittance .
+
+","Emissivity, which is the same as emittance, is a type of fractional quantity as well as a type of electromagnetic radiation quantity.",3,True
+sweet,http://sweetontology.net/propFraction/Emittance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:emittance rdfs:subClassOf :electromagnetic_radiation_quantity,
+        :fractional_quantity .
+
+",Emittance is a type of quantity that is both fractional and related to electromagnetic radiation.,2,True
+sweet,http://sweetontology.net/propFraction/FPAR,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fpar rdfs:subClassOf :fractional_quantity ;
+    owl:equivalentClass :fraction_photosynthetic_active_radiation .
+
+","FPAR, which stands for Fraction Photosynthetic Active Radiation, is a type of fractional quantity.",2,True
+sweet,http://sweetontology.net/propFraction/FieldCapacity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:field_capacity rdfs:subClassOf :fractional_quantity,
+        :water_concentration .
+
+",Field capacity is a type of water concentration and also a type of fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/FractionPhotosyntheticActiveRadiation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fraction_photosynthetic_active_radiation rdfs:subClassOf :fractional_quantity .
+
+",fraction photosynthetic active radiation is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/FractionalQuantity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fractional_quantity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :normalized_unit ;
+            owl:onProperty :has_default_unit ],
+        :quantitative_property,
+        :quantity .
+
+","Fractional quantity is a type of quantity and a type of quantitative property, which is something that must have a default unit, also known as a normalized unit.",3,True
+sweet,http://sweetontology.net/propFraction/Humidity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:humidity rdfs:subClassOf :fractional_quantity,
+        :water_concentration .
+
+",Humidity is a type of water concentration and also a type of fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/JointProbability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:joint_probability rdfs:subClassOf :probability .
+
+",joint probability is a type of probability.,1,False
+sweet,http://sweetontology.net/propFraction/Likelihood,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:likelihood rdfs:subClassOf :fractional_quantity .
+
+",likelihood is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/MarketShare,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:market_share rdfs:subClassOf :fractional_quantity .
+
+",market share is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/MassFraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mass_fraction rdfs:subClassOf :fractional_quantity .
+
+",mass fraction is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/Metallicity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metallicity rdfs:subClassOf :fractional_quantity .
+
+",metallicity is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/MixingRatio,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixing_ratio rdfs:subClassOf :fractional_quantity .
+
+",mixing ratio is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/MolarConcentration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:molar_concentration rdfs:subClassOf :fractional_quantity ;
+    owl:equivalentClass :mole_concentration .
+
+","Molar concentration, which is the same as mole concentration, is a type of fractional quantity.",2,True
+sweet,http://sweetontology.net/propFraction/MoleConcentration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mole_concentration rdfs:subClassOf :fractional_quantity .
+
+",mole concentration is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/MoleFraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mole_fraction rdfs:subClassOf :fractional_quantity .
+
+",mole fraction is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/MoleRatio,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mole_ratio rdfs:subClassOf :fractional_quantity .
+
+",mole ratio is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/PartialCorrelation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:partial_correlation rdfs:subClassOf :correlation .
+
+",partial correlation is a type of correlation.,1,False
+sweet,http://sweetontology.net/propFraction/PearsonProductMomentCorrelation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pearson_product_moment_correlation rdfs:subClassOf :correlation .
+
+",pearson product moment correlation is a type of correlation.,1,False
+sweet,http://sweetontology.net/propFraction/Porosity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:porosity rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pore_space ;
+            owl:onProperty :measure_of ],
+        :consistence_property,
+        :fractional_quantity ;
+    owl:equivalentClass :porousness .
+
+","Porosity, synonymous with porousness, is a type of fractional quantity and a consistency property. It uniquely measures the pore space.",4,True
+sweet,http://sweetontology.net/propFraction/Porousness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:porousness rdfs:subClassOf :consistence_property,
+        :fractional_quantity .
+
+",Porousness is a type of fractional quantity and also a type of consistence property.,2,True
+sweet,http://sweetontology.net/propFraction/Probability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:probability rdfs:subClassOf :fractional_quantity .
+
+",probability is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/RankCorrelation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rank_correlation rdfs:subClassOf :correlation .
+
+",rank correlation is a type of correlation.,1,False
+sweet,http://sweetontology.net/propFraction/Reflectance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reflectance rdfs:subClassOf :fractional_quantity,
+        :wave_property .
+
+",Reflectance is both a type of wave property and a type of fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/Reflectivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reflectivity rdfs:subClassOf :fractional_quantity,
+        :wave_property .
+
+",Reflectivity is both a type of wave property and a type of fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/Refractivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:refractivity rdfs:subClassOf :fractional_quantity,
+        :wave_property .
+
+",Refractivity is a type of wave property and also a type of fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/RelativeHumidity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:relative_humidity rdfs:subClassOf :humidity .
+
+",relative humidity is a type of humidity.,1,False
+sweet,http://sweetontology.net/propFraction/SaturationMixingRatio,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saturation_mixing_ratio rdfs:subClassOf :mixing_ratio,
+        :saturation_property .
+
+",The saturation mixing ratio is both a type of saturation property and a type of mixing ratio.,2,True
+sweet,http://sweetontology.net/propFraction/SpecificHumidity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_humidity rdfs:subClassOf :humidity .
+
+",specific humidity is a type of humidity.,1,False
+sweet,http://sweetontology.net/propFraction/Transmittance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transmittance rdfs:subClassOf :fractional_quantity,
+        :wave_property .
+
+",Transmittance is both a type of wave property and a type of fractional quantity.,2,True
+sweet,http://sweetontology.net/propFraction/Transparency,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transparency rdfs:subClassOf :fractional_quantity,
+        :radiation_medium_interaction_quantity .
+
+",Transparency is a type of fractional quantity and is also a type of radiation medium interaction quantity.,2,True
+sweet,http://sweetontology.net/propFraction/VolumeFraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volume_fraction rdfs:subClassOf :fractional_quantity .
+
+",volume fraction is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/VolumeMixingRatio,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volume_mixing_ratio rdfs:subClassOf :fractional_quantity .
+
+",volume mixing ratio is a type of fractional quantity.,1,False
+sweet,http://sweetontology.net/propFraction/WaterHoldingCapacity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_holding_capacity rdfs:subClassOf :consistence_property,
+        :fractional_quantity .
+
+",Water holding capacity is a type of fractional quantity and a type of consistence property.,2,True
+sweet,http://sweetontology.net/propFraction/pValue,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:p_value rdfs:subClassOf :probability .
+
+",p value is a type of probability.,1,False
+sweet,http://sweetontology.net/propFunction/AnnualAverage,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:annual_average rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :year ;
+            owl:onProperty :average_over ],
+        :temporal_average,
+        :temporal_mean,
+        :time_average,
+        :time_mean .
+
+","Annual average is a type of temporal average, temporal mean, time average, and time mean. Additionally, it is a type of something that must average over a year.",5,True
+sweet,http://sweetontology.net/propFunction/Average,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:average rdfs:subClassOf :moment ;
+    owl:equivalentClass :mean .
+
+",Average is synonymous with mean and is considered a type of moment.,2,True
+sweet,http://sweetontology.net/propFunction/CriticalLevel,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:critical_level rdfs:subClassOf :threshold ;
+    owl:equivalentClass :critical_point .
+
+",The critical level is the same as the critical point and is a type of threshold.,2,True
+sweet,http://sweetontology.net/propFunction/CriticalPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:critical_point rdfs:subClassOf :threshold .
+
+",critical point is a type of threshold.,1,False
+sweet,http://sweetontology.net/propFunction/Decile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:decile rdfs:subClassOf :percentile .
+
+",decile is a type of percentile.,1,False
+sweet,http://sweetontology.net/propFunction/Disturbance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:disturbance rdfs:subClassOf :error .
+
+",disturbance is a type of error.,1,False
+sweet,http://sweetontology.net/propFunction/ErrorBar,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:error_bar rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :error ;
+            owl:onProperty :range_of ],
+        :interval_quantity .
+
+",An error bar is a type of interval quantity and represents a range of error.,2,True
+sweet,http://sweetontology.net/propFunction/FlippingPoint,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flipping_point rdfs:subClassOf :critical_level,
+        :critical_point ;
+    owl:equivalentClass :tipping_point .
+
+","A flipping point, which is also known as a tipping point, is a type of critical level and critical point.",3,True
+sweet,http://sweetontology.net/propFunction/Kurtosis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kurtosis rdfs:subClassOf :statistical_summary .
+
+",kurtosis is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/Maximum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maximum rdfs:subClassOf :statistical_summary .
+
+",maximum is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/Mean,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mean rdfs:subClassOf :moment .
+
+",mean is a type of moment.,1,False
+sweet,http://sweetontology.net/propFunction/Median,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:median rdfs:subClassOf :statistical_summary .
+
+",median is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/MidRange,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mid_range rdfs:subClassOf :statistical_summary .
+
+",mid range is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/Minimum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:minimum rdfs:subClassOf :statistical_summary .
+
+",minimum is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/Mode,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mode rdfs:subClassOf :statistical_summary .
+
+",mode is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/Moment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moment rdfs:subClassOf :statistical_summary .
+
+",moment is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/MonthlyAverage,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:monthly_average rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :month ;
+            owl:onProperty :average_over ],
+        :temporal_average,
+        :temporal_mean,
+        :time_average,
+        :time_mean .
+
+","Monthly average is a type of temporal average, temporal mean, time average, and time mean. It is a type of something that must average over a month.",5,True
+sweet,http://sweetontology.net/propFunction/Peak,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peak rdfs:subClassOf :maximum .
+
+",peak is a type of maximum.,1,False
+sweet,http://sweetontology.net/propFunction/Percentile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:percentile rdfs:subClassOf :statistical_summary .
+
+",percentile is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/Quartile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quartile rdfs:subClassOf :percentile .
+
+",quartile is a type of percentile.,1,False
+sweet,http://sweetontology.net/propFunction/Quintile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quintile rdfs:subClassOf :percentile .
+
+",quintile is a type of percentile.,1,False
+sweet,http://sweetontology.net/propFunction/Skewness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skewness rdfs:subClassOf :statistical_summary .
+
+",skewness is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/Spread,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spread rdfs:subClassOf :deviation .
+
+",spread is a type of deviation.,1,False
+sweet,http://sweetontology.net/propFunction/StandardDeviation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:standard_deviation rdfs:subClassOf :spread,
+        :statistical_summary .
+
+",Standard deviation is a type of statistical summary and a type of spread.,2,True
+sweet,http://sweetontology.net/propFunction/StandardError,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:standard_error rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :standard_deviation ;
+            owl:onProperty :estimate_of ],
+        :estimate .
+
+",Standard error is a type of estimate that serves specifically as an estimate of the standard deviation.,2,True
+sweet,http://sweetontology.net/propFunction/TemporalAverage,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_average rdfs:subClassOf :average,
+        :mean ;
+    owl:equivalentClass :time_mean .
+
+","Temporal average, which is a type of average and also a type of mean, is the same as time mean.",3,True
+sweet,http://sweetontology.net/propFunction/TemporalMean,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_mean rdfs:subClassOf :average,
+        :mean ;
+    owl:equivalentClass :time_mean .
+
+","Temporal mean, which is the same as time mean, is a type of mean and a kind of average.",3,True
+sweet,http://sweetontology.net/propFunction/Threshold,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:threshold rdfs:subClassOf :statistical_summary .
+
+",threshold is a type of statistical summary.,1,False
+sweet,http://sweetontology.net/propFunction/TimeAverage,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_average rdfs:subClassOf :average,
+        :mean ;
+    owl:equivalentClass :time_mean .
+
+","Time average, which is the same as time mean, is a type of both average and mean.",3,True
+sweet,http://sweetontology.net/propFunction/TimeMean,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_mean rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :average_over ;
+            owl:someValuesFrom :time ],
+        :average,
+        :mean .
+
+","Time mean is a type of average, mean, and something that at least averages over some time.",3,True
+sweet,http://sweetontology.net/propFunction/TippingPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tipping_point rdfs:subClassOf :critical_level,
+        :critical_point .
+
+",A tipping point is a type of critical level and also a type of critical point.,2,True
+sweet,http://sweetontology.net/propFunction/Variance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:variance rdfs:subClassOf :spread,
+        :statistical_summary .
+
+",Variance is a type of statistical summary and a type of spread.,2,True
+sweet,http://sweetontology.net/propIndex/AdaptiveCapacity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adaptive_capacity rdfs:subClassOf :metric .
+
+",adaptive capacity is a type of metric.,1,False
+sweet,http://sweetontology.net/propIndex/AirQualityIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_quality_index rdfs:subClassOf :environmental_index .
+
+",air quality index is a type of environmental index.,1,False
+sweet,http://sweetontology.net/propIndex/AkasofuEpsilon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:akasofu_epsilon rdfs:subClassOf :index ;
+    owl:equivalentClass :geomagnetic_index .
+
+","Akasofu epsilon, which is a type of index, is the same as the geomagnetic index.",2,True
+sweet,http://sweetontology.net/propIndex/AuroralBoundaryIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:auroral_boundary_index rdfs:subClassOf :akasofu_epsilon,
+        :geomagnetic_index,
+        :geophysical_index .
+
+","The auroral boundary index is a type of Akasofu epsilon, geomagnetic index, and geophysical index.",3,True
+sweet,http://sweetontology.net/propIndex/BIBI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bibi rdfs:subClassOf :ibi,
+        :index_of_biological_integrity,
+        :index_of_biotic_integrity ;
+    owl:equivalentClass :benthic_index .
+
+",BIBI is synonymous with the benthic index and is a type of Index of Biological Integrity (IBI) as well as a type of Index of Biotic Integrity.,4,True
+sweet,http://sweetontology.net/propIndex/BenthicIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:benthic_index rdfs:subClassOf :ibi,
+        :index_of_biological_integrity,
+        :index_of_biotic_integrity ;
+    owl:equivalentClass :benthic_index_of_biological_integrity .
+
+","The benthic index, which is synonymous with the benthic index of biological integrity, is a type of index that encompasses both the index of biological integrity (IBI) and the index of biotic integrity.",4,True
+sweet,http://sweetontology.net/propIndex/BenthicIndexOfBiologicalIntegrity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:benthic_index_of_biological_integrity rdfs:subClassOf :ibi,
+        :index_of_biological_integrity,
+        :index_of_biotic_integrity .
+
+",The Benthic Index of Biological Integrity is a type of Index of Biological Integrity and Index of Biotic Integrity.,3,True
+sweet,http://sweetontology.net/propIndex/BlockingIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:blocking_index rdfs:subClassOf :index .
+
+",blocking index is a type of index.,1,False
+sweet,http://sweetontology.net/propIndex/BoydenIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boyden_index rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :static_stability ;
+            owl:onProperty :measure_of ],
+        :index .
+
+",The Boyden Index is a type of index that is specifically a measure of static stability.,2,True
+sweet,http://sweetontology.net/propIndex/COH,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coh rdfs:subClassOf :air_quality_index ;
+    owl:equivalentClass :coefficient_of_haze .
+
+","The coefficient of haze, also known as COH, is a type of air quality index.",2,True
+sweet,http://sweetontology.net/propIndex/CirculationIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:circulation_index rdfs:subClassOf :index .
+
+",circulation index is a type of index.,1,False
+sweet,http://sweetontology.net/propIndex/ClimateIndicator,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:climate_indicator rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :climate ;
+            owl:onProperty :measure_of ],
+        :environmental_indicator .
+
+",A climate indicator is a type of environmental indicator and is specifically a measure of climate.,2,True
+sweet,http://sweetontology.net/propIndex/CoefficientOfHaze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coefficient_of_haze rdfs:subClassOf :air_quality_index .
+
+",coefficient of haze is a type of air quality index.,1,False
+sweet,http://sweetontology.net/propIndex/CommonSenseClimateIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:common_sense_climate_index rdfs:subClassOf :climate_indicator .
+
+",common sense climate index is a type of climate indicator.,1,False
+sweet,http://sweetontology.net/propIndex/ComputationalComplexity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:computational_complexity rdfs:subClassOf :metric .
+
+",computational complexity is a type of metric.,1,False
+sweet,http://sweetontology.net/propIndex/CropMoistureIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crop_moisture_index rdfs:subClassOf :health_index .
+
+",crop moisture index is a type of health index.,1,False
+sweet,http://sweetontology.net/propIndex/DroughtIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drought_index rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :drought ;
+            owl:onProperty :measure_of ],
+        :climate_indicator .
+
+",The drought index is a type of climate indicator that solely measures drought.,2,True
+sweet,http://sweetontology.net/propIndex/EPI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epi rdfs:subClassOf :environmental_index ;
+    owl:equivalentClass :environmental_performance_index .
+
+","The Environmental Performance Index, abbreviated as EPI, is a type of environmental index.",2,True
+sweet,http://sweetontology.net/propIndex/ESI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:esi rdfs:subClassOf :environmental_index ;
+    owl:equivalentClass :environmental_sustainability_index .
+
+",The Environmental Sustainability Index (ESI) is a type of environmental index.,2,True
+sweet,http://sweetontology.net/propIndex/EnvironmentalIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_index rdfs:subClassOf :index .
+
+",environmental index is a type of index.,1,False
+sweet,http://sweetontology.net/propIndex/EnvironmentalIndicator,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_indicator rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :indicator ;
+            owl:onProperty :has_role ],
+        :index .
+
+",An environmental indicator is a type of index and is something that must have the role of an indicator.,2,True
+sweet,http://sweetontology.net/propIndex/EnvironmentalPerformanceIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_performance_index rdfs:subClassOf :environmental_index .
+
+",environmental performance index is a type of environmental index.,1,False
+sweet,http://sweetontology.net/propIndex/EnvironmentalSustainabilityIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_sustainability_index rdfs:subClassOf :environmental_index .
+
+",environmental sustainability index is a type of environmental index.,1,False
+sweet,http://sweetontology.net/propIndex/FireWeatherIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fire_weather_index rdfs:subClassOf :environmental_index .
+
+",fire weather index is a type of environmental index.,1,False
+sweet,http://sweetontology.net/propIndex/ForestFireDangerIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forest_fire_danger_index rdfs:subClassOf :environmental_index .
+
+",forest fire danger index is a type of environmental index.,1,False
+sweet,http://sweetontology.net/propIndex/GeomagneticForce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geomagnetic_force rdfs:subClassOf :force .
+
+",geomagnetic force is a type of force.,1,False
+sweet,http://sweetontology.net/propIndex/GeomagneticIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geomagnetic_index rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :geomagnetic_force ;
+            owl:onProperty :measure_of ],
+        :index ;
+    owl:equivalentClass :geophysical_index .
+
+",The geomagnetic index is the same as the geophysical index and is a type of index that exclusively measures geomagnetic force.,3,True
+sweet,http://sweetontology.net/propIndex/GeophysicalIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geophysical_index rdfs:subClassOf :index .
+
+",geophysical index is a type of index.,1,False
+sweet,http://sweetontology.net/propIndex/HealthIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:health_index rdfs:subClassOf :biological_property,
+        :index .
+
+",Health index is a type of index which is characterized as a biological property.,2,True
+sweet,http://sweetontology.net/propIndex/Hydropattern,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydropattern rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :hydrosphere ;
+            owl:onProperty :has_realm ],
+        :index .
+
+",Hydropattern is a type of index that is exclusively associated with the realm of the hydrosphere.,2,True
+sweet,http://sweetontology.net/propIndex/IBI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ibi rdfs:subClassOf :environmental_index ;
+    owl:equivalentClass :index_of_biological_integrity .
+
+","The Index of Biological Integrity, known as IBI, is a type of environmental index.",2,True
+sweet,http://sweetontology.net/propIndex/Index,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:index rdfs:subClassOf :property .
+
+",index is a type of property.,1,False
+sweet,http://sweetontology.net/propIndex/IndexDefinedByDifference,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:index_defined_by_difference rdfs:subClassOf :index .
+
+",index defined by difference is a type of index.,1,False
+sweet,http://sweetontology.net/propIndex/IndexOfBiologicalIntegrity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:index_of_biological_integrity rdfs:subClassOf :environmental_index ;
+    owl:equivalentClass :index_of_biotic_integrity .
+
+","The index of biological integrity, which is synonymous with the index of biotic integrity, is a type of environmental index.",2,True
+sweet,http://sweetontology.net/propIndex/IndexOfBioticIntegrity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:index_of_biotic_integrity rdfs:subClassOf :environmental_index .
+
+",index of biotic integrity is a type of environmental index.,1,False
+sweet,http://sweetontology.net/propIndex/KaplanSSTIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kaplan_sst_index rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :temperature ;
+            owl:onProperty :measure_of ],
+        :index .
+
+",The Kaplan SST index is a type of index that is exclusively a measure of temperature.,2,True
+sweet,http://sweetontology.net/propIndex/Kp,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kp rdfs:subClassOf :akasofu_epsilon,
+        :geomagnetic_index,
+        :geophysical_index .
+
+","KP is a type of Akasofu epsilon, geomagnetic index, and geophysical index.",3,True
+sweet,http://sweetontology.net/propIndex/NRMI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nrmi rdfs:subClassOf :environmental_index ;
+    owl:equivalentClass :natural_resource_management_index .
+
+","NRMI, which stands for Natural Resource Management Index, is a type of environmental index.",2,True
+sweet,http://sweetontology.net/propIndex/NaturalResourceManagementIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:natural_resource_management_index rdfs:subClassOf :environmental_index .
+
+",natural resource management index is a type of environmental index.,1,False
+sweet,http://sweetontology.net/propIndex/NorthAtlanticOscillationIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:north_atlantic_oscillation_index rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :nao ;
+            owl:onProperty :measure_of ],
+        :index_defined_by_difference .
+
+",The North Atlantic Oscillation Index is a type of index defined by a difference and is something that measures only the NAO.,2,True
+sweet,http://sweetontology.net/propIndex/NorthPacificOscillationIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:north_pacific_oscillation_index rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pdo ;
+            owl:onProperty :measure_of ],
+        :index_defined_by_difference .
+
+",The North Pacific Oscillation Index is a type of index defined by difference and is something that only measures the PDO (Pacific Decadal Oscillation).,2,True
+sweet,http://sweetontology.net/propIndex/PC,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pc rdfs:subClassOf :akasofu_epsilon,
+        :geomagnetic_index,
+        :geophysical_index ;
+    owl:equivalentClass :polar_cap_index .
+
+","PC, which is the same as the polar cap index, is a type of Akasofu epsilon, geomagnetic index, and geophysical index.",4,True
+sweet,http://sweetontology.net/propIndex/PDI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pdi rdfs:subClassOf :drought_index ;
+    owl:equivalentClass :palmer_drought_severity_index .
+
+","PDI, which is the same as Palmer Drought Severity Index, is a type of drought index.",2,True
+sweet,http://sweetontology.net/propIndex/PDSI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pdsi rdfs:subClassOf :drought_index ;
+    owl:equivalentClass :palmer_drought_severity_index .
+
+","PDSI, which is the same as the Palmer Drought Severity Index, is a type of drought index.",2,True
+sweet,http://sweetontology.net/propIndex/PHDI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phdi rdfs:subClassOf :drought_index ;
+    owl:equivalentClass :palmer_hydrological_drought_index .
+
+","The Palmer Hydrological Drought Index (PHDI) is a type of drought index, which is the same as PHDI.",2,True
+sweet,http://sweetontology.net/propIndex/PalmerDroughtIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:palmer_drought_index rdfs:subClassOf :drought_index ;
+    owl:equivalentClass :palmer_drought_severity_index .
+
+","The Palmer Drought Index, which is the same as the Palmer Drought Severity Index, is a type of drought index.",2,True
+sweet,http://sweetontology.net/propIndex/PalmerDroughtSeverityIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:palmer_drought_severity_index rdfs:subClassOf :drought_index .
+
+",palmer drought severity index is a type of drought index.,1,False
+sweet,http://sweetontology.net/propIndex/PalmerHydrologicalDroughtIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:palmer_hydrological_drought_index rdfs:subClassOf :drought_index .
+
+",palmer hydrological drought index is a type of drought index.,1,False
+sweet,http://sweetontology.net/propIndex/PhysiologicalParameter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physiological_parameter rdfs:subClassOf :health_index .
+
+",physiological parameter is a type of health index.,1,False
+sweet,http://sweetontology.net/propIndex/PolarCapIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polar_cap_index rdfs:subClassOf :akasofu_epsilon,
+        :geomagnetic_index,
+        :geophysical_index .
+
+","The polar cap index is a type of Akasofu epsilon, geomagnetic index, and geophysical index.",3,True
+sweet,http://sweetontology.net/propIndex/PsychologicalParameter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:psychological_parameter rdfs:subClassOf :health_index .
+
+",psychological parameter is a type of health index.,1,False
+sweet,http://sweetontology.net/propIndex/RingelmannChart,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ringelmann_chart rdfs:subClassOf :air_quality_index .
+
+",ringelmann chart is a type of air quality index.,1,False
+sweet,http://sweetontology.net/propIndex/SMI,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:smi rdfs:subClassOf :drought_index ;
+    owl:equivalentClass :surface_moisture_index .
+
+","SMI, which is the same as Surface Moisture Index, is a type of drought index.",2,True
+sweet,http://sweetontology.net/propIndex/ShallowConvectionParameter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shallow_convection_parameter rdfs:subClassOf :physical_constant,
+        :transport .
+
+",Shallow convection parameter is both a type of transport and a type of physical constant.,2,True
+sweet,http://sweetontology.net/propIndex/StandardizedPrecipitationIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:standardized_precipitation_index rdfs:subClassOf :drought_index .
+
+",standardized precipitation index is a type of drought index.,1,False
+sweet,http://sweetontology.net/propIndex/StorageCoefficient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:storage_coefficient rdfs:subClassOf :hydrogeological_property ;
+    owl:equivalentClass :storativity .
+
+","The storage coefficient, which is the same as storativity, is a type of hydrogeological property.",2,True
+sweet,http://sweetontology.net/propIndex/Storativity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:storativity rdfs:subClassOf :hydrogeological_property .
+
+",storativity is a type of hydrogeological property.,1,False
+sweet,http://sweetontology.net/propIndex/SurfaceMoistureIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surface_moisture_index rdfs:subClassOf :drought_index .
+
+",surface moisture index is a type of drought index.,1,False
+sweet,http://sweetontology.net/propIndex/Turbidity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:turbidity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ftu ;
+            owl:onProperty :has_default_unit ],
+        :radiation_medium_interaction_quantity .
+
+","Turbidity, which has the default unit ftu, is a type of quantity that indicates the interaction between radiation and a medium.",2,True
+sweet,http://sweetontology.net/propIndex/UVIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:u_v_index rdfs:subClassOf :air_quality_index .
+
+",u v index is a type of air quality index.,1,False
+sweet,http://sweetontology.net/propIndex/Virulence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:virulence rdfs:subClassOf :health_index .
+
+",virulence is a type of health index.,1,False
+sweet,http://sweetontology.net/propIndex/VitalStatistics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vital_statistics rdfs:subClassOf :health_index .
+
+",vital statistics is a type of health index.,1,False
+sweet,http://sweetontology.net/propIndex/WaterQualityIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_quality_index rdfs:subClassOf :environmental_index .
+
+",water quality index is a type of environmental index.,1,False
+sweet,http://sweetontology.net/propIndex/ZonalIndex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zonal_index rdfs:subClassOf :index_defined_by_difference .
+
+",zonal index is a type of index defined by difference.,1,False
+sweet,http://sweetontology.net/propMass/BulkDensity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bulk_density rdfs:subClassOf :density,
+        :mass_concentration .
+
+",Bulk density is a type of density and also a type of mass concentration.,2,True
+sweet,http://sweetontology.net/propMass/Consistence,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consistence rdfs:subClassOf :consistence_property ;
+    owl:equivalentClass :consistency .
+
+",Consistence is synonymous with consistency and is also a type of consistence property.,2,True
+sweet,http://sweetontology.net/propMass/ConsistenceProperty,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consistence_property rdfs:subClassOf :material_property .
+
+",consistence property is a type of material property.,1,False
+sweet,http://sweetontology.net/propMass/Consistency,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consistency rdfs:subClassOf :consistence_property .
+
+",consistency is a type of consistence property.,1,False
+sweet,http://sweetontology.net/propMass/Content,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:content rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :area ;
+            owl:onProperty :has_second_operand ],
+        :density,
+        :mass_concentration,
+        :ratio .
+
+","Content is recognized as a type of density, mass concentration, and ratio. Furthermore, it is described as a type of entity that exclusively possesses a second operand area.",4,True
+sweet,http://sweetontology.net/propMass/Density,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:density rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilogram_per_meter_cubed ;
+            owl:onProperty :has_default_unit ],
+        :intensive_property ;
+    owl:equivalentClass :mass_concentration .
+
+","Density is equivalent to mass concentration and is categorized as a type of intensive property. Additionally, density is characterized as something that necessarily has the default unit of kilogram per meter cubed.",3,True
+sweet,http://sweetontology.net/propMass/DissolvedConcentration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dissolved_concentration rdfs:subClassOf :density,
+        :mass_concentration .
+
+",Dissolved concentration is a type of density and also a type of mass concentration.,2,True
+sweet,http://sweetontology.net/propMass/Dosage,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dosage rdfs:subClassOf :mass ;
+    owl:equivalentClass :dose .
+
+",Dosage is the same as dose and is a type of mass.,2,True
+sweet,http://sweetontology.net/propMass/Dose,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dose rdfs:subClassOf :mass .
+
+",dose is a type of mass.,1,False
+sweet,http://sweetontology.net/propMass/DryWeight,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_weight rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dry ;
+            owl:onProperty :has_state ],
+        :mass .
+
+","Dry weight is a type of mass, specifically characterized by a state that must be dry.",2,True
+sweet,http://sweetontology.net/propMass/Ductibility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ductibility rdfs:subClassOf :strength_property .
+
+",ductibility is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/Elasticity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elasticity rdfs:subClassOf :strength_property .
+
+",elasticity is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/Flexure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flexure rdfs:subClassOf :strength_property .
+
+",flexure is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/Grade,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:grade rdfs:subClassOf :density,
+        :mass_concentration .
+
+",Grade is a type of density and also a type of mass concentration.,2,True
+sweet,http://sweetontology.net/propMass/Hardness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hardness rdfs:subClassOf :strength_property .
+
+",hardness is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/Malleability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:malleability rdfs:subClassOf :strength_property .
+
+",malleability is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/Mass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mass rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilogram ;
+            owl:onProperty :has_default_unit ],
+        :extensive_property .
+
+",Mass is a type of extensive property and it is also something that must have the default unit of kilogram.,2,True
+sweet,http://sweetontology.net/propMass/MassConcentration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mass_concentration rdfs:subClassOf :intensive_property .
+
+",mass concentration is a type of intensive property.,1,False
+sweet,http://sweetontology.net/propMass/MassContent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mass_content rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilogram_per_meter_squared ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :mass ;
+            owl:onProperty :has_first_operand ],
+        :content .
+
+","Mass content is a type of content that only involves the first operand, mass, and it must have the default unit of kilograms per meter squared.",3,True
+sweet,http://sweetontology.net/propMass/MaterialProperty,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:material_property rdfs:subClassOf :physical_property .
+
+",material property is a type of physical property.,1,False
+sweet,http://sweetontology.net/propMass/MeanMolecularWeight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mean_molecular_weight rdfs:subClassOf :molecular_weight .
+
+",mean molecular weight is a type of molecular weight.,1,False
+sweet,http://sweetontology.net/propMass/MolecularWeight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:molecular_weight rdfs:subClassOf :density,
+        :mass_concentration .
+
+",Molecular weight is a type of density and also a type of mass concentration.,2,True
+sweet,http://sweetontology.net/propMass/Moles,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moles rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :mole ;
+            owl:onProperty :has_default_unit ],
+        :quantitative_property,
+        :quantity .
+
+","Moles is a type of quantitative property and a type of quantity, which must have the default unit mole.",3,True
+sweet,http://sweetontology.net/propMass/OpticalMass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:optical_mass rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilogram ;
+            owl:onProperty :has_default_unit ],
+        :radiation_medium_interaction_quantity .
+
+",Optical mass is a type of radiation medium interaction quantity and it is something that must have the default unit kilogram.,2,True
+sweet,http://sweetontology.net/propMass/Plasticity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plasticity rdfs:subClassOf :strength_property .
+
+",plasticity is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/PotentialDensity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potential_density rdfs:subClassOf :density,
+        :mass_concentration .
+
+",Potential density is both a type of density and a type of mass concentration.,2,True
+sweet,http://sweetontology.net/propMass/Roughness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:roughness rdfs:subClassOf :material_property .
+
+",roughness is a type of material property.,1,False
+sweet,http://sweetontology.net/propMass/SigmaT,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sigma_t rdfs:subClassOf :density,
+        :mass_concentration .
+
+",Sigma t is both a type of density and a type of mass concentration.,2,True
+sweet,http://sweetontology.net/propMass/Softness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:softness rdfs:subClassOf :strength_property .
+
+",softness is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/SolidProperty,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solid_property rdfs:subClassOf :material_property .
+
+",solid property is a type of material property.,1,False
+sweet,http://sweetontology.net/propMass/Solidity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solidity rdfs:subClassOf :strength_property ;
+    owl:equivalentClass :solidness .
+
+","Solidity, which is the same as solidness, is a type of strength property.",2,True
+sweet,http://sweetontology.net/propMass/Solidness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solidness rdfs:subClassOf :strength_property .
+
+",solidness is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/SpecificVolume,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_volume rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_cubed_per_kilogram ;
+            owl:onProperty :has_default_unit ],
+        :intensive_property .
+
+",Specific volume is a type of intensive property and is something that must have the default unit of meter cubed per kilogram.,2,True
+sweet,http://sweetontology.net/propMass/StrengthProperty,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strength_property rdfs:subClassOf :solid_property .
+
+",strength property is a type of solid property.,1,False
+sweet,http://sweetontology.net/propMass/Structure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:structure rdfs:subClassOf :strength_property .
+
+",structure is a type of strength property.,1,False
+sweet,http://sweetontology.net/propMass/Texture,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:texture rdfs:subClassOf :consistence_property .
+
+",texture is a type of consistence property.,1,False
+sweet,http://sweetontology.net/propMassFlux/DarcyFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:darcy_flux rdfs:subClassOf :mass_flux .
+
+",darcy flux is a type of mass flux.,1,False
+sweet,http://sweetontology.net/propMassFlux/DifferentialFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:differential_flux rdfs:subClassOf :mass_flux .
+
+",differential flux is a type of mass flux.,1,False
+sweet,http://sweetontology.net/propMassFlux/EffectivePermeability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:effective_permeability rdfs:subClassOf :permeability .
+
+",effective permeability is a type of permeability.,1,False
+sweet,http://sweetontology.net/propMassFlux/GPP,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gpp rdfs:subClassOf :primary_productivity ;
+    owl:equivalentClass :gross_primary_productivity .
+
+","Gross primary productivity, also known as GPP, is a type of primary productivity.",2,True
+sweet,http://sweetontology.net/propMassFlux/GrossPrimaryProductivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gross_primary_productivity rdfs:subClassOf :primary_productivity .
+
+",gross primary productivity is a type of primary productivity.,1,False
+sweet,http://sweetontology.net/propMassFlux/IntrinsicPermeability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intrinsic_permeability rdfs:subClassOf :permeability .
+
+",intrinsic permeability is a type of permeability.,1,False
+sweet,http://sweetontology.net/propMassFlux/MassFlux,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mass_flux rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mass ;
+            owl:onProperty :has_substance ],
+        :flux .
+
+",Mass flux is a type of flux that exclusively involves the transfer of substance mass.,2,True
+sweet,http://sweetontology.net/propMassFlux/NPP,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:npp rdfs:subClassOf :primary_productivity ;
+    owl:equivalentClass :net_primary_productivity .
+
+","NPP, which stands for net primary productivity, is a type of primary productivity.",2,True
+sweet,http://sweetontology.net/propMassFlux/NetPrimaryProductivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:net_primary_productivity rdfs:subClassOf :primary_productivity .
+
+",net primary productivity is a type of primary productivity.,1,False
+sweet,http://sweetontology.net/propMassFlux/Permeability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:permeability rdfs:subClassOf :mass_flux .
+
+",permeability is a type of mass flux.,1,False
+sweet,http://sweetontology.net/propMassFlux/PermeabilityCoefficent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:permeability_coefficent rdfs:subClassOf :permeability .
+
+",permeability coefficent is a type of permeability.,1,False
+sweet,http://sweetontology.net/propMassFlux/PrimaryProductivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:primary_productivity rdfs:subClassOf :productivity .
+
+",primary productivity is a type of productivity.,1,False
+sweet,http://sweetontology.net/propMassFlux/Productivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:productivity rdfs:subClassOf :mass_flux .
+
+",productivity is a type of mass flux.,1,False
+sweet,http://sweetontology.net/propMassFlux/SpecificCapacity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_capacity rdfs:subClassOf :mass_flux .
+
+",specific capacity is a type of mass flux.,1,False
+sweet,http://sweetontology.net/propMassFlux/SpecificDischarge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_discharge rdfs:subClassOf :mass_flux .
+
+",specific discharge is a type of mass flux.,1,False
+sweet,http://sweetontology.net/propMassFlux/SpecificPermeability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:specific_permeability rdfs:subClassOf :permeability .
+
+",specific permeability is a type of permeability.,1,False
+sweet,http://sweetontology.net/propOrdinal/ActivityLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:activity_level rdfs:subClassOf :ordinal_property,
+        :system_property .
+
+",Activity level is a type of system property and also a type of ordinal property.,2,True
+sweet,http://sweetontology.net/propOrdinal/Age,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:age rdfs:subClassOf :time .
+
+",age is a type of time.,1,False
+sweet,http://sweetontology.net/propOrdinal/Belief,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:belief rdfs:subClassOf :ordinal_property ;
+    owl:equivalentClass :trust .
+
+","Belief is the same as trust, and it is a type of ordinal property.",2,True
+sweet,http://sweetontology.net/propOrdinal/Color,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:color rdfs:subClassOf :ordinal_property .
+
+",color is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/Condition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:condition rdfs:subClassOf :ordinal_property .
+
+",condition is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/EducationalLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:educational_level rdfs:subClassOf :level .
+
+",educational level is a type of level.,1,False
+sweet,http://sweetontology.net/propOrdinal/ElectromagneticSpectrum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electromagnetic_spectrum rdfs:subClassOf :spectral_band .
+
+",electromagnetic spectrum is a type of spectral band.,1,False
+sweet,http://sweetontology.net/propOrdinal/FlareClass,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flare_class rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :energy_flux ;
+            owl:onProperty :measure_of ],
+        :physical_property .
+
+",Flare class is a type of physical property and is something that measures only energy flux.,2,True
+sweet,http://sweetontology.net/propOrdinal/Gradation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gradation rdfs:subClassOf :ordinal_property .
+
+",gradation is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/Impact,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:impact rdfs:subClassOf :ordinal_property .
+
+",impact is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/Level,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level rdfs:subClassOf :ordinal_property .
+
+",level is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/Luster,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:luster rdfs:subClassOf :color .
+
+",luster is a type of color.,1,False
+sweet,http://sweetontology.net/propOrdinal/MineralAssessment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mineral_assessment rdfs:subClassOf :level .
+
+",mineral assessment is a type of level.,1,False
+sweet,http://sweetontology.net/propOrdinal/OrdinalProperty,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ordinal_property rdfs:subClassOf :ordinal_scale,
+        :property .
+
+",Ordinal property is a type of property as well as a type of ordinal scale.,2,True
+sweet,http://sweetontology.net/propOrdinal/Pigment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pigment rdfs:subClassOf :color .
+
+",pigment is a type of color.,1,False
+sweet,http://sweetontology.net/propOrdinal/ProcessingLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:processing_level rdfs:subClassOf :ordinal_property .
+
+",processing level is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/Qualifier,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qualifier rdfs:subClassOf :ordinal_property .
+
+",qualifier is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/Quality,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quality rdfs:subClassOf :ordinal_property .
+
+",quality is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/SpatialScale,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_scale rdfs:subClassOf :ordinal_scale .
+
+",spatial scale is a type of ordinal scale.,1,False
+sweet,http://sweetontology.net/propOrdinal/SpectralBand,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectral_band rdfs:subClassOf :interval,
+        :physical_property .
+
+",Spectral band is a type of physical property and also a type of interval.,2,True
+sweet,http://sweetontology.net/propOrdinal/SpectralLine,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectral_line rdfs:subClassOf :physical_property ;
+    owl:disjointWith :broad_spectrum .
+
+",A spectral line is a type of physical property that is disjoint from a broad spectrum.,2,True
+sweet,http://sweetontology.net/propOrdinal/Streak,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:streak rdfs:subClassOf :color .
+
+",streak is a type of color.,1,False
+sweet,http://sweetontology.net/propOrdinal/TemperatureRange,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperature_range rdfs:subClassOf :ordinal_property .
+
+",temperature range is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/TrophicLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trophic_level rdfs:subClassOf :level .
+
+",trophic level is a type of level.,1,False
+sweet,http://sweetontology.net/propOrdinal/Trust,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trust rdfs:subClassOf :ordinal_property .
+
+",trust is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propOrdinal/Visibility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:visibility rdfs:subClassOf :ordinal_property .
+
+",visibility is a type of ordinal property.,1,False
+sweet,http://sweetontology.net/propPressure/AirPressure,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_pressure rdfs:subClassOf :pressure ;
+    owl:equivalentClass :barometric_pressure .
+
+","Air pressure, which is the same as barometric pressure, is a type of pressure.",2,True
+sweet,http://sweetontology.net/propPressure/AtmosphericPressure,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_pressure rdfs:subClassOf :pressure ;
+    owl:equivalentClass :barometric_pressure .
+
+","Atmospheric pressure, which is the same as barometric pressure, is a type of pressure.",2,True
+sweet,http://sweetontology.net/propPressure/BarometricPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barometric_pressure rdfs:subClassOf :pressure .
+
+",barometric pressure is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/BarometricTendency,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barometric_tendency rdfs:subClassOf :pressure_tendency .
+
+",barometric tendency is a type of pressure tendency.,1,False
+sweet,http://sweetontology.net/propPressure/BulkModulus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bulk_modulus rdfs:subClassOf :physical_quantity .
+
+",bulk modulus is a type of physical quantity.,1,False
+sweet,http://sweetontology.net/propPressure/Compressibility,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compressibility rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :per_pascal ;
+            owl:onProperty :has_default_unit ],
+        :physical_quantity .
+
+",Compressibility is a type of physical quantity that has a default unit of per pascal.,2,True
+sweet,http://sweetontology.net/propPressure/CompressiveStrength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compressive_strength rdfs:subClassOf :strength .
+
+",compressive strength is a type of strength.,1,False
+sweet,http://sweetontology.net/propPressure/DifferentialPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:differential_pressure rdfs:subClassOf :pressure .
+
+",differential pressure is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/DynamicViscosity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dynamic_viscosity rdfs:subClassOf :fluid_property,
+        :physical_quantity ;
+    owl:equivalentClass :viscosity .
+
+","Dynamic viscosity, which is the same as viscosity, is a type of fluid property and also a type of physical quantity.",3,True
+sweet,http://sweetontology.net/propPressure/ExnerFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exner_function rdfs:subClassOf :pressure .
+
+",exner function is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/HydrostaticPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrostatic_pressure rdfs:subClassOf :pressure .
+
+",hydrostatic pressure is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/ModulusOfElasticity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:modulus_of_elasticity rdfs:subClassOf :material_property,
+        :physical_quantity ;
+    owl:equivalentClass :youngs_modulus .
+
+","The modulus of elasticity, which is the same as Young's modulus, is a type of material property as well as a type of physical quantity.",3,True
+sweet,http://sweetontology.net/propPressure/MomentumFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:momentum_flux rdfs:subClassOf :flux,
+        :pressure .
+
+",Momentum flux is a type of pressure and a type of flux.,2,True
+sweet,http://sweetontology.net/propPressure/NormalStress,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normal_stress rdfs:subClassOf :stress ;
+    owl:equivalentClass :tensile_stress .
+
+","Normal stress, which is a type of stress, is the same as tensile stress.",2,True
+sweet,http://sweetontology.net/propPressure/PartialPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:partial_pressure rdfs:subClassOf :pressure .
+
+",partial pressure is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/Pressure,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pressure rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :pascal ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :force ;
+            owl:onProperty :has_first_operand ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :area ;
+            owl:onProperty :has_second_operand ],
+        :intensive_property,
+        :ratio .
+
+","Pressure is a type of intensive property and a type of ratio. It is a type of something that only has the first operand as force and the second operand as area. Additionally, pressure is a type of something that must have the default unit pascal.",5,True
+sweet,http://sweetontology.net/propPressure/PressureGradient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pressure_gradient rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :distance ;
+            owl:onProperty :derivative_with_respect_to ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :pressure ;
+            owl:onProperty :is_derivative_of ],
+        :gradient,
+        :physical_quantity .
+
+","The pressure gradient is a type of physical quantity and a type of gradient, specifically something that is both a derivative with respect to distance and exclusively a derivative of pressure.",4,True
+sweet,http://sweetontology.net/propPressure/PressureTendency,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pressure_tendency rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pressure ;
+            owl:onProperty :has_property ],
+        :rate,
+        :tendency .
+
+","Pressure tendency is a type of rate, tendency, and something that only has the property of pressure.",3,True
+sweet,http://sweetontology.net/propPressure/SeaLevelPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_level_pressure rdfs:subClassOf :air_pressure,
+        :atmospheric_pressure,
+        :barometric_pressure .
+
+","Sea level pressure is a type of air pressure, atmospheric pressure, and barometric pressure.",3,True
+sweet,http://sweetontology.net/propPressure/ShearModulus,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shear_modulus rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :shear ;
+            owl:onProperty :has_direction ],
+        :material_property,
+        :physical_quantity .
+
+","Shear modulus is a type of material property and physical quantity, which is a characteristic that must have a directional shear.",3,True
+sweet,http://sweetontology.net/propPressure/ShearStress,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shear_stress rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :shear ;
+            owl:onProperty :has_direction ],
+        :stress ;
+    owl:disjointWith :tensile_stress .
+
+","Shear stress is a type of stress and is a kind of stress that must have a directional shear. Additionally, shear stress is disjoint with tensile stress.",3,True
+sweet,http://sweetontology.net/propPressure/StaticPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:static_pressure rdfs:subClassOf :pressure .
+
+",static pressure is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/Stiffness,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stiffness rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :newton_per_meter ;
+            owl:onProperty :has_default_unit ],
+        :physical_quantity,
+        :strength_property .
+
+",Stiffness is a type of strength property and a type of physical quantity that must have the default unit of newton per meter.,3,True
+sweet,http://sweetontology.net/propPressure/Strength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strength rdfs:subClassOf :strength_property .
+
+",strength is a type of strength property.,1,False
+sweet,http://sweetontology.net/propPressure/Stress,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stress rdfs:subClassOf :pressure .
+
+",stress is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/Suction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:suction rdfs:subClassOf :pressure .
+
+",suction is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/SurfaceTension,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surface_tension rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :newton_per_meter ;
+            owl:onProperty :has_default_unit ],
+        :fluid_property,
+        :physical_quantity,
+        :tension .
+
+","Surface tension is a type of tension, fluid property, and physical quantity. Moreover, it is a type of something that must have the default unit newton per meter.",4,True
+sweet,http://sweetontology.net/propPressure/TensileStrength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tensile_strength rdfs:subClassOf :strength .
+
+",tensile strength is a type of strength.,1,False
+sweet,http://sweetontology.net/propPressure/TensileStress,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tensile_stress rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :perpendicular ;
+            owl:onProperty :has_direction ],
+        :stress .
+
+",Tensile stress is a type of stress and is a kind of stress that must have a direction perpendicular.,2,True
+sweet,http://sweetontology.net/propPressure/TotalPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:total_pressure rdfs:subClassOf :pressure .
+
+",total pressure is a type of pressure.,1,False
+sweet,http://sweetontology.net/propPressure/Viscosity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:viscosity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :pascal_second ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :viscous_force ;
+            owl:onProperty :measure_of ],
+        :fluid_property,
+        :physical_quantity .
+
+","Viscosity is a type of fluid property and a physical quantity that represents a measure of viscous force. Additionally, it is characterized by having a default unit of pascal second.",4,True
+sweet,http://sweetontology.net/propPressure/YoungsModulus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:youngs_modulus rdfs:subClassOf :material_property,
+        :physical_quantity .
+
+",Young's modulus is a type of material property and a type of physical quantity.,2,True
+sweet,http://sweetontology.net/propQuantity/BalanceEquation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:balance_equation rdfs:subClassOf :equation ;
+    owl:equivalentClass :budget_equation .
+
+","The balance equation, which is a type of equation, is the same as the budget equation.",2,True
+sweet,http://sweetontology.net/propQuantity/BiologicalQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biological_quantity rdfs:subClassOf :biological_property,
+        :quantitative_property,
+        :quantity .
+
+","Biological quantity is a type of biological property, quantitative property, and quantity.",3,True
+sweet,http://sweetontology.net/propQuantity/Budget,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:budget rdfs:subClassOf :equation ;
+    owl:equivalentClass :budget_equation .
+
+","The budget is the same as the budget equation, which is a type of equation.",2,True
+sweet,http://sweetontology.net/propQuantity/BudgetEquation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:budget_equation rdfs:subClassOf :equation .
+
+",budget equation is a type of equation.,1,False
+sweet,http://sweetontology.net/propQuantity/ChemicalQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemical_quantity rdfs:subClassOf :chemical_property,
+        :quantitative_property,
+        :quantity .
+
+","Chemical quantity is a type of chemical property, a type of quantitative property, and a type of quantity.",3,True
+sweet,http://sweetontology.net/propQuantity/ConservedQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conserved_quantity rdfs:subClassOf :constant .
+
+",conserved quantity is a type of constant.,1,False
+sweet,http://sweetontology.net/propQuantity/ElectromagneticQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electromagnetic_quantity rdfs:subClassOf :electromagnetic_radiation_property,
+        :quantitative_property,
+        :quantity .
+
+",Electromagnetic quantity is a type of quantity that serves as a quantitative property and is specifically a property of electromagnetic radiation.,3,True
+sweet,http://sweetontology.net/propQuantity/ElectromagneticRadiationQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electromagnetic_radiation_quantity rdfs:subClassOf :electromagnetic_radiation_property,
+        :quantitative_property,
+        :quantity .
+
+","Electromagnetic radiation quantity is a type of electromagnetic radiation property, a type of quantitative property, and also a type of quantity.",3,True
+sweet,http://sweetontology.net/propQuantity/ExtensiveProperty,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extensive_property rdfs:subClassOf :quantitative_property,
+        :quantity ;
+    owl:disjointWith :intensive_property .
+
+","An extensive property is a type of quantitative property and is also considered a type of quantity. Furthermore, an extensive property is disjoint with an intensive property.",3,True
+sweet,http://sweetontology.net/propQuantity/FieldStrength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:field_strength rdfs:subClassOf :physical_quantity .
+
+",field strength is a type of physical quantity.,1,False
+sweet,http://sweetontology.net/propQuantity/Flux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flux rdfs:subClassOf :vector_quantity .
+
+",flux is a type of vector quantity.,1,False
+sweet,http://sweetontology.net/propQuantity/Force,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:force rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :newton ;
+            owl:onProperty :has_default_unit ],
+        :intensive_property .
+
+",Force is a type of intensive property and is something that must have the default unit of newton.,2,True
+sweet,http://sweetontology.net/propQuantity/IntensiveProperty,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intensive_property rdfs:subClassOf :quantitative_property,
+        :quantity .
+
+",An intensive property is a type of quantitative property and is also considered a type of quantity.,2,True
+sweet,http://sweetontology.net/propQuantity/IntervalQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interval_quantity rdfs:subClassOf :scientific_quantity .
+
+",interval quantity is a type of scientific quantity.,1,False
+sweet,http://sweetontology.net/propQuantity/PhysicalConstant,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physical_constant rdfs:subClassOf :constant .
+
+",physical constant is a type of constant.,1,False
+sweet,http://sweetontology.net/propQuantity/PhysicalQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physical_quantity rdfs:subClassOf :physical_property,
+        :quantitative_property,
+        :quantity .
+
+","Physical quantity is a type of physical property, quantitative property, and quantity.",3,True
+sweet,http://sweetontology.net/propQuantity/Potential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potential rdfs:subClassOf :physical_quantity .
+
+",potential is a type of physical quantity.,1,False
+sweet,http://sweetontology.net/propQuantity/QuantitativeProperty,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quantitative_property rdfs:subClassOf :scientific_quantity ;
+    owl:equivalentClass :quantity .
+
+","Quantitative property, which is the same as quantity, is a type of scientific quantity.",2,True
+sweet,http://sweetontology.net/propQuantity/Quantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quantity rdfs:subClassOf :scientific_quantity .
+
+",quantity is a type of scientific quantity.,1,False
+sweet,http://sweetontology.net/propQuantity/RadiationMediumInteractionQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiation_medium_interaction_quantity rdfs:subClassOf :electromagnetic_radiation_property,
+        :quantitative_property,
+        :quantity .
+
+",The radiation medium interaction quantity is a type of quantity that falls under both electromagnetic radiation properties and quantitative properties.,3,True
+sweet,http://sweetontology.net/propQuantity/ScalarPotential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scalar_potential rdfs:subClassOf :potential .
+
+",scalar potential is a type of potential.,1,False
+sweet,http://sweetontology.net/propQuantity/ScientificQuantity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:scientific_quantity rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_unit ],
+        :property .
+
+",A scientific quantity is a type of property and is characterized as something that has exactly one unit.,2,True
+sweet,http://sweetontology.net/propQuantity/StokesParameters,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stokes_parameters rdfs:subClassOf :vector_quantity .
+
+",stokes parameters is a type of vector quantity.,1,False
+sweet,http://sweetontology.net/propQuantity/ThermodynamicQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermodynamic_quantity rdfs:subClassOf :quantitative_property,
+        :quantity,
+        :thermodynamic_property .
+
+","A thermodynamic quantity is a type of thermodynamic property, quantitative property, and quantity.",3,True
+sweet,http://sweetontology.net/propQuantity/VectorPotential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector_potential rdfs:subClassOf :potential,
+        :vector_quantity .
+
+",Vector potential is both a type of potential and a type of vector quantity.,2,True
+sweet,http://sweetontology.net/propQuantity/VectorQuantity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector_quantity rdfs:subClassOf :scientific_quantity .
+
+",vector quantity is a type of scientific quantity.,1,False
+sweet,http://sweetontology.net/propRotation/AbsoluteVorticity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:absolute_vorticity rdfs:subClassOf :vorticity .
+
+",absolute vorticity is a type of vorticity.,1,False
+sweet,http://sweetontology.net/propRotation/AngularAcceleration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angular_acceleration rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :radian_per_second_squared ;
+            owl:onProperty :has_default_unit ],
+        :angular_motion_property,
+        :vector_quantity .
+
+","Angular acceleration is a type of angular motion property and a vector quantity. Moreover, it is something that must have the default unit of radian per second squared.",3,True
+sweet,http://sweetontology.net/propRotation/AngularMomentum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angular_momentum rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilogram_radian_per_second ;
+            owl:onProperty :has_default_unit ],
+        :momentum .
+
+",Angular momentum is a type of momentum that is characterized as having a default unit of kilogram radian per second.,2,True
+sweet,http://sweetontology.net/propRotation/AngularVelocity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angular_velocity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :radian_per_second ;
+            owl:onProperty :has_default_unit ],
+        :angular_motion_property,
+        :vector_quantity .
+
+",Angular velocity is a type of angular motion property and is a vector quantity. It is something that must have the default unit of radian per second.,3,True
+sweet,http://sweetontology.net/propRotation/Circulation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:circulation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vector_field ;
+            owl:onProperty :has_input ],
+        :line_integral .
+
+",Circulation is a type of line integral that only has an input vector field.,2,True
+sweet,http://sweetontology.net/propRotation/CoriolisParameter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coriolis_parameter rdfs:subClassOf :frequency,
+        :physical_constant .
+
+",The Coriolis parameter is both a type of physical constant and a type of frequency.,2,True
+sweet,http://sweetontology.net/propRotation/Curl,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:curl rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vector_field ;
+            owl:onProperty :has_output ],
+        :vector_field_operation .
+
+",Curl is a type of vector field operation that only produces an output vector field.,2,True
+sweet,http://sweetontology.net/propRotation/CyclotronFrequency,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclotron_frequency rdfs:subClassOf :frequency ;
+    owl:equivalentClass :gyrofrequency .
+
+","Cyclotron frequency, which is a type of frequency, is the same as gyrofrequency.",2,True
+sweet,http://sweetontology.net/propRotation/Enstrophy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enstrophy rdfs:subClassOf :angular_motion_property,
+        :physical_quantity .
+
+",Enstrophy is a type of angular motion property and is also a type of physical quantity.,2,True
+sweet,http://sweetontology.net/propRotation/ErtelPotentialVorticity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ertel_potential_vorticity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :per_kilogram_meter_squared_per_second_kelvin ;
+            owl:onProperty :has_default_unit ],
+        :potential_vorticity .
+
+",Ertel potential vorticity is a type of potential vorticity and it must have a default unit of per kilogram meter squared per second Kelvin.,2,True
+sweet,http://sweetontology.net/propRotation/Gyrofrequency,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gyrofrequency rdfs:subClassOf :frequency .
+
+",gyrofrequency is a type of frequency.,1,False
+sweet,http://sweetontology.net/propRotation/Helicity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:helicity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_per_second_squared ;
+            owl:onProperty :has_default_unit ],
+        :vector_field_operation .
+
+",Helicity is a type of vector field operation and must have the default unit of meters per second squared.,2,True
+sweet,http://sweetontology.net/propRotation/MomentOfInertia,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moment_of_inertia rdfs:subClassOf :angular_motion_property,
+        :physical_quantity .
+
+",Moment of inertia is a type of physical quantity that represents a property of angular motion.,2,True
+sweet,http://sweetontology.net/propRotation/PotentialVorticity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potential_vorticity rdfs:subClassOf :angular_motion_property,
+        :physical_quantity .
+
+",Potential vorticity is a type of angular motion property and a physical quantity.,2,True
+sweet,http://sweetontology.net/propRotation/RelativeVorticity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:relative_vorticity rdfs:subClassOf :vorticity .
+
+",relative vorticity is a type of vorticity.,1,False
+sweet,http://sweetontology.net/propRotation/Spin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spin rdfs:subClassOf :angular_motion_property .
+
+",spin is a type of angular motion property.,1,False
+sweet,http://sweetontology.net/propRotation/Torque,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:torque rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :newton_meter ;
+            owl:onProperty :has_default_unit ],
+        :angular_motion_property,
+        :vector_quantity .
+
+","Torque is a type of angular motion property and a vector quantity, which must have the default unit of newton meter.",3,True
+sweet,http://sweetontology.net/propRotation/Vorticity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vorticity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :per_second ;
+            owl:onProperty :has_default_unit ],
+        :vector_field_operation .
+
+",Vorticity is a type of vector field operation that must have the default unit per second.,2,True
+sweet,http://sweetontology.net/propSpace/AngularDistribution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angular_distribution rdfs:subClassOf :spatial_distribution .
+
+",angular distribution is a type of spatial distribution.,1,False
+sweet,http://sweetontology.net/propSpace/Configuration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:configuration rdfs:subClassOf :spatial_property ;
+    owl:equivalentClass :spatial_configuration .
+
+",Configuration is the same as spatial configuration and is a type of spatial property.,2,True
+sweet,http://sweetontology.net/propSpace/Connectivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:connectivity rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+",Connectivity is a type of configuration as well as a type of spatial configuration.,2,True
+sweet,http://sweetontology.net/propSpace/Containment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:containment rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+",Containment is a type of configuration as well as a type of spatial configuration.,2,True
+sweet,http://sweetontology.net/propSpace/Curvature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:curvature rdfs:subClassOf :spatial_property .
+
+",curvature is a type of spatial property.,1,False
+sweet,http://sweetontology.net/propSpace/LinearExtent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:linear_extent rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilometer ;
+            owl:onProperty :has_default_unit ],
+        :spatial_measure .
+
+",Linear extent is a type of spatial measure that must have a default unit of kilometer.,2,True
+sweet,http://sweetontology.net/propSpace/Morphology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:morphology rdfs:subClassOf :spatial_property .
+
+",morphology is a type of spatial property.,1,False
+sweet,http://sweetontology.net/propSpace/OrbitalConfiguration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orbital_configuration rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :orbit ;
+            owl:onProperty :has_process ],
+        :configuration,
+        :spatial_configuration .
+
+","Orbital configuration is a type of configuration and also a type of spatial configuration. Additionally, it is a type of something that only has the process orbit.",3,True
+sweet,http://sweetontology.net/propSpace/Shape,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shape rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+",Shape is both a type of configuration and a type of spatial configuration.,2,True
+sweet,http://sweetontology.net/propSpace/SpatialConfiguration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_configuration rdfs:subClassOf :spatial_property .
+
+",spatial configuration is a type of spatial property.,1,False
+sweet,http://sweetontology.net/propSpace/SpatialDistribution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_distribution rdfs:subClassOf :configuration,
+        :distribution_function,
+        :spatial_configuration .
+
+","Spatial distribution is a type of configuration, spatial configuration, and distribution function.",3,True
+sweet,http://sweetontology.net/propSpace/SpatialExtent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_extent rdfs:subClassOf :linear_extent .
+
+",spatial extent is a type of linear extent.,1,False
+sweet,http://sweetontology.net/propSpace/SpatialMeasure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_measure rdfs:subClassOf :measure,
+        :spatial_property .
+
+",Spatial measure is both a type of measure and a type of spatial property.,2,True
+sweet,http://sweetontology.net/propSpace/SpatialProperty,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_property rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :space ;
+            owl:onProperty :measure_of ],
+        :property .
+
+",Spatial property is a type of property that is exclusively concerned with the measure of space.,2,True
+sweet,http://sweetontology.net/propSpace/SpatialSource,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_source rdfs:subClassOf :spatial_property .
+
+",spatial source is a type of spatial property.,1,False
+sweet,http://sweetontology.net/propSpaceDirection/Angle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:angle rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""2""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_direction ],
+        [ a owl:Restriction ;
+            owl:hasValue :radian ;
+            owl:onProperty :has_default_unit ],
+        :quantitative_property,
+        :quantity .
+
+","Angle is a type of quantitative property and a type of quantity. It is also a type of something that must have a default unit, which is radian, and it is characterized by having exactly 2 directions.",4,True
+sweet,http://sweetontology.net/propSpaceDirection/AngularDirection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angular_direction rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Angular direction is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Attitude,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:attitude rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Attitude is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Axis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:axis rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Axis is a type of bearing, a type of direction, and a type of inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Azimuth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:azimuth rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Azimuth is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/AzimuthalDirection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:azimuthal_direction rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Azimuthal direction is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Bearing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bearing rdfs:subClassOf :vector_3d ;
+    owl:equivalentClass :direction .
+
+",Bearing is the same as direction and is a type of 3D vector.,2,True
+sweet,http://sweetontology.net/propSpaceDirection/Direction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:direction rdfs:subClassOf :vector_3d ;
+    owl:equivalentClass :inclination .
+
+","Direction shares the same inclination, and it is also classified as a type of 3D vector.",2,True
+sweet,http://sweetontology.net/propSpaceDirection/HorizontalDirection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:horizontal_direction rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Horizontal direction is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Incidence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:incidence rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Incidence is a type of bearing, direction, and inclination.",3,True

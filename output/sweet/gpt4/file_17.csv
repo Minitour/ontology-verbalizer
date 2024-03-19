@@ -1,0 +1,3485 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/propSpaceDirection/Inclination,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inclination rdfs:subClassOf :vector_3d .
+
+",inclination is a type of vector 3d.,1,False
+sweet,http://sweetontology.net/propSpaceDirection/Incoming,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:incoming rdfs:subClassOf :bearing,
+        :direction,
+        :inclination ;
+    owl:equivalentClass :inward .
+
+","Incoming is synonymous with inward. Furthermore, it is classified as a type of bearing, direction, and inclination.",4,True
+sweet,http://sweetontology.net/propSpaceDirection/Inward,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inward rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Inward serves as a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Lateral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lateral rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Lateral serves multiple roles: it is a type of bearing, a type of direction, and a type of inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Orientation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orientation rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Orientation is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Outgoing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outgoing rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :incoming ;
+            owl:onProperty :opposite_to ],
+        :bearing,
+        :direction,
+        :inclination ;
+    owl:equivalentClass :outward .
+
+","Outgoing is synonymous with outward and is classified as a type of bearing, direction, inclination, and something that is exclusively opposite to incoming.",5,True
+sweet,http://sweetontology.net/propSpaceDirection/Outward,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outward rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Outward is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/PolarDirection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polar_direction rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Polar direction is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Radial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radial rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Radial serves as a type in three distinct contexts: it is a type of bearing, a type of direction, and a type of inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/SolidAngle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solid_angle rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cone ;
+            owl:onProperty :has_geometrical_object ],
+        [ a owl:Restriction ;
+            owl:hasValue :steradian ;
+            owl:onProperty :has_default_unit ],
+        :quantitative_property,
+        :quantity .
+
+","Solid angle is a type of quantitative property and a type of quantity that is exclusively associated with geometrical objects such as cones. Additionally, solid angle must have the default unit of steradian.",4,True
+sweet,http://sweetontology.net/propSpaceDirection/Tilt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tilt rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Tilt is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/VerticalDirection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertical_direction rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Vertical direction is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDirection/Zenith,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zenith rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Zenith is categorized as a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/propSpaceDistance/AttenuationCoefficient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:attenuation_coefficient rdfs:subClassOf :spatial_frequency ;
+    owl:equivalentClass :extinction_coefficient .
+
+","The attenuation coefficient, which is the same as the extinction coefficient, is a type of spatial frequency.",2,True
+sweet,http://sweetontology.net/propSpaceDistance/CompactionCoefficient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compaction_coefficient rdfs:subClassOf :per_meter_quantity .
+
+",compaction coefficient is a type of per meter quantity.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/CyclotronRadius,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclotron_radius rdfs:subClassOf :distance ;
+    owl:equivalentClass :gyroradius .
+
+","Cyclotron radius, which is the same as gyroradius, is a type of distance.",2,True
+sweet,http://sweetontology.net/propSpaceDistance/DebyeLength,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:debye_length rdfs:subClassOf :distance ;
+    owl:equivalentClass :debye_screening_length .
+
+","The Debye length is the same as the Debye screening length, and it represents a type of distance.",2,True
+sweet,http://sweetontology.net/propSpaceDistance/DebyeScreeningLength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:debye_screening_length rdfs:subClassOf :distance .
+
+",debye screening length is a type of distance.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/DispersionCoeffienct,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dispersion_coeffienct rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :measure_of ;
+            owl:someValuesFrom :dispersivity ],
+        :material_property .
+
+",The dispersion coefficient is a type of material property and is also a measure of dispersivity.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/Dispersivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dispersivity rdfs:subClassOf :material_property .
+
+",dispersivity is a type of material property.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/Distance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:distance rdfs:subClassOf :length .
+
+",distance is a type of length.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/DistanceRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:distance_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :range_of ;
+            owl:someValuesFrom :distance ],
+        :interval_quantity .
+
+","Distance range is both a type of interval quantity and something that, at the very least, ranges over some distance.",2,True
+sweet,http://sweetontology.net/propSpaceDistance/DistanceRange_km,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:distance_range_km rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilometer ;
+            owl:onProperty :has_default_unit ],
+        :distance_range .
+
+",Distance range km is a type of distance range and is something that must have the default unit kilometer.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/ExtinctionCoefficient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extinction_coefficient rdfs:subClassOf :spatial_frequency .
+
+",extinction coefficient is a type of spatial frequency.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/Fetch,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fetch rdfs:subClassOf :distance .
+
+",fetch is a type of distance.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/GrainSize,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:grain_size rdfs:subClassOf :consistence_property .
+
+",grain size is a type of consistence property.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/Gyroradius,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gyroradius rdfs:subClassOf :distance ;
+    owl:equivalentClass :larmor_radius .
+
+","Gyroradius, which is the same as Larmor radius, represents a type of distance.",2,True
+sweet,http://sweetontology.net/propSpaceDistance/LarmorRadius,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:larmor_radius rdfs:subClassOf :distance .
+
+",larmor radius is a type of distance.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/Length,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:length rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1 ;
+            owl:onProperty :has_dimension ],
+        :physical_quantity,
+        :spatial_extent .
+
+",Length is a type of physical quantity that also serves as a spatial extent and must have dimension 1.,3,True
+sweet,http://sweetontology.net/propSpaceDistance/MeanFreePath,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mean_free_path rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_process ;
+            owl:someValuesFrom :collision ],
+        :distance,
+        :motion_property .
+
+",Mean free path is a type of motion property and a type of distance that is characterized by undergoing some form of collision process.,3,True
+sweet,http://sweetontology.net/propSpaceDistance/MixingLength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixing_length rdfs:subClassOf :distance .
+
+",mixing length is a type of distance.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/ObukhovLength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:obukhov_length rdfs:subClassOf :distance .
+
+",obukhov length is a type of distance.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/PerMeterQuantity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:per_meter_quantity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :per_meter ;
+            owl:onProperty :has_default_unit ],
+        :quantitative_property,
+        :quantity .
+
+",Per meter quantity is a type of quantitative property and a type of quantity that must have the default unit per meter.,3,True
+sweet,http://sweetontology.net/propSpaceDistance/PulseLength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pulse_length rdfs:subClassOf :length .
+
+",pulse length is a type of length.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/Range,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:range rdfs:subClassOf :distance .
+
+",range is a type of distance.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/RossbyRadiusOfDeformation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rossby_radius_of_deformation rdfs:subClassOf :distance .
+
+",rossby radius of deformation is a type of distance.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/ScatteringCoefficient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scattering_coefficient rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :scattering ;
+            owl:onProperty :has_process ],
+        :spatial_frequency .
+
+",The scattering coefficient is a type of spatial frequency and is also a type of something that only has process scattering.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/Size,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:size rdfs:subClassOf :spatial_extent .
+
+",size is a type of spatial extent.,1,False
+sweet,http://sweetontology.net/propSpaceDistance/SizeRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:size_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :range_of ;
+            owl:someValuesFrom :size ],
+        :spatial_extent .
+
+",Size range is a type of spatial extent and also a type of something that encompasses at least a range of some size.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/SizeRange_micron,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:size_range_micron rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :micron ;
+            owl:onProperty :has_default_unit ],
+        :size_range .
+
+",The size range micron is a type of size range and is characterized by having a default unit of micron.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/SpatialFrequency,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_frequency rdfs:subClassOf :per_meter_quantity,
+        :radiation_medium_interaction_quantity .
+
+",Spatial frequency is a type of radiation-medium interaction quantity and is also a type of per meter quantity.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/Visibility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:visibility rdfs:subClassOf :distance,
+        :radiation_medium_interaction_property .
+
+",Visibility is characterized both as a type of radiation-medium interaction property and as a type of distance.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/WaveNumber,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wave_number rdfs:subClassOf :per_meter_quantity,
+        :wave_property .
+
+",Wave number is a type of wave property and is also a type of per meter quantity.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/Wavelength,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wavelength rdfs:subClassOf :distance,
+        :wave_property .
+
+",Wavelength is a type of wave property as well as a type of distance.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/WavelengthBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wavelength_band rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :wavelength ;
+            owl:onProperty :range_of ],
+        :interval_quantity .
+
+",A wavelength band is a type of interval quantity and is a type of something that only encompasses a range of wavelengths.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/WavelengthBand_nm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wavelength_band_nm rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :nanometer ;
+            owl:onProperty :has_unit ],
+        :wavelength_band .
+
+",Wavelength band nm is a type of wavelength band and is a type of something that must have the unit nanometer.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/Wavelength_cm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wavelength_cm rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :centimeter ;
+            owl:onProperty :has_unit ],
+        :wavelength .
+
+",Wavelength cm is a type of wavelength and is something that must have a unit of centimeter.,2,True
+sweet,http://sweetontology.net/propSpaceDistance/Wavelength_nm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wavelength_nm rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :nanometer ;
+            owl:onProperty :has_unit ],
+        :wavelength .
+
+",Wavelength nm is a type of wavelength and specifically refers to something that must have the unit nanometer.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/Altitude,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:altitude rdfs:subClassOf :height ;
+    owl:equivalentClass :elevation .
+
+","Altitude, which is the same as elevation, is a type of height.",2,True
+sweet,http://sweetontology.net/propSpaceHeight/BarometricAltitude,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barometric_altitude rdfs:subClassOf :altitude,
+        :elevation .
+
+",Barometric altitude is a type of altitude and elevation.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/Bathymetry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bathymetry rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",Bathymetry is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/Ceiling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ceiling rdfs:subClassOf :vertical_extent .
+
+",ceiling is a type of vertical extent.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/Crest,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crest rdfs:subClassOf :height .
+
+",crest is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/DampingDepth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:damping_depth rdfs:subClassOf :depth .
+
+",damping depth is a type of depth.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/Depth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:depth rdfs:subClassOf :distance,
+        :vertical_extent .
+
+",Depth is both a type of distance and a type of vertical extent.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/DepthRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:depth_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :range_of ;
+            owl:someValuesFrom :depth ],
+        :interval_quantity .
+
+",Depth range is a type of interval quantity and is something that at least encompasses a range of some depth.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/DepthRange_km,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:depth_range_km rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilometer ;
+            owl:onProperty :has_unit ],
+        :depth_range .
+
+",Depth range km is a type of depth range and is something that must have a unit in kilometers.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/Drawdown,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drawdown rdfs:subClassOf :depth .
+
+",drawdown is a type of depth.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/DynamicTopography,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dynamic_topography rdfs:subClassOf :topography .
+
+",dynamic topography is a type of topography.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/Elevation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:elevation rdfs:subClassOf :height .
+
+",elevation is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/EstimatedCeiling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:estimated_ceiling rdfs:subClassOf :ceiling .
+
+",estimated ceiling is a type of ceiling.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/FlightLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flight_level rdfs:subClassOf :altitude,
+        :elevation .
+
+",Flight level is a type of altitude and elevation.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/Freeboard,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:freeboard rdfs:subClassOf :height .
+
+",freeboard is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/Geoid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geoid rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",Geoid is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/GeopotentialHeight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geopotential_height rdfs:subClassOf :height .
+
+",geopotential height is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/Height,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:height rdfs:subClassOf :distance,
+        :vertical_extent .
+
+",Height is both a type of distance and a type of vertical extent.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/HeightRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:height_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :range_of ;
+            owl:someValuesFrom :height ],
+        :interval_quantity .
+
+","Height range is a type of interval quantity, which is something that at least encompasses a range of some height.",2,True
+sweet,http://sweetontology.net/propSpaceHeight/HeightRange_km,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:height_range_km rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilometer ;
+            owl:onProperty :has_unit ],
+        :height_range .
+
+",A height range in kilometers is a type of height range that must have its unit in kilometers.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/Level,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level rdfs:subClassOf :vertical_extent .
+
+",level is a type of vertical extent.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/MixingHeight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixing_height rdfs:subClassOf :height .
+
+",mixing height is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/ScaleHeight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scale_height rdfs:subClassOf :height .
+
+",scale height is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/SeaLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_level rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",Sea level is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/SeaState,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_state rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :has_realm ],
+        :height .
+
+",Sea state is a type of height and is exclusively associated with the realm of the ocean.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/SecchiDepth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:secchi_depth rdfs:subClassOf :depth,
+        :radiation_medium_interaction_quantity .
+
+",Secchi depth is a type of depth that represents a radiation medium interaction quantity.,2,True
+sweet,http://sweetontology.net/propSpaceHeight/SignificantHeight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:significant_height rdfs:subClassOf :height .
+
+",significant height is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/SkinDepth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_depth rdfs:subClassOf :depth .
+
+",skin depth is a type of depth.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/TopographicProminence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:topographic_prominence rdfs:subClassOf :height .
+
+",topographic prominence is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/Topography,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:topography rdfs:subClassOf :height .
+
+",topography is a type of height.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/UpperLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upper_level rdfs:subClassOf :level .
+
+",upper level is a type of level.,1,False
+sweet,http://sweetontology.net/propSpaceHeight/VerticalExtent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertical_extent rdfs:subClassOf :spatial_extent .
+
+",vertical extent is a type of spatial extent.,1,False
+sweet,http://sweetontology.net/propSpaceLocation/Center,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:center rdfs:subClassOf :location,
+        :position .
+
+",Center is both a type of location and a type of position.,2,True
+sweet,http://sweetontology.net/propSpaceLocation/CenterOfMass,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:center_of_mass rdfs:subClassOf :center .
+
+",center of mass is a type of center.,1,False
+sweet,http://sweetontology.net/propSpaceLocation/ControlPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:control_point rdfs:subClassOf :location,
+        :position .
+
+",A control point is both a type of location and a type of position.,2,True
+sweet,http://sweetontology.net/propSpaceLocation/Epicenter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epicenter rdfs:subClassOf :center .
+
+",epicenter is a type of center.,1,False
+sweet,http://sweetontology.net/propSpaceLocation/Focii,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:focii rdfs:subClassOf :location,
+        :position ;
+    owl:equivalentClass :focus .
+
+","Focii, which is the same as focus, is a type of location as well as a type of position.",3,True
+sweet,http://sweetontology.net/propSpaceLocation/Focus,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:focus rdfs:subClassOf :location,
+        :position .
+
+",Focus is both a type of location and a type of position.,2,True
+sweet,http://sweetontology.net/propSpaceLocation/LagrangianPoint,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lagrangian_point rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :equilibrium ;
+            owl:onProperty :has_state ],
+        :location,
+        :position .
+
+",A Lagrangian point is a type of location and position that must have a state of equilibrium.,3,True
+sweet,http://sweetontology.net/propSpaceLocation/Location,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:location rdfs:subClassOf :geometrical_object_0d,
+        :point,
+        :spatial_property ;
+    owl:equivalentClass :position .
+
+","Location is the same as position and is a type of spatial property, geometrical object 0d, and point.",4,True
+sweet,http://sweetontology.net/propSpaceLocation/MirrorPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mirror_point rdfs:subClassOf :location,
+        :position .
+
+",Mirror point is a type of location and also a type of position.,2,True
+sweet,http://sweetontology.net/propSpaceLocation/Nadir,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nadir rdfs:subClassOf :location,
+        :position .
+
+",Nadir is a type of location and a type of position.,2,True
+sweet,http://sweetontology.net/propSpaceLocation/Position,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:position rdfs:subClassOf :geometrical_object_0d,
+        :point,
+        :spatial_property .
+
+","Position is a type of spatial property, a type of 0D geometrical object, and also a type of point.",3,True
+sweet,http://sweetontology.net/propSpaceLocation/SubsolarPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subsolar_point rdfs:subClassOf :location,
+        :position .
+
+",The subsolar point is a type of location and position.,2,True
+sweet,http://sweetontology.net/propSpaceMultidimensional/AngularExtent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angular_extent rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :radian ;
+            owl:onProperty :has_default_unit ],
+        :spatial_measure .
+
+",Angular extent is a type of spatial measure and is something that must have the default unit radian.,2,True
+sweet,http://sweetontology.net/propSpaceMultidimensional/Area,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:area rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_squared ;
+            owl:onProperty :has_default_unit ],
+        [ a owl:Restriction ;
+            owl:hasValue 2 ;
+            owl:onProperty :has_dimension ],
+        :spatial_measure .
+
+",Area is a type of spatial measure that must have the default unit of meter squared and also must have a dimension of 2.,3,True
+sweet,http://sweetontology.net/propSpaceMultidimensional/Capacity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:capacity rdfs:subClassOf :volume .
+
+",capacity is a type of volume.,1,False
+sweet,http://sweetontology.net/propSpaceMultidimensional/CarbonFootprint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_footprint rdfs:subClassOf :footprint .
+
+",carbon footprint is a type of footprint.,1,False
+sweet,http://sweetontology.net/propSpaceMultidimensional/CrossSection,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cross_section rdfs:subClassOf :area ;
+    owl:equivalentClass :cross_sectional_area .
+
+",Cross section has the same meaning as cross-sectional area and is a type of area.,2,True
+sweet,http://sweetontology.net/propSpaceMultidimensional/CrossSectionalArea,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cross_sectional_area rdfs:subClassOf :area .
+
+",cross sectional area is a type of area.,1,False
+sweet,http://sweetontology.net/propSpaceMultidimensional/FieldOfView,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:field_of_view rdfs:subClassOf :angular_extent .
+
+",field of view is a type of angular extent.,1,False
+sweet,http://sweetontology.net/propSpaceMultidimensional/Footprint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:footprint rdfs:subClassOf :area .
+
+",footprint is a type of area.,1,False
+sweet,http://sweetontology.net/propSpaceMultidimensional/RadarCrossSection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radar_cross_section rdfs:subClassOf :cross_section,
+        :cross_sectional_area,
+        :radiation_medium_interaction_quantity .
+
+","Radar cross section is a type of radiation medium interaction quantity, cross section, and cross sectional area.",3,True
+sweet,http://sweetontology.net/propSpaceMultidimensional/Resolution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resolution rdfs:subClassOf :angular_extent .
+
+",resolution is a type of angular extent.,1,False
+sweet,http://sweetontology.net/propSpaceMultidimensional/Volume,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volume rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 3 ;
+            owl:onProperty :has_dimension ],
+        [ a owl:Restriction ;
+            owl:hasValue :meter_cubed ;
+            owl:onProperty :has_default_unit ],
+        :spatial_measure .
+
+",Volume is a type of spatial measure that must have a default unit of meter cubed and a dimension of 3.,3,True
+sweet,http://sweetontology.net/propSpaceThickness/AverageAnnualPrecipitation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:average_annual_precipitation rdfs:subClassOf :annual_average,
+        :precipitation .
+
+",Average annual precipitation is both a type of annual average and a type of precipitation.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/AverageDrySeasonPrecipitation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:average_dry_season_precipitation rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_time ;
+            owl:someValuesFrom :dry_season ],
+        :annual_average,
+        :precipitation .
+
+",Average dry season precipitation is a type of annual average and a type of precipitation that occurs specifically during the time of the dry season.,3,True
+sweet,http://sweetontology.net/propSpaceThickness/AverageMonthlyPrecipitation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:average_monthly_precipitation rdfs:subClassOf :monthly_average,
+        :precipitation .
+
+",Average monthly precipitation is both a type of monthly average and a type of precipitation.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/EquivalentThickness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equivalent_thickness rdfs:subClassOf :thickness .
+
+",equivalent thickness is a type of thickness.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/Evapotranspiration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evapotranspiration rdfs:subClassOf :thickness .
+
+",evapotranspiration is a type of thickness.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/FluidHead,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluid_head rdfs:subClassOf :fluid_property,
+        :thickness .
+
+",Fluid head is both a type of fluid property and a type of thickness.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/GaugeHeight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gauge_height rdfs:subClassOf :water_height .
+
+",gauge height is a type of water height.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/HalfPotentialEvapotranspiration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:half_potential_evapotranspiration rdfs:subClassOf :evapotranspiration .
+
+",half potential evapotranspiration is a type of evapotranspiration.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/HydraulicHead,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydraulic_head rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :liquid ;
+            owl:onProperty :has_state ],
+        :fluid_head .
+
+",Hydraulic head is a type of fluid head and is a type of something that must have a liquid state.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/LWE,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lwe rdfs:subClassOf :water_content ;
+    owl:equivalentClass :liquid_water_equivalent .
+
+",Liquid water equivalent (LWE) is a type of water content.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/LakeStage,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lake_stage rdfs:subClassOf :stage_height .
+
+",lake stage is a type of stage height.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/LiquidWaterEquivalent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:liquid_water_equivalent rdfs:subClassOf :water_content .
+
+",liquid water equivalent is a type of water content.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/OpticalDepth,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:optical_depth rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dimensionless_unit ;
+            owl:onProperty :has_default_unit ],
+        :radiation_medium_interaction_quantity ;
+    owl:equivalentClass :optical_thickness .
+
+","Optical depth, which is the same as optical thickness, represents a type of radiation medium interaction quantity. Furthermore, it is characterized as a type of entity that must have the default unit of dimensionless unit.",3,True
+sweet,http://sweetontology.net/propSpaceThickness/OpticalThickness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:optical_thickness rdfs:subClassOf :radiation_medium_interaction_quantity .
+
+",optical thickness is a type of radiation medium interaction quantity.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/PotentialEvapotranspiration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potential_evapotranspiration rdfs:subClassOf :evapotranspiration .
+
+",potential evapotranspiration is a type of evapotranspiration.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/PrecipitableWater,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:precipitable_water rdfs:subClassOf :water_content .
+
+",precipitable water is a type of water content.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/Precipitation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:precipitation rdfs:subClassOf :water_content .
+
+",precipitation is a type of water content.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/PrecipitationRange,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:precipitation_range rdfs:subClassOf :height_range,
+        :precipitation .
+
+",Precipitation range is both a type of height range and a type of precipitation.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/PrecipitationRange_cm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:precipitation_range_cm rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :centimeter ;
+            owl:onProperty :has_unit ],
+        :precipitation_range .
+
+","Precipitation range measured in centimeters is a type of precipitation range, which is characterized by having a unit in centimeters.",2,True
+sweet,http://sweetontology.net/propSpaceThickness/PressureThickness,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pressure_thickness rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pressure ;
+            owl:onProperty :has_process ],
+        :thickness .
+
+",Pressure thickness is a type of thickness and is exclusively associated with process pressure.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/SWE,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:swe rdfs:subClassOf :liquid_water_equivalent,
+        :lwe ;
+    owl:equivalentClass :snow_water_equivalent .
+
+",SWE is the same as snow water equivalent and is a type of both LWE and liquid water equivalent.,3,True
+sweet,http://sweetontology.net/propSpaceThickness/SnowCover,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snow_cover rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :snow ;
+            owl:onProperty :has_substance ],
+        :thickness .
+
+",Snow cover is a type of thickness and is a type of something that only has the substance snow.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/SnowWaterEquivalent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snow_water_equivalent rdfs:subClassOf :liquid_water_equivalent,
+        :lwe .
+
+",Snow water equivalent is a type of liquid water equivalent (LWE).,2,True
+sweet,http://sweetontology.net/propSpaceThickness/Snowpack,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snowpack rdfs:subClassOf :snow_cover .
+
+",snowpack is a type of snow cover.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/StageHeight,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stage_height rdfs:subClassOf :water_height .
+
+",stage height is a type of water height.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/StaticHead,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:static_head rdfs:subClassOf :fluid_head .
+
+",static head is a type of fluid head.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/StreamStage,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stream_stage rdfs:subClassOf :stage_height .
+
+",stream stage is a type of stage height.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/Thickness,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thickness rdfs:subClassOf :physical_quantity,
+        :vertical_extent .
+
+",Thickness is a type of physical quantity and also considered a type of vertical extent.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/TotalHead,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:total_head rdfs:subClassOf :fluid_head .
+
+",total head is a type of fluid head.,1,False
+sweet,http://sweetontology.net/propSpaceThickness/WaterContent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_content rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :liquid_water ;
+            owl:onProperty :has_chemical ],
+        :thickness .
+
+",Water content is a type of thickness and is a characteristic of something that only contains the chemical liquid water.,2,True
+sweet,http://sweetontology.net/propSpaceThickness/WaterHeight,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_height rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :liquid_water ;
+            owl:onProperty :has_substance ],
+        :thickness .
+
+",Water height is a type of thickness and is also a type of something that pertains exclusively to the substance liquid water.,2,True
+sweet,http://sweetontology.net/propSpeed/Acceleration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acceleration rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_per_second_squared ;
+            owl:onProperty :has_default_unit ],
+        :motion_property,
+        :physical_quantity .
+
+","Acceleration is a type of motion property and a physical quantity, characterized by having a default unit of meter per second squared.",3,True
+sweet,http://sweetontology.net/propSpeed/Airspeed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:airspeed rdfs:subClassOf :speed .
+
+",airspeed is a type of speed.,1,False
+sweet,http://sweetontology.net/propSpeed/AlfvenVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alfven_velocity rdfs:subClassOf :velocity .
+
+",alfven velocity is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/DopplerVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:doppler_velocity rdfs:subClassOf :velocity .
+
+",doppler velocity is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/Drift,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drift rdfs:subClassOf :velocity .
+
+",drift is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/EscapeVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:escape_velocity rdfs:subClassOf :velocity .
+
+",escape velocity is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/GroundSpeed,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ground_speed rdfs:subClassOf :speed .
+
+",ground speed is a type of speed.,1,False
+sweet,http://sweetontology.net/propSpeed/GroupVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:group_velocity rdfs:subClassOf :velocity,
+        :wave_property .
+
+",Group velocity is a type of wave property and a type of velocity.,2,True
+sweet,http://sweetontology.net/propSpeed/Inertia,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inertia rdfs:subClassOf :momentum .
+
+",inertia is a type of momentum.,1,False
+sweet,http://sweetontology.net/propSpeed/IonVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ion_velocity rdfs:subClassOf :velocity .
+
+",ion velocity is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/MagnetiCurvatureDrift,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magneti_curvature_drift rdfs:subClassOf :drift,
+        :electromagnetic_quantity .
+
+",Magneti curvature drift is a type of electromagnetic quantity and a type of drift.,2,True
+sweet,http://sweetontology.net/propSpeed/Momentum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:momentum rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kilogram_meter_per_second ;
+            owl:onProperty :has_default_unit ],
+        :motion_property,
+        :physical_quantity .
+
+",Momentum is a type of motion property and a physical quantity that must have the default unit of kilogram meter per second.,3,True
+sweet,http://sweetontology.net/propSpeed/NeutralVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neutral_velocity rdfs:subClassOf :velocity .
+
+",neutral velocity is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/Omega,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:omega rdfs:subClassOf :vertical_velocity .
+
+",omega is a type of vertical velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/PhaseVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phase_velocity rdfs:subClassOf :velocity,
+        :wave_property .
+
+",Phase velocity is a type of wave property and a type of velocity.,2,True
+sweet,http://sweetontology.net/propSpeed/ProperMotion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proper_motion rdfs:subClassOf :speed .
+
+",proper motion is a type of speed.,1,False
+sweet,http://sweetontology.net/propSpeed/RadialVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radial_velocity rdfs:subClassOf :velocity .
+
+",radial velocity is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/SeepageVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seepage_velocity rdfs:subClassOf :hydrogeological_property,
+        :velocity .
+
+",Seepage velocity is a type of velocity that is also recognized as a hydrogeological property.,2,True
+sweet,http://sweetontology.net/propSpeed/Speed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:speed rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_per_second ;
+            owl:onProperty :has_default_unit ],
+        :motion_property,
+        :physical_quantity .
+
+","Speed is a type of motion property and a type of physical quantity. Additionally, speed is a type of something that must have the default unit meter per second.",3,True
+sweet,http://sweetontology.net/propSpeed/TangentialAcceleration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tangential_acceleration rdfs:subClassOf :acceleration .
+
+",tangential acceleration is a type of acceleration.,1,False
+sweet,http://sweetontology.net/propSpeed/TerminalVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terminal_velocity rdfs:subClassOf :velocity .
+
+",terminal velocity is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/ThermalVelocity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_velocity rdfs:subClassOf :velocity .
+
+",thermal velocity is a type of velocity.,1,False
+sweet,http://sweetontology.net/propSpeed/Velocity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:velocity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter_per_second ;
+            owl:onProperty :has_default_unit ],
+        :motion_property,
+        :physical_quantity,
+        :vector .
+
+","Velocity is a type of motion property, physical quantity, and vector. Additionally, it is a type of something that must have the default unit meter per second.",4,True
+sweet,http://sweetontology.net/propSpeed/VerticalVelocity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertical_velocity rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :vertical ;
+            owl:onProperty :has_direction ],
+        :velocity .
+
+",Vertical velocity is a type of velocity that must have a vertical direction.,2,True
+sweet,http://sweetontology.net/propSpeed/WindShear,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_shear rdfs:subClassOf :fluid_property .
+
+",wind shear is a type of fluid property.,1,False
+sweet,http://sweetontology.net/propSpeed/WindSpeed,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_speed rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :wind ;
+            owl:onProperty :has_phenomena ],
+        :speed .
+
+",Wind speed is a type of speed that is a type of something that only has the phenomenon wind.,2,True
+sweet,http://sweetontology.net/propTemperature/AntennaTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antenna_temperature rdfs:subClassOf :temperature .
+
+",antenna temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/BoilingPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boiling_point rdfs:subClassOf :temperature .
+
+",boiling point is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/BrightnessTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brightness_temperature rdfs:subClassOf :temperature .
+
+",brightness temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/ColdestMonthTemperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coldest_month_temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :coldest_month ],
+        :temperature .
+
+",The coldest month temperature is a type of temperature which is a type of something that at least has phenomena associated with the coldest month.,2,True
+sweet,http://sweetontology.net/propTemperature/DewPoint,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dew_point rdfs:subClassOf :temperature ;
+    owl:equivalentClass :dew_point_temperature .
+
+",Dew point is the same as dew point temperature and is a type of temperature.,2,True
+sweet,http://sweetontology.net/propTemperature/DewPointDepression,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dew_point_depression rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :dry_bulb_temperature ;
+            owl:onProperty :has_first_operand ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :dew_point_temperature ;
+            owl:onProperty :has_second_operand ],
+        :difference,
+        :subtraction,
+        :temperature .
+
+","Dew point depression is a type of temperature, difference, and subtraction. It is a concept that involves only two specific operands: the first operand being the dry bulb temperature, and the second operand being the dew point temperature.",5,True
+sweet,http://sweetontology.net/propTemperature/DewPointTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dew_point_temperature rdfs:subClassOf :temperature .
+
+",dew point temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/DryBulbTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_bulb_temperature rdfs:subClassOf :temperature .
+
+",dry bulb temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/EffectiveTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:effective_temperature rdfs:subClassOf :temperature .
+
+",effective temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/ElectronTemperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electron_temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :electron ;
+            owl:onProperty :has_substance ],
+        :temperature .
+
+",Electron temperature is a type of temperature that is specific to the substance electron.,2,True
+sweet,http://sweetontology.net/propTemperature/EquivalentPotentialTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equivalent_potential_temperature rdfs:subClassOf :potential_temperature .
+
+",equivalent potential temperature is a type of potential temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/EquivalentTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equivalent_temperature rdfs:subClassOf :temperature .
+
+",equivalent temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/GlobalWarmingPotential,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:global_warming_potential rdfs:subClassOf :temperature .
+
+",global warming potential is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/IonTemperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ion_temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ionized_state ;
+            owl:onProperty :has_state ],
+        :temperature .
+
+",Ion temperature is a type of temperature and is a characteristic of something that must have an ionized state.,2,True
+sweet,http://sweetontology.net/propTemperature/KineticTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kinetic_temperature rdfs:subClassOf :temperature .
+
+",kinetic temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/MeanAnnualTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mean_annual_temperature rdfs:subClassOf :annual_average,
+        :temperature .
+
+",Mean annual temperature is a type of annual average and a type of temperature.,2,True
+sweet,http://sweetontology.net/propTemperature/MeanMonthlyTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mean_monthly_temperature rdfs:subClassOf :monthly_average,
+        :temperature .
+
+",Mean monthly temperature is a type of monthly average and also a type of temperature.,2,True
+sweet,http://sweetontology.net/propTemperature/MeltingPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:melting_point rdfs:subClassOf :temperature .
+
+",melting point is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/NeutralTemperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neutral_temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :neutral_state ;
+            owl:onProperty :has_state ],
+        :temperature .
+
+","Neutral temperature is a type of temperature that must have a neutral state, indicating it as a specific category of temperature.",2,True
+sweet,http://sweetontology.net/propTemperature/PotentialTemperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:potential_temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :adiabatic ;
+            owl:onProperty :has_state ],
+        :temperature .
+
+",Potential temperature is a type of temperature that must have an adiabatic state.,2,True
+sweet,http://sweetontology.net/propTemperature/PseudoEquivalentPotentialTemperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudo_equivalent_potential_temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :equivalent_potential_temperature ;
+            owl:onProperty :approximates ],
+        :temperature .
+
+",Pseudo equivalent potential temperature is a type of temperature that approximates equivalent potential temperature.,2,True
+sweet,http://sweetontology.net/propTemperature/PseudoEquivalentTemperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pseudo_equivalent_temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :equivalent_temperature ;
+            owl:onProperty :approximates ],
+        :temperature .
+
+",Pseudo equivalent temperature is a type of temperature that only approximates equivalent temperature.,2,True
+sweet,http://sweetontology.net/propTemperature/StaticTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:static_temperature rdfs:subClassOf :temperature .
+
+",static temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/Temperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heat ;
+            owl:onProperty :measure_of ],
+        [ a owl:Restriction ;
+            owl:hasValue :kelvin ;
+            owl:onProperty :has_default_unit ],
+        :thermodynamic_quantity .
+
+","Temperature is a type of thermodynamic quantity, which is something that measures heat and must have kelvin as its default unit.",3,True
+sweet,http://sweetontology.net/propTemperature/TemperatureRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperature_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :temperature ;
+            owl:onProperty :range_of ],
+        :interval_quantity .
+
+","Temperature range is a type of interval quantity, specifically something that only pertains to the range of temperature.",2,True
+sweet,http://sweetontology.net/propTemperature/TotalTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:total_temperature rdfs:subClassOf :temperature .
+
+",total temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/TriplePoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:triple_point rdfs:subClassOf :temperature .
+
+",triple point is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/VirtualPotentialTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:virtual_potential_temperature rdfs:subClassOf :potential_temperature .
+
+",virtual potential temperature is a type of potential temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/VirtualTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:virtual_temperature rdfs:subClassOf :temperature .
+
+",virtual temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/WarmestMonthTemperature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:warmest_month_temperature rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :warmest_month ],
+        :temperature .
+
+","Warmest month temperature is a type of temperature, specifically related to phenomena that at least include some warmest month.",2,True
+sweet,http://sweetontology.net/propTemperature/WetBulbPotentialTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wet_bulb_potential_temperature rdfs:subClassOf :potential_temperature .
+
+",wet bulb potential temperature is a type of potential temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/WetBulbTemperature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wet_bulb_temperature rdfs:subClassOf :temperature .
+
+",wet bulb temperature is a type of temperature.,1,False
+sweet,http://sweetontology.net/propTemperature/WindChill,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_chill rdfs:subClassOf :temperature ;
+    owl:equivalentClass :wind_chill_index .
+
+","Wind chill, which is the same as the wind chill index, is a type of temperature.",2,True
+sweet,http://sweetontology.net/propTemperature/WindChillIndex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_chill_index rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :wind ;
+            owl:onProperty :measure_of ],
+        :temperature .
+
+",The wind chill index is a type of temperature that is specifically a measure of wind.,2,True
+sweet,http://sweetontology.net/propTemperatureGradient/AutoConvectiveLapseRate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:auto_convective_lapse_rate rdfs:subClassOf :environmental_lapse_rate .
+
+",auto convective lapse rate is a type of environmental lapse rate.,1,False
+sweet,http://sweetontology.net/propTemperatureGradient/DryAdiabaticLapseRate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_adiabatic_lapse_rate rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dry_adiabatic ;
+            owl:onProperty :has_state ],
+        :lapse_rate .
+
+",The dry adiabatic lapse rate is a type of lapse rate and is characterized by the state of being dry adiabatic.,2,True
+sweet,http://sweetontology.net/propTemperatureGradient/EnvironmentalLapseRate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_lapse_rate rdfs:subClassOf :lapse_rate .
+
+",environmental lapse rate is a type of lapse rate.,1,False
+sweet,http://sweetontology.net/propTemperatureGradient/LapseRate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lapse_rate rdfs:subClassOf :temperature_height_derivative .
+
+",lapse rate is a type of temperature height derivative.,1,False
+sweet,http://sweetontology.net/propTemperatureGradient/TemperatureDepthDerivative,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperature_depth_derivative rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :depth ;
+            owl:onProperty :derivative_with_respect_to ],
+        :temperature_gradient,
+        :thermal_gradient .
+
+","The temperature depth derivative is a type of temperature gradient, thermal gradient, and something that only derivatives with respect to depth.",3,True
+sweet,http://sweetontology.net/propTemperatureGradient/TemperatureGradient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperature_gradient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :kelvin_per_meter ;
+            owl:onProperty :has_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :temperature ;
+            owl:onProperty :has_gradient ],
+        :thermodynamic_quantity ;
+    owl:equivalentClass :thermal_gradient .
+
+","The temperature gradient, also known as the thermal gradient, is a type of thermodynamic quantity. It is characterized by having a gradient temperature and is specifically defined as something that must have the unit kelvin per meter.",4,True
+sweet,http://sweetontology.net/propTemperatureGradient/TemperatureGradientRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperature_gradient_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :range_of ;
+            owl:someValuesFrom :temperature_gradient ],
+        :interval_quantity .
+
+",A temperature gradient range is classified as an interval quantity and is also recognized as something that encompasses at least a range of some temperature gradient.,2,True
+sweet,http://sweetontology.net/propTemperatureGradient/TemperatureHeightDerivative,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperature_height_derivative rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :height ;
+            owl:onProperty :derivative_with_respect_to ],
+        :temperature_gradient,
+        :thermal_gradient .
+
+","The temperature height derivative is classified as a type of temperature gradient, thermal gradient, and something that specifically pertains to a derivative with respect to height.",3,True
+sweet,http://sweetontology.net/propTemperatureGradient/ThermalGradient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_gradient rdfs:subClassOf :thermodynamic_quantity .
+
+",thermal gradient is a type of thermodynamic quantity.,1,False
+sweet,http://sweetontology.net/propTemperatureGradient/ThermalProfile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_profile rdfs:subClassOf :horizon,
+        :profile,
+        :thermodynamic_quantity,
+        :vertical_profile .
+
+","Thermal profile is a type of thermodynamic quantity, horizon, profile, and vertical profile.",4,True
+sweet,http://sweetontology.net/propTime/Age,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:age rdfs:subClassOf :proper_interval .
+
+",age is a type of proper interval.,1,False
+sweet,http://sweetontology.net/propTime/AverageITCZDominanceDuration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:average_itcz_dominance_duration rdfs:subClassOf :annual_average,
+        :itcz_dominance_duration .
+
+",The average ITCZ dominance duration is a type of annual average and also a type of ITCZ dominance duration.,2,True
+sweet,http://sweetontology.net/propTime/AverageSnowCoverDuration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:average_snow_cover_duration rdfs:subClassOf :annual_average,
+        :snow_cover_duration .
+
+",Average snow cover duration is both a type of annual average and a type of snow cover duration.,2,True
+sweet,http://sweetontology.net/propTime/AverageWinterDuration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:average_winter_duration rdfs:subClassOf :annual_average,
+        :winter_duration .
+
+",The average winter duration is both a type of annual average and a type of winter duration.,2,True
+sweet,http://sweetontology.net/propTime/CurrentTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:current_time rdfs:subClassOf :instant .
+
+",current time is a type of instant.,1,False
+sweet,http://sweetontology.net/propTime/Cycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :period ;
+            owl:onProperty :has_time ],
+        :proper_interval .
+
+",A cycle is a type of proper interval and is also a type of something that only has a time period.,2,True
+sweet,http://sweetontology.net/propTime/Delay,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:delay rdfs:subClassOf :interval .
+
+",delay is a type of interval.,1,False
+sweet,http://sweetontology.net/propTime/DoublingTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:doubling_time rdfs:subClassOf :duration,
+        :duration_description,
+        :time_interval .
+
+","Doubling time is a type of duration, duration description, and time interval.",3,True
+sweet,http://sweetontology.net/propTime/Duration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:duration rdfs:subClassOf :interval,
+        :temporal_range,
+        :time_range ;
+    owl:equivalentClass :duration_description,
+        :time_interval .
+
+","Duration is synonymous with duration description and time interval. It is categorized as a type of temporal range, time range, and interval.",5,True
+sweet,http://sweetontology.net/propTime/DurationDescription,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:duration_description rdfs:subClassOf :interval,
+        :temporal_range,
+        :time_range .
+
+","Duration description is a type of temporal range, time range, and interval.",3,True
+sweet,http://sweetontology.net/propTime/EFoldingTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:e_folding_time rdfs:subClassOf :duration,
+        :duration_description,
+        :time_interval .
+
+","E folding time is a type of duration, duration description, and time interval.",3,True
+sweet,http://sweetontology.net/propTime/EndTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:end_time rdfs:subClassOf :instant .
+
+",end time is a type of instant.,1,False
+sweet,http://sweetontology.net/propTime/Episode,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:episode rdfs:subClassOf :exposure ;
+    owl:equivalentClass :episodic .
+
+",Episode is the same as episodic and is a type of exposure.,2,True
+sweet,http://sweetontology.net/propTime/Episodic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:episodic rdfs:subClassOf :exposure .
+
+",episodic is a type of exposure.,1,False
+sweet,http://sweetontology.net/propTime/Exposure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exposure rdfs:subClassOf :interval .
+
+",exposure is a type of interval.,1,False
+sweet,http://sweetontology.net/propTime/GeologicTime,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geologic_time rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :mya ;
+            owl:onProperty :has_unit ],
+        :temporal_reference,
+        :time_reference .
+
+","Geologic time serves as a type of temporal and time reference, which is characterized by units measured in million years ago (mya).",3,True
+sweet,http://sweetontology.net/propTime/Hydroperiod,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydroperiod rdfs:subClassOf :period .
+
+",hydroperiod is a type of period.,1,False
+sweet,http://sweetontology.net/propTime/ITCZDominanceDuration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:itcz_dominance_duration rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :itcz ],
+        :duration,
+        :duration_description,
+        :time_interval .
+
+","ITCZ dominance duration is a type of duration, duration description, and time interval. It is a type of something that, at the very least, has some phenomena related to ITCZ.",4,True
+sweet,http://sweetontology.net/propTime/Latency,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:latency rdfs:subClassOf :delay .
+
+",latency is a type of delay.,1,False
+sweet,http://sweetontology.net/propTime/MonthRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:month_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :month ;
+            owl:onProperty :has_unit ],
+        :duration,
+        :duration_description,
+        :time_interval .
+
+","A month range is a type of duration, duration description, and time interval, which must have the unit month.",4,True
+sweet,http://sweetontology.net/propTime/Period,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:period rdfs:subClassOf :proper_interval .
+
+",period is a type of proper interval.,1,False
+sweet,http://sweetontology.net/propTime/Repose,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:repose rdfs:subClassOf :interval .
+
+",repose is a type of interval.,1,False
+sweet,http://sweetontology.net/propTime/ResidenceTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:residence_time rdfs:subClassOf :duration,
+        :duration_description,
+        :time_interval .
+
+","Residence time is a type of duration, duration description, and time interval.",3,True
+sweet,http://sweetontology.net/propTime/SnowCoverDuration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snow_cover_duration rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :snow_cover ],
+        :duration,
+        :duration_description,
+        :time_interval .
+
+","Snow cover duration is a type of duration, duration description, and time interval. Additionally, it is a type of something that, at the very least, involves the phenomena of some snow cover.",4,True
+sweet,http://sweetontology.net/propTime/StartTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:start_time rdfs:subClassOf :instant .
+
+",start time is a type of instant.,1,False
+sweet,http://sweetontology.net/propTime/TemporalExtent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_extent rdfs:subClassOf :duration,
+        :temporal_entity .
+
+",Temporal extent is a type of duration and a type of temporal entity.,2,True
+sweet,http://sweetontology.net/propTime/TemporalRange,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_range rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :time ;
+            owl:onProperty :range_of ],
+        :interval_quantity ;
+    owl:equivalentClass :time_range .
+
+","Temporal range, which is synonymous with time range, represents a type of interval quantity specifically pertaining to the range of time.",3,True
+sweet,http://sweetontology.net/propTime/Time,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :second ;
+            owl:onProperty :has_default_unit ],
+        :physical_quantity .
+
+",Time is a type of physical quantity and is something that must have the default unit of second.,2,True
+sweet,http://sweetontology.net/propTime/TimeInterval,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_interval rdfs:subClassOf :interval,
+        :temporal_range,
+        :time_range .
+
+","Time interval is a type of temporal range, time range, and interval.",3,True
+sweet,http://sweetontology.net/propTime/TimePeriod,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_period rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :time ;
+            owl:onProperty :has_end_time ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :time ;
+            owl:onProperty :has_start_time ],
+        :duration,
+        :duration_description,
+        :time_interval .
+
+","Time period is a type of duration, duration description, and time interval. Additionally, it is a type of something that only has an end time, as well as something that only has a start time.",5,True
+sweet,http://sweetontology.net/propTime/TimeRange,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_range rdfs:subClassOf :interval_quantity .
+
+",time range is a type of interval quantity.,1,False
+sweet,http://sweetontology.net/propTime/TimeStep,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_step rdfs:subClassOf :duration,
+        :duration_description,
+        :time_interval .
+
+","Time step is a type of duration, duration description, and time interval.",3,True
+sweet,http://sweetontology.net/propTime/Timestamp,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:timestamp rdfs:subClassOf :instant .
+
+",timestamp is a type of instant.,1,False
+sweet,http://sweetontology.net/propTime/WinterDuration,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:winter_duration rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :winter ;
+            owl:onProperty :has_time ],
+        :duration,
+        :duration_description,
+        :time_interval .
+
+","Winter duration is a type of duration, duration description, and time interval. It is also a type of something that must have time winter.",4,True
+sweet,http://sweetontology.net/propTimeFrequency/Bandwidth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bandwidth rdfs:subClassOf :frequency,
+        :wave_property .
+
+",Bandwidth is a type of wave property and is also a type of frequency.,2,True
+sweet,http://sweetontology.net/propTimeFrequency/BruntVaisalaFrequency,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brunt_vaisala_frequency rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :static_stability ;
+            owl:onProperty :measure_of ],
+        :frequency .
+
+",The Brunt Vaisala frequency is a type of frequency that is uniquely a measure of static stability.,2,True
+sweet,http://sweetontology.net/propTimeFrequency/Cadence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cadence rdfs:subClassOf :frequency .
+
+",cadence is a type of frequency.,1,False
+sweet,http://sweetontology.net/propTimeFrequency/Convergence,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convergence rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vector_field ;
+            owl:onProperty :has_output ],
+        :vector_field_operation .
+
+",Convergence is a type of vector field operation and it is a type of operation that only has an output vector field.,2,True
+sweet,http://sweetontology.net/propTimeFrequency/Divergence,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:divergence rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :scalar_field ;
+            owl:onProperty :has_input ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :vector_field ;
+            owl:onProperty :has_output ],
+        :vector_field_operation .
+
+",Divergence is a type of vector field operation that uniquely requires an input scalar field and produces an output vector field.,3,True
+sweet,http://sweetontology.net/propTimeFrequency/Fertility,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fertility rdfs:subClassOf :rate,
+        :tendency .
+
+",Fertility is both a type of rate and a type of tendency.,2,True
+sweet,http://sweetontology.net/propTimeFrequency/Frequency,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frequency rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :hertz ;
+            owl:onProperty :has_default_unit ],
+        :physical_quantity,
+        :rate,
+        :tendency .
+
+","Frequency is a type of physical quantity, rate, and tendency. Additionally, frequency is a type of something that must have the default unit, hertz.",4,True
+sweet,http://sweetontology.net/propTimeFrequency/FrequencyBand,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frequency_band rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :frequency ;
+            owl:onProperty :range_of ],
+        :interval_quantity .
+
+",A frequency band is a type of interval quantity and is something that only pertains to a range of frequencies.,2,True
+sweet,http://sweetontology.net/propTimeFrequency/FrequencyBand_MHz,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frequency_band_mhz rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :mhz ;
+            owl:onProperty :has_unit ],
+        :frequency_band .
+
+",The frequency band MHz is a type of frequency band that necessarily has the unit MHz.,2,True
+sweet,http://sweetontology.net/propTimeFrequency/Incidence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:incidence rdfs:subClassOf :frequency .
+
+",incidence is a type of frequency.,1,False
+sweet,http://sweetontology.net/propTimeFrequency/Rate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rate rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :time ;
+            owl:onProperty :derivative_with_respect_to ],
+        [ a owl:Restriction ;
+            owl:hasValue :per_second ;
+            owl:onProperty :has_default_unit ],
+        :partial_derivative ;
+    owl:equivalentClass :tendency .
+
+","Rate is the same as tendency and is a type of partial derivative. Additionally, rate is a type of something that only involves a derivative with respect to time and must have a default unit of per second.",4,True
+sweet,http://sweetontology.net/propTimeFrequency/SpreadingRate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spreading_rate rdfs:subClassOf :rate,
+        :tendency .
+
+",Spreading rate is both a type of rate and a type of tendency.,2,True
+sweet,http://sweetontology.net/propTimeFrequency/Tendency,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tendency rdfs:subClassOf :partial_derivative .
+
+",tendency is a type of partial derivative.,1,False
+sweet,http://sweetontology.net/realm/Atmosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :planetary_surface ;
+            owl:onProperty :has_lower_boundary ],
+        [ a owl:Restriction ;
+            owl:hasValue :gas ;
+            owl:onProperty :has_state ],
+        :planetary_realm .
+
+","The atmosphere is categorized as a type of planetary realm, which is unique in that it only has a lower boundary defined by the planetary surface. Additionally, it must possess a gaseous state.",3,True
+sweet,http://sweetontology.net/realm/CriticalZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:critical_zone rdfs:subClassOf :planetary_realm .
+
+",critical zone is a type of planetary realm.,1,False
+sweet,http://sweetontology.net/realm/Cryosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cryosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ice ;
+            owl:onProperty :has_substance ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :planetary_surface ;
+            owl:onProperty :has_upper_boundary ],
+        :hydrosphere .
+
+",The cryosphere is a type of hydrosphere that consists solely of the substance ice and has its upper boundary at the planetary surface.,3,True
+sweet,http://sweetontology.net/realm/Geosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :planetary_surface ;
+            owl:onProperty :has_upper_boundary ],
+        :planetary_realm ;
+    owl:equivalentClass :solid_earth .
+
+","The geosphere, synonymous with solid earth, is categorized under planetary realms. It is specifically characterized as a type that only possesses an upper boundary defined by the planetary surface and is required to be in a solid state.",4,True
+sweet,http://sweetontology.net/realm/GlobalPlanetaryLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:global_planetary_layer rdfs:subClassOf :layer ;
+    owl:equivalentClass :planetary_layer .
+
+",The global planetary layer is the same as the planetary layer and is a type of layer.,2,True
+sweet,http://sweetontology.net/realm/Hydrosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :planetary_realm .
+
+",The hydrosphere is a type of planetary realm that must have water as a substance.,2,True
+sweet,http://sweetontology.net/realm/Land,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        :geosphere,
+        :solid_earth .
+
+","Land is a type of geosphere, a type of solid earth, and it must have a solid state.",3,True
+sweet,http://sweetontology.net/realm/Ocean,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :planetary_surface ;
+            owl:onProperty :has_upper_boundary ],
+        [ a owl:Restriction ;
+            owl:hasValue :liquid ;
+            owl:onProperty :has_state ],
+        :hydrosphere .
+
+","The ocean is a type of hydrosphere, which is characterized by only having an upper boundary that is the planetary surface. Additionally, it must exist in a state that is liquid.",3,True
+sweet,http://sweetontology.net/realm/PlanetaryBoundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_boundary rdfs:subClassOf :critical_zone,
+        :surface ;
+    owl:equivalentClass :planetary_surface_level .
+
+",The planetary boundary is synonymous with the planetary surface level and is categorized as a type of critical zone as well as a type of surface.,3,True
+sweet,http://sweetontology.net/realm/PlanetaryLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_layer rdfs:subClassOf :layer .
+
+",planetary layer is a type of layer.,1,False
+sweet,http://sweetontology.net/realm/PlanetaryRealm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_realm rdfs:subClassOf :realm .
+
+",planetary realm is a type of realm.,1,False
+sweet,http://sweetontology.net/realm/PlanetaryStructure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_structure rdfs:subClassOf :planetary_realm .
+
+",planetary structure is a type of planetary realm.,1,False
+sweet,http://sweetontology.net/realm/PlanetarySurface,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_surface rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level ;
+    owl:disjointWith :subsurface ;
+    owl:equivalentClass :subaerial .
+
+","The planetary surface is the same as subaerial and is a type of planetary boundary as well as a type of planetary surface level. Additionally, the planetary surface is disjoint with the subsurface.",4,True
+sweet,http://sweetontology.net/realm/PlanetarySurfaceLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_surface_level rdfs:subClassOf :critical_zone,
+        :surface .
+
+",The planetary surface level is a type of critical zone and is also categorized as a type of surface.,2,True
+sweet,http://sweetontology.net/realm/Realm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:realm rdfs:subClassOf owl:Thing .
+
+",realm is a type of thing.,1,False
+sweet,http://sweetontology.net/realm/Ring,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ring rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :solid ;
+            owl:onProperty :has_state ],
+        :planetary_realm .
+
+",A ring is a type of planetary realm and it must have a solid state.,2,True
+sweet,http://sweetontology.net/realm/Subaerial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subaerial rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",Subaerial is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAstroBody/Asteroid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:asteroid rdfs:subClassOf :astronomical_body .
+
+",asteroid is a type of astronomical body.,1,False
+sweet,http://sweetontology.net/realmAstroBody/AstronomicalBody,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:astronomical_body rdfs:subClassOf :body .
+
+",astronomical body is a type of body.,1,False
+sweet,http://sweetontology.net/realmAstroBody/Comet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:comet rdfs:subClassOf :astronomical_body .
+
+",comet is a type of astronomical body.,1,False
+sweet,http://sweetontology.net/realmAstroBody/Extraterrestrial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extraterrestrial rdfs:subClassOf :astronomical_body .
+
+",extraterrestrial is a type of astronomical body.,1,False
+sweet,http://sweetontology.net/realmAstroBody/Galaxy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:galaxy rdfs:subClassOf :astronomical_body .
+
+",galaxy is a type of astronomical body.,1,False
+sweet,http://sweetontology.net/realmAstroBody/Moon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moon rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :planet ;
+            owl:onProperty :revolves_around ],
+        :astronomical_body .
+
+",The Moon is a type of astronomical body that only revolves around a planet.,2,True
+sweet,http://sweetontology.net/realmAstroBody/OuterSpace,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outer_space rdfs:subClassOf :realm .
+
+",outer space is a type of realm.,1,False
+sweet,http://sweetontology.net/realmAstroBody/Planet,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planet rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :star ;
+            owl:onProperty :revolves_around ],
+        :astronomical_body .
+
+",A planet is a type of astronomical body that only revolves around a star.,2,True
+sweet,http://sweetontology.net/realmAstroBody/Satellite,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:satellite rdfs:subClassOf :astronomical_body .
+
+",satellite is a type of astronomical body.,1,False
+sweet,http://sweetontology.net/realmAstroBody/Star,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:star rdfs:subClassOf :astronomical_body .
+
+",star is a type of astronomical body.,1,False
+sweet,http://sweetontology.net/realmAstroHelio/DLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:d_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :ionosphere ],
+        [ a owl:Restriction ;
+            owl:hasValue :hard_x_ray ;
+            owl:onProperty :has_spectral_band ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+",The D layer is a type of global planetary layer and a type of planetary layer. It is a type of entity that at least has some ionosphere realm and must have a hard X-ray spectral band.,4,True
+sweet,http://sweetontology.net/realmAstroHelio/ELayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:e_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :ionosphere ],
+        [ a owl:Restriction ;
+            owl:hasValue :soft_x_ray ;
+            owl:onProperty :has_spectral_band ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+","The E layer is a type of global and planetary layer that exists within the realm of the ionosphere. Additionally, it is characterized by its necessity to have a spectral band of soft X-ray.",4,True
+sweet,http://sweetontology.net/realmAstroHelio/Exosphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exosphere rdfs:subClassOf :global_planetary_layer,
+        :planetary_layer .
+
+","The exosphere is a type of global planetary layer, which is also a type of planetary layer.",2,True
+sweet,http://sweetontology.net/realmAstroHelio/FLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:f_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :euv ;
+            owl:onProperty :has_spectral_band ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :ionosphere ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+",The F layer is a type of global planetary layer and a planetary layer. It is something that at least has the realm of the ionosphere and something that must have the spectral band EUV.,4,True
+sweet,http://sweetontology.net/realmAstroHelio/Heliopause,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heliopause rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The heliopause is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAstroHelio/Heliosphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heliosphere rdfs:subClassOf :global_planetary_layer,
+        :planetary_layer .
+
+",The heliosphere is a type of global planetary layer and also a type of planetary layer.,2,True
+sweet,http://sweetontology.net/realmAstroHelio/Ionosphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ionosphere rdfs:subClassOf :global_planetary_layer,
+        :planetary_layer .
+
+",The ionosphere is a type of global planetary layer and also a type of planetary layer.,2,True
+sweet,http://sweetontology.net/realmAstroHelio/LowerHeliosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lower_heliosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :heliosphere ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+","The lower heliosphere is identified as a type of global planetary layer, a planetary layer, and something that at least encompasses a realm within the heliosphere.",3,True
+sweet,http://sweetontology.net/realmAstroHelio/Magnetosphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetosphere rdfs:subClassOf :global_planetary_layer,
+        :planetary_layer .
+
+","The magnetosphere is a type of planetary layer, specifically a global planetary layer.",2,True
+sweet,http://sweetontology.net/realmAstroHelio/Plasmapause,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plasmapause rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The plasmapause is a type of planetary boundary and also a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAstroHelio/Plasmasphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plasmasphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :plasma ;
+            owl:onProperty :has_state ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :plasmapause ;
+            owl:onProperty :has_upper_boundary ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :lower_heliosphere ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+","The plasmasphere is a type of planetary layer that is classified as a global planetary layer. It is characterized by having a realm extending to at least some lower region of the heliosphere and exclusively has an upper boundary known as the plasmapause. Furthermore, it is defined by its state, which must be plasma.",5,True
+sweet,http://sweetontology.net/realmAstroHelio/RadiationBelt,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiation_belt rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heliosphere ;
+            owl:onProperty :has_realm ],
+        :global_planetary_layer,
+        :planetary_layer ;
+    owl:equivalentClass :van_allen_belt .
+
+","The radiation belt, which is the same as the Van Allen belt, is a type of planetary layer and specifically a global planetary layer. Additionally, it is a type of entity that exclusively belongs to the realm of the heliosphere.",4,True
+sweet,http://sweetontology.net/realmAstroHelio/UpperHeliosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upper_heliosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heliosphere ;
+            owl:onProperty :has_realm ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+",The upper heliosphere is a type of global planetary layer and a planetary layer. It is also a type of entity that exclusively belongs to the realm of the heliosphere.,3,True
+sweet,http://sweetontology.net/realmAstroHelio/VanAllenBelt,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:van_allen_belt rdfs:subClassOf :global_planetary_layer,
+        :planetary_layer .
+
+",The Van Allen Belt is both a type of global planetary layer and a type of planetary layer.,2,True
+sweet,http://sweetontology.net/realmAstroStar/ActiveRegion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:active_region rdfs:subClassOf :stellar_realm .
+
+",active region is a type of stellar realm.,1,False
+sweet,http://sweetontology.net/realmAstroStar/Chromosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chromosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :plasma ;
+            owl:onProperty :has_state ],
+        :stellar_atmosphere .
+
+",The chromosphere is a type of stellar atmosphere and is characterized as a type of entity that must have a plasma state.,2,True
+sweet,http://sweetontology.net/realmAstroStar/ConvectionZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convection_zone rdfs:subClassOf :stellar_interior ;
+    owl:disjointWith :stellar_core .
+
+",The convection zone is a type of stellar interior and is disjoint from the stellar core.,2,True
+sweet,http://sweetontology.net/realmAstroStar/Corona,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:corona rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :plasma ;
+            owl:onProperty :has_state ],
+        :stellar_atmosphere .
+
+",Corona is a type of stellar atmosphere and it is also a type of something that must have a plasma state.,2,True
+sweet,http://sweetontology.net/realmAstroStar/Photosphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photosphere rdfs:subClassOf :stellar_atmosphere .
+
+",photosphere is a type of stellar atmosphere.,1,False
+sweet,http://sweetontology.net/realmAstroStar/RadiativeZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radiative_zone rdfs:subClassOf :stellar_interior .
+
+",radiative zone is a type of stellar interior.,1,False
+sweet,http://sweetontology.net/realmAstroStar/StellarAtmosphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stellar_atmosphere rdfs:subClassOf :stellar_realm .
+
+",stellar atmosphere is a type of stellar realm.,1,False
+sweet,http://sweetontology.net/realmAstroStar/StellarCore,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stellar_core rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_chemical_reaction ;
+            owl:someValuesFrom :nuclear_fusion ],
+        :stellar_interior .
+
+","A stellar core is a type of stellar interior and is characterized as something that, at a minimum, involves some nuclear fusion due to chemical reactions.",2,True
+sweet,http://sweetontology.net/realmAstroStar/StellarInterior,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stellar_interior rdfs:subClassOf :stellar_realm .
+
+",stellar interior is a type of stellar realm.,1,False
+sweet,http://sweetontology.net/realmAstroStar/StellarRealm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stellar_realm rdfs:subClassOf :realm .
+
+",stellar realm is a type of realm.,1,False
+sweet,http://sweetontology.net/realmAstroStar/Tacocline,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tacocline rdfs:subClassOf :stellar_interior .
+
+",tacocline is a type of stellar interior.,1,False
+sweet,http://sweetontology.net/realmAtmo/AtmosphereLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmosphere_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :atmosphere ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+","The atmosphere layer is a type of global planetary layer, which also falls under the category of planetary layers. Additionally, it is a type of entity that possesses at least some realm of atmosphere.",3,True
+sweet,http://sweetontology.net/realmAtmo/FreeTroposphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:free_troposphere rdfs:subClassOf :troposphere .
+
+",free troposphere is a type of troposphere.,1,False
+sweet,http://sweetontology.net/realmAtmo/InversionLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inversion_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :inversion ],
+        :atmosphere_layer ;
+    owl:equivalentClass :temperature_inversion_layer .
+
+","The inversion layer, which is the same as the temperature inversion layer, is a type of atmosphere layer. This layer is characterized by the phenomena of inversion.",3,True
+sweet,http://sweetontology.net/realmAtmo/JungeAerosolLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:junge_aerosol_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :aerosol ;
+            owl:onProperty :has_substance ],
+        :atmosphere_layer .
+
+","The Junge aerosol layer is a type of atmosphere layer, specifically characterized by being composed solely of the substance aerosol.",2,True
+sweet,http://sweetontology.net/realmAtmo/LowerAtmosphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lower_atmosphere rdfs:subClassOf :atmosphere_layer .
+
+",lower atmosphere is a type of atmosphere layer.,1,False
+sweet,http://sweetontology.net/realmAtmo/Mesopause,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesopause rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The mesopause is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmo/Mesosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :negative_slope ;
+            owl:onProperty :dtdh ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :stratopause ;
+            owl:onProperty :has_lower_boundary ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :mesopause ;
+            owl:onProperty :has_upper_boundary ],
+        :atmosphere_layer .
+
+","The mesosphere is a type of atmosphere layer characterized by several unique features. It has a lower boundary known as the stratopause and an upper boundary referred to as the mesopause. Moreover, the mesosphere is defined by having a negative slope in the temperature versus height profile, indicating that temperature decreases with height within this layer.",4,True
+sweet,http://sweetontology.net/realmAtmo/MiddleAtmosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:middle_atmosphere rdfs:subClassOf :atmosphere_layer ;
+    owl:equivalentClass :ozone_layer .
+
+","The middle atmosphere, which is a type of atmosphere layer, is the same as the ozone layer.",2,True
+sweet,http://sweetontology.net/realmAtmo/OzoneLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ozone_layer rdfs:subClassOf :atmosphere_layer .
+
+",ozone layer is a type of atmosphere layer.,1,False
+sweet,http://sweetontology.net/realmAtmo/Stratopause,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stratopause rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The stratopause is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmo/Stratosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stratosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :stratopause ;
+            owl:onProperty :has_upper_boundary ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :tropopause ;
+            owl:onProperty :has_lower_boundary ],
+        [ a owl:Restriction ;
+            owl:hasValue :positive_slope ;
+            owl:onProperty :dtdh ],
+        :atmosphere_layer .
+
+","The stratosphere is a type of atmospheric layer that possesses unique characteristics. It is defined by having a lower boundary known as the tropopause and an upper boundary referred to as the stratopause. Moreover, the stratosphere is distinguished by having a positive slope in its temperature distribution with height (dtdh positive slope).",4,True
+sweet,http://sweetontology.net/realmAtmo/TemperatureInversionLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperature_inversion_layer rdfs:subClassOf :atmosphere_layer .
+
+",temperature inversion layer is a type of atmosphere layer.,1,False
+sweet,http://sweetontology.net/realmAtmo/Thermosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mesopause ;
+            owl:onProperty :has_lower_boundary ],
+        [ a owl:Restriction ;
+            owl:hasValue :positive_slope ;
+            owl:onProperty :dtdh ],
+        :atmosphere_layer .
+
+",The thermosphere is a type of atmosphere layer characterized by having its lower boundary at the mesopause and is also defined by a distinct feature where it must exhibit a positive slope in its temperature distribution with height (dtdh).,3,True
+sweet,http://sweetontology.net/realmAtmo/Tropopause,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tropopause rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The tropopause is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmo/Troposphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:troposphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :negative_slope ;
+            owl:onProperty :dtdh ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :tropopause ;
+            owl:onProperty :has_upper_boundary ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :planetary_surface ;
+            owl:onProperty :has_lower_boundary ],
+        :atmosphere_layer .
+
+","The troposphere is a type of atmosphere layer characterized by a few specific features. It is the only layer with its lower boundary being the planetary surface and its upper boundary defined as the tropopause. Additionally, it is distinguished by having a negative slope in the temperature versus height profile, known as the decrease in temperature with height (dtdh).",4,True
+sweet,http://sweetontology.net/realmAtmo/UpperAtmosphere,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upper_atmosphere rdfs:subClassOf :atmosphere_layer .
+
+",upper atmosphere is a type of atmosphere layer.,1,False
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/AtmosphericBoundaryLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_boundary_layer rdfs:subClassOf :atmosphere_layer ;
+    owl:equivalentClass :boundary_layer .
+
+","The atmospheric boundary layer, which is the same as the boundary layer, is a type of atmosphere layer.",2,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/BoundaryLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boundary_layer rdfs:subClassOf :atmosphere_layer ;
+    owl:equivalentClass :planetary_boundary_layer .
+
+","The boundary layer, which is the same as the planetary boundary layer, is a type of atmosphere layer.",2,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/Cap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cap rdfs:subClassOf :level .
+
+",cap is a type of level.,1,False
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/ConstantFluxLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:constant_flux_layer rdfs:subClassOf :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The constant flux layer is a type of atmospheric boundary layer, boundary layer, and planetary boundary layer.",3,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/InternalBoundaryLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:internal_boundary_layer rdfs:subClassOf :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The internal boundary layer is a type of atmospheric boundary layer, planetary boundary layer, and boundary layer.",3,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/MechanicalInternalBoundaryLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mechanical_internal_boundary_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :advection ;
+            owl:onProperty :has_phenomena ],
+        :internal_boundary_layer .
+
+",The mechanical internal boundary layer is a type of internal boundary layer and a type of something that only has the phenomena advection.,2,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/MixedLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixed_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :turbulence ;
+            owl:onProperty :has_phenomena ],
+        :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The mixed layer is a type of atmospheric boundary layer, boundary layer, and planetary boundary layer. It is also a type of something that exclusively exhibits the phenomena of turbulence.",4,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/NocturnalBoundaryLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nocturnal_boundary_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :nocturnal_cooling ],
+        :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The nocturnal boundary layer is a type of atmospheric, boundary, and planetary boundary layer that is characterized by phenomena such as nocturnal cooling.",4,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/OuterLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outer_layer rdfs:subClassOf :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The outer layer is a type of atmospheric boundary layer, a boundary layer, and a planetary boundary layer.",3,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/PlanetaryBoundaryLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_boundary_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :atmosphere ],
+        :atmosphere_layer .
+
+","The planetary boundary layer is a type of atmosphere layer, and it is also a type of entity that must at least have some connection to the realm of the atmosphere.",2,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/ResidualLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:residual_layer rdfs:subClassOf :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The residual layer is a type of atmospheric boundary layer, boundary layer, and planetary boundary layer.",3,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/RoughnessSublayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:roughness_sublayer rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :rough ;
+            owl:onProperty :has_state ],
+        :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The roughness sublayer is a type of atmospheric boundary layer, boundary layer, and planetary boundary layer. Additionally, it is a type of entity that must have a state of roughness.",4,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/SkinLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_layer rdfs:subClassOf :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The skin layer is a type of atmospheric boundary layer, boundary layer, and planetary boundary layer.",3,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/StableBoundaryLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stable_boundary_layer rdfs:subClassOf :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The stable boundary layer is a type of atmospheric, boundary, and planetary boundary layer.",3,True
+sweet,http://sweetontology.net/realmAtmoBoundaryLayer/WellMixedLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:well_mixed_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mixing ;
+            owl:onProperty :has_phenomena ],
+        :atmospheric_boundary_layer,
+        :boundary_layer,
+        :planetary_boundary_layer .
+
+","The well-mixed layer is a type of atmospheric, boundary, and planetary boundary layer that is characterized by phenomena mixing.",4,True
+sweet,http://sweetontology.net/realmAtmoWeather/AdiabaticCondensationLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adiabatic_condensation_level rdfs:subClassOf :condensation_level .
+
+",adiabatic condensation level is a type of condensation level.,1,False
+sweet,http://sweetontology.net/realmAtmoWeather/CloudBase,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud_base rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",Cloud base is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmoWeather/CloudTop,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cloud_top rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",Cloud top is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmoWeather/CondensationLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:condensation_level rdfs:subClassOf :level .
+
+",condensation level is a type of level.,1,False
+sweet,http://sweetontology.net/realmAtmoWeather/ConvectiveCloudBase,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convective_cloud_base rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The convective cloud base is a type of planetary boundary and also a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmoWeather/ConvectiveCloudTop,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convective_cloud_top rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",A convective cloud top is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmoWeather/ConvectiveCondensationLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convective_condensation_level rdfs:subClassOf :condensation_level .
+
+",convective condensation level is a type of condensation level.,1,False
+sweet,http://sweetontology.net/realmAtmoWeather/FreeConvectiveLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:free_convective_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :free_instability ;
+            owl:onProperty :has_phenomena ],
+        :atmosphere_layer .
+
+",The free convective layer is a type of atmosphere layer that is characterized by phenomena of free instability only.,2,True
+sweet,http://sweetontology.net/realmAtmoWeather/FreezingLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:freezing_level rdfs:subClassOf :meteorological_phenomena,
+        :planetary_boundary,
+        :planetary_surface_level .
+
+","Freezing level is a type of meteorological phenomena, planetary boundary, and planetary surface level.",3,True
+sweet,http://sweetontology.net/realmAtmoWeather/LFC,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lfc rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level ;
+    owl:equivalentClass :level_of_free_convection .
+
+","LFC, which stands for Level of Free Convection, is a type of planetary boundary and also a type of planetary surface level.",3,True
+sweet,http://sweetontology.net/realmAtmoWeather/LevelOfFreeConvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:level_of_free_convection rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The level of free convection is a type of planetary boundary and is also considered a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmoWeather/MaximumWindSpeedLevel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maximum_wind_speed_level rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The maximum wind speed level is a type of planetary boundary and also a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmAtmoWeather/MeltingLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:melting_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :melting ;
+            owl:onProperty :has_state_change ],
+        :global_planetary_layer,
+        :planetary_layer .
+
+","The melting layer is a type of planetary layer, specifically a global planetary layer, characterized by being something that only undergoes the state change of melting.",3,True
+sweet,http://sweetontology.net/realmAtmoWeather/MeltingLevel,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:melting_level rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :melting ;
+            owl:onProperty :has_state_change ],
+        :planetary_boundary,
+        :planetary_surface_level .
+
+","Melting level is a type of planetary boundary and a type of planetary surface level, specifically being a type of something that only undergoes the state change of melting.",3,True
+sweet,http://sweetontology.net/realmAtmoWeather/SnowGeneratingLevel,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snow_generating_level rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :snowfall ;
+            owl:onProperty :has_phenomena ],
+        :planetary_boundary,
+        :planetary_surface_level .
+
+",The snow generating level is a type of planetary boundary and a type of planetary surface level. It is also a type of entity that only experiences the phenomenon of snowfall.,3,True
+sweet,http://sweetontology.net/realmAtmoWeather/ZoneOfMaximumPrecipitation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zone_of_maximum_precipitation rdfs:subClassOf :atmosphere_layer .
+
+",zone of maximum precipitation is a type of atmosphere layer.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Anthromes,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anthromes rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :anthropogenic ;
+            owl:onProperty :has_land_use ],
+        :terrestrial_biome .
+
+",Anthromes are a type of terrestrial biome characterized by land use that is anthropogenic.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/AquaticEcosystem,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aquatic_ecosystem rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :hydrosphere ;
+            owl:onProperty :has_realm ],
+        :ecosystem .
+
+",An aquatic ecosystem is a type of ecosystem that exists solely within the realm of the hydrosphere.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/Barren,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:barren rdfs:subClassOf :wildlands .
+
+",barren is a type of wildlands.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Biome,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biome rdfs:subClassOf :environment .
+
+",biome is a type of environment.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Biota,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biota rdfs:subClassOf :terrestrial_biome .
+
+",biota is a type of terrestrial biome.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/BorealForest,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boreal_forest rdfs:subClassOf :taiga .
+
+",boreal forest is a type of taiga.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/CaveEcosystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cave_ecosystem rdfs:subClassOf :terrestrial_ecosystem .
+
+",cave ecosystem is a type of terrestrial ecosystem.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/CoralReef,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coral_reef rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :coral ;
+            owl:onProperty :has_species ],
+        :marine_ecosystem .
+
+","A coral reef is a type of marine ecosystem, which is exclusively composed of coral species.",2,True
+sweet,http://sweetontology.net/realmBiolBiome/Croplands,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:croplands rdfs:subClassOf :terrestrial_biome .
+
+",croplands is a type of terrestrial biome.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/DenseSettlements,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dense_settlements rdfs:subClassOf :terrestrial_biome .
+
+",dense settlements is a type of terrestrial biome.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Ecosystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ecosystem rdfs:subClassOf :environment .
+
+",ecosystem is a type of environment.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/EmergentLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:emergent_layer rdfs:subClassOf :terrestrial_ecosystem .
+
+",emergent layer is a type of terrestrial ecosystem.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Fishery,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fishery rdfs:subClassOf :aquatic_ecosystem .
+
+",fishery is a type of aquatic ecosystem.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Forest,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forest rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vegetation ;
+            owl:onProperty :has_species ],
+        :terrestrial_ecosystem .
+
+",A forest is a type of terrestrial ecosystem and a type of system that only has species vegetation.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/Forested,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forested rdfs:subClassOf :terrestrial_biome .
+
+",forested is a type of terrestrial biome.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/FreshwaterEcosystem,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:freshwater_ecosystem rdfs:subClassOf :aquatic_ecosystem ;
+    owl:disjointWith :marine_ecosystem .
+
+",A freshwater ecosystem is a type of aquatic ecosystem which is disjoint from the marine ecosystem.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/Grassland,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:grassland rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :grass ;
+            owl:onProperty :has_species ],
+        :terrestrial_ecosystem .
+
+",Grassland is a type of terrestrial ecosystem and is characterized as a type of environment that predominantly consists of species of grass.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/MarineEcosystem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_ecosystem rdfs:subClassOf :aquatic_ecosystem .
+
+",marine ecosystem is a type of aquatic ecosystem.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Montane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:montane rdfs:subClassOf :terrestrial_ecosystem .
+
+",montane is a type of terrestrial ecosystem.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Pasture,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pasture rdfs:subClassOf :terrestrial_ecosystem .
+
+",pasture is a type of terrestrial ecosystem.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Rangelands,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rangelands rdfs:subClassOf :terrestrial_biome .
+
+",rangelands is a type of terrestrial biome.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Savanna,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:savanna rdfs:subClassOf :terrestrial_ecosystem .
+
+",savanna is a type of terrestrial ecosystem.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Scrubland,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scrubland rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :scrub ;
+            owl:onProperty :has_species ],
+        :terrestrial_ecosystem .
+
+",Scrubland is a type of terrestrial ecosystem and is characterized as a type of environment that only contains species known as scrub.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/SeaGrass,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_grass rdfs:subClassOf :aquatic_ecosystem .
+
+",sea grass is a type of aquatic ecosystem.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/SparseTrees,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sparse_trees rdfs:subClassOf :wildlands .
+
+",sparse trees is a type of wildlands.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Steppe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:steppe rdfs:subClassOf :grassland .
+
+",steppe is a type of grassland.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Taiga,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:taiga rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :dfb ;
+            owl:onProperty :has_climate_zone ],
+        [ a owl:Restriction ;
+            owl:hasValue :dfc ;
+            owl:onProperty :has_climate_zone ],
+        [ a owl:Restriction ;
+            owl:hasValue :cfc ;
+            owl:onProperty :has_climate_zone ],
+        :forest .
+
+","Taiga is a type of forest that must have one of the following climate zones: Cfc, Dfb, or Dfc.",4,True
+sweet,http://sweetontology.net/realmBiolBiome/TemperateForest,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperate_forest rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :c ;
+            owl:onProperty :has_climate_zone ],
+        :forest .
+
+",Temperate forest is a type of forest that exclusively has a relation with climate zone C.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/Terrain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terrain rdfs:subClassOf :terrestrial_biome .
+
+",terrain is a type of terrestrial biome.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/TerrestrialBiome,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terrestrial_biome rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :land ;
+            owl:onProperty :has_realm ],
+        :biome .
+
+",A terrestrial biome is a type of biome that exclusively pertains to the land realm.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/TerrestrialEcosystem,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terrestrial_ecosystem rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :land ;
+            owl:onProperty :has_realm ],
+        :ecosystem .
+
+",A terrestrial ecosystem is a type of ecosystem that exists solely within the land realm.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/TropicalForest,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tropical_forest rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :tropical_rain_forest_climate ;
+            owl:onProperty :has_climate_zone ],
+        :forest .
+
+",A tropical forest is a type of forest that is characterized by being in a climate zone with a tropical rainforest climate.,2,True
+sweet,http://sweetontology.net/realmBiolBiome/Villages,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:villages rdfs:subClassOf :terrestrial_biome .
+
+",villages is a type of terrestrial biome.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Wildlands,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wildlands rdfs:subClassOf :terrestrial_biome .
+
+",wildlands is a type of terrestrial biome.,1,False
+sweet,http://sweetontology.net/realmBiolBiome/Woodland,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:woodland rdfs:subClassOf :forest .
+
+",woodland is a type of forest.,1,False
+sweet,http://sweetontology.net/realmClimateZone/A,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:a rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :has_average_monthly_temperature ],
+        [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :has_average_annual_precipitation ],
+        :climate_classification ;
+    owl:equivalentClass :tropical_climate .
+
+","A is the same as a tropical climate and is a type of climate classification. Moreover, A must have a specific average annual precipitation and must also have a specific average monthly temperature.",4,True
+sweet,http://sweetontology.net/realmClimateZone/B,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:b rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :has_average_annual_precipitation ],
+        :climate_classification ;
+    owl:equivalentClass :dry_climate .
+
+","B is the same as a dry climate and is a type of climate classification. Additionally, B is a type of entity that must have average annual precipitation.",3,True
+sweet,http://sweetontology.net/realmClimateZone/C,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:c rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :has_average_coldest_month_temperature ],
+        [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :has_average_warmest_month_temperature ],
+        :climate_classification ;
+    owl:equivalentClass :temperate_climate .
+
+","C is the same as a temperate climate and is classified as a type of climate classification. Additionally, C is characterized by specific requirements, including having an average coldest month temperature and an average warmest month temperature that meet certain criteria.",4,True
+sweet,http://sweetontology.net/realmClimateZone/ClimateClassification,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:climate_classification rdfs:subClassOf :category,
+        :classification .
+
+",Climate classification is both a type of category and a type of classification.,2,True
+sweet,http://sweetontology.net/realmClimateZone/ClimateZoneType,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:climate_zone_type rdfs:subClassOf :climate_classification .
+
+",climate zone type is a type of climate classification.,1,False
+sweet,http://sweetontology.net/realmClimateZone/D,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:d rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :has_average_coldest_month_temperature ],
+        [ a owl:Restriction ;
+            owl:hasValue [ ] ;
+            owl:onProperty :has_average_warmest_month_temperature ],
+        :climate_classification .
+
+","D is a type of climate classification, which must have specific characteristics regarding temperature; it requires an average coldest month temperature of a certain threshold and an average warmest month temperature of another specific threshold.",3,True
+sweet,http://sweetontology.net/realmClimateZone/DesertClimateZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:desert_climate_zone rdfs:subClassOf :climate_zone_type .
+
+",desert climate zone is a type of climate zone type.,1,False
+sweet,http://sweetontology.net/realmClimateZone/Doldrums,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:doldrums rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :low_latitude ;
+            owl:onProperty :has_realm ],
+        :climate_zone_type .
+
+",Doldrums is a type of climate zone and is characterized by being a realm with low latitude.,2,True
+sweet,http://sweetontology.net/realmClimateZone/DryClimate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_climate rdfs:subClassOf :climate_classification .
+
+",dry climate is a type of climate classification.,1,False
+sweet,http://sweetontology.net/realmClimateZone/DryWinterClimate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_winter_climate rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :winter ;
+            owl:onProperty :has_dry_season ],
+        :climate_classification .
+
+",A dry winter climate is a type of climate classification that necessitates having a dry season during the winter.,2,True
+sweet,http://sweetontology.net/realmClimateZone/E,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:e rdfs:subClassOf :climate_classification .
+
+",e is a type of climate classification.,1,False
+sweet,http://sweetontology.net/realmClimateZone/Equator,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equator rdfs:subClassOf :tropical_climate_zone .
+
+",equator is a type of tropical climate zone.,1,False
+sweet,http://sweetontology.net/realmClimateZone/ITCZ,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:itcz rdfs:subClassOf :climate_zone_type ;
+    owl:equivalentClass :intertropical_convergence_zone .
+
+","ITCZ, which is the same as the Intertropical Convergence Zone, is a type of climate zone.",2,True
+sweet,http://sweetontology.net/realmClimateZone/IntertropicalConvergenceZone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intertropical_convergence_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :equator ;
+            owl:onProperty :has_realm ],
+        :climate_zone_type .
+
+",The Intertropical Convergence Zone is classified as a climate zone type that is uniquely characteristic of the equator realm.,2,True
+sweet,http://sweetontology.net/realmClimateZone/MarineClimate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:marine_climate rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :ocean ],
+        :climate_classification .
+
+",Marine climate is a type of climate classification characterized by being in a realm that includes at least some portion of an ocean.,2,True
+sweet,http://sweetontology.net/realmClimateZone/RainShadow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rain_shadow rdfs:subClassOf :climate_zone_type .
+
+",rain shadow is a type of climate zone type.,1,False
+sweet,http://sweetontology.net/realmClimateZone/SubtropicalClimateZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subtropical_climate_zone rdfs:subClassOf :climate_zone_type .
+
+",subtropical climate zone is a type of climate zone type.,1,False
+sweet,http://sweetontology.net/realmClimateZone/TemperateClimate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temperate_climate rdfs:subClassOf :climate_classification .
+
+",temperate climate is a type of climate classification.,1,False
+sweet,http://sweetontology.net/realmClimateZone/TropicalClimate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tropical_climate rdfs:subClassOf :climate_classification .
+
+",tropical climate is a type of climate classification.,1,False
+sweet,http://sweetontology.net/realmClimateZone/TropicalClimateZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tropical_climate_zone rdfs:subClassOf :climate_zone_type .
+
+",tropical climate zone is a type of climate zone type.,1,False
+sweet,http://sweetontology.net/realmClimateZone/WetSummerClimate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wet_summer_climate rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :summer ;
+            owl:onProperty :has_wet_season ],
+        :climate_classification .
+
+",A wet summer climate is a classification of climate that is characterized by having a wet season in the summer.,2,True
+sweet,http://sweetontology.net/realmClimateZone/WetSummerDryWinterClimate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wet_summer_dry_winter_climate rdfs:subClassOf :dry_winter_climate,
+        :wet_summer_climate .
+
+",A wet summer dry winter climate is both a type of dry winter climate and a type of wet summer climate.,2,True
+sweet,http://sweetontology.net/realmCryo/AblationZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ablation_zone rdfs:subClassOf :glacial_region ;
+    :close_match :envo_01000914 ;
+    :definition [ :was_derived_from :envo_01000914 ] .
+
+",Ablation zone is a type of glacial region that is closely matched with ENVO 01000914 and is defined by something derived from ENVO 01000914.,3,True
+sweet,http://sweetontology.net/realmCryo/AccumulationZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:accumulation_zone rdfs:subClassOf :glacial_region ;
+    :close_match :envo_01001352 ;
+    :definition [ :was_derived_from :envo_01001352 ] .
+
+","An accumulation zone is a type of glacial region and has a close match with ENVO 01001352. Additionally, the definition of an accumulation zone is something that was derived from ENVO 01001352.",3,True
+sweet,http://sweetontology.net/realmCryo/AlpineTundra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alpine_tundra rdfs:subClassOf :tundra ;
+    :close_match :envo_01001371 ;
+    :definition [ :was_derived_from :envo_01001371 ] .
+
+",Alpine tundra is a type of tundra that closely matches ENVO 01001371. Its definition is something that was derived from ENVO 01001371.,3,True
+sweet,http://sweetontology.net/realmCryo/Calf,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_calf rdfs:subClassOf :ice ;
+    :close_match :envo_01001506 ;
+    :definition [ :was_derived_from :envo_01001506 ] .
+
+","An ice calf is a type of ice that closely matches ENVO 01001506. Additionally, an ice calf is defined as something that was derived from ENVO 01001506.",3,True
+sweet,http://sweetontology.net/realmCryo/CongelationIce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:congelation_ice rdfs:subClassOf :ice ;
+    :close_match :envo_01001512 ;
+    :definition [ :was_derived_from :envo_01001512 ] .
+
+","Congelation ice is a type of ice that closely matches ENVO 01001512, and it is defined as something that was derived from ENVO 01001512.",3,True
+sweet,http://sweetontology.net/realmCryo/DriftIce,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drift_ice rdfs:subClassOf :sea_ice ;
+    owl:disjointWith :fast_ice ;
+    :close_match :envo_01001517 ;
+    :definition [ :was_derived_from :envo_01001517 ] .
+
+",Drift ice is a type of sea ice that is disjoint with fast ice. It closely matches ENVO 01001517 and its definition is something that was derived from ENVO 01001517.,4,True
+sweet,http://sweetontology.net/realmCryo/FastIce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fast_ice rdfs:subClassOf :sea_ice ;
+    :close_match :envo_01001522 ;
+    :definition [ :was_derived_from :envo_01001522 ] .
+
+","Fast ice is a type of sea ice that closely matches ENVO 01001522, and its definition is something that was derived from ENVO 01001522.",3,True
+sweet,http://sweetontology.net/realmCryo/Floe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_ice_floe rdfs:subClassOf :sea_ice ;
+    owl:equivalentClass :ice_floe ;
+    :close_match :envo_03000066 ;
+    :definition [ :was_derived_from :envo_03000066 ] .
+
+","Sea ice floe, which is the same as ice floe, is a type of sea ice. It closely matches ENVO 03000066 and is defined as something that was derived from ENVO 03000066.",4,True
+sweet,http://sweetontology.net/realmCryo/FrazilIce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frazil_ice rdfs:subClassOf :sea_ice ;
+    :close_match :envo_03000046 ;
+    :definition [ :was_derived_from :envo_03000046 ] .
+
+",Frazil ice is a type of sea ice that closely matches ENVO 03000046. Its definition is something that was derived from ENVO 03000046.,3,True
+sweet,http://sweetontology.net/realmCryo/FrozenGround,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frozen_ground rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :frozen ;
+            owl:onProperty :has_state ],
+        :land ;
+    :close_match :envo_01001524 ;
+    :definition [ :was_derived_from :envo_01001524 ] .
+
+",Frozen ground is a type of land and it must have a state that is frozen. It closely matches ENVO 01001524 and its definition was derived from ENVO 01001524.,4,True
+sweet,http://sweetontology.net/realmCryo/GlacialRegion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacial_region rdfs:subClassOf :planetary_realm .
+
+",glacial region is a type of planetary realm.,1,False
+sweet,http://sweetontology.net/realmCryo/Glacier,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacier rdfs:subClassOf :ice ;
+    :definition [ :was_derived_from :envo_00000133 ] ;
+    :exact_match :envo_00000133 .
+
+","A glacier is a type of ice that has an exact match with ENVO 00000133, indicating that its definition was derived from ENVO 00000133.",3,True
+sweet,http://sweetontology.net/realmCryo/GlacierTerminus,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacier_terminus rdfs:subClassOf :glacial_region ;
+    owl:equivalentClass :snout ;
+    :close_match :envo_01001529 ;
+    :definition [ :was_derived_from :envo_01001529 ] .
+
+","The glacier terminus, which is the same as the snout, is a type of glacial region. It has a close match with ENVO 01001529, and its definition was derived from ENVO 01001529.",4,True
+sweet,http://sweetontology.net/realmCryo/IceBase,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_base rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",Ice base is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmCryo/IceCap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_cap rdfs:subClassOf :planetary_realm ;
+    :close_match :envo_00000145 ;
+    :definition [ :was_derived_from :envo_00000145 ] .
+
+","Ice cap is a type of planetary realm and is closely matched with ENVO 00000145. Additionally, the definition of an ice cap is something that was derived from ENVO 00000145.",3,True
+sweet,http://sweetontology.net/realmCryo/IceCore,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_core rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :inside ;
+            owl:someValuesFrom :ice ],
+        :sample_noun_ ;
+    :close_match :envo_01001530 ;
+    :definition [ :was_derived_from :envo_01001530 ] .
+
+","An ice core is a type of sample and is something that, at the very least, is found inside some ice. It closely matches ENVO 01001530 and is defined as something that was derived from ENVO 01001530.",4,True
+sweet,http://sweetontology.net/realmCryo/IceField,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_field rdfs:subClassOf :sea_ice ;
+    :close_match :envo_01001531 ;
+    :definition [ :was_derived_from :envo_01001531 ] .
+
+",An ice field is a type of sea ice that closely matches the ENVO 01001531. Its definition is something that was derived from ENVO 01001531.,3,True
+sweet,http://sweetontology.net/realmCryo/IceFloe,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_floe rdfs:subClassOf :sea_ice ;
+    :close_match :envo_03000066 ;
+    :definition [ :was_derived_from :envo_03000066 ] .
+
+",An ice floe is a type of sea ice that closely matches ENVO 03000066. Its definition is something that was derived from ENVO 03000066.,3,True
+sweet,http://sweetontology.net/realmCryo/IceSheet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_sheet rdfs:subClassOf :glacier ;
+    :close_match :envo_00000132 ;
+    :definition [ :was_derived_from :envo_00000132 ] .
+
+","An ice sheet is a type of glacier and is closely matched with envo 00000132. Furthermore, the definition of an ice sheet is something that was derived from envo 00000132.",3,True
+sweet,http://sweetontology.net/realmCryo/IceShelf,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_shelf rdfs:subClassOf :ice ;
+    :close_match :envo_00000380 ;
+    :definition [ :was_derived_from :envo_00000380 ] .
+
+",An ice shelf is a type of ice that closely matches ENVO 00000380. Its definition is something that was derived from ENVO 00000380.,3,True
+sweet,http://sweetontology.net/realmCryo/IceSnowInterface,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_snow_interface rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",The ice-snow interface is both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmCryo/IceStream,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_stream rdfs:subClassOf :ice .
+
+",ice stream is a type of ice.,1,False
+sweet,http://sweetontology.net/realmCryo/IceSurface,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_surface rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level ;
+    :close_match :envo_01001545 ;
+    :definition [ :was_derived_from :envo_01001545 ] .
+
+","The ice surface is a type of planetary boundary and also a type of planetary surface level. It closely matches ENVO 01001545, and its definition is derived from ENVO 01001545.",4,True
+sweet,http://sweetontology.net/realmCryo/Iceberg,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:iceberg rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :ocean ],
+        :land_ice ;
+    :close_match :envo_01001546 ;
+    :definition [ :was_derived_from :envo_01001546 ] .
+
+",An iceberg is a type of land ice and a type of entity that is at least partially associated with the realm of an ocean. It closely matches with ENVO 01001546 and is defined as something that was derived from ENVO 01001546.,4,True
+sweet,http://sweetontology.net/realmCryo/LandIce,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_ice rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :land ],
+        :ice ;
+    :close_match :envo_01001547 ;
+    :definition [ :was_derived_from :envo_01001547 ] .
+
+",Land ice is a type of ice and also a type of something that at least has some realm of land. It closely matches ENVO 01001547 and its definition was derived from ENVO 01001547.,4,True
+sweet,http://sweetontology.net/realmCryo/Lead,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lead rdfs:subClassOf :sea_ice ;
+    :close_match :envo_01001551 ;
+    :definition [ :was_derived_from :envo_01001551 ] .
+
+","Lead is a type of sea ice and closely matches ENVO 01001551. Moreover, its definition was derived from ENVO 01001551.",3,True
+sweet,http://sweetontology.net/realmCryo/PackIce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pack_ice rdfs:subClassOf :drift_ice ;
+    :close_match :envo_01001556 ;
+    :definition [ :was_derived_from :envo_01001556 ] .
+
+","Pack ice is a type of drift ice and it has a close match with ENVO 01001556. Additionally, the definition of pack ice is something that was derived from ENVO 01001556.",3,True
+sweet,http://sweetontology.net/realmCryo/SeaIce,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_ice rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :ocean ],
+        :ice ;
+    :close_match :envo_00002200 ;
+    :definition [ :was_derived_from :envo_00002200 ] .
+
+",Sea ice is a type of ice and is also something that at least has some realm in the ocean. It closely matches ENVO 00002200 and its definition was derived from ENVO 00002200.,4,True
+sweet,http://sweetontology.net/realmCryo/SeasonalIce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seasonal_ice rdfs:subClassOf :sea_ice ;
+    :close_match :envo_03000071 ;
+    :definition [ :was_derived_from :envo_03000071 ] .
+
+",Seasonal ice is a type of sea ice that closely matches the ENVO 03000071. Its definition is something that was derived from ENVO 03000071.,3,True
+sweet,http://sweetontology.net/realmCryo/Snout,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snout rdfs:subClassOf :glacial_region ;
+    :close_match :envo_01001529 ;
+    :definition [ :was_derived_from :envo_01001529 ] .
+
+","Snout is a type of glacial region and is closely matched with ENVO 01001529. Moreover, its definition as something that was derived from ENVO 01001529.",3,True
+sweet,http://sweetontology.net/realmCryo/TabularIceberg,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tabular_iceberg rdfs:subClassOf :iceberg ;
+    :close_match :envo_01001534 ;
+    :definition [ :was_derived_from :envo_01001534 ] .
+
+","A tabular iceberg is a type of iceberg that closely matches ENVO 01001534, and its definition is derived from ENVO 01001534.",3,True
+sweet,http://sweetontology.net/realmCryo/Tundra,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tundra rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_realm ;
+            owl:someValuesFrom :frozen_ground ],
+        :land ;
+    :close_match :envo_00000112 ;
+    :definition [ :was_derived_from :envo_00000112 ] .
+
+","Tundra is a type of land and also a type of entity that, at a minimum, encompasses a realm with some frozen ground. It closely matches ENVO 00000112 and its definition was derived from ENVO 00000112.",4,True
+sweet,http://sweetontology.net/realmGeol/Asthenosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:asthenosphere rdfs:subClassOf :upper_mantle ;
+    owl:equivalentClass :upper_mantle_flowing .
+
+",The asthenosphere is a type of upper mantle that is characterized by its flowing nature.,2,True
+sweet,http://sweetontology.net/realmGeol/Basement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basement rdfs:subClassOf :geologic_structure .
+
+",basement is a type of geologic structure.,1,False
+sweet,http://sweetontology.net/realmGeol/Batholith,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:batholith rdfs:subClassOf :plutonic_structure .
+
+",batholith is a type of plutonic structure.,1,False
+sweet,http://sweetontology.net/realmGeol/Bedrock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bedrock rdfs:subClassOf :geosphere_layer .
+
+",bedrock is a type of geosphere layer.,1,False
+sweet,http://sweetontology.net/realmGeol/BrittleDuctileTransitionZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:brittle_ductile_transition_zone rdfs:subClassOf :crust,
+        :skin_layer .
+
+",The brittle ductile transition zone is a type of crust and also a type of skin layer.,2,True
+sweet,http://sweetontology.net/realmGeol/Continental,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental rdfs:subClassOf :planetary_realm .
+
+",continental is a type of planetary realm.,1,False
+sweet,http://sweetontology.net/realmGeol/Core,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:core rdfs:subClassOf :geosphere_layer .
+
+",core is a type of geosphere layer.,1,False
+sweet,http://sweetontology.net/realmGeol/CoreMantleBoundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:core_mantle_boundary rdfs:subClassOf :geologic_boundary ;
+    owl:equivalentClass :guttenburg_discontinuity .
+
+","The core-mantle boundary, which is the same as the Guttenberg Discontinuity, is a type of geologic boundary.",2,True
+sweet,http://sweetontology.net/realmGeol/Cover,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cover rdfs:subClassOf :geologic_structure .
+
+",cover is a type of geologic structure.,1,False
+sweet,http://sweetontology.net/realmGeol/Crust,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crust rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :moho ;
+            owl:onProperty :has_lower_boundary ],
+        :geosphere_layer ;
+    owl:equivalentClass :skin_layer .
+
+","The crust is the same as the skin layer and is a type of geosphere layer. Additionally, it is a type of layer that only has the lower boundary known as Moho.",3,True
+sweet,http://sweetontology.net/realmGeol/CrustMantleBoundary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crust_mantle_boundary rdfs:subClassOf :geologic_boundary ;
+    owl:equivalentClass :moho .
+
+","The crust-mantle boundary, also known as the Moho, is a type of geologic boundary.",2,True
+sweet,http://sweetontology.net/realmGeol/DLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:d_layer rdfs:subClassOf :mantle .
+
+",d layer is a type of mantle.,1,False
+sweet,http://sweetontology.net/realmGeol/Dike,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dike rdfs:subClassOf :plutonic_structure .
+
+",dike is a type of plutonic structure.,1,False
+sweet,http://sweetontology.net/realmGeol/Fabric,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fabric rdfs:subClassOf :configuration,
+        :spatial_configuration .
+
+",Fabric is both a type of configuration and a type of spatial configuration.,2,True
+sweet,http://sweetontology.net/realmGeol/GeologicBoundary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geologic_boundary rdfs:subClassOf :planetary_boundary,
+        :planetary_surface_level .
+
+",A geologic boundary serves as both a type of planetary boundary and a type of planetary surface level.,2,True
+sweet,http://sweetontology.net/realmGeol/GeologicFeature,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geologic_feature rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :geosphere ;
+            owl:onProperty :has_realm ],
+        owl:Thing ;
+    :alt_label ""Geologic Feature"",
+        ""Geological Feature"" ;
+    :definition ""A geologic feature is a conceptual feature a that is hypothesized to exist coherently in the Earth that results from geological processes""@en ;
+    :example ""Individuals: Lake Eyre Basin, Sarmatian Craton, Victoria Point Sandbar, Mount Erebus Volcano. Subclasses: Basin, Craton, Shield, Province, Sub-Province.""@en ;
+    :scope_note ""Geologic Features include sedimentary basins, stratigraphic units, non-stratigraphic (lithodemic) units, stratigraphic event features, provinces, tectonic and structural features, georesource accumulations, and geologically significant sites, among others""@en .
+
+","A geologic feature is a type of thing and something that exclusively belongs to the geosphere realm. It is alternatively labeled as both a Geologic Feature and a Geological Feature. The definition of a geologic feature is a conceptual entity hypothesized to coherently exist on Earth as a result of geological processes. Examples of individual geologic features include the Lake Eyre Basin, Sarmatian Craton, Victoria Point Sandbar, and Mount Erebus Volcano, with subclasses comprising Basins, Cratons, Shields, Provinces, and Sub-Provinces. The scope of geologic features encompasses sedimentary basins, stratigraphic units, non-stratigraphic (lithodemic) units, stratigraphic event features, provinces, tectonic and structural features, georesource accumulations, and geologically significant sites, among others.",7,True
+sweet,http://sweetontology.net/realmGeol/GeologicProvince,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geologic_province rdfs:subClassOf :geologic_feature .
+
+",geologic province is a type of geologic feature.,1,False
+sweet,http://sweetontology.net/realmGeol/GeologicStructure,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geologic_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :geosphere ;
+            owl:onProperty :has_realm ],
+        :geosphere,
+        :solid_earth .
+
+","A geologic structure is a type of geosphere, solid earth, and specifically something that only belongs to the realm of the geosphere.",3,True
+sweet,http://sweetontology.net/realmGeol/GeosphereLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geosphere_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :geosphere ;
+            owl:onProperty :has_realm ],
+        :global_planetary_layer,
+        :planetary_layer,
+        :subsurface .
+
+","The geosphere layer is a type of global planetary layer, planetary layer, and subsurface. Furthermore, it is a type of entity that exclusively belongs to the realm of the geosphere.",4,True
+sweet,http://sweetontology.net/realmGeol/GiantDikeSwarm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:giant_dike_swarm rdfs:subClassOf :dike .
+
+",giant dike swarm is a type of dike.,1,False
+sweet,http://sweetontology.net/realmGeol/GuttenburgDiscontinuity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:guttenburg_discontinuity rdfs:subClassOf :geologic_boundary .
+
+",guttenburg discontinuity is a type of geologic boundary.,1,False
+sweet,http://sweetontology.net/realmGeol/InnerCore,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inner_core rdfs:subClassOf :mantle ;
+    owl:disjointWith :outer_core .
+
+",The inner core is a type of mantle and is disjoint from the outer core.,2,True
+sweet,http://sweetontology.net/realmGeol/Laccolith,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:laccolith rdfs:subClassOf :plutonic_structure .
+
+",laccolith is a type of plutonic structure.,1,False
+sweet,http://sweetontology.net/realmGeol/LehmannDiscontinuity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lehmann_discontinuity rdfs:subClassOf :geologic_boundary .
+
+",lehmann discontinuity is a type of geologic boundary.,1,False
+sweet,http://sweetontology.net/realmGeol/Lithosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lithosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rock ;
+            owl:onProperty :contains_material ],
+        :geosphere_layer .
+
+",The lithosphere is a type of geosphere layer and is characterized as something that only contains material rock.,2,True
+sweet,http://sweetontology.net/realmGeol/Lopolith,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lopolith rdfs:subClassOf :plutonic_structure .
+
+",lopolith is a type of plutonic structure.,1,False
+sweet,http://sweetontology.net/realmGeol/LowerMantle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lower_mantle rdfs:subClassOf :mantle .
+
+",lower mantle is a type of mantle.,1,False
+sweet,http://sweetontology.net/realmGeol/Mantle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mantle rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :moho ;
+            owl:onProperty :has_upper_boundary ],
+        :geosphere_layer .
+
+",The mantle is a type of geosphere layer and is a type of something that only has an upper boundary known as the Moho.,2,True
+sweet,http://sweetontology.net/realmGeol/Mesosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesosphere rdfs:subClassOf :upper_mantle ;
+    owl:equivalentClass :upper_mantle_rigid .
+
+",The mesosphere is the same as the rigid upper mantle and is a type of upper mantle.,2,True
+sweet,http://sweetontology.net/realmGeol/Moho,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:moho rdfs:subClassOf :geologic_boundary ;
+    owl:equivalentClass :mohorovicic_discontinuity .
+
+","Moho, also known as the Mohorovicic discontinuity, is a type of geologic boundary.",2,True
+sweet,http://sweetontology.net/realmGeol/Mohorovi_i_Discontinuity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mohorovicic_discontinuity rdfs:subClassOf :geologic_boundary .
+
+",mohorovicic discontinuity is a type of geologic boundary.,1,False
+sweet,http://sweetontology.net/realmGeol/OuterCore,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outer_core rdfs:subClassOf :mantle .
+
+",outer core is a type of mantle.,1,False
+sweet,http://sweetontology.net/realmGeol/PlutonicStructure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plutonic_structure rdfs:subClassOf :geologic_structure .
+
+",plutonic structure is a type of geologic structure.,1,False
+sweet,http://sweetontology.net/realmGeol/SeismicZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seismic_zone rdfs:subClassOf :geologic_feature .
+
+",seismic zone is a type of geologic feature.,1,False
+sweet,http://sweetontology.net/realmGeol/Sill,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sill rdfs:subClassOf :plutonic_structure .
+
+",sill is a type of plutonic structure.,1,False
+sweet,http://sweetontology.net/realmGeol/SkinLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_layer rdfs:subClassOf :geosphere_layer .
+
+",skin layer is a type of geosphere layer.,1,False
+sweet,http://sweetontology.net/realmGeol/SolidEarth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solid_earth rdfs:subClassOf :planetary_realm .
+
+",solid earth is a type of planetary realm.,1,False
+sweet,http://sweetontology.net/realmGeol/Subsurface,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subsurface rdfs:subClassOf :planetary_realm .
+
+",subsurface is a type of planetary realm.,1,False
+sweet,http://sweetontology.net/realmGeol/TransitionalCrust,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transitional_crust rdfs:subClassOf :crust,
+        :skin_layer .
+
+",Transitional crust is a type of crust and also a type of skin layer.,2,True
+sweet,http://sweetontology.net/realmGeol/TransitionalLithosphere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transitional_lithosphere rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_planetary_structure ;
+            owl:someValuesFrom :transitional_crust ],
+        :geosphere_layer .
+
+","Transitional lithosphere is a type of geosphere layer and is also classified as something that at least has a planetary structure, including some transitional crust.",2,True
+sweet,http://sweetontology.net/realmGeol/UpperMantle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upper_mantle rdfs:subClassOf :mantle .
+
+",upper mantle is a type of mantle.,1,False
+sweet,http://sweetontology.net/realmGeol/UpperMantleFlowing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upper_mantle_flowing rdfs:subClassOf :upper_mantle .
+
+",upper mantle flowing is a type of upper mantle.,1,False
+sweet,http://sweetontology.net/realmGeol/UpperMantleRigid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upper_mantle_rigid rdfs:subClassOf :upper_mantle .
+
+",upper mantle rigid is a type of upper mantle.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/BackArcBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:back_arc_basin rdfs:subClassOf :basin .
+
+",back arc basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/Basin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basin rdfs:subClassOf :depression,
+        :geologic_feature .
+
+",A basin is a type of geologic feature and also a type of depression.,2,True
+sweet,http://sweetontology.net/realmGeolBasin/FlyschBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flysch_basin rdfs:subClassOf :basin .
+
+",flysch basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/ForeArcBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fore_arc_basin rdfs:subClassOf :basin .
+
+",fore arc basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/ForelandBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foreland_basin rdfs:subClassOf :basin .
+
+",foreland basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/IntraArcBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intra_arc_basin rdfs:subClassOf :basin .
+
+",intra arc basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/IntracratonicBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intracratonic_basin rdfs:subClassOf :basin .
+
+",intracratonic basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/PeripheralForelandBasin,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peripheral_foreland_basin rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :molasse ;
+            owl:onProperty :has_substance ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :flysch_basin ;
+            owl:onProperty :has_planetary_structure ],
+        :basin .
+
+",A peripheral foreland basin is a type of basin characterized by having only molasse substance and a planetary structure known as a flysch basin.,3,True
+sweet,http://sweetontology.net/realmGeolBasin/RetroarcForelandBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:retroarc_foreland_basin rdfs:subClassOf :basin .
+
+",retroarc foreland basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/SuccessorBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:successor_basin rdfs:subClassOf :basin .
+
+",successor basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/TranspressionalBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transpressional_basin rdfs:subClassOf :basin .
+
+",transpressional basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolBasin/TranstensionalBasin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transtensional_basin rdfs:subClassOf :basin .
+
+",transtensional basin is a type of basin.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/ArmoredRelictInclusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:armored_relict_inclusion rdfs:subClassOf :inclusion .
+
+",armored relict inclusion is a type of inclusion.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/ArmouredRelictCrystal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:armoured_relict_crystal rdfs:subClassOf :particulate_constituent .
+
+",armoured relict crystal is a type of particulate constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Chadacryst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chadacryst rdfs:subClassOf :particulate_constituent .
+
+",chadacryst is a type of particulate constituent.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/ClastSupportingOrthomatrix,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clast_supporting_orthomatrix rdfs:subClassOf :orthomatrix .
+
+",clast supporting orthomatrix is a type of orthomatrix.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Clot,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clot rdfs:subClassOf :structural_configuration .
+
+",clot is a type of structural configuration.,1,False
+sweet,http://sweetontology.net/realmGeolConstituent/Corona,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:corona rdfs:subClassOf :structural_configuration .
+
+",corona is a type of structural configuration.,1,False

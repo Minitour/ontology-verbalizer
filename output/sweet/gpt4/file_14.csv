@@ -1,0 +1,3098 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/PlowWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plow_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :thunderstorm ;
+            owl:onProperty :has_phenomena ],
+        :mesoscale_wind .
+
+",Plow wind is a type of mesoscale wind and is a phenomenon that only occurs during thunderstorms.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/SeaBreeze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_breeze rdfs:subClassOf :onshore_wind .
+
+",sea breeze is a type of onshore wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Squall,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:squall rdfs:subClassOf :mountain_wind .
+
+",squall is a type of mountain wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/ThunderstormOutflow,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thunderstorm_outflow rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :thunderstorm ;
+            owl:onProperty :has_phenomena ],
+        :mesoscale_wind .
+
+",Thunderstorm outflow is a type of mesoscale wind and is a phenomenon that is exclusively associated with thunderstorms.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/UpslopeWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upslope_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :upslope ;
+            owl:onProperty :has_direction ],
+        :mountain_wind .
+
+",Upslope wind is a type of mountain wind that necessarily has a direction going upslope.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/ValleyWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:valley_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :valley ;
+            owl:onProperty :has_realm ],
+        :mesoscale_wind .
+
+",Valley wind is a type of mesoscale wind and is specific to the realm of valleys.,2,True
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/YellowWind,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:yellow_wind rdfs:subClassOf :desert_wind .
+
+",yellow wind is a type of desert wind.,1,False
+sweet,http://sweetontology.net/phenAtmoWindMesoscale/Zephyr,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zephyr rdfs:subClassOf :mesoscale_wind .
+
+",zephyr is a type of mesoscale wind.,1,False
+sweet,http://sweetontology.net/phenBiol/Assimilation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:assimilation rdfs:subClassOf :biological_phenomena .
+
+",assimilation is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/BiologicalActivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biological_activity rdfs:subClassOf :biological_phenomena .
+
+",biological activity is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/BiologicalPhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biological_phenomena rdfs:subClassOf :phenomena .
+
+",biological phenomena is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Birth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:birth rdfs:subClassOf :vital_activity .
+
+",birth is a type of vital activity.,1,False
+sweet,http://sweetontology.net/phenBiol/BirthDefect,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:birth_defect rdfs:subClassOf :disease .
+
+",birth defect is a type of disease.,1,False
+sweet,http://sweetontology.net/phenBiol/Breathing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:breathing rdfs:subClassOf :biological_phenomena .
+
+",breathing is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Broncitis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:broncitis rdfs:subClassOf :disease .
+
+",broncitis is a type of disease.,1,False
+sweet,http://sweetontology.net/phenBiol/Cancer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cancer rdfs:subClassOf :disease .
+
+",cancer is a type of disease.,1,False
+sweet,http://sweetontology.net/phenBiol/CardiovascularDisease,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cardiovascular_disease rdfs:subClassOf :disease .
+
+",cardiovascular disease is a type of disease.,1,False
+sweet,http://sweetontology.net/phenBiol/Chemosynthesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chemosynthesis rdfs:subClassOf :biological_phenomena .
+
+",chemosynthesis is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Consumption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:consumption rdfs:subClassOf :biological_phenomena .
+
+",consumption is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Death,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:death rdfs:subClassOf :vital_activity .
+
+",death is a type of vital activity.,1,False
+sweet,http://sweetontology.net/phenBiol/Decomposition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:decomposition rdfs:subClassOf :biological_phenomena .
+
+",decomposition is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Denitrification,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:denitrification rdfs:subClassOf :biological_phenomena .
+
+",denitrification is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Disease,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:disease rdfs:subClassOf :biological_phenomena .
+
+",disease is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Epidemic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:epidemic rdfs:subClassOf :disease .
+
+",epidemic is a type of disease.,1,False
+sweet,http://sweetontology.net/phenBiol/Excretion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:excretion rdfs:subClassOf :biological_phenomena .
+
+",excretion is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Exposure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exposure rdfs:subClassOf :biological_phenomena .
+
+",exposure is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Feeding,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:feeding rdfs:subClassOf :biological_phenomena .
+
+",feeding is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Fertilization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fertilization rdfs:subClassOf :biological_phenomena .
+
+",fertilization is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Foraging,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foraging rdfs:subClassOf :biological_phenomena .
+
+",foraging is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Grazing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:grazing rdfs:subClassOf :biological_phenomena .
+
+",grazing is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Health,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:health rdfs:subClassOf :biological_phenomena .
+
+",health is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Hearing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hearing rdfs:subClassOf :sense .
+
+",hearing is a type of sense.,1,False
+sweet,http://sweetontology.net/phenBiol/Inhalation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inhalation rdfs:subClassOf :biological_phenomena .
+
+",inhalation is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Maintenance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maintenance rdfs:subClassOf :biological_phenomena .
+
+",maintenance is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/MetabolicPathway,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metabolic_pathway rdfs:subClassOf :biological_phenomena,
+        :path .
+
+",A metabolic pathway is both a type of biological phenomena and a type of path.,2,True
+sweet,http://sweetontology.net/phenBiol/Nursing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nursing rdfs:subClassOf :biological_phenomena .
+
+",nursing is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/OcularMelanoma,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocular_melanoma rdfs:subClassOf :cancer .
+
+",ocular melanoma is a type of cancer.,1,False
+sweet,http://sweetontology.net/phenBiol/Photosynthesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photosynthesis rdfs:subClassOf :biological_phenomena .
+
+",photosynthesis is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/PlantStress,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plant_stress rdfs:subClassOf :biological_phenomena .
+
+",plant stress is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Pollination,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pollination rdfs:subClassOf :biological_phenomena .
+
+",pollination is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Respiration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:respiration rdfs:subClassOf :biological_phenomena .
+
+",respiration is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Sense,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sense rdfs:subClassOf :biological_phenomena .
+
+",sense is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Spawning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spawning rdfs:subClassOf :biological_phenomena .
+
+",spawning is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Survival,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:survival rdfs:subClassOf :vital_activity .
+
+",survival is a type of vital activity.,1,False
+sweet,http://sweetontology.net/phenBiol/Transpiration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transpiration rdfs:subClassOf :biological_phenomena .
+
+",transpiration is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenBiol/Uptake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:uptake rdfs:subClassOf :assimilation .
+
+",uptake is a type of assimilation.,1,False
+sweet,http://sweetontology.net/phenBiol/Vision,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vision rdfs:subClassOf :sense .
+
+",vision is a type of sense.,1,False
+sweet,http://sweetontology.net/phenBiol/VitalActivity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vital_activity rdfs:subClassOf :biological_activity .
+
+",vital activity is a type of biological activity.,1,False
+sweet,http://sweetontology.net/phenBiol/Waste,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:waste rdfs:subClassOf :biological_phenomena .
+
+",waste is a type of biological phenomena.,1,False
+sweet,http://sweetontology.net/phenCryo/Accumulation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:accumulation rdfs:subClassOf :accumulation,
+        :glacial_process .
+
+",Accumulation is both a type of glacial process and a type of accumulation.,2,True
+sweet,http://sweetontology.net/phenCryo/Calving,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:calving rdfs:subClassOf :glacial_process,
+        :melting ;
+    owl:equivalentClass :ice_calving .
+
+","Calving, which is the same as ice calving, is a type of glacial process and also a type of melting.",3,True
+sweet,http://sweetontology.net/phenCryo/EnglacialProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:englacial_process rdfs:subClassOf :glacial_process ;
+    :close_match :envo_01001622 ;
+    :definition [ :was_derived_from :envo_01001622 ] .
+
+","An englacial process is a type of glacial process that is closely matched with envo 01001622. Additionally, it is defined as something that was derived from envo 01001622.",3,True
+sweet,http://sweetontology.net/phenCryo/Glacial,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacial rdfs:subClassOf :accumulation ;
+    owl:equivalentClass :glaciation ;
+    :definition [ ] .
+
+",Glacial is defined as something that pertains to the process of accumulation and is synonymous with glaciation.,3,True
+sweet,http://sweetontology.net/phenCryo/GlacialProcess,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacial_process rdfs:subClassOf :physical_process ;
+    owl:disjointWith :obsolete_periglaciation,
+        :periglacial ;
+    :close_match :envo_01001655 ;
+    :definition [ :was_derived_from :envo_01001655 ] .
+
+","Glacial process is a type of physical process that is disjoint with both periglacial and obsolete periglaciation. It has a close match with ENVO 01001655, and its definition is something that was derived from ENVO 01001655.",5,True
+sweet,http://sweetontology.net/phenCryo/Glaciation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glaciation rdfs:subClassOf :accumulation ;
+    owl:disjointWith :glacier_retreat ;
+    :close_match :envo_03000029 ;
+    :definition [ :was_derived_from :envo_03000029 ] .
+
+","Glaciation is a type of accumulation and it is closely matched with ENVO 03000029, from which its definition is derived. Additionally, glaciation is disjoint with glacier retreat.",4,True
+sweet,http://sweetontology.net/phenCryo/GlacierRetreat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:glacier_retreat rdfs:subClassOf :glacial_process ;
+    :close_match :envo_01001656 ;
+    :definition [ :was_derived_from :envo_01001656 ] .
+
+","Glacier retreat is a type of glacial process that closely matches ENVO 01001656. Additionally, the definition of glacier retreat is something that was derived from ENVO 01001656.",3,True
+sweet,http://sweetontology.net/phenCryo/IceCalving,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_calving rdfs:subClassOf :glacial_process,
+        :melting .
+
+",Ice calving is a type of glacial process and a type of melting.,2,True
+sweet,http://sweetontology.net/phenCryo/Periglacial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:periglacial rdfs:subClassOf :physical_process ;
+    :definition [ ] ;
+    :note ""Subclass relation changed from Glacial Process to Physical Process because Periglacial involves frost action not associated with glacial processes""@en .
+
+","Periglacial is a type of physical process, which is defined as something that involves frost action not associated with glacial processes. This note highlights that the subclass relation of Periglacial has been changed from Glacial Process to Physical Process.",3,True
+sweet,http://sweetontology.net/phenCryo/Proglacial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proglacial rdfs:subClassOf :glacial_process .
+
+",proglacial is a type of glacial process.,1,False
+sweet,http://sweetontology.net/phenCryo/Subglacial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subglacial rdfs:subClassOf :glacial_process .
+
+",subglacial is a type of glacial process.,1,False
+sweet,http://sweetontology.net/phenCryo/Supraglacial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supraglacial rdfs:subClassOf :glacial_process .
+
+",supraglacial is a type of glacial process.,1,False
+sweet,http://sweetontology.net/phenCycle/AnnualCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:annual_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :annual ;
+            owl:onProperty :has_frequency ],
+        :global_cycle .
+
+",An annual cycle is a type of global cycle and is characterized as something that must have an annual frequency.,2,True
+sweet,http://sweetontology.net/phenCycle/AntarcticOscillation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:antarctic_oscillation rdfs:subClassOf :earth_oscillation .
+
+",antarctic oscillation is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/ArcticOscillation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arctic_oscillation rdfs:subClassOf :earth_oscillation .
+
+",arctic oscillation is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/BodyTide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:body_tide rdfs:subClassOf :tide .
+
+",body tide is a type of tide.,1,False
+sweet,http://sweetontology.net/phenCycle/ChandlerWobble,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chandler_wobble rdfs:subClassOf :earth_oscillation .
+
+",chandler wobble is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/DiurnalCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diurnal_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :daily ;
+            owl:onProperty :has_frequency ],
+        :global_cycle .
+
+",The diurnal cycle is a type of global cycle and it is something that must have a daily frequency.,2,True
+sweet,http://sweetontology.net/phenCycle/ENSO,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enso rdfs:subClassOf :earth_oscillation ;
+    owl:equivalentClass :el_nino_southern_oscillation,
+        :southern_oscillation .
+
+","ENSO, which is the same as El Nino Southern Oscillation and also known as the Southern Oscillation, is a type of Earth oscillation.",3,True
+sweet,http://sweetontology.net/phenCycle/EarthOscillation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:earth_oscillation rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :earth ;
+            owl:onProperty :has_astronomical_body ],
+        :planetary_oscillation .
+
+","Earth oscillation is a type of planetary oscillation, which is a category of phenomena that must involve the astronomical body, Earth.",2,True
+sweet,http://sweetontology.net/phenCycle/ElNinoSouthernOscillation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:el_nino_southern_oscillation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :has_realm ],
+        :earth_oscillation .
+
+",El Nino Southern Oscillation is a type of Earth oscillation and is a phenomenon that exclusively pertains to the ocean realm.,2,True
+sweet,http://sweetontology.net/phenCycle/GlobalCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:global_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :global ;
+            owl:onProperty :has_spatial_scale ],
+        :oscillation .
+
+",The global cycle is both a type of oscillation and something that must have a spatial scale that is global.,2,True
+sweet,http://sweetontology.net/phenCycle/IceAgeCycle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_age_cycle rdfs:subClassOf :earth_oscillation .
+
+",ice age cycle is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/MaddenJulianOscillation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:madden_julian_oscillation rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :decadal ;
+            owl:onProperty :has_frequency ],
+        :earth_oscillation .
+
+",The Madden Julian Oscillation is a type of Earth oscillation that must have a decadal frequency.,2,True
+sweet,http://sweetontology.net/phenCycle/MilankovitchCycle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:milankovitch_cycle rdfs:subClassOf :earth_oscillation .
+
+",milankovitch cycle is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/NAO,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nao rdfs:subClassOf :earth_oscillation ;
+    owl:equivalentClass :north_atlantic_oscillation .
+
+","NAO, which stands for North Atlantic Oscillation, is a type of Earth oscillation.",2,True
+sweet,http://sweetontology.net/phenCycle/NorthAtlanticOscillation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:north_atlantic_oscillation rdfs:subClassOf :earth_oscillation .
+
+",north atlantic oscillation is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/PDO,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pdo rdfs:subClassOf :earth_oscillation ;
+    owl:equivalentClass :pacific_decadal_oscillation .
+
+","PDO, which is the same as the Pacific Decadal Oscillation, is a type of Earth oscillation.",2,True
+sweet,http://sweetontology.net/phenCycle/PacificDecadalOscillation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pacific_decadal_oscillation rdfs:subClassOf :earth_oscillation .
+
+",pacific decadal oscillation is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/PacificNorthAmericanPattern,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pacific_north_american_pattern rdfs:subClassOf :earth_oscillation .
+
+",pacific north american pattern is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/PlanetaryOscillation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:planetary_oscillation rdfs:subClassOf :global_cycle .
+
+",planetary oscillation is a type of global cycle.,1,False
+sweet,http://sweetontology.net/phenCycle/PolarWander,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polar_wander rdfs:subClassOf :earth_oscillation .
+
+",polar wander is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/PoleTide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pole_tide rdfs:subClassOf :tide .
+
+",pole tide is a type of tide.,1,False
+sweet,http://sweetontology.net/phenCycle/QBO,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:qbo rdfs:subClassOf :earth_oscillation ;
+    owl:equivalentClass :quasi_biennial_oscillation .
+
+","QBO, which is the same as Quasi Biennial Oscillation, is a type of Earth oscillation.",2,True
+sweet,http://sweetontology.net/phenCycle/QuasiBiennialOscillation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quasi_biennial_oscillation rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :biannual ;
+            owl:onProperty :has_frequency ],
+        :earth_oscillation .
+
+",The quasi biennial oscillation is a type of Earth oscillation and is characterized as having a biannual frequency.,2,True
+sweet,http://sweetontology.net/phenCycle/SolarCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :solar_activity ;
+            owl:onProperty :has_phenomena ],
+        :global_cycle .
+
+",The solar cycle is a type of global cycle that is exclusively characterized by solar activity phenomena.,2,True
+sweet,http://sweetontology.net/phenCycle/SouthernOscillation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:southern_oscillation rdfs:subClassOf :earth_oscillation .
+
+",southern oscillation is a type of earth oscillation.,1,False
+sweet,http://sweetontology.net/phenCycle/Tide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tide rdfs:subClassOf :planetary_oscillation .
+
+",tide is a type of planetary oscillation.,1,False
+sweet,http://sweetontology.net/phenCycleMaterial/BiogeochemicalCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biogeochemical_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ecological_phenomena ;
+            owl:onProperty :has_phenomena ],
+        :material_cycle .
+
+",A biogeochemical cycle is a type of material cycle and is exclusively associated with ecological phenomena.,2,True
+sweet,http://sweetontology.net/phenCycleMaterial/CarbonCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :carbon ;
+            owl:onProperty :has_substance ],
+        :biogeochemical_cycle .
+
+",The carbon cycle is a type of biogeochemical cycle and is a process that necessarily involves the substance carbon.,2,True
+sweet,http://sweetontology.net/phenCycleMaterial/HydrologicCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrologic_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :material_cycle ;
+    owl:equivalentClass :hydrological_cycle,
+        :water_cycle .
+
+","The hydrologic cycle, also known as the hydrological cycle or the water cycle, is a type of material cycle that necessarily involves the substance water.",4,True
+sweet,http://sweetontology.net/phenCycleMaterial/HydrologicalCycle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrological_cycle rdfs:subClassOf :material_cycle .
+
+",hydrological cycle is a type of material cycle.,1,False
+sweet,http://sweetontology.net/phenCycleMaterial/MaterialCycle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:material_cycle rdfs:subClassOf :circuit,
+        :cycle .
+
+",A material cycle is both a type of circuit and a type of cycle.,2,True
+sweet,http://sweetontology.net/phenCycleMaterial/NitrogenCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrogen_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :nitrogen ;
+            owl:onProperty :has_substance ],
+        :biogeochemical_cycle .
+
+","The nitrogen cycle is a type of biogeochemical cycle, which is a process that must involve the substance nitrogen.",2,True
+sweet,http://sweetontology.net/phenCycleMaterial/NutrientCycling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nutrient_cycling rdfs:subClassOf :biogeochemical_cycle,
+        :recycling .
+
+",Nutrient cycling is both a type of biogeochemical cycle and a form of recycling.,2,True
+sweet,http://sweetontology.net/phenCycleMaterial/OxygenCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oxygen_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :oxygen ;
+            owl:onProperty :has_substance ],
+        :biogeochemical_cycle .
+
+",The oxygen cycle is a type of biogeochemical cycle and is a process that necessarily involves the substance oxygen.,2,True
+sweet,http://sweetontology.net/phenCycleMaterial/PhosphorusCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phosphorus_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :phosphorus ;
+            owl:onProperty :has_substance ],
+        :biogeochemical_cycle .
+
+",The phosphorus cycle is a type of biogeochemical cycle and is a process that necessarily involves the substance phosphorus.,2,True
+sweet,http://sweetontology.net/phenCycleMaterial/SulfurCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sulfur_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :sulfur ;
+            owl:onProperty :has_substance ],
+        :biogeochemical_cycle .
+
+",The sulfur cycle is a type of biogeochemical cycle and is a process that necessarily involves the substance sulfur.,2,True
+sweet,http://sweetontology.net/phenCycleMaterial/WaterCycle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_cycle rdfs:subClassOf :material_cycle .
+
+",water cycle is a type of material cycle.,1,False
+sweet,http://sweetontology.net/phenEcology/Adaptation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adaptation rdfs:subClassOf :ecological_dynamics .
+
+",adaptation is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Bioaccumulation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bioaccumulation rdfs:subClassOf :ecological_dynamics .
+
+",bioaccumulation is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Bioconcentration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bioconcentration rdfs:subClassOf :ecological_dynamics .
+
+",bioconcentration is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Biodiversity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biodiversity rdfs:subClassOf :ecological_dynamics .
+
+",biodiversity is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Climax,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:climax rdfs:subClassOf :ecological_dynamics .
+
+",climax is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/CommunityStructure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:community_structure rdfs:subClassOf :ecological_phenomena .
+
+",community structure is a type of ecological phenomena.,1,False
+sweet,http://sweetontology.net/phenEcology/Competition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:competition rdfs:subClassOf :ecological_dynamics .
+
+",competition is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/DiurnalMovement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diurnal_movement rdfs:subClassOf :ecological_phenomena .
+
+",diurnal movement is a type of ecological phenomena.,1,False
+sweet,http://sweetontology.net/phenEcology/Diversity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diversity rdfs:subClassOf :ecological_dynamics .
+
+",diversity is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Dominance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dominance rdfs:subClassOf :ecological_dynamics .
+
+",dominance is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/EcologicalDynamics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ecological_dynamics rdfs:subClassOf :ecological_phenomena .
+
+",ecological dynamics is a type of ecological phenomena.,1,False
+sweet,http://sweetontology.net/phenEcology/EcologicalPhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ecological_phenomena rdfs:subClassOf :phenomena .
+
+",ecological phenomena is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phenEcology/EcosystemHealth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ecosystem_health rdfs:subClassOf :ecological_dynamics .
+
+",ecosystem health is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/EcosystemService,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ecosystem_service rdfs:subClassOf :ecological_dynamics .
+
+",ecosystem service is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/EndangeredSpecies,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:endangered_species rdfs:subClassOf :ecological_dynamics .
+
+",endangered species is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Evolution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:evolution rdfs:subClassOf :ecological_dynamics .
+
+",evolution is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/FoodChain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:food_chain rdfs:subClassOf :ecological_dynamics .
+
+",food chain is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/FoodWebDynamics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:food_web_dynamics rdfs:subClassOf :ecological_dynamics .
+
+",food web dynamics is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Herbivory,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:herbivory rdfs:subClassOf :predation .
+
+",herbivory is a type of predation.,1,False
+sweet,http://sweetontology.net/phenEcology/Migration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:migration rdfs:subClassOf :ecological_dynamics .
+
+",migration is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Mutation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mutation rdfs:subClassOf :ecological_dynamics .
+
+",mutation is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Mutualism,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mutualism rdfs:subClassOf :ecological_dynamics .
+
+",mutualism is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/NaturalSelection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:natural_selection rdfs:subClassOf :ecological_dynamics .
+
+",natural selection is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Overpopulation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overpopulation rdfs:subClassOf :ecological_dynamics .
+
+",overpopulation is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Parasitism,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parasitism rdfs:subClassOf :ecological_dynamics .
+
+",parasitism is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/PopulationDynamics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:population_dynamics rdfs:subClassOf :ecological_dynamics .
+
+",population dynamics is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Postbreeding,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:postbreeding rdfs:subClassOf :ecological_phenomena .
+
+",postbreeding is a type of ecological phenomena.,1,False
+sweet,http://sweetontology.net/phenEcology/Predation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:predation rdfs:subClassOf :ecological_dynamics .
+
+",predation is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/PrimaryProduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:primary_production rdfs:subClassOf :ecological_phenomena .
+
+",primary production is a type of ecological phenomena.,1,False
+sweet,http://sweetontology.net/phenEcology/Scavenging,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scavenging rdfs:subClassOf :ecological_phenomena .
+
+",scavenging is a type of ecological phenomena.,1,False
+sweet,http://sweetontology.net/phenEcology/SecondaryProduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:secondary_production rdfs:subClassOf :ecological_phenomena .
+
+",secondary production is a type of ecological phenomena.,1,False
+sweet,http://sweetontology.net/phenEcology/Selection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:selection rdfs:subClassOf :ecological_dynamics .
+
+",selection is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Speciation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:speciation rdfs:subClassOf :ecological_dynamics .
+
+",speciation is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/SpeciesInteraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:species_interaction rdfs:subClassOf :ecological_dynamics .
+
+",species interaction is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/SpeciesRecruitment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:species_recruitment rdfs:subClassOf :ecological_dynamics .
+
+",species recruitment is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Succession,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:succession rdfs:subClassOf :ecological_dynamics .
+
+",succession is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/Symbiosis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:symbiosis rdfs:subClassOf :ecological_dynamics .
+
+",symbiosis is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenEcology/TrophicDynamics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trophic_dynamics rdfs:subClassOf :ecological_dynamics .
+
+",trophic dynamics is a type of ecological dynamics.,1,False
+sweet,http://sweetontology.net/phenElecMag/CurrentSheet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:current_sheet rdfs:subClassOf :electric_field .
+
+",current sheet is a type of electric field.,1,False
+sweet,http://sweetontology.net/phenElecMag/ElectricDipole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electric_dipole rdfs:subClassOf :dipole,
+        :electric_field .
+
+",An electric dipole is both a type of electric field and a type of dipole.,2,True
+sweet,http://sweetontology.net/phenElecMag/ElectricField,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electric_field rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_spatial_distribution ;
+            owl:someValuesFrom :charge ],
+        :vector_field .
+
+",An electric field is a type of vector field and is something that at least has a spatial distribution of some charge.,2,True
+sweet,http://sweetontology.net/phenElecMag/GeomagneticField,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geomagnetic_field rdfs:subClassOf :magnetic_field .
+
+",geomagnetic field is a type of magnetic field.,1,False
+sweet,http://sweetontology.net/phenElecMag/Gyroresonance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gyroresonance rdfs:subClassOf :magnetic_field_phenomena .
+
+",gyroresonance is a type of magnetic field phenomena.,1,False
+sweet,http://sweetontology.net/phenElecMag/MagneticDipole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_dipole rdfs:subClassOf :dipole,
+        :magnetic_field .
+
+",A magnetic dipole is both a type of magnetic field and a type of dipole.,2,True
+sweet,http://sweetontology.net/phenElecMag/MagneticField,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_field rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_spatial_distribution ;
+            owl:someValuesFrom :magnetic_moment ],
+        :vector_field .
+
+",A magnetic field is a type of vector field and it is something that at least has a spatial distribution of some magnetic moment.,2,True
+sweet,http://sweetontology.net/phenElecMag/MagneticFieldPhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_field_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :magnetic_field ;
+            owl:onProperty :has_field ],
+        :phenomena .
+
+",Magnetic field phenomena is a type of phenomena that is exclusively characterized by having only a magnetic field.,2,True
+sweet,http://sweetontology.net/phenElecMag/MagneticMirror,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_mirror rdfs:subClassOf :magnetic_field_phenomena .
+
+",magnetic mirror is a type of magnetic field phenomena.,1,False
+sweet,http://sweetontology.net/phenEnergy/ActiveSolarEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:active_solar_energy rdfs:subClassOf :solar_energy,
+        :thermal_collection .
+
+",Active solar energy is a type of solar energy and is also a method of thermal collection.,2,True
+sweet,http://sweetontology.net/phenEnergy/BinaryCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binary_cycle rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heat_exchanger ;
+            owl:onProperty :has_energy_source ],
+        :geothermal_power_process .
+
+",Binary cycle is a type of geothermal power process and a type of system that only utilizes a heat exchanger as its energy source.,2,True
+sweet,http://sweetontology.net/phenEnergy/Biopower,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biopower rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_energy_product ;
+            owl:someValuesFrom :electricity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :biomass ;
+            owl:onProperty :has_energy_source ],
+        :renewable_energy_source .
+
+",Biopower is a type of renewable energy source that produces electricity and exclusively uses biomass as its energy source.,3,True
+sweet,http://sweetontology.net/phenEnergy/ConcentratingSolarPower,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:concentrating_solar_power rdfs:subClassOf :solar_energy .
+
+",concentrating solar power is a type of solar energy.,1,False
+sweet,http://sweetontology.net/phenEnergy/DirectUse,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:direct_use rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :heat ;
+            owl:onProperty :has_energy_product ],
+        :physical_process ;
+    owl:disjointWith :energy_conversion_process .
+
+","Direct use is a type of physical process and is also a type of something that only has the energy product heat. Furthermore, direct use is disjoint with the energy conversion process.",3,True
+sweet,http://sweetontology.net/phenEnergy/DrySteam,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dry_steam rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :steam ;
+            owl:onProperty :has_energy_source ],
+        :geothermal_power_process .
+
+",Dry steam is a type of geothermal power process and is characterized as something that only has steam as its energy source.,2,True
+sweet,http://sweetontology.net/phenEnergy/Electricity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electricity rdfs:subClassOf :energy_form ;
+    owl:equivalentClass :power_source .
+
+",Electricity is a type of energy form and is synonymous with a power source.,2,True
+sweet,http://sweetontology.net/phenEnergy/ElectricityProduction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electricity_production rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :electricity ;
+            owl:onProperty :has_energy_product ],
+        :energy_conversion_process .
+
+","Electricity production is a type of energy conversion process that exclusively results in the energy product, electricity.",2,True
+sweet,http://sweetontology.net/phenEnergy/EnergyCollection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_collection rdfs:subClassOf :energy_form .
+
+",energy collection is a type of energy form.,1,False
+sweet,http://sweetontology.net/phenEnergy/EnergyConservation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_conservation rdfs:subClassOf :conservation .
+
+",energy conservation is a type of conservation.,1,False
+sweet,http://sweetontology.net/phenEnergy/EnergyConversionProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_conversion_process rdfs:subClassOf :physical_process .
+
+",energy conversion process is a type of physical process.,1,False
+sweet,http://sweetontology.net/phenEnergy/EnergyForm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_form rdfs:subClassOf :energy .
+
+",energy form is a type of energy.,1,False
+sweet,http://sweetontology.net/phenEnergy/EnergySource,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:energy_source rdfs:subClassOf :energy .
+
+",energy source is a type of energy.,1,False
+sweet,http://sweetontology.net/phenEnergy/FlashSteam,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flash_steam rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :liquid_water ;
+            owl:onProperty :has_energy_source ],
+        :geothermal_power_process .
+
+",Flash steam is a type of geothermal power process that exclusively uses liquid water as its energy source.,2,True
+sweet,http://sweetontology.net/phenEnergy/Gasification,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gasification rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :fuel ;
+            owl:onProperty :has_energy_product ],
+        :energy_conversion_process .
+
+",Gasification is a type of energy conversion process that uniquely results in an energy product fuel.,2,True
+sweet,http://sweetontology.net/phenEnergy/Geothermal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geothermal rdfs:subClassOf :renewable_energy_source .
+
+",geothermal is a type of renewable energy source.,1,False
+sweet,http://sweetontology.net/phenEnergy/GeothermalPowerProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geothermal_power_process rdfs:subClassOf :energy_conversion_process,
+        :renewable_energy_source .
+
+",The geothermal power process is a type of energy conversion process and is also considered a type of renewable energy source.,2,True
+sweet,http://sweetontology.net/phenEnergy/PassiveSolarEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:passive_solar_energy rdfs:subClassOf :solar_energy .
+
+",passive solar energy is a type of solar energy.,1,False
+sweet,http://sweetontology.net/phenEnergy/Photovoltaics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photovoltaics rdfs:subClassOf :solar_power .
+
+",photovoltaics is a type of solar power.,1,False
+sweet,http://sweetontology.net/phenEnergy/PowerSource,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:power_source rdfs:subClassOf :energy_form .
+
+",power source is a type of energy form.,1,False
+sweet,http://sweetontology.net/phenEnergy/RenewableEnergySource,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:renewable_energy_source rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sustainability ;
+            owl:onProperty :has_role ],
+        :energy_source .
+
+",A renewable energy source is a type of energy source and it is a type of something that only has the role of sustainability.,2,True
+sweet,http://sweetontology.net/phenEnergy/SolarEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_energy rdfs:subClassOf :renewable_energy_source .
+
+",solar energy is a type of renewable energy source.,1,False
+sweet,http://sweetontology.net/phenEnergy/SolarPower,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_power rdfs:subClassOf :electricity,
+        :power_source,
+        :solar_energy .
+
+","Solar power is a type of electricity, power source, and solar energy.",3,True
+sweet,http://sweetontology.net/phenEnergy/SolarThermalPower,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_thermal_power rdfs:subClassOf :solar_power,
+        :thermal_collection .
+
+",Solar thermal power is a type of solar power and also a type of thermal collection.,2,True
+sweet,http://sweetontology.net/phenEnergy/ThermalCollection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thermal_collection rdfs:subClassOf :energy_collection .
+
+",thermal collection is a type of energy collection.,1,False
+sweet,http://sweetontology.net/phenEnergy/WindEnergy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wind_energy rdfs:subClassOf :electricity,
+        :power_source,
+        :renewable_energy_source .
+
+","Wind energy is a type of electricity, a power source, and a renewable energy source.",3,True
+sweet,http://sweetontology.net/phenEnvirImpact/AirPollution,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_pollution rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_impact_on ;
+            owl:someValuesFrom :atmosphere ],
+        :pollution .
+
+",Air pollution is a type of pollution and something that has at least some impact on the atmosphere.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/AirQuality,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:air_quality rdfs:subClassOf :air_pollution .
+
+",air quality is a type of air pollution.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/AlgalBloom,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:algal_bloom rdfs:subClassOf :ocean_environmental_impact .
+
+",algal bloom is a type of ocean environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Aridification,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aridification rdfs:subClassOf :land_environmental_impact .
+
+",aridification is a type of land environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Contamination,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:contamination rdfs:subClassOf :environmental_impact .
+
+",contamination is a type of environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/CoralBleaching,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coral_bleaching rdfs:subClassOf :ocean_environmental_impact .
+
+",coral bleaching is a type of ocean environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/DeadZone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dead_zone rdfs:subClassOf :ocean_environmental_impact .
+
+",dead zone is a type of ocean environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Deforestation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deforestation rdfs:subClassOf :land_environmental_impact .
+
+",deforestation is a type of land environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Desertification,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:desertification rdfs:subClassOf :land_environmental_impact .
+
+",desertification is a type of land environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/EnvironmentalImpact,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environmental_impact rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :hazard ;
+            owl:onProperty :has_impact ],
+        :phenomena .
+
+",Environmental impact is a type of phenomena and is also a type of something that must have an impact hazard.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/Eutrophication,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eutrophication rdfs:subClassOf :ocean_environmental_impact .
+
+",eutrophication is a type of ocean environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Extinction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extinction rdfs:subClassOf :environmental_impact ;
+    owl:equivalentClass :species_extinction .
+
+","Extinction, which is a type of environmental impact, is synonymous with species extinction.",2,True
+sweet,http://sweetontology.net/phenEnvirImpact/HabitatConversion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:habitat_conversion rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_impact_on ;
+            owl:someValuesFrom :habitat ],
+        :environmental_impact .
+
+",Habitat conversion is a type of environmental impact and is also a type of activity that at least has an impact on some habitat.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/HabitatFragmentation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:habitat_fragmentation rdfs:subClassOf :habitat_conversion .
+
+",habitat fragmentation is a type of habitat conversion.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/IndoorAirQuality,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:indoor_air_quality rdfs:subClassOf :air_quality .
+
+",indoor air quality is a type of air quality.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/InvasiveSpecies,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:invasive_species rdfs:subClassOf :environmental_impact .
+
+",invasive species is a type of environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/LandDegradation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_degradation rdfs:subClassOf :land_environmental_impact .
+
+",land degradation is a type of land environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/LandEnvironmentalImpact,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_environmental_impact rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_impact_on ;
+            owl:someValuesFrom :land ],
+        :environmental_impact .
+
+",Land environmental impact is a type of environmental impact and is also a type of something that at least has an impact on some land.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/MassExtinctionEvent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mass_extinction_event rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_impact ;
+            owl:someValuesFrom :extinction ],
+        :environmental_impact,
+        :extreme_event .
+
+","A mass extinction event is a type of extreme event, environmental impact, and something that, at the very least, has some impact on extinction.",3,True
+sweet,http://sweetontology.net/phenEnvirImpact/NoisePollution,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:noise_pollution rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_impact_on ;
+            owl:someValuesFrom :noise ],
+        :pollution .
+
+",Noise pollution is a type of pollution that impacts noise in some way.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/NutrientLoading,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nutrient_loading rdfs:subClassOf :environmental_impact .
+
+",nutrient loading is a type of environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/OceanAcidification,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_acidification rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :acid ;
+            owl:onProperty :has_state ],
+        :ocean_environmental_impact .
+
+",Ocean acidification is a type of ocean environmental impact and is also a type of phenomenon that must have an acidic state.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/OceanEnvironmentalImpact,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_environmental_impact rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_impact_on ;
+            owl:someValuesFrom :ocean ],
+        :environmental_impact .
+
+",Ocean environmental impact is a type of environmental impact that is also categorized as something that has at least some impact on an ocean.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/OilSpill,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oil_spill rdfs:subClassOf :spill .
+
+",oil spill is a type of spill.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/OzoneDepletion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ozone_depletion rdfs:subClassOf :air_pollution ;
+    owl:equivalentClass :ozone_hole .
+
+","Ozone depletion, which is the same as the ozone hole, is a type of air pollution.",2,True
+sweet,http://sweetontology.net/phenEnvirImpact/OzoneHole,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ozone_hole rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :ozone ;
+            owl:onProperty :decrease ],
+        :air_pollution .
+
+",The ozone hole is a type of air pollution and is also characterized as something that must decrease ozone.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/PhotochemicalAirPollution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photochemical_air_pollution rdfs:subClassOf :air_pollution .
+
+",photochemical air pollution is a type of air pollution.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Pollution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pollution rdfs:subClassOf :environmental_impact .
+
+",pollution is a type of environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/RangeChange,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:range_change rdfs:subClassOf :environmental_impact .
+
+",range change is a type of environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/SaltWaterIntrusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:salt_water_intrusion rdfs:subClassOf :water_pollution .
+
+",salt water intrusion is a type of water pollution.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/SeaLevelRise,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sea_level_rise rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sea_level ;
+            owl:onProperty :rise ],
+        :ocean_environmental_impact .
+
+","Sea level rise is a type of ocean environmental impact, which is something that exclusively causes the sea level to rise.",2,True
+sweet,http://sweetontology.net/phenEnvirImpact/SoilLoss,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:soil_loss rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :decrease ;
+            owl:someValuesFrom :soil ],
+        :land_environmental_impact .
+
+",Soil loss is both a type of land environmental impact and something that leads to at least some decrease in soil.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/SpeciesExtinction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:species_extinction rdfs:subClassOf :environmental_impact .
+
+",species extinction is a type of environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Spill,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spill rdfs:subClassOf :environmental_impact .
+
+",spill is a type of environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Toxicity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:toxicity rdfs:subClassOf :environmental_impact .
+
+",toxicity is a type of environmental impact.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/Upconing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:upconing rdfs:subClassOf :salt_water_intrusion .
+
+",upconing is a type of salt water intrusion.,1,False
+sweet,http://sweetontology.net/phenEnvirImpact/WaterPollution,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_pollution rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_impact_on ;
+            owl:someValuesFrom :hydrosphere ],
+        :pollution .
+
+",Water pollution is a type of pollution that impacts the hydrosphere.,2,True
+sweet,http://sweetontology.net/phenEnvirImpact/WaterQuality,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_quality rdfs:subClassOf :water_pollution .
+
+",water quality is a type of water pollution.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Anticyclone,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anticyclone rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_state ;
+            owl:someValuesFrom :high_pressure ],
+        :cell .
+
+",An anticyclone is a type of cell and also a type of something that at least has a state of high pressure.,2,True
+sweet,http://sweetontology.net/phenFluidDynamics/BoundaryLayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boundary_layer rdfs:subClassOf :region .
+
+",boundary layer is a type of region.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Capillary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:capillary rdfs:subClassOf :fluid_phenomena ;
+    owl:equivalentClass :capillary_action .
+
+","Capillary, which is the same as capillary action, is a type of fluid phenomena.",2,True
+sweet,http://sweetontology.net/phenFluidDynamics/CapillaryAction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:capillary_action rdfs:subClassOf :fluid_phenomena .
+
+",capillary action is a type of fluid phenomena.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Cell,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cell rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_process ;
+            owl:someValuesFrom :rotation ],
+        :phenomena .
+
+",Cell is a type of phenomena and is also a type of something that at least processes some rotation.,2,True
+sweet,http://sweetontology.net/phenFluidDynamics/CellCluster,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cell_cluster rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :cell ;
+            owl:onProperty :cluster_of ],
+        :cluster,
+        :family,
+        :swarm .
+
+","A cell cluster is a type of cluster, family, and swarm. Additionally, it is a type of something that pertains only to a cluster of cells.",4,True
+sweet,http://sweetontology.net/phenFluidDynamics/Circulation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:circulation rdfs:subClassOf :flow .
+
+",circulation is a type of flow.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Cyclone,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cyclone rdfs:subClassOf :low_pressure .
+
+",cyclone is a type of low pressure.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Depression,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:depression rdfs:subClassOf :depression,
+        :low_pressure .
+
+",Depression is a type of low pressure and also a type of depression.,2,True
+sweet,http://sweetontology.net/phenFluidDynamics/Eddy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eddy rdfs:subClassOf :fluid_phenomena .
+
+",eddy is a type of fluid phenomena.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Flow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flow rdfs:subClassOf :fluid_phenomena,
+        :motion .
+
+",Flow is a type of fluid phenomena and a type of motion.,2,True
+sweet,http://sweetontology.net/phenFluidDynamics/FluidPhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluid_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :fluid ;
+            owl:onProperty :has_state ],
+        :phenomena .
+
+",Fluid phenomena are a type of phenomena characterized by having a state that must be fluid.,2,True
+sweet,http://sweetontology.net/phenFluidDynamics/Gyre,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gyre rdfs:subClassOf :cell .
+
+",gyre is a type of cell.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/HighPressure,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:high_pressure rdfs:subClassOf :pressure,
+        :ridge ;
+    owl:equivalentClass :ridge .
+
+",High pressure is the same as a ridge and is a type of pressure as well as a type of ridge.,3,True
+sweet,http://sweetontology.net/phenFluidDynamics/Jet,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jet rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pressure ;
+            owl:onProperty :has_quantity ],
+        :flow .
+
+",Jet is a type of flow and is also identified as a type of something that only has the quantity pressure.,2,True
+sweet,http://sweetontology.net/phenFluidDynamics/LaminarBoundaryLayer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:laminar_boundary_layer rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :laminar_flow ;
+            owl:onProperty :has_phenomena ],
+        :boundary_layer .
+
+",The laminar boundary layer is a type of boundary layer that exclusively exhibits the phenomena of laminar flow.,2,True
+sweet,http://sweetontology.net/phenFluidDynamics/LaminarFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:laminar_flow rdfs:subClassOf :flow .
+
+",laminar flow is a type of flow.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/LaminarSublayer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:laminar_sublayer rdfs:subClassOf :laminar_boundary_layer .
+
+",laminar sublayer is a type of laminar boundary layer.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/LowPressure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:low_pressure rdfs:subClassOf :pressure .
+
+",low pressure is a type of pressure.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Overturning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overturning rdfs:subClassOf :circulation .
+
+",overturning is a type of circulation.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/PointVortex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:point_vortex rdfs:subClassOf :vortex .
+
+",point vortex is a type of vortex.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Recirculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:recirculation rdfs:subClassOf :circulation .
+
+",recirculation is a type of circulation.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Ridge,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ridge rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_state ;
+            owl:someValuesFrom :high_pressure ],
+        :pressure,
+        :ridge .
+
+","Ridge is a type of pressure and also a type of ridge itself. Additionally, ridge is a type of something that at least has a state of some high pressure.",3,True
+sweet,http://sweetontology.net/phenFluidDynamics/StationaryEddy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stationary_eddy rdfs:subClassOf :eddy .
+
+",stationary eddy is a type of eddy.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Trough,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trough rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_state ;
+            owl:someValuesFrom :low_pressure ],
+        :trough .
+
+",A trough is a type of trough and is also a type of something that at least has some low pressure state.,2,True
+sweet,http://sweetontology.net/phenFluidDynamics/ViscousFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:viscous_flow rdfs:subClassOf :flow .
+
+",viscous flow is a type of flow.,1,False
+sweet,http://sweetontology.net/phenFluidDynamics/Vortex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vortex rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rotation ;
+            owl:onProperty :has_process ],
+        :flow .
+
+",A vortex is a type of flow that is characterized as a type of something that only involves process rotation.,2,True
+sweet,http://sweetontology.net/phenFluidInstability/AbsoluteInstability,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:absolute_instability rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :superadiabatic ;
+            owl:onProperty :has_state ],
+        :fluid_instability .
+
+",Absolute instability is a type of fluid instability and is a characteristic that necessitates a state of superadiabaticity.,2,True
+sweet,http://sweetontology.net/phenFluidInstability/ConditionalInstability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conditional_instability rdfs:subClassOf :fluid_instability .
+
+",conditional instability is a type of fluid instability.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/ConvectiveInstability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convective_instability rdfs:subClassOf :fluid_instability .
+
+",convective instability is a type of fluid instability.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/FluidInstability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluid_instability rdfs:subClassOf :fluid_phenomena,
+        :instability,
+        :unstable .
+
+","Fluid instability is a type of fluid phenomena, instability, and unstable.",3,True
+sweet,http://sweetontology.net/phenFluidInstability/FreeInstability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:free_instability rdfs:subClassOf :fluid_instability .
+
+",free instability is a type of fluid instability.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/FrontalInversion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frontal_inversion rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :front ;
+            owl:onProperty :has_phenomena ],
+        :inversion .
+
+",Frontal inversion is a type of inversion and is a phenomenon that only occurs at the front.,2,True
+sweet,http://sweetontology.net/phenFluidInstability/Inversion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inversion rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :temperature_gradient ;
+            owl:onProperty :has_quantity ],
+        :fluid_phenomena .
+
+","Inversion is a type of fluid phenomena characterized by a specific quality, namely, it only has the quantity temperature gradient.",2,True
+sweet,http://sweetontology.net/phenFluidInstability/KelvinHelmholtzInstability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kelvin_helmholtz_instability rdfs:subClassOf :fluid_instability .
+
+",kelvin helmholtz instability is a type of fluid instability.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/LargeReynoldsNumberFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:large_reynolds_number_flow rdfs:subClassOf :flow .
+
+",large reynolds number flow is a type of flow.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/Lift,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lift rdfs:subClassOf :fluid_phenomena ;
+    owl:equivalentClass :lifting .
+
+",Lift is synonymous with lifting and is categorized as a type of fluid phenomena.,2,True
+sweet,http://sweetontology.net/phenFluidInstability/Lifting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lifting rdfs:subClassOf :fluid_phenomena .
+
+",lifting is a type of fluid phenomena.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/MechanicalTurbulence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mechanical_turbulence rdfs:subClassOf :turbulence .
+
+",mechanical turbulence is a type of turbulence.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/RayleighTaylorInstability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rayleigh_taylor_instability rdfs:subClassOf :fluid_instability .
+
+",rayleigh taylor instability is a type of fluid instability.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/StaticStability,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:static_stability rdfs:subClassOf :fluid_instability .
+
+",static stability is a type of fluid instability.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/TearingMode,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tearing_mode rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :plasma ;
+            owl:onProperty :has_state ],
+        :instability,
+        :unstable .
+
+","Tearing mode is a type of instability and is considered unstable, specifically in the context of something that must have a state of plasma.",3,True
+sweet,http://sweetontology.net/phenFluidInstability/Turbulence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:turbulence rdfs:subClassOf :fluctuation,
+        :fluid_phenomena .
+
+",Turbulence is a type of fluid phenomena and also a type of fluctuation.,2,True
+sweet,http://sweetontology.net/phenFluidInstability/Wake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wake rdfs:subClassOf :turbulence .
+
+",wake is a type of turbulence.,1,False
+sweet,http://sweetontology.net/phenFluidInstability/ZombieTurbulence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zombie_turbulence rdfs:subClassOf :perturbation,
+        :turbulence .
+
+",Zombie turbulence is both a type of turbulence and a type of perturbation.,2,True
+sweet,http://sweetontology.net/phenFluidTransport/Advection,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:advection rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :fluid ;
+            owl:onProperty :has_state ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :transport ;
+            owl:onProperty :has_phenomena ],
+        :phenomena .
+
+",Advection is a type of phenomena that is characterized by the transport of something and necessarily involves a state of fluid.,3,True
+sweet,http://sweetontology.net/phenFluidTransport/BolusAdvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bolus_advection rdfs:subClassOf :advection .
+
+",bolus advection is a type of advection.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Buoyancy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:buoyancy rdfs:subClassOf :phenomena .
+
+",buoyancy is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Coning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coning rdfs:subClassOf :plume .
+
+",coning is a type of plume.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Convection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convection rdfs:subClassOf :phenomena .
+
+",convection is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/ConvectivePlume,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:convective_plume rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :convection ;
+            owl:onProperty :has_phenomena ],
+        :plume .
+
+",A convective plume is a specific type of plume that is exclusively associated with the phenomenon of convection.,2,True
+sweet,http://sweetontology.net/phenFluidTransport/CounterGradientFlux,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:counter_gradient_flux rdfs:subClassOf :flux .
+
+",counter gradient flux is a type of flux.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Deposition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deposition rdfs:subClassOf :phenomena .
+
+",deposition is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Fanning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fanning rdfs:subClassOf :plume .
+
+",fanning is a type of plume.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/HTAP,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:htap rdfs:subClassOf :transport ;
+    owl:equivalentClass :hemispheric_transport_of_air_pollutants .
+
+",HTAP stands for hemispheric transport of air pollutants and is a type of transport.,2,True
+sweet,http://sweetontology.net/phenFluidTransport/HemisphericTransportOfAirPollutants,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hemispheric_transport_of_air_pollutants rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :air_pollution ],
+        :transport .
+
+",Hemispheric transport of air pollutants is a type of transport that is a phenomenon involving air pollution.,2,True
+sweet,http://sweetontology.net/phenFluidTransport/Lofting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lofting rdfs:subClassOf :convection .
+
+",lofting is a type of convection.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/LongRangeTransport,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:long_range_transport rdfs:subClassOf :transport .
+
+",long range transport is a type of transport.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Plume,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plume rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :fluid ;
+            owl:onProperty :has_state ],
+        :suspended_substance .
+
+",Plume is a type of suspended substance and it must have a fluid state.,2,True
+sweet,http://sweetontology.net/phenFluidTransport/Puff,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:puff rdfs:subClassOf :plume .
+
+",puff is a type of plume.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/SlantWiseConvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slant_wise_convection rdfs:subClassOf :convection .
+
+",slant wise convection is a type of convection.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/StackEffect,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stack_effect rdfs:subClassOf :convection .
+
+",stack effect is a type of convection.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Surge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surge rdfs:subClassOf :flux .
+
+",surge is a type of flux.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Transport,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transport rdfs:subClassOf :phenomena .
+
+",transport is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/Uptake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:uptake rdfs:subClassOf :transport .
+
+",uptake is a type of transport.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/VorticityAdvection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vorticity_advection rdfs:subClassOf :advection .
+
+",vorticity advection is a type of advection.,1,False
+sweet,http://sweetontology.net/phenFluidTransport/WestEastTransport,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:west_east_transport rdfs:subClassOf :transport .
+
+",west east transport is a type of transport.,1,False
+sweet,http://sweetontology.net/phenGeol/CompositeProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:composite_process rdfs:subClassOf :genesis .
+
+",composite process is a type of genesis.,1,False
+sweet,http://sweetontology.net/phenGeol/Differentiation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:differentiation rdfs:subClassOf :geological_phenomena,
+        :geosphere_phenomena .
+
+",Differentiation is a type of geological phenomena and also a type of geosphere phenomena.,2,True
+sweet,http://sweetontology.net/phenGeol/Fluvial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fluvial rdfs:subClassOf :geological_phenomena,
+        :geosphere_phenomena .
+
+",Fluvial is a type of phenomena that pertains to both geological and geosphere categories.,2,True
+sweet,http://sweetontology.net/phenGeol/GeologicalPhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geological_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :solid_earth ;
+            owl:onProperty :has_realm ],
+        :planetary_phenomena ;
+    owl:equivalentClass :geosphere_phenomena .
+
+","Geological phenomena, which is the same as geosphere phenomena, is a type of planetary phenomena. Additionally, it falls under the category of phenomena that exclusively pertain to the solid earth realm.",3,True
+sweet,http://sweetontology.net/phenGeol/GeospherePhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geosphere_phenomena rdfs:subClassOf :planetary_phenomena .
+
+",geosphere phenomena is a type of planetary phenomena.,1,False
+sweet,http://sweetontology.net/phenGeol/Igneous,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:igneous rdfs:subClassOf :rock_cycle,
+        :rock_cycle_process .
+
+",Igneous is a type of rock cycle and also a type of rock cycle process.,2,True
+sweet,http://sweetontology.net/phenGeol/IntraplateProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intraplate_process rdfs:subClassOf :tectonic_phenomena .
+
+",intraplate process is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeol/Metamorphic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metamorphic rdfs:subClassOf :rock_cycle,
+        :rock_cycle_process .
+
+",Metamorphic is a type of rock cycle and a type of rock cycle process.,2,True
+sweet,http://sweetontology.net/phenGeol/Orogenesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orogenesis rdfs:subClassOf :geological_phenomena,
+        :geosphere_phenomena .
+
+",Orogenesis is a type of geological phenomena and is also a type of geosphere phenomena.,2,True
+sweet,http://sweetontology.net/phenGeol/OrogenicCollapse,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orogenic_collapse rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :anorogenic_igneous_rock ;
+            owl:onProperty :has_substance ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :successor_basin ;
+            owl:onProperty :has_planetary_structure ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :orogen ;
+            owl:onProperty :has_realm ],
+        :tectonic_phenomena .
+
+","Orogenic collapse is a type of tectonic phenomena that exclusively belongs to the realm of orogen and involves the substance of anorogenic igneous rock. Additionally, it is a phenomenon that results in the formation of a planetary structure known as a successor basin.",4,True
+sweet,http://sweetontology.net/phenGeol/Orogeny,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orogeny rdfs:subClassOf :tectonic_phenomena .
+
+",orogeny is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeol/Paleomagnetism,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paleomagnetism rdfs:subClassOf :geological_phenomena,
+        :geosphere_phenomena .
+
+",Paleomagnetism is a type of phenomenon that belongs to both the geological and geosphere categories.,2,True
+sweet,http://sweetontology.net/phenGeol/Pedogenesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pedogenesis rdfs:subClassOf :genesis .
+
+",pedogenesis is a type of genesis.,1,False
+sweet,http://sweetontology.net/phenGeol/RockCycle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rock_cycle rdfs:subClassOf :circuit,
+        :cycle,
+        :geological_phenomena,
+        :geosphere_phenomena ;
+    owl:equivalentClass :rock_cycle_process .
+
+","The rock cycle, also known as the rock cycle process, is a type of geological and geosphere phenomena. It is a kind of circuit and cycle.",5,True
+sweet,http://sweetontology.net/phenGeol/RockCycleProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rock_cycle_process rdfs:subClassOf :circuit,
+        :cycle,
+        :geological_phenomena,
+        :geosphere_phenomena .
+
+","The rock cycle process is a type of geological and geosphere phenomena, as well as being a type of circuit and cycle.",4,True
+sweet,http://sweetontology.net/phenGeol/Sedimentary,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sedimentary rdfs:subClassOf :rock_cycle,
+        :rock_cycle_process .
+
+",Sedimentary is a type of rock cycle and also a type of rock cycle process.,2,True
+sweet,http://sweetontology.net/phenGeol/StratigraphicSequence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stratigraphic_sequence rdfs:subClassOf :history .
+
+",stratigraphic sequence is a type of history.,1,False
+sweet,http://sweetontology.net/phenGeol/Unconformity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unconformity rdfs:subClassOf :history .
+
+",unconformity is a type of history.,1,False
+sweet,http://sweetontology.net/phenGeol/WilsonCycle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wilson_cycle rdfs:subClassOf :rock_cycle,
+        :rock_cycle_process .
+
+",The Wilson cycle is a type of rock cycle process.,2,True
+sweet,http://sweetontology.net/phenGeolFault/Detachment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:detachment rdfs:subClassOf :normal .
+
+",detachment is a type of normal.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Dextral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dextral rdfs:subClassOf :tectonic_force,
+        :tectonic_process .
+
+",Dextral is a type of tectonic force and also a type of tectonic process.,2,True
+sweet,http://sweetontology.net/phenGeolFault/DipSeparationSense,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dip_separation_sense rdfs:subClassOf :slip .
+
+",dip separation sense is a type of slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/DipSlip,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dip_slip rdfs:subClassOf :dip_separation_sense .
+
+",dip slip is a type of dip separation sense.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Extraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extraction rdfs:subClassOf :slip .
+
+",extraction is a type of slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/GenericDecollement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:generic_decollement rdfs:subClassOf :tectonic_force,
+        :tectonic_process .
+
+",Generic decollement is both a type of tectonic force and a type of tectonic process.,2,True
+sweet,http://sweetontology.net/phenGeolFault/Heave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heave rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :horizontal ;
+            owl:onProperty :has_direction ],
+        :displacement .
+
+",Heave is a type of displacement and is characterized as something that only has a horizontal direction.,2,True
+sweet,http://sweetontology.net/phenGeolFault/Horizontal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:horizontal rdfs:subClassOf :slip .
+
+",horizontal is a type of slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/MixedExtraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixed_extraction rdfs:subClassOf :extraction .
+
+",mixed extraction is a type of extraction.,1,False
+sweet,http://sweetontology.net/phenGeolFault/NoMovementSense,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:no_movement_sense rdfs:subClassOf :tectonic_force,
+        :tectonic_process .
+
+",No movement sense is both a type of tectonic force and a type of tectonic process.,2,True
+sweet,http://sweetontology.net/phenGeolFault/Normal,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normal rdfs:subClassOf :tectonic_force,
+        :tectonic_process .
+
+",Normal is both a type of tectonic force and a type of tectonic process.,2,True
+sweet,http://sweetontology.net/phenGeolFault/ObliqueSlip,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:oblique_slip rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :oblique ;
+            owl:onProperty :has_direction ],
+        :slip .
+
+",Oblique slip is a type of slip that must have an oblique direction.,2,True
+sweet,http://sweetontology.net/phenGeolFault/PureExtraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pure_extraction rdfs:subClassOf :extraction .
+
+",pure extraction is a type of extraction.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Reverse,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reverse rdfs:subClassOf :tectonic_force,
+        :tectonic_process .
+
+",Reverse serves as a type both of a tectonic force and a tectonic process.,2,True
+sweet,http://sweetontology.net/phenGeolFault/Scissor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scissor rdfs:subClassOf :slip .
+
+",scissor is a type of slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Sense,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sense rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Sense is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/phenGeolFault/Sinistral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sinistral rdfs:subClassOf :tectonic_force,
+        :tectonic_process .
+
+",Sinistral is both a type of tectonic force and a type of tectonic process.,2,True
+sweet,http://sweetontology.net/phenGeolFault/Slip,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slip rdfs:subClassOf :motion .
+
+",slip is a type of motion.,1,False
+sweet,http://sweetontology.net/phenGeolFault/StrikeSeparationSense,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strike_separation_sense rdfs:subClassOf :slip .
+
+",strike separation sense is a type of slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/StrikeSlip,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strike_slip rdfs:subClassOf :strike_separation_sense .
+
+",strike slip is a type of strike separation sense.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Throw,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:throw rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :vertical ;
+            owl:onProperty :has_direction ],
+        :displacement .
+
+",Throw is a type of displacement that must have a vertical direction.,2,True
+sweet,http://sweetontology.net/phenGeolFault/Thrust,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thrust rdfs:subClassOf :tectonic_force,
+        :tectonic_process .
+
+",Thrust is a type of tectonic force and also a type of tectonic process.,2,True
+sweet,http://sweetontology.net/phenGeolFault/ThrustDecollement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thrust_decollement rdfs:subClassOf :thrust .
+
+",thrust decollement is a type of thrust.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Transcurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transcurrent rdfs:subClassOf :strike_slip .
+
+",transcurrent is a type of strike slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Transform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transform rdfs:subClassOf :strike_slip .
+
+",transform is a type of strike slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Transpressional,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transpressional rdfs:subClassOf :oblique_slip .
+
+",transpressional is a type of oblique slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Transtensional,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transtensional rdfs:subClassOf :oblique_slip .
+
+",transtensional is a type of oblique slip.,1,False
+sweet,http://sweetontology.net/phenGeolFault/Wrench,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wrench rdfs:subClassOf :strike_slip .
+
+",wrench is a type of strike slip.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Abrasion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abrasion rdfs:subClassOf :material_displacement .
+
+",abrasion is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Avalanche,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:avalanche rdfs:subClassOf :collapse,
+        :slide .
+
+",An avalanche is both a type of slide and a type of collapse.,2,True
+sweet,http://sweetontology.net/phenGeolGeomorphology/Compaction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compaction rdfs:subClassOf :sediment_formation .
+
+",compaction is a type of sediment formation.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Creep,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:creep rdfs:subClassOf :material_displacement ;
+    owl:equivalentClass :reptation .
+
+","Creep, which is a type of material displacement, is the same as reptation.",2,True
+sweet,http://sweetontology.net/phenGeolGeomorphology/Denundation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:denundation rdfs:subClassOf :material_displacement .
+
+",denundation is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Diagenesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diagenesis rdfs:subClassOf :sediment_formation .
+
+",diagenesis is a type of sediment formation.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Exfoliation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exfoliation rdfs:subClassOf :weathering .
+
+",exfoliation is a type of weathering.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Haloclasty,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:haloclasty rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :salt ;
+            owl:onProperty :has_phenomena ],
+        :weathering .
+
+",Haloclasty is a type of weathering that involves a phenomenon related to salt.,2,True
+sweet,http://sweetontology.net/phenGeolGeomorphology/Karst,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:karst rdfs:subClassOf :geological_phenomena,
+        :geosphere_phenomena .
+
+",Karst is a type of geological and geosphere phenomena.,2,True
+sweet,http://sweetontology.net/phenGeolGeomorphology/Landslide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:landslide rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :land ;
+            owl:onProperty :has_realm ],
+        :slide .
+
+",A landslide is a type of slide that exclusively occurs within the realm of land.,2,True
+sweet,http://sweetontology.net/phenGeolGeomorphology/MassWasting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mass_wasting rdfs:subClassOf :material_displacement .
+
+",mass wasting is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/MaterialDisplacement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:material_displacement rdfs:subClassOf :planetary_phenomena .
+
+",material displacement is a type of planetary phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Mudslide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mudslide rdfs:subClassOf :slide .
+
+",mudslide is a type of slide.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Reptation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reptation rdfs:subClassOf :material_displacement .
+
+",reptation is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/RockSlopeFailure,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rock_slope_failure rdfs:subClassOf :material_displacement .
+
+",rock slope failure is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Saltation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saltation rdfs:subClassOf :material_displacement .
+
+",saltation is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/SedimentFormation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sediment_formation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sediment ;
+            owl:onProperty :has_substance ],
+        :material_displacement .
+
+",Sediment formation is a type of material displacement and is also a type of something that only has substance sediment.,2,True
+sweet,http://sweetontology.net/phenGeolGeomorphology/Sedimentation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sedimentation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :deposition ;
+            owl:onProperty :has_phenomena ],
+        :geological_phenomena,
+        :geosphere_phenomena .
+
+","Sedimentation is a type of phenomenon that is both geological and geospheric, and it exclusively involves deposition phenomena.",3,True
+sweet,http://sweetontology.net/phenGeolGeomorphology/Slide,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slide rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :hazard ;
+            owl:onProperty :has_impact ],
+        :material_displacement,
+        :phenomena .
+
+","Slide is a type of phenomena and a type of material displacement. Additionally, slide is a type of something that must have an impact hazard.",3,True
+sweet,http://sweetontology.net/phenGeolGeomorphology/Slump,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slump rdfs:subClassOf :material_displacement .
+
+",slump is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Solifluction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solifluction rdfs:subClassOf :material_displacement .
+
+",solifluction is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Subsidence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subsidence rdfs:subClassOf :material_displacement .
+
+",subsidence is a type of material displacement.,1,False
+sweet,http://sweetontology.net/phenGeolGeomorphology/Weathering,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:weathering rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rock ;
+            owl:onProperty :has_substance ],
+        :material_displacement ;
+    owl:disjointWith :erosion .
+
+","Weathering is a type of material displacement and it specifically affects substances that are rock. Additionally, weathering is distinct from erosion, indicating no overlap between the two processes.",3,True
+sweet,http://sweetontology.net/phenGeolSeismicity/Aftershock,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aftershock rdfs:subClassOf :earthquake ;
+    owl:disjointWith :foreshock .
+
+","An aftershock is a type of earthquake, and it is disjoint from a foreshock.",2,True
+sweet,http://sweetontology.net/phenGeolSeismicity/DeepFocusEarthquake,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deep_focus_earthquake rdfs:subClassOf :earthquake ;
+    owl:disjointWith :shallow_focus_earthquake .
+
+",A deep focus earthquake is a type of earthquake and is distinct from a shallow focus earthquake.,2,True
+sweet,http://sweetontology.net/phenGeolSeismicity/Earthquake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:earthquake rdfs:subClassOf :seismic_phenomena .
+
+",earthquake is a type of seismic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolSeismicity/Foreshock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:foreshock rdfs:subClassOf :earthquake .
+
+",foreshock is a type of earthquake.,1,False
+sweet,http://sweetontology.net/phenGeolSeismicity/LoveWave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:love_wave rdfs:subClassOf :surface_wave ;
+    owl:equivalentClass :lwave .
+
+","Love wave, also known as Lwave, is a type of surface wave.",2,True
+sweet,http://sweetontology.net/phenGeolSeismicity/Lwave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lwave rdfs:subClassOf :surface_wave .
+
+",lwave is a type of surface wave.,1,False
+sweet,http://sweetontology.net/phenGeolSeismicity/MegathrustEarthquake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:megathrust_earthquake rdfs:subClassOf :earthquake .
+
+",megathrust earthquake is a type of earthquake.,1,False
+sweet,http://sweetontology.net/phenGeolSeismicity/PWave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:p_wave rdfs:subClassOf :longitudinal_wave,
+        :seismic_body_wave ;
+    owl:equivalentClass :primary_wave .
+
+","P wave, also known as a primary wave, is a type of seismic body wave and a type of longitudinal wave.",3,True
+sweet,http://sweetontology.net/phenGeolSeismicity/PrimaryWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:primary_wave rdfs:subClassOf :longitudinal_wave,
+        :seismic_body_wave .
+
+",Primary wave is a type of seismic body wave and also a type of longitudinal wave.,2,True
+sweet,http://sweetontology.net/phenGeolSeismicity/SWave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:s_wave rdfs:subClassOf :seismic_body_wave,
+        :shear_wave ;
+    owl:equivalentClass :secondary_wave .
+
+","S wave, also known as a secondary wave, is a type of seismic body wave and a type of shear wave.",3,True
+sweet,http://sweetontology.net/phenGeolSeismicity/SecondaryWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:secondary_wave rdfs:subClassOf :seismic_body_wave,
+        :shear_wave .
+
+",A secondary wave is both a type of seismic body wave and a type of shear wave.,2,True
+sweet,http://sweetontology.net/phenGeolSeismicity/SeismicBodyWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seismic_body_wave rdfs:subClassOf :body_wave,
+        :seismic_wave .
+
+",A seismic body wave is both a type of seismic wave and a type of body wave.,2,True
+sweet,http://sweetontology.net/phenGeolSeismicity/SeismicPhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seismic_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :seismic_wave ;
+            owl:onProperty :has_phenomena ],
+        [ a owl:Restriction ;
+            owl:hasValue :hazard ;
+            owl:onProperty :has_impact ],
+        :geological_phenomena,
+        :geosphere_phenomena .
+
+","Seismic phenomena are identified as a type of geological phenomena and a type of geosphere phenomena. Additionally, seismic phenomena are characterized as a type of phenomena that exclusively involves seismic waves and must have an impact hazard.",4,True
+sweet,http://sweetontology.net/phenGeolSeismicity/SeismicSurfaceWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seismic_surface_wave rdfs:subClassOf :seismic_wave,
+        :surface_wave .
+
+",A seismic surface wave is both a type of seismic wave and a type of surface wave.,2,True
+sweet,http://sweetontology.net/phenGeolSeismicity/SeismicWave,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seismic_wave rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :seismic_phenomena ;
+            owl:onProperty :has_phenomena ],
+        :wave .
+
+",A seismic wave is a type of wave that is exclusively associated with seismic phenomena.,2,True
+sweet,http://sweetontology.net/phenGeolSeismicity/ShallowFocusEarthquake,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shallow_focus_earthquake rdfs:subClassOf :earthquake .
+
+",shallow focus earthquake is a type of earthquake.,1,False
+sweet,http://sweetontology.net/phenGeolSeismicity/Tremor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tremor rdfs:subClassOf :earthquake .
+
+",tremor is a type of earthquake.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/AsymmetricHeatFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:asymmetric_heat_flow rdfs:subClassOf :flow .
+
+",asymmetric heat flow is a type of flow.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/CompositeProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:composite_process rdfs:subClassOf :tectonic_phenomena .
+
+",composite process is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/ContinenetalDrift,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continenetal_drift rdfs:subClassOf :tectonic_phenomena .
+
+",continenetal drift is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/ContinentalBreakup,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_breakup rdfs:subClassOf :tectonic_phenomena .
+
+",continental breakup is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/ContinentalCollision,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continental_collision rdfs:subClassOf :tectonic_phenomena .
+
+",continental collision is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/Creep,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:creep rdfs:subClassOf :tectonic_phenomena .
+
+",creep is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/ExtensionEvent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extension_event rdfs:subClassOf :tectonic_phenomena .
+
+",extension event is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/IsostaticAdjustment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isostatic_adjustment rdfs:subClassOf :tectonic_phenomena ;
+    owl:equivalentClass :isostatic_rebound .
+
+","Isostatic adjustment, which is the same as isostatic rebound, is a type of tectonic phenomena.",2,True
+sweet,http://sweetontology.net/phenGeolTectonic/IsostaticRebound,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isostatic_rebound rdfs:subClassOf :tectonic_phenomena .
+
+",isostatic rebound is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/PlateConvergence,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plate_convergence rdfs:subClassOf :tectonic_phenomena ;
+    owl:disjointWith :plate_divergence .
+
+",Plate convergence is a type of tectonic phenomena that is not associated with plate divergence.,2,True
+sweet,http://sweetontology.net/phenGeolTectonic/PlateDivergence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plate_divergence rdfs:subClassOf :tectonic_phenomena .
+
+",plate divergence is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/Spreading,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spreading rdfs:subClassOf :tectonic_phenomena .
+
+",spreading is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/Subduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subduction rdfs:subClassOf :tectonic_phenomena .
+
+",subduction is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/TectonicAssemblage,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tectonic_assemblage rdfs:subClassOf :geologic_feature .
+
+",tectonic assemblage is a type of geologic feature.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/TectonicForce,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tectonic_force rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :tectonic_phenomena ;
+            owl:onProperty :has_phenomena ],
+        :force ;
+    owl:equivalentClass :tectonic_process .
+
+","Tectonic force is the same as the tectonic process and is a type of force. Additionally, tectonic force is a type of something that only exhibits the phenomena known as tectonic phenomena.",3,True
+sweet,http://sweetontology.net/phenGeolTectonic/TectonicPhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tectonic_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :crust ;
+            owl:onProperty :has_realm ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :deformation ;
+            owl:onProperty :has_phenomena ],
+        :geological_phenomena,
+        :geosphere_phenomena .
+
+","Tectonic phenomena is a type of geological phenomena and also a type of geosphere phenomena. Additionally, it is a type of something that only has phenomena deformation and is a type of something that only has realm crust.",4,True
+sweet,http://sweetontology.net/phenGeolTectonic/TectonicProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tectonic_process rdfs:subClassOf :force .
+
+",tectonic process is a type of force.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/TectonicUplift,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tectonic_uplift rdfs:subClassOf :tectonic_phenomena .
+
+",tectonic uplift is a type of tectonic phenomena.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/Terrane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:terrane rdfs:subClassOf :tectonic_assemblage .
+
+",terrane is a type of tectonic assemblage.,1,False
+sweet,http://sweetontology.net/phenGeolTectonic/TransformFaulting,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transform_faulting rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :transform_fault ;
+            owl:onProperty :has_realm ],
+        :tectonic_phenomena .
+
+",Transform faulting is a type of tectonic phenomena and is a specific type of phenomenon that only exists within the realm of transform fault.,2,True
+sweet,http://sweetontology.net/phenGeolVolcano/EruptionCloud,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eruption_cloud rdfs:subClassOf :ejecta,
+        :volcanic_activity,
+        :volcanic_phenomena .
+
+","An eruption cloud is a type of ejecta, volcanic activity, and volcanic phenomena.",3,True
+sweet,http://sweetontology.net/phenGeolVolcano/FlankEruption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flank_eruption rdfs:subClassOf :volcanic_eruption .
+
+",flank eruption is a type of volcanic eruption.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/LavaOfTephra,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lava_of_tephra rdfs:subClassOf :lava .
+
+",lava of tephra is a type of lava.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/MagmaMotion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magma_motion rdfs:subClassOf :volcanic_activity,
+        :volcanic_phenomena .
+
+",Magma motion is a type of volcanic activity and a type of volcanic phenomena.,2,True
+sweet,http://sweetontology.net/phenGeolVolcano/Magmatic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magmatic rdfs:subClassOf :volcanic_eruption .
+
+",magmatic is a type of volcanic eruption.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/MantlePlume,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mantle_plume rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mantle ;
+            owl:onProperty :has_realm ],
+        :volcanic_plume ;
+    owl:equivalentClass :mantle_thermal_plume .
+
+","A mantle plume, also known as a mantle thermal plume, is a type of volcanic plume that exclusively belongs to the realm of the mantle.",3,True
+sweet,http://sweetontology.net/phenGeolVolcano/MantleThermalPlume,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mantle_thermal_plume rdfs:subClassOf :volcanic_plume .
+
+",mantle thermal plume is a type of volcanic plume.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/NueeArdenteEruption,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nuee_ardente_eruption rdfs:subClassOf :volcanic_eruption ;
+    owl:equivalentClass :peleean_eruption .
+
+","A nuee ardente eruption, which is the same as a Peleean eruption, is a type of volcanic eruption.",2,True
+sweet,http://sweetontology.net/phenGeolVolcano/PeleeanEruption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peleean_eruption rdfs:subClassOf :volcanic_eruption .
+
+",peleean eruption is a type of volcanic eruption.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/PhreaticEruption,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phreatic_eruption rdfs:subClassOf :volcanic_eruption ;
+    owl:equivalentClass :steam_blast_eruption .
+
+","A phreatic eruption, which is the same as a steam blast eruption, is a type of volcanic eruption.",2,True
+sweet,http://sweetontology.net/phenGeolVolcano/PhreatomagmaticEruption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:phreatomagmatic_eruption rdfs:subClassOf :volcanic_eruption .
+
+",phreatomagmatic eruption is a type of volcanic eruption.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/PlinianEruption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plinian_eruption rdfs:subClassOf :volcanic_eruption .
+
+",plinian eruption is a type of volcanic eruption.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/SteamBlastEruption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:steam_blast_eruption rdfs:subClassOf :volcanic_eruption .
+
+",steam blast eruption is a type of volcanic eruption.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/StrombolianEruption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:strombolian_eruption rdfs:subClassOf :volcanic_eruption .
+
+",strombolian eruption is a type of volcanic eruption.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/SummitEruption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:summit_eruption rdfs:subClassOf :volcanic_eruption .
+
+",summit eruption is a type of volcanic eruption.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/Surge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surge rdfs:subClassOf :volcanic_plume .
+
+",surge is a type of volcanic plume.,1,False
+sweet,http://sweetontology.net/phenGeolVolcano/VolcanicActivity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_activity rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_phenomena ;
+            owl:someValuesFrom :volcanism ],
+        :geological_phenomena,
+        :geosphere_phenomena,
+        :volcanic_activity ;
+    owl:equivalentClass :volcanic_phenomena .
+
+","Volcanic activity, also known as volcanic phenomena, is a type of geological and geosphere phenomena, as well as a type of volcanic activity itself. Furthermore, it is a type of something that, at the very least, involves some form of volcanism phenomena.",5,True
+sweet,http://sweetontology.net/phenGeolVolcano/VolcanicEruption,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_eruption rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_transport ;
+            owl:someValuesFrom :heat ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_transport ;
+            owl:someValuesFrom :mass ],
+        :eruption,
+        :volcanic_activity,
+        :volcanic_phenomena .
+
+","A volcanic eruption is a type of volcanic activity, volcanic phenomena, and eruption. Additionally, it is a type of occurrence that at least involves the transport of some heat and mass.",5,True
+sweet,http://sweetontology.net/phenGeolVolcano/VolcanicPhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_phenomena rdfs:subClassOf :geological_phenomena,
+        :geosphere_phenomena .
+
+",Volcanic phenomena is a type of geological phenomena as well as a type of geosphere phenomena.,2,True
+sweet,http://sweetontology.net/phenGeolVolcano/VolcanicPlume,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanic_plume rdfs:subClassOf :plume,
+        :volcanic_activity,
+        :volcanic_phenomena .
+
+","A volcanic plume is a type of plume, volcanic activity, and volcanic phenomena.",3,True
+sweet,http://sweetontology.net/phenGeolVolcano/Volcanism,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volcanism rdfs:subClassOf :geological_phenomena,
+        :geosphere_phenomena ;
+    owl:equivalentClass :vulcanism .
+
+","Volcanism, which is the same as vulcanism, is a type of phenomenon that pertains to both the geological and geosphere aspects.",3,True
+sweet,http://sweetontology.net/phenGeolVolcano/Vulcanism,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vulcanism rdfs:subClassOf :geological_phenomena,
+        :geosphere_phenomena .
+
+",Vulcanism is a type of phenomena that pertains both to geological and geosphere aspects.,2,True
+sweet,http://sweetontology.net/phenHelio/Airglow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:airglow rdfs:subClassOf :atmospheric_light_emission .
+
+",airglow is a type of atmospheric light emission.,1,False
+sweet,http://sweetontology.net/phenHelio/AtmosphericLightEmission,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:atmospheric_light_emission rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :emission ;
+            owl:onProperty :has_phenomena ],
+        :heliospheric_phenomena .
+
+",Atmospheric light emission is a type of heliospheric phenomena and is a type of something that only has phenomena emission.,2,True
+sweet,http://sweetontology.net/phenHelio/Aurora,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aurora rdfs:subClassOf :atmospheric_light_emission .
+
+",aurora is a type of atmospheric light emission.,1,False
+sweet,http://sweetontology.net/phenHelio/AuroralSubstorm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:auroral_substorm rdfs:subClassOf :atmospheric_light_emission ;
+    owl:equivalentClass :magnetic_substorm .
+
+",An auroral substorm is the same as a magnetic substorm and is a type of atmospheric light emission.,2,True
+sweet,http://sweetontology.net/phenHelio/BowShock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bow_shock rdfs:subClassOf :bow_shock_crossing .
+
+",bow shock is a type of bow shock crossing.,1,False
+sweet,http://sweetontology.net/phenHelio/BowShockCrossing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bow_shock_crossing rdfs:subClassOf :heliospheric_phenomena .
+
+",bow shock crossing is a type of heliospheric phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/GeomagneticStorm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geomagnetic_storm rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :space_weather ;
+            owl:onProperty :has_phenomena ],
+        :disturbance,
+        :event,
+        :interplanetary_phenomena,
+        :occurrence ;
+    owl:equivalentClass :magnetic_storm .
+
+","A geomagnetic storm, which is also known as a magnetic storm, is a type of event, occurrence, interplanetary phenomena, and disturbance. Specifically, it is a type of phenomenon that occurs only within the context of space weather.",6,True
+sweet,http://sweetontology.net/phenHelio/Geomagnetism,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geomagnetism rdfs:subClassOf :magnetism .
+
+",geomagnetism is a type of magnetism.,1,False
+sweet,http://sweetontology.net/phenHelio/Heliosheath,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heliosheath rdfs:subClassOf :heliospheric_phenomena .
+
+",heliosheath is a type of heliospheric phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/HeliosphericPhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heliospheric_phenomena rdfs:subClassOf :phenomena .
+
+",heliospheric phenomena is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/InterplanetaryPhenomena,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interplanetary_phenomena rdfs:subClassOf :phenomena .
+
+",interplanetary phenomena is a type of phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/InterplanetaryShock,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interplanetary_shock rdfs:subClassOf :interplanetary_phenomena .
+
+",interplanetary shock is a type of interplanetary phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/MagneticStorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_storm rdfs:subClassOf :disturbance,
+        :event,
+        :interplanetary_phenomena,
+        :occurrence .
+
+","Magnetic storm is a type of event, occurrence, interplanetary phenomena, and disturbance.",4,True
+sweet,http://sweetontology.net/phenHelio/MagneticSubstorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_substorm rdfs:subClassOf :atmospheric_light_emission .
+
+",magnetic substorm is a type of atmospheric light emission.,1,False
+sweet,http://sweetontology.net/phenHelio/MagnetopauseCrossing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetopause_crossing rdfs:subClassOf :heliospheric_phenomena .
+
+",magnetopause crossing is a type of heliospheric phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/Magnetosheath,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetosheath rdfs:subClassOf :heliospheric_phenomena .
+
+",magnetosheath is a type of heliospheric phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/Magnetotail,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetotail rdfs:subClassOf :heliospheric_phenomena .
+
+",magnetotail is a type of heliospheric phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/ProtonPrecipitation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proton_precipitation rdfs:subClassOf :geomagnetic_storm,
+        :magnetic_storm,
+        :precipitation .
+
+","Proton precipitation is a type of precipitation, geomagnetic storm, and magnetic storm.",3,True
+sweet,http://sweetontology.net/phenHelio/SchumannResonance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:schumann_resonance rdfs:subClassOf :heliospheric_phenomena .
+
+",schumann resonance is a type of heliospheric phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/SolarParticleEvent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_particle_event rdfs:subClassOf :geomagnetic_storm,
+        :magnetic_storm .
+
+",A solar particle event is both a type of geomagnetic storm and a type of magnetic storm.,2,True
+sweet,http://sweetontology.net/phenHelio/SolarWind,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_wind rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :sun ;
+            owl:onProperty :has_astronomical_body ],
+        :stellar_wind .
+
+","Solar wind is a type of stellar wind and is something that must have the astronomical body, the Sun.",2,True
+sweet,http://sweetontology.net/phenHelio/SolarWindExtreme,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solar_wind_extreme rdfs:subClassOf :interplanetary_phenomena .
+
+",solar wind extreme is a type of interplanetary phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/SpaceWeather,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:space_weather rdfs:subClassOf :heliospheric_phenomena .
+
+",space weather is a type of heliospheric phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/Substorm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:substorm rdfs:subClassOf :interplanetary_phenomena .
+
+",substorm is a type of interplanetary phenomena.,1,False
+sweet,http://sweetontology.net/phenHelio/SunEarthInteraction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sun_earth_interaction rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :sun ;
+            owl:onProperty :has_cause ],
+        [ a owl:Restriction ;
+            owl:hasValue :earth ;
+            owl:onProperty :has_effect ],
+        :interaction .
+
+",The Sun-Earth interaction is a type of interaction that is caused by the Sun and has an effect on the Earth.,3,True
+sweet,http://sweetontology.net/phenHelio/TelluricCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:telluric_current rdfs:subClassOf :current,
+        :electric_current .
+
+",Telluric current is a type of current and is specifically a type of electric current.,2,True
+sweet,http://sweetontology.net/phenHydro/BaseFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:base_flow rdfs:subClassOf :streamflow .
+
+",base flow is a type of streamflow.,1,False
+sweet,http://sweetontology.net/phenHydro/Debouche,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:debouche rdfs:subClassOf :stream_discharge .
+
+",debouche is a type of stream discharge.,1,False
+sweet,http://sweetontology.net/phenHydro/DeepPercolation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:deep_percolation rdfs:subClassOf :percolate,
+        :percolation .
+
+",Deep percolation is a type of percolation.,2,True
+sweet,http://sweetontology.net/phenHydro/Discharge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:discharge rdfs:subClassOf :water_flow .
+
+",discharge is a type of water flow.,1,False
+sweet,http://sweetontology.net/phenHydro/Drain,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drain rdfs:subClassOf :water_flow .
+
+",drain is a type of water flow.,1,False
+sweet,http://sweetontology.net/phenHydro/Drainage,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:drainage rdfs:subClassOf :removal .
+
+",drainage is a type of removal.,1,False
+sweet,http://sweetontology.net/phenHydro/FlashFlood,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flash_flood rdfs:subClassOf :extreme_event,
+        :flood .
+
+",A flash flood is a type of extreme event and is also a type of flood.,2,True
+sweet,http://sweetontology.net/phenHydro/Flood,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flood rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :hazard ;
+            owl:onProperty :has_impact ],
+        :hydrosphere_phenomena,
+        :inundation .
+
+",Flood is a type of hydrosphere phenomena and a type of inundation. It is also a type of event that must have an impact hazard.,3,True
+sweet,http://sweetontology.net/phenHydro/GroundwaterStorage,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:groundwater_storage rdfs:subClassOf :hydrosphere_phenomena,
+        :reservoir,
+        :storage .
+
+","Groundwater storage is a type of hydrosphere phenomena, reservoir, and storage.",3,True
+sweet,http://sweetontology.net/phenHydro/HydrospherePhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrosphere_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :hydrosphere ;
+            owl:onProperty :has_realm ],
+        :planetary_phenomena .
+
+",Hydrosphere phenomena are a type of planetary phenomena that exclusively belong to the realm of the hydrosphere.,2,True
+sweet,http://sweetontology.net/phenHydro/HydrothermalAlteration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hydrothermal_alteration rdfs:subClassOf :hydrosphere_phenomena .
+
+",hydrothermal alteration is a type of hydrosphere phenomena.,1,False
+sweet,http://sweetontology.net/phenHydro/Infiltration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:infiltration rdfs:subClassOf :land_water_circulation .
+
+",infiltration is a type of land water circulation.,1,False
+sweet,http://sweetontology.net/phenHydro/Intrusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intrusion rdfs:subClassOf :land_water_circulation .
+
+",intrusion is a type of land water circulation.,1,False
+sweet,http://sweetontology.net/phenHydro/LandWaterCirculation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:land_water_circulation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :transport ;
+            owl:onProperty :has_phenomena ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :underground_water ;
+            owl:onProperty :has_realm ],
+        :hydrosphere_phenomena .
+
+","Land water circulation is a type of hydrosphere phenomena, something that exclusively involves phenomena transport, and is also characterized by its realm in underground water.",3,True
+sweet,http://sweetontology.net/phenHydro/OpenChannelFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:open_channel_flow rdfs:subClassOf :water_flow .
+
+",open channel flow is a type of water flow.,1,False
+sweet,http://sweetontology.net/phenHydro/Outflow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:outflow rdfs:subClassOf :water_flow .
+
+",outflow is a type of water flow.,1,False
+sweet,http://sweetontology.net/phenHydro/OverlandFlow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overland_flow rdfs:subClassOf :runoff .
+
+",overland flow is a type of runoff.,1,False
+sweet,http://sweetontology.net/phenHydro/Percolate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:percolate rdfs:subClassOf :transport ;
+    owl:equivalentClass :percolation .
+
+",Percolate is the same as percolation and it is a type of transport.,2,True
+sweet,http://sweetontology.net/phenHydro/Percolation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:percolation rdfs:subClassOf :transport .
+
+",percolation is a type of transport.,1,False
+sweet,http://sweetontology.net/phenHydro/RadionucleiRetardation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radionuclei_retardation rdfs:subClassOf :hydrosphere_phenomena .
+
+",radionuclei retardation is a type of hydrosphere phenomena.,1,False
+sweet,http://sweetontology.net/phenHydro/Recharge,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:recharge rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :aquifer ;
+            owl:onProperty :has_realm ],
+        :transport .
+
+",Recharge is a type of transport and is also a type of something that only has the realm aquifer.,2,True
+sweet,http://sweetontology.net/phenHydro/Runoff,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:runoff rdfs:subClassOf :water_flow .
+
+",runoff is a type of water flow.,1,False
+sweet,http://sweetontology.net/phenHydro/SnowCover,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snow_cover rdfs:subClassOf :hydrosphere_phenomena .
+
+",snow cover is a type of hydrosphere phenomena.,1,False
+sweet,http://sweetontology.net/phenHydro/Snowslide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:snowslide rdfs:subClassOf :avalanche .
+
+",snowslide is a type of avalanche.,1,False
+sweet,http://sweetontology.net/phenHydro/StreamDischarge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stream_discharge rdfs:subClassOf :discharge .
+
+",stream discharge is a type of discharge.,1,False
+sweet,http://sweetontology.net/phenHydro/Streamflow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:streamflow rdfs:subClassOf :water_flow .
+
+",streamflow is a type of water flow.,1,False
+sweet,http://sweetontology.net/phenHydro/Torrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:torrent rdfs:subClassOf :discharge .
+
+",torrent is a type of discharge.,1,False
+sweet,http://sweetontology.net/phenHydro/WaterFlow,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:water_flow rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :water ;
+            owl:onProperty :has_substance ],
+        :flow .
+
+",Water flow is a type of flow and is something that must have the substance water.,2,True
+sweet,http://sweetontology.net/phenMixing/Aeration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aeration rdfs:subClassOf :mix,
+        :mixing .
+
+",Aeration is both a type of mix and a type of mixing.,2,True
+sweet,http://sweetontology.net/phenMixing/Bioturbation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bioturbation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :sediment ;
+            owl:onProperty :has_substance ],
+        :mix,
+        :mixing .
+
+",Bioturbation is a type of mix and mixing that specifically involves substance sediment only.,3,True
+sweet,http://sweetontology.net/phenMixing/Cryoturbation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cryoturbation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :freezing ;
+            owl:onProperty :has_state_change ],
+        :mix,
+        :mixing .
+
+","Cryoturbation is a type of mix and mixing, specifically a type of something that only undergoes the state change of freezing.",3,True
+sweet,http://sweetontology.net/phenMixing/Diffuse,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diffuse rdfs:subClassOf :physical_process ;
+    owl:equivalentClass :diffusion .
+
+","Diffusion is the same as diffuse, which is a type of physical process.",2,True
+sweet,http://sweetontology.net/phenMixing/Diffusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diffusion rdfs:subClassOf :physical_process .
+
+",diffusion is a type of physical process.,1,False
+sweet,http://sweetontology.net/phenMixing/EddyDiffusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eddy_diffusion rdfs:subClassOf :diffuse,
+        :diffusion .
+
+",Eddy diffusion is both a type of diffuse and a type of diffusion.,2,True
+sweet,http://sweetontology.net/phenMixing/Entrainment,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:entrainment rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :mixing ;
+            owl:onProperty :has_phenomena ],
+        :physical_process .
+
+",Entrainment is a type of physical process that is exclusively characterized by phenomena mixing.,2,True
+sweet,http://sweetontology.net/phenMixing/FickianDiffusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fickian_diffusion rdfs:subClassOf :diffuse,
+        :diffusion .
+
+",Fickian diffusion is a type of diffusion.,2,True
+sweet,http://sweetontology.net/phenMixing/Mix,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mix rdfs:subClassOf :dynamical_phenomena ;
+    owl:equivalentClass :mixing .
+
+",Mix is the same as mixing and is a type of dynamical phenomena.,2,True
+sweet,http://sweetontology.net/phenMixing/Mixing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixing rdfs:subClassOf :dynamical_phenomena ;
+    owl:disjointWith :separation .
+
+","Mixing is a type of dynamical phenomena, which is disjoint with separation.",2,True
+sweet,http://sweetontology.net/phenMixing/Separation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:separation rdfs:subClassOf :dynamical_phenomena .
+
+",separation is a type of dynamical phenomena.,1,False
+sweet,http://sweetontology.net/phenMixing/Settling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:settling rdfs:subClassOf :dynamical_phenomena .
+
+",settling is a type of dynamical phenomena.,1,False
+sweet,http://sweetontology.net/phenMixing/TurbulentDiffusion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:turbulent_diffusion rdfs:subClassOf :diffuse,
+        :diffusion .
+
+",Turbulent diffusion is both a type of diffuse and a type of diffusion.,2,True
+sweet,http://sweetontology.net/phenOcean/OceanPhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ocean ;
+            owl:onProperty :has_realm ],
+        :planetary_phenomena .
+
+",Ocean phenomena is a type of planetary phenomena and is a type of something that only has the realm ocean.,2,True
+sweet,http://sweetontology.net/phenOceanCoastal/Attrition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:attrition rdfs:subClassOf :coastal_phenomena .
+
+",attrition is a type of coastal phenomena.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/Backwash,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:backwash rdfs:subClassOf :coastal_phenomena .
+
+",backwash is a type of coastal phenomena.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/BeachDepletion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:beach_depletion rdfs:subClassOf :coastal_phenomena .
+
+",beach depletion is a type of coastal phenomena.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/Breaker,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:breaker rdfs:subClassOf :breaking_wave .
+
+",breaker is a type of breaking wave.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/BreakingWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:breaking_wave rdfs:subClassOf :coastal_phenomena .
+
+",breaking wave is a type of coastal phenomena.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/CoastalPhenomena,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coastal_phenomena rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :coastal_region ;
+            owl:onProperty :has_realm ],
+        :ocean_phenomena .
+
+",Coastal phenomena is a type of ocean phenomena that is exclusive to the coastal region realm.,2,True
+sweet,http://sweetontology.net/phenOceanCoastal/LittoralDrift,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:littoral_drift rdfs:subClassOf :coastal_phenomena ;
+    owl:equivalentClass :longshore_drift .
+
+","Littoral drift, which is the same as longshore drift, is a type of coastal phenomena.",2,True
+sweet,http://sweetontology.net/phenOceanCoastal/LongshoreDrift,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:longshore_drift rdfs:subClassOf :coastal_phenomena .
+
+",longshore drift is a type of coastal phenomena.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/OceanTide,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_tide rdfs:subClassOf :coastal_phenomena,
+        :tide .
+
+",Ocean tide is a type of tide and also a type of coastal phenomena.,2,True
+sweet,http://sweetontology.net/phenOceanCoastal/PlungingBreaker,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plunging_breaker rdfs:subClassOf :breaker .
+
+",plunging breaker is a type of breaker.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/SpillingBreaker,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spilling_breaker rdfs:subClassOf :breaker .
+
+",spilling breaker is a type of breaker.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/StormSurge,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:storm_surge rdfs:subClassOf :coastal_phenomena .
+
+",storm surge is a type of coastal phenomena.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/SurfBeat,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surf_beat rdfs:subClassOf :coastal_phenomena .
+
+",surf beat is a type of coastal phenomena.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/SurgingBreaker,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surging_breaker rdfs:subClassOf :breaker .
+
+",surging breaker is a type of breaker.,1,False
+sweet,http://sweetontology.net/phenOceanCoastal/Swell,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:swell rdfs:subClassOf :coastal_phenomena,
+        :gravitational_wave,
+        :gravity_wave .
+
+","Swell is a type of coastal phenomena, gravitational wave, and gravity wave.",3,True
+sweet,http://sweetontology.net/phenOceanDynamics/BoundaryCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boundary_current rdfs:subClassOf :ocean_current .
+
+",boundary current is a type of ocean current.,1,False
+sweet,http://sweetontology.net/phenOceanDynamics/CircumpolarCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:circumpolar_current rdfs:subClassOf :ocean_current .
+
+",circumpolar current is a type of ocean current.,1,False
+sweet,http://sweetontology.net/phenOceanDynamics/ColdCoreCell,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cold_core_cell rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :cool ;
+            owl:onProperty :has_temperature_range ],
+        :ocean_gyre .
+
+",A cold core cell is a type of ocean gyre and is also a type of entity that must have a cool temperature range.,2,True
+sweet,http://sweetontology.net/phenOceanDynamics/Downwelling,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:downwelling rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :down ;
+            owl:onProperty :has_direction ],
+        :ocean_circulation .
+
+",Downwelling is a type of ocean circulation and is characterized by a downward direction.,2,True
+sweet,http://sweetontology.net/phenOceanDynamics/EasternBoundaryCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:eastern_boundary_current rdfs:subClassOf :boundary_current .
+
+",eastern boundary current is a type of boundary current.,1,False
+sweet,http://sweetontology.net/phenOceanDynamics/LangmuirCirculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:langmuir_circulation rdfs:subClassOf :ocean_circulation .
+
+",langmuir circulation is a type of ocean circulation.,1,False
+sweet,http://sweetontology.net/phenOceanDynamics/LittoralCurrent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:littoral_current rdfs:subClassOf :ocean_current ;
+    owl:equivalentClass :longshore_current .
+
+","Littoral current, which is the same as longshore current, is a type of ocean current.",2,True
+sweet,http://sweetontology.net/phenOceanDynamics/LongshoreCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:longshore_current rdfs:subClassOf :ocean_current .
+
+",longshore current is a type of ocean current.,1,False
+sweet,http://sweetontology.net/phenOceanDynamics/LoopCurrent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:loop_current rdfs:subClassOf :ocean_current .
+
+",loop current is a type of ocean current.,1,False
+sweet,http://sweetontology.net/phenOceanDynamics/MesoscaleEddy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesoscale_eddy rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :mesoscale ;
+            owl:onProperty :has_spatial_scale ],
+        :eddy ;
+    owl:equivalentClass :mode_eddy .
+
+","A mesoscale eddy, which is the same as a mode eddy, is a type of eddy. Furthermore, it is a type of entity that must have a spatial scale that is mesoscale.",3,True
+sweet,http://sweetontology.net/phenOceanDynamics/ModeEddy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mode_eddy rdfs:subClassOf :eddy .
+
+",mode eddy is a type of eddy.,1,False
+sweet,http://sweetontology.net/phenOceanDynamics/OceanCirculation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ocean_circulation rdfs:subClassOf :circulation,
+        :ocean_phenomena .
+
+",Ocean circulation is both a type of circulation and a type of ocean phenomena.,2,True

@@ -1,0 +1,582 @@
+ontology,root,fragment,text,statements,llm_used
+envo,http://purl.obolibrary.org/obo/UBERON_0018674,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heart_vasculature rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :heart ],
+        :vasculature_of_organ,
+        :vasculature_of_trunk ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :vasculature ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :heart ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""An interconnected tubular multi-tissue structure that contains fluid that is actively transported around the heart."" ;
+    :has_exact_synonym ""cardiac vasculature"" .
+
+","Heart vasculature, which is also exactly synonymous with cardiac vasculature, is defined as an interconnected tubular multi-tissue structure containing fluid that is actively transported around the heart. It is the same as something that intersects with something that is vasculature and something that is at least part of some heart. Additionally, heart vasculature is classified as a type of vasculature of trunk, a type of vasculature of organ, and a type of something that is at least part of some heart.",6,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019042,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reproductive_system_mucosa rdfs:subClassOf :mucosa,
+        :reproductive_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :mucosa ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :reproductive_system ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_exact_synonym ""genital mucosa"" .
+
+","The reproductive system mucosa is identical to the intersection of something that is mucosa and something that is at least partly part of some reproductive system. It is classified both as a type of mucosa and as a type of reproductive structure. Additionally, the reproductive system mucosa is exactly synonymous with genital mucosa.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019204,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_epithelium rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :zone_of_skin ],
+        :ecto_epithelium ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :epithelium ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :zone_of_skin ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Any region of epithelium that is part of a skin region."" .
+
+","Skin epithelium is the same as something that is the intersection of epithelium and something that is at least part of some zone of skin. It is a type of ecto epithelium and also a type of something that is at least part of some zone of skin. Additionally, skin epithelium is defined as any region of epithelium that is part of a skin region.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019207,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chorioretinal_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :retina ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :eyeball_of_camera_type_eye ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :optic_choroid ],
+        :caro_0000000,
+        :ectoderm_derived_structure,
+        :multi_tissue_structure,
+        :structure_with_developmental_contribution_from_neural_crest ;
+    :has_definition ""The part of the eye that consists of both the retina and the optic choroid."" ;
+    :has_exact_synonym ""chorioretina"",
+        ""choroid and retina"",
+        ""retinachoroid"",
+        ""retinachoroidal region"" .
+
+","The chorioretinal region is a type of multi-tissue structure, caro 0000000, ectoderm-derived structure, and structure with developmental contributions from the neural crest. It is part of the eye that includes at least some parts of the eyeball of the camera type eye, the retina, and the optic choroid. The chorioretinal region is defined as the part of the eye that consists of both the retina and the optic choroid. It is also exactly synonymous with chorioretina, choroid and retina, retinachoroid, and the retinachoroidal region.",12,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019264,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gray_matter_of_forebrain rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :forebrain ],
+        :brain_gray_matter ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :gray_matter ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :forebrain ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The gray matter of the forebrain is the same as the intersection of the gray matter and something that is at least part of some forebrain. Additionally, the gray matter of the forebrain is identified as a type of brain gray matter, as well as a type of something that is at least part of some forebrain.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019269,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gray_matter_of_diencephalon rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :diencephalon ],
+        :gray_matter_of_forebrain ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :gray_matter ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :diencephalon ] ;
+                            rdf:rest :nil ] ] ] .
+
+",The gray matter of the diencephalon is the same as the intersection between gray matter and something that is at least part of the diencephalon. It is also identified as a type of gray matter of the forebrain and as a type of structure that is at least part of the diencephalon.,3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0019304,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sensory_organ_epithelium rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :sense_organ ],
+        :epithelium ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :epithelium ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :sense_organ ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The sensory organ epithelium is the same as something that is the intersection of epithelium and something that is at least part of some sense organ. Moreover, the sensory organ epithelium is a type of epithelium and also a type of something that is at least part of some sense organ.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034768,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:morphological_feature rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :multicellular_organism ],
+        :anatomical_structure ;
+    :has_definition ""A part of an organism or organ that is continuous with its surroundings and distinguished from its surroundings based on morphology."" .
+
+","A morphological feature is categorized as a type of anatomical structure and also as a type of something that is at least part of some multicellular organism. Additionally, a morphological feature is defined as a part of an organism or organ that is continuous with its surroundings and distinguished from its surroundings based on morphology.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034878,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prechordal_mesoderm rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :axial_mesoderm ],
+        :embryonic_structure ;
+    :has_definition ""The area of axial mesoderm that develops into the prechordal plate."" ;
+    :has_exact_synonym ""prechordal mesenchyme"" .
+
+","Prechordal mesoderm is a type of embryonic structure and a subtype of axial mesoderm. It is defined as the area of axial mesoderm that develops into the prechordal plate. Additionally, prechordal mesoderm is exactly synonymous with prechordal mesenchyme.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034921,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multi_organ_part_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :organ_part ],
+        :multicellular_anatomical_structure ;
+    :has_definition ""An multicellular anatomical structure that has subparts of multiple organs as a part."" ;
+    :has_related_synonym ""anatomical cluster"" .
+
+","A multi-organ part structure is a type of multicellular anatomical structure and is also classified as something that must have at least some organ part as a part of it. It is defined as a multicellular anatomical structure that includes subparts of multiple organs. Additionally, ""anatomical cluster"" is a related synonym for multi-organ part structure.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034923,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:disconnected_anatomical_group rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :anatomical_structure ],
+        :material_anatomical_entity ;
+    :has_definition ""Material anatomical entity consisting of multiple anatomical structures that are not connected to each other."" .
+
+","A disconnected anatomical group is classified as a type of material anatomical entity and is also defined as a type of entity that includes, at a minimum, parts of some anatomical structure. Furthermore, a disconnected anatomical group is defined as a material anatomical entity consisting of multiple anatomical structures that are not connected to each other.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034925,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anatomical_collection rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :anatomical_structure ],
+        :material_anatomical_entity ;
+    :has_definition ""A collection of anatomical structures that are alike in terms of their morphology or developmental origin."" .
+
+",An anatomical collection is a type of material anatomical entity and is also a type of entity that at least has part some anatomical structure. It is defined as a collection of anatomical structures that are alike in terms of their morphology or developmental origin.,3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034929,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:external_soft_tissue_zone rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :musculature ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :organism_subdivision ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :vasculature ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :nerve ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :zone_of_skin ],
+        :caro_0000000,
+        :multicellular_anatomical_structure ;
+    :has_definition ""A region or zone on the surface of an organism that encompasses skin and any adnexa, down through muscles and bounded by underlying skeletal support structures."" .
+
+","The external soft tissue zone is a type of caro 0000000 and a type of multicellular anatomical structure. It is also described as a type of something that is at least part of some organism subdivision and a type of something that at least has part some zone of skin, musculature, nerve, and vasculature. The external soft tissue zone is defined as a region or zone on the surface of an organism that encompasses skin and any adnexa, down through muscles, and is bounded by underlying skeletal support structures.",8,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034944,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zone_of_organ rdfs:subClassOf :organ_part ;
+    :has_exact_synonym ""organ sector"",
+        ""organ zonal region"",
+        ""organ zone"" ;
+    :has_related_synonym ""organ region with floating fiat boundary"" .
+
+","The zone of organ is a type of organ part. It is exactly synonymous with organ sector, organ zonal region, and organ zone. Additionally, it has a related synonym, which is organ region with floating fiat boundary.",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0034995,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jaw_mesenchyme rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :jaw_region ],
+        :head_mesenchyme ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :mesenchyme ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :jaw_region ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Mesenchyme that is part of a developing jaw [Automatically generated definition]."" .
+
+","Jaw mesenchyme is the same as something that intersects something that is mesenchyme and something that is at least part of some jaw region. Additionally, jaw mesenchyme is a type of head mesenchyme and also a type of something that is at least part of some jaw region. Furthermore, jaw mesenchyme is defined as Mesenchyme that is part of a developing jaw [Automatically generated definition].",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0035037,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jaw_epithelium rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :jaw_region ],
+        :digestive_tract_epithelium ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :epithelium ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :jaw_region ] ;
+                            rdf:rest :nil ] ] ] .
+
+","Jaw epithelium is identical to an entity that is both part of the epithelium and at least a part of some jaw region. Furthermore, jaw epithelium is classified as a type of digestive tract epithelium and also as a type that is at least part of some jaw region.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0035804,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:future_mouth rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :presumptive_gut ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :stomodeum ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :endoderm ],
+        :caro_0000000,
+        :subdivision_of_tube ;
+    :has_definition ""The primordial mouth region of the developing head."" ;
+    :has_exact_synonym ""primitive mouth"",
+        ""primordial mouth"" .
+
+","Future mouth is a type of Caro 0000000, a type of subdivision of tube, and a type of something that at least part of some presumptive gut. It is also a type of something that at least has part some endoderm, and a type of something that at least has part some stomodeum. Future mouth is defined as the primordial mouth region of the developing head and has the exact synonyms primitive mouth and primordial mouth.",8,True
+envo,http://purl.obolibrary.org/obo/UBERON_0035965,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_blood_vessel rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :blood_vessel_layer ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :blood_vessel ],
+        :anatomical_wall,
+        :caro_0000000,
+        :mesoderm_derived_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :blood_vessel ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_exact_synonym ""blood vessel wall"" ;
+    :has_related_synonym ""vascular wall"" .
+
+","The wall of a blood vessel is the same as an entity that intersects with an anatomical wall and an entity that is at least partly a component of a blood vessel. It is classified as a type of caro 0000000, anatomical wall, mesoderm-derived structure, and an entity that is at least part of some blood vessel. Additionally, it's a type of entity that at least has a part of some blood vessel layer. Furthermore, the wall of a blood vessel has an exact synonym, ""blood vessel wall,"" and a related synonym, ""vascular wall.""",8,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036016,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:honey rdfs:subClassOf :regurgitated_substance ;
+    :has_definition ""A sweet viscid material elaborated out of the nectar of flowers in the honey sac of various bees."" .
+
+",Honey is a type of regurgitated substance and is defined as a sweet viscid material elaborated out of the nectar of flowers in the honey sac of various bees.,2,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036017,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regurgitated_substance rdfs:subClassOf :organism_substance ;
+    :has_definition ""A bodily fluid consisting of the contents of the digestive tract expulsed through the anterior portion of the digestive tract."" ;
+    :has_related_synonym ""regurgitate"" .
+
+","Regurgitated substance is a type of organism substance, defined as a bodily fluid consisting of the contents of the digestive tract expelled through the anterior portion of the digestive tract. It is also related to the synonym ""regurgitate.""",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036146,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cardiopharyngeal_field rdfs:subClassOf :anlage,
+        :embryonic_structure,
+        :embryonic_tissue,
+        :mesoderm_derived_structure ;
+    :has_definition ""An region of the mesoderm that includes anterior lateral mesoderm of the first heart field plus contiguous pharyngeal mesoderm that gives rise to second-heart-field-derived regions of the heart and branchiomeric muscles."" .
+
+","The cardiopharyngeal field is a type of embryonic structure, embryonic tissue, anlage, and mesoderm-derived structure. It is defined as a region of the mesoderm that includes the anterior lateral mesoderm of the first heart field plus contiguous pharyngeal mesoderm that gives rise to second-heart-field-derived regions of the heart and branchiomeric muscles.",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036215,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anatomical_surface_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :anatomical_structure ],
+        :material_anatomical_entity ;
+    :has_definition ""Material anatomical entity that forms the outermost boundary of an anatomical structure."" .
+
+",An anatomical surface region is a type of material anatomical entity and is also considered a type of entity that constitutes at least a part of some anatomical structure. It is defined as a material anatomical entity that forms the outermost boundary of an anatomical structure.,3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036244,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:secretion_of_serous_membrane rdfs:subClassOf :transudate ;
+    :has_broad_synonym ""serous fluid"" ;
+    :has_definition ""A transudate found in the serous sac."" ;
+    :has_exact_synonym ""serous sac fluid"" .
+
+",The secretion of serous membranes is a type of transudate and is defined as a transudate found in the serous sac. It is broadly synonymous with serous fluid and is exactly synonymous with serous sac fluid.,4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036253,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orifice_of_skull rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :skull ],
+        :orifice ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :orifice ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :skull ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_exact_synonym ""cranial orifice"",
+        ""skull orifice"" .
+
+","The orifice of the skull is the same as something that intersects with something that is an orifice and something that is at least part of some skull. It is a type of orifice and also a type of something that is at least part of some skull. Moreover, the orifice of the skull has the exact synonyms ""cranial orifice"" and ""skull orifice.""",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036302,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vasculature_of_central_nervous_system_plus_retina rdfs:subClassOf :vasculature ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :vasculature_of_retina ;
+                    rdf:rest [ rdf:first :vasculature_of_central_nervous_system ;
+                            rdf:rest :nil ] ] ] .
+
+","The vasculature of the central nervous system plus the retina is the same as the union of the vasculature of the retina and the vasculature of the central nervous system, indicating that it is a specific type of vasculature.",2,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036303,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vasculature_of_central_nervous_system rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :central_nervous_system ],
+        :vasculature_of_central_nervous_system_plus_retina ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :vasculature ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :central_nervous_system ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The vasculature of the central nervous system shares the same characteristics as something that intersects with the vasculature and something that is at least part of the central nervous system. Additionally, the vasculature of the central nervous system is considered a type of vasculature that includes both the central nervous system and the retina. Furthermore, it is classified as a type of entity that is at least a part of the central nervous system.",3,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036654,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_lateral_ventricle rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :telencephalic_ventricle ],
+        :structure_with_developmental_contribution_from_neural_crest,
+        :wall_of_ventricular_system_of_brain ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :telencephalic_ventricle ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The wall of the lateral ventricle is identical to an entity that is an intersection of an anatomical wall and a part that is at least partially part of the telencephalic ventricle. Additionally, the wall of the lateral ventricle is a type of structure that has a developmental contribution from the neural crest and is a type of wall within the ventricular system of the brain. Furthermore, it is a type of entity that is at least partially part of the telencephalic ventricle.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036661,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_ventricular_system_of_brain rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :ventricular_system_of_brain ],
+        :anatomical_wall,
+        :ectoderm_derived_structure,
+        :ventricle_of_nervous_system ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :ventricular_system_of_brain ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The wall of the ventricular system of the brain is identical to something that intersects with an anatomical wall and something that is at least part of the ventricular system of the brain. It is categorized as a type of anatomical wall, a type of ectoderm-derived structure, and a type of ventricle of the nervous system. Additionally, it is considered a type of structure that is at least part of some ventricular system of the brain.",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0036925,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_eyeball rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :eyeball_of_camera_type_eye ],
+        :anatomical_wall,
+        :ectoderm_derived_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :eyeball_of_camera_type_eye ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_exact_synonym ""eyeball wall"" .
+
+","The wall of the eyeball is the same as something that intersects with something that is an anatomical wall and something that is at least part of some eyeball of the camera type eye. It is a type of anatomical wall, a type of ectoderm derived structure, and a type of something that is at least part of some eyeball of the camera type eye. Additionally, the wall of the eyeball has an exact synonym: eyeball wall.",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_0037144,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wall_of_heart rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :heart ],
+        :anatomical_wall,
+        :mesoderm_derived_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_wall ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :heart ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Wall of organ which has as its parts the endocardium, myocardium , epicardium, and the cardiac septum, surrounded by the pericardial sac proper and is continuous with the walls of the systemic and pulmonary arterial and venous trees."" ;
+    :has_exact_synonym ""cardiac wall"" .
+
+","The wall of the heart shares the same characteristics as something that intersects something that is an anatomical wall and something that is at least part of some heart. It is classified as a type of anatomical wall, a type of mesoderm-derived structure, and a type of entity that is at least part of some heart. The definition of the wall of the heart is as follows: it is the wall of an organ which includes the endocardium, myocardium, epicardium, and the cardiac septum as its parts. This wall is encased by the proper pericardial sac and is continuous with the walls of the systemic and pulmonary arterial and venous trees. Additionally, the wall of the heart is exactly synonymous with the term ""cardiac wall.""",6,True
+envo,http://purl.obolibrary.org/obo/UBERON_1000021,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_of_face rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :face ],
+        :skin_of_head ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :zone_of_skin ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :face ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A zone of skin that is part of the face."" ;
+    :has_exact_synonym ""face skin"" ;
+    :has_related_synonym ""facial skin"" .
+
+","The skin of the face is defined as a zone of skin that is part of the face, which is the same as something that is the intersection of a zone of skin and something that is at least a part of some face. It is a type of skin of the head and also considered a type of something that is at least part of some face. Additionally, the skin of the face is exactly synonymous with ""face skin"" and is relatedly synonymous with ""facial skin.""",6,True
+envo,http://purl.obolibrary.org/obo/UBERON_1100000,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:digestive_tract_junction rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :connects ;
+            owl:someValuesFrom :subdivision_of_digestive_tract ],
+        :anatomical_junction ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_junction ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :connects ;
+                                    owl:someValuesFrom :subdivision_of_digestive_tract ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""An anatomical junction between two parts of the digestive tract."" .
+
+","A digestive tract junction is identified as a specific type of anatomical junction that is essentially an intersection of entities that are anatomical junctions and entities that at least connect some subdivision of the digestive tract. Moreover, it is defined as an anatomical junction between two parts of the digestive tract.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_3000961,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:external_integument_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :integument ],
+        :surface_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :surface_structure ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :integument ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Structures of the dermis, epidermis, glands and pigment cells recognizable on the external surfaces of the integument."" .
+
+","The external integument structure is identical to the intersection of surface structures and entities that are at least a part of some integument. It is classified as a type of surface structure and also as a type of entity that is at least a part of some integument. Furthermore, the external integument structure is defined as structures of the dermis, epidermis, glands, and pigment cells that are recognizable on the external surfaces of the integument.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_3000972,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:head_external_integument_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :head ],
+        :external_integument_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :external_integument_structure ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :head ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Dermal, epidermal, glandular and pigment structures of the external head integument."" .
+
+","The head external integument structure shares the same characteristics as something that is both an external integument structure and at least partially part of a head. It is classified as a type of external integument structure and also as a type of structure that is at least part of some head. Furthermore, the head external integument structure is defined as dermal, epidermal, glandular, and pigment structures of the external head integument.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_3000977,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:body_external_integument_structure rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :trunk ],
+        :external_integument_structure ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :external_integument_structure ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :trunk ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Dermal, epidermal, glandular and pigment structures of the body integument."" .
+
+","The body external integument structure shares the same characteristics as something that intersects between something with an external integument structure and something that is at least part of some trunk. Additionally, the body external integument structure is classified as a type of external integument structure and also as a type of something that is at least part of some trunk. Moreover, the body external integument structure is defined as dermal, epidermal, glandular, and pigment structures of the body integument.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_3010200,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vasculature_of_respiratory_integument rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :integument ],
+        :respiratory_system_blood_vessel ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :blood_vessel ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :respiratory_system ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :part_of ;
+                                            owl:someValuesFrom :integument ] ;
+                                    rdf:rest :nil ] ] ] ] ;
+    :has_definition ""Blood vessels in respiratory skin."" .
+
+","The vasculature of the respiratory integument shares the same characteristics as something that intersects with both blood vessels and something that is at least partially part of the respiratory system, as well as something that is at least partially part of an integument. Furthermore, the vasculature of the respiratory integument is identified as a type of blood vessel associated with the respiratory system and is also recognized as a type of entity that is at least partially part of an integument. Additionally, the vasculature of the respiratory integument is defined as blood vessels in respiratory skin.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_4100000,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skeletal_element_projection rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :skeletal_element ],
+        :anatomical_projection ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_projection ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :skeletal_element ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""Anatomical projection that is composed of bone or cartilage tissue."" .
+
+","A skeletal element projection is defined as an anatomical projection that is composed of bone or cartilage tissue. It is identified as a type of anatomical projection and also as a type that is at least partly comprised of a skeletal element. Furthermore, a skeletal element projection is equivalent to the intersection of an anatomical projection and a component that is at least part of a skeletal element.",4,True
+envo,http://purl.obolibrary.org/obo/UBERON_8410024,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intestinal_junction rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :intestine ],
+        :digestive_tract_junction ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :anatomical_junction ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :intestine ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :connects ;
+                                            owl:someValuesFrom :subdivision_of_digestive_tract ] ;
+                                    rdf:rest :nil ] ] ] ] ;
+    :has_definition ""An anatomical junction between two parts of the intestine."" ;
+    :has_exact_synonym ""junction of intestine"" .
+
+","Intestinal junction is known to be the same as an intersection that involves an anatomical junction, which is at least part of some intestine and also connects some subdivision of the digestive tract. Furthermore, an intestinal junction is categorized as a type of digestive tract junction as well as a type of entity that is at least part of some intestine. It is defined as an anatomical junction between two parts of the intestine and is exactly synonymous with the term ""junction of intestine.""",5,True
+envo,http://purl.obolibrary.org/obo/UBERON_8450002,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:excretory_system rdfs:subClassOf :anatomical_system ;
+    :has_definition ""An anatomical system that eliminates waste products that arise as a result of metabolic activity."" .
+
+",The excretory system is a type of anatomical system that is defined as an anatomical system that eliminates waste products arising from metabolic activity.,2,True
+envo,http://purl.obolibrary.org/obo/UBERON_8480025,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:skin_of_clavicle_region rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :pectoral_girdle_region ],
+        :zone_of_skin ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :zone_of_skin ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :part_of ;
+                                    owl:someValuesFrom :pectoral_girdle_region ] ;
+                            rdf:rest :nil ] ] ] ;
+    :has_definition ""A zone of skin that is above the clavicle zone in the pectoral girdle region."" .
+
+","The skin of the clavicle region shares the same characteristics as something that intersects the zone of skin and something that is at least part of the pectoral girdle region. Additionally, the skin of the clavicle region is classified as a type of zone of skin and also as a type that is at least part of the pectoral girdle region. Moreover, the skin of the clavicle region is defined as a zone of skin that is above the clavicle zone in the pectoral girdle region.",4,True

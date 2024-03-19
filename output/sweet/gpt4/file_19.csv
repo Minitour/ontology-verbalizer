@@ -1,0 +1,3125 @@
+ontology,root,fragment,text,statements,llm_used
+sweet,http://sweetontology.net/reprDataProduct/FillValue,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fill_value rdfs:subClassOf :value .
+
+",fill value is a type of value.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Granule,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:granule rdfs:subClassOf :data .
+
+",granule is a type of data.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Image,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:image rdfs:subClassOf :representation .
+
+",image is a type of representation.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Layer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:layer rdfs:subClassOf :data_product .
+
+",layer is a type of data product.,1,False
+sweet,http://sweetontology.net/reprDataProduct/MaximumValid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maximum_valid rdfs:subClassOf :value .
+
+",maximum valid is a type of value.,1,False
+sweet,http://sweetontology.net/reprDataProduct/MinimumValid,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:minimum_valid rdfs:subClassOf :value .
+
+",minimum valid is a type of value.,1,False
+sweet,http://sweetontology.net/reprDataProduct/MissingValue,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:missing_value rdfs:subClassOf :value .
+
+",missing value is a type of value.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Offset,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:offset rdfs:subClassOf :value .
+
+",offset is a type of value.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Profile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:profile rdfs:subClassOf :horizon,
+        :profile,
+        :representation,
+        :vertical_profile .
+
+","Profile is a type of representation, horizon, and vertical profile. Additionally, profile is a type of profile itself.",4,True
+sweet,http://sweetontology.net/reprDataProduct/ScaleFactor,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scale_factor rdfs:subClassOf :value ;
+    owl:equivalentClass :scaling .
+
+","The scale factor, which is the same as scaling, is a type of value.",2,True
+sweet,http://sweetontology.net/reprDataProduct/Scaling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scaling rdfs:subClassOf :value .
+
+",scaling is a type of value.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Value,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:value rdfs:subClassOf :data .
+
+",value is a type of data.,1,False
+sweet,http://sweetontology.net/reprDataProduct/Version,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:version rdfs:subClassOf :iteration .
+
+",version is a type of iteration.,1,False
+sweet,http://sweetontology.net/reprDataService/Access,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:access rdfs:subClassOf :data_service ;
+    owl:equivalentClass :accessing .
+
+","Accessing is the same as access, which is a type of data service.",2,True
+sweet,http://sweetontology.net/reprDataService/Accessing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:accessing rdfs:subClassOf :data_service .
+
+",accessing is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataService/Compression,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compression rdfs:subClassOf :data_service .
+
+",compression is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataService/CompressionMethod,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:compression_method rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :compression ;
+            owl:onProperty :has_data_service ],
+        :algorithm .
+
+",A compression method is a type of algorithm and it is also a type of something that only has data service compression.,2,True
+sweet,http://sweetontology.net/reprDataService/DataService,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_service rdfs:subClassOf :service .
+
+",data service is a type of service.,1,False
+sweet,http://sweetontology.net/reprDataService/DataSynchronization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_synchronization rdfs:subClassOf :data_service .
+
+",data synchronization is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataService/Discover,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:discover rdfs:subClassOf :data_service ;
+    owl:equivalentClass :discovery,
+        :discovery_service .
+
+","Discover is synonymous with both discovery and discovery service. Additionally, discover is categorized as a type of data service.",3,True
+sweet,http://sweetontology.net/reprDataService/Discovery,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:discovery rdfs:subClassOf :data_service .
+
+",discovery is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataService/DiscoveryService,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:discovery_service rdfs:subClassOf :data_service .
+
+",discovery service is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataService/FormatConversion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:format_conversion rdfs:subClassOf :data_service ;
+    owl:equivalentClass :reformat .
+
+","Format conversion, which is the same as reformatting, falls under the category of a data service.",2,True
+sweet,http://sweetontology.net/reprDataService/InterfaceProtocol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interface_protocol rdfs:subClassOf :data_service .
+
+",interface protocol is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataService/PostProcessing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:post_processing rdfs:subClassOf :data_service .
+
+",post processing is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataService/PreProcessing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pre_processing rdfs:subClassOf :data_service .
+
+",pre processing is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataService/Reformat,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reformat rdfs:subClassOf :data_service ;
+    owl:equivalentClass :reformatting .
+
+",Reformatting is the same as reformat and is a type of data service.,2,True
+sweet,http://sweetontology.net/reprDataService/Reformatting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reformatting rdfs:subClassOf :data_service .
+
+",reformatting is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Animate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:animate rdfs:subClassOf :visualization,
+        :visualize ;
+    owl:equivalentClass :animation .
+
+",Animate is the same as animation and is a type of visualization as well as a type of visualize.,3,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Animation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:animation rdfs:subClassOf :visualization,
+        :visualize .
+
+",Animation is a type of visualization and also a type of visualize.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Assimilate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:assimilate rdfs:subClassOf :parameterization,
+        :parameterize ;
+    owl:equivalentClass :assimilation .
+
+",Assimilate is the same as assimilation and it is a type of both parameterize and parameterization.,3,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Assimilation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:assimilation rdfs:subClassOf :parameterization,
+        :parameterize .
+
+",Assimilation is a type of parameterization.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/AssociationRuleLearning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:association_rule_learning rdfs:subClassOf :parameterization,
+        :parameterize .
+
+",Association rule learning is a type of parameterization.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Classification,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:classification rdfs:subClassOf :data_analysis_service ;
+    owl:equivalentClass :classifier,
+        :classify .
+
+","Classification is synonymous with both classifier and classify. Additionally, classification is identified as a type of data analysis service.",3,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Classifier,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:classifier rdfs:subClassOf :data_analysis_service .
+
+",classifier is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Classify,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:classify rdfs:subClassOf :data_analysis_service .
+
+",classify is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Cluster,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cluster rdfs:subClassOf :data_analysis_service ;
+    owl:equivalentClass :clustering .
+
+","Cluster, which is the same as clustering, is a type of data analysis service.",2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Clustering,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clustering rdfs:subClassOf :data_analysis_service .
+
+",clustering is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/DataAnalysisService,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_analysis_service rdfs:subClassOf :data_service .
+
+",data analysis service is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Filter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:filter rdfs:subClassOf :frequency_domain_analysis,
+        :spectral_analysis .
+
+",A filter is a type of frequency domain analysis and is also a type of spectral analysis.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Fit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fit rdfs:subClassOf :parameterization,
+        :parameterize ;
+    owl:equivalentClass :fitting .
+
+",Fit is the same as fitting and is a type of parameterize as well as a type of parameterization.,3,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Fitting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fitting rdfs:subClassOf :parameterization,
+        :parameterize .
+
+",Fitting is a type of parameterization.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/FourierAnalysis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fourier_analysis rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :fourier_function ;
+            owl:onProperty :has_basis_function ],
+        :frequency_domain_analysis,
+        :spectral_analysis ;
+    owl:equivalentClass :fourier_transform .
+
+","Fourier analysis is the same as Fourier transform and is a type of frequency domain analysis, spectral analysis, as well as a type of analysis that only has the Fourier function as its basis function.",4,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/FourierTransform,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fourier_transform rdfs:subClassOf :frequency_domain_analysis,
+        :spectral_analysis .
+
+",The Fourier transform is a type of frequency domain analysis as well as a type of spectral analysis.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/FrequencyDomainAnalysis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:frequency_domain_analysis rdfs:subClassOf :data_analysis_service ;
+    owl:equivalentClass :spectral_analysis .
+
+","Frequency domain analysis, which is the same as spectral analysis, is a type of data analysis service.",2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Interpolate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interpolate rdfs:subClassOf :data_service ;
+    owl:equivalentClass :interpolation .
+
+","Interpolate, which is a type of data service, is the same as interpolation.",2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Interpolation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interpolation rdfs:subClassOf :data_service .
+
+",interpolation is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/InterpolationMethod,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interpolation_method rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :interpolation ;
+            owl:onProperty :has_data_service ],
+        :algorithm .
+
+",The interpolation method is a type of algorithm and is specifically a kind of something that only encompasses data service interpolation.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/KnowledgeDiscovery,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:knowledge_discovery rdfs:subClassOf :data_analysis_service .
+
+",knowledge discovery is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Overlay,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:overlay rdfs:subClassOf :visualization,
+        :visualize .
+
+",Overlay is both a type of visualization and a type of visualize.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Parameterize,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parameterize rdfs:subClassOf :data_analysis_service,
+        :model,
+        :scientific_model ;
+    owl:equivalentClass :parameterization .
+
+","Parameterize, which is the same as parameterization, is a type of data analysis service, model, and scientific model.",4,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Plot,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plot rdfs:subClassOf :visualization,
+        :visualize .
+
+",Plot is both a type of visualization and a type of visualize.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/PowerSpectrum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:power_spectrum rdfs:subClassOf :frequency_domain_analysis,
+        :spectral_analysis ;
+    owl:equivalentClass :spectrum .
+
+",The power spectrum is the same as the spectrum and represents a type of frequency domain analysis as well as a type of spectral analysis.,3,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Reanalysis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reanalysis rdfs:subClassOf :data_analysis_service ;
+    owl:equivalentClass :reanalyze .
+
+",Reanalysis is synonymous with reanalyze. It is also a type of data analysis service.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Reanalyze,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reanalyze rdfs:subClassOf :data_analysis_service .
+
+",reanalyze is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Reconstruct,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reconstruct rdfs:subClassOf :data_analysis_service ;
+    owl:equivalentClass :reconstruction .
+
+",Reconstruct is synonymous with reconstruction and is categorized as a type of data analysis service.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Reconstruction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reconstruction rdfs:subClassOf :data_analysis_service .
+
+",reconstruction is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Scattergram,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scattergram rdfs:subClassOf :plot .
+
+",scattergram is a type of plot.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/SpectralAnalysis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectral_analysis rdfs:subClassOf :data_analysis_service .
+
+",spectral analysis is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/SpectralSynthesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectral_synthesis rdfs:subClassOf :data_analysis_service .
+
+",spectral synthesis is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Spectrum,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectrum rdfs:subClassOf :frequency_domain_analysis,
+        :spectral_analysis .
+
+",Spectrum is a type of frequency domain analysis and also a type of spectral analysis.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/SphericalHarmonicAnalysis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spherical_harmonic_analysis rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :spherical_harmonic_function ;
+            owl:onProperty :has_basis_function ],
+        :frequency_domain_analysis,
+        :spectral_analysis .
+
+","Spherical harmonic analysis is a type of frequency domain analysis and spectral analysis, characterized by its exclusive reliance on the basis function known as the spherical harmonic function.",3,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Superimpose,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:superimpose rdfs:subClassOf :visualization,
+        :visualize .
+
+",Superimpose is both a type of visualization and a type of visualize.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/TimeSeries,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_series rdfs:subClassOf :data_analysis_service .
+
+",time series is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Train,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:train rdfs:subClassOf :parameterization,
+        :parameterize ;
+    owl:equivalentClass :training .
+
+","Train is the same as training and is a type of parameterization, also referred to as parameterize.",3,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Training,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:training rdfs:subClassOf :parameterization,
+        :parameterize .
+
+",Training is both a type of parameterize and a type of parameterization.,2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Visualization,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:visualization rdfs:subClassOf :data_analysis_service ;
+    owl:equivalentClass :visualize .
+
+","Visualization is equivalent to visualize, and it serves as a type of data analysis service.",2,True
+sweet,http://sweetontology.net/reprDataServiceAnalysis/Visualize,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:visualize rdfs:subClassOf :data_analysis_service .
+
+",visualize is a type of data analysis service.,1,False
+sweet,http://sweetontology.net/reprDataServiceAnalysis/WaveletAnalysis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wavelet_analysis rdfs:subClassOf :frequency_domain_analysis,
+        :spectral_analysis .
+
+",Wavelet analysis is a type of frequency domain analysis and also a type of spectral analysis.,2,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Buffer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:buffer rdfs:subClassOf :proximity .
+
+",buffer is a type of proximity.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Clip,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clip rdfs:subClassOf :geospatial_service .
+
+",clip is a type of geospatial service.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/CoordinateTransformation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coordinate_transformation rdfs:subClassOf :regrid,
+        :regridding .
+
+",Coordinate transformation is a type of regrid and also a type of regridding.,2,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Gazetteer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gazetteer rdfs:subClassOf :discover,
+        :discovery,
+        :discovery_service,
+        :geospatial_service .
+
+","A gazetteer is a type of discovery, discovery service, and geospatial service.",4,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Generalization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:generalization rdfs:subClassOf :data_reduction_service,
+        :geospatial_service .
+
+",Generalization is both a type of geospatial service and a type of data reduction service.,2,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Geocode,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geocode rdfs:subClassOf :geospatial_service .
+
+",geocode is a type of geospatial service.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Geolocate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geolocate rdfs:subClassOf :geospatial_service ;
+    owl:equivalentClass :geolocation .
+
+","Geolocate, which is the same as geolocation, is a type of geospatial service.",2,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Geolocation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geolocation rdfs:subClassOf :geospatial_service .
+
+",geolocation is a type of geospatial service.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Georeference,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:georeference rdfs:subClassOf :geospatial_service ;
+    owl:equivalentClass :georeferencing .
+
+","Georeference, which is the same as georeferencing, is a type of geospatial service.",2,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Georeferencing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:georeferencing rdfs:subClassOf :geospatial_service .
+
+",georeferencing is a type of geospatial service.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/GeospatialInterfaceProtocol,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geospatial_interface_protocol rdfs:subClassOf :interface_protocol .
+
+",geospatial interface protocol is a type of interface protocol.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/GeospatialService,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:geospatial_service rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_location ],
+        :data_service .
+
+",A geospatial service is a type of data service that is characterized by being a type of entity that has at least one location.,2,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Gridding,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gridding rdfs:subClassOf :geospatial_service .
+
+",gridding is a type of geospatial service.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/LBS,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lbs rdfs:subClassOf :geospatial_service ;
+    owl:equivalentClass :location_based_service .
+
+","LBS, which stands for Location Based Service, is a type of geospatial service.",2,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/LocationBasedService,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:location_based_service rdfs:subClassOf :geospatial_service .
+
+",location based service is a type of geospatial service.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Map,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:map rdfs:subClassOf :visualization,
+        :visualize ;
+    owl:equivalentClass :mapping .
+
+","A map, which is the same as mapping, is a type of visualization or visualize.",3,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Mapping,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mapping rdfs:subClassOf :visualization,
+        :visualize .
+
+",Mapping is both a type of visualization and a way to visualize.,2,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Proximity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proximity rdfs:subClassOf :geospatial_service .
+
+",proximity is a type of geospatial service.,1,False
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Regrid,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regrid rdfs:subClassOf :interpolate,
+        :interpolation ;
+    owl:equivalentClass :regridding .
+
+","Regrid, which is the same as regridding, is a type of interpolate and interpolation.",3,True
+sweet,http://sweetontology.net/reprDataServiceGeospatial/Regridding,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regridding rdfs:subClassOf :interpolate,
+        :interpolation .
+
+",Regridding is a type of interpolation.,2,True
+sweet,http://sweetontology.net/reprDataServiceReduction/Binning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binning rdfs:subClassOf :data_reduction_service .
+
+",binning is a type of data reduction service.,1,False
+sweet,http://sweetontology.net/reprDataServiceReduction/DataMining,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_mining rdfs:subClassOf :subset ;
+    owl:equivalentClass :mining .
+
+",Data mining is the same as mining and is a type of subset.,2,True
+sweet,http://sweetontology.net/reprDataServiceReduction/DataReductionService,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_reduction_service rdfs:subClassOf :data_service .
+
+",data reduction service is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataServiceReduction/Mining,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mining rdfs:subClassOf :subset .
+
+",mining is a type of subset.,1,False
+sweet,http://sweetontology.net/reprDataServiceReduction/Normalization,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normalization rdfs:subClassOf :data_reduction_service ;
+    owl:equivalentClass :normalize .
+
+","Normalization, which is the same as normalize, is a type of data reduction service.",2,True
+sweet,http://sweetontology.net/reprDataServiceReduction/Normalize,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normalize rdfs:subClassOf :data_reduction_service .
+
+",normalize is a type of data reduction service.,1,False
+sweet,http://sweetontology.net/reprDataServiceReduction/ParameterSubset,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parameter_subset rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :reduction_in ;
+            owl:someValuesFrom :physical_property ],
+        :subset .
+
+",A parameter subset is a type of subset and is also a type of something that entails at least a reduction in some physical property.,2,True
+sweet,http://sweetontology.net/reprDataServiceReduction/SpatialSubset,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spatial_subset rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :reduction_in ;
+            owl:someValuesFrom :space ],
+        :subset .
+
+",A spatial subset is a type of subset that is also characterized as a type of entity that involves at least some reduction in space.,2,True
+sweet,http://sweetontology.net/reprDataServiceReduction/Subsample,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subsample rdfs:subClassOf :data_reduction_service .
+
+",subsample is a type of data reduction service.,1,False
+sweet,http://sweetontology.net/reprDataServiceReduction/Subset,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subset rdfs:subClassOf :data_reduction_service .
+
+",subset is a type of data reduction service.,1,False
+sweet,http://sweetontology.net/reprDataServiceReduction/TemporalSubset,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:temporal_subset rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :reduction_in ;
+            owl:someValuesFrom :time ],
+        :subset .
+
+",Temporal subset is a type of subset and also a type of something that involves at least some reduction in time.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Acceptance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:acceptance rdfs:subClassOf :data_service .
+
+",acceptance is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/BinaryMask,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binary_mask rdfs:subClassOf :data_service ;
+    owl:equivalentClass :mask .
+
+","A binary mask, which is the same as a mask, is a type of data service.",2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Calibrate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:calibrate rdfs:subClassOf :verification,
+        :verify ;
+    owl:equivalentClass :calibration .
+
+","Calibrate is synonymous with calibration and is a type of verification, which is also known as verify.",3,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Calibration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:calibration rdfs:subClassOf :verification,
+        :verify .
+
+",Calibration is a type of verification.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Certificate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:certificate rdfs:subClassOf :validation_evidence .
+
+",certificate is a type of validation evidence.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/Copyright,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:copyright rdfs:subClassOf :validation_evidence .
+
+",copyright is a type of validation evidence.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/DataCleaning,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_cleaning rdfs:subClassOf :verification,
+        :verify .
+
+",Data cleaning is both a type of verification and a type of verify.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Encoding,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:encoding rdfs:subClassOf :security_method .
+
+",encoding is a type of security method.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/Encryption,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:encryption rdfs:subClassOf :security_method .
+
+",encryption is a type of security method.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/Intercalibration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:intercalibration rdfs:subClassOf :calibrate,
+        :calibration .
+
+",Intercalibration is both a type of calibrate and a type of calibration.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Key,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:key rdfs:subClassOf :security_method .
+
+",key is a type of security method.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/Mask,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mask rdfs:subClassOf :data_service .
+
+",mask is a type of data service.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/PixelScreening,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pixel_screening rdfs:subClassOf :quality_screening .
+
+",pixel screening is a type of quality screening.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/QualityScreening,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quality_screening rdfs:subClassOf :verification,
+        :verify .
+
+",Quality screening is a type of verification and is also considered a type of verify.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/SecurityMethod,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:security_method rdfs:subClassOf :verification,
+        :verify .
+
+",A security method is a type of verification and also a type of verify.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Signature,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:signature rdfs:subClassOf :validation_evidence .
+
+",signature is a type of validation evidence.,1,False
+sweet,http://sweetontology.net/reprDataServiceValidation/Validation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:validation rdfs:subClassOf :verification,
+        :verify .
+
+",Validation is a type of verification and verify.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/ValidationEvidence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:validation_evidence rdfs:subClassOf :evidence,
+        :validation .
+
+",Validation evidence is a type of evidence and also a form of validation.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Verification,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:verification rdfs:subClassOf :data_service ;
+    owl:equivalentClass :verify .
+
+",Verification is the same as verifying and it is a type of data service.,2,True
+sweet,http://sweetontology.net/reprDataServiceValidation/Verify,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:verify rdfs:subClassOf :data_service .
+
+",verify is a type of data service.,1,False
+sweet,http://sweetontology.net/reprMath/Array,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:array rdfs:subClassOf :order,
+        :seq,
+        :sequence .
+
+","Array is a type of order, seq, and sequence.",3,True
+sweet,http://sweetontology.net/reprMath/Bag,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bag rdfs:subClassOf :container ;
+    owl:equivalentClass :multiset .
+
+","A bag, which is also known as a multiset, is a type of container.",2,True
+sweet,http://sweetontology.net/reprMath/Collection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:collection rdfs:subClassOf :numerical_entity .
+
+",collection is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMath/Constant,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:constant rdfs:subClassOf :numerical_entity .
+
+",constant is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMath/Container,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:container rdfs:subClassOf :numerical_entity .
+
+",container is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMath/Equation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equation rdfs:subClassOf :relation .
+
+",equation is a type of relation.,1,False
+sweet,http://sweetontology.net/reprMath/Exponent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exponent rdfs:subClassOf :numerical_entity .
+
+",exponent is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMath/FuzzyPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fuzzy_point rdfs:subClassOf :neighborhood .
+
+",fuzzy point is a type of neighborhood.,1,False
+sweet,http://sweetontology.net/reprMath/FuzzySet,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fuzzy_set rdfs:subClassOf :numerical_entity .
+
+",fuzzy set is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMath/Inequality,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inequality rdfs:subClassOf :relation .
+
+",inequality is a type of relation.,1,False
+sweet,http://sweetontology.net/reprMath/Interval,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:interval rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1 ;
+            owl:onProperty :has_dimension ],
+        :numerical_entity ;
+    owl:disjointWith :point .
+
+","An interval is a type of numerical entity and is something that must have a dimension of 1. Moreover, an interval is disjoint with a point.",3,True
+sweet,http://sweetontology.net/reprMath/Matrix,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:matrix rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :array ;
+            owl:onProperty :each_element_has_type ],
+        :order,
+        :seq,
+        :sequence .
+
+","A matrix is a type of order, seq, and sequence. Additionally, it is a type of something where only each element has the type array.",4,True
+sweet,http://sweetontology.net/reprMath/Multiset,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multiset rdfs:subClassOf :container .
+
+",multiset is a type of container.,1,False
+sweet,http://sweetontology.net/reprMath/Neighborhood,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neighborhood rdfs:subClassOf :numerical_entity .
+
+",neighborhood is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMath/NumericalEntity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:numerical_entity rdfs:subClassOf :representation .
+
+",numerical entity is a type of representation.,1,False
+sweet,http://sweetontology.net/reprMath/Order,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:order rdfs:subClassOf :container ;
+    owl:equivalentClass :seq .
+
+","Order has the same sequence as seq, and it is a type of container.",2,True
+sweet,http://sweetontology.net/reprMath/OrderedPair,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ordered_pair rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_second_operand ],
+        [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_first_operand ],
+        :array,
+        :d .
+
+",An ordered pair is a type of D and also a type of array. It is characterized by having exactly 1 first operand and exactly 1 second operand.,4,True
+sweet,http://sweetontology.net/reprMath/OrderedTriple,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ordered_triple rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_second_operand ],
+        [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_third_operand ],
+        [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_first_operand ],
+        :array,
+        :d .
+
+","An ordered triple is a type of D and array. It is also a type of something that has exactly 1 first operand, exactly 1 second operand, and exactly 1 third operand.",5,True
+sweet,http://sweetontology.net/reprMath/Point,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:point rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0 ;
+            owl:onProperty :has_dimension ],
+        :numerical_entity .
+
+",A point is a type of numerical entity and is something that must have dimension 0.,2,True
+sweet,http://sweetontology.net/reprMath/Relation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:relation rdfs:subClassOf :numerical_entity .
+
+",relation is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMath/Scalar,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scalar rdfs:subClassOf :numerical_entity ;
+    owl:disjointWith :vector .
+
+",Scalar is a type of numerical entity and is disjoint with vector.,2,True
+sweet,http://sweetontology.net/reprMath/Seq,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:seq rdfs:subClassOf :container ;
+    owl:equivalentClass :sequence .
+
+",Seq is the same as sequence and is a type of container.,2,True
+sweet,http://sweetontology.net/reprMath/Sequence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sequence rdfs:subClassOf :container .
+
+",sequence is a type of container.,1,False
+sweet,http://sweetontology.net/reprMath/Set,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:set rdfs:subClassOf :bag,
+        :multiset .
+
+",Set is both a type of bag and a type of multiset.,2,True
+sweet,http://sweetontology.net/reprMath/Tensor,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tensor rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :matrix ;
+            owl:onProperty :each_element_has_type ],
+        :order,
+        :seq,
+        :sequence .
+
+","Tensor is a type of order, seq, and sequence. Additionally, it is a type of something where only each element has the type matrix.",4,True
+sweet,http://sweetontology.net/reprMath/UnorderedPair,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unordered_pair rdfs:subClassOf :bag,
+        :d,
+        :multiset .
+
+","An unordered pair is a type of D, a type of bag, and also a type of multiset.",3,True
+sweet,http://sweetontology.net/reprMath/Variable,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:variable rdfs:subClassOf :numerical_entity .
+
+",variable is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMath/Vector,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector rdfs:subClassOf :array .
+
+",vector is a type of array.,1,False
+sweet,http://sweetontology.net/reprMath/Vector_3D,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector_3d rdfs:subClassOf :d,
+        :vector .
+
+",Vector 3D is both a type of D and a type of vector.,2,True
+sweet,http://sweetontology.net/reprMath/Window,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:window rdfs:subClassOf :interval .
+
+",window is a type of interval.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Affine,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:affine rdfs:subClassOf :polynomial ;
+    owl:equivalentClass :linear .
+
+",Affine is the same as linear and is a type of polynomial.,2,True
+sweet,http://sweetontology.net/reprMathFunction/AlgebraicFunction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:algebraic_function rdfs:subClassOf :function ;
+    owl:disjointWith :transcendental_function .
+
+",An algebraic function is a type of function that is disjoint from a transcendental function.,2,True
+sweet,http://sweetontology.net/reprMathFunction/BSpline,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:b_spline rdfs:subClassOf :cubic_spline .
+
+",b spline is a type of cubic spline.,1,False
+sweet,http://sweetontology.net/reprMathFunction/BasisFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:basis_function rdfs:subClassOf :function .
+
+",basis function is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/BinaryFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binary_function rdfs:subClassOf :discrete,
+        :discrete_function .
+
+",A binary function is a type of discrete function.,2,True
+sweet,http://sweetontology.net/reprMathFunction/Bivariate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bivariate rdfs:subClassOf :function .
+
+",bivariate is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/BoxCar,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:box_car rdfs:subClassOf :algebraic_function ;
+    owl:equivalentClass :square_wave .
+
+",A box car is the same as a square wave and is a type of algebraic function.,2,True
+sweet,http://sweetontology.net/reprMathFunction/ChiSquare,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chi_square rdfs:subClassOf :distribution_function ;
+    owl:equivalentClass :chi_square_distribution .
+
+","Chi square is the same as chi square distribution, which is a type of distribution function.",2,True
+sweet,http://sweetontology.net/reprMathFunction/ChiSquareDistribution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chi_square_distribution rdfs:subClassOf :distribution_function .
+
+",chi square distribution is a type of distribution function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Continuity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continuity rdfs:subClassOf :function ;
+    owl:equivalentClass :continuous .
+
+","Continuity, which is the same as being continuous, is a type of function.",2,True
+sweet,http://sweetontology.net/reprMathFunction/Continuous,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:continuous rdfs:subClassOf :function ;
+    owl:disjointWith :discontinuous,
+        :discrete .
+
+",Continuous is a type of function. It is disjoint with both discontinuous and discrete functions.,3,True
+sweet,http://sweetontology.net/reprMathFunction/Cosine,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cosine rdfs:subClassOf :trigonometric_function .
+
+",cosine is a type of trigonometric function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Cubic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cubic rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 3 ;
+            owl:onProperty :has_degree ],
+        :polynomial .
+
+",Cubic is a type of polynomial that must have a degree of 3.,2,True
+sweet,http://sweetontology.net/reprMathFunction/CubicSpline,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cubic_spline rdfs:subClassOf :cubic .
+
+",cubic spline is a type of cubic.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Dirac,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dirac rdfs:subClassOf :function .
+
+",dirac is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Discontinuity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:discontinuity rdfs:subClassOf :function ;
+    owl:equivalentClass :discontinuous .
+
+",Discontinuity is the same as discontinuous and is a type of function.,2,True
+sweet,http://sweetontology.net/reprMathFunction/Discontinuous,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:discontinuous rdfs:subClassOf :function .
+
+",discontinuous is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Discrete,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:discrete rdfs:subClassOf :function ;
+    owl:equivalentClass :discrete_function .
+
+",A discrete function is a type of function that is the same as discrete.,2,True
+sweet,http://sweetontology.net/reprMathFunction/DiscreteFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:discrete_function rdfs:subClassOf :function .
+
+",discrete function is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/DistributionFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:distribution_function rdfs:subClassOf :normalized_function .
+
+",distribution function is a type of normalized function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/ExponentialDecay,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exponential_decay rdfs:subClassOf :exponential_function .
+
+",exponential decay is a type of exponential function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/ExponentialFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exponential_function rdfs:subClassOf :transcendental_function .
+
+",exponential function is a type of transcendental function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/ExponentialGrowth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exponential_growth rdfs:subClassOf :exponential_function .
+
+",exponential growth is a type of exponential function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Field,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:field rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :quantity ;
+            owl:onProperty :has_spatial_distribution ],
+        :function .
+
+",A field is a type of function and is also a type of something that only has spatial distribution quantity.,2,True
+sweet,http://sweetontology.net/reprMathFunction/Filter,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:filter rdfs:subClassOf :function .
+
+",filter is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Function,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:function rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :dependent_variable ;
+            owl:onProperty :has_output ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :independent_variable ;
+            owl:onProperty :has_input ],
+        :operation .
+
+",A function is a type of operation that is characterized by having only an input independent variable and an output dependent variable.,3,True
+sweet,http://sweetontology.net/reprMathFunction/Horizon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:horizon rdfs:subClassOf :function ;
+    owl:equivalentClass :profile .
+
+",Horizon is the same as profile and is a type of function.,2,True
+sweet,http://sweetontology.net/reprMathFunction/Kernel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:kernel rdfs:subClassOf :filter .
+
+",kernel is a type of filter.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Linear,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:linear rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1 ;
+            owl:onProperty :has_degree ],
+        :polynomial ;
+    owl:disjointWith :nonlinear .
+
+","Linear is a type of polynomial and it is also a type that must have degree 1. Additionally, linear is disjoint with nonlinear.",3,True
+sweet,http://sweetontology.net/reprMathFunction/Logarithmic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:logarithmic rdfs:subClassOf :transcendental_function .
+
+",logarithmic is a type of transcendental function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Logistic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:logistic rdfs:subClassOf :transcendental_function .
+
+",logistic is a type of transcendental function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/MaxwellBoltzmannDistribution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:maxwell_boltzmann_distribution rdfs:subClassOf :function .
+
+",maxwell boltzmann distribution is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Nonlinear,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nonlinear rdfs:subClassOf :function .
+
+",nonlinear is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Normal,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normal rdfs:subClassOf :distribution_function ;
+    owl:equivalentClass :normal_distribution .
+
+","Normal is the same as a normal distribution, which is a type of distribution function.",2,True
+sweet,http://sweetontology.net/reprMathFunction/NormalDistribution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normal_distribution rdfs:subClassOf :distribution_function .
+
+",normal distribution is a type of distribution function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/NormalizedFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normalized_function rdfs:subClassOf :function .
+
+",normalized function is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/OptimizationFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:optimization_function rdfs:subClassOf :function .
+
+",optimization function is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Polynomial,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polynomial rdfs:subClassOf :algebraic_function .
+
+",polynomial is a type of algebraic function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/PowerFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:power_function rdfs:subClassOf :function .
+
+",power function is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/PowerLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:power_law rdfs:subClassOf :power_function .
+
+",power law is a type of power function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/ProbabilityDensityFunction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:probability_density_function rdfs:subClassOf :normalized_function ;
+    owl:equivalentClass :pdf .
+
+","The probability density function, which is the same as PDF, is a type of normalized function.",2,True
+sweet,http://sweetontology.net/reprMathFunction/ProbabilityDistributionFunction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:probability_distribution_function rdfs:subClassOf :normalized_function ;
+    owl:equivalentClass :cdf .
+
+","The probability distribution function, which is the same as the cumulative distribution function (CDF), is a type of normalized function.",2,True
+sweet,http://sweetontology.net/reprMathFunction/Profile,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:profile rdfs:subClassOf :function ;
+    owl:equivalentClass :vertical_profile .
+
+",A profile is the same as a vertical profile and is a type of function.,2,True
+sweet,http://sweetontology.net/reprMathFunction/Quadratic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:quadratic rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 2 ;
+            owl:onProperty :has_degree ],
+        :polynomial .
+
+",A quadratic is a type of polynomial that must have a degree of 2.,2,True
+sweet,http://sweetontology.net/reprMathFunction/Quartic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:quartic rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 4 ;
+            owl:onProperty :has_degree ],
+        :polynomial .
+
+",A quartic is a type of polynomial that must have a degree of 4.,2,True
+sweet,http://sweetontology.net/reprMathFunction/RadialBasisFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radial_basis_function rdfs:subClassOf :basis_function .
+
+",radial basis function is a type of basis function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/ScalarField,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scalar_field rdfs:subClassOf :scalar_function .
+
+",scalar field is a type of scalar function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/ScalarFunction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scalar_function rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :scalar ;
+            owl:onProperty :has_output ],
+        :function .
+
+",A scalar function is a type of function and a type of something that only has scalar output.,2,True
+sweet,http://sweetontology.net/reprMathFunction/Sin,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sin rdfs:subClassOf :trigonometric_function .
+
+",sin is a type of trigonometric function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/SquareWave,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:square_wave rdfs:subClassOf :algebraic_function .
+
+",square wave is a type of algebraic function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Step,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:step rdfs:subClassOf :function .
+
+",step is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/TensorField,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tensor_field rdfs:subClassOf :field,
+        :tensor_function .
+
+",A tensor field is both a type of field and a type of tensor function.,2,True
+sweet,http://sweetontology.net/reprMathFunction/TensorFunction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tensor_function rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :tensor ;
+            owl:onProperty :has_input ],
+        :function .
+
+",A tensor function is a type of function and a type of entity that only has an input tensor.,2,True
+sweet,http://sweetontology.net/reprMathFunction/TranscendentalFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transcendental_function rdfs:subClassOf :function .
+
+",transcendental function is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/TrigonometricFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:trigonometric_function rdfs:subClassOf :transcendental_function .
+
+",trigonometric function is a type of transcendental function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/UtilityFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:utility_function rdfs:subClassOf :optimization_function .
+
+",utility function is a type of optimization function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/VectorField,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector_field rdfs:subClassOf :field,
+        :vector_function .
+
+",A vector field is both a type of field and a type of vector function.,2,True
+sweet,http://sweetontology.net/reprMathFunction/VectorFunction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector_function rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vector ;
+            owl:onProperty :has_input ],
+        :function .
+
+",A vector function is a type of function and is something that only has an input vector.,2,True
+sweet,http://sweetontology.net/reprMathFunction/VectorQuantity,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector_quantity rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vector ;
+            owl:onProperty :has_output ],
+        :function .
+
+",A vector quantity is a type of function and is characterized as something that only has an output vector.,2,True
+sweet,http://sweetontology.net/reprMathFunction/VerticalProfile,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertical_profile rdfs:subClassOf :function .
+
+",vertical profile is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/Well,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:well rdfs:subClassOf :function .
+
+",well is a type of function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/cdf,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cdf rdfs:subClassOf :normalized_function .
+
+",cdf is a type of normalized function.,1,False
+sweet,http://sweetontology.net/reprMathFunction/pdf,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pdf rdfs:subClassOf :normalized_function .
+
+",pdf is a type of normalized function.,1,False
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/Coefficient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coefficient rdfs:subClassOf :scalar .
+
+",coefficient is a type of scalar.,1,False
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/Degree,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:degree rdfs:subClassOf :harmonic .
+
+",degree is a type of harmonic.,1,False
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/Fourier,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fourier rdfs:subClassOf :exponential_function ;
+    owl:equivalentClass :fourier_function .
+
+","Fourier is the same as the Fourier function, and it is a type of exponential function.",2,True
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/FourierFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fourier_function rdfs:subClassOf :exponential_function .
+
+",fourier function is a type of exponential function.,1,False
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/Harmonic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:harmonic rdfs:subClassOf :component,
+        :coordinate .
+
+",Harmonic is a type of component and also a type of coordinate.,2,True
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/Mode,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mode rdfs:subClassOf :harmonic .
+
+",mode is a type of harmonic.,1,False
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/Order,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:order rdfs:subClassOf :harmonic .
+
+",order is a type of harmonic.,1,False
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/OrthogonalFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:orthogonal_function rdfs:subClassOf :basis_function .
+
+",orthogonal function is a type of basis function.,1,False
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/SphericalHarmonic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:spherical_harmonic rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_degree ],
+        [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_order ],
+        :orthogonal_function,
+        :transcendental_function ;
+    owl:equivalentClass :spherical_harmonic_function .
+
+","Spherical harmonic is the same as a spherical harmonic function, which is a type of transcendental function and also an orthogonal function. Moreover, it is a type of something that has exactly 1 degree and exactly 1 order.",5,True
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/SphericalHarmonicFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spherical_harmonic_function rdfs:subClassOf :orthogonal_function,
+        :transcendental_function .
+
+",A spherical harmonic function is a type of transcendental function as well as a type of orthogonal function.,2,True
+sweet,http://sweetontology.net/reprMathFunctionOrthogonal/WaveletFunction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:wavelet_function rdfs:subClassOf :orthogonal_function .
+
+",wavelet function is a type of orthogonal function.,1,False
+sweet,http://sweetontology.net/reprMathGraph/Arc,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:arc rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_ordered_vertex_pair ],
+        :structural_component .
+
+",Arc is both a type of structural component and a type of something that has exactly one ordered vertex pair.,2,True
+sweet,http://sweetontology.net/reprMathGraph/Circuit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:circuit rdfs:subClassOf :path,
+        :trajectory ;
+    owl:equivalentClass :cycle .
+
+",A circuit is the same as a cycle and is a type of path as well as a type of trajectory.,4,True
+sweet,http://sweetontology.net/reprMathGraph/ConnectedGraph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:connected_graph rdfs:subClassOf :graph .
+
+",connected graph is a type of graph.,1,False
+sweet,http://sweetontology.net/reprMathGraph/Cycle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cycle rdfs:subClassOf :path,
+        :trajectory .
+
+",Cycle is a type of path and a type of trajectory.,3,True
+sweet,http://sweetontology.net/reprMathGraph/Digraph,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:digraph rdfs:subClassOf :graph ;
+    owl:equivalentClass :directed_graph .
+
+","A digraph, which is the same as a directed graph, is a type of graph.",2,True
+sweet,http://sweetontology.net/reprMathGraph/DirectedGraph,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:directed_graph rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_arc ],
+        :graph ;
+    owl:disjointWith :undirected_graph .
+
+","A directed graph is a type of graph that has at least 1 arc, and it is disjoint from an undirected graph.",3,True
+sweet,http://sweetontology.net/reprMathGraph/Edge,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:edge rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_unordered_vertex_pair ],
+        :structural_component .
+
+",Edge is a type of structural component and is also described as something that has exactly 1 unordered vertex pair.,2,True
+sweet,http://sweetontology.net/reprMathGraph/Forest,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forest rdfs:subClassOf :graph .
+
+",forest is a type of graph.,1,False
+sweet,http://sweetontology.net/reprMathGraph/Graph,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:graph rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_edge ],
+        [ a owl:Restriction ;
+            owl:minCardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_vertex ],
+        :structural_model .
+
+","A graph is a type of structural model, which is characterized by having at least 1 edge and at least 1 vertex.",3,True
+sweet,http://sweetontology.net/reprMathGraph/IsolatedVertex,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isolated_vertex rdfs:subClassOf :node,
+        :vertex,
+        :vertice .
+
+","An isolated vertex is a type of node, vertex, and vertice.",3,True
+sweet,http://sweetontology.net/reprMathGraph/LeafNode,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:leaf_node rdfs:subClassOf :node,
+        :vertex,
+        :vertice .
+
+","A leaf node is a type of node, vertex, and vertice.",3,True
+sweet,http://sweetontology.net/reprMathGraph/Loop,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:loop rdfs:subClassOf :edge .
+
+",loop is a type of edge.,1,False
+sweet,http://sweetontology.net/reprMathGraph/Network,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:network rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_weighted_edge ],
+        :graph .
+
+",A network is a type of graph and is characterized as a type of structure that includes at least one weighted edge.,2,True
+sweet,http://sweetontology.net/reprMathGraph/Node,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:node rdfs:subClassOf :point,
+        :structural_component ;
+    owl:equivalentClass :vertex .
+
+","A node, which is synonymous with a vertex, is identified as a type of point as well as a type of structural component.",3,True
+sweet,http://sweetontology.net/reprMathGraph/OrderedVertexPair,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ordered_vertex_pair rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vertex ;
+            owl:onProperty :each_element_has_type ],
+        :ordered_pair .
+
+",An ordered vertex pair is a type of ordered pair and is something that only comprises elements of the type vertex.,2,True
+sweet,http://sweetontology.net/reprMathGraph/Path,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:path rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :edge ;
+            owl:onProperty :each_element_has_type ],
+        :array .
+
+",Path is a type of array and is also a type of something where only each element has the type edge.,2,True
+sweet,http://sweetontology.net/reprMathGraph/StructuralComponent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:structural_component rdfs:subClassOf :structural_model .
+
+",structural component is a type of structural model.,1,False
+sweet,http://sweetontology.net/reprMathGraph/StructuralModel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:structural_model rdfs:subClassOf :model,
+        :scientific_model .
+
+",A structural model is a type of model and also falls under the category of scientific models.,2,True
+sweet,http://sweetontology.net/reprMathGraph/Tree,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tree rdfs:subClassOf :graph .
+
+",tree is a type of graph.,1,False
+sweet,http://sweetontology.net/reprMathGraph/UndirectedGraph,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:undirected_graph rdfs:subClassOf :graph .
+
+",undirected graph is a type of graph.,1,False
+sweet,http://sweetontology.net/reprMathGraph/UnorderedVertexPair,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unordered_vertex_pair rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vertex ;
+            owl:onProperty :each_element_has_type ],
+        :unordered_pair .
+
+",An unordered vertex pair is a type of unordered pair and is specifically a type of entity where each element has the type vertex.,2,True
+sweet,http://sweetontology.net/reprMathGraph/Vertex,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertex rdfs:subClassOf :point,
+        :structural_component ;
+    owl:equivalentClass :vertice .
+
+","Vertex is the same as vertice, and it is a type of point as well as a type of structural component.",3,True
+sweet,http://sweetontology.net/reprMathGraph/Vertice,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertice rdfs:subClassOf :point,
+        :structural_component .
+
+",A vertice is both a type of point and a structural component.,2,True
+sweet,http://sweetontology.net/reprMathGraph/WeightedEdge,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:weighted_edge rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_weight ],
+        :edge .
+
+",A weighted edge is a type of edge and is something that has exactly one weight.,2,True
+sweet,http://sweetontology.net/reprMathOperation/AreaIntegral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:area_integral rdfs:subClassOf :multiple_integral .
+
+",area integral is a type of multiple integral.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Biharmonic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:biharmonic rdfs:subClassOf :vector_field_operation .
+
+",biharmonic is a type of vector field operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/BinaryOperation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:binary_operation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ordered_pair ;
+            owl:onProperty :has_input ],
+        :operation .
+
+","A binary operation is a type of operation that exclusively uses an input ordered pair, indicating it is a specific type of something.",2,True
+sweet,http://sweetontology.net/reprMathOperation/CrossProduct,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cross_product rdfs:subClassOf :multiplication,
+        :product,
+        :vector_field_operation,
+        :vector_valued_operation .
+
+","The cross product is a type of multiplication, product, vector field operation, and vector-valued operation.",4,True
+sweet,http://sweetontology.net/reprMathOperation/DefiniteIntegral,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:definite_integral rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_interval ],
+        :integral,
+        :integration .
+
+",The definite integral is a type of integral and a form of integration that is characterized by having exactly one interval.,3,True
+sweet,http://sweetontology.net/reprMathOperation/Derivative,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:derivative rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :function ;
+            owl:onProperty :has_output ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :function ;
+            owl:onProperty :is_derivative_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :variable ;
+            owl:onProperty :derivative_with_respect_to ],
+        :operation_on_function ;
+    owl:equivalentClass :differentiation .
+
+","The derivative is the same as differentiation and represents a type of operation performed on a function. This operation is specific in that it only occurs with respect to a variable and the output of this process is always a function, essentially making it a derivative of the function.",5,True
+sweet,http://sweetontology.net/reprMathOperation/Difference,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:difference rdfs:subClassOf :binary_operation ;
+    owl:equivalentClass :subtraction .
+
+",Difference is the same as subtraction and is a type of binary operation.,2,True
+sweet,http://sweetontology.net/reprMathOperation/Differentiation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:differentiation rdfs:subClassOf :operation_on_function .
+
+",differentiation is a type of operation on function.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Division,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:division rdfs:subClassOf :binary_operation ;
+    owl:equivalentClass :quotient .
+
+",Division is the same as quotient and is a type of binary operation.,2,True
+sweet,http://sweetontology.net/reprMathOperation/DotProduct,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dot_product rdfs:subClassOf :multiplication,
+        :product,
+        :scalar_valued_operation,
+        :vector_field_operation .
+
+","The dot product is a type of multiplication, product, scalar valued operation, and vector field operation.",4,True
+sweet,http://sweetontology.net/reprMathOperation/Double,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:double rdfs:subClassOf :unary_operation .
+
+",double is a type of unary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Fraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:fraction rdfs:subClassOf :division,
+        :quotient .
+
+",A fraction is both a type of division and a type of quotient.,2,True
+sweet,http://sweetontology.net/reprMathOperation/Gradient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gradient rdfs:subClassOf :derivative,
+        :differentiation,
+        :vector_valued_operation .
+
+","Gradient is a type of derivative, a type of differentiation, and a type of vector-valued operation.",3,True
+sweet,http://sweetontology.net/reprMathOperation/Half,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:half rdfs:subClassOf :unary_operation .
+
+",half is a type of unary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/IndefiniteIntegral,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:indefinite_integral rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""0""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_interval ],
+        :integral,
+        :integration .
+
+",An indefinite integral is a type of integral and a type of integration that is characterized by having zero intervals.,3,True
+sweet,http://sweetontology.net/reprMathOperation/InflectionPoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inflection_point rdfs:subClassOf :operation .
+
+",inflection point is a type of operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Integral,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:integral rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_function ],
+        [ a owl:Restriction ;
+            owl:cardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :with_respect_to ],
+        :operation_on_function ;
+    owl:equivalentClass :integration .
+
+",Integral is the same as integration and it is a type of operation on a function. It is a type of something that has exactly one function and exactly one with respect to.,4,True
+sweet,http://sweetontology.net/reprMathOperation/Integration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:integration rdfs:subClassOf :operation_on_function .
+
+",integration is a type of operation on function.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Laplacian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:laplacian rdfs:subClassOf :vector_field_operation .
+
+",laplacian is a type of vector field operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/LineIntegral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:line_integral rdfs:subClassOf :integral,
+        :integration .
+
+",Line integral is a type of integral and a type of integration.,2,True
+sweet,http://sweetontology.net/reprMathOperation/Logarithm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:logarithm rdfs:subClassOf :unary_operation .
+
+",logarithm is a type of unary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/MathematicalProcess,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mathematical_process rdfs:subClassOf :process .
+
+",mathematical process is a type of process.,1,False
+sweet,http://sweetontology.net/reprMathOperation/MultipleIntegral,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multiple_integral rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_function ;
+            owl:someValuesFrom :integral ],
+        :operation_on_function .
+
+","A multiple integral is a type of operation on a function and is something that, at the very least, has some integral function.",2,True
+sweet,http://sweetontology.net/reprMathOperation/Multiplication,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:multiplication rdfs:subClassOf :binary_operation ;
+    owl:equivalentClass :product .
+
+",Multiplication is the same as the product and is a type of binary operation.,2,True
+sweet,http://sweetontology.net/reprMathOperation/Normalization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:normalization rdfs:subClassOf :operation .
+
+",normalization is a type of operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Operation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:operation rdfs:subClassOf :mathematical_process .
+
+",operation is a type of mathematical process.,1,False
+sweet,http://sweetontology.net/reprMathOperation/OperationOnFunction,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:operation_on_function rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :function ;
+            owl:onProperty :has_input ],
+        :operation .
+
+",An operation on a function is a type of operation that is characterized by having only an input function.,2,True
+sweet,http://sweetontology.net/reprMathOperation/PartialDerivative,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:partial_derivative rdfs:subClassOf :derivative,
+        :differentiation,
+        :vector_field_operation .
+
+","A partial derivative is a type of derivative, differentiation, and vector field operation.",3,True
+sweet,http://sweetontology.net/reprMathOperation/Product,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:product rdfs:subClassOf :binary_operation .
+
+",product is a type of binary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Quotient,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:quotient rdfs:subClassOf :binary_operation .
+
+",quotient is a type of binary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Ratio,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ratio rdfs:subClassOf :division,
+        :quotient .
+
+",Ratio is a type of division and quotient.,2,True
+sweet,http://sweetontology.net/reprMathOperation/SaddlePoint,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:saddle_point rdfs:subClassOf :operation .
+
+",saddle point is a type of operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/ScalarFieldOperation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scalar_field_operation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :scalar_field ;
+            owl:onProperty :has_input ],
+        :operation_on_function .
+
+",A scalar field operation is a type of operation on a function and is characterized by having only input scalar fields.,2,True
+sweet,http://sweetontology.net/reprMathOperation/ScalarValuedOperation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scalar_valued_operation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :scalar_field ;
+            owl:onProperty :has_output ],
+        :operation_on_function .
+
+",A scalar-valued operation is a type of operation on a function and is characterized as something that only produces an output scalar field.,2,True
+sweet,http://sweetontology.net/reprMathOperation/Slope,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:slope rdfs:subClassOf :derivative,
+        :differentiation .
+
+",Slope is a type of derivative and also a type of differentiation.,2,True
+sweet,http://sweetontology.net/reprMathOperation/Square,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:square rdfs:subClassOf :unary_operation .
+
+",square is a type of unary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/SquareRoot,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:square_root rdfs:subClassOf :unary_operation .
+
+",square root is a type of unary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Subtraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:subtraction rdfs:subClassOf :binary_operation .
+
+",subtraction is a type of binary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/Sum,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sum rdfs:subClassOf :binary_operation ;
+    owl:equivalentClass :summation .
+
+","Sum, which is the same as summation, is a type of binary operation.",2,True
+sweet,http://sweetontology.net/reprMathOperation/Summation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:summation rdfs:subClassOf :binary_operation .
+
+",summation is a type of binary operation.,1,False
+sweet,http://sweetontology.net/reprMathOperation/SurfaceIntegral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:surface_integral rdfs:subClassOf :multiple_integral .
+
+",surface integral is a type of multiple integral.,1,False
+sweet,http://sweetontology.net/reprMathOperation/TensorFieldOperation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tensor_field_operation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :tensor_field ;
+            owl:onProperty :has_input ],
+        :operation_on_function .
+
+",Tensor field operation is a type of operation on a function and is something that only has input tensor field.,2,True
+sweet,http://sweetontology.net/reprMathOperation/TernaryOperation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ternary_operation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ordered_triple ;
+            owl:onProperty :has_input ],
+        :operation .
+
+","A ternary operation is a type of operation that specifically involves an input ordered triple, indicating it only accepts three inputs in a specific order.",2,True
+sweet,http://sweetontology.net/reprMathOperation/UnaryOperation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unary_operation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :scalar ;
+            owl:onProperty :has_input ],
+        :operation .
+
+",A unary operation is a type of operation and something that only has an input scalar.,2,True
+sweet,http://sweetontology.net/reprMathOperation/VectorFieldOperation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector_field_operation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vector_field ;
+            owl:onProperty :has_input ],
+        :operation_on_function .
+
+",A vector field operation is a type of operation on a function and is something that only has an input vector field.,2,True
+sweet,http://sweetontology.net/reprMathOperation/VectorValuedOperation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vector_valued_operation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vector_field ;
+            owl:onProperty :has_output ],
+        :operation_on_function .
+
+",Vector valued operation is a type of operation on a function and is characterized as something that only produces an output vector field.,2,True
+sweet,http://sweetontology.net/reprMathOperation/VolumeIntegral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:volume_integral rdfs:subClassOf :multiple_integral .
+
+",volume integral is a type of multiple integral.,1,False
+sweet,http://sweetontology.net/reprMathSolution/AlgebraicSolution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:algebraic_solution rdfs:subClassOf :analytical_solution .
+
+",algebraic solution is a type of analytical solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Algorithm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:algorithm rdfs:subClassOf :solution .
+
+",algorithm is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/AnalyticalSolution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:analytical_solution rdfs:subClassOf :solution .
+
+",analytical solution is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Approximation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:approximation rdfs:subClassOf :solution .
+
+",approximation is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/BreadthFirstSearch,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:breadth_first_search rdfs:subClassOf :search .
+
+",breadth first search is a type of search.,1,False
+sweet,http://sweetontology.net/reprMathSolution/DepthFirstSearch,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:depth_first_search rdfs:subClassOf :search .
+
+",depth first search is a type of search.,1,False
+sweet,http://sweetontology.net/reprMathSolution/DivideAndConquer,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:divide_and_conquer rdfs:subClassOf :algorithm .
+
+",divide and conquer is a type of algorithm.,1,False
+sweet,http://sweetontology.net/reprMathSolution/DynamicProgramming,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dynamic_programming rdfs:subClassOf :solution .
+
+",dynamic programming is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Emulate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:emulate rdfs:subClassOf :solution ;
+    owl:equivalentClass :simulate .
+
+",Emulate is the same as simulate and is a type of solution.,2,True
+sweet,http://sweetontology.net/reprMathSolution/ExhaustiveSearch,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exhaustive_search rdfs:subClassOf :search .
+
+",exhaustive search is a type of search.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Expansion,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:expansion rdfs:subClassOf :solution .
+
+",expansion is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/FlowChart,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flow_chart rdfs:subClassOf :solution .
+
+",flow chart is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/GeneticAlgorithm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:genetic_algorithm rdfs:subClassOf :heuristic_algorithm .
+
+",genetic algorithm is a type of heuristic algorithm.,1,False
+sweet,http://sweetontology.net/reprMathSolution/HeuristicAlgorithm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heuristic_algorithm rdfs:subClassOf :algorithm .
+
+",heuristic algorithm is a type of algorithm.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Iteration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:iteration rdfs:subClassOf :solution .
+
+",iteration is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/MapReduce,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:map_reduce rdfs:subClassOf :parallel_algorithm .
+
+",map reduce is a type of parallel algorithm.,1,False
+sweet,http://sweetontology.net/reprMathSolution/NewtonianRelaxation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:newtonian_relaxation rdfs:subClassOf :numerical_solution .
+
+",newtonian relaxation is a type of numerical solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/NumericalApproximation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:numerical_approximation rdfs:subClassOf :approximation .
+
+",numerical approximation is a type of approximation.,1,False
+sweet,http://sweetontology.net/reprMathSolution/NumericalSolution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:numerical_solution rdfs:subClassOf :solution .
+
+",numerical solution is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Parallel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parallel rdfs:subClassOf :solution .
+
+",parallel is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/ParallelAlgorithm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parallel_algorithm rdfs:subClassOf :algorithm,
+        :solution .
+
+",A parallel algorithm is both a type of algorithm and a type of solution.,2,True
+sweet,http://sweetontology.net/reprMathSolution/Reduction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reduction rdfs:subClassOf :solution .
+
+",reduction is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Search,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:search rdfs:subClassOf :algorithm .
+
+",search is a type of algorithm.,1,False
+sweet,http://sweetontology.net/reprMathSolution/SensitivityAnalysis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sensitivity_analysis rdfs:subClassOf :assessment .
+
+",sensitivity analysis is a type of assessment.,1,False
+sweet,http://sweetontology.net/reprMathSolution/SeriesAlgorithm,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:series_algorithm rdfs:subClassOf :algorithm .
+
+",series algorithm is a type of algorithm.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Simulate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:simulate rdfs:subClassOf :solution ;
+    owl:equivalentClass :simulation .
+
+",Simulate is the same as simulation and is a type of solution.,2,True
+sweet,http://sweetontology.net/reprMathSolution/Simulation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:simulation rdfs:subClassOf :solution .
+
+",simulation is a type of solution.,1,False
+sweet,http://sweetontology.net/reprMathSolution/Solution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:solution rdfs:subClassOf :numerical_entity .
+
+",solution is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMathSolution/TaylorSeries,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:taylor_series rdfs:subClassOf :expansion,
+        :numerical_solution .
+
+",The Taylor series is both a type of expansion and a type of numerical solution.,2,True
+sweet,http://sweetontology.net/reprMathSolution/VisualSolution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:visual_solution rdfs:subClassOf :approximation,
+        :solution .
+
+",A visual solution is both a type of approximation and a type of solution.,2,True
+sweet,http://sweetontology.net/reprMathStatistics/ANOVA,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:anova rdfs:subClassOf :hypothesis_test ;
+    owl:equivalentClass :analysis_of_variance .
+
+","ANOVA, which stands for Analysis of Variance, is a type of hypothesis test.",2,True
+sweet,http://sweetontology.net/reprMathStatistics/AnalysisOfVariance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:analysis_of_variance rdfs:subClassOf :hypothesis_test .
+
+",analysis of variance is a type of hypothesis test.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/ChiSquareTest,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chi_square_test rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :chi_square ;
+            owl:onProperty :has_statistical_distribution ],
+        :hypothesis_test .
+
+",The chi-square test is a type of hypothesis test that exclusively involves the statistical distribution chi-square.,2,True
+sweet,http://sweetontology.net/reprMathStatistics/GeneralLinearModel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:general_linear_model rdfs:subClassOf :regression .
+
+",general linear model is a type of regression.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/GoodnessOfFit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:goodness_of_fit rdfs:subClassOf :statistics .
+
+",goodness of fit is a type of statistics.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/HypothesisTest,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hypothesis_test rdfs:subClassOf :statistical_inference .
+
+",hypothesis test is a type of statistical inference.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/OLS,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ols rdfs:subClassOf :regression ;
+    owl:equivalentClass :ordinary_least_squares .
+
+","OLS, which is the same as ordinary least squares, is a type of regression.",2,True
+sweet,http://sweetontology.net/reprMathStatistics/OrdinaryLeastSquares,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ordinary_least_squares rdfs:subClassOf :regression .
+
+",ordinary least squares is a type of regression.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/Regression,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:regression rdfs:subClassOf :statistical_operation .
+
+",regression is a type of statistical operation.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/SampleStatistics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sample_statistics rdfs:subClassOf :statistics .
+
+",sample statistics is a type of statistics.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/Sampling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sampling rdfs:subClassOf :act_of_sampling,
+        :statistical_operation .
+
+",Sampling is both a type of statistical operation and an act of sampling.,2,True
+sweet,http://sweetontology.net/reprMathStatistics/StatisticalDistribution,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:statistical_distribution rdfs:subClassOf :distribution_function .
+
+",statistical distribution is a type of distribution function.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/StatisticalInference,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:statistical_inference rdfs:subClassOf :statistical_operation .
+
+",statistical inference is a type of statistical operation.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/StatisticalOperation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:statistical_operation rdfs:subClassOf :operation .
+
+",statistical operation is a type of operation.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/StatisticalSample,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:statistical_sample rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :random ;
+            owl:onProperty :has_state ],
+        :sample_noun_ .
+
+",A statistical sample is a type of sample noun and is something that must have a state of being random.,2,True
+sweet,http://sweetontology.net/reprMathStatistics/Statistics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:statistics rdfs:subClassOf :numerical_entity .
+
+",statistics is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprMathStatistics/ZTest,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:z_test rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :normal ;
+            owl:onProperty :has_statistical_distribution ],
+        :hypothesis_test .
+
+",A z test is a type of hypothesis test that is a type of something that only has a statistical distribution that is normal.,2,True
+sweet,http://sweetontology.net/reprMathStatistics/tTest,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:t_test rdfs:subClassOf :hypothesis_test .
+
+",t test is a type of hypothesis test.,1,False
+sweet,http://sweetontology.net/reprSciComponent/Component,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:component rdfs:subClassOf :dimension ;
+    owl:equivalentClass :system_component .
+
+",A component is the same as a system component and is also a type of dimension.,2,True
+sweet,http://sweetontology.net/reprSciComponent/Environment,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:environment rdfs:subClassOf :component,
+        :system_component .
+
+",Environment is both a type of component and a system component.,2,True
+sweet,http://sweetontology.net/reprSciComponent/Externality,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:externality rdfs:subClassOf :component,
+        :system_component .
+
+",Externality is a type of component and also a type of system component.,2,True
+sweet,http://sweetontology.net/reprSciComponent/Input,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:input rdfs:subClassOf :component,
+        :system_component .
+
+",Input is a type of component and also a type of system component.,2,True
+sweet,http://sweetontology.net/reprSciComponent/Output,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:output rdfs:subClassOf :component,
+        :system_component .
+
+",Output is a type of component and also a type of system component.,2,True
+sweet,http://sweetontology.net/reprSciComponent/Reservoir,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reservoir rdfs:subClassOf :component,
+        :system_component ;
+    owl:equivalentClass :storage .
+
+","Reservoir is the same as storage and is a type of component, specifically a type of system component.",3,True
+sweet,http://sweetontology.net/reprSciComponent/Resource,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resource rdfs:subClassOf :component,
+        :system_component .
+
+",Resource is both a type of component and a type of system component.,2,True
+sweet,http://sweetontology.net/reprSciComponent/Sink,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sink rdfs:subClassOf :reservoir,
+        :storage .
+
+",A sink is both a type of reservoir and a type of storage.,2,True
+sweet,http://sweetontology.net/reprSciComponent/Source,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:source rdfs:subClassOf :component,
+        :system_component .
+
+",Source is a type of component and also a type of system component.,2,True
+sweet,http://sweetontology.net/reprSciComponent/Storage,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:storage rdfs:subClassOf :component,
+        :system_component .
+
+",Storage is both a type of component and a type of system component.,2,True
+sweet,http://sweetontology.net/reprSciComponent/SystemComponent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:system_component rdfs:subClassOf :dimension .
+
+",system component is a type of dimension.,1,False
+sweet,http://sweetontology.net/reprSciFunction/AdiabaticInvariant,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:adiabatic_invariant rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :entropy ;
+            owl:onProperty :has_constant_quantity ],
+        :invariant .
+
+",An adiabatic invariant is a type of invariant that is characterized by having a constant quantity of entropy.,2,True
+sweet,http://sweetontology.net/reprSciFunction/Invariant,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:invariant rdfs:subClassOf :function .
+
+",invariant is a type of function.,1,False
+sweet,http://sweetontology.net/reprSciFunction/Isentrope,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isentrope rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :entropy ;
+            owl:onProperty :has_constant_quantity ],
+        :isopleth .
+
+","An isentrope is a type of isopleth, which is a type of something that only has constant quantity entropy.",2,True
+sweet,http://sweetontology.net/reprSciFunction/Isobar,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isobar rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pressure ;
+            owl:onProperty :has_constant_quantity ],
+        :isopleth .
+
+",An isobar is a type of isopleth and specifically refers to something that only has a constant quantity of pressure.,2,True
+sweet,http://sweetontology.net/reprSciFunction/Isochore,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isochore rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :volume ;
+            owl:onProperty :has_constant_quantity ],
+        :isopleth .
+
+",An isochore is a type of isopleth and is a type of something that only has a constant quantity volume.,2,True
+sweet,http://sweetontology.net/reprSciFunction/Isohaline,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isohaline rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :salinity ;
+            owl:onProperty :has_constant_quantity ],
+        :isopleth .
+
+","An isohaline is a type of isopleth, which specifically denotes constant quantity salinity.",2,True
+sweet,http://sweetontology.net/reprSciFunction/Isopleth,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isopleth rdfs:subClassOf :invariant .
+
+",isopleth is a type of invariant.,1,False
+sweet,http://sweetontology.net/reprSciFunction/Isotere,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isotere rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :density ;
+            owl:onProperty :has_constant_quantity ],
+        :isopleth .
+
+",Isotere is a type of isopleth and is also a type of something that only has constant quantity density.,2,True
+sweet,http://sweetontology.net/reprSciFunction/Isotherm,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isotherm rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :temperature ;
+            owl:onProperty :has_constant_quantity ],
+        :isopleth .
+
+",An isotherm is a type of isopleth and represents something that only has a constant quantity of temperature.,2,True
+sweet,http://sweetontology.net/reprSciFunction/ThicknessLine,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:thickness_line rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :thickness ;
+            owl:onProperty :has_constant_quantity ],
+        :isopleth .
+
+","A thickness line is a type of isopleth, which is something that represents areas of constant quantity thickness.",2,True
+sweet,http://sweetontology.net/reprSciLaw/BernoulliTheorem,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bernoulli_theorem rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_property ;
+            owl:someValuesFrom :velocity ],
+        :physical_law .
+
+",Bernoulli theorem is a type of physical law that is a type of something that at least has the property of some velocity.,2,True
+sweet,http://sweetontology.net/reprSciLaw/BouguerLaw,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bouguer_law rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :attenuation ;
+            owl:onProperty :has_process ],
+        :empirical_law .
+
+",Bouguer law is a type of empirical law that is specifically related to process attenuation.,2,True
+sweet,http://sweetontology.net/reprSciLaw/BuysBallotLaw,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:buys_ballot_law rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_property ;
+            owl:someValuesFrom :pressure ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :wind ;
+            owl:onProperty :has_phenomena ],
+        :empirical_law .
+
+",Buys Ballot's law is a type of empirical law that is associated with phenomena related only to wind and is characterized by having at least some property related to pressure.,3,True
+sweet,http://sweetontology.net/reprSciLaw/DarcysLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:darcys_law rdfs:subClassOf :empirical_law .
+
+",darcys law is a type of empirical law.,1,False
+sweet,http://sweetontology.net/reprSciLaw/EmpiricalLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:empirical_law rdfs:subClassOf :knowledge .
+
+",empirical law is a type of knowledge.,1,False
+sweet,http://sweetontology.net/reprSciLaw/HookesLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hookes_law rdfs:subClassOf :empirical_law .
+
+",hookes law is a type of empirical law.,1,False
+sweet,http://sweetontology.net/reprSciLaw/IdealGasLaw,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ideal_gas_law rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :gas ;
+            owl:onProperty :has_state ],
+        :physical_law .
+
+",The ideal gas law is a type of physical law that applies specifically to substances in the gas state.,2,True
+sweet,http://sweetontology.net/reprSciLaw/MathematicalTheorem,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mathematical_theorem rdfs:subClassOf :knowledge .
+
+",mathematical theorem is a type of knowledge.,1,False
+sweet,http://sweetontology.net/reprSciLaw/PhysicalLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physical_law rdfs:subClassOf :knowledge .
+
+",physical law is a type of knowledge.,1,False
+sweet,http://sweetontology.net/reprSciLaw/StokesLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:stokes_law rdfs:subClassOf :physical_approximation .
+
+",stokes law is a type of physical approximation.,1,False
+sweet,http://sweetontology.net/reprSciLaw/WalthersLaw,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:walthers_law rdfs:subClassOf :empirical_law .
+
+",walthers law is a type of empirical law.,1,False
+sweet,http://sweetontology.net/reprSciLaw/Z_RRelation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:z_r_relation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :rainfall ;
+            owl:onProperty :has_phenomena ],
+        :empirical_law .
+
+",The Z R relation is a type of empirical law and is specifically associated with phenomena that only involve rainfall.,2,True
+sweet,http://sweetontology.net/reprSciMethodology/AerialPhotography,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:aerial_photography rdfs:subClassOf :photography .
+
+",aerial photography is a type of photography.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Altimetry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:altimetry rdfs:subClassOf :methodology .
+
+",altimetry is a type of methodology.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/CarbonDating,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:carbon_dating rdfs:subClassOf :methodology .
+
+",carbon dating is a type of methodology.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Engineering,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:engineering rdfs:subClassOf :research_exploration .
+
+",engineering is a type of research exploration.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Imaging,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:imaging rdfs:subClassOf :research_exploration .
+
+",imaging is a type of research exploration.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Interferometry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:interferometry rdfs:subClassOf :methodology .
+
+",interferometry is a type of methodology.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/IsotopeAnalysis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isotope_analysis rdfs:subClassOf :methodology .
+
+",isotope analysis is a type of methodology.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Methodology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:methodology rdfs:subClassOf :experiment_activity .
+
+",methodology is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Optics,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:optics rdfs:subClassOf :research_exploration .
+
+",optics is a type of research exploration.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Photography,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photography rdfs:subClassOf :research_exploration .
+
+",photography is a type of research exploration.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Photometry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:photometry rdfs:subClassOf :methodology .
+
+",photometry is a type of methodology.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Polarimetry,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polarimetry rdfs:subClassOf :methodology .
+
+",polarimetry is a type of methodology.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/RadioactiveDating,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:radioactive_dating rdfs:subClassOf :methodology .
+
+",radioactive dating is a type of methodology.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/RemoteSensing,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:remote_sensing rdfs:subClassOf :research_exploration .
+
+",remote sensing is a type of research exploration.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/ResearchExploration,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:research_exploration rdfs:subClassOf :research .
+
+",research exploration is a type of research.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/RetrievalApproach,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:retrieval_approach rdfs:subClassOf :research_exploration .
+
+",retrieval approach is a type of research exploration.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Spectroscopy,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectroscopy rdfs:subClassOf :methodology .
+
+",spectroscopy is a type of methodology.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/Tomography,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tomography rdfs:subClassOf :research_exploration .
+
+",tomography is a type of research exploration.,1,False
+sweet,http://sweetontology.net/reprSciMethodology/XRayDiffraction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:x_ray_diffraction rdfs:subClassOf :research_exploration .
+
+",x ray diffraction is a type of research exploration.,1,False
+sweet,http://sweetontology.net/reprSciModel/BoussinesqApproximation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boussinesq_approximation rdfs:subClassOf :physical_approximation .
+
+",boussinesq approximation is a type of physical approximation.,1,False
+sweet,http://sweetontology.net/reprSciModel/ClimateModel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:climate_model rdfs:subClassOf :model,
+        :scientific_model .
+
+",A climate model is a type of model and a type of scientific model.,2,True
+sweet,http://sweetontology.net/reprSciModel/EnsembleForecast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ensemble_forecast rdfs:subClassOf :forecast .
+
+",ensemble forecast is a type of forecast.,1,False
+sweet,http://sweetontology.net/reprSciModel/Estimate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:estimate rdfs:subClassOf :predict,
+        :prediction .
+
+",Estimate is a type of prediction.,2,True
+sweet,http://sweetontology.net/reprSciModel/ExtendedForecast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extended_forecast rdfs:subClassOf :weather_forecast .
+
+",extended forecast is a type of weather forecast.,1,False
+sweet,http://sweetontology.net/reprSciModel/FiniteElement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:finite_element rdfs:subClassOf :model,
+        :scientific_model .
+
+","Finite element is a type of model and specifically, it is a type of scientific model.",2,True
+sweet,http://sweetontology.net/reprSciModel/FluxCorrection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flux_correction rdfs:subClassOf :physical_approximation .
+
+",flux correction is a type of physical approximation.,1,False
+sweet,http://sweetontology.net/reprSciModel/Forecast,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:forecast rdfs:subClassOf :predict,
+        :prediction .
+
+",A forecast is a type of prediction.,2,True
+sweet,http://sweetontology.net/reprSciModel/GCM,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:gcm rdfs:subClassOf :model,
+        :scientific_model ;
+    owl:equivalentClass :general_circulation_model .
+
+","GCM, which is the same as a general circulation model, is a type of model specifically categorized under scientific models.",3,True
+sweet,http://sweetontology.net/reprSciModel/GeneralCirculationModel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:general_circulation_model rdfs:subClassOf :model,
+        :scientific_model .
+
+",A general circulation model is both a type of model and a type of scientific model.,2,True
+sweet,http://sweetontology.net/reprSciModel/Hypothesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hypothesis rdfs:subClassOf :experiment_activity .
+
+",hypothesis is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciModel/MixingScheme,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mixing_scheme rdfs:subClassOf :parameterization,
+        :parameterize .
+
+",A mixing scheme is a type of parameterization.,2,True
+sweet,http://sweetontology.net/reprSciModel/Model,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:model rdfs:subClassOf :representation ;
+    owl:equivalentClass :scientific_model .
+
+",A model is a type of representation and is the same as a scientific model.,2,True
+sweet,http://sweetontology.net/reprSciModel/Observation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:obervation rdfs:subClassOf :process .
+
+",obervation is a type of process.,1,False
+sweet,http://sweetontology.net/reprSciModel/Parameterization,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parameterization rdfs:subClassOf :data_analysis_service,
+        :model,
+        :scientific_model .
+
+","Parameterization is a type of data analysis service, a model, and a scientific model.",3,True
+sweet,http://sweetontology.net/reprSciModel/Parcel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parcel rdfs:subClassOf :model,
+        :scientific_model .
+
+",Parcel is both a type of model and a type of scientific model.,2,True
+sweet,http://sweetontology.net/reprSciModel/PhysicalApproximation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physical_approximation rdfs:subClassOf :model,
+        :scientific_model .
+
+",Physical approximation is both a type of model and a type of scientific model.,2,True
+sweet,http://sweetontology.net/reprSciModel/Predict,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:predict rdfs:subClassOf :experiment_activity ;
+    owl:equivalentClass :prediction .
+
+","Predicting is the same as making a prediction, and it is a type of experimental activity.",2,True
+sweet,http://sweetontology.net/reprSciModel/Prediction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prediction rdfs:subClassOf :experiment_activity .
+
+",prediction is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciModel/ReactionPathModel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reaction_path_model rdfs:subClassOf :model,
+        :scientific_model .
+
+",A reaction path model is a type of model that is also classified as a type of scientific model.,2,True
+sweet,http://sweetontology.net/reprSciModel/RigidLidApproximation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rigid_lid_approximation rdfs:subClassOf :physical_approximation .
+
+",rigid lid approximation is a type of physical approximation.,1,False
+sweet,http://sweetontology.net/reprSciModel/Sample,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sample_noun_ rdfs:subClassOf owl:Thing .
+
+",sample noun  is a type of thing.,1,False
+sweet,http://sweetontology.net/reprSciModel/Sampling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:act_of_sampling rdfs:subClassOf :process .
+
+",act of sampling is a type of process.,1,False
+sweet,http://sweetontology.net/reprSciModel/ScientificModel,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scientific_model rdfs:subClassOf :representation .
+
+",scientific model is a type of representation.,1,False
+sweet,http://sweetontology.net/reprSciModel/Spectral,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectral rdfs:subClassOf :model,
+        :scientific_model .
+
+","Spectral is a type of model, specifically a type of scientific model.",2,True
+sweet,http://sweetontology.net/reprSciModel/SpectralElement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spectral_element rdfs:subClassOf :model,
+        :scientific_model .
+
+","Spectral element is a type of model, specifically a type of scientific model.",2,True
+sweet,http://sweetontology.net/reprSciModel/Theoretical,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:theoretical rdfs:subClassOf :experiment_activity ;
+    owl:equivalentClass :theory .
+
+",Theoretical is the same as theory and is a type of experimental activity.,2,True
+sweet,http://sweetontology.net/reprSciModel/Theory,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:theory rdfs:subClassOf :experiment_activity .
+
+",theory is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciModel/WeatherForecast,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:weather_forecast rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :weather ;
+            owl:onProperty :has_phenomena ],
+        :forecast .
+
+",Weather forecast is a type of forecast that exclusively deals with weather phenomena.,2,True
+sweet,http://sweetontology.net/reprSciProvenance/Agent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:agent rdfs:subClassOf :experiment_activity .
+
+",agent is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Artifact,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:artifact rdfs:subClassOf :experiment_activity .
+
+",artifact is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Background,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:background rdfs:subClassOf :experiment_activity .
+
+",background is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Chronology,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:chronology rdfs:subClassOf :history .
+
+",chronology is a type of history.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Crosswalk,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crosswalk rdfs:subClassOf :provenance_element ;
+    owl:equivalentClass :variable_mapping .
+
+",Crosswalk is the same as variable mapping and is a type of provenance element.,2,True
+sweet,http://sweetontology.net/reprSciProvenance/DerivedRule,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:derived_rule rdfs:subClassOf :inference_rule .
+
+",derived rule is a type of inference rule.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Documentation,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:documentation rdfs:subClassOf :experiment_activity .
+
+",documentation is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Excavate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:excavate rdfs:subClassOf :experiment_activity .
+
+",excavate is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Genesis,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:genesis rdfs:subClassOf :history .
+
+",genesis is a type of history.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/History,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:history rdfs:subClassOf :property .
+
+",history is a type of property.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/InferenceRule,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:inference_rule rdfs:subClassOf :provenance_element .
+
+",inference rule is a type of provenance element.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/JustificationElement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:justification_element rdfs:subClassOf :provenance_element .
+
+",justification element is a type of provenance element.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Metadata,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:metadata rdfs:subClassOf :representation .
+
+",metadata is a type of representation.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/MethodRule,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:method_rule rdfs:subClassOf :inference_rule .
+
+",method rule is a type of inference rule.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Pipeline,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pipeline rdfs:subClassOf :process .
+
+",pipeline is a type of process.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Predecessor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:predecessor rdfs:subClassOf :provenance_element .
+
+",predecessor is a type of provenance element.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/PrimitiveRule,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:primitive_rule rdfs:subClassOf :inference_rule .
+
+",primitive rule is a type of inference rule.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Process,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:process rdfs:subClassOf :process .
+
+",process is a type of process.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Provenance,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:provenance rdfs:subClassOf :history .
+
+",provenance is a type of history.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/ProvenanceElement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:provenance_element rdfs:subClassOf :experiment_activity .
+
+",provenance element is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Reconstruction,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:reconstruction rdfs:subClassOf :experiment_activity .
+
+",reconstruction is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Record,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:record rdfs:subClassOf :research .
+
+",record is a type of research.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Sequence,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sequence rdfs:subClassOf :history .
+
+",sequence is a type of history.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Successor,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:successor rdfs:subClassOf :provenance_element .
+
+",successor is a type of provenance element.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/VariableMapping,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:variable_mapping rdfs:subClassOf :provenance_element .
+
+",variable mapping is a type of provenance element.,1,False
+sweet,http://sweetontology.net/reprSciProvenance/Workflow,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:workflow rdfs:subClassOf :experiment_activity .
+
+",workflow is a type of experiment activity.,1,False
+sweet,http://sweetontology.net/reprSciUnits/BaseUnit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:base_unit rdfs:subClassOf :unit ;
+    owl:disjointWith :complex_unit .
+
+",The base unit is a type of unit and it is disjoint with the complex unit.,2,True
+sweet,http://sweetontology.net/reprSciUnits/ComplexUnit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:complex_unit rdfs:subClassOf :unit .
+
+",complex unit is a type of unit.,1,False
+sweet,http://sweetontology.net/reprSciUnits/LogarithmicUnit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:logarithmic_unit rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :logarithmic_scale ;
+            owl:onProperty :has_scale ],
+        :unit .
+
+",A logarithmic unit is a type of unit that exclusively utilizes a logarithmic scale.,2,True
+sweet,http://sweetontology.net/reprSciUnits/Prefix,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prefix rdfs:subClassOf :measurement .
+
+",prefix is a type of measurement.,1,False
+sweet,http://sweetontology.net/reprSciUnits/Unit,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unit rdfs:subClassOf :measurement .
+
+",unit is a type of measurement.,1,False
+sweet,http://sweetontology.net/reprSciUnits/UnitDefinedByProduct,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unit_defined_by_product rdfs:subClassOf :complex_unit,
+        :multiplication,
+        :product .
+
+","A unit defined by a product is a type of multiplication, product, and complex unit.",3,True
+sweet,http://sweetontology.net/reprSciUnits/UnitDerivedByRaisingToPower,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unit_derived_by_raising_to_power rdfs:subClassOf :complex_unit .
+
+",unit derived by raising to power is a type of complex unit.,1,False
+sweet,http://sweetontology.net/reprSciUnits/UnitDerivedByScaling,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unit_derived_by_scaling rdfs:subClassOf :complex_unit .
+
+",unit derived by scaling is a type of complex unit.,1,False
+sweet,http://sweetontology.net/reprSciUnits/UnitDerivedByShifting,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:unit_derived_by_shifting rdfs:subClassOf :complex_unit .
+
+",unit derived by shifting is a type of complex unit.,1,False
+sweet,http://sweetontology.net/reprSpace/Space,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:space rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :meter ;
+            owl:onProperty :has_default_unit ],
+        :dimension .
+
+",Space is a type of dimension and it is also a type of something that must have the default unit meter.,2,True
+sweet,http://sweetontology.net/reprSpaceCoordinate/AngularCoordinate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:angular_coordinate rdfs:subClassOf :component,
+        :coordinate .
+
+",Angular coordinate is both a type of component and a type of coordinate.,2,True
+sweet,http://sweetontology.net/reprSpaceCoordinate/Equator,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:equator rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :pole ;
+            owl:onProperty :perpendicular_to ],
+        :bearing,
+        :direction,
+        :inclination .
+
+","The equator is a type of bearing, direction, and inclination. Additionally, it is a type of something that is only perpendicular to the pole.",4,True
+sweet,http://sweetontology.net/reprSpaceCoordinate/HorizontalCoordinate,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:horizontal_coordinate rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :vertical_coordinate ;
+            owl:onProperty :orthogonal_to ],
+        :component,
+        :coordinate .
+
+","Horizontal coordinate is a type of component and coordinate, and it is something that is only orthogonal to the vertical coordinate.",3,True
+sweet,http://sweetontology.net/reprSpaceCoordinate/MagneticPole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:magnetic_pole rdfs:subClassOf :pole .
+
+",magnetic pole is a type of pole.,1,False
+sweet,http://sweetontology.net/reprSpaceCoordinate/Meridian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meridian rdfs:subClassOf :horizontal_coordinate .
+
+",meridian is a type of horizontal coordinate.,1,False
+sweet,http://sweetontology.net/reprSpaceCoordinate/Pole,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pole rdfs:subClassOf :bearing,
+        :direction,
+        :inclination .
+
+","Pole is a type of bearing, direction, and inclination.",3,True
+sweet,http://sweetontology.net/reprSpaceCoordinate/PrimeMeridian,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prime_meridian rdfs:subClassOf :meridian .
+
+",prime meridian is a type of meridian.,1,False
+sweet,http://sweetontology.net/reprSpaceCoordinate/Vertical,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertical rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :up ;
+            owl:onProperty :has_direction ],
+        :component,
+        :coordinate ;
+    owl:equivalentClass :vertical_coordinate .
+
+","Vertical is the same as a vertical coordinate and is a type of component as well as a type of coordinate. Additionally, vertical is a type of something that must have a direction pointing up.",4,True
+sweet,http://sweetontology.net/reprSpaceCoordinate/VerticalCoordinate,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vertical_coordinate rdfs:subClassOf :component,
+        :coordinate .
+
+",A vertical coordinate is both a type of component and a type of coordinate.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Arc,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arc rdfs:subClassOf :geometrical_object_1d .
+
+",arc is a type of geometrical object 1d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/BoundingBox,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bounding_box rdfs:subClassOf :rectangle .
+
+",bounding box is a type of rectangle.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Circle,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:circle rdfs:subClassOf :conic,
+        :conic_section .
+
+",A circle is both a type of conic and a type of conic section.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Circular,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:circular rdfs:subClassOf :geometrical_object_2d .
+
+",circular is a type of geometrical object 2d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Cluster,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cluster rdfs:subClassOf :collection ;
+    owl:equivalentClass :family,
+        :swarm .
+
+","A cluster is synonymous with both a family and a swarm, and it is a type of collection.",3,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Conic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conic rdfs:subClassOf :geometrical_object_2d ;
+    owl:equivalentClass :conic_section .
+
+","Conic, which is the same as a conic section, is a type of 2D geometrical object.",2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/ConicSection,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:conic_section rdfs:subClassOf :geometrical_object_2d .
+
+",conic section is a type of geometrical object 2d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Contour,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:contour rdfs:subClassOf :surface .
+
+",contour is a type of surface.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Crescent,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:crescent rdfs:subClassOf :geometrical_object_2d .
+
+",crescent is a type of geometrical object 2d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Curve,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:curve rdfs:subClassOf :geometrical_object_1d .
+
+",curve is a type of geometrical object 1d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Depression,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:depression rdfs:subClassOf :geometrical_object .
+
+",depression is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Ellipse,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ellipse rdfs:subClassOf :conic,
+        :conic_section .
+
+",An ellipse is a type of conic and also a type of conic section.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Family,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:family rdfs:subClassOf :collection .
+
+",family is a type of collection.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/GeometricalObject,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geometrical_object rdfs:subClassOf :numerical_entity .
+
+",geometrical object is a type of numerical entity.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/GeometricalObject_0D,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:geometrical_object_0d rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0 ;
+            owl:onProperty :has_dimension ],
+        :geometrical_object ;
+    owl:equivalentClass :point .
+
+",A geometrical object 0d is the same as a point and is a type of geometrical object. It also falls under the category of something that must have dimension 0.,3,True
+sweet,http://sweetontology.net/reprSpaceGeometry/GeometricalObject_1D,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geometrical_object_1d rdfs:subClassOf :d,
+        :geometrical_object .
+
+",A geometrical object 1d is a type of geometrical object and also a type of d.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/GeometricalObject_2D,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:geometrical_object_2d rdfs:subClassOf :d,
+        :geometrical_object .
+
+",A geometrical object 2D is a type of geometrical object and is also a type of D.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/GreatCircle,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:great_circle rdfs:subClassOf :circle ;
+    owl:disjointWith :small_circle .
+
+",A great circle is a type of circle that is disjoint with a small circle.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Helical,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:helical rdfs:subClassOf :geometrical_object_2d .
+
+",helical is a type of geometrical object 2d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Hyperbola,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hyperbola rdfs:subClassOf :conic,
+        :conic_section .
+
+",A hyperbola is a type of conic section.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Hyperplane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hyperplane rdfs:subClassOf :geometrical_object .
+
+",hyperplane is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Lattice,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lattice rdfs:subClassOf :discrete,
+        :discrete_function,
+        :geometrical_object .
+
+","Lattice is a type of discrete, discrete function, and geometrical object.",3,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Line,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:line rdfs:subClassOf :curve .
+
+",line is a type of curve.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Parabola,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parabola rdfs:subClassOf :conic,
+        :conic_section .
+
+",A parabola is a type of conic section.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Parabolic,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parabolic rdfs:subClassOf :geometrical_object_2d .
+
+",parabolic is a type of geometrical object 2d.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Patch,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:patch rdfs:subClassOf :surface .
+
+",patch is a type of surface.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Path,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:path rdfs:subClassOf :curve ;
+    owl:equivalentClass :trajectory .
+
+",Path is the same as trajectory and is a type of curve.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Peak,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:peak rdfs:subClassOf :geometrical_object .
+
+",peak is a type of geometrical object.,1,False
+sweet,http://sweetontology.net/reprSpaceGeometry/Plane,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:plane rdfs:subClassOf :geometrical_object_2d,
+        :surface .
+
+",A plane is a type of geometrical object that is 2D and also a type of surface.,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Point,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:point rdfs:subClassOf :geometrical_object,
+        :geometrical_object_0d .
+
+",A point is a type of geometrical object that is also characterized as 0-dimensional (0d).,2,True
+sweet,http://sweetontology.net/reprSpaceGeometry/Polygon,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:polygon rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :point ;
+            owl:onProperty :has_vertices ],
+        :geometrical_object_2d .
+
+",A polygon is a type of 2D geometrical object that is characterized by only having vertices points.,2,True

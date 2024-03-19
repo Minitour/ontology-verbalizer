@@ -1,3 +1,6 @@
+import os
+
+from core.nlp import ChatGptModel
 from core.process import Processor
 
 if __name__ == '__main__':
@@ -46,7 +49,8 @@ if __name__ == '__main__':
         'http://purl.obolibrary.org/obo/IAO_0000115': 'has definition'
     }
 
-    processor = Processor(vocab_ignore=ignore, vocab_rephrased=rephrased)
-    processor.process('envo', './data/envo.owl', chunk_size=500)
-    processor.process('sweet', './data/sweet.owl', chunk_size=500)
+    gpt4 = ChatGptModel(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4-0125-preview', temperature=0.7)
+    processor = Processor(llm=gpt4, vocab_ignore=ignore, vocab_rephrased=rephrased)
+    # processor.process('envo', './data/envo.owl', chunk_size=500)
+    # processor.process('sweet', './data/sweet.owl', chunk_size=500)
     processor.process('doid', './data/doid.owl', chunk_size=500)
