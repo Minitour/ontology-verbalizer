@@ -1,0 +1,2145 @@
+ontology,root,fragment,text,statements,llm_used
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#AbstractSituation_Atypical,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abstract_situation_atypical rdfs:subClassOf :situation .
+
+",abstract situation atypical is a type of situation.,1,False
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#AbstractSituation_RoleInShift,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abstract_situation_role_in_shift rdfs:subClassOf :situation ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty :has_data_requestor ;
+            owl:someValuesFrom [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_role ;
+                                    owl:someValuesFrom :role ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :yes ;
+                                            owl:onProperty :is_in_shift ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The abstract situation role in a shift is identical to a circumstance where there is at least one data requestor. This situation is a subset of the intersection between a situation where there is at least one role and another where it's mandatory to be in a shift. Moreover, the abstract situation role in a shift can also be viewed as a specific type of situation.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#AbstractSituation_RoleInShift_Inpatient_DRWorkingDept_EQ_PatientHospitalizedDept,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_patient ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:hasValue :in_patient_status ;
+                                            owl:onProperty :has_status ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_ro.dr._working_department._is_equal_to._patient._hospitalized_department ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+",abstract situation role in shift inpatient dr working dept eq patient hospitalized dept is same as something that intersection of something that  abstract situation role in shift and  something that at least has patient some something that must has status in patient status and  something that must has r2 r relation r2 ro.dr. working department. is equal to. patient. hospitalized department.,1,False
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#AbstractSituation_RoleInShift_Outpatient_DRWorkingDept_EQ_PatientSupervisionClinic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_patient ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:hasValue :outpatient_status ;
+                                            owl:onProperty :has_status ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_ro.dr._working_department._is_equal_to._patient._supervision_clinic ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+",abstract situation role in shift outpatient dr working dept eq patient supervision clinic is same as something that intersection of something that  abstract situation role in shift and  something that at least has patient some something that must has status outpatient status and  something that must has r2 r relation r2 ro.dr. working department. is equal to. patient. supervision clinic.,1,False
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Action,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:action rdfs:subClassOf :refineable_concept ;
+    owl:disjointWith :ehr_section,
+        :is_in_shift,
+        :legal_authorization_type,
+        :organization,
+        :patient_status,
+        :role,
+        :shift ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :document ;
+                    rdf:rest [ rdf:first :transfer ;
+                            rdf:rest [ rdf:first :update ;
+                                    rdf:rest [ rdf:first :view ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","An action is identical to a combination of actions that include document, transfer, update, and view. It is classified as a refineable concept. However, action doesn't have any common instances with several other concepts such as EHR section, is in shift, legal authorization type, organization, patient status, role, and shift.",9,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document rdfs:subClassOf :action ;
+    owl:disjointWith :transfer,
+        :update,
+        :view .
+
+","A document is characterized as a type of action. It is important to note that a document does not share any common instances with transfer, update, or view.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer rdfs:subClassOf :action ;
+    owl:disjointWith :document,
+        :update,
+        :view .
+
+","Transfer is identified as a particular type of action. It is important to note that transfer does not share any common instances with a document. Furthermore, transfer also does not have any shared instances with update or view.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Update,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:update rdfs:subClassOf :action ;
+    owl:disjointWith :document,
+        :transfer,
+        :view .
+
+","Update is identified as a specific type of action. It is noteworthy to mention that update does not have any shared instances with document, transfer, or view.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view rdfs:subClassOf :action ;
+    owl:disjointWith :document,
+        :transfer,
+        :update .
+
+","View is classified as a type of action. It is important to note that view does not have any common instances with document, transfer, or update.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Action.Demographic_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:action_demographic_section rdfs:subClassOf :task ;
+    owl:disjointWith :action_identification_section,
+        :action_medical_section ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :document_demographic_section ;
+                    rdf:rest [ rdf:first :view_demographic_section ;
+                            rdf:rest :nil ] ] ] .
+
+","The action demographic section is identical to the union of the document demographic section and the view demographic section. This action demographic section is classified as a type of task. Furthermore, it is important to note that the action demographic section does not have any common instances with either the action identification section or the action medical section.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document.Demographic_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document_demographic_section rdfs:subClassOf :action_demographic_section ;
+    owl:disjointWith :view_demographic_section .
+
+","The action of documenting the demographic section is a type of action within the demographic section. Importantly, the document demographic section does not share any common instances with the action of viewing the demographic section.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Demographic_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_demographic_section rdfs:subClassOf :action_demographic_section ;
+    owl:disjointWith :document_demographic_section .
+
+","The action of viewing the demographic section is a specific type of interaction with the demographic section. However, it is important to note that the act of viewing the demographic section does not share any common instances with the act of documenting the demographic section.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Action.Identification_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:action_identification_section rdfs:subClassOf :task ;
+    owl:disjointWith :action_demographic_section,
+        :action_medical_section ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :transfer_identification_section ;
+                    rdf:rest [ rdf:first :view_identification_section ;
+                            rdf:rest :nil ] ] ] .
+
+","The action identification section is equivalent to the union of the transfer identification section and the view identification section. This action identification section is categorized as a type of task. It's important to note that the action identification section does not have any common instances with the action demographic section. Similarly, there are no common instances between the action identification section and the action medical section.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer.Identification_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer_identification_section rdfs:subClassOf :action_identification_section ;
+    owl:disjointWith :view_identification_section .
+
+","The transfer identification section is classified as a type of action identification section. However, it doesn't share any common instances with the view identification section.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Identification_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_identification_section rdfs:subClassOf :action_identification_section ;
+    owl:disjointWith :transfer_identification_section .
+
+","The view identification section is categorized as a type of action identification section. However, it's important to note that the view identification section doesn't share any common instances with the transfer identification section.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Action.Medical_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:action_medical_section rdfs:subClassOf :task ;
+    owl:disjointWith :action_demographic_section,
+        :action_identification_section ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :document_medical_section ;
+                    rdf:rest [ rdf:first :transfer_medical_section ;
+                            rdf:rest [ rdf:first :view_medical_section ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The action medical section is equivalent to the union of tasks involving the document medical section, the transfer medical section, and the view medical section. It is classified as a specific type of task. Importantly, the action medical section does not have any common instances with either the action demographic section or the action identification section.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document.Medical_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document_medical_section rdfs:subClassOf :action_medical_section ;
+    owl:disjointWith :transfer_medical_section,
+        :view_medical_section ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :document_diagnosis ;
+                    rdf:rest [ rdf:first :document_encounter ;
+                            rdf:rest [ rdf:first :document_nursing ;
+                                    rdf:rest [ rdf:first :document_prescription ;
+                                            rdf:rest [ rdf:first :document_refferal_form ;
+                                                    rdf:rest [ rdf:first :document_testing ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] .
+
+","The document medical section is the same as the union of various components which include document diagnosis, document encounter, document nursing, document prescription, document referral form, and document testing. This document medical section is classified as a type of action within the medical section. However, it is important to note that the document medical section does not share any common instances with the transfer medical section or the view medical section.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer.Medical_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer_medical_section rdfs:subClassOf :action_medical_section ;
+    owl:disjointWith :document_medical_section,
+        :view_medical_section ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :transfer_diagnosis ;
+                    rdf:rest [ rdf:first :transfer_encounter ;
+                            rdf:rest [ rdf:first :transfer_nursing ;
+                                    rdf:rest [ rdf:first :transfer_prescription ;
+                                            rdf:rest [ rdf:first :transfer_refferal_form ;
+                                                    rdf:rest [ rdf:first :transfer_testing ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] .
+
+","The transfer medical section is identical to the amalgamation of several operations that include the transfer of diagnoses, encounters, nursing care, prescriptions, referral forms, and testing. It is categorized as a type of action within the medical section. Interestingly, the transfer medical section does not overlap with the document medical section or the view medical section in terms of common instances.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Medical_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_medical_section rdfs:subClassOf :action_medical_section ;
+    owl:disjointWith :document_medical_section,
+        :transfer_medical_section ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :view_diagnosis ;
+                    rdf:rest [ rdf:first :view_encounter ;
+                            rdf:rest [ rdf:first :view_nursing ;
+                                    rdf:rest [ rdf:first :view_prescription ;
+                                            rdf:rest [ rdf:first :view_refferal_form ;
+                                                    rdf:rest [ rdf:first :view_testing ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] .
+
+","The ""view medical section"" is equivalent to a union of several actions including viewing the diagnosis, encounter, nursing, prescription, referral form, and testing. It is categorized as a type of action within the medical section. However, the ""view medical section"" doesn't have any common instances with the ""document medical section"" or the ""transfer medical section"".",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Data_Requestor,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_requestor rdfs:subClassOf :entity_concepts ;
+    owl:disjointWith :ehr,
+        :legal_authorization,
+        :patient,
+        :response,
+        :task .
+
+","The data requestor is identified as a type of entity concept. It is specified that the data requestor does not share any common instances with the electronic health record (EHR), legal authorization, patient, response, or task.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#DataRequestor_2_Patient_Relation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data_requestor_2_patient_relation rdfs:subClassOf :entity_2_entity_relation ;
+    owl:disjointWith :ehr_2_patient_relation ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :family_doctor_of_patient_relation ;
+                    rdf:rest [ rdf:first :gynecologist_of_patient_relation ;
+                            rdf:rest :nil ] ] ] .
+
+","The relation of data requestor to a patient is similar to that of a family doctor or a gynecologist to a patient. This kind of relation between data requestor and patient is considered an instance of the entity to entity relation type. However, it's important to note that the relation between data requestor and patient does not share any common instances with the relation between electronic health records (EHR) and a patient.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Demographic_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:demographic_section rdfs:subClassOf :ehr_section ;
+    owl:disjointWith :identification_section,
+        :medical_section .
+
+","The demographic section is classified as a type of EHR (Electronic Health Records) section. It is important to note that the demographic section does not have any common instances with the identification section. Furthermore, the demographic section also does not share any common instances with the medical section.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Diagnosis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:diagnosis rdfs:subClassOf :medical_section ;
+    owl:disjointWith :encounter,
+        :nursing,
+        :prescription,
+        :refferal_form,
+        :testing .
+
+","Diagnosis is identified as a type of medical section. Importantly, it doesn't share any common instances with several other elements including encounter, nursing, prescription, referral form, and testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Dietitian,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dietitian rdfs:subClassOf :health_para_medcial_professional ;
+    owl:disjointWith :ordinary_hpp,
+        :social_worker .
+
+",A dietitian is defined as a type of health para-medical professional. It is important to note that a dietitian does not share any common instances with an ordinary health professional or a social worker.,3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document.Diagnosis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document_diagnosis rdfs:subClassOf :document_medical_section ;
+    owl:disjointWith :document_encounter,
+        :document_nursing,
+        :document_prescription,
+        :document_refferal_form,
+        :document_testing .
+
+","The document diagnosis is a subtype of the document medical section. It is unique in its category as it does not share any common instances with other types of documents such as document encounter, document nursing, document prescription, document referral form, and document testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document.Encounter,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document_encounter rdfs:subClassOf :document_medical_section ;
+    owl:disjointWith :document_diagnosis,
+        :document_nursing,
+        :document_prescription,
+        :document_refferal_form,
+        :document_testing .
+
+","Document Encounter is a type of Document Medical Section. It is distinct from other document types as it shares no common instances with Document Diagnosis, Document Nursing, Document Prescription, Document Referral Form, or Document Testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document.Nursing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document_nursing rdfs:subClassOf :document_medical_section ;
+    owl:disjointWith :document_diagnosis,
+        :document_encounter,
+        :document_prescription,
+        :document_refferal_form,
+        :document_testing .
+
+","Document nursing is a type of document found in the medical section. There are no common instances shared between document nursing and document diagnosis. Similarly, document nursing does not have any common instances with document encounter. This is also the case with document prescription, where no common instances are shared with document nursing. The same situation applies to document referral form and document testing, where there are no common instances shared with document nursing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document.Prescription,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document_prescription rdfs:subClassOf :document_medical_section ;
+    owl:disjointWith :document_diagnosis,
+        :document_encounter,
+        :document_nursing,
+        :document_refferal_form,
+        :document_testing .
+
+","The document prescription is a type of document that belongs to the medical section. It is important to note that the document prescription does not share any common instances with other types of documents such as the document diagnosis, document encounter, document nursing, document referral form, or document testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document.Refferal_Form,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document_refferal_form rdfs:subClassOf :document_medical_section ;
+    owl:disjointWith :document_diagnosis,
+        :document_encounter,
+        :document_nursing,
+        :document_prescription,
+        :document_testing .
+
+","The document referral form falls under the category of medical documents. Interestingly, it does not have any common instances with several other types of documents. These include the document diagnosis, document encounter, document nursing, document prescription, and document testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document.Testing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:document_testing rdfs:subClassOf :document_medical_section ;
+    owl:disjointWith :document_diagnosis,
+        :document_encounter,
+        :document_nursing,
+        :document_prescription,
+        :document_refferal_form .
+
+","Document testing is a category within the medical section. It is distinct and does not share any common instances with other categories such as document diagnosis, document encounter, document nursing, document prescription, and document referral form.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#EHR,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ehr rdfs:subClassOf :entity_concepts ;
+    owl:disjointWith :data_requestor,
+        :legal_authorization,
+        :patient,
+        :response,
+        :task ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :ehr1._carmel_hospital ;
+                    rdf:rest :nil ] ] .
+
+","The Electronic Health Record (EHR) is regarded as something that is one of something, such as EHR1, within the Carmel Hospital. As a type of entity concept, the EHR does not share any common instances with a data requestor, legal authorization, patient, response, or task.",7,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#EHR_2_Patient_Relation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ehr_2_patient_relation rdfs:subClassOf :entity_2_entity_relation ;
+    owl:disjointWith :data_requestor_2_patient_relation ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :ehr2_patient_relation ;
+                    rdf:rest :nil ] ] .
+
+","The relationship of EHR 2 patient is akin to something that is also a part of the EHR 2 patient relationship itself. Moreover, the EHR 2 patient relationship is categorized as a kind of entity 2 entity relationship. However, it's important to note that the EHR 2 patient relationship doesn't have any common instances with the data requestor 2 patient relationship.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#EHR_Relation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ehr_relation rdfs:subClassOf :refineable_2_refineable_relation ;
+    owl:disjointWith :location_relation,
+        :organization_relation,
+        :time_relation ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :r2_re.ehr_section._is_equal_to.la._relate_ehr_section ;
+                    rdf:rest :nil ] ] .
+
+","The EHR relation is similar to something that one of the elements in the R2 re.EHR section is equal to. This same EHR relation is also a type of the refinable 2 relation. However, it's important to note that the EHR relation does not share any common instances with the location, organization, or time relations.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#EHR_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ehr_section rdfs:subClassOf :refineable_concept ;
+    owl:disjointWith :action,
+        :is_in_shift,
+        :legal_authorization_type,
+        :organization,
+        :patient_status,
+        :role,
+        :shift ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :demographic_section ;
+                    rdf:rest [ rdf:first :identification_section ;
+                            rdf:rest [ rdf:first :medical_section ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The EHR section is equivalently defined as the union of the demographic section, identification section, and medical section. It is identified as a type of refineable concept. However, the EHR section does not have any common instances with several other aspects such as action, ""is in shift"", legal authorization type, organization, patient status, role, and shift.",9,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Identification_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:identification_section rdfs:subClassOf :ehr_section ;
+    owl:disjointWith :demographic_section,
+        :medical_section .
+
+",The identification section is a specific type of EHR (Electronic Health Record) section. It's important to note that the identification section does not share any common instances with the demographic section or the medical section.,3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Medical_Section,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:medical_section rdfs:subClassOf :ehr_section ;
+    owl:disjointWith :demographic_section,
+        :identification_section ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :diagnosis ;
+                    rdf:rest [ rdf:first :encounter ;
+                            rdf:rest [ rdf:first :nursing ;
+                                    rdf:rest [ rdf:first :prescription ;
+                                            rdf:rest [ rdf:first :refferal_form ;
+                                                    rdf:rest [ rdf:first :testing ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] .
+
+","The medical section is identical to a combination of various elements such as diagnosis, encounter, nursing, prescription, referral form, and testing. It is classified under the type of EHR section. Interestingly, the medical section does not have any common instances with either the demographic section or the identification section.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Encounter,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:encounter rdfs:subClassOf :medical_section ;
+    owl:disjointWith :diagnosis,
+        :nursing,
+        :prescription,
+        :refferal_form,
+        :testing .
+
+","Encounter is a type of medical section that does not share any common instances with diagnosis, nursing, prescription, referral form, or testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Entity_2_Entity_Relation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:entity_2_entity_relation rdfs:subClassOf :relation_concept ;
+    owl:disjointWith :refineable_2_refineable_relation ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :data_requestor_2_patient_relation ;
+                    rdf:rest [ rdf:first :ehr_2_patient_relation ;
+                            rdf:rest :nil ] ] ] .
+
+","The relation between entity 2 and entity is equivalent to the union of the relation between the data requestor and the patient, and the relation between the EHR and the patient. This relation between entity 2 and entity is a type of relation concept. However, the relation between entity 2 and entity does not share any common instances with the relation between refineable and refineable.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Entity_Concepts,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:entity_concepts owl:disjointWith :refineable_concept,
+        :relation_concept,
+        :situation ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :data_requestor ;
+                    rdf:rest [ rdf:first :ehr ;
+                            rdf:rest [ rdf:first :legal_authorization ;
+                                    rdf:rest [ rdf:first :patient ;
+                                            rdf:rest [ rdf:first :response ;
+                                                    rdf:rest [ rdf:first :task ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] .
+
+","The entity concepts are the same as the collective union of a data requestor, electronic health records (EHR), legal authorization, patient, response, and task. However, these entity concepts do not share any common instances with refinable concept, relation concept, or situation.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Legal_Authorization,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:legal_authorization rdfs:subClassOf :entity_concepts ;
+    owl:disjointWith :data_requestor,
+        :ehr,
+        :patient,
+        :response,
+        :task .
+
+","Legal authorization is identified as a type of entity concept. It is important to note that legal authorization does not share any common instances with data requestor, electronic health record (EHR), patient, response, or task.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Patient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:patient rdfs:subClassOf :entity_concepts ;
+    owl:disjointWith :data_requestor,
+        :ehr,
+        :legal_authorization,
+        :response,
+        :task .
+
+","The concept of a patient is classified as an entity within the ontology. The patient as an entity does not share any common instances with a data requestor, electronic health records (EHR), legal authorization, response, or task.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Response,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:response rdfs:subClassOf :entity_concepts ;
+    owl:disjointWith :data_requestor,
+        :ehr,
+        :legal_authorization,
+        :patient,
+        :task ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :approved ;
+                    rdf:rest [ rdf:first :denied ;
+                            rdf:rest :nil ] ] ] .
+
+","The response is identified as the same as something that is approved or denied. It is a type of entity concept. However, the response does not share any common instances with the data requestor, electronic health record (EHR), legal authorization, patient, or task.",7,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Task,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:task rdfs:subClassOf :entity_concepts ;
+    owl:disjointWith :data_requestor,
+        :ehr,
+        :legal_authorization,
+        :patient,
+        :response ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :action_demographic_section ;
+                    rdf:rest [ rdf:first :action_identification_section ;
+                            rdf:rest [ rdf:first :action_medical_section ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The task is identical to the union of actions in the demographic, identification, and medical sections. The task is categorized under entity concepts. Interestingly, the task does not share any common instances with the data requestor, EHR (Electronic Health Records), legal authorization, patient, or response.",7,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Expert_Physician,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:expert_physician rdfs:subClassOf :physician ;
+    owl:disjointWith :hospital_manager,
+        :ordinary_physician,
+        :resident .
+
+","An expert physician is classified as a specific type of physician. This role of expert physician, however, does not share any common instances with a hospital manager. Similarly, there are no common instances between an expert physician and an ordinary physician. The same situation applies also between an expert physician and a resident.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#General_Department,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:general_department rdfs:subClassOf :hospital_department ;
+    owl:disjointWith :hospitalization_department,
+        :out_patient_clinic ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :accounting__department ;
+                    rdf:rest [ rdf:first :hr__department ;
+                            rdf:rest [ rdf:first :maintenance__department ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The General Department is equated to something similar that is shared among the Accounting Department, HR Department, and Maintenance Department. Furthermore, the General Department is classified as a type of Hospital Department. It's noteworthy to mention that the General Department doesn't share any common instances with the Hospitalization Department or the Outpatient Clinic.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Granted_Research_Form,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:granted_research_form rdfs:subClassOf :legal_authorization_type ;
+    owl:disjointWith :patient_confirmation_release_form,
+        :patient_consent_form,
+        :refferal_letter_form,
+        :request_for_expert_physician .
+
+","The granted research form is identified as a type of legal authorization. Interestingly, it does not share any common instances with the patient confirmation release form. Moreover, it also doesn't share any common instances with the patient consent form. The same pattern is observed with the referral letter form as well. Furthermore, the granted research form doesn't have any common instances with the request for an expert physician.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Health_Care_Administrator,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:health_care_administrator rdfs:subClassOf :role ;
+    owl:disjointWith :health_care_professional,
+        :health_care_researcher,
+        :health_para_medcial_professional ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :is_administrator ;
+                    rdf:rest [ rdf:first :medical_secretary ;
+                            rdf:rest [ rdf:first :ordinary_hca ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","A health care administrator is similar to a union of roles that include an administrator, a medical secretary, and an ordinary healthcare assistant (HCA). Being a health care administrator is a specific type of role. However, the health care administrator does not share any common instances with roles such as a health care professional, a health care researcher, or a health para medical professional.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#IS_Administrator,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:is_administrator rdfs:subClassOf :health_care_administrator ;
+    owl:disjointWith :medical_secretary,
+        :ordinary_hca .
+
+","An administrator is a type of health care administrator. However, an administrator does not share any common instances with a medical secretary or an ordinary HCA.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Medical_Secretary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:medical_secretary rdfs:subClassOf :health_care_administrator ;
+    owl:disjointWith :is_administrator,
+        :ordinary_hca ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :ordinary_medcial_secretary ;
+                    rdf:rest [ rdf:first :senior_medical_secretary ;
+                            rdf:rest :nil ] ] ] .
+
+","A medical secretary is the same as a union of an ordinary medical secretary and a senior medical secretary. A medical secretary is considered a type of health care administrator. However, it is important to note that a medical secretary does not share any common instances with an administrator role. Additionally, a medical secretary also does not share any common instances with an ordinary health care assistant (HCA).",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Ordinary_HCA,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:ordinary_hca owl:disjointWith :is_administrator,
+        :medical_secretary ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :health_care_administrator ;
+                    rdf:rest [ rdf:first [ owl:complementOf [ owl:unionOf [ rdf:first :is_administrator ;
+                                                    rdf:rest [ rdf:first :medical_secretary ;
+                                                            rdf:rest :nil ] ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+",An ordinary Health Care Administrator (HCA) is identified as the intersection of a health care administrator and the complement of the union of those who are administrators and medical secretaries. This implies that the ordinary HCA is a health care administrator who does not hold the roles of either an administrator or a medical secretary. The ordinary HCA does not share any common instances with an administrator or a medical secretary.,3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Health_Care_Professional,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:health_care_professional rdfs:subClassOf :role ;
+    owl:disjointWith :health_care_administrator,
+        :health_care_researcher,
+        :health_para_medcial_professional ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :ordinary_hcp ;
+                    rdf:rest [ rdf:first :paramedic ;
+                            rdf:rest [ rdf:first :physician ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","A health care professional is defined as the union of an ordinary health care provider, a paramedic, and a physician. This health care professional role is unique and does not share any common instances with a health care administrator or a health care researcher. Similarly, there are no common instances shared between a health care professional and a health para medical professional.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Ordinary_HCP,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:ordinary_hcp owl:disjointWith :paramedic,
+        :physician ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :health_care_professional ;
+                    rdf:rest [ rdf:first [ owl:complementOf [ owl:unionOf [ rdf:first :paramedic ;
+                                                    rdf:rest [ rdf:first :physician ;
+                                                            rdf:rest :nil ] ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","An ordinary health care professional (hcp) is identical to the intersection of a health care professional and the complement of the union of a paramedic and a physician. Additionally, the ordinary hcp does not share any common instances with a paramedic or a physician.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Paramedic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:paramedic rdfs:subClassOf :health_care_professional ;
+    owl:disjointWith :ordinary_hcp,
+        :physician ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :nurse ;
+                    rdf:rest [ rdf:first :nutritionist ;
+                            rdf:rest [ rdf:first :ordinary_paramedic ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","A paramedic is similar to a conglomerate that includes a nurse, nutritionist, and an ordinary paramedic, all of which fall under the umbrella of health care professionals. However, it's important to note that a paramedic doesn't share any common instances with either an ordinary health care professional or a physician.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Physician,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:physician rdfs:subClassOf :health_care_professional ;
+    owl:disjointWith :ordinary_hcp,
+        :paramedic ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :expert_physician ;
+                    rdf:rest [ rdf:first :hospital_manager ;
+                            rdf:rest [ rdf:first :ordinary_physician ;
+                                    rdf:rest [ rdf:first :resident ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","A physician is synonymous with a union of different roles such as an expert physician, a hospital manager, an ordinary physician, and a resident. A physician is also classified as a type of health care professional. However, a physician does not share any common instances with an ordinary health care professional or a paramedic.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Health_Care_Researcher,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:health_care_researcher rdfs:subClassOf :role ;
+    owl:disjointWith :health_care_administrator,
+        :health_care_professional,
+        :health_para_medcial_professional ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :ordinary_researcher ;
+                    rdf:rest [ rdf:first :senior_researcher ;
+                            rdf:rest :nil ] ] ] .
+
+","A health care researcher is the same as a composite entity that is a union of an ordinary researcher and a senior researcher. This role of a health care researcher is unique and does not share common instances with other roles such as a health care administrator, a health care professional, or a health para medical professional.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Ordinary_Researcher,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:ordinary_researcher owl:disjointWith :senior_researcher ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :health_care_researcher ;
+                    rdf:rest [ rdf:first [ owl:complementOf :senior_researcher ] ;
+                            rdf:rest :nil ] ] ] .
+
+",An ordinary researcher is identical to the intersection of a healthcare researcher and the complement of a senior researcher. This implies that an ordinary researcher embodies the characteristics of a healthcare researcher but does not share any common instances with a senior researcher.,2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Senior_Researcher,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:senior_researcher rdfs:subClassOf :health_care_researcher ;
+    owl:disjointWith :ordinary_researcher .
+
+","A senior researcher is categorized as a type of health care researcher. Additionally, it's important to note that senior researchers do not share any common instances with ordinary researchers.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Health_ParaMedcial_Professional,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:health_para_medcial_professional rdfs:subClassOf :role ;
+    owl:disjointWith :health_care_administrator,
+        :health_care_professional,
+        :health_care_researcher ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :dietitian ;
+                    rdf:rest [ rdf:first :ordinary_hpp ;
+                            rdf:rest [ rdf:first :social_worker ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The health para medical professional is equivalent to the union of entities such as a dietitian, ordinary hpp, and social worker. It is identified as a specific type of role. However, this role of a health para medical professional does not share any common instances with a health care administrator, a health care professional, or a health care researcher.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Ordinary_HPP,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:ordinary_hpp owl:disjointWith :dietitian,
+        :social_worker ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :health_para_medcial_professional ;
+                    rdf:rest [ rdf:first [ owl:complementOf [ owl:unionOf [ rdf:first :dietitian ;
+                                                    rdf:rest [ rdf:first :social_worker ;
+                                                            rdf:rest :nil ] ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The ordinary health para medical professional (hpp) is identical to the intersection of a health para medical professional and the complement of the union of a dietitian and a social worker. Furthermore, the ordinary hpp does not share any common instances with either a dietitian or a social worker.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Social_Worker,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:social_worker rdfs:subClassOf :health_para_medcial_professional ;
+    owl:disjointWith :dietitian,
+        :ordinary_hpp .
+
+","A social worker is a type of health para-medical professional. However, a social worker does not share any common instances with a dietitian. Furthermore, a social worker does not have any common instances with an ordinary HPP.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#HMO,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hmo rdfs:subClassOf :organization ;
+    owl:disjointWith :medical_site ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :clalit ;
+                    rdf:rest [ rdf:first :macabi ;
+                            rdf:rest [ rdf:first :national_insurance ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","HMO, which stands for Health Maintenance Organization, is equivalent to something that is collectively shared by Clalit, Macabi, and National Insurance. An HMO is a type of organization. It's important to note that HMO does not share any common instances with a medical site.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Hospital,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hospital rdfs:subClassOf :medical_site ;
+    owl:disjointWith :hospital_department,
+        :primary_care_clinic ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :hospital_carmel ;
+                    rdf:rest :nil ] ] .
+
+","A hospital is identical to something that is part of the Carmel hospital. A hospital falls under the category of a medical site. Interestingly, a hospital does not share any common instances with a hospital department. Similarly, it does not share any common instances with a primary care clinic.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Hospital_Department,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hospital_department rdfs:subClassOf :medical_site ;
+    owl:disjointWith :hospital,
+        :primary_care_clinic ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :general_department ;
+                    rdf:rest [ rdf:first :hospital_department ;
+                            rdf:rest [ rdf:first :out_patient_clinic ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The hospital department is considered the same as the union of general departments, other hospital departments, and outpatient clinics. In terms of types of medical sites, the hospital department falls under this category. However, the hospital department does not share any common instances with either the hospital or the primary care clinic.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#OutPatient_Clinic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:out_patient_clinic rdfs:subClassOf :hospital_department ;
+    owl:disjointWith :general_department,
+        :hospitalization_department ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :internal_out_clinic ;
+                    rdf:rest [ rdf:first :pediatrician_out_clinic ;
+                            rdf:rest [ rdf:first :surgical_out_clinic ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The outpatient clinic is equivalent to something that falls under the internal out clinic, pediatrician out clinic, and surgical out clinic. It is classified as a type of hospital department. However, it's important to note that the outpatient clinic does not share any common instances with the general department or the hospitalization department.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Hospital_Manager,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hospital_manager rdfs:subClassOf :physician ;
+    owl:disjointWith :expert_physician,
+        :ordinary_physician,
+        :resident .
+
+","A hospital manager is considered a type of physician. However, it's important to note that a hospital manager does not share any common instances with an expert physician. Similarly, there are no common instances shared between a hospital manager and an ordinary physician. Furthermore, there is no instance where a hospital manager shares common instances with a resident.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Hospitalization_Department,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hospitalization_department rdfs:subClassOf :hospital_department ;
+    owl:disjointWith :general_department,
+        :out_patient_clinic ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :emergency_room ;
+                    rdf:rest [ rdf:first :internal_hospital_department ;
+                            rdf:rest [ rdf:first :pediatrician_hospital_department ;
+                                    rdf:rest [ rdf:first :surgical_hospital_department ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The hospitalization department is synonymous with certain entities that encompass the emergency room, internal hospital department, pediatrician hospital department, and the surgical hospital department. This hospitalization department is categorized as a type of hospital department. Interestingly, it does not share any common instances with the general department or the outpatient clinic.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Is_In_Shift,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:is_in_shift rdfs:subClassOf :refineable_concept ;
+    owl:disjointWith :action,
+        :ehr_section,
+        :legal_authorization_type,
+        :organization,
+        :patient_status,
+        :role,
+        :shift ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :no ;
+                    rdf:rest [ rdf:first :yes ;
+                            rdf:rest :nil ] ] ] .
+
+","""Is in shift"" is identical to something that one might categorize as neither ""yes"" nor ""no"". It is considered a type of refinable concept. However, ""is in shift"" does not share any common instances with a number of other concepts. These include ""action"", ""ehr section"", ""legal authorization type"", ""organization"", ""patient status"", ""role"", and ""shift"".",9,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Legal_Authorization_Type,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:legal_authorization_type rdfs:subClassOf :refineable_concept ;
+    owl:disjointWith :action,
+        :ehr_section,
+        :is_in_shift,
+        :organization,
+        :patient_status,
+        :role,
+        :shift ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :granted_research_form ;
+                    rdf:rest [ rdf:first :patient_confirmation_release_form ;
+                            rdf:rest [ rdf:first :patient_consent_form ;
+                                    rdf:rest [ rdf:first :refferal_letter_form ;
+                                            rdf:rest [ rdf:first :request_for_expert_physician ;
+                                                    rdf:rest :nil ] ] ] ] ] ] .
+
+","The legal authorization type is equivalent to a union of various forms such as the granted research form, patient confirmation release form, patient consent form, referral letter form, and request for an expert physician. This legal authorization type also is classified as a refineable concept. However, it is important to note that the legal authorization type does not share any common instances with several concepts; these include action, EHR section, the status of being in shift, organization, patient status, role, and shift.",9,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Patient_Confirmation_Release_Form,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:patient_confirmation_release_form rdfs:subClassOf :legal_authorization_type ;
+    owl:disjointWith :granted_research_form,
+        :patient_consent_form,
+        :refferal_letter_form,
+        :request_for_expert_physician .
+
+","The patient confirmation release form can be categorized as a type of legal authorization. It is distinct and does not share any common instances with other forms such as the granted research form, patient consent form, referral letter form, or the request for an expert physician.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Patient_Consent_Form,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:patient_consent_form rdfs:subClassOf :legal_authorization_type ;
+    owl:disjointWith :granted_research_form,
+        :patient_confirmation_release_form,
+        :refferal_letter_form,
+        :request_for_expert_physician .
+
+","The patient consent form is classified as a type of legal authorization. It is distinct from other forms and does not share any common instances with the granted research form, patient confirmation release form, referral letter form, or request for an expert physician form.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Refferal_Letter_Form,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:refferal_letter_form rdfs:subClassOf :legal_authorization_type ;
+    owl:disjointWith :granted_research_form,
+        :patient_confirmation_release_form,
+        :patient_consent_form,
+        :request_for_expert_physician .
+
+","A referral letter form is classified as a type of legal authorization. It is important to note that this referral letter form does not share any common instances with a granted research form, a patient confirmation release form, a patient consent form, or a request for an expert physician.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Request_For_Expert_physician,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:request_for_expert_physician rdfs:subClassOf :legal_authorization_type ;
+    owl:disjointWith :granted_research_form,
+        :patient_confirmation_release_form,
+        :patient_consent_form,
+        :refferal_letter_form .
+
+","The request for an expert physician is classified as a legal authorization type. It's important to note that there are no common instances shared between the request for an expert physician and the granted research form. Similarly, there are no common instances between the request for an expert physician and the patient confirmation release form. This is also true for the patient consent form and the referral letter form, which do not share any common instances with the request for an expert physician.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Location_Relation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:location_relation rdfs:subClassOf :refineable_2_refineable_relation ;
+    owl:disjointWith :ehr_relation,
+        :organization_relation,
+        :time_relation ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :r2_rl.dr._location._is_equal_to._patient._location ;
+                    rdf:rest [ rdf:first :r2_rl.dr._location._is_not_equal_to._patient._location ;
+                            rdf:rest [ rdf:first :r2_rl._patient._location._is_equal_to._patient._supervision ;
+                                    rdf:rest [ rdf:first :r2_rl._patient._location._is_not_equal_to._patient._supervision ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The location relation shares the same concept as that of something, which is further related to the location of a patient in the context of refineable 2 (r2). However, it's also different from the patient's location. The patient's location, under refineable 2, can be equated to the patient's supervision, but it is not always the same. 
+
+Location relation is a specific type of refineable 2 refineable relation. It is distinct in its instances and does not share any commonalities with EHR relation, organization relation, or time relation.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Ordinary_Medcial_Secretary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:ordinary_medcial_secretary owl:disjointWith :senior_medical_secretary ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :medical_secretary ;
+                    rdf:rest [ rdf:first [ owl:complementOf :senior_medical_secretary ] ;
+                            rdf:rest :nil ] ] ] .
+
+",An ordinary medical secretary is defined as the intersection of the medical secretary category and the complement of the senior medical secretary category. This signifies that an ordinary medical secretary does not share any common instances with a senior medical secretary.,2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Senior_Medical_Secretary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:senior_medical_secretary rdfs:subClassOf :medical_secretary ;
+    owl:disjointWith :ordinary_medcial_secretary .
+
+","A Senior Medical Secretary is a specific kind of Medical Secretary. Furthermore, a Senior Medical Secretary does not have any shared instances with an Ordinary Medical Secretary.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Nursing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nursing rdfs:subClassOf :medical_section ;
+    owl:disjointWith :diagnosis,
+        :encounter,
+        :prescription,
+        :refferal_form,
+        :testing .
+
+","Nursing is identified as a type of medical section. Interestingly, it does not share any common instances with diagnosis, encounter, prescription, referral form, or testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Prescription,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:prescription rdfs:subClassOf :medical_section ;
+    owl:disjointWith :diagnosis,
+        :encounter,
+        :nursing,
+        :refferal_form,
+        :testing .
+
+","Prescription is categorized as a type of medical section. Interestingly, it does not share any common instances with other sections such as diagnosis, encounter, nursing, referral form, and testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Refferal_Form,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:refferal_form rdfs:subClassOf :medical_section ;
+    owl:disjointWith :diagnosis,
+        :encounter,
+        :nursing,
+        :prescription,
+        :testing .
+
+","The referral form is a classified type of medical section. It should be noted that the referral form does not share any common instances with diagnosis, encounter, nursing, prescription, or testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Testing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:testing rdfs:subClassOf :medical_section ;
+    owl:disjointWith :diagnosis,
+        :encounter,
+        :nursing,
+        :prescription,
+        :refferal_form .
+
+","Testing is identified as a type of medical section. It is interesting to note that testing does not share any common instances with diagnosis, encounter, nursing, prescription, or referral form.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Medical_Site,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:medical_site rdfs:subClassOf :organization ;
+    owl:disjointWith :hmo ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :hospital ;
+                    rdf:rest [ rdf:first :hospital_department ;
+                            rdf:rest [ rdf:first :primary_care_clinic ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","A medical site is identical to an entity that encompasses a hospital, hospital department, and a primary care clinic. This medical site is categorized as a type of organization. Interestingly, no common instances are shared between a medical site and an HMO.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Primary_Care_Clinic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:primary_care_clinic rdfs:subClassOf :medical_site ;
+    owl:disjointWith :hospital,
+        :hospital_department ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :primary_care_clinic ;
+                    rdf:rest :nil ] ] .
+
+","The primary care clinic is identical to something that is also a primary care clinic. Furthermore, a primary care clinic is categorized as a type of medical site. It's important to note that a primary care clinic does not share any common instances with a hospital or a hospital department.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Nurse,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nurse rdfs:subClassOf :paramedic ;
+    owl:disjointWith :nutritionist,
+        :ordinary_paramedic .
+
+","A nurse is a kind of paramedic. However, a nurse does not share any common instances with a nutritionist. Furthermore, a nurse also does not share any common instances with an ordinary paramedic.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Nutritionist,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nutritionist rdfs:subClassOf :paramedic ;
+    owl:disjointWith :nurse,
+        :ordinary_paramedic .
+
+","A nutritionist is a type of paramedic. However, a nutritionist does not share any common instances with a nurse or with an ordinary paramedic.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Ordinary_Paramedic,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:ordinary_paramedic owl:disjointWith :nurse,
+        :nutritionist ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ owl:complementOf [ owl:unionOf [ rdf:first :nurse ;
+                                            rdf:rest [ rdf:first :nutritionist ;
+                                                    rdf:rest :nil ] ] ] ] ;
+                    rdf:rest [ rdf:first :paramedic ;
+                            rdf:rest :nil ] ] ] .
+
+","An ordinary paramedic is synonymous with a concept that intersects with another concept, which, in turn, is the complement of another concept that unifies with the roles of a nurse and a nutritionist, and a paramedic. However, the ordinary paramedic does not share any common instances with either a nurse or a nutritionist.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Ordinary_Physician,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:ordinary_physician owl:disjointWith :expert_physician,
+        :hospital_manager,
+        :resident ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ owl:complementOf [ owl:unionOf [ rdf:first :expert_physician ;
+                                            rdf:rest [ rdf:first :hospital_manager ;
+                                                    rdf:rest [ rdf:first :resident ;
+                                                            rdf:rest :nil ] ] ] ] ] ;
+                    rdf:rest [ rdf:first :physician ;
+                            rdf:rest :nil ] ] ] .
+
+","An ordinary physician is defined as something that intersects with the complement of the union of an expert physician, a hospital manager, and a resident physician. This implies that the ordinary physician is distinct and does not share any common instances with an expert physician, a hospital manager, or a resident physician.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Resident,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:resident rdfs:subClassOf :physician ;
+    owl:disjointWith :expert_physician,
+        :hospital_manager,
+        :ordinary_physician .
+
+","A resident is a type of physician. However, there are no common instances shared between a resident and an expert physician. Similarly, there are no common instances shared between a resident and a hospital manager. Furthermore, a resident doesn't share any common instances with an ordinary physician.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Organization,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organization rdfs:subClassOf :refineable_concept ;
+    owl:disjointWith :action,
+        :ehr_section,
+        :is_in_shift,
+        :legal_authorization_type,
+        :patient_status,
+        :role,
+        :shift ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :hmo ;
+                    rdf:rest [ rdf:first :medical_site ;
+                            rdf:rest :nil ] ] ] .
+
+","An organization is equivalent to a union of an HMO and a medical site, and it can be classified as a type of refineable concept. It is important to note that an organization does not have any common instances with various other concepts. These include action, EHR section, ""is in shift"", legal authorization type, patient status, role, and shift.",9,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Organization_Relation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:organization_relation rdfs:subClassOf :refineable_2_refineable_relation ;
+    owl:disjointWith :ehr_relation,
+        :location_relation,
+        :time_relation ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :r2_ro.dr._employer._is_equal_to.la._reffered_to ;
+                    rdf:rest [ rdf:first :r2_ro.dr._employer._is_equal_to._patient._insurance ;
+                            rdf:rest [ rdf:first :r2_ro.dr._employer._is_not_equal_to._patient._insurance ;
+                                    rdf:rest [ rdf:first :r2_ro.dr._working_department._is_equal_to.la._reffered_to ;
+                                            rdf:rest [ rdf:first :r2_ro.dr._working_department._is_equal_to._patient._hospitalized_department ;
+                                                    rdf:rest [ rdf:first :r2_ro.dr._working_department._is_equal_to._patient._supervision_clinic ;
+                                                            rdf:rest [ rdf:first :r2_ro.dr._working_department._is_not_equal_to._patient._hospitalized_department ;
+                                                                    rdf:rest [ rdf:first :r2_ro.dr._working_department._is_not_equal_to._patient._supervision_clinic ;
+                                                                            rdf:rest :nil ] ] ] ] ] ] ] ] ] .
+
+","The organization relation is similar to something that is referred to by one of the entities, such as R2 or Dr's employer. This relation is equal to the patient's insurance. However, the organization relation is not the same as the patient's insurance. Furthermore, R2 or Dr's working department has the same equivalence to something referred to by LA. This working department is similar to the patient's hospitalized department and supervision clinic. Yet, it is important to note that R2 or Dr's working department is not the same as the patient's hospitalized department or the supervision clinic. 
+
+The organization relation is a type of Refineable 2 Refineable relation. Interestingly, it does not share any common instances with the EHR relation, location relation, or time relation.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Patient_Status,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:patient_status rdfs:subClassOf :refineable_concept ;
+    owl:disjointWith :action,
+        :ehr_section,
+        :is_in_shift,
+        :legal_authorization_type,
+        :organization,
+        :role,
+        :shift ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :emergency_status ;
+                    rdf:rest [ rdf:first :in_patient_status ;
+                            rdf:rest [ rdf:first :nursing_status ;
+                                    rdf:rest [ rdf:first :outpatient_status ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The patient status is equated to something that shares a commonality with the emergency status, in-patient status, nursing status, and outpatient status. It is noteworthy that patient status is categorized as a type of refineable concept. However, there are no common instances shared by the patient status and other elements such as action, EHR section, being in shift, legal authorization type, organization, role, and shift.",9,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Refineable_2_Refineable_Relation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:refineable_2_refineable_relation rdfs:subClassOf :relation_concept ;
+    owl:disjointWith :entity_2_entity_relation ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :ehr_relation ;
+                    rdf:rest [ rdf:first :location_relation ;
+                            rdf:rest [ rdf:first :organization_relation ;
+                                    rdf:rest [ rdf:first :time_relation ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The ""Refineable 2 Refineable"" relationship is the same as something that is a union of the EHR relationship, location relationship, organization relationship, and time relationship. This ""Refineable 2 Refineable"" relationship is considered a type of relationship concept. However, it's important to note that the ""Refineable 2 Refineable"" relationship does not share any common instances with the ""Entity 2 Entity"" relationship.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Time_Relation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:time_relation rdfs:subClassOf :refineable_2_refineable_relation ;
+    owl:disjointWith :ehr_relation,
+        :location_relation,
+        :organization_relation ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :r2_rt.dr._access_date._is_greater_than.la._date_of_issue ;
+                    rdf:rest [ rdf:first :r2_rt.dr._access_date._is_less_than.la._valid_access_date ;
+                            rdf:rest [ rdf:first :r2_rt.dr._access_time._is_within._third_shift ;
+                                    rdf:rest [ rdf:first :r2_rt.ehr_section._date_of_issue._is_greater_than.la._historical_depth ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The time relation is synonymous with a situation where the access date of R2 RT.DR is greater than the date of issue. LA and the access date of R2 RT.DR. is less than the valid access date of LA. Additionally, the access time of R2 RT.DR. falls within the third shift and the date of issue for the EHR section of R2 RT.DR. is greater than the historical depth of LA. The time relation is a type of relation that can be refined twice. Interestingly, time relation doesn't share any common instances with EHR relation, location relation, or organization relation.",5,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Refineable_Concept,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:refineable_concept owl:disjointWith :entity_concepts,
+        :relation_concept,
+        :situation .
+
+","The refineable concept doesn't share any common instances with entity concepts. Similarly, it also doesn't share any common instances with the relation concept. Furthermore, the refineable concept doesn't have any common instances with the situation.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Relation_Concept,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:relation_concept owl:disjointWith :entity_concepts,
+        :refineable_concept,
+        :situation ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :entity_2_entity_relation ;
+                    rdf:rest [ rdf:first :refineable_2_refineable_relation ;
+                            rdf:rest :nil ] ] ] .
+
+","The relation concept is identical to a union of certain elements, particularly the entity-to-entity relation and the refineable-to-refineable relation. However, it's important to note that the relation concept doesn't share any common instances with entity concepts. Additionally, it also doesn't have any overlap with the refineable concept. Furthermore, there are no common instances between the relation concept and the situation.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Role,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:role rdfs:subClassOf :refineable_concept ;
+    owl:disjointWith :action,
+        :ehr_section,
+        :is_in_shift,
+        :legal_authorization_type,
+        :organization,
+        :patient_status,
+        :shift ;
+    owl:equivalentClass [ owl:unionOf [ rdf:first :health_care_administrator ;
+                    rdf:rest [ rdf:first :health_care_professional ;
+                            rdf:rest [ rdf:first :health_care_researcher ;
+                                    rdf:rest [ rdf:first :health_para_medcial_professional ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","A role is identified as an entity that combines the attributes of a health care administrator, a health care professional, a health care researcher, and a health para-medical professional. This role is also classified as a type of concept that can be refined further. However, it's important to note that a role does not share any common instances with several other entities such as an action, EHR section, the condition of being in a shift, the type of legal authorization, an organization, the patient's status, or a shift.",9,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Shift,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:shift rdfs:subClassOf :refineable_concept ;
+    owl:disjointWith :action,
+        :ehr_section,
+        :is_in_shift,
+        :legal_authorization_type,
+        :organization,
+        :patient_status,
+        :role ;
+    owl:equivalentClass [ owl:oneOf [ rdf:first :first_shift ;
+                    rdf:rest [ rdf:first :second_shift ;
+                            rdf:rest [ rdf:first :third_shift ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","Shift is identical to something that encompasses the first, second, and third shift, and is a type of concept that can be refined. It is important to note that 'shift' does not share any common instances with several other concepts, including 'action', 'EHR section', 'is in shift', 'legal authorization type', 'organization', 'patient status', and 'role'.",9,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Atyp.Family_Doctor,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_atyp_family_doctor rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ],
+        :abstract_situation_atypical ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_data_requestor ;
+                            owl:someValuesFrom [ a owl:Restriction ;
+                                    owl:onProperty :has_role ;
+                                    owl:someValuesFrom :physician ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :family_doctor_of_patient_relation ;
+                                    owl:onProperty :has_e2_e_relation ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_patient ;
+                                            owl:someValuesFrom [ a owl:Restriction ;
+                                                    owl:hasValue :in_patient_status ;
+                                                    owl:onProperty :has_status ] ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :has_task ;
+                                                    owl:someValuesFrom :task ] ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The situational class of an atypical family doctor is similar to an intersection of various situations. These include a situation where there is at least a data requestor who plays the role of a physician and a situation that necessitates an e2 e relation of a family doctor with the patient. This also extends to a scenario where a patient must have a certain status in the patient status and a task must be performed. The situation class of an atypical family doctor is also considered a type of abstract atypical situation. Additionally, this situational class is a type of situation that must have an approved response.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Atyp.HospitalManager,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_atyp_hospital_manager rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ],
+        :abstract_situation_atypical ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_data_requestor ;
+                            owl:someValuesFrom [ a owl:Restriction ;
+                                    owl:onProperty :has_role ;
+                                    owl:someValuesFrom :hospital_manager ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :ehr2_patient_relation ;
+                                    owl:onProperty :has_e2_e_relation ] ;
+                            rdf:rest :nil ] ] ] .
+
+","The Sit Class Atyp Hospital Manager is equivalent to a concept that intersects a minimum of two other concepts. One concept is something that has a data requestor, which is in some way related to the role of a Hospital Manager. The other concept is something that must have an E2E relation with EHR2 patient relation. Furthermore, the Sit Class Atyp Hospital Manager is a type of abstract situation that is atypical. It is also categorized as something that must receive an approved response.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Atyp.NurseAtNight,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_atyp_nurse_at_night rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ],
+        :abstract_situation_atypical ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_data_requestor ;
+                            owl:someValuesFrom [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :has_role ;
+                                                    owl:someValuesFrom :nurse ] ;
+                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                            owl:hasValue :yes ;
+                                                            owl:onProperty :is_in_shift ] ;
+                                                    rdf:rest :nil ] ] ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_patient ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:hasValue :in_patient_status ;
+                                            owl:onProperty :has_status ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_ro.dr._working_department._is_equal_to._patient._hospitalized_department ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue :r2_rt.dr._access_time._is_within._third_shift ;
+                                                    owl:onProperty :has_r2_r_relation ] ;
+                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                            owl:onProperty :has_task ;
+                                                            owl:someValuesFrom :document_prescription ] ;
+                                                    rdf:rest :nil ] ] ] ] ] ] .
+
+","The sentence describes a situation class 'Atyp Nurse at Night', which is equivalent to an intersection of various conditions. First, it involves a data requester who plays the role of a nurse. Secondly, this nurse must be on shift - specifically the third shift. Additionally, the patient involved in this situation must have a certain status in patient status.
+
+Furthermore, there are two relationships, R2 RO and R2 RT, both of which must be satisfied. The first, R2 RO, stipulates that the doctor's working department must be the same as the patient's hospitalized department. The second one, R2 RT, requires that the doctor's access time must be within the third shift.
+
+Lastly, the nurse must have at least one task, which could be to document a prescription. This situation class 'Atyp Nurse at Night' is a type of abstract situation atypical. Additionally, it's a scenario where the response must be approved.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Atyp.NurseViewDemographics,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_atyp_nurse_view_demographics rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ],
+        :abstract_situation_atypical ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_data_requestor ;
+                            owl:someValuesFrom [ a owl:Restriction ;
+                                    owl:onProperty :has_role ;
+                                    owl:someValuesFrom :nurse ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_patient ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:hasValue :in_patient_status ;
+                                            owl:onProperty :has_status ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_ro.dr._working_department._is_equal_to._patient._hospitalized_department ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :has_task ;
+                                                    owl:someValuesFrom :view_demographic_section ] ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The ""sit class atyp nurse view demographics"" is similar to an intersection of various elements. These elements include a data requestor who at least has the role of a nurse, a patient who must have a status in the patient status, and a relation where Dr. R's working department equals the patient's hospitalized department. Additionally, this class must at least have the task of viewing the demographic section. This ""sit class atyp nurse view demographics"" is a type of abstract situation atypical. It also has a mandatory response that must be approved.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Atyp.ParamedicAtEmergency,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_atyp_paramedic_at_emergency rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ],
+        :abstract_situation_atypical ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_data_requestor ;
+                            owl:someValuesFrom [ a owl:Restriction ;
+                                    owl:onProperty :has_role ;
+                                    owl:someValuesFrom :paramedic ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_patient ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:hasValue :emergency_status ;
+                                            owl:onProperty :has_status ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :view_medical_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class ""atyp paramedic at emergency"" is defined as an intersection of various conditions. Firstly, it requires a data requestor who has at least the role of a paramedic. Secondly, it involves a patient who must be in an emergency status. Lastly, it includes a task that should at least involve viewing a medical section. Furthermore, this situation class ""atyp paramedic at emergency"" is of the type that must have an approved response. Finally, it is also categorized as a type of abstract situation that is atypical.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Atyp.RequestForExpertOpinion,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_atyp_request_for_expert_opinion rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ],
+        :abstract_situation_atypical ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_data_requestor ;
+                            owl:someValuesFrom [ a owl:Restriction ;
+                                    owl:onProperty :has_role ;
+                                    owl:someValuesFrom :expert_physician ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_legal_authorization ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_legal_authorization_type ;
+                                            owl:someValuesFrom :request_for_expert_physician ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_patient ;
+                                            owl:someValuesFrom [ a owl:Restriction ;
+                                                    owl:hasValue :in_patient_status ;
+                                                    owl:onProperty :has_status ] ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue :r2_ro.dr._working_department._is_equal_to.la._reffered_to ;
+                                                    owl:onProperty :has_r2_r_relation ] ;
+                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                            owl:hasValue :r2_ro.dr._working_department._is_not_equal_to._patient._hospitalized_department ;
+                                                            owl:onProperty :has_r2_r_relation ] ;
+                                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                                    owl:onProperty :has_task ;
+                                                                    owl:someValuesFrom :task ] ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] .
+
+","The situation class ""atyp request for expert opinion"" is the same as the intersection of the following: a data requestor with at least the role of an expert physician, a legal authorization with at least the type of request for an expert physician, a patient with a status in the patient's status, and a task. It must also have the R2 relation with the working department of Dr. R2 Ro which is equal to the referred to and not equal to the patient's hospitalized department. The situation class ""atyp request for expert opinion"" is a type of abstract situation which is atypical. Moreover, the situation class ""atyp request for expert opinion"" must have an approved response.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Atyp.SecretaryAtEmergency,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_atyp_secretary_at_emergency rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ],
+        :abstract_situation_atypical ;
+    owl:disjointWith :sit_class_medical_secretary_in_patient ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_data_requestor ;
+                            owl:someValuesFrom [ a owl:Restriction ;
+                                    owl:onProperty :has_role ;
+                                    owl:someValuesFrom :medical_secretary ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_patient ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:hasValue :emergency_status ;
+                                            owl:onProperty :has_status ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :view_medical_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class 'Atypical Secretary at Emergency' is identical to an intersection of certain conditions. These conditions include having a data requestor who plays the role of a medical secretary and a patient who is in an emergency status. In addition, the task must be to view the medical section. This same situation class 'Atypical Secretary at Emergency' must also have an approved response. It is a type of abstract situation that's atypical. However, it's important to note that the situation class 'Atypical Secretary at Emergency' does not share any common instances with the situation class 'Medical Secretary in Patient'.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Complementary,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_complementary rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :denied ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ owl:complementOf [ owl:unionOf [ rdf:first :sit_class_atyp_family_doctor ;
+                                            rdf:rest [ rdf:first :sit_class_atyp_hospital_manager ;
+                                                    rdf:rest [ rdf:first :sit_class_atyp_nurse_at_night ;
+                                                            rdf:rest [ rdf:first :sit_class_atyp_nurse_view_demographics ;
+                                                                    rdf:rest [ rdf:first :sit_class_atyp_paramedic_at_emergency ;
+                                                                            rdf:rest [ rdf:first :sit_class_atyp_request_for_expert_opinion ;
+                                                                                    rdf:rest [ rdf:first :sit_class_atyp_secretary_at_emergency ;
+                                                                                            rdf:rest [ rdf:first :sit_class_hca_in_patient ;
+                                                                                                    rdf:rest [ rdf:first :sit_class_hca_out_patient ;
+                                                                                                            rdf:rest [ rdf:first :sit_class_hcp_in_patient ;
+                                                                                                                    rdf:rest [ rdf:first :sit_class_hcp_out_patient ;
+                                                                                                                            rdf:rest [ rdf:first :sit_class_hcr_out_patient ;
+                                                                                                                                    rdf:rest [ rdf:first :sit_class_hpp_in_patient ;
+                                                                                                                                            rdf:rest [ rdf:first :sit_class_hpp_out_patient ;
+                                                                                                                                                    rdf:rest [ rdf:first :sit_class_la_social_worker ;
+                                                                                                                                                            rdf:rest [ rdf:first :sit_class_medical_secretary_in_patient ;
+                                                                                                                                                                    rdf:rest [ rdf:first :sit_class_medical_secretary_out_patient ;
+                                                                                                                                                                            rdf:rest [ rdf:first :sit_class_nurse_in_patient ;
+                                                                                                                                                                                    rdf:rest [ rdf:first :sit_class_nurse_out_patient ;
+                                                                                                                                                                                            rdf:rest [ rdf:first :sit_class_paramedic_in_patient ;
+                                                                                                                                                                                                    rdf:rest [ rdf:first :sit_class_paramedic_out_patient ;
+                                                                                                                                                                                                            rdf:rest [ rdf:first :sit_class_physician_in_patient ;
+                                                                                                                                                                                                                    rdf:rest [ rdf:first :sit_class_physician_out_patient ;
+                                                                                                                                                                                                                            rdf:rest [ rdf:first :sit_class_senior_secretary_in_patient ;
+                                                                                                                                                                                                                                    rdf:rest [ rdf:first :sit_class_senior_secretary_out_patient ;
+                                                                                                                                                                                                                                            rdf:rest [ rdf:first :sit_class_social_worker_in_patient ;
+                                                                                                                                                                                                                                                    rdf:rest [ rdf:first :sit_class_social_worker_out_patient ;
+                                                                                                                                                                                                                                                            rdf:rest :nil ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+                    rdf:rest [ rdf:first :situation ;
+                            rdf:rest :nil ] ] ] .
+
+","The situation class complementary is defined as the intersection of the complements of various other situation classes. These classes include the atypical family doctor, hospital manager, night nurse, nurse viewing demographics, emergency paramedic, request for expert opinion, emergency secretary, in-patient healthcare assistant (HCA), out-patient HCA, in-patient healthcare professional (HCP), out-patient HCP, out-patient healthcare receiver (HCR), in-patient healthcare provider (HPP), out-patient HPP, social worker from local authority (LA), in-patient medical secretary, out-patient medical secretary, in-patient nurse, out-patient nurse, in-patient paramedic, out-patient paramedic, in-patient physician, out-patient physician, in-patient senior secretary, out-patient senior secretary, in-patient social worker, and out-patient social worker. Furthermore, the situation class complementary is a category which necessitates a response of denial.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.HCA.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_hca_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :health_care_administrator ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :view_demographic_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class of a health care administrator (HCA) in a patient is similar to an intersection of various conditions. The first condition is an abstract situation where a role of an inpatient doctor is at work in the same department where the patient is hospitalized. The second condition requires that the data requester must at least have a role of a health care administrator. And the third condition specifies that one must at least have the task of viewing the demographic section. Furthermore, the situation class of a health care administrator in a patient is also classified as something that must receive an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.HCA.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_hca_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :health_care_administrator ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :view_demographic_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class of a healthcare administrator outpatient is defined as the intersecting point of several conditions. This includes the abstract situation where an outpatient doctor is working in a shift at a patient supervision clinic, and a situation where there is a data requestor who at least has the role of a healthcare administrator. It also includes a situation where there is a task of viewing the demographic section. Furthermore, this situation class of the healthcare administrator outpatient is a type that necessitates an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.HCP.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_hcp_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :health_care_professional ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom [ owl:unionOf [ rdf:first :view_demographic_section ;
+                                                            rdf:rest [ rdf:first :view_identification_section ;
+                                                                    rdf:rest :nil ] ] ] ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class ""hcp in patient"" can be described as an intersection of several situations. First, it involves an abstract situation where a role - specifically an inpatient doctor - is working in a department that is equivalent to the department where a patient is hospitalized. Second, it requires a situation where there is at least a data requestor who has some role as a healthcare professional. Lastly, it includes a situation where there is a task that encompasses either viewing the demographic section or the identification section. This situation class ""hcp in patient"" is also defined as something that must receive an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.HCP.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_hcp_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :health_care_professional ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom [ owl:unionOf [ rdf:first :view_demographic_section ;
+                                                            rdf:rest [ rdf:first :view_identification_section ;
+                                                                    rdf:rest :nil ] ] ] ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class ""hcp out patient"" is defined as an intersection of multiple concepts. Firstly, it includes the abstract situation where a role, such as an outpatient doctor, is currently working in a patient supervision clinic department. Secondly, it assumes that there is at least one data requestor who also plays the role of a health care professional. Finally, it involves a task that either views the demographic section or the identification section. Furthermore, this situation class ""hcp out patient"" is a type of situation that requires an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.HCR.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_hcr_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :health_care_researcher ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :view_demographic_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class, known as HCR Out Patient, is equivalent to an intersection of several aspects. It includes an abstract situation role such as an outpatient doctor working in a department that is equivalent to patient supervision in a clinic. It also encompasses something that has a data requestor, who at least has a role as a health care researcher. Additionally, it involves a task of viewing the demographic section. Moreover, the situation class, HCR Out Patient, is also categorized as something that mandates an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.HPP.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_hpp_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :health_para_medcial_professional ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom [ owl:unionOf [ rdf:first :view_demographic_section ;
+                                                            rdf:rest [ rdf:first :view_diagnosis ;
+                                                                    rdf:rest [ rdf:first :view_identification_section ;
+                                                                            rdf:rest :nil ] ] ] ] ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The Sit Class HPP in Patient is equated to a complex intersection. This intersection consists of an abstract situation role in the shift of an inpatient doctor working in a certain department, which is equal to the department where the patient is hospitalized. This intersection also includes having at least a data requestor who has a role as a health para medical professional. Furthermore, the intersection involves having at least a task that includes viewing the demographic section, viewing the diagnosis, and viewing the identification section. The Sit Class HPP in Patient must also have a response that is approved.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.HPP.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_hpp_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :health_para_medcial_professional ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_rl._patient._location._is_equal_to._patient._supervision ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :has_task ;
+                                                    owl:someValuesFrom [ owl:unionOf [ rdf:first :view_demographic_section ;
+                                                                    rdf:rest [ rdf:first :view_diagnosis ;
+                                                                            rdf:rest [ rdf:first :view_identification_section ;
+                                                                                    rdf:rest :nil ] ] ] ] ] ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The ""Sit class HPP out patient"" is synonymous with an intersection of various elements: an abstract situation role in a shift of an outpatient doctor working in a department that is equivalent to patient supervision in a clinic, and a situation where there is at least a data requestor role that belongs to some health para-medical professional. Additionally, it includes a scenario where it is mandatory to have an R2 R relation where R2 RL, patient location, is equal to patient supervision. This class also takes into account a situation where there is at least one task that is a union of viewing the demographic section, the diagnosis, and the identification section. Furthermore, the ""Sit class HPP out patient"" is a category of something that necessitates an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.LA.Social_Worker,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_la_social_worker rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ],
+        :abstract_situation_role_in_shift ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_data_requestor ;
+                            owl:someValuesFrom [ owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :has_role ;
+                                                    owl:someValuesFrom :social_worker ] ;
+                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                            owl:hasValue :yes ;
+                                                            owl:onProperty :is_in_shift ] ;
+                                                    rdf:rest :nil ] ] ] ] ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_legal_authorization ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_legal_authorization_type ;
+                                            owl:someValuesFrom :patient_consent_form ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_re.ehr_section._is_equal_to.la._relate_ehr_section ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue :r2_ro.dr._employer._is_equal_to.la._reffered_to ;
+                                                    owl:onProperty :has_r2_r_relation ] ;
+                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                            owl:hasValue :r2_rt.dr._access_date._is_greater_than.la._date_of_issue ;
+                                                            owl:onProperty :has_r2_r_relation ] ;
+                                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                                    owl:hasValue :r2_rt.dr._access_date._is_less_than.la._valid_access_date ;
+                                                                    owl:onProperty :has_r2_r_relation ] ;
+                                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                                            owl:onProperty :has_task ;
+                                                                            owl:someValuesFrom :view_medical_section ] ;
+                                                                    rdf:rest :nil ] ] ] ] ] ] ] ] .
+
+","The class of social workers in this situation is equivalent to a data requestor who holds the role of a social worker and is currently on shift. This individual must possess legal authorization, such as a patient consent form, to access electronic health record (EHR) sections. These records are related to the patient's medical history and the social worker's employer. The access date for the doctor must be later than the issue date but earlier than the valid access date. The task assigned to the social worker is to view the medical section. In this context, the class of social workers can be viewed as an abstract situation role when on shift. Furthermore, this class of social workers must receive an approved response.",3,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Medical_Secretary.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_medical_secretary_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :medical_secretary ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :action_identification_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class, ""medical secretary in patient"", is defined as the intersection of several abstract situations. One of these is a role in a shift, where an inpatient doctor is working in the same department where the patient is hospitalized. Another situation is where there is a data requestor who holds the role of a medical secretary. Additionally, there is a situation where the task is associated with an action identification section. This situational class is a type of situation which requires a response to be approved.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Medical_Secretary.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_medical_secretary_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :medical_secretary ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :action_identification_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class of an outpatient medical secretary is equivalent to the intersection of an abstract situation where the role is of an outpatient doctor working in a department that supervises patients in a clinic, and something that at least has a data requestor playing the role of a medical secretary. This also intersects with something that at least has the task of identifying an action section. This situation class of an outpatient medical secretary is a type that necessitates approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Nurse.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_nurse_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :nurse ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom [ owl:unionOf [ rdf:first :document_nursing ;
+                                                            rdf:rest [ rdf:first :view_medical_section ;
+                                                                    rdf:rest :nil ] ] ] ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The ""sit class nurse in patient"" is conceptually similar to an intersection of various conditions where an abstract situation role of a nurse is working in the same department as the hospitalized patient during an inpatient shift. These conditions also involve at least one data requestor, who also plays the role of a nurse, and is involved in a task that includes both documenting nursing activities and viewing medical sections. Additionally, this ""sit class nurse in patient"" is a type of condition that inherently requires an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Nurse.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_nurse_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :nurse ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_rl._patient._location._is_equal_to._patient._supervision ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :has_task ;
+                                                    owl:someValuesFrom [ owl:unionOf [ rdf:first :document_nursing ;
+                                                                    rdf:rest [ rdf:first :view_medical_section ;
+                                                                            rdf:rest :nil ] ] ] ] ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The situation class of a nurse in an outpatient setting is analogous to the intersection of an abstract situation where a role in a shift is an outpatient doctor working in a department equal to patient supervision in a clinic. It also incorporates an element that at least has a data requestor in the role of a nurse. In addition, it includes a mandatory element, R2 R relation R2 RL, where the patient's location is equal to the patient's supervision. Another aspect of this situation class is that it must have a task that is a union of a nursing document and a medical section view. Furthermore, this situation class of an outpatient nurse is a kind of scenario that necessitates an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Paramedic.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_paramedic_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :paramedic ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :view_prescription ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class for a paramedic in contact with a patient is defined as the intersection of an abstract situation where a role-playing inpatient doctor is working in the same department where the patient is hospitalized. It also includes a scenario where a data requestor, at the very least, has a role as a paramedic and has the task of viewing prescriptions. This situation class for a paramedic in patient can be characterized as a type that requires an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Paramedic.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_paramedic_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :paramedic ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_rl._patient._location._is_equal_to._patient._supervision ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :has_task ;
+                                                    owl:someValuesFrom :view_prescription ] ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The situation class, paramedic outpatient, can be defined as the intersection of an abstract situation where a role, such as a doctor, is working in the outpatient department, under the supervision of a clinic, and a situation where there is at least one data requestor with the role of a paramedic. Additionally, this situation must have a relationship, denoted as r2 rl, where the patient's location is equal to the patient's supervision. Furthermore, this situation should at least involve the task of viewing a prescription. The situation class, paramedic outpatient, is also characterized by the necessity of having an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Physician.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_physician_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :physician ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :task ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class, physician in patient, is defined as the intersection of an abstract situation where the role of an inpatient doctor working in a certain department corresponds to the department where the patient is hospitalized. It also mandates that there is at least one data requester who plays the role of a physician and is involved in some task. This situation class, physician in patient, is a type of condition that necessitates an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Physician.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_physician_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :physician ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :task ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class 'Physician Out Patient' is identical to an entity that intersects with an abstract situation role in a shift, where an outpatient doctor is working in a department equivalent to patient supervision in a clinic. Moreover, it is an entity that has at least one data requestor with a role of a physician, and an entity that at least has one task. This situation class 'Physician Out Patient' is also a type of something that requires an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Senior_Secretary.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_senior_secretary_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :senior_medical_secretary ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :transfer_medical_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class, ""senior secretary in patient"", is defined as the intersection of several conditions. Firstly, it involves an abstract situation where a role, specifically an ""inpatient doctor"", is working in the same department where the patient is hospitalized. Secondly, it includes a data requestor who at a minimum, has the role of a ""senior medical secretary"". Lastly, it encompasses a task that requires, at the very least, the transfer of a medical section. This specific situation class, ""senior secretary in patient"", is a subtype of a condition that mandates an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Senior_Secretary.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_senior_secretary_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :senior_medical_secretary ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :transfer_medical_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The senior secretary for outpatients is equivalent to an abstract situation role in a shift for an outpatient doctor working in a clinic, supervised by a patient. This role also entails having at least a senior medical secretary role and the task of transferring medical sections. This senior secretary outpatient role is similar to something that must receive an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Social_Worker.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_social_worker_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :social_worker ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :view_prescription ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The social worker's role in a patient's situation can be defined as an intersection of several things. First, it involves an abstract situation where a doctor who is currently on shift in the inpatient department is working with a patient who is hospitalized in the same department. Second, it must include a data requestor who also has a role as a social worker. Lastly, the situation requires a task of viewing prescription. This class of social worker in patient situation is a type that must receive an approved response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.Social_Worker.OutPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_social_worker_out_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_outpatient_dr_working_dept_eq_patient_supervision_clinic ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :social_worker ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue :r2_rl._patient._location._is_equal_to._patient._supervision ;
+                                            owl:onProperty :has_r2_r_relation ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :has_task ;
+                                                    owl:someValuesFrom :view_prescription ] ;
+                                            rdf:rest :nil ] ] ] ] ] .
+
+","The social worker's situation class in an outpatient context is identical to an intersection of the abstract situation of a doctor on shift in the outpatient department, which is equal to patient supervision in a clinic. This also involves a scenario where there is at least one data requestor who has a role as a social worker. There is a mandatory r2 r relationship where the patient's location is equal to the patient's supervision. Additionally, there is a situation where there is at least one task to view a prescription. In this social worker's outpatient situation class, a response is required to be approved.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Situation,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:situation owl:disjointWith :entity_concepts,
+        :refineable_concept,
+        :relation_concept ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:minCardinality ""1""^^xsd:nonNegativeInteger ;
+            owl:onProperty :has_task ] .
+
+","A situation is analogous to something that encompasses at least one task. It does not have any shared instances with entity concepts, refineable concepts, or relation concepts.",4,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#SitClass.HCR.InPatient,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sit_class_hcr_in_patient rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue :approved ;
+            owl:onProperty :has_response ] ;
+    owl:equivalentClass [ owl:intersectionOf [ rdf:first :abstract_situation_role_in_shift_inpatient_dr_working_dept_eq_patient_hospitalized_dept ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_data_requestor ;
+                                    owl:someValuesFrom [ a owl:Restriction ;
+                                            owl:onProperty :has_role ;
+                                            owl:someValuesFrom :health_care_researcher ] ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :has_task ;
+                                            owl:someValuesFrom :view_demographic_section ] ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","The situation class 'hcr in patient' is identified as the intersection of three unique situations. The first is an abstract situation where a 'role in shift inpatient doctor' is working in the 'hospitalized department' of the patient. The second situation requires that the 'data requestor' has at least the role of a 'health care researcher'. The third situation mandates that the task should be to 'view the demographic section'. 
+
+Furthermore, the situation class 'hcr in patient' is also characterized by a condition that necessitates having an 'approved' response.",2,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Diagnosis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_diagnosis rdfs:subClassOf :view_medical_section ;
+    owl:disjointWith :view_encounter,
+        :view_nursing,
+        :view_prescription,
+        :view_refferal_form,
+        :view_testing .
+
+","View Diagnosis is a subtype of the View Medical Section. It does not share any common instances with other views such as View Encounter, View Nursing, View Prescription, View Referral Form, and View Testing.",6,True
+sitbac,http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity,,,0,False
+sitbac,http://swrl.stanford.edu/ontologies/3.3/swrla.owl#RuleGroup,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rule_group rdfs:subClassOf :entity .
+
+",rule group is a type of entity.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#Entity,,,0,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2InstanceMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_instance_map rdfs:subClassOf :xml_element_map .
+
+",xml element2 instance map is a type of xml element map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2ObjectPropertyInstanceValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_object_property_instance_value_map rdfs:subClassOf :xml_element2_object_property_value_map .
+
+",xml element2 object property instance value map is a type of xml element2 object property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElementObjectPropertyMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element_object_property_map rdfs:subClassOf :xml_element2_property_map .
+
+",xml element object property map is a type of xml element2 property map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2ClassMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_class_map rdfs:subClassOf :xml_attribute_map .
+
+",xml attribute2 class map is a type of xml attribute map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2ClassMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_class_map rdfs:subClassOf :xml_element_map .
+
+",xml element2 class map is a type of xml element map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2ObjectPropertyValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_object_property_value_map rdfs:subClassOf :xml_element2_property_value_map .
+
+",xml element2 object property value map is a type of xml element2 property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute rdfs:subClassOf :entity .
+
+",xml attribute is a type of entity.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element rdfs:subClassOf :entity .
+
+",xml element is a type of entity.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2PropertyMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_property_map rdfs:subClassOf :xml_attribute_map .
+
+",xml attribute2 property map is a type of xml attribute map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2PropertyValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_property_value_map rdfs:subClassOf :xml_attribute_map .
+
+",xml attribute2 property value map is a type of xml attribute map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2PropertyMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_property_map rdfs:subClassOf :xml_element_map .
+
+",xml element2 property map is a type of xml element map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2PropertyValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_property_value_map rdfs:subClassOf :xml_element_map .
+
+",xml element2 property value map is a type of xml element map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2ObjectPropertyClassValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_object_property_class_value_map rdfs:subClassOf :xml_attribute2_object_property_value_map .
+
+",xml attribute2 object property class value map is a type of xml attribute2 object property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2ObjectPropertyClassValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_object_property_class_value_map rdfs:subClassOf :xml_element2_object_property_value_map .
+
+",xml element2 object property class value map is a type of xml element2 object property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2DataPropertyValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_data_property_value_map rdfs:subClassOf :xml_attribute2_property_value_map .
+
+",xml attribute2 data property value map is a type of xml attribute2 property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2DataPropertyValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_data_property_value_map rdfs:subClassOf :xml_element2_property_value_map .
+
+",xml element2 data property value map is a type of xml element2 property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2DataPropertyMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_data_property_map rdfs:subClassOf :xml_attribute2_property_map .
+
+",xml attribute2 data property map is a type of xml attribute2 property map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2InstanceMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_instance_map rdfs:subClassOf :xml_attribute_map .
+
+",xml attribute2 instance map is a type of xml attribute map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2ObjectPropertyInstanceValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_object_property_instance_value_map rdfs:subClassOf :xml_attribute2_object_property_value_map .
+
+",xml attribute2 object property instance value map is a type of xml attribute2 object property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2ObjectPropertyMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_object_property_map rdfs:subClassOf :xml_attribute2_property_map .
+
+",xml attribute2 object property map is a type of xml attribute2 property map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2ObjectPropertyPropertyValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_object_property_property_value_map rdfs:subClassOf :xml_attribute2_object_property_value_map .
+
+",xml attribute2 object property property value map is a type of xml attribute2 object property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttribute2ObjectPropertyValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute2_object_property_value_map rdfs:subClassOf :xml_attribute2_property_value_map .
+
+",xml attribute2 object property value map is a type of xml attribute2 property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLAttributeMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_attribute_map rdfs:subClassOf :xml_map .
+
+",xml attribute map is a type of xml map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLDocument,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_document rdfs:subClassOf :entity .
+
+",xml document is a type of entity.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLDocumentMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_document_map rdfs:subClassOf :xml_map .
+
+",xml document map is a type of xml map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElement2ObjectPropertyPropertyValueMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element2_object_property_property_value_map rdfs:subClassOf :xml_element2_object_property_value_map .
+
+",xml element2 object property property value map is a type of xml element2 object property value map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElementDataPropertyMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element_data_property_map rdfs:subClassOf :xml_element2_property_map .
+
+",xml element data property map is a type of xml element2 property map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLElementMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_element_map rdfs:subClassOf :xml_map .
+
+",xml element map is a type of xml map.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlxml.owl#XMLMap,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:xml_map rdfs:subClassOf :entity .
+
+",xml map is a type of entity.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#Entity,,,0,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#ExtendedProposition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:extended_proposition rdfs:subClassOf :proposition .
+
+",extended proposition is a type of proposition.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#Granularity,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:granularity rdfs:subClassOf :entity .
+
+",granularity is a type of entity.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#Proposition,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proposition rdfs:subClassOf :entity .
+
+",proposition is a type of entity.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#ValidInstant,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:valid_instant rdfs:subClassOf :valid_time .
+
+",valid instant is a type of valid time.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#ValidPeriod,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:valid_period rdfs:subClassOf :valid_time .
+
+",valid period is a type of valid time.,1,False
+sitbac,http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#ValidTime,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:valid_time rdfs:subClassOf :entity .
+
+",valid time is a type of entity.,1,False
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer.Diagnosis,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer_diagnosis rdfs:subClassOf :transfer_medical_section ;
+    owl:disjointWith :transfer_encounter,
+        :transfer_nursing,
+        :transfer_prescription,
+        :transfer_refferal_form,
+        :transfer_testing .
+
+","Transfer diagnosis is a subtype of the medical section dedicated to the transfer of medical information. It is distinct and does not share any common instances with other subsections such as transfer encounter, transfer nursing, transfer prescription, transfer referral form, and transfer testing. Each of these sections operates independently within the medical information transfer system.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer.Encounter,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer_encounter rdfs:subClassOf :transfer_medical_section ;
+    owl:disjointWith :transfer_diagnosis,
+        :transfer_nursing,
+        :transfer_prescription,
+        :transfer_refferal_form,
+        :transfer_testing .
+
+","Transfer encounter is a subtype of the transfer medical section. It is distinct and does not share any common instances with several other types including transfer diagnosis, transfer nursing, transfer prescription, transfer referral form, and transfer testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer.Nursing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer_nursing rdfs:subClassOf :transfer_medical_section ;
+    owl:disjointWith :transfer_diagnosis,
+        :transfer_encounter,
+        :transfer_prescription,
+        :transfer_refferal_form,
+        :transfer_testing .
+
+","Transfer nursing is a specific type of transfer in the medical section. It does not have any common instances with other transfers such as transfer diagnosis, transfer encounter, transfer prescription, transfer referral form, and transfer testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer.Prescription,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer_prescription rdfs:subClassOf :transfer_medical_section ;
+    owl:disjointWith :transfer_diagnosis,
+        :transfer_encounter,
+        :transfer_nursing,
+        :transfer_refferal_form,
+        :transfer_testing .
+
+","Transfer prescription is a specific type of transfer within the medical section. It is important to note that transfer prescription does not have any common instances with other types of transfers such as transfer diagnosis, transfer encounter, transfer nursing, transfer referral form, and transfer testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer.Refferal_Form,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer_refferal_form rdfs:subClassOf :transfer_medical_section ;
+    owl:disjointWith :transfer_diagnosis,
+        :transfer_encounter,
+        :transfer_nursing,
+        :transfer_prescription,
+        :transfer_testing .
+
+","The transfer referral form is a type of section in the transfer medical process. It's important to note that the transfer referral form does not share common instances with other transfer sections such as transfer diagnosis, transfer encounter, transfer nursing, transfer prescription, and transfer testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Transfer.Testing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:transfer_testing rdfs:subClassOf :transfer_medical_section ;
+    owl:disjointWith :transfer_diagnosis,
+        :transfer_encounter,
+        :transfer_nursing,
+        :transfer_prescription,
+        :transfer_refferal_form .
+
+","Transfer testing is a distinct type of transfer in the medical section, which does not have any common instances with other transfer types such as diagnosis, encounter, nursing, prescription, and referral form.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Encounter,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_encounter rdfs:subClassOf :view_medical_section ;
+    owl:disjointWith :view_diagnosis,
+        :view_nursing,
+        :view_prescription,
+        :view_refferal_form,
+        :view_testing .
+
+","View Encounter is a type of View Medical Section. It does not share any common instances with View Diagnosis, View Nursing, View Prescription, View Referral Form, or View Testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Nursing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_nursing rdfs:subClassOf :view_medical_section ;
+    owl:disjointWith :view_diagnosis,
+        :view_encounter,
+        :view_prescription,
+        :view_refferal_form,
+        :view_testing .
+
+","View nursing is characterized as a specific category of the medical section. However, it does not have any mutual instances or elements with other categories such as view diagnosis, view encounter, view prescription, view referral form, and view testing.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Prescription,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_prescription rdfs:subClassOf :view_medical_section ;
+    owl:disjointWith :view_diagnosis,
+        :view_encounter,
+        :view_nursing,
+        :view_refferal_form,
+        :view_testing .
+
+","Viewing a prescription is a type of viewing a medical section. It does not share any common instances with viewing a diagnosis, viewing an encounter, viewing nursing details, viewing a referral form, or viewing testing results.",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Refferal_Form,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_refferal_form rdfs:subClassOf :view_medical_section ;
+    owl:disjointWith :view_diagnosis,
+        :view_encounter,
+        :view_nursing,
+        :view_prescription,
+        :view_testing .
+
+","The ""view referral form"" is a type of ""view medical section"". It does not share any common instances with ""view diagnosis"", ""view encounter"", ""view nursing"", ""view prescription"", or ""view testing"".",6,True
+sitbac,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#View.Testing,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:view_testing rdfs:subClassOf :view_medical_section ;
+    owl:disjointWith :view_diagnosis,
+        :view_encounter,
+        :view_nursing,
+        :view_prescription,
+        :view_refferal_form .
+
+","View testing is a specific type of section within the medical field. It is important to note that view testing does not share any common instances with view diagnosis, view encounter, view nursing, view prescription, or view referral form. This distinction sets view testing apart from these other areas in the healthcare industry.",6,True

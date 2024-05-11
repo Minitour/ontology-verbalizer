@@ -46,11 +46,18 @@ if __name__ == '__main__':
     rephrased = {
         'http://www.w3.org/2002/07/owl#equivalentClass': 'is same as',
         'http://www.w3.org/2000/01/rdf-schema#subClassOf': 'is a type of',
-        'http://purl.obolibrary.org/obo/IAO_0000115': 'has definition'
+        'http://purl.obolibrary.org/obo/IAO_0000115': 'has definition',
+        'http://www.w3.org/2002/07/owl#disjointWith': 'does not share any common instances with'
     }
 
-    gpt4 = ChatGptModel(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4-0125-preview', temperature=0.7)
-    processor = Processor(llm=gpt4, vocab_ignore=ignore, vocab_rephrased=rephrased)
+    extra="""
+    The sentence describes concepts taken from an ontology for situation-based access control to determine what role can access patients' medical records.
+    """
+
+    # model = None
+    model = ChatGptModel(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4', temperature=0.7)
+    processor = Processor(llm=model, vocab_ignore=ignore, vocab_rephrased=rephrased, extra_context=extra)
     # processor.process('envo', './data/envo.owl', chunk_size=500)
     # processor.process('sweet', './data/sweet.owl', chunk_size=500)
-    processor.process('doid', './data/doid.owl', chunk_size=500)
+    # processor.process('doid', './data/doid.owl', chunk_size=500)
+    processor.process('sitbac', './data/sitbac.owl')

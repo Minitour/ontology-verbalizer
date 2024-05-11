@@ -2,7 +2,7 @@ from openai import OpenAI
 
 
 class LanguageModel:
-    def pseudo_to_text(self, pseudo_text: str) -> str:
+    def pseudo_to_text(self, pseudo_text: str, extra: str = None) -> str:
         return pseudo_text
 
     @property
@@ -69,17 +69,19 @@ class ChatGptModel(LanguageModel):
         self._in_token_usage = 0
         self._out_token_usage = 0
 
-    def pseudo_to_text(self, pseudo_text: str) -> str:
+    def pseudo_to_text(self, pseudo_text: str, extra: str = None) -> str:
+        extra_context = extra if extra else ""
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[
                 {
                     "role": "system",
                     "content":
-                        """
+                        f"""
                         You are a data expert capable of converting pseudo English sentences into a meaningful paragraph
-                        without losing any meaning or adding anything new. Group information based on the assigned groups.
-
+                        without losing any meaning or adding anything new.
+                        {extra_context}
+                        
                         Example:
                         x-[relation 1]->y
                         z-[relation 2]->x
@@ -116,7 +118,7 @@ class LlamaModel(LanguageModel):
             api_key="sk-no-key-required"
         )
 
-    def pseudo_to_text(self, pseudo_text: str) -> str:
+    def pseudo_to_text(self, pseudo_text: str, extra: str = None) -> str:
         response = self.client.chat.completions.create(
             model="LLaMA_CPP",
             messages=[

@@ -70,8 +70,27 @@ class Vocabulary:
             """
             SELECT DISTINCT ?o1 ?o1Label
             WHERE {
-                ?o1 ?p ?o2 .
-                ?o1 rdfs:label ?o1Label
+                {
+                    SELECT ?o1 ?o1Label WHERE {
+                        ?o1 ?p ?o2 .
+                        ?o1 rdfs:label ?o1Label
+                    }
+                }
+                UNION
+                {
+                    SELECT ?o1 ?o1Label WHERE {
+                        ?o1 a owl:Class .
+                        OPTIONAL {
+                            ?o1 rdfs:label ?optionalLabel
+                        }
+                        BIND (
+                          COALESCE(
+                            ?optionalLabel,
+                            ?o1
+                          ) AS ?o1Label
+                        )
+                    }
+                }    
             }
             """
         )
@@ -80,6 +99,16 @@ class Vocabulary:
             iri, label = result
             iri_str = iri.toPython()
             label_str = label.toPython()
+
+            if iri_str == label_str and not label_str.startswith('http'):
+                continue
+
+            # if the label is also the URI then try to parse it.
+            if label_str.startswith('http'):
+                label_str_parts = label_str.split('#')
+                if len(label_str_parts) == 1:
+                    continue
+                label_str = label_str_parts[1]
 
             # Convert label to lower case snake case and remove spaces.
             label_str = re.sub(r'(?<!^)(?=[A-Z][a-z])', '_', label_str).lower()
@@ -255,6 +284,7 @@ class VerbalizationNode:
 class VerbalizerModelUsageConfig:
     min_patterns_evaluated: int = 0
     min_statements: int = 1
+    extra_context: str = ""
 
 
 @dataclass
@@ -303,7 +333,7 @@ class Verbalizer:
         # convert the pseudo text into proper English.
         use_llm = bool(self.llm and self._check_llm_usage_policy(stats))
         if use_llm:
-            text = self.llm.pseudo_to_text(text)
+            text = self.llm.pseudo_to_text(text, extra=self.llm_config.extra_context)
 
         return onto_fragment, text, len(node.references), use_llm
 

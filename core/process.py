@@ -181,10 +181,15 @@ class Processor:
                  min_patterns_evaluated=0,
                  min_statements=2,
                  vocab_ignore: set = None,
-                 vocab_rephrased: dict = None):
+                 vocab_rephrased: dict = None,
+                 extra_context: str = ""):
         self.llm = llm
         self.patterns = patterns or [OwlFirstRestPattern, OwlRestrictionPattern]
-        self.verbalizer_model_usage_config = VerbalizerModelUsageConfig(min_patterns_evaluated, min_statements)
+        self.verbalizer_model_usage_config = VerbalizerModelUsageConfig(
+            min_patterns_evaluated,
+            min_statements,
+            extra_context
+        )
         self.vocab_ignore = vocab_ignore
         self.vocab_rephrase = vocab_rephrased
 
@@ -233,17 +238,22 @@ class Processor:
         if dataset:
             pandas.DataFrame(dataset).to_csv(f'{out}/file_{partition}.csv', index=False)
 
-        print(f'Finished verbalizing. LLM usage cost: ${self.llm.cost}')
+        print(f'Finished verbalizing')
+        if self.llm:
+            print(f'LLM usage cost: ${self.llm.cost}')
 
     @staticmethod
     def _get_classes(graph):
         query = """
                 SELECT ?o ?label
                 WHERE {
-                    ?o a owl:Class ; rdfs:label ?label
+                    ?o a owl:Class .
+                    OPTIONAL {
+                        ?o rdfs:label ?label
+                    }
                     FILTER NOT EXISTS {
                         ?o owl:deprecated true
                     }
                 }
             """
-        return [result[0] for result in graph.query(query)]
+        return [result[0] for result in graph.query(query) if isinstance(result[0], URIRef)]
