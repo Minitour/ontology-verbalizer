@@ -12,6 +12,10 @@ class LanguageModel:
 
 class ChatGptModel(LanguageModel):
     models = {
+        "gpt-4o": {
+            "input": 0.005,
+            "output": 0.015
+        },
         "gpt-4-0125-preview": {
             "input": 0.01,
             "output": 0.03
@@ -78,18 +82,24 @@ class ChatGptModel(LanguageModel):
                     "role": "system",
                     "content":
                         f"""
-                        You are a data expert capable of converting pseudo English sentences into a meaningful paragraph
-                        without losing any meaning or adding anything new.
+                        You are a data expert capable of converting pseudo English sentences into a meaningful
+                        and casual paragraph.
                         {extra_context}
                         
-                        Example:
-                        x-[relation 1]->y
-                        z-[relation 2]->x
-                        m-[relation 3]->n
+                        Input 1:
+                        x relation 1 y
+                        z relation 2 x
+                        m relation 3 n
 
-                        Output:
+                        Output 1:
                         X has this relation 1 with Y, Z shares a relation 2 with X.
                         Moreover, m has relation 3 with n.
+                        
+                        Input 2:
+                        X is same as something that intersection of something that something that has at least 3 N and M.
+                        
+                        Output 2:
+                        X is the same as M which has at least three N
                         """
                 },
                 {"role": "user", "content": pseudo_text},

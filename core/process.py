@@ -173,6 +173,22 @@ def get_obo_relations():
     return {result[0].toPython(): result[1].toPython() for result in ro.query(query)}
 
 
+def get_graph_from_file(file_path: str) -> Graph:
+    graph = Graph()
+    try:
+        graph.parse(file_path, format='xml')
+        return graph
+    except:
+        pass
+
+    try:
+        graph.parse(file_path, format='n3')
+        return graph
+    except:
+        pass
+    return graph
+
+
 class Processor:
 
     def __init__(self,
@@ -202,8 +218,7 @@ class Processor:
         out = f'{output_dir}/{name}/{timestamp}'
         Path(out).mkdir(parents=True, exist_ok=True)
 
-        graph = Graph()
-        graph.parse(file_path)
+        graph = get_graph_from_file(file_path)
 
         vocab = Vocabulary(graph, self.vocab_ignore, self.vocab_rephrase)
 
