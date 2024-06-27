@@ -12,13 +12,13 @@
 
 default:DeepPanBase
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaBase ;
       owl:disjointWith default:ThinAndCrispyBase .
 
 default:Capricciosa
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -67,7 +67,7 @@ default:Capricciosa
 
 default:ChickenTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:MeatTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -78,19 +78,19 @@ default:ChickenTopping
 
 default:MeatTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaTopping ;
       owl:disjointWith default:CheeseTopping , default:FruitTopping , default:HerbSpiceTopping , default:FishTopping , default:NutTopping , default:SauceTopping , default:VegetableTopping .
 
 default:AnchoviesTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:FishTopping ;
       owl:disjointWith default:MixedSeafoodTopping , default:PrawnsTopping .
 
 default:Cajun
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -134,7 +134,7 @@ default:Cajun
 
 default:Parmense
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -173,7 +173,7 @@ default:Parmense
 
 default:FruttiDiMare
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -203,7 +203,7 @@ default:FruttiDiMare
 default:Spiciness
       rdf:type owl:Class ;
       rdfs:comment "A ValuePartition that describes only values from Hot, Medium or Mild. NB Subclasses can themselves be divided up into further partitions."@en ;
-      
+
       rdfs:subClassOf default:ValuePartition ;
       owl:equivalentClass
               [ rdf:type owl:Class ;
@@ -212,14 +212,14 @@ default:Spiciness
 
 default:FruitTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaTopping ;
       owl:disjointWith default:CheeseTopping , default:HerbSpiceTopping , default:MeatTopping , default:FishTopping , default:SauceTopping , default:NutTopping , default:VegetableTopping .
 
 default:VegetarianPizzaEquivalent2
       rdf:type owl:Class ;
       rdfs:comment "An alternative to VegetarianPizzaEquiv1 that does not require a definition of VegetarianTopping. Perhaps more difficult to maintain. Not equivalent to VegetarianPizza "@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf (default:Pizza [ rdf:type owl:Restriction ;
@@ -240,7 +240,7 @@ default:isToppingOf
 
 default:LeekTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -251,7 +251,7 @@ default:LeekTopping
 
 default:JalapenoPepperTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PepperTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -262,7 +262,7 @@ default:JalapenoPepperTopping
 
 default:ArtichokeTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -273,7 +273,7 @@ default:ArtichokeTopping
 
 default:SundriedTomatoTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:TomatoTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -284,7 +284,7 @@ default:SundriedTomatoTopping
 
 default:FourSeasons
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -333,7 +333,7 @@ default:FourSeasons
 
 default:Napoletana
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -379,13 +379,13 @@ default:hasBase
 
 default:SauceTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaTopping ;
       owl:disjointWith default:FruitTopping , default:CheeseTopping , default:HerbSpiceTopping , default:MeatTopping , default:FishTopping , default:NutTopping , default:VegetableTopping .
 
 default:Margherita
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -409,7 +409,7 @@ default:Margherita
 
 default:Veneziana
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -461,7 +461,7 @@ default:hasCountryOfOrigin
 
 default:CajunSpiceTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:HerbSpiceTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -483,7 +483,7 @@ default:Pizza
 
 default:PrinceCarlo
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -525,7 +525,7 @@ default:France
 
 default:PeperoniSausageTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:MeatTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -536,7 +536,7 @@ default:PeperoniSausageTopping
 
 default:PeperonataTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PepperTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -548,7 +548,7 @@ default:PeperonataTopping
 default:SpicyTopping
       rdf:type owl:Class ;
       rdfs:comment "Any pizza topping that has spiciness Hot"@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf (default:PizzaTopping [ rdf:type owl:Restriction ;
@@ -559,7 +559,7 @@ default:SpicyTopping
 
 default:ParmesanTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:CheeseTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -575,7 +575,7 @@ default:hasIngredient
 
 default:SloppyGiuseppe
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -615,7 +615,7 @@ default:SloppyGiuseppe
 default:CheeseyPizza
       rdf:type owl:Class ;
       rdfs:comment "Any pizza that has at least 1 cheese topping."@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf ([ rdf:type owl:Restriction ;
@@ -626,7 +626,7 @@ default:CheeseyPizza
 
 default:SweetPepperTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PepperTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -637,13 +637,13 @@ default:SweetPepperTopping
 
 default:PineKernels
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NutTopping .
 
 default:VegetarianPizzaEquivalent1
       rdf:type owl:Class ;
       rdfs:comment "Any pizza that only has vegetarian toppings or no toppings is a VegetarianPizzaEquiv1. Should be inferred to be equivalent to VegetarianPizzaEquiv2.  Not equivalent to VegetarianPizza because PizzaTopping is not covering"@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf (default:Pizza [ rdf:type owl:Restriction ;
@@ -654,7 +654,7 @@ default:VegetarianPizzaEquivalent1
 
 default:FishTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -665,7 +665,7 @@ default:FishTopping
 
 default:TomatoTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -676,7 +676,7 @@ default:TomatoTopping
 
 default:AmericanHot
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -716,12 +716,12 @@ default:AmericanHot
 default:ValuePartition
       rdf:type owl:Class ;
       rdfs:comment "A ValuePartition is a pattern that describes a restricted set of classes from which a property can be associated. The parent class is used in restrictions, and the covering axiom means that only members of the subclasses may be used as values. The possible subclasses cannot be extended without updating the ValuePartition class."^^xsd:string ;
-      
+
       owl:disjointWith default:DomainConcept .
 
 default:Caprina
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -755,13 +755,13 @@ default:Caprina
 
 default:PepperTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       owl:disjointWith default:PetitPoisTopping , default:LeekTopping , default:SpinachTopping , default:CaperTopping , default:GarlicTopping , default:MushroomTopping , default:TomatoTopping , default:OliveTopping , default:RocketTopping , default:OnionTopping , default:AsparagusTopping , default:ArtichokeTopping .
 
 default:Siciliana
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -814,7 +814,7 @@ default:England
 default:InterestingPizza
       rdf:type owl:Class ;
       rdfs:comment "Any pizza that has at least 3 toppings. Note that this is a cardinality constraint on the hasTopping property and NOT a qualified cardinality constraint (QCR). A QCR would specify from which class the members in this relationship must be. eg has at least 3 toppings from PizzaTopping. This is currently not supported in OWL."@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf ([ rdf:type owl:Restriction ;
@@ -826,7 +826,7 @@ default:InterestingPizza
 default:RealItalianPizza
       rdf:type owl:Class ;
       rdfs:comment "This defined class has conditions that are part of the definition: ie any Pizza that has the country of origin, Italy is a RealItalianPizza. It also has conditions that merely describe the members - that all RealItalianPizzas must only have ThinAndCrispy bases."@en ;
-      
+
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:allValuesFrom default:ThinAndCrispyBase ;
@@ -843,7 +843,7 @@ default:RealItalianPizza
 default:SpicyPizza
       rdf:type owl:Class ;
       rdfs:comment "Any pizza that has a spicy topping is a SpicyPizza"@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf (default:Pizza [ rdf:type owl:Restriction ;
@@ -854,7 +854,7 @@ default:SpicyPizza
 
 default:SultanaTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:FruitTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -871,7 +871,7 @@ default:hasTopping
 
 default:HerbSpiceTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaTopping ;
       owl:disjointWith default:CheeseTopping , default:FruitTopping , default:MeatTopping , default:FishTopping , default:VegetableTopping , default:NutTopping , default:SauceTopping .
 
@@ -880,7 +880,7 @@ default:Germany
 
 default:GorgonzolaTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:CheeseTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -891,7 +891,7 @@ default:GorgonzolaTopping
 
 default:American
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -921,7 +921,7 @@ default:American
 default:IceCream
       rdf:type owl:Class ;
       rdfs:comment "A class to demonstrate mistakes made with setting a property domain. The property hasTopping has a domain of Pizza. This means that the reasoner can infer that all individuals using the hasTopping property must be of type Pizza. Because of the restriction on this class, all members of IceCream must use the hasTopping property, and therefore must also be members of Pizza. However, Pizza and IceCream are disjoint, so this causes an inconsistency. If they were not disjoint, IceCream would be inferred to be a subclass of Pizza."@en ;
-      
+
       rdfs:subClassOf default:DomainConcept ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -933,23 +933,32 @@ default:IceCream
 default:VegetarianTopping
       rdf:type owl:Class ;
       rdfs:comment "An example of a covering axiom. VegetarianTopping is equivalent to the union of all toppings in the given axiom. VegetarianToppings can only be Cheese or Vegetable or....etc."@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
-                owl:intersectionOf (default:PizzaTopping [ rdf:type owl:Class ;
-                            owl:unionOf (default:VegetableTopping default:CheeseTopping default:HerbSpiceTopping default:FruitTopping default:NutTopping default:SauceTopping)
-                          ])
+                owl:intersectionOf (
+                    default:PizzaTopping [ rdf:type owl:Class ;
+                            owl:unionOf (
+                                default:VegetableTopping
+                                default:CheeseTopping
+                                default:HerbSpiceTopping
+                                default:FruitTopping
+                                default:NutTopping
+                                default:SauceTopping
+                               )
+                          ]
+                     )
               ] .
 
 default:CheeseyVegetableTopping
       rdf:type owl:Class ;
       rdfs:comment "This class will be inconsistent. This is because we have given it 2 disjoint parents, which means it could never have any members (as nothing can simultaneously be a CheeseTopping and a VegetableTopping). NB Called ProbeInconsistentTopping in the ProtegeOWL Tutorial."@en ;
-      
+
       rdfs:subClassOf default:CheeseTopping , default:VegetableTopping .
 
 default:PolloAdAstra
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -999,7 +1008,7 @@ default:PolloAdAstra
 default:Country
       rdf:type owl:Class ;
       rdfs:comment "A class that is equivalent to the set of individuals that are described in the enumeration - ie Countries can only be either America, England, France, Germany or Italy and nothing else. Note that these individuals have been asserted to be allDifferent from each other."@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf ([ rdf:type owl:Class ;
@@ -1009,7 +1018,7 @@ default:Country
 
 default:MushroomTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1024,7 +1033,7 @@ default:America
 default:UnclosedPizza
       rdf:type owl:Class ;
       rdfs:comment "An unclosed Pizza cannot be inferred to be either a VegetarianPizza or a NonVegetarianPizza, because it might have other toppings."^^xsd:string ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1035,7 +1044,7 @@ default:UnclosedPizza
 
 default:OnionTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1051,7 +1060,6 @@ default:isIngredientOf
 
 default:GoatsCheeseTopping
       rdf:type owl:Class ;
-      rdfs:label "CoberturaDeQueijoDeCabra	"@pt ;
       rdfs:subClassOf default:CheeseTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1062,7 +1070,7 @@ default:GoatsCheeseTopping
 
 default:Rosa
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1091,25 +1099,25 @@ default:Rosa
 
 default:MixedSeafoodTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:FishTopping ;
       owl:disjointWith default:AnchoviesTopping , default:PrawnsTopping .
 
 default:NamedPizza
       rdf:type owl:Class ;
       rdfs:comment "A pizza that can be found on a pizza menu"@en ;
-      
+
       rdfs:subClassOf default:Pizza .
 
 default:PrawnsTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:FishTopping ;
       owl:disjointWith default:MixedSeafoodTopping , default:AnchoviesTopping .
 
 default:CheeseTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaTopping ;
       owl:disjointWith default:FruitTopping , default:HerbSpiceTopping , default:MeatTopping , default:FishTopping , default:VegetableTopping , default:NutTopping , default:SauceTopping .
 
@@ -1118,7 +1126,7 @@ default:CheeseTopping
 
 default:Hot
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:Spiciness ;
       owl:disjointWith default:Medium , default:Mild .
 
@@ -1131,7 +1139,7 @@ default:isBaseOf
 
 default:FourCheesesTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:CheeseTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1142,13 +1150,13 @@ default:FourCheesesTopping
 
 default:PizzaTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:DomainConcept ;
       owl:disjointWith default:Pizza , default:IceCream , default:PizzaBase .
 
 default:LaReine
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1187,13 +1195,13 @@ default:LaReine
 
 default:Mild
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:Spiciness ;
       owl:disjointWith default:Hot , default:Medium .
 
 default:MozzarellaTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:CheeseTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1209,7 +1217,7 @@ default:MozzarellaTopping
 
 default:HotSpicedBeefTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:MeatTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1220,7 +1228,7 @@ default:HotSpicedBeefTopping
 
 default:RosemaryTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:HerbSpiceTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1231,7 +1239,7 @@ default:RosemaryTopping
 
 default:ParmaHamTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:HamTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1241,7 +1249,7 @@ default:ParmaHamTopping
 
 default:CaperTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1252,13 +1260,13 @@ default:CaperTopping
 
 default:Medium
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:Spiciness ;
       owl:disjointWith default:Hot , default:Mild .
 
 default:HotGreenPepperTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:GreenPepperTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1268,7 +1276,7 @@ default:HotGreenPepperTopping
 
 default:ThinAndCrispyBase
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaBase ;
       owl:disjointWith default:DeepPanBase .
 
@@ -1278,7 +1286,7 @@ default:Italy
 default:NonVegetarianPizza
       rdf:type owl:Class ;
       rdfs:comment "Any Pizza that is not a VegetarianPizza"@en ;
-      
+
       owl:disjointWith default:VegetarianPizza ;
       owl:equivalentClass
               [ rdf:type owl:Class ;
@@ -1289,7 +1297,7 @@ default:NonVegetarianPizza
 
 default:SlicedTomatoTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:TomatoTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1305,7 +1313,7 @@ default:hasSpiciness
 
 default:NutTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1316,7 +1324,7 @@ default:NutTopping
 
 default:GreenPepperTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PepperTopping ;
       owl:disjointWith default:JalapenoPepperTopping , default:PeperonataTopping , default:SweetPepperTopping .
 
@@ -1326,7 +1334,7 @@ default:DomainConcept
 
 default:Fiorentina
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1370,7 +1378,7 @@ default:Fiorentina
 
 default:QuattroFormaggi
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1394,7 +1402,7 @@ default:QuattroFormaggi
 
 default:AsparagusTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1405,13 +1413,13 @@ default:AsparagusTopping
 
 default:PizzaBase
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:DomainConcept ;
       owl:disjointWith default:Pizza , default:IceCream , default:PizzaTopping .
 
 default:Giardiniera
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1466,7 +1474,7 @@ default:Giardiniera
 default:VegetarianPizza
       rdf:type owl:Class ;
       rdfs:comment "Any pizza that does not have fish topping and does not have meat topping is a VegetarianPizza. Members of this class do not need to have any toppings at all."@en ;
-      
+
       owl:disjointWith default:NonVegetarianPizza ;
       owl:equivalentClass
               [ rdf:type owl:Class ;
@@ -1487,7 +1495,7 @@ default:VegetarianPizza
 
 default:TobascoPepperSauce
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:SauceTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1497,13 +1505,13 @@ default:TobascoPepperSauce
 
 default:HamTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:MeatTopping ;
       owl:disjointWith default:PeperoniSausageTopping , default:ChickenTopping , default:HotSpicedBeefTopping .
 
 default:VegetableTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:PizzaTopping ;
       owl:disjointWith default:CheeseTopping , default:FruitTopping , default:HerbSpiceTopping , default:MeatTopping , default:FishTopping , default:NutTopping , default:SauceTopping .
 
@@ -1517,7 +1525,7 @@ default:VegetableTopping
 
 default:Soho
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1561,12 +1569,12 @@ default:Soho
 
 default:RedOnionTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:OnionTopping .
 
 default:PetitPoisTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1577,7 +1585,7 @@ default:PetitPoisTopping
 
 default:SpinachTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1588,7 +1596,7 @@ default:SpinachTopping
 
 default:GarlicTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1600,7 +1608,7 @@ default:GarlicTopping
 default:MeatyPizza
       rdf:type owl:Class ;
       rdfs:comment "Any pizza that has at least one meat topping"@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf (default:Pizza [ rdf:type owl:Restriction ;
@@ -1611,7 +1619,7 @@ default:MeatyPizza
 
 default:OliveTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1622,7 +1630,7 @@ default:OliveTopping
 
 default:Mushroom
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:NamedPizza ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
@@ -1652,7 +1660,7 @@ default:Mushroom
 default:SpicyPizzaEquivalent
       rdf:type owl:Class ;
       rdfs:comment "An alternative definition for the SpicyPizza which does away with needing a definition of SpicyTopping and uses a slightly more complicated restriction: Pizzas that have at least one topping that is both a PizzaTopping and has spiciness hot are members of this class. "@en ;
-      
+
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf (default:Pizza [ rdf:type owl:Restriction ;
@@ -1669,7 +1677,7 @@ default:SpicyPizzaEquivalent
 
 default:RocketTopping
       rdf:type owl:Class ;
-      
+
       rdfs:subClassOf default:VegetableTopping ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;

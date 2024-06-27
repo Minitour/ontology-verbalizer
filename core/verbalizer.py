@@ -21,6 +21,9 @@ class Vocabulary:
         self.rephrased = rephrased or dict()
         self._ignore_list = ignore or {}
 
+    def should_ignore(self, uri: str):
+        return uri in self._ignore_list
+
     def _get_ontology_relationship_labels(self) -> dict[str, str]:
         results = self._graph.query(
             """
@@ -230,7 +233,13 @@ class VerbalizationEdge:
         if display.startswith('#'):
             display = ''
 
-        return f'{display} {self.node.verbalize().strip()}'
+        node = self.node.verbalize().strip()
+        if node:
+            next_text = f' {node}'
+        else:
+            next_text = ''
+
+        return f'{display}{next_text}'
 
 
 class VerbalizationNode:
@@ -271,13 +280,27 @@ class VerbalizationNode:
         return self.display
 
     def verbalize(self) -> str:
-        sentences = [edge.verbalize() for edge in self.references]
+        sentences = [edge.verbalize().strip() for edge in self.references]
 
-        display = self.display
+        display = f'{self.display}'
         if isinstance(self.concept, BNode):
-            display = 'something that'
+            display = ''
 
-        return f'{display} {" and ".join(sentences)}'
+        if len(sentences) >= 2:
+            next_text = f' ({" and ".join(sentences)})'
+        elif len(sentences) == 1:
+            next_text = f' {sentences[0]}'
+        else:
+            next_text = ''
+
+        if not display:
+            a_word = ''
+        elif display[0] in {'a', 'e', 'i', 'o', 'u'}:
+            a_word = 'an '
+        else:
+            a_word = 'a '
+
+        return f'{a_word}{display}{next_text}'
 
 
 @dataclass
@@ -307,7 +330,7 @@ class Verbalizer:
         self.llm_config = usage_config or VerbalizerModelUsageConfig()
         self.patterns = [pattern(graph, self, vocabulary) for pattern in patterns or []]
 
-    def verbalize(self, starting_concept) -> (str, str, int, bool):
+    def verbalize(self, starting_concept) -> (str, str, str, int):
         """
         Returns the Turtle Fragment and its corresponding textual description. Also returns a number which is the
         number of sentences
@@ -332,10 +355,11 @@ class Verbalizer:
 
         # convert the pseudo text into proper English.
         use_llm = bool(self.llm and self._check_llm_usage_policy(stats))
+        llm_text = None
         if use_llm:
-            text = self.llm.pseudo_to_text(text, extra=self.llm_config.extra_context)
+            llm_text = self.llm.pseudo_to_text(text, extra=self.llm_config.extra_context)
 
-        return onto_fragment, text, len(node.references), use_llm
+        return onto_fragment, text, llm_text, len(node.references)
 
     def _verbalize_as_text_from(self, node: VerbalizationNode,
                                 vocab: Vocabulary,
@@ -365,6 +389,7 @@ class Verbalizer:
             relation_display = vocab.get_rel_label(relation)
 
             if relation_display == Vocabulary.IGNORE_VALUE:
+                triple_collector.append((node.concept, relation, obj_2))
                 continue
 
             if not results_normalized:

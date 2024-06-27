@@ -72,6 +72,10 @@ class OwlRestrictionPattern(Pattern):
 
         for (relation, obj) in results:
 
+            if self.vocab.should_ignore(relation.toPython()):
+                triple_collector.append((node.concept, relation, obj))
+                continue
+
             if relation.toPython() == 'http://www.w3.org/2002/07/owl#onProperty':
                 property_relation = obj
 
@@ -235,15 +239,16 @@ class Processor:
         dataset = []
         partition = 0
         for entry in tqdm(classes, desc='Verbalizing Classes'):
-            fragment, text, count, llm_used = verbalizer.verbalize(entry)
+            fragment, text, llm_text, count = verbalizer.verbalize(entry)
 
             dataset.append({
                 'ontology': name,
                 'root': entry,
                 'fragment': fragment,
                 'text': text,
+                'llm_text': llm_text,
                 'statements': count,
-                'llm_used': llm_used
+                'llm_used': True if llm_text else False
             })
             if len(dataset) == chunk_size:
                 pandas.DataFrame(dataset).to_csv(f'{out}/file_{partition}.csv', index=False)

@@ -1,0 +1,150 @@
+ontology,root,fragment,text,llm_text,statements,llm_used
+people,http://www.semanticweb.org/mdebe/ontologies/example#Adult,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:adult a owl:Class ;
+    rdfs:subClassOf :person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has__age ;
+                                    owl:someValuesFrom [ a :datatype ;
+                                            owl:onDatatype :integer ;
+                                            owl:withRestrictions [ rdf:first [ :min_exclusive 18 ] ;
+                                                    rdf:rest :nil ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","adult is same as all of (a person and at least has  age some must be min exclusive a 18).
+adult is a type of a person.","An adult is a person who must be at least 18 years old. Additionally, an adult is a type of person.",2,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Boy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boy a owl:Class ;
+    rdfs:subClassOf :child ;
+    owl:disjointWith :girl ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :child ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :male ;
+                                    owl:onProperty :has__gender ] ;
+                            rdf:rest :nil ] ] ] .
+
+","boy is same as all of (a child and must has  gender a male).
+boy is a type of a child.
+boy is different from a girl.","A boy is essentially a child who must have a male gender. While a boy is a type of child, he is different from a girl.",3,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Child,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:child a owl:Class ;
+    rdfs:subClassOf :person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has__age ;
+                                    owl:someValuesFrom [ a :datatype ;
+                                            owl:onDatatype :integer ;
+                                            owl:withRestrictions [ rdf:first [ :max_exclusive 18 ] ;
+                                                    rdf:rest :nil ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","child is same as all of (a person and at least has  age some must be max exclusive a 18).
+child is a type of a person.","A child is defined as a person who must be under the age of 18. Additionally, a child is a type of person.",2,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Gender,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:gender a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:oneOf [ rdf:first :female ;
+                    rdf:rest [ rdf:first :male ;
+                            rdf:rest :nil ] ] ] .
+
+",gender is same as one of (a female and a male).,Gender is the same as either a female or a male.,1,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Girl,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:girl a owl:Class ;
+    rdfs:subClassOf :child ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :child ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :female ;
+                                    owl:onProperty :has__gender ] ;
+                            rdf:rest :nil ] ] ] .
+
+","girl is same as all of (a child and must has  gender a female).
+girl is a type of a child.","A girl is essentially a child who must have the gender of a female. Additionally, a girl is a type of child.",2,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Hermit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hermit a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:maxQualifiedCardinality ""0""^^xsd:nonNegativeInteger ;
+                                    owl:onClass :person ;
+                                    owl:onProperty :has__social__relation__with ] ;
+                            rdf:rest :nil ] ] ] .
+
+",hermit is same as all of (a person and has at most 0 person  social  relation  with).,A hermit is the same as a person who has no social relations with anyone.,1,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Man,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:man a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :adult ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :male ;
+                                    owl:onProperty :has__gender ] ;
+                            rdf:rest :nil ] ] ] .
+
+",man is same as all of (an adult and must has  gender a male).,A man is the same as an adult who must have the gender of a male.,1,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Parent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:parent a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :adult ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has__child ;
+                                    owl:someValuesFrom :person ] ;
+                            rdf:rest :nil ] ] ] .
+
+",parent is same as all of (an adult and at least has  child some a person).,A parent is the same as an adult who has at least one child.,1,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Person,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:person a owl:Class .
+
+",,,0,False
+people,http://www.semanticweb.org/mdebe/ontologies/example#Social_Person,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:social_person a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:minQualifiedCardinality ""5""^^xsd:nonNegativeInteger ;
+                                    owl:onClass :person ;
+                                    owl:onProperty :has__social__relation__with ] ;
+                            rdf:rest :nil ] ] ] .
+
+",social person is same as all of (a person and has at least 5 person  social  relation  withs).,A social person is someone who has at least five social relationships with other people.,1,True
+people,http://www.semanticweb.org/mdebe/ontologies/example#Woman,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:woman a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :adult ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :female ;
+                                    owl:onProperty :has__gender ] ;
+                            rdf:rest :nil ] ] ] .
+
+",woman is same as all of (an adult and must has  gender a female).,A woman is defined as an adult who must have the gender of a female.,1,True

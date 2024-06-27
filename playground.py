@@ -5,6 +5,7 @@ from core.process import Processor
 
 if __name__ == '__main__':
     ignore = {
+        'http://www.w3.org/2002/07/owl#onDatatype',
         'http://www.w3.org/2000/01/rdf-schema#seeAlso',
         'http://www.w3.org/2000/01/rdf-schema#label',
         'http://www.w3.org/2000/01/rdf-schema#comment',
@@ -46,8 +47,11 @@ if __name__ == '__main__':
     rephrased = {
         'http://www.w3.org/2002/07/owl#equivalentClass': 'is same as',
         'http://www.w3.org/2000/01/rdf-schema#subClassOf': 'is a type of',
+        'http://www.w3.org/2002/07/owl#intersectionOf': 'all of',
+        'http://www.w3.org/2002/07/owl#unionOf': 'any of',
+        'http://www.w3.org/2002/07/owl#disjointWith': 'is different from',
+        'http://www.w3.org/2002/07/owl#withRestrictions': 'must be',
         'http://purl.obolibrary.org/obo/IAO_0000115': 'has definition',
-        'http://www.w3.org/2002/07/owl#disjointWith': 'is different from'
     }
 
     # extra="""
@@ -60,4 +64,5 @@ if __name__ == '__main__':
     # processor.process('envo', './data/envo.owl', chunk_size=500)
     # processor.process('sweet', './data/sweet.owl', chunk_size=500)
     # processor.process('doid', './data/doid.owl', chunk_size=500)
-    processor.process('pizza', './data/pizza.ttl')
+    # processor.process('pizza', './data/pizza.ttl')
+    processor.process('people', './data/people.ttl')
