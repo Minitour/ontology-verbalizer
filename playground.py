@@ -10,6 +10,7 @@ if __name__ == '__main__':
         'http://www.w3.org/2000/01/rdf-schema#label',
         'http://www.w3.org/2000/01/rdf-schema#comment',
         'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
+        'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
 
         # OBO documentation related
         'http://purl.obolibrary.org/obo/IAO_0000111',
@@ -41,7 +42,10 @@ if __name__ == '__main__':
         'http://purl.org/dc/terms/contributor',
         'http://purl.org/dc/terms/creator',
         'http://purl.org/dc/terms/created',
-        'http://purl.org/dc/terms/source'
+        'http://purl.org/dc/terms/source',
+
+        # FOAF
+        'http://www.w3.org/2003/06/sw-vocab-status/ns#term_status'
     }
 
     rephrased = {
@@ -65,4 +69,5 @@ if __name__ == '__main__':
     # processor.process('sweet', './data/sweet.owl', chunk_size=500)
     # processor.process('doid', './data/doid.owl', chunk_size=500)
     # processor.process('pizza', './data/pizza.ttl')
-    processor.process('people', './data/people.ttl')
+    # processor.process('people', './data/people.ttl')
+    processor.process('foaf', './data/foaf.owl')

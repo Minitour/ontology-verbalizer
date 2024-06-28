@@ -235,10 +235,11 @@ class Processor:
         )
 
         classes = self._get_classes(graph)
+        individuals = self._get_individuals(graph)
 
         dataset = []
         partition = 0
-        for entry in tqdm(classes, desc='Verbalizing Classes'):
+        for entry in tqdm(classes + individuals, desc='Verbalizing'):
             fragment, text, llm_text, count = verbalizer.verbalize(entry)
 
             dataset.append({
@@ -276,4 +277,20 @@ class Processor:
                     }
                 }
             """
+        return [result[0] for result in graph.query(query) if isinstance(result[0], URIRef)]
+
+    @staticmethod
+    def _get_individuals(graph):
+        query = """
+                        SELECT ?o ?label
+                        WHERE {
+                            ?o a owl:NamedIndividual .
+                            OPTIONAL {
+                                ?o rdfs:label ?label
+                            }
+                            FILTER NOT EXISTS {
+                                ?o owl:deprecated true
+                            }
+                        }
+                    """
         return [result[0] for result in graph.query(query) if isinstance(result[0], URIRef)]

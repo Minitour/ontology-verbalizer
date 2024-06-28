@@ -282,7 +282,7 @@ class VerbalizationNode:
     def verbalize(self) -> str:
         sentences = [edge.verbalize().strip() for edge in self.references]
 
-        display = f'{self.display}'
+        display = self.display
         if isinstance(self.concept, BNode):
             display = ''
 
@@ -293,7 +293,7 @@ class VerbalizationNode:
         else:
             next_text = ''
 
-        if not display:
+        if not isinstance(display, str) or not display:
             a_word = ''
         elif display[0] in {'a', 'e', 'i', 'o', 'u'}:
             a_word = 'an '
@@ -492,7 +492,10 @@ class Verbalizer:
                 object_node = display_to_uri(object_vocab_rep)
 
             if not self._starts_with_one_of(predicate_node.toPython(), [OWL, RDF, RDFS]):
-                predicate_node = display_to_uri(self.vocab.get_rel_label(predicate))
+                label = self.vocab.get_rel_label(predicate)
+                if label == Vocabulary.IGNORE_VALUE:
+                    label = predicate
+                predicate_node = display_to_uri(label)
 
             g.add((subject_node, predicate_node, object_node))
 

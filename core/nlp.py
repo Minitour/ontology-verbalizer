@@ -83,7 +83,7 @@ class ChatGptModel(LanguageModel):
                     "content":
                         f"""
                         You are a data expert capable of converting pseudo English sentences into a meaningful
-                        and casual paragraph.
+                        and casual paragraph. Avoid repeating information.
                         {extra_context}
                         
                         Input 1:
