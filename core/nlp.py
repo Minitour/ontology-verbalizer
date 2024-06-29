@@ -1,4 +1,47 @@
+from typing import Optional
+
 from openai import OpenAI
+
+
+def get_messages(pseudo_text: str, extra_context: Optional[str] = None):
+    """
+    Get messages (system, assistant, user)
+    """
+    extra = extra_context if extra_context else ""
+    return [
+        {
+            "role": "system",
+            "content": f"You are a data expert capable of converting pseudo English sentences into a meaningful and "
+                       f"casual paragraph. Avoid repeating information. {extra}"
+        },
+        {
+            "role": "user", "content":
+            """
+            x relation 1 y
+            z relation 2 x
+            m relation 3 n
+            """
+        },
+        {
+            "role": "assistant", "content":
+            """
+            X has this relation 1 with Y, Z shares a relation 2 with X.
+            Moreover, m has relation 3 with n.
+            """
+        },
+        {"role": "user", "content": "X is same as something that intersection of something that something that has at "
+                                    "least 3 N and M."},
+        {"role": "assistant", "content": "X is the same as M which has at least three N"},
+        {"role": "user", "content":
+            """
+            X is a type of at least has Y relation some a M.
+            X is a type of at least has Y relation some a N.
+            X is a type of only has Y relation any of (a M and a N)
+            """
+         },
+        {"role": "assistant", "content": "X has Y relation with M and N and nothing else."},
+        {"role": "user", "content": pseudo_text},
+    ]
 
 
 class LanguageModel:
@@ -8,6 +51,10 @@ class LanguageModel:
     @property
     def cost(self) -> float:
         return 0.0
+
+    @property
+    def name(self) -> str:
+        return 'Unknown'
 
 
 class ChatGptModel(LanguageModel):
@@ -74,36 +121,9 @@ class ChatGptModel(LanguageModel):
         self._out_token_usage = 0
 
     def pseudo_to_text(self, pseudo_text: str, extra: str = None) -> str:
-        extra_context = extra if extra else ""
         response = self.client.chat.completions.create(
             model=self.model,
-            messages=[
-                {
-                    "role": "system",
-                    "content":
-                        f"""
-                        You are a data expert capable of converting pseudo English sentences into a meaningful
-                        and casual paragraph. Avoid repeating information.
-                        {extra_context}
-                        
-                        Input 1:
-                        x relation 1 y
-                        z relation 2 x
-                        m relation 3 n
-
-                        Output 1:
-                        X has this relation 1 with Y, Z shares a relation 2 with X.
-                        Moreover, m has relation 3 with n.
-                        
-                        Input 2:
-                        X is same as something that intersection of something that something that has at least 3 N and M.
-                        
-                        Output 2:
-                        X is the same as M which has at least three N
-                        """
-                },
-                {"role": "user", "content": pseudo_text},
-            ],
+            messages=get_messages(pseudo_text, extra),
             temperature=self.temperature
         )
         self._in_token_usage += response.usage.prompt_tokens
@@ -119,26 +139,24 @@ class ChatGptModel(LanguageModel):
 
         return in_tokens * model_pricing['input'] + out_tokens * model_pricing["output"]
 
+    @property
+    def name(self) -> str:
+        return self.model
+
 
 class LlamaModel(LanguageModel):
-    def __init__(self, base_url, temperature=0.5):
+    def __init__(self, base_url, model='llama3', temperature=0.5):
         self.temperature = temperature
+        self.model = model
         self.client = OpenAI(
-            base_url=base_url,  # "http://<Your api-server IP>:port"
+            base_url=base_url,
             api_key="sk-no-key-required"
         )
 
     def pseudo_to_text(self, pseudo_text: str, extra: str = None) -> str:
         response = self.client.chat.completions.create(
-            model="LLaMA_CPP",
-            messages=[
-                {
-                    "role": "system",
-                    "content": "This is a conversation between User and Agent, a friendly chatbot."
-                               " Agent is helpful and good at re-writing what it is told with precision and without adding any new information."
-                },
-                {"role": "user", "content": pseudo_text},
-            ],
+            model=self.model,
+            messages=get_messages(pseudo_text, extra),
             temperature=self.temperature
         )
         return response.choices[0].message.content.strip()
@@ -146,3 +164,7 @@ class LlamaModel(LanguageModel):
     @property
     def cost(self) -> float:
         return 0.0
+
+    @property
+    def name(self) -> str:
+        return self.model

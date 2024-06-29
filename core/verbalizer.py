@@ -8,201 +8,10 @@ from rdflib import URIRef, Literal, BNode
 from rdflib.term import Node
 
 from core.nlp import LanguageModel
+from core.patterns import Pattern
+from core.vocabulary import Vocabulary
 
-
-class Vocabulary:
-    IGNORE_VALUE = object()
-
-    def __init__(self, graph, ignore: set = None, rephrased: dict[str, str] = None):
-        self._graph = graph
-        self.relationship_labels = self._get_ontology_relationship_labels()
-        self.object_labels = self._get_ontology_object_labels()
-        self.load_imports()
-        self.rephrased = rephrased or dict()
-        self._ignore_list = ignore or {}
-
-    def should_ignore(self, uri: str):
-        return uri in self._ignore_list
-
-    def _get_ontology_relationship_labels(self) -> dict[str, str]:
-        results = self._graph.query(
-            """
-            SELECT DISTINCT ?p ?relation
-            WHERE {
-                ?o1 ?p ?o2 .
-                OPTIONAL {
-                    ?p rdfs:label ?pLabel
-                }
-                BIND (
-                  COALESCE(
-                    ?pLabel,
-                    ?p
-                  ) AS ?relation
-                )
-            }
-            """
-        )
-
-        owl_rdf_ns = [OWL, RDF, RDFS]
-        ontology_relations = {}
-
-        for result in results:
-            iri, label = result
-            iri_str = iri.toPython()
-            label_str = label.toPython()
-
-            is_owl_rdf = any([label_str.startswith(str(ns)) for ns in owl_rdf_ns])
-
-            # if the label is also the URI then try to parse it.
-            if label_str.startswith('http'):
-                label_str_parts = label_str.split('#')
-                if len(label_str_parts) == 1:
-                    continue
-                label_str = label_str_parts[1]
-                # convert camel case to snake case
-                label_str = re.sub(r'(?<!^)(?=[A-Z][a-z])', '_', label_str).lower()
-
-            label_str = re.sub('[^0-9a-zA-Z]+', ' ', label_str)
-
-            ontology_relations[iri_str] = label_str
-
-        return ontology_relations
-
-    def _get_ontology_object_labels(self) -> dict[str, str]:
-        results = self._graph.query(
-            """
-            SELECT DISTINCT ?o1 ?o1Label
-            WHERE {
-                {
-                    SELECT ?o1 ?o1Label WHERE {
-                        ?o1 ?p ?o2 .
-                        ?o1 rdfs:label ?o1Label
-                    }
-                }
-                UNION
-                {
-                    SELECT ?o1 ?o1Label WHERE {
-                        ?o1 a owl:Class .
-                        OPTIONAL {
-                            ?o1 rdfs:label ?optionalLabel
-                        }
-                        BIND (
-                          COALESCE(
-                            ?optionalLabel,
-                            ?o1
-                          ) AS ?o1Label
-                        )
-                    }
-                }    
-            }
-            """
-        )
-        object_labels = {}
-        for result in results:
-            iri, label = result
-            iri_str = iri.toPython()
-            label_str = label.toPython()
-
-            if iri_str == label_str and not label_str.startswith('http'):
-                continue
-
-            # if the label is also the URI then try to parse it.
-            if label_str.startswith('http'):
-                label_str_parts = label_str.split('#')
-                if len(label_str_parts) == 1:
-                    continue
-                label_str = label_str_parts[1]
-
-            # Convert label to lower case snake case and remove spaces.
-            label_str = re.sub(r'(?<!^)(?=[A-Z][a-z])', '_', label_str).lower()
-            label_str = re.sub('[^0-9a-zA-Z]+', ' ', label_str)
-
-            object_labels[iri_str] = label_str
-
-        return object_labels
-
-    def _util_lookup(self, dictionary, val):
-        if isinstance(val, URIRef):
-            val = val.toPython()
-
-        if not isinstance(val, str):
-            return None
-
-        if val in self._ignore_list:
-            return self.__class__.IGNORE_VALUE
-
-        # try get from overrides first
-        if result := self.rephrased.get(val):
-            return result
-
-        result = dictionary.get(val)
-        if result:
-            return result
-
-        # result is none, try to verbalize from URI
-        return self._from_uri_to_text(val)
-
-    def get_rel_label(self, val, default=None) -> str:
-        return self._util_lookup(self.relationship_labels, val)
-
-    def get_cls_label(self, val, default=None) -> str:
-        return self._util_lookup(self.object_labels, val)
-
-    def _from_uri_to_text(self, uri):
-        text = None
-        if '#' in uri:
-            text = uri.split('#')[1]
-        else:
-            text = uri.split('/')[-1]
-
-        # convert underscore or camel case notation into regular text
-        text = self._camel_to_snake(text)
-        return text.replace('_', ' ')
-
-    @staticmethod
-    def _camel_to_snake(name):
-        name = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
-        return re.sub('([a-z0-9])([A-Z])', r'\1_\2', name).lower()
-
-    def load_imports(self):
-        owl_imports = {o[0].toPython() for o in self._graph.query("SELECT DISTINCT ?o WHERE { ?s owl:imports ?o }")}
-        for owl_import in owl_imports:
-            print(f'LOADING IMPORT: {owl_import}')
-            graph = Graph()
-            graph.parse(owl_import, format='xml')
-            sub_vocab = self.__class__(graph)
-            self.object_labels.update(sub_vocab.object_labels)
-            self.relationship_labels.update(sub_vocab.relationship_labels)
-
-
-class Pattern:
-    """
-    A pattern is a class used to identify patterns within the graph based on all the out going relations from a
-    specific concept.
-    """
-
-    def __init__(self, graph: Graph, verbalizer: 'Verbalizer', vocabulary: Vocabulary):
-        self._graph = graph
-        self.verbalizer = verbalizer
-        self.vocab = vocabulary
-
-    def check(self, results) -> bool:
-        """
-        The check function is used to determine whether a pattern was detected or not. The "results" argument
-        includes the first-degree related objects to the subject. If more triples are needed to be fetched to
-        identify the pattern, self.graph.query can be used.
-        """
-        return False
-
-    def normalize(self, node: 'VerbalizationNode',
-                  triple_collector) -> list[tuple[Node, Node]]:
-        """
-        The normalize function is called only if the check returned True. It is used to simplify the pattern. This
-        means that the pattern must re-arrange the connected nodes in an order that would be different from the
-        regular order. In addition to that, the implementation must also collect all the RDF triples observed
-        regardless of whether they were used or not in the construction of the nodes and edges.
-        """
-        return []
+_RE_COMBINE_WHITESPACE = re.compile(r"\s+")
 
 
 class VerbalizationEdge:
@@ -346,7 +155,7 @@ class Verbalizer:
         self._verbalize_as_text_from(node, self.vocab, triples, stats)
 
         for ref in node.references:
-            sentences.append(f'{node.display} {ref.verbalize().strip()}.')
+            sentences.append(_RE_COMBINE_WHITESPACE.sub(" ", f'{node.display} {ref.verbalize().strip()}.').strip())
 
         text = '\n'.join(sentences)
         onto_fragment: str = self.generate_fragment(triples)
@@ -361,10 +170,23 @@ class Verbalizer:
 
         return onto_fragment, text, llm_text, len(node.references)
 
-    def _verbalize_as_text_from(self, node: VerbalizationNode,
+    def _verbalize_as_text_from(self,
+                                node: VerbalizationNode,
                                 vocab: Vocabulary,
-                                triple_collector: list,
+                                triple_collector: list[tuple[Node, Node, Node]],
                                 stats: VerbalizerInstanceStats):
+        """
+        Receives an input node which holds information about some concept. The node is then expanded into a tree-like
+        graph by making queries against the knowledge base. Each time the function is called, the neighbours of the
+        most recent nodes are queried and are used to expand the "graph". This results in an expanded node object which
+        can then be used for verbalization by walking over all the different paths created.
+
+        :param node: The starting node to verbalize from
+        :param vocab: Used as a lookup vocabulary
+        :param triple_collector: Used to collect triples
+        :param stats: used to collect statistics
+        :return: None
+        """
         query = self.next_step_query_builder(node)
         results = self.graph.query(query)
 
@@ -397,7 +219,6 @@ class Verbalizer:
                 next_node = VerbalizationNode(obj_2, parent_path=node.get_parent_path() + [(node.concept, relation)])
                 edge = VerbalizationEdge(relation, next_node)
                 node.add_edge(edge)
-
                 edge.display = relation_display
 
                 # collect triple
@@ -433,9 +254,20 @@ class Verbalizer:
     @classmethod
     def next_step_query_builder(cls, node: VerbalizationNode) -> str:
         """
-        Given a list of RDF Node, where each nodes is somehow connected to the next node in the list,
+        Given a list of RDF Nodes, where each node is somehow connected to the next node in the list,
         return a SPARQL query expression to get all the relationships of the last node.
         This is needed in order to traverse over Blank Nodes.
+
+        Consider the following graph:
+        A -[rel]-> B
+        B -[rel]-> C
+        B -[rel]-> D
+
+        If the input is:
+        A-[rel]->B (The path)
+        Then the output is query that would return:
+        B -[rel]-> C
+        B -[rel]-> D
         """
 
         trail = node.get_path()
