@@ -1,6 +1,6 @@
-from core.patterns import Pattern
-from rdflib import URIRef, Literal, BNode
+from rdflib import URIRef
 
+from core.patterns import Pattern
 from core.verbalizer import VerbalizationNode, VerbalizationEdge
 from core.vocabulary import Vocabulary
 

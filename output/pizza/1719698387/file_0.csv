@@ -1,0 +1,2547 @@
+ontology,root,fragment,text,llm_text,statements,llm
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DeepPanBase,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:deep_pan_base a owl:Class ;
+    owl:disjointWith :thin_and_crispy_base .
+
+","deep pan base is a type of a pizza base.
+deep pan base is different from a thin and crispy base.",A deep pan base is a type of pizza base that differs from a thin and crispy base.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Capricciosa,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:capricciosa a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :peperonata_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :caper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :tomato_topping ;
+                    rdf:rest [ rdf:first :ham_topping ;
+                            rdf:rest [ rdf:first :mozzarella_topping ;
+                                    rdf:rest [ rdf:first :anchovies_topping ;
+                                            rdf:rest [ rdf:first :olive_topping ;
+                                                    rdf:rest [ rdf:first :peperonata_topping ;
+                                                            rdf:rest [ rdf:first :caper_topping ;
+                                                                    rdf:rest :nil ] ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :anchovies_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :ham_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+","capricciosa is a type of a named pizza.
+capricciosa is a type of at least has topping some a caper topping.
+capricciosa is a type of at least has topping some a ham topping.
+capricciosa is a type of at least has topping some a mozzarella topping.
+capricciosa is a type of at least has topping some a peperonata topping.
+capricciosa is a type of at least has topping some a tomato topping.
+capricciosa is a type of at least has topping some an anchovies topping.
+capricciosa is a type of at least has topping some an olive topping.
+capricciosa is a type of only has topping any of (a tomato topping, and a ham topping, and a mozzarella topping, and an anchovies topping, and an olive topping, and a peperonata topping, and a caper topping).
+capricciosa is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a sloppy giuseppe, and a veneziana, and an american hot, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Capricciosa is a specific type of pizza that includes various toppings. It features caper, ham, mozzarella, peperonata, tomato, anchovies, and olive toppings. This pizza exclusively contains these toppings and does not have any other toppings. Capricciosa is distinct from other pizzas such as la reine, frutti di mare, fiorentina, margherita, sloppy giuseppe, veneziana, american hot, unclosed pizza, mushroom, pollo ad astra, caprina, cajun, giardiniera, american, prince carlo, siciliana, parmense, rosa, soho, quattro formaggi, four seasons, and napoletana.",10,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ChickenTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:chicken_topping a owl:Class ;
+    owl:disjointWith :ham_topping,
+        :hot_spiced_beef_topping,
+        :peperoni_sausage_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","chicken topping is a type of a meat topping.
+chicken topping is a type of at least has spiciness some a mild.
+chicken topping is different from (a peperoni sausage topping, and a hot spiced beef topping, and a ham topping).","Chicken topping is a type of meat topping that has at least some mild spiciness. It is different from pepperoni sausage topping, hot spiced beef topping, and ham topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:meat_topping a owl:Class ;
+    owl:disjointWith :cheese_topping,
+        :fish_topping,
+        :fruit_topping,
+        :herb_spice_topping,
+        :nut_topping,
+        :sauce_topping,
+        :vegetable_topping .
+
+","meat topping is a type of a pizza topping.
+meat topping is different from (a cheese topping, and a fruit topping, and a herb spice topping, and a fish topping, and a nut topping, and a sauce topping, and a vegetable topping).","A meat topping is a type of pizza topping. It is distinct from a cheese topping, a fruit topping, a herb spice topping, a fish topping, a nut topping, a sauce topping, and a vegetable topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AnchoviesTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:anchovies_topping a owl:Class ;
+    owl:disjointWith :mixed_seafood_topping,
+        :prawns_topping .
+
+","anchovies topping is a type of a fish topping.
+anchovies topping is different from (a mixed seafood topping, and a prawns topping).","Anchovies topping is a type of fish topping, distinct from both mixed seafood topping and prawns topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Cajun,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:cajun a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tobasco_pepper_sauce .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :onion_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :peperonata_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :prawns_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :mozzarella_topping ;
+                    rdf:rest [ rdf:first :onion_topping ;
+                            rdf:rest [ rdf:first :peperonata_topping ;
+                                    rdf:rest [ rdf:first :prawns_topping ;
+                                            rdf:rest [ rdf:first :tobasco_pepper_sauce ;
+                                                    rdf:rest [ rdf:first :tomato_topping ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+","cajun is a type of a named pizza.
+cajun is a type of at least has topping some a mozzarella topping.
+cajun is a type of at least has topping some a peperonata topping.
+cajun is a type of at least has topping some a prawns topping.
+cajun is a type of at least has topping some a tobasco pepper sauce.
+cajun is a type of at least has topping some a tomato topping.
+cajun is a type of at least has topping some an onion topping.
+cajun is a type of only has topping any of (a mozzarella topping, and an onion topping, and a peperonata topping, and a prawns topping, and a tobasco pepper sauce, and a tomato topping).
+cajun is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a veneziana, and an american hot, and a sloppy giuseppe, and an unclosed pizza, and a mushroom, and a caprina, and a pollo ad astra, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","The Cajun is a specific type of pizza that includes the following toppings: mozzarella, peperonata, prawns, Tobasco pepper sauce, tomato, and onion. It is distinct from other pizzas such as La Reine, Frutti di Mare, Fiorentina, Margherita, Veneziana, American Hot, Sloppy Giuseppe, any unclosed pizza, Mushroom, Caprina, Pollo ad Astra, Giardiniera, American, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",9,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Parmense,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:parmense a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :tomato_topping ;
+                    rdf:rest [ rdf:first :asparagus_topping ;
+                            rdf:rest [ rdf:first :mozzarella_topping ;
+                                    rdf:rest [ rdf:first :parmesan_topping ;
+                                            rdf:rest [ rdf:first :ham_topping ;
+                                                    rdf:rest :nil ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :parmesan_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :asparagus_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :ham_topping .
+
+","parmense is a type of a named pizza.
+parmense is a type of at least has topping some a ham topping.
+parmense is a type of at least has topping some a mozzarella topping.
+parmense is a type of at least has topping some a parmesan topping.
+parmense is a type of at least has topping some a tomato topping.
+parmense is a type of at least has topping some an asparagus topping.
+parmense is a type of only has topping any of (a tomato topping, and an asparagus topping, and a mozzarella topping, and a parmesan topping, and a ham topping).
+parmense is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a veneziana, and a sloppy giuseppe, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Parmense is a unique type of named pizza that includes toppings of ham, mozzarella, parmesan, tomato, and asparagus. Unlike other varieties such as La Reine, Frutti di Mare, Fiorentina, Margherita, American Hot, Veneziana, Sloppy Giuseppe, or any other mentioned pizzas, Parmense is distinct. It is defined by its specific combination of toppings and does not share its exact composition with any other pizza type listed.",8,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FruttiDiMare,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:frutti_di_mare a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :garlic_topping ;
+                    rdf:rest [ rdf:first :mixed_seafood_topping ;
+                            rdf:rest [ rdf:first :tomato_topping ;
+                                    rdf:rest :nil ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mixed_seafood_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :garlic_topping .
+
+","frutti di mare is a type of a named pizza.
+frutti di mare is a type of at least has topping some a garlic topping.
+frutti di mare is a type of at least has topping some a mixed seafood topping.
+frutti di mare is a type of at least has topping some a tomato topping.
+frutti di mare is a type of only has topping any of (a garlic topping, and a mixed seafood topping, and a tomato topping).
+frutti di mare is different from (a la reine, and a fiorentina, and a margherita, and a sloppy giuseppe, and a veneziana, and an american hot, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Frutti di mare is a specific type of pizza. It always has garlic, mixed seafood, and tomato toppings, and it has no other toppings. This pizza is distinct from other varieties such as la reine, fiorentina, margherita, sloppy giuseppe, veneziana, american hot, any unclosed pizza, mushroom, pollo ad astra, caprina, cajun, giardiniera, american, prince carlo, capricciosa, siciliana, parmense, rosa, soho, quattro formaggi, four seasons, and napoletana.",6,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Spiciness,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spiciness a owl:Class ;
+    rdfs:comment ""A ValuePartition that describes only values from Hot, Medium or Mild. NB Subclasses can themselves be divided up into further partitions.""@en ;
+    rdfs:subClassOf :value_partition ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf [ rdf:first :hot ;
+                    rdf:rest [ rdf:first :medium ;
+                            rdf:rest [ rdf:first :mild ;
+                                    rdf:rest :nil ] ] ] ] .
+
+","spiciness is a type of a value partition.
+spiciness is same as any of (a hot, and a medium, and a mild).","Spiciness is a type of value partition that can be categorized as hot, medium, or mild.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FruitTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:fruit_topping a owl:Class ;
+    owl:disjointWith :cheese_topping,
+        :fish_topping,
+        :herb_spice_topping,
+        :meat_topping,
+        :nut_topping,
+        :sauce_topping,
+        :vegetable_topping .
+
+","fruit topping is a type of a pizza topping.
+fruit topping is different from (a cheese topping, and a herb spice topping, and a meat topping, and a fish topping, and a sauce topping, and a nut topping, and a vegetable topping).","Fruit topping is a type of pizza topping. It is distinct from cheese topping, herb spice topping, meat topping, fish topping, sauce topping, nut topping, and vegetable topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent2,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vegetarian_pizza_equivalent2 a owl:Class ;
+    rdfs:comment ""An alternative to VegetarianPizzaEquiv1 that does not require a definition of VegetarianTopping. Perhaps more difficult to maintain. Not equivalent to VegetarianPizza ""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :pizza ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:allValuesFrom [ a owl:Class ;
+                                            owl:unionOf [ rdf:first :fruit_topping ;
+                                                    rdf:rest [ rdf:first :herb_spice_topping ;
+                                                            rdf:rest [ rdf:first :nut_topping ;
+                                                                    rdf:rest [ rdf:first :sauce_topping ;
+                                                                            rdf:rest [ rdf:first :vegetable_topping ;
+                                                                                    rdf:rest [ rdf:first :cheese_topping ;
+                                                                                            rdf:rest :nil ] ] ] ] ] ] ] ;
+                                    owl:onProperty :has_topping ] ;
+                            rdf:rest :nil ] ] ] .
+
+","vegetarian pizza equivalent2 is same as all of (a pizza, and only has topping any of (a fruit topping, and a herb spice topping, and a nut topping, and a sauce topping, and a vegetable topping, and a cheese topping)).","A vegetarian pizza is equivalent to a pizza that only has toppings such as fruit, herbs and spices, nuts, sauces, vegetables, and cheese.",1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#LeekTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:leek_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","leek topping is a type of a vegetable topping.
+leek topping is a type of at least has spiciness some a mild.
+leek topping is different from (a pepper topping, and a petit pois topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and a rocket topping, and an onion topping, and an olive topping, and an asparagus topping, and an artichoke topping).","Leek topping is a type of vegetable topping that has at least some mild spiciness. It is distinct from pepper topping, petit pois topping, spinach topping, caper topping, garlic topping, mushroom topping, tomato topping, rocket topping, onion topping, olive topping, asparagus topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#JalapenoPepperTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:jalapeno_pepper_topping a owl:Class ;
+    owl:disjointWith :green_pepper_topping,
+        :peperonata_topping,
+        :sweet_pepper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :hot .
+
+","jalapeno pepper topping is a type of a pepper topping.
+jalapeno pepper topping is a type of at least has spiciness some a hot.
+jalapeno pepper topping is different from (a peperonata topping, and a green pepper topping, and a sweet pepper topping).","Jalapeno pepper topping is a type of pepper topping that has some level of spiciness, specifically hot. It is distinct from peperonata topping, green pepper topping, and sweet pepper topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ArtichokeTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:artichoke_topping a owl:Class ;
+    owl:disjointWith :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","artichoke topping is a type of a vegetable topping.
+artichoke topping is a type of at least has spiciness some a mild.
+artichoke topping is different from (a pepper topping, and a petit pois topping, and a leek topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and an asparagus topping, and an onion topping, and an olive topping, and a rocket topping).","Artichoke topping is a type of vegetable topping that has a mild level of spiciness. It is distinct from pepper topping, petit pois topping, leek topping, spinach topping, caper topping, garlic topping, mushroom topping, tomato topping, asparagus topping, onion topping, olive topping, and rocket topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SundriedTomatoTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:sundried_tomato_topping a owl:Class ;
+    owl:disjointWith :sliced_tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","sundried tomato topping is a type of a tomato topping.
+sundried tomato topping is a type of at least has spiciness some a mild.
+sundried tomato topping is different from a sliced tomato topping.",Sundried tomato topping is a type of tomato topping that has at least some mild spiciness. It is distinct from a sliced tomato topping.,3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FourSeasons,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:four_seasons a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :anchovies_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mushroom_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :peperoni_sausage_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :anchovies_topping ;
+                    rdf:rest [ rdf:first :caper_topping ;
+                            rdf:rest [ rdf:first :mozzarella_topping ;
+                                    rdf:rest [ rdf:first :mushroom_topping ;
+                                            rdf:rest [ rdf:first :olive_topping ;
+                                                    rdf:rest [ rdf:first :peperoni_sausage_topping ;
+                                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                                    rdf:rest :nil ] ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :caper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+","four seasons is a type of a named pizza.
+four seasons is a type of at least has topping some a caper topping.
+four seasons is a type of at least has topping some a mozzarella topping.
+four seasons is a type of at least has topping some a mushroom topping.
+four seasons is a type of at least has topping some a peperoni sausage topping.
+four seasons is a type of at least has topping some a tomato topping.
+four seasons is a type of at least has topping some an anchovies topping.
+four seasons is a type of at least has topping some an olive topping.
+four seasons is a type of only has topping any of (an anchovies topping, and a caper topping, and a mozzarella topping, and a mushroom topping, and an olive topping, and a peperoni sausage topping, and a tomato topping).
+four seasons is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a veneziana, and a sloppy giuseppe, and an unclosed pizza, and a mushroom, and a caprina, and a pollo ad astra, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a napoletana).","Four Seasons is a type of pizza that includes at least some of the following toppings: capers, mozzarella, mushrooms, pepperoni sausage, tomatoes, anchovies, and olives. It exclusively features these toppings and is distinct from other pizzas such as La Reine, Frutti di Mare, Fiorentina, Margherita, American Hot, Veneziana, Sloppy Giuseppe, and others like Caprina, Pollo ad Astra, Cajun, Giardiniera, American, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, and Napoletana.",10,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Napoletana,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:napoletana a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :anchovies_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :anchovies_topping ;
+                    rdf:rest [ rdf:first :caper_topping ;
+                            rdf:rest [ rdf:first :mozzarella_topping ;
+                                    rdf:rest [ rdf:first :olive_topping ;
+                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                    rdf:rest :nil ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :caper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+","napoletana is a type of a named pizza.
+napoletana is a type of at least has topping some a caper topping.
+napoletana is a type of at least has topping some a mozzarella topping.
+napoletana is a type of at least has topping some a tomato topping.
+napoletana is a type of at least has topping some an anchovies topping.
+napoletana is a type of at least has topping some an olive topping.
+napoletana is a type of only has topping any of (an anchovies topping, and a caper topping, and a mozzarella topping, and an olive topping, and a tomato topping).
+napoletana is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a sloppy giuseppe, and a veneziana, and an unclosed pizza, and a mushroom, and a caprina, and a pollo ad astra, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons).","Napoletana is a specific type of named pizza. It includes toppings such as capers, mozzarella, tomatoes, anchovies, and olives. This pizza only has these specific toppings and no others. Additionally, the Napoletana pizza is distinct from other varieties like La Reine, Frutti di Mare, Fiorentina, Margherita, American Hot, Sloppy Giuseppe, Veneziana, unclosed pizza, Mushroom, Caprina, Pollo ad Astra, Cajun, Giardiniera, American, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, and Four Seasons.",8,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SauceTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:sauce_topping a owl:Class ;
+    owl:disjointWith :cheese_topping,
+        :fish_topping,
+        :fruit_topping,
+        :herb_spice_topping,
+        :meat_topping,
+        :nut_topping,
+        :vegetable_topping .
+
+","sauce topping is a type of a pizza topping.
+sauce topping is different from (a fruit topping, and a cheese topping, and a herb spice topping, and a meat topping, and a fish topping, and a nut topping, and a vegetable topping).","A sauce topping is a type of pizza topping that is distinct from fruit topping, cheese topping, herb spice topping, meat topping, fish topping, nut topping, and vegetable topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Margherita,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:margherita a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :mozzarella_topping ;
+                    rdf:rest [ rdf:first :tomato_topping ;
+                            rdf:rest :nil ] ] ] ;
+    owl:onProperty :has_topping .
+
+","margherita is a type of a named pizza.
+margherita is a type of at least has topping some a mozzarella topping.
+margherita is a type of at least has topping some a tomato topping.
+margherita is a type of only has topping any of (a mozzarella topping, and a tomato topping).
+margherita is different from (a la reine, and a frutti di mare, and a fiorentina, and a sloppy giuseppe, and an american hot, and a veneziana, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and an american, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Margherita is a distinct type of pizza, specifically characterized by its toppings of mozzarella and tomato. It exclusively features these two toppings and does not include any others. Moreover, Margherita is different from a variety of other pizzas, such as La Reine, Frutti di Mare, Fiorentina, Sloppy Giuseppe, American Hot, Veneziana, any unclosed pizza, Mushroom, Pollo ad Astra, Caprina, Cajun, American, Giardiniera, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",5,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Veneziana,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:veneziana a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :caper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :pine_kernels .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :onion_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :sultana_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :caper_topping ;
+                    rdf:rest [ rdf:first :mozzarella_topping ;
+                            rdf:rest [ rdf:first :olive_topping ;
+                                    rdf:rest [ rdf:first :onion_topping ;
+                                            rdf:rest [ rdf:first :pine_kernels ;
+                                                    rdf:rest [ rdf:first :sultana_topping ;
+                                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                                    rdf:rest :nil ] ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+","veneziana is a type of a named pizza.
+veneziana is a type of at least has topping some a caper topping.
+veneziana is a type of at least has topping some a mozzarella topping.
+veneziana is a type of at least has topping some a pine kernels.
+veneziana is a type of at least has topping some a sultana topping.
+veneziana is a type of at least has topping some a tomato topping.
+veneziana is a type of at least has topping some an olive topping.
+veneziana is a type of at least has topping some an onion topping.
+veneziana is a type of only has topping any of (a caper topping, and a mozzarella topping, and an olive topping, and an onion topping, and a pine kernels, and a sultana topping, and a tomato topping).
+veneziana is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a sloppy giuseppe, and an american hot, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","The Veneziana is a specific type of pizza. It includes toppings such as capers, mozzarella, pine kernels, sultanas, tomatoes, olives, and onions. The Veneziana only has these specified toppings and is distinct from other pizzas like La Reine, Frutti di Mare, Fiorentina, Margherita, Sloppy Giuseppe, American Hot, any unclosed pizza, Mushroom, Pollo ad Astra, Caprina, Cajun, Giardiniera, American, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",10,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CajunSpiceTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:cajun_spice_topping a owl:Class ;
+    owl:disjointWith :rosemary_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :hot .
+
+","cajun spice topping is a type of a herb spice topping.
+cajun spice topping is a type of at least has spiciness some a hot.
+cajun spice topping is different from a rosemary topping.","Cajun spice topping is a type of herb spice topping that has some level of spiciness, typically hot. It is distinct from rosemary topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Pizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pizza a owl:Class ;
+    rdfs:label ""Pizza""@en ;
+    owl:disjointWith :ice_cream,
+        :pizza_base,
+        :pizza_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_base ;
+    owl:someValuesFrom :pizza_base .
+
+","pizza is a type of a domain concept.
+pizza is a type of at least has base some a pizza base.
+pizza is different from (an ice cream, and a pizza base, and a pizza topping).","Pizza is a type of domain concept that must have a base, specifically a pizza base. It is distinct from ice cream, a pizza base, and a pizza topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PrinceCarlo,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:prince_carlo a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :rosemary_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :parmesan_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :leek_topping ;
+                    rdf:rest [ rdf:first :mozzarella_topping ;
+                            rdf:rest [ rdf:first :parmesan_topping ;
+                                    rdf:rest [ rdf:first :rosemary_topping ;
+                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                    rdf:rest :nil ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :leek_topping .
+
+","prince carlo is a type of a named pizza.
+prince carlo is a type of at least has topping some a leek topping.
+prince carlo is a type of at least has topping some a mozzarella topping.
+prince carlo is a type of at least has topping some a parmesan topping.
+prince carlo is a type of at least has topping some a rosemary topping.
+prince carlo is a type of at least has topping some a tomato topping.
+prince carlo is a type of only has topping any of (a leek topping, and a mozzarella topping, and a parmesan topping, and a rosemary topping, and a tomato topping).
+prince carlo is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a veneziana, and a sloppy giuseppe, and an unclosed pizza, and a mushroom, and a caprina, and a pollo ad astra, and a cajun, and an american, and a giardiniera, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Prince Carlo is a distinct type of named pizza that exclusively features specific toppings. It includes at least some leek, mozzarella, parmesan, rosemary, and tomato toppings. Prince Carlo is different from other pizzas such as La Reine, Frutti di Mare, Fiorentina, Margherita, American Hot, Veneziana, Sloppy Giuseppe, any unclosed pizza, Mushroom, Caprina, Pollo ad Astra, Cajun, American, Giardiniera, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",8,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PeperoniSausageTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:peperoni_sausage_topping a owl:Class ;
+    owl:disjointWith :chicken_topping,
+        :ham_topping,
+        :hot_spiced_beef_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :medium .
+
+","peperoni sausage topping is a type of a meat topping.
+peperoni sausage topping is a type of at least has spiciness some a medium.
+peperoni sausage topping is different from (a chicken topping, and a hot spiced beef topping, and a ham topping).","Pepperoni sausage topping is a type of meat topping. It has a spiciness level that is at least medium. Additionally, it is distinct from chicken topping, hot spiced beef topping, and ham topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PeperonataTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:peperonata_topping a owl:Class ;
+    owl:disjointWith :green_pepper_topping,
+        :jalapeno_pepper_topping,
+        :sweet_pepper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :medium .
+
+","peperonata topping is a type of a pepper topping.
+peperonata topping is a type of at least has spiciness some a medium.
+peperonata topping is different from (a jalapeno pepper topping, and a sweet pepper topping, and a green pepper topping).","Peperonata topping is a type of pepper topping that has a medium level of spiciness. It is distinct from jalapeno pepper topping, sweet pepper topping, and green pepper topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spicy_topping a owl:Class ;
+    rdfs:comment ""Any pizza topping that has spiciness Hot""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :pizza_topping ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_spiciness ;
+                                    owl:someValuesFrom :hot ] ;
+                            rdf:rest :nil ] ] ] .
+
+","spicy topping is same as all of (a pizza topping, and at least has spiciness some a hot).",A spicy topping is a type of pizza topping that also has some level of spiciness.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ParmesanTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:parmesan_topping a owl:Class ;
+    owl:disjointWith :four_cheeses_topping,
+        :goats_cheese_topping,
+        :gorgonzola_topping,
+        :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","parmesan topping is a type of a cheese topping.
+parmesan topping is a type of at least has spiciness some a mild.
+parmesan topping is different from (a goats cheese topping, and a gorgonzola topping, and a mozzarella topping, and a four cheeses topping).","Parmesan topping is a type of cheese topping that has a mild level of spiciness. It is distinct from goat cheese topping, gorgonzola topping, mozzarella topping, and four cheeses topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SloppyGiuseppe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:sloppy_giuseppe a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :hot_spiced_beef_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :onion_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :green_pepper_topping ;
+                    rdf:rest [ rdf:first :hot_spiced_beef_topping ;
+                            rdf:rest [ rdf:first :mozzarella_topping ;
+                                    rdf:rest [ rdf:first :onion_topping ;
+                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                    rdf:rest :nil ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :green_pepper_topping .
+
+","sloppy giuseppe is a type of a named pizza.
+sloppy giuseppe is a type of at least has topping some a green pepper topping.
+sloppy giuseppe is a type of at least has topping some a hot spiced beef topping.
+sloppy giuseppe is a type of at least has topping some a mozzarella topping.
+sloppy giuseppe is a type of at least has topping some a tomato topping.
+sloppy giuseppe is a type of at least has topping some an onion topping.
+sloppy giuseppe is a type of only has topping any of (a green pepper topping, and a hot spiced beef topping, and a mozzarella topping, and an onion topping, and a tomato topping).
+sloppy giuseppe is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a veneziana, and an american hot, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and an american, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","The Sloppy Giuseppe is a named type of pizza that includes toppings such as green pepper, hot spiced beef, mozzarella, tomato, and onion. It is distinct in that it only includes these toppings and no others. Additionally, the Sloppy Giuseppe is different from various other pizzas like La Reine, Frutti di Mare, Fiorentina, Margherita, Veneziana, American Hot, any unclosed pizza, Mushroom, Pollo ad Astra, Caprina, Cajun, American, Giardiniera, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",8,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cheesey_pizza a owl:Class ;
+    rdfs:comment ""Any pizza that has at least 1 cheese topping.""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:onProperty :has_topping ;
+                            owl:someValuesFrom :cheese_topping ] ;
+                    rdf:rest [ rdf:first :pizza ;
+                            rdf:rest :nil ] ] ] .
+
+","cheesey pizza is same as all of (at least has topping some a cheese topping, and a pizza).",A cheesy pizza is defined as having at least some cheese topping and being a pizza.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SweetPepperTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:sweet_pepper_topping a owl:Class ;
+    owl:disjointWith :green_pepper_topping,
+        :jalapeno_pepper_topping,
+        :peperonata_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","sweet pepper topping is a type of a pepper topping.
+sweet pepper topping is a type of at least has spiciness some a mild.
+sweet pepper topping is different from (a jalapeno pepper topping, and a peperonata topping, and a green pepper topping).","Sweet pepper topping is a type of pepper topping that has some level of mild spiciness. It is distinct from jalapeno pepper topping, peperonata topping, and green pepper topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PineKernels,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pine_kernels a owl:Class ;
+    rdfs:subClassOf :nut_topping .
+
+",pine kernels is a type of a nut topping.,Pine kernels are a type of nut topping.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizzaEquivalent1,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vegetarian_pizza_equivalent1 a owl:Class ;
+    rdfs:comment ""Any pizza that only has vegetarian toppings or no toppings is a VegetarianPizzaEquiv1. Should be inferred to be equivalent to VegetarianPizzaEquiv2.  Not equivalent to VegetarianPizza because PizzaTopping is not covering""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :pizza ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:allValuesFrom :vegetarian_topping ;
+                                    owl:onProperty :has_topping ] ;
+                            rdf:rest :nil ] ] ] .
+
+","vegetarian pizza equivalent1 is same as all of (a pizza, and only has topping a vegetarian topping).",A vegetarian pizza is the same as a pizza that has only vegetarian toppings.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FishTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:fish_topping a owl:Class ;
+    owl:disjointWith :cheese_topping,
+        :fruit_topping,
+        :herb_spice_topping,
+        :meat_topping,
+        :nut_topping,
+        :sauce_topping,
+        :vegetable_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","fish topping is a type of a pizza topping.
+fish topping is a type of at least has spiciness some a mild.
+fish topping is different from (a cheese topping, and a fruit topping, and a herb spice topping, and a meat topping, and a nut topping, and a vegetable topping, and a sauce topping).","Fish topping, a type of pizza topping, is mildly spicy. It is distinct from cheese, fruit, herb spice, meat, nut, vegetable, and sauce toppings.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#TomatoTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:tomato_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","tomato topping is a type of a vegetable topping.
+tomato topping is a type of at least has spiciness some a mild.
+tomato topping is different from (a pepper topping, and a leek topping, and a petit pois topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and an asparagus topping, and a rocket topping, and an olive topping, and an onion topping, and an artichoke topping).","Tomato topping is a type of vegetable topping that has at least some mild spiciness. It is different from pepper topping, leek topping, petit pois topping, spinach topping, caper topping, garlic topping, mushroom topping, asparagus topping, rocket topping, olive topping, onion topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AmericanHot,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:american_hot a owl:Class ;
+    owl:disjointWith :american,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :hot_green_pepper_topping ;
+                    rdf:rest [ rdf:first :jalapeno_pepper_topping ;
+                            rdf:rest [ rdf:first :mozzarella_topping ;
+                                    rdf:rest [ rdf:first :peperoni_sausage_topping ;
+                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                    rdf:rest :nil ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :hot_green_pepper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :jalapeno_pepper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :peperoni_sausage_topping .
+
+","american hot is a type of a named pizza.
+american hot is a type of at least has topping some a hot green pepper topping.
+american hot is a type of at least has topping some a jalapeno pepper topping.
+american hot is a type of at least has topping some a mozzarella topping.
+american hot is a type of at least has topping some a peperoni sausage topping.
+american hot is a type of at least has topping some a tomato topping.
+american hot is a type of only has topping any of (a hot green pepper topping, and a jalapeno pepper topping, and a mozzarella topping, and a peperoni sausage topping, and a tomato topping).
+american hot is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a sloppy giuseppe, and a veneziana, and an unclosed pizza, and a mushroom, and a caprina, and a pollo ad astra, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","The American Hot is a specific type of pizza. It includes toppings such as hot green pepper, jalapeno pepper, mozzarella, pepperoni sausage, and tomato. This pizza exclusively has these toppings and no others. The American Hot is distinct from other pizzas like La Reine, Frutti di Mare, Fiorentina, Margherita, Sloppy Giuseppe, Veneziana, and several others including unclosed pizza, Mushroom, Caprina, Pollo ad Astra, Cajun, Giardiniera, American, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",8,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ValuePartition,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:value_partition a owl:Class ;
+    rdfs:comment ""A ValuePartition is a pattern that describes a restricted set of classes from which a property can be associated. The parent class is used in restrictions, and the covering axiom means that only members of the subclasses may be used as values. The possible subclasses cannot be extended without updating the ValuePartition class.""^^xsd:string ;
+    owl:disjointWith :domain_concept .
+
+",value partition is different from a domain concept.,The concept of value partition is distinct from the idea of a domain.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Caprina,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:caprina a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :sundried_tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :goats_cheese_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :goats_cheese_topping ;
+                    rdf:rest [ rdf:first :mozzarella_topping ;
+                            rdf:rest [ rdf:first :sundried_tomato_topping ;
+                                    rdf:rest [ rdf:first :tomato_topping ;
+                                            rdf:rest :nil ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+","caprina is a type of a named pizza.
+caprina is a type of at least has topping some a goats cheese topping.
+caprina is a type of at least has topping some a mozzarella topping.
+caprina is a type of at least has topping some a sundried tomato topping.
+caprina is a type of at least has topping some a tomato topping.
+caprina is a type of only has topping any of (a goats cheese topping, and a mozzarella topping, and a sundried tomato topping, and a tomato topping).
+caprina is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a sloppy giuseppe, and a veneziana, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a cajun, and an american, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","The Caprina is a specific type of pizza that includes toppings such as goat cheese, mozzarella, sundried tomatoes, and regular tomatoes. It does not have any other toppings beyond these. The Caprina is distinct from other pizzas like La Reine, Frutti di Mare, Fiorentina, Margherita, American Hot, Sloppy Giuseppe, Veneziana, unclosed pizza, Mushroom, Pollo ad Astra, Cajun, American, Giardiniera, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",7,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PepperTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:pepper_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+","pepper topping is a type of a vegetable topping.
+pepper topping is different from (a petit pois topping, and a leek topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and an olive topping, and a rocket topping, and an onion topping, and an asparagus topping, and an artichoke topping).","Pepper topping is categorized as a vegetable topping. It is distinct from other toppings like petit pois, leek, spinach, caper, garlic, mushroom, tomato, olive, rocket, onion, asparagus, and artichoke toppings.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Siciliana,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:siciliana a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :ham_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :artichoke_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :anchovies_topping ;
+                    rdf:rest [ rdf:first :artichoke_topping ;
+                            rdf:rest [ rdf:first :garlic_topping ;
+                                    rdf:rest [ rdf:first :ham_topping ;
+                                            rdf:rest [ rdf:first :mozzarella_topping ;
+                                                    rdf:rest [ rdf:first :olive_topping ;
+                                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                                    rdf:rest :nil ] ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :garlic_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :anchovies_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+","siciliana is a type of a named pizza.
+siciliana is a type of at least has topping some a garlic topping.
+siciliana is a type of at least has topping some a ham topping.
+siciliana is a type of at least has topping some a mozzarella topping.
+siciliana is a type of at least has topping some a tomato topping.
+siciliana is a type of at least has topping some an anchovies topping.
+siciliana is a type of at least has topping some an artichoke topping.
+siciliana is a type of at least has topping some an olive topping.
+siciliana is a type of only has topping any of (an anchovies topping, and an artichoke topping, and a garlic topping, and a ham topping, and a mozzarella topping, and an olive topping, and a tomato topping).
+siciliana is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a veneziana, and a sloppy giuseppe, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","The Siciliana is a specific type of pizza that includes a variety of toppings. It features garlic, ham, mozzarella, tomato, anchovies, artichoke, and olives. These toppings are the only ones found on a Siciliana. This pizza is distinct from others like La Reine, Frutti di Mare, Fiorentina, Margherita, American Hot, Veneziana, Sloppy Giuseppe, unclosed pizza, Mushroom, Pollo ad Astra, Caprina, Cajun, Giardiniera, American, Prince Carlo, Capricciosa, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",10,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:interesting_pizza a owl:Class ;
+    rdfs:comment ""Any pizza that has at least 3 toppings. Note that this is a cardinality constraint on the hasTopping property and NOT a qualified cardinality constraint (QCR). A QCR would specify from which class the members in this relationship must be. eg has at least 3 toppings from PizzaTopping. This is currently not supported in OWL.""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:minCardinality ""3""^^xsd:int ;
+                            owl:onProperty :has_topping ] ;
+                    rdf:rest [ rdf:first :pizza ;
+                            rdf:rest :nil ] ] ] .
+
+","interesting pizza is same as all of (has at least 3 toppings, and a pizza).","An interesting pizza is one that has at least three toppings and is, of course, a pizza.",1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#RealItalianPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:real_italian_pizza a owl:Class ;
+    rdfs:comment ""This defined class has conditions that are part of the definition: ie any Pizza that has the country of origin, Italy is a RealItalianPizza. It also has conditions that merely describe the members - that all RealItalianPizzas must only have ThinAndCrispy bases.""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :thin_and_crispy_base ;
+            owl:onProperty :has_base ] ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:hasValue :italy ;
+                            owl:onProperty :has_country_of_origin ] ;
+                    rdf:rest [ rdf:first :pizza ;
+                            rdf:rest :nil ] ] ] .
+
+","real italian pizza is a type of only has base a thin and crispy base.
+real italian pizza is same as all of (must has country of origin an italy, and a pizza).",Real Italian pizza is a type that has a thin and crispy base. It must originate from Italy and be classified as a pizza.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spicy_pizza a owl:Class ;
+    rdfs:comment ""Any pizza that has a spicy topping is a SpicyPizza""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :pizza ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_topping ;
+                                    owl:someValuesFrom :spicy_topping ] ;
+                            rdf:rest :nil ] ] ] .
+
+","spicy pizza is same as all of (a pizza, and at least has topping some a spicy topping).",A spicy pizza is essentially a pizza that has at least one spicy topping.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SultanaTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sultana_topping a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_spiciness ;
+            owl:someValuesFrom :medium ],
+        :fruit_topping .
+
+","sultana topping is a type of a fruit topping.
+sultana topping is a type of at least has spiciness some a medium.",Sultana topping is a type of fruit topping that has at least some medium spiciness.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HerbSpiceTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:herb_spice_topping a owl:Class ;
+    owl:disjointWith :cheese_topping,
+        :fish_topping,
+        :fruit_topping,
+        :meat_topping,
+        :nut_topping,
+        :sauce_topping,
+        :vegetable_topping .
+
+","herb spice topping is a type of a pizza topping.
+herb spice topping is different from (a cheese topping, and a fruit topping, and a meat topping, and a fish topping, and a vegetable topping, and a nut topping, and a sauce topping).","Herb spice topping is a type of pizza topping that is distinct from cheese, fruit, meat, fish, vegetable, nut, and sauce toppings.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GorgonzolaTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:gorgonzola_topping a owl:Class ;
+    owl:disjointWith :four_cheeses_topping,
+        :goats_cheese_topping,
+        :mozzarella_topping,
+        :parmesan_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","gorgonzola topping is a type of a cheese topping.
+gorgonzola topping is a type of at least has spiciness some a mild.
+gorgonzola topping is different from (a goats cheese topping, and a mozzarella topping, and a parmesan topping, and a four cheeses topping).","Gorgonzola topping is a type of cheese topping that has some mild spiciness. It is different from goat cheese topping, mozzarella topping, parmesan topping, and four cheese topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#American,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:american a owl:Class ;
+    owl:disjointWith :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :peperoni_sausage_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :mozzarella_topping ;
+                    rdf:rest [ rdf:first :peperoni_sausage_topping ;
+                            rdf:rest [ rdf:first :tomato_topping ;
+                                    rdf:rest :nil ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+","american is a type of a named pizza.
+american is a type of at least has topping some a mozzarella topping.
+american is a type of at least has topping some a peperoni sausage topping.
+american is a type of at least has topping some a tomato topping.
+american is a type of only has topping any of (a mozzarella topping, and a peperoni sausage topping, and a tomato topping).
+american is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a veneziana, and a sloppy giuseppe, and an american hot, and an unclosed pizza, and a mushroom, and a caprina, and a pollo ad astra, and a cajun, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","The American pizza is a specific type of named pizza. It features at least mozzarella topping, pepperoni sausage topping, and tomato topping. The American pizza only includes these toppings and is distinct from other varieties such as La Reine, Frutti di Mare, Fiorentina, Margherita, Veneziana, Sloppy Giuseppe, American Hot, any unclosed pizza, Mushroom, Caprina, Pollo ad Astra, Cajun, Giardiniera, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",6,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#IceCream,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ice_cream a owl:Class ;
+    rdfs:comment ""A class to demonstrate mistakes made with setting a property domain. The property hasTopping has a domain of Pizza. This means that the reasoner can infer that all individuals using the hasTopping property must be of type Pizza. Because of the restriction on this class, all members of IceCream must use the hasTopping property, and therefore must also be members of Pizza. However, Pizza and IceCream are disjoint, so this causes an inconsistency. If they were not disjoint, IceCream would be inferred to be a subclass of Pizza.""@en ;
+    owl:disjointWith :pizza,
+        :pizza_base,
+        :pizza_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :fruit_topping .
+
+","ice cream is a type of a domain concept.
+ice cream is a type of at least has topping some a fruit topping.
+ice cream is different from (a pizza, and a pizza base, and a pizza topping).","Ice cream belongs to the domain concept and must have at least one fruit topping. It is distinct from pizza, pizza base, and pizza topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vegetarian_topping a owl:Class ;
+    rdfs:comment ""An example of a covering axiom. VegetarianTopping is equivalent to the union of all toppings in the given axiom. VegetarianToppings can only be Cheese or Vegetable or....etc.""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :pizza_topping ;
+                    rdf:rest [ rdf:first [ a owl:Class ;
+                                    owl:unionOf [ rdf:first :vegetable_topping ;
+                                            rdf:rest [ rdf:first :cheese_topping ;
+                                                    rdf:rest [ rdf:first :herb_spice_topping ;
+                                                            rdf:rest [ rdf:first :fruit_topping ;
+                                                                    rdf:rest [ rdf:first :nut_topping ;
+                                                                            rdf:rest [ rdf:first :sauce_topping ;
+                                                                                    rdf:rest :nil ] ] ] ] ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","vegetarian topping is same as all of (a pizza topping, and any of (a vegetable topping, and a cheese topping, and a herb spice topping, and a fruit topping, and a nut topping, and a sauce topping)).","A vegetarian topping includes all of the following: a pizza topping, and any of a vegetable topping, a cheese topping, a herb spice topping, a fruit topping, a nut topping, or a sauce topping.",1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseyVegetableTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cheesey_vegetable_topping a owl:Class ;
+    rdfs:comment ""This class will be inconsistent. This is because we have given it 2 disjoint parents, which means it could never have any members (as nothing can simultaneously be a CheeseTopping and a VegetableTopping). NB Called ProbeInconsistentTopping in the ProtegeOWL Tutorial.""@en ;
+    rdfs:subClassOf :cheese_topping,
+        :vegetable_topping .
+
+","cheesey vegetable topping is a type of a cheese topping.
+cheesey vegetable topping is a type of a vegetable topping.",Cheesy vegetable topping is both a type of cheese topping and a type of vegetable topping.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PolloAdAstra,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:pollo_ad_astra a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :sweet_pepper_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :garlic_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :cajun_spice_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :chicken_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :red_onion_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :cajun_spice_topping ;
+                    rdf:rest [ rdf:first :chicken_topping ;
+                            rdf:rest [ rdf:first :garlic_topping ;
+                                    rdf:rest [ rdf:first :mozzarella_topping ;
+                                            rdf:rest [ rdf:first :red_onion_topping ;
+                                                    rdf:rest [ rdf:first :sweet_pepper_topping ;
+                                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                                    rdf:rest :nil ] ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+","pollo ad astra is a type of a named pizza.
+pollo ad astra is a type of at least has topping some a cajun spice topping.
+pollo ad astra is a type of at least has topping some a chicken topping.
+pollo ad astra is a type of at least has topping some a garlic topping.
+pollo ad astra is a type of at least has topping some a mozzarella topping.
+pollo ad astra is a type of at least has topping some a red onion topping.
+pollo ad astra is a type of at least has topping some a sweet pepper topping.
+pollo ad astra is a type of at least has topping some a tomato topping.
+pollo ad astra is a type of only has topping any of (a cajun spice topping, and a chicken topping, and a garlic topping, and a mozzarella topping, and a red onion topping, and a sweet pepper topping, and a tomato topping).
+pollo ad astra is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a veneziana, and an american hot, and a sloppy giuseppe, and an unclosed pizza, and a mushroom, and a caprina, and a cajun, and an american, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Pollo ad Astra is a named type of pizza that includes various toppings. It has Cajun spice, chicken, garlic, mozzarella, red onion, sweet pepper, and tomato as its toppings. This type of pizza exclusively features these toppings and does not share any toppings with pizzas like a la reine, frutti di mare, fiorentina, margherita, veneziana, american hot, sloppy giuseppe, an unclosed pizza, mushroom, caprina, cajun, american, giardiniera, prince carlo, capricciosa, siciliana, parmense, rosa, soho, quattro formaggi, four seasons, or napoletana.",10,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Country,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:country a owl:Class ;
+    rdfs:comment ""A class that is equivalent to the set of individuals that are described in the enumeration - ie Countries can only be either America, England, France, Germany or Italy and nothing else. Note that these individuals have been asserted to be allDifferent from each other.""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first [ a owl:Class ;
+                            owl:oneOf [ rdf:first :america ;
+                                    rdf:rest [ rdf:first :england ;
+                                            rdf:rest [ rdf:first :france ;
+                                                    rdf:rest [ rdf:first :germany ;
+                                                            rdf:rest [ rdf:first :italy ;
+                                                                    rdf:rest :nil ] ] ] ] ] ] ;
+                    rdf:rest [ rdf:first :domain_concept ;
+                            rdf:rest :nil ] ] ] .
+
+","country is same as all of (one of (an america, and an england, and a france, and a germany, and an italy), and a domain concept).","A country is any one of America, England, France, Germany, or Italy, and also represents a domain concept.",1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MushroomTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:mushroom_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","mushroom topping is a type of a vegetable topping.
+mushroom topping is a type of at least has spiciness some a mild.
+mushroom topping is different from (a pepper topping, and a leek topping, and a petit pois topping, and a spinach topping, and a caper topping, and a garlic topping, and a tomato topping, and an olive topping, and an asparagus topping, and a rocket topping, and an onion topping, and an artichoke topping).","Mushroom topping is a type of vegetable topping that has mild spiciness. It is distinct from pepper topping, leek topping, petit pois topping, spinach topping, caper topping, garlic topping, tomato topping, olive topping, asparagus topping, rocket topping, onion topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#UnclosedPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:unclosed_pizza a owl:Class ;
+    rdfs:comment ""An unclosed Pizza cannot be inferred to be either a VegetarianPizza or a NonVegetarianPizza, because it might have other toppings.""^^xsd:string ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+","unclosed pizza is a type of a named pizza.
+unclosed pizza is a type of at least has topping some a mozzarella topping.
+unclosed pizza is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a sloppy giuseppe, and a veneziana, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","An unclosed pizza is a type of named pizza. It must have at least some mozzarella topping. It is distinct from pizzas like la reine, frutti di mare, fiorentina, margherita, american hot, sloppy giuseppe, veneziana, mushroom, pollo ad astra, caprina, cajun, giardiniera, american, prince carlo, capricciosa, siciliana, parmense, rosa, soho, quattro formaggi, four seasons, and napoletana.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#OnionTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:onion_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :medium .
+
+","onion topping is a type of a vegetable topping.
+onion topping is a type of at least has spiciness some a medium.
+onion topping is different from (a pepper topping, and a petit pois topping, and a leek topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and an asparagus topping, and an olive topping, and a rocket topping, and an artichoke topping).","Onion topping is a type of vegetable topping that has some medium spiciness. It is distinct from other toppings such as pepper topping, petit pois topping, leek topping, spinach topping, caper topping, garlic topping, mushroom topping, tomato topping, asparagus topping, olive topping, rocket topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GoatsCheeseTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:goats_cheese_topping a owl:Class ;
+    owl:disjointWith :four_cheeses_topping,
+        :gorgonzola_topping,
+        :mozzarella_topping,
+        :parmesan_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","goats cheese topping is a type of a cheese topping.
+goats cheese topping is a type of at least has spiciness some a mild.
+goats cheese topping is different from (a gorgonzola topping, and a mozzarella topping, and a parmesan topping, and a four cheeses topping).","Goat's cheese topping is a type of cheese topping that has at least some mild spiciness. It is different from gorgonzola topping, mozzarella topping, parmesan topping, and four cheeses topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Rosa,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:rosa a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :gorgonzola_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :gorgonzola_topping ;
+                    rdf:rest [ rdf:first :mozzarella_topping ;
+                            rdf:rest [ rdf:first :tomato_topping ;
+                                    rdf:rest :nil ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+","rosa is a type of a named pizza.
+rosa is a type of at least has topping some a gorgonzola topping.
+rosa is a type of at least has topping some a mozzarella topping.
+rosa is a type of at least has topping some a tomato topping.
+rosa is a type of only has topping any of (a gorgonzola topping, and a mozzarella topping, and a tomato topping).
+rosa is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a sloppy giuseppe, and an american hot, and a veneziana, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and an american, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Rosa is a unique type of pizza that includes at least gorgonzola, mozzarella, and tomato toppings. It is distinct from other pizzas like la reine, frutti di mare, fiorentina, margherita, sloppy giuseppe, american hot, veneziana, unclosed pizza, mushroom, pollo ad astra, caprina, cajun, american, giardiniera, prince carlo, capricciosa, siciliana, parmense, soho, quattro formaggi, four seasons, and napoletana.",6,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MixedSeafoodTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:mixed_seafood_topping a owl:Class ;
+    owl:disjointWith :anchovies_topping,
+        :prawns_topping .
+
+","mixed seafood topping is a type of a fish topping.
+mixed seafood topping is different from (an anchovies topping, and a prawns topping).","Mixed seafood topping is a type of fish topping, but it is different from an anchovies topping and a prawns topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NamedPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:named_pizza a owl:Class ;
+    rdfs:comment ""A pizza that can be found on a pizza menu""@en ;
+    rdfs:subClassOf :pizza .
+
+",named pizza is a type of a pizza.,"A pizza called ""named pizza"" is a type of pizza.",1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PrawnsTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:prawns_topping a owl:Class ;
+    owl:disjointWith :anchovies_topping,
+        :mixed_seafood_topping .
+
+","prawns topping is a type of a fish topping.
+prawns topping is different from (a mixed seafood topping, and an anchovies topping).","Prawns topping is one type of fish topping, distinct from both mixed seafood topping and anchovies topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CheeseTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:cheese_topping a owl:Class ;
+    owl:disjointWith :fish_topping,
+        :fruit_topping,
+        :herb_spice_topping,
+        :meat_topping,
+        :nut_topping,
+        :sauce_topping,
+        :vegetable_topping .
+
+","cheese topping is a type of a pizza topping.
+cheese topping is different from (a fruit topping, and a herb spice topping, and a meat topping, and a fish topping, and a vegetable topping, and a nut topping, and a sauce topping).","Cheese topping is a type of pizza topping that is distinct from fruit, herb spice, meat, fish, vegetable, nut, and sauce toppings.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Hot,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:hot a owl:Class ;
+    owl:disjointWith :medium,
+        :mild .
+
+","hot is a type of a spiciness.
+hot is different from (a medium, and a mild).",Hot is a type of spiciness and is different from both medium and mild.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#FourCheesesTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:four_cheeses_topping a owl:Class ;
+    owl:disjointWith :goats_cheese_topping,
+        :gorgonzola_topping,
+        :mozzarella_topping,
+        :parmesan_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","four cheeses topping is a type of a cheese topping.
+four cheeses topping is a type of at least has spiciness some a mild.
+four cheeses topping is different from (a goats cheese topping, and a gorgonzola topping, and a mozzarella topping, and a parmesan topping).","Four cheeses topping, a type of cheese topping, has a mild level of spiciness. It is distinct from goats cheese topping, gorgonzola topping, mozzarella topping, and parmesan topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:pizza_topping a owl:Class ;
+    owl:disjointWith :ice_cream,
+        :pizza,
+        :pizza_base .
+
+","pizza topping is a type of a domain concept.
+pizza topping is different from (a pizza, and an ice cream, and a pizza base).","Pizza topping is a type of domain concept. It is distinct from pizza, ice cream, and pizza base.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#LaReine,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:la_reine a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :ham_topping ;
+                    rdf:rest [ rdf:first :mozzarella_topping ;
+                            rdf:rest [ rdf:first :mushroom_topping ;
+                                    rdf:rest [ rdf:first :olive_topping ;
+                                            rdf:rest [ rdf:first :tomato_topping ;
+                                                    rdf:rest :nil ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mushroom_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :ham_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+","la reine is a type of a named pizza.
+la reine is a type of at least has topping some a ham topping.
+la reine is a type of at least has topping some a mozzarella topping.
+la reine is a type of at least has topping some a mushroom topping.
+la reine is a type of at least has topping some a tomato topping.
+la reine is a type of at least has topping some an olive topping.
+la reine is a type of only has topping any of (a ham topping, and a mozzarella topping, and a mushroom topping, and an olive topping, and a tomato topping).
+la reine is different from (a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a sloppy giuseppe, and a veneziana, and an unclosed pizza, and a mushroom, and a caprina, and a pollo ad astra, and a cajun, and an american, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","La Reine is a type of named pizza that has toppings including ham, mozzarella, mushrooms, tomatoes, and olives. It exclusively has these toppings and no others. It is distinct from other pizzas such as Frutti di Mare, Fiorentina, Margherita, American Hot, Sloppy Giuseppe, Veneziana, unclosed pizza, Mushroom, Caprina, Pollo ad Astra, Cajun, American, Giardiniera, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",8,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Mild,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:mild a owl:Class ;
+    owl:disjointWith :hot,
+        :medium .
+
+","mild is a type of a spiciness.
+mild is different from (a hot, and a medium).",Mild is a type of spiciness that is different from both hot and medium.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MozzarellaTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:mozzarella_topping a owl:Class ;
+    owl:disjointWith :four_cheeses_topping,
+        :goats_cheese_topping,
+        :gorgonzola_topping,
+        :parmesan_topping .
+
+[] a owl:Restriction ;
+    owl:hasValue :italy ;
+    owl:onProperty :has_country_of_origin .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","mozzarella topping is a type of a cheese topping.
+mozzarella topping is a type of at least has spiciness some a mild.
+mozzarella topping is a type of must has country of origin an italy.
+mozzarella topping is different from (a goats cheese topping, and a gorgonzola topping, and a parmesan topping, and a four cheeses topping).","Mozzarella topping is a type of cheese topping that must originate from Italy and has a mild level of spiciness. It is distinct from goat cheese topping, gorgonzola topping, parmesan topping, and four cheeses topping.",4,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HotSpicedBeefTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:hot_spiced_beef_topping a owl:Class ;
+    owl:disjointWith :chicken_topping,
+        :ham_topping,
+        :peperoni_sausage_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :hot .
+
+","hot spiced beef topping is a type of a meat topping.
+hot spiced beef topping is a type of at least has spiciness some a hot.
+hot spiced beef topping is different from (a peperoni sausage topping, and a chicken topping, and a ham topping).","Hot spiced beef topping is a type of meat topping that has some level of spiciness, specifically hot. It is different from pepperoni sausage topping, chicken topping, and ham topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#RosemaryTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:rosemary_topping a owl:Class ;
+    owl:disjointWith :cajun_spice_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","rosemary topping is a type of a herb spice topping.
+rosemary topping is a type of at least has spiciness some a mild.
+rosemary topping is different from a cajun spice topping.",Rosemary topping is a type of herb spice topping that has a mild level of spiciness. It is distinct from a Cajun spice topping.,3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ParmaHamTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:parma_ham_topping a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_spiciness ;
+            owl:someValuesFrom :mild ],
+        :ham_topping .
+
+","parma ham topping is a type of a ham topping.
+parma ham topping is a type of at least has spiciness some a mild.",Parma ham topping is a kind of ham topping that has at least some mild spiciness.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#CaperTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:caper_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","caper topping is a type of a vegetable topping.
+caper topping is a type of at least has spiciness some a mild.
+caper topping is different from (a pepper topping, and a petit pois topping, and a leek topping, and a spinach topping, and a garlic topping, and a mushroom topping, and a tomato topping, and an asparagus topping, and an olive topping, and an onion topping, and a rocket topping, and an artichoke topping).","Caper topping is a type of vegetable topping that has some mild spiciness. It is distinct from pepper topping, petit pois topping, leek topping, spinach topping, garlic topping, mushroom topping, tomato topping, asparagus topping, olive topping, onion topping, rocket topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Medium,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:medium a owl:Class ;
+    owl:disjointWith :hot,
+        :mild .
+
+","medium is a type of a spiciness.
+medium is different from (a hot, and a mild).",Medium is a type of spiciness that is distinct from both hot and mild.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HotGreenPepperTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hot_green_pepper_topping a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_spiciness ;
+            owl:someValuesFrom :hot ],
+        :green_pepper_topping .
+
+","hot green pepper topping is a type of a green pepper topping.
+hot green pepper topping is a type of at least has spiciness some a hot.",A hot green pepper topping is a type of green pepper topping that has some level of spiciness.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#ThinAndCrispyBase,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:thin_and_crispy_base a owl:Class ;
+    owl:disjointWith :deep_pan_base .
+
+","thin and crispy base is a type of a pizza base.
+thin and crispy base is different from a deep pan base.",A thin and crispy base is a type of pizza base that is distinct from a deep pan base.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NonVegetarianPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:non_vegetarian_pizza a owl:Class ;
+    rdfs:comment ""Any Pizza that is not a VegetarianPizza""@en ;
+    owl:disjointWith :vegetarian_pizza .
+
+[] a owl:Class ;
+    owl:intersectionOf [ rdf:first [ a owl:Class ;
+                    owl:complementOf :vegetarian_pizza ] ;
+            rdf:rest [ rdf:first :pizza ;
+                    rdf:rest :nil ] ] .
+
+","non vegetarian pizza is different from a vegetarian pizza.
+non vegetarian pizza is same as all of (complement of a vegetarian pizza, and a pizza).",Non-vegetarian pizza is different from vegetarian pizza. It is the same as the complement of vegetarian pizza combined with a pizza.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SlicedTomatoTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:sliced_tomato_topping a owl:Class ;
+    owl:disjointWith :sundried_tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","sliced tomato topping is a type of a tomato topping.
+sliced tomato topping is a type of at least has spiciness some a mild.
+sliced tomato topping is different from a sundried tomato topping.",Sliced tomato topping is a type of tomato topping. It has at least some mild spiciness and is different from a sundried tomato topping.,3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#NutTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:nut_topping a owl:Class ;
+    owl:disjointWith :cheese_topping,
+        :fish_topping,
+        :fruit_topping,
+        :herb_spice_topping,
+        :meat_topping,
+        :sauce_topping,
+        :vegetable_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","nut topping is a type of a pizza topping.
+nut topping is a type of at least has spiciness some a mild.
+nut topping is different from (a fruit topping, and a cheese topping, and a herb spice topping, and a meat topping, and a fish topping, and a vegetable topping, and a sauce topping).","Nut topping is a type of pizza topping that has a mild level of spiciness. It is distinct from fruit toppings, cheese toppings, herb spice toppings, meat toppings, fish toppings, vegetable toppings, and sauce toppings.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GreenPepperTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:green_pepper_topping a owl:Class ;
+    owl:disjointWith :jalapeno_pepper_topping,
+        :peperonata_topping,
+        :sweet_pepper_topping .
+
+","green pepper topping is a type of a pepper topping.
+green pepper topping is different from (a jalapeno pepper topping, and a peperonata topping, and a sweet pepper topping).","Green pepper topping is a type of pepper topping, distinct from jalapeno pepper topping, peperonata topping, and sweet pepper topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#DomainConcept,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:domain_concept a owl:Class ;
+    owl:disjointWith :value_partition .
+
+",domain concept is different from a value partition.,A domain concept differs from a value partition.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Fiorentina,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:fiorentina a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :garlic_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :spinach_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :parmesan_topping ;
+                    rdf:rest [ rdf:first :tomato_topping ;
+                            rdf:rest [ rdf:first :mozzarella_topping ;
+                                    rdf:rest [ rdf:first :spinach_topping ;
+                                            rdf:rest [ rdf:first :garlic_topping ;
+                                                    rdf:rest [ rdf:first :olive_topping ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :parmesan_topping .
+
+","fiorentina is a type of a named pizza.
+fiorentina is a type of at least has topping some a garlic topping.
+fiorentina is a type of at least has topping some a mozzarella topping.
+fiorentina is a type of at least has topping some a parmesan topping.
+fiorentina is a type of at least has topping some a spinach topping.
+fiorentina is a type of at least has topping some a tomato topping.
+fiorentina is a type of at least has topping some an olive topping.
+fiorentina is a type of only has topping any of (a parmesan topping, and a tomato topping, and a mozzarella topping, and a spinach topping, and a garlic topping, and an olive topping).
+fiorentina is different from (a la reine, and a frutti di mare, and a margherita, and an american hot, and a veneziana, and a sloppy giuseppe, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Fiorentina is a type of pizza known for its unique combination of toppings. It includes garlic, mozzarella, parmesan, spinach, tomato, and olives. Fiorentina is distinct in that it exclusively features these toppings and no others. This pizza is different from many other types such as La Reine, Frutti di Mare, Margherita, American Hot, Veneziana, Sloppy Giuseppe, any unclosed pizza, Mushroom, Pollo ad Astra, Caprina, Cajun, Giardiniera, American, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Quattro Formaggi, Four Seasons, and Napoletana.",9,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#QuattroFormaggi,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:quattro_formaggi a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :four_cheeses_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :four_cheeses_topping ;
+                    rdf:rest [ rdf:first :tomato_topping ;
+                            rdf:rest :nil ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+","quattro formaggi is a type of a named pizza.
+quattro formaggi is a type of at least has topping some a four cheeses topping.
+quattro formaggi is a type of at least has topping some a tomato topping.
+quattro formaggi is a type of only has topping any of (a four cheeses topping, and a tomato topping).
+quattro formaggi is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a veneziana, and a sloppy giuseppe, and an american hot, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a four seasons, and a napoletana).","Quattro Formaggi is a specific type of named pizza. It always includes at least a four cheeses topping and a tomato topping. The only toppings it ever has are either a four cheeses topping or a tomato topping, and nothing else. Quattro Formaggi is distinct from other pizzas such as La Reine, Frutti di Mare, Fiorentina, Margherita, Veneziana, Sloppy Giuseppe, American Hot, any unclosed pizza, Mushroom, Pollo ad Astra, Caprina, Cajun, Giardiniera, American, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Soho, Four Seasons, and Napoletana.",5,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#AsparagusTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:asparagus_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","asparagus topping is a type of a vegetable topping.
+asparagus topping is a type of at least has spiciness some a mild.
+asparagus topping is different from (a pepper topping, and a leek topping, and a petit pois topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and an olive topping, and an onion topping, and a rocket topping, and an artichoke topping).","Asparagus topping is a type of vegetable topping. It has at least some mild spiciness. It is distinct from pepper topping, leek topping, petit pois topping, spinach topping, caper topping, garlic topping, mushroom topping, tomato topping, olive topping, onion topping, rocket topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PizzaBase,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:pizza_base a owl:Class ;
+    owl:disjointWith :ice_cream,
+        :pizza,
+        :pizza_topping .
+
+","pizza base is a type of a domain concept.
+pizza base is different from (a pizza, and an ice cream, and a pizza topping).","The pizza base is a type of domain concept that is distinct from a pizza, an ice cream, and a pizza topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Giardiniera,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:giardiniera a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mushroom_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :leek_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :peperonata_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :sliced_tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :leek_topping ;
+                    rdf:rest [ rdf:first :mozzarella_topping ;
+                            rdf:rest [ rdf:first :mushroom_topping ;
+                                    rdf:rest [ rdf:first :olive_topping ;
+                                            rdf:rest [ rdf:first :peperonata_topping ;
+                                                    rdf:rest [ rdf:first :petit_pois_topping ;
+                                                            rdf:rest [ rdf:first :sliced_tomato_topping ;
+                                                                    rdf:rest [ rdf:first :tomato_topping ;
+                                                                            rdf:rest :nil ] ] ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :petit_pois_topping .
+
+","giardiniera is a type of a named pizza.
+giardiniera is a type of at least has topping some a leek topping.
+giardiniera is a type of at least has topping some a mozzarella topping.
+giardiniera is a type of at least has topping some a mushroom topping.
+giardiniera is a type of at least has topping some a peperonata topping.
+giardiniera is a type of at least has topping some a petit pois topping.
+giardiniera is a type of at least has topping some a sliced tomato topping.
+giardiniera is a type of at least has topping some a tomato topping.
+giardiniera is a type of at least has topping some an olive topping.
+giardiniera is a type of only has topping any of (a leek topping, and a mozzarella topping, and a mushroom topping, and an olive topping, and a peperonata topping, and a petit pois topping, and a sliced tomato topping, and a tomato topping).
+giardiniera is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a sloppy giuseppe, and a veneziana, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Giardiniera is a unique type of pizza that includes a variety of toppings such as leek, mozzarella, mushroom, peperonata, petit pois, sliced tomato, tomato, and olive. It is distinct from other pizzas like la reine, frutti di mare, fiorentina, margherita, american hot, sloppy giuseppe, veneziana, unclosed pizza, mushroom, pollo ad astra, caprina, cajun, american, prince carlo, capricciosa, siciliana, parmense, rosa, soho, quattro formaggi, four seasons, and napoletana.",11,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetarianPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:vegetarian_pizza a owl:Class ;
+    rdfs:comment ""Any pizza that does not have fish topping and does not have meat topping is a VegetarianPizza. Members of this class do not need to have any toppings at all.""@en ;
+    owl:disjointWith :non_vegetarian_pizza .
+
+[] a owl:Class ;
+    owl:intersectionOf [ rdf:first [ a owl:Class ;
+                    owl:complementOf [ a owl:Restriction ;
+                            owl:onProperty :has_topping ;
+                            owl:someValuesFrom :meat_topping ] ] ;
+            rdf:rest [ rdf:first [ a owl:Class ;
+                            owl:complementOf [ a owl:Restriction ;
+                                    owl:onProperty :has_topping ;
+                                    owl:someValuesFrom :fish_topping ] ] ;
+                    rdf:rest [ rdf:first :pizza ;
+                            rdf:rest :nil ] ] ] .
+
+","vegetarian pizza is different from a non vegetarian pizza.
+vegetarian pizza is same as all of (complement of at least has topping some a meat topping, and complement of at least has topping some a fish topping, and a pizza).","A vegetarian pizza is different from a non-vegetarian pizza. Specifically, a vegetarian pizza is one that does not have any meat or fish toppings and is still a pizza.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#TobascoPepperSauce,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tobasco_pepper_sauce a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_spiciness ;
+            owl:someValuesFrom :hot ],
+        :sauce_topping .
+
+","tobasco pepper sauce is a type of a sauce topping.
+tobasco pepper sauce is a type of at least has spiciness some a hot.",Tabasco pepper sauce is a type of sauce topping that has some level of spiciness and is considered hot.,2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#HamTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:ham_topping a owl:Class ;
+    owl:disjointWith :chicken_topping,
+        :hot_spiced_beef_topping,
+        :peperoni_sausage_topping .
+
+","ham topping is a type of a meat topping.
+ham topping is different from (a peperoni sausage topping, and a chicken topping, and a hot spiced beef topping).","Ham topping is a type of meat topping that is different from pepperoni sausage topping, chicken topping, and hot spiced beef topping.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#VegetableTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:vegetable_topping a owl:Class ;
+    owl:disjointWith :cheese_topping,
+        :fish_topping,
+        :fruit_topping,
+        :herb_spice_topping,
+        :meat_topping,
+        :nut_topping,
+        :sauce_topping .
+
+","vegetable topping is a type of a pizza topping.
+vegetable topping is different from (a cheese topping, and a fruit topping, and a herb spice topping, and a meat topping, and a fish topping, and a nut topping, and a sauce topping).","Vegetable topping is a specific type of pizza topping that is distinct from cheese, fruit, herb spice, meat, fish, nut, and sauce toppings.",2,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Soho,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:soho a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :rocket_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :parmesan_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :garlic_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :olive_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :garlic_topping ;
+                    rdf:rest [ rdf:first :mozzarella_topping ;
+                            rdf:rest [ rdf:first :olive_topping ;
+                                    rdf:rest [ rdf:first :parmesan_topping ;
+                                            rdf:rest [ rdf:first :rocket_topping ;
+                                                    rdf:rest [ rdf:first :tomato_topping ;
+                                                            rdf:rest :nil ] ] ] ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+","soho is a type of a named pizza.
+soho is a type of at least has topping some a garlic topping.
+soho is a type of at least has topping some a mozzarella topping.
+soho is a type of at least has topping some a parmesan topping.
+soho is a type of at least has topping some a rocket topping.
+soho is a type of at least has topping some a tomato topping.
+soho is a type of at least has topping some an olive topping.
+soho is a type of only has topping any of (a garlic topping, and a mozzarella topping, and an olive topping, and a parmesan topping, and a rocket topping, and a tomato topping).
+soho is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and an american hot, and a veneziana, and a sloppy giuseppe, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and a giardiniera, and an american, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a quattro formaggi, and a four seasons, and a napoletana).","Soho is a specific type of pizza. It includes toppings such as garlic, mozzarella, parmesan, rocket, tomato, and olives. Soho does not include any other toppings besides these. Additionally, Soho is distinct from other pizzas like La Reine, Frutti di Mare, Fiorentina, Margherita, American Hot, Veneziana, Sloppy Giuseppe, any unclosed pizza, Mushroom, Pollo Ad Astra, Caprina, Cajun, Giardiniera, American, Prince Carlo, Capricciosa, Siciliana, Parmense, Rosa, Quattro Formaggi, Four Seasons, and Napoletana.",9,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#RedOnionTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:red_onion_topping a owl:Class ;
+    rdfs:subClassOf :onion_topping .
+
+",red onion topping is a type of an onion topping.,Red onion topping is a specific kind of onion topping.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#PetitPoisTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:petit_pois_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","petit pois topping is a type of a vegetable topping.
+petit pois topping is a type of at least has spiciness some a mild.
+petit pois topping is different from (a pepper topping, and a leek topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and an olive topping, and a rocket topping, and an onion topping, and an asparagus topping, and an artichoke topping).","Petit pois topping is a vegetable topping that has at least some mild spiciness. It is distinct from pepper topping, leek topping, spinach topping, caper topping, garlic topping, mushroom topping, tomato topping, olive topping, rocket topping, onion topping, asparagus topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpinachTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:spinach_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","spinach topping is a type of a vegetable topping.
+spinach topping is a type of at least has spiciness some a mild.
+spinach topping is different from (a pepper topping, and a leek topping, and a petit pois topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and an olive topping, and an onion topping, and an asparagus topping, and a rocket topping, and an artichoke topping).","Spinach topping is a type of vegetable topping that has some mild spiciness. It is distinct from pepper topping, leek topping, petit pois topping, caper topping, garlic topping, mushroom topping, tomato topping, olive topping, onion topping, asparagus topping, rocket topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#GarlicTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:garlic_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :medium .
+
+","garlic topping is a type of a vegetable topping.
+garlic topping is a type of at least has spiciness some a medium.
+garlic topping is different from (a pepper topping, and a leek topping, and a petit pois topping, and a spinach topping, and a caper topping, and a mushroom topping, and a tomato topping, and an asparagus topping, and an onion topping, and a rocket topping, and an olive topping, and an artichoke topping).","Garlic topping is a type of vegetable topping that has at least some medium spiciness. It is distinct from pepper topping, leek topping, petit pois topping, spinach topping, caper topping, mushroom topping, tomato topping, asparagus topping, onion topping, rocket topping, olive topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#MeatyPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:meaty_pizza a owl:Class ;
+    rdfs:comment ""Any pizza that has at least one meat topping""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :pizza ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_topping ;
+                                    owl:someValuesFrom :meat_topping ] ;
+                            rdf:rest :nil ] ] ] .
+
+","meaty pizza is same as all of (a pizza, and at least has topping some a meat topping).",A meaty pizza is a pizza that has at least one meat topping.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#OliveTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:olive_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :rocket_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :mild .
+
+","olive topping is a type of a vegetable topping.
+olive topping is a type of at least has spiciness some a mild.
+olive topping is different from (a pepper topping, and a petit pois topping, and a leek topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and a rocket topping, and an onion topping, and an asparagus topping, and an artichoke topping).","Olive topping is a type of vegetable topping that has at least some mild spiciness. It is different from pepper topping, petit pois topping, leek topping, spinach topping, caper topping, garlic topping, mushroom topping, tomato topping, rocket topping, onion topping, asparagus topping, and artichoke topping.",3,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Mushroom,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:mushroom a owl:Class ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :margherita,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mushroom_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:allValuesFrom [ a owl:Class ;
+            owl:unionOf [ rdf:first :mozzarella_topping ;
+                    rdf:rest [ rdf:first :mushroom_topping ;
+                            rdf:rest [ rdf:first :tomato_topping ;
+                                    rdf:rest :nil ] ] ] ] ;
+    owl:onProperty :has_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_topping ;
+    owl:someValuesFrom :mozzarella_topping .
+
+","mushroom is a type of a named pizza.
+mushroom is a type of at least has topping some a mozzarella topping.
+mushroom is a type of at least has topping some a mushroom topping.
+mushroom is a type of at least has topping some a tomato topping.
+mushroom is a type of only has topping any of (a mozzarella topping, and a mushroom topping, and a tomato topping).
+mushroom is different from (a la reine, and a frutti di mare, and a fiorentina, and a margherita, and a veneziana, and an american hot, and a sloppy giuseppe, and an unclosed pizza, and a pollo ad astra, and a caprina, and a cajun, and an american, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","A mushroom pizza is a specific type of pizza that includes at least mozzarella, mushroom, and tomato toppings. It only has these three toppings and no others. Additionally, it is distinct from other pizza varieties such as la reine, frutti di mare, fiorentina, margherita, veneziana, american hot, sloppy giuseppe, unclosed pizza, pollo ad astra, caprina, cajun, american, giardiniera, prince carlo, capricciosa, siciliana, parmense, rosa, soho, quattro formaggi, four seasons, and napoletana.",6,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#SpicyPizzaEquivalent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:spicy_pizza_equivalent a owl:Class ;
+    rdfs:comment ""An alternative definition for the SpicyPizza which does away with needing a definition of SpicyTopping and uses a slightly more complicated restriction: Pizzas that have at least one topping that is both a PizzaTopping and has spiciness hot are members of this class. ""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :pizza ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has_topping ;
+                                    owl:someValuesFrom [ a owl:Class ;
+                                            owl:intersectionOf [ rdf:first :pizza_topping ;
+                                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                                    owl:onProperty :has_spiciness ;
+                                                                    owl:someValuesFrom :hot ] ;
+                                                            rdf:rest :nil ] ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","spicy pizza equivalent is same as all of (a pizza, and at least has topping some all of (a pizza topping, and at least has spiciness some a hot)).",A spicy pizza is equivalent to a pizza that has a topping which includes a pizza topping with some level of spiciness that is hot.,1,gpt-4o
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#RocketTopping,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:rocket_topping a owl:Class ;
+    owl:disjointWith :artichoke_topping,
+        :asparagus_topping,
+        :caper_topping,
+        :garlic_topping,
+        :leek_topping,
+        :mushroom_topping,
+        :olive_topping,
+        :onion_topping,
+        :pepper_topping,
+        :petit_pois_topping,
+        :spinach_topping,
+        :tomato_topping .
+
+[] a owl:Restriction ;
+    owl:onProperty :has_spiciness ;
+    owl:someValuesFrom :medium .
+
+","rocket topping is a type of a vegetable topping.
+rocket topping is a type of at least has spiciness some a medium.
+rocket topping is different from (a pepper topping, and a leek topping, and a petit pois topping, and a spinach topping, and a caper topping, and a garlic topping, and a mushroom topping, and a tomato topping, and an onion topping, and an olive topping, and an asparagus topping, and an artichoke topping).","Rocket topping is a type of vegetable topping known for having at least some medium spiciness. It is distinct from pepper topping, leek topping, petit pois topping, spinach topping, caper topping, garlic topping, mushroom topping, tomato topping, onion topping, olive topping, asparagus topping, and artichoke topping.",3,gpt-4o
