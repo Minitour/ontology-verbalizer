@@ -4,10 +4,10 @@ from xml.sax import SAXParseException
 
 import pandas
 from rdflib import Graph, URIRef
-from rdflib.exceptions import ParserError
 from tqdm import tqdm
 
 from core.nlp import LlamaModel, LanguageModel
+from core.patterns.owl_disjoint import OwlDisjointWith
 from core.patterns.owl_first_rest import OwlFirstRestPattern
 from core.patterns.owl_restriction import OwlRestrictionPattern
 from core.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
@@ -36,7 +36,7 @@ class Processor:
         :param extra_context: Additional context to pass to the LLM as part of the system message.
         """
         self.llm = llm
-        self.patterns = patterns or [OwlFirstRestPattern, OwlRestrictionPattern]
+        self.patterns = patterns or [OwlFirstRestPattern, OwlRestrictionPattern, OwlDisjointWith]
         self.verbalizer_model_usage_config = VerbalizerModelUsageConfig(
             min_patterns_evaluated,
             min_statements,

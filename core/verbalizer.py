@@ -96,7 +96,7 @@ class VerbalizationNode:
             display = ''
 
         if len(sentences) >= 2:
-            next_text = f' ({" and ".join(sentences)})'
+            next_text = f' ({", and ".join(sentences)})'
         elif len(sentences) == 1:
             next_text = f' {sentences[0]}'
         else:
@@ -157,7 +157,7 @@ class Verbalizer:
         for ref in node.references:
             sentences.append(_RE_COMBINE_WHITESPACE.sub(" ", f'{node.display} {ref.verbalize().strip()}.').strip())
 
-        text = '\n'.join(sentences)
+        text = '\n'.join(sorted(sentences))
         onto_fragment: str = self.generate_fragment(triples)
 
         stats.statements = len(sentences)

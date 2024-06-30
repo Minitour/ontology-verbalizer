@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
     # model = None
     llama_model = LlamaModel('http://localhost:11434/v1', temperature=0.1)
-    openai_model = ChatGptModel(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4o', temperature=0.3)
+    openai_model = ChatGptModel(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4o', temperature=0.5)
     processor = Processor(llm=openai_model, vocab_ignore=ignore, vocab_rephrased=rephrased, min_statements=1)
     # processor.process('envo', './data/envo.owl', chunk_size=500)
     # processor.process('sweet', './data/sweet.owl', chunk_size=500)

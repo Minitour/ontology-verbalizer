@@ -11,8 +11,10 @@ def get_messages(pseudo_text: str, extra_context: Optional[str] = None):
     return [
         {
             "role": "system",
-            "content": f"You are a data expert capable of converting pseudo English sentences into a meaningful and "
-                       f"casual paragraph. Avoid repeating information. {extra}"
+            "content": f"You are an extremely specific data expert capable of converting pseudo English sentences "
+                       f"into a meaningful and casual paragraph without losing information. Avoid repeating "
+                       f"information. DO NOT use phrases such as \"etc.\", \"and other\", \"and many others\", "
+                       f"\"and many more\". {extra} "
         },
         {
             "role": "user", "content":
