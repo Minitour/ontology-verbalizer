@@ -1,5 +1,7 @@
 import datetime
+import logging
 from pathlib import Path
+from typing import Optional
 from xml.sax import SAXParseException
 
 import pandas
@@ -10,7 +12,10 @@ from core.nlp import LlamaModel, LanguageModel
 from core.patterns.owl_disjoint import OwlDisjointWith
 from core.patterns.owl_first_rest import OwlFirstRestPattern
 from core.patterns.owl_restriction import OwlRestrictionPattern
+from core.sampler import Sampler
 from core.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
+
+logger = logging.getLogger(__name__)
 
 
 class Processor:
@@ -45,13 +50,17 @@ class Processor:
         self.vocab_ignore = vocab_ignore
         self.vocab_rephrase = vocab_rephrased
 
-    def process(self, name: str, file_path: str, output_dir: str = './output', chunk_size: int = 1000):
+    def process(self, name: str,
+                file_path: str,
+                output_dir: str = './output', chunk_size: int = 1000,
+                data_sampler: Optional[Sampler] = None):
         """
         Start the verbalization process.
         :param name: Name of the directory to create under the output directory.
         :param file_path: Input file path.
         :param output_dir: Name of the output directory.
         :param chunk_size: Number of entries (rows) per file. default = 1000
+        :param data_sampler: A sampling configuration, use to sample large ontologies.
         """
         # current timestamp
         now = datetime.datetime.utcnow()
@@ -75,6 +84,10 @@ class Processor:
 
         classes = self._get_classes(graph)
         individuals = self._get_individuals(graph)
+
+        if sampler := data_sampler:
+            samples = sampler.get_sample({'classes': classes, 'individuals': individuals})
+            classes, individuals = samples['classes'], samples['individuals']
 
         dataset = []
         partition = 0
@@ -116,7 +129,8 @@ class Processor:
                     }
                 }
             """
-        return [result[0] for result in graph.query(query) if isinstance(result[0], URIRef)]
+        return [result[0] for result in
+                tqdm(graph.query(query), desc='Loading Classes') if isinstance(result[0], URIRef)]
 
     @staticmethod
     def _get_individuals(graph):
@@ -132,7 +146,8 @@ class Processor:
                             }
                         }
                     """
-        return [result[0] for result in graph.query(query) if isinstance(result[0], URIRef)]
+        return [result[0] for result in
+                tqdm(graph.query(query), desc='Loading Instances') if isinstance(result[0], URIRef)]
 
     @staticmethod
     def get_graph_from_file(file_path: str) -> Graph:
@@ -141,12 +156,12 @@ class Processor:
         """
         graph = Graph()
         formats = ['xml', 'n3']
-
+        logger.info(f'Loading File {file_path}')
         for file_format in formats:
             try:
                 graph.parse(file_path, format=file_format)
                 break
             except SAXParseException:
                 pass
-
+        logger.info(f'Done Loading.')
         return graph

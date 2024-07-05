@@ -1,7 +1,10 @@
+import logging
 from typing import Optional
 
 from openai import OpenAI
 
+logging.getLogger("openai").setLevel(logging.ERROR)
+logging.getLogger("httpx").setLevel(logging.ERROR)
 
 def get_messages(pseudo_text: str, extra_context: Optional[str] = None):
     """

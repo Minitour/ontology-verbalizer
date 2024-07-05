@@ -1,7 +1,12 @@
+import logging
 import os
 
 from core.nlp import ChatGptModel, LlamaModel
 from core.process import Processor
+from core.sampler import Sampler
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 ignore = {
     'http://www.w3.org/2002/07/owl#onDatatype',
@@ -18,6 +23,7 @@ ignore = {
     'http://purl.obolibrary.org/obo/IAO_0000117',
     'http://purl.obolibrary.org/obo/IAO_0000119',
     'http://purl.obolibrary.org/obo/IAO_0000589',
+    'http://purl.obolibrary.org/obo/IAO_0000233',
 
     'http://www.geneontology.org/formats/oboInOwl#creation_date',
     'http://www.geneontology.org/formats/oboInOwl#hasDbXref',
@@ -36,6 +42,18 @@ ignore = {
     'http://purl.obolibrary.org/obo/ado#from_Alzheimer_Ontology',
     'http://xmlns.com/foaf/0.1/depicted_by',
 
+    'http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check',
+
+    'http://purl.org/sig/ont/fma/author',
+    'http://purl.org/sig/ont/fma/primary_author_and_curator',
+    'http://purl.org/sig/ont/fma/contributing_author',
+    'http://purl.org/sig/ont/fma/language',
+    'http://purl.org/sig/ont/fma/FMAID',
+    'http://purl.org/sig/ont/fma/Date_entered_modified',
+    'http://purl.org/sig/ont/fma/authority',
+    'http://purl.org/sig/ont/fma/Talairach',
+    'http://purl.org/sig/ont/fma/modification',
+
     # SWEET
     'http://data.bioontology.org/metadata/prefixIRI',
     'http://purl.org/dc/terms/contributor',
@@ -44,7 +62,12 @@ ignore = {
     'http://purl.org/dc/terms/source',
 
     # FOAF
-    'http://www.w3.org/2003/06/sw-vocab-status/ns#term_status'
+    'http://www.w3.org/2003/06/sw-vocab-status/ns#term_status',
+
+    # SKOS
+    'http://www.w3.org/2004/02/skos/core#exactMatch',
+    'http://www.w3.org/2004/02/skos/core#closeMatch'
+
 }
 
 rephrased = {
@@ -65,10 +88,13 @@ if __name__ == '__main__':
     # model = None
     llama_model = LlamaModel('http://localhost:11434/v1', temperature=0.1)
     openai_model = ChatGptModel(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4o', temperature=0.7)
+    sampler = Sampler(sample_n=100, seed=42)
     processor = Processor(llm=openai_model, vocab_ignore=ignore, vocab_rephrased=rephrased, min_statements=1)
     # processor.process('envo', './data/envo.owl', chunk_size=500)
     # processor.process('sweet', './data/sweet.owl', chunk_size=500)
     # processor.process('doid', './data/doid.owl', chunk_size=500)
-    processor.process('pizza', './data/pizza.ttl')
+    # processor.process('pizza', './data/pizza.ttl', data_sampler=sampler)
     # processor.process('people', './data/people.ttl')
     # processor.process('foaf', './data/foaf.owl')
+    # processor.process('mondo', './data/mondo.owl', data_sampler=sampler)
+    processor.process('fma', './data/fma.owl', data_sampler=sampler)

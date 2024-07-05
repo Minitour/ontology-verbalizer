@@ -18,7 +18,6 @@ class OwlDisjointWith(Pattern):
     def normalize(self, node: VerbalizationNode, triple_collector):
 
         # Separate results into two groups: 1) related to disjointness, 2) all other
-        results = []
         query = self.verbalizer.next_step_query_builder(node)
         query_results = self._graph.query(query)
 
@@ -37,7 +36,6 @@ class OwlDisjointWith(Pattern):
             next_node.display = self.vocab.get_cls_label(obj)
             edge = VerbalizationEdge(URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#collection'), next_node)
             edge.display = '#collection'
-            results.append((edge.relationship, edge.node.concept))
             intermediate_node.add_edge(edge)
             triple_collector.append((node.concept, relation, obj))
 
@@ -55,6 +53,6 @@ class OwlDisjointWith(Pattern):
             edge = VerbalizationEdge(relation, next_node)
             node.add_edge(edge)
             edge.display = relation_display
-            results.append((edge.relationship, edge.node.concept))
+            triple_collector.append((node.concept, relation, obj))
 
         return [(reference.relationship, reference.node.concept) for reference in node.references]

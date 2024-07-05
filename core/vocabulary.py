@@ -1,6 +1,9 @@
 import re
-
+import logging
 from rdflib import URIRef, Graph
+from tqdm import tqdm
+
+logger = logging.getLogger(__name__)
 
 
 class Vocabulary:
@@ -54,6 +57,7 @@ class Vocabulary:
     """
 
     def __init__(self, graph, ignore: set = None, rephrased: dict[str, str] = None):
+        logger.info('Initializing vocabulary')
         self._graph = graph
         self.relationship_labels = self._get_ontology_relationship_labels()
         self.object_labels = self._get_ontology_object_labels()
@@ -77,7 +81,7 @@ class Vocabulary:
         results = self._graph.query(self.RELATIONSHIP_QUERY)
         ontology_relations = {}
 
-        for result in results:
+        for result in tqdm(results, desc='Loading Ontology Relationship Labels'):
             iri, label = result
             iri_str = iri.toPython()
             label_str = label.toPython()
@@ -98,7 +102,7 @@ class Vocabulary:
         """
         results = self._graph.query(self.OBJECTS_QUERY)
         object_labels = {}
-        for result in results:
+        for result in tqdm(results, desc='Loading Ontology Object Labels'):
             iri, label = result
             iri_str = iri.toPython()
             label_str = label.toPython()
@@ -164,7 +168,7 @@ class Vocabulary:
     def _load_imports(self):
         owl_imports = {o[0].toPython() for o in self._graph.query("SELECT DISTINCT ?o WHERE { ?s owl:imports ?o }")}
         for owl_import in owl_imports:
-            print(f'LOADING IMPORT: {owl_import}')
+            logging.info(f'LOADING IMPORT: {owl_import}')
             graph = Graph()
             graph.parse(owl_import, format='xml')
             sub_vocab = self.__class__(graph)
