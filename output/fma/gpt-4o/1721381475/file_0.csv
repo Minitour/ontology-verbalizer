@@ -1,0 +1,302 @@
+ontology,root,fragment,text,llm_text,model,statements,unique_concepts,unique_relationships,total_relationships,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#label,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2002/07/owl#onProperty,http://www.w3.org/2002/07/owl#someValuesFrom,http://purl.org/sig/ont/fma/FMAID,http://purl.org/sig/ont/fma/definition,http://purl.org/sig/ont/fma/preferred_name,http://www.w3.org/2002/07/owl#equivalentClass,http://www.w3.org/2002/07/owl#intersectionOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#first,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,http://www.w3.org/2002/07/owl#hasValue,http://purl.org/sig/ont/fma/synonym,http://purl.org/sig/ont/fma/non-English_equivalent
+fma,http://purl.org/sig/ont/fma/fma83332,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subendocardial_branch_of_septal_division_of_left_branch_of_atrioventricular_bundle a owl:Class ;
+    rdfs:label ""Subendocardial branch of septal division of left branch of atrioventricular bundle""@en ;
+    ns1:FMAID 83332 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :regular_ventricular_cardiac_myocyte ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :septal_division_of_left_branch_of_atrioventricular_bundle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :purkinje_myocyte_of_atrioventricular_bundle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cardiac_endomysium ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :conducting_system_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :conducting_system_of_left_ventricle ],
+        :subdivision_of_conducting_system_of_heart ;
+    :definition ""Subdivision of conducting system of heart which is interpersed with the regular cardiac myocyte on the left stratum of the interventricular septum.""^^xsd:string ;
+    :preferred_name ""Subendocardial branch of septal division of left branch of atrioventricular bundle""^^xsd:string .
+
+","subendocardial branch of septal division of left branch of atrioventricular bundle definition a Subdivision of conducting system of heart which is interpersed with the regular cardiac myocyte on the left stratum of the interventricular septum..
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of a subdivision of conducting system of heart.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least constitutional part some a cardiac endomysium.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least constitutional part some a purkinje myocyte of atrioventricular bundle.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least continuous with some a regular ventricular cardiac myocyte.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least continuous with some a septal division of left branch of atrioventricular bundle.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least regional part of some a conducting system of heart.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least regional part of some a conducting system of left ventricle.
+subendocardial branch of septal division of left branch of atrioventricular bundle preferred name a Subendocardial branch of septal division of left branch of atrioventricular bundle.","The Subendocardial Branch of the Septal Division of the Left Branch of the Atrioventricular Bundle is a class in the ontology. It is labeled ""Subendocardial branch of septal division of left branch of atrioventricular bundle"" and has an identifier FMAID 83332. This class is defined as a subdivision of the conducting system of the heart, specifically found within the left stratum of the interventricular septum. 
+
+It has several relationships:
+- It is continuous with both regular ventricular cardiac myocytes and the septal division of the left branch of the atrioventricular bundle.
+- It is a constitutional part of purkinje myocytes of the atrioventricular bundle and cardiac endomysium.
+- It is a regional part of both the conducting system of the heart and the conducting system of the left ventricle.
+
+The preferred name for this class is ""Subendocardial branch of septal division of left branch of atrioventricular bundle.""",gpt-4o,9,13,8,30,7,1,7,6,6,1,1,1,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma7101,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_ventricle a owl:Class ;
+    rdfs:label ""Left ventricle""@en ;
+    ns1:FMAID 7101 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :absent_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :diagonal_branch_of_anterior_descending_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :apex_of_heart ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Posteroinferior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Left""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_left_of ;
+            owl:someValuesFrom :ascending_aorta ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :fibrous_ring_of_mitral_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :nerve_supply ;
+            owl:someValuesFrom :deep_cardiac_nerve_plexus ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :atrioventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :cardiac_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :nerve_supply ;
+            owl:someValuesFrom :superficial_cardiac_nerve_plexus ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :left_anterior_branch_of_anterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :circumflex_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :interventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :coronary_sinus ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_ventricular_branch_of_circumflex_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :anterosuperior_to ;
+            owl:someValuesFrom :right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :superior_to ;
+            owl:someValuesFrom :diaphragm ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :left_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :medial_to ;
+            owl:someValuesFrom :left_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cavity_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :wall_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :plane_of_fibrous_ring_of_tricuspid_valve ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Anteroinferior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Left""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :ascending_aorta ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :biventricular_part_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :bounded_by ;
+            owl:someValuesFrom :surface_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :lymphatic_capillary_bed_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :ascending_aorta ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :aortic_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :neural_network_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :right_posterolateral_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_ventricular_branch_of_circumflex_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :lymphatic_drainage ;
+            owl:someValuesFrom :left_bronchomediastinal_lymphatic_trunk ],
+        [ a owl:Restriction ;
+            owl:onProperty :posterosuperior_to ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :left_side_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :variant_branch_of_right_coronary_arterial_tree ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :inflow_part_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :interventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :left_marginal_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :systemic_capillary_bed_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :absent_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :mitral_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :outflow_part_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_branch_of_anterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_interventricular_branch_of_right_coronary_artery ],
+        :cardiac_ventricle ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :cardiac_ventricle ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :regional_part_of ;
+                                    owl:someValuesFrom :left_side_of_heart ] ;
+                            rdf:rest :nil ] ] ] ;
+    :definition ""Left cardiac chamber which is continuous with the aorta.""^^xsd:string ;
+    :non_english_equivalent ""Linker Ventrikel""^^xsd:string,
+        ""Ventricule gauche""^^xsd:string,
+        ""Ventriculus cordis sinister""^^xsd:string,
+        ""Ventriculus sinister""^^xsd:string,
+        ""Ventrículo izquierdo""^^xsd:string ;
+    :preferred_name ""Left ventricle""^^xsd:string ;
+    :synonym ""Left ventricle of heart""^^xsd:string .
+
+","left ventricle definition a Left cardiac chamber which is continuous with the aorta..
+left ventricle is a type of a cardiac ventricle.
+left ventricle is a type of at least anteroinferior to some a left atrium.
+left ventricle is a type of at least anteroinferior to some an ascending aorta.
+left ventricle is a type of at least anterosuperior to some a right ventricle.
+left ventricle is a type of at least arterial supply some a circumflex branch of left coronary artery.
+left ventricle is a type of at least arterial supply some a diagonal branch of anterior descending branch of left coronary artery.
+left ventricle is a type of at least arterial supply some a left anterior branch of anterior interventricular branch of left coronary artery.
+left ventricle is a type of at least arterial supply some a left marginal artery.
+left ventricle is a type of at least arterial supply some a posterior interventricular branch of left coronary artery.
+left ventricle is a type of at least arterial supply some a posterior interventricular branch of right coronary artery.
+left ventricle is a type of at least arterial supply some a posterior ventricular branch of circumflex coronary artery.
+left ventricle is a type of at least arterial supply some a right posterolateral branch of right coronary artery.
+left ventricle is a type of at least arterial supply some a variant branch of right coronary arterial tree.
+left ventricle is a type of at least arterial supply some an absent left coronary artery.
+left ventricle is a type of at least arterial supply some an absent right coronary artery.
+left ventricle is a type of at least arterial supply some an anterior branch of anterior interventricular branch of left coronary artery.
+left ventricle is a type of at least arterial supply some an anterior interventricular branch of left coronary artery.
+left ventricle is a type of at least arterial supply some an anterior ventricular branch of circumflex coronary artery.
+left ventricle is a type of at least bounded by some a surface of left ventricle.
+left ventricle is a type of at least constitutional part some a cavity of left ventricle.
+left ventricle is a type of at least constitutional part some a fibrous ring of mitral valve.
+left ventricle is a type of at least constitutional part some a lymphatic capillary bed of left ventricle.
+left ventricle is a type of at least constitutional part some a mitral valve.
+left ventricle is a type of at least constitutional part some a neural network of left ventricle.
+left ventricle is a type of at least constitutional part some a systemic capillary bed of left ventricle.
+left ventricle is a type of at least constitutional part some a wall of left ventricle.
+left ventricle is a type of at least constitutional part some an aortic valve.
+left ventricle is a type of at least constitutional part some an atrioventricular septum.
+left ventricle is a type of at least constitutional part some an interventricular septum.
+left ventricle is a type of at least continuous with some a left atrium.
+left ventricle is a type of at least continuous with some an ascending aorta.
+left ventricle is a type of at least continuous with some an interventricular septum.
+left ventricle is a type of at least direct left of some an ascending aorta.
+left ventricle is a type of at least direct right of some a left atrium.
+left ventricle is a type of at least direct right of some a left lung.
+left ventricle is a type of at least direct right of some a right ventricle.
+left ventricle is a type of at least lymphatic drainage some a left bronchomediastinal lymphatic trunk.
+left ventricle is a type of at least medial to some a left lung.
+left ventricle is a type of at least nerve supply some a deep cardiac nerve plexus.
+left ventricle is a type of at least nerve supply some a superficial cardiac nerve plexus.
+left ventricle is a type of at least orientation some all of (at least related object some a plane of fibrous ring of tricuspid valve, and must anatomical coordinate a Anteroinferior, and must laterality a Left).
+left ventricle is a type of at least orientation some all of (at least related object some an apex of heart, and must anatomical coordinate a Posteroinferior, and must laterality a Left).
+left ventricle is a type of at least posterosuperior to some a left atrium.
+left ventricle is a type of at least regional part of some a biventricular part of heart.
+left ventricle is a type of at least regional part of some a left side of heart.
+left ventricle is a type of at least regional part some an inflow part of left ventricle.
+left ventricle is a type of at least regional part some an outflow part of left ventricle.
+left ventricle is a type of at least superior to some a diaphragm.
+left ventricle is a type of at least venous drainage some a cardiac vein.
+left ventricle is a type of at least venous drainage some a coronary sinus.
+left ventricle is same as all of (a cardiac ventricle, and at least regional part of some a left side of heart).
+left ventricle non English equivalent a Linker Ventrikel.
+left ventricle non English equivalent a Ventricule gauche.
+left ventricle non English equivalent a Ventriculus cordis sinister.
+left ventricle non English equivalent a Ventriculus sinister.
+left ventricle non English equivalent a Ventrículo izquierdo.
+left ventricle preferred name a Left ventricle.
+left ventricle synonym a Left ventricle of heart.","The left ventricle, identified as FMAID 7101, is a type of cardiac ventricle located on the left side of the heart. It is continuous with the aorta and is primarily involved in arterial supply through various coronary arteries, such as the diagonal branch of the anterior descending branch of the left coronary artery and the circumflex branch of the left coronary artery. The left ventricle also receives venous drainage from the cardiac vein and the coronary sinus. Its orientation is defined in relation to the apex of the heart and the plane of the fibrous ring of the tricuspid valve.
+
+Anatomically, the left ventricle is bounded by the surface of the left ventricle and contains important constitutional parts like the fibrous ring of the mitral valve, the atrioventricular septum, and the aortic valve. It is innervated by the deep cardiac nerve plexus and the superficial cardiac nerve plexus, and its lymphatic drainage is managed by the left bronchomediastinal lymphatic trunk. The left ventricle is also defined by its connections to other parts of the heart, such as being directly left of the ascending aorta and directly right of the left atrium and right ventricle.
+
+In different languages, it is known as ""Linker Ventrikel"" in German, ""Ventricule gauche"" in French, ""Ventriculus cordis sinister"" and ""Ventriculus sinister"" in Latin, and ""Ventrículo izquierdo"" in Spanish. The left ventricle is synonymously referred to as the ""left ventricle of the heart.""",gpt-4o,59,66,15,252,60,1,50,56,52,1,1,1,1.0,3.0,8.0,8.0,4.0,1.0,5.0

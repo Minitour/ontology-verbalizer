@@ -1,0 +1,108 @@
+ontology,root,fragment,text,llm_text,model,statements,unique_concepts,unique_relationships,total_relationships,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://purl.obolibrary.org/obo/IAO_0000115,http://www.geneontology.org/formats/oboInOwl#hasDbXref,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,http://www.geneontology.org/formats/oboInOwl#id,http://www.geneontology.org/formats/oboInOwl#inSubset,http://www.w3.org/2000/01/rdf-schema#label,http://www.w3.org/2004/02/skos/core#closeMatch,http://www.w3.org/2004/02/skos/core#exactMatch,http://purl.obolibrary.org/obo/IAO_0000233,http://www.w3.org/2000/01/rdf-schema#seeAlso
+mondo,http://purl.obolibrary.org/obo/MONDO_0006755,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:euthyroid_sick_syndrome a owl:Class ;
+    rdfs:label ""euthyroid sick syndrome"" ;
+    ns1:hasDbXref ""DOID:2856"",
+        ""EFO:1000931"",
+        ""ICD10CM:E07.81"",
+        ""ICD9:790.94"",
+        ""MEDGEN:41908"",
+        ""MESH:D005067"",
+        ""MedDRA:10015549"",
+        ""NCIT:C113170"",
+        ""SCTID:237542005"",
+        ""UMLS:C0015190"" ;
+    ns1:id ""MONDO:0006755"" ;
+    ns1:inSubset :otar ;
+    rdfs:subClassOf :syndromic_disease,
+        :thyroid_gland_disorder ;
+    skos:closeMatch :10015549 ;
+    skos:exactMatch :237542005,
+        :41908,
+        :c0015190,
+        :d005067,
+        :doid_2856,
+        :e07.81,
+        :ncit_c113170 ;
+    :has_definition ""Abnormal thyroid function tests, low triiodothyronine with elevated reverse triiodothyronine, in the setting of non-thyroidal illness."" ;
+    :has_exact_synonym ""euthyroid sick syndrome"",
+        ""sick euthyroid syndrome"",
+        ""sick-euthyroid syndrome"" .
+
+","euthyroid sick syndrome has definition a Abnormal thyroid function tests, low triiodothyronine with elevated reverse triiodothyronine, in the setting of non-thyroidal illness..
+euthyroid sick syndrome has exact synonym a sick euthyroid syndrome.
+euthyroid sick syndrome has exact synonym a sick-euthyroid syndrome.
+euthyroid sick syndrome has exact synonym an euthyroid sick syndrome.
+euthyroid sick syndrome is a type of a syndromic disease.
+euthyroid sick syndrome is a type of a thyroid gland disorder.","Euthyroid sick syndrome is a type of disorder classified under both syndromic disease and thyroid gland disorder. It is identified with the database reference ""MONDO:0006755"" and is part of the OTAR subset. The syndrome has multiple database cross-references, including DOID:2856, EFO:1000931, ICD10CM:E07.81, ICD9:790.94, MEDGEN:41908, MESH:D005067, MedDRA:10015549, NCIT:C113170, SCTID:237542005, and UMLS:C0015190. In terms of matching, it has close matches with 10015549 and exact matches with 237542005, 41908, c0015190, d005067, doid_2856, e07.81, and ncit_c113170. The disorder is characterized by abnormal thyroid function tests, specifically low triiodothyronine and elevated reverse triiodothyronine, in the context of non-thyroidal illness. It is also known by the synonyms ""euthyroid sick syndrome,"" ""sick euthyroid syndrome,"" and ""sick-euthyroid syndrome.""",gpt-4o,6,13,10,28,1,2,1,10,3,1,1,1,1,7,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0009162,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ellis_van_creveld_syndrome a owl:Class ;
+    rdfs:label ""Ellis-van Creveld syndrome"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/4948""^^xsd:anyURI ;
+    ns1:hasDbXref ""DOID:12714"",
+        ""GARD:1301"",
+        ""ICD9:756.55"",
+        ""MEDGEN:8584"",
+        ""MESH:D004613"",
+        ""MedDRA:10008724"",
+        ""NCIT:C84684"",
+        ""NORD:1083"",
+        ""OMIM:225500"",
+        ""Orphanet:289"",
+        ""SCTID:62501005"",
+        ""UMLS:C0013903"" ;
+    ns1:id ""MONDO:0009162"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :ordo_malformation_syndrome,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/1301/ellis-van-creveld-syndrome""^^xsd:anyURI ;
+    rdfs:subClassOf :autosomal_recessive_disease,
+        :cardiogenetic_disease,
+        :ectodermal_dysplasia_syndrome,
+        :jeune_syndrome ;
+    skos:closeMatch :10008724 ;
+    skos:exactMatch :225500,
+        :62501005,
+        :8584,
+        :c0013903,
+        :d004613,
+        :doid_12714,
+        :ncit_c84684,
+        :orphanet_289 ;
+    :has_definition ""Ellis-van Creveld syndrome (EVC) is a skeletal and ectoderlam dysplasia characterized by a tetrad of short stature, postaxial polydactyly, ectodermal dysplasia, and congenital heart defects."" ;
+    :has_exact_synonym ""Chondroectodermal dysplasia"",
+        ""EVC"",
+        ""Ellis Van Creveld Syndrome"",
+        ""Ellis Van Creveld syndrome"",
+        ""Ellis-VAN Creveld syndrome"",
+        ""Ellis-van Creveld syndrome"",
+        ""Mesoectodermal dysplasia"",
+        ""mesodermic dysplasia"" .
+
+","ellis van creveld syndrome has definition a Ellis-van Creveld syndrome (EVC) is a skeletal and ectoderlam dysplasia characterized by a tetrad of short stature, postaxial polydactyly, ectodermal dysplasia, and congenital heart defects..
+ellis van creveld syndrome has exact synonym a Chondroectodermal dysplasia.
+ellis van creveld syndrome has exact synonym a EVC.
+ellis van creveld syndrome has exact synonym a Ellis Van Creveld Syndrome.
+ellis van creveld syndrome has exact synonym a Ellis Van Creveld syndrome.
+ellis van creveld syndrome has exact synonym a Ellis-VAN Creveld syndrome.
+ellis van creveld syndrome has exact synonym a Ellis-van Creveld syndrome.
+ellis van creveld syndrome has exact synonym a Mesoectodermal dysplasia.
+ellis van creveld syndrome has exact synonym a mesodermic dysplasia.
+ellis van creveld syndrome is a type of a cardiogenetic disease.
+ellis van creveld syndrome is a type of a jeune syndrome.
+ellis van creveld syndrome is a type of an autosomal recessive disease.
+ellis van creveld syndrome is a type of an ectodermal dysplasia syndrome.","Ellis-van Creveld syndrome is a condition that exhibits a combination of features including short stature, postaxial polydactyly, ectodermal dysplasia, and congenital heart defects. It is classified under several categories such as autosomal recessive disease, cardiogenetic disease, ectodermal dysplasia syndrome, and Jeune syndrome. This condition is identified with the identifier MONDO:0009162 and is associated with various databases and references like DOID:12714, GARD:1301, ICD9:756.55, MEDGEN:8584, MESH:D004613, MedDRA:10008724, NCIT:C84684, NORD:1083, OMIM:225500, Orphanet:289, SCTID:62501005, and UMLS:C0013903. It also has several exact synonyms including Chondroectodermal dysplasia, EVC, Ellis Van Creveld Syndrome, Ellis Van Creveld syndrome, Ellis-VAN Creveld syndrome, Ellis-van Creveld syndrome, Mesoectodermal dysplasia, and mesodermic dysplasia. For more information, you can visit the link provided: https://rarediseases.info.nih.gov/diseases/1301/ellis-van-creveld-syndrome.",gpt-4o,13,22,12,46,1,4,1,12,8,1,7,1,1,8,1.0,1.0

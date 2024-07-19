@@ -1,0 +1,40 @@
+ontology,root,fragment,text,llm_text,model,statements,unique_concepts,unique_relationships,total_relationships,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#equivalentClass,http://www.w3.org/2002/07/owl#intersectionOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#first,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,http://www.w3.org/2002/07/owl#onProperty,http://www.w3.org/2002/07/owl#someValuesFrom,http://www.w3.org/2002/07/owl#onDatatype,http://www.w3.org/2002/07/owl#withRestrictions,http://www.w3.org/2001/XMLSchema#maxExclusive,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/mdebe/ontologies/example#has_Brother,http://www.semanticweb.org/mdebe/ontologies/example#has_Daughter,http://www.semanticweb.org/mdebe/ontologies/example#has_Friend,http://www.semanticweb.org/mdebe/ontologies/example#has_Sister,http://www.semanticweb.org/mdebe/ontologies/example#has_Wife,http://www.semanticweb.org/mdebe/ontologies/example#has_Age
+people,http://www.semanticweb.org/mdebe/ontologies/example#Child,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:child a owl:Class ;
+    rdfs:subClassOf :person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has__age ;
+                                    owl:someValuesFrom [ a :datatype ;
+                                            owl:onDatatype :integer ;
+                                            owl:withRestrictions [ rdf:first [ :max_exclusive 18 ] ;
+                                                    rdf:rest :nil ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","child is a type of a person.
+child is same as all of (a person, and at least has age some must be max exclusive 18).","Here's the rewritten text in casual English:
+
+A child is a type of person, and it's equivalent to being a person who has an age that is at least 3 (inclusive) but not more than 18. In other words, a child is someone who is between 3 years old and 18 years old.",llama3,2,8,11,18,4,1.0,1.0,3.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#John_Doe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:john__doe a owl:NamedIndividual,
+        :person ;
+    :has_age 34 ;
+    :has_brother :tom__doe ;
+    :has_daughter :mary__doe ;
+    :has_friend :john__smith ;
+    :has_sister :sarah__doe ;
+    :has_wife :beth__doe .
+
+","john doe has age 34.
+john doe has brother a tom doe.
+john doe has daughter a mary doe.
+john doe has friend a john smith.
+john doe has sister a sarah doe.
+john doe has wife a beth doe.","John Doe is a person, specifically an individual named John Doe. He has the following characteristics: he is 34 years old, his brother is Tom Doe, his daughter is Mary Doe, his friend is John Smith, his sister is Sarah Doe, and his wife is Beth Doe.",llama3,6,8,7,8,2,,,,,,,,,,,1.0,1.0,1.0,1.0,1.0,1.0

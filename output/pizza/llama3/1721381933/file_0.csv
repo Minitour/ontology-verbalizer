@@ -1,0 +1,66 @@
+ontology,root,fragment,text,llm_text,model,statements,unique_concepts,unique_relationships,total_relationships,http://www.w3.org/2002/07/owl#disjointWith,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2002/07/owl#onProperty,http://www.w3.org/2002/07/owl#someValuesFrom,http://www.w3.org/2002/07/owl#allValuesFrom,http://www.w3.org/2002/07/owl#unionOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#first,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,http://www.w3.org/2000/01/rdf-schema#comment,http://www.w3.org/2002/07/owl#equivalentClass,http://www.w3.org/2002/07/owl#intersectionOf,http://www.w3.org/2002/07/owl#minCardinality
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#Margherita,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:margherita a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_topping ;
+            owl:someValuesFrom :mozzarella_topping ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_topping ;
+            owl:someValuesFrom :tomato_topping ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:unionOf [ rdf:first :mozzarella_topping ;
+                            rdf:rest [ rdf:first :tomato_topping ;
+                                    rdf:rest :nil ] ] ] ;
+            owl:onProperty :has_topping ],
+        :named_pizza ;
+    owl:disjointWith :american,
+        :american_hot,
+        :cajun,
+        :capricciosa,
+        :caprina,
+        :fiorentina,
+        :four_seasons,
+        :frutti_di_mare,
+        :giardiniera,
+        :la_reine,
+        :mushroom,
+        :napoletana,
+        :parmense,
+        :pollo_ad_astra,
+        :prince_carlo,
+        :quattro_formaggi,
+        :rosa,
+        :siciliana,
+        :sloppy_giuseppe,
+        :soho,
+        :unclosed_pizza,
+        :veneziana .
+
+","margherita is a type of a named pizza.
+margherita is a type of at least has topping some a mozzarella topping.
+margherita is a type of at least has topping some a tomato topping.
+margherita is a type of only has topping any of (a mozzarella topping, and a tomato topping).
+margherita is different from (a la reine, and a frutti di mare, and a fiorentina, and a sloppy giuseppe, and an american hot, and a veneziana, and an unclosed pizza, and a mushroom, and a pollo ad astra, and a caprina, and a cajun, and an american, and a giardiniera, and a prince carlo, and a capricciosa, and a siciliana, and a parmense, and a rosa, and a soho, and a quattro formaggi, and a four seasons, and a napoletana).","Here's a rewritten version of the given OWL code in a casual paragraph:
+
+A Margherita pizza is a type of pizza that must have mozzarella and tomato toppings, but it can also have other toppings. It's specifically not one of those other types of pizzas like American, American Hot, Cajun, Capricciosa, Caprina, Fiorentina, Four Seasons, Frutti di Mare, Giardiniera, La Reine, Mushroom, Napoletana, Parmense, Pollo ad Astra, Prince Carlo, Quattro Formaggi, Rosa, Siciliana, Sloppy Giuseppe, Soho, or Unclosed Pizza.",llama3,5,30,9,42,22.0,5,4.0,3,2.0,1.0,1.0,2,2,,,,
+pizza,http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#InterestingPizza,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:interesting_pizza a owl:Class ;
+    rdfs:comment ""Any pizza that has at least 3 toppings. Note that this is a cardinality constraint on the hasTopping property and NOT a qualified cardinality constraint (QCR). A QCR would specify from which class the members in this relationship must be. eg has at least 3 toppings from PizzaTopping. This is currently not supported in OWL.""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                            owl:minCardinality ""3""^^xsd:int ;
+                            owl:onProperty :has_topping ] ;
+                    rdf:rest [ rdf:first :pizza ;
+                            rdf:rest :nil ] ] ] .
+
+","interesting pizza is same as all of (has at least 3 toppings, and a pizza).","Here's the rewritten text in a casual paragraph:
+
+An interesting pizza is any pizza that has at least three toppings. This means that an interesting pizza must have more than two, but it doesn't matter what those toppings are - they could be anything from cheese to pepperoni to olives. The key thing is that there are at least three of them.",llama3,1,6,8,12,,3,,1,,,,2,2,1.0,1.0,1.0,1.0
