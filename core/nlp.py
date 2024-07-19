@@ -6,6 +6,7 @@ from openai import OpenAI
 logging.getLogger("openai").setLevel(logging.ERROR)
 logging.getLogger("httpx").setLevel(logging.ERROR)
 
+
 def get_messages(pseudo_text: str, extra_context: Optional[str] = None):
     """
     Get messages (system, assistant, user)
@@ -48,7 +49,7 @@ def get_messages(pseudo_text: str, extra_context: Optional[str] = None):
     ]
 
 
-class LanguageModel:
+class ParaphraseLanguageModel:
     def pseudo_to_text(self, pseudo_text: str, extra: str = None) -> str:
         return pseudo_text
 
@@ -61,7 +62,7 @@ class LanguageModel:
         return 'Unknown'
 
 
-class ChatGptModel(LanguageModel):
+class ChatGptModelParaphrase(ParaphraseLanguageModel):
     models = {
         "gpt-4o": {
             "input": 0.005,
@@ -148,7 +149,7 @@ class ChatGptModel(LanguageModel):
         return self.model
 
 
-class LlamaModel(LanguageModel):
+class LlamaModelParaphrase(ParaphraseLanguageModel):
     def __init__(self, base_url, model='llama3', temperature=0.5):
         self.temperature = temperature
         self.model = model

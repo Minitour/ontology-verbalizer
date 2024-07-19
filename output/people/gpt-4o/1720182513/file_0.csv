@@ -1,0 +1,268 @@
+ontology,root,fragment,text,llm_text,model,statements,unique_concepts,unique_relationships,total_relationships,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#equivalentClass,http://www.w3.org/2002/07/owl#intersectionOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#first,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,http://www.w3.org/2002/07/owl#onProperty,http://www.w3.org/2002/07/owl#someValuesFrom,http://www.w3.org/2002/07/owl#onDatatype,http://www.w3.org/2002/07/owl#withRestrictions,http://www.w3.org/2001/XMLSchema#minExclusive,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2002/07/owl#disjointWith,http://www.w3.org/2002/07/owl#hasValue,http://www.w3.org/2001/XMLSchema#maxExclusive,http://www.w3.org/2002/07/owl#oneOf,http://www.w3.org/2002/07/owl#maxQualifiedCardinality,http://www.w3.org/2002/07/owl#onClass,http://www.w3.org/2002/07/owl#minQualifiedCardinality,http://www.semanticweb.org/mdebe/ontologies/example#has_Age,http://www.semanticweb.org/mdebe/ontologies/example#has_Friend,http://www.semanticweb.org/mdebe/ontologies/example#has_Gender,http://www.semanticweb.org/mdebe/ontologies/example#has_Brother,http://www.semanticweb.org/mdebe/ontologies/example#has_Daughter,http://www.semanticweb.org/mdebe/ontologies/example#has_Sister,http://www.semanticweb.org/mdebe/ontologies/example#has_Wife
+people,http://www.semanticweb.org/mdebe/ontologies/example#Adult,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:adult a owl:Class ;
+    rdfs:subClassOf :person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has__age ;
+                                    owl:someValuesFrom [ a :datatype ;
+                                            owl:onDatatype :integer ;
+                                            owl:withRestrictions [ rdf:first [ :min_exclusive 18 ] ;
+                                                    rdf:rest :nil ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","adult is a type of a person.
+adult is same as all of (a person, and at least has age some must be min exclusive 18).",An adult is a type of person who is at least 18 years old.,gpt-4o,2,8,11,18,4,1.0,1.0,3.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Boy,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:boy a owl:Class ;
+    rdfs:subClassOf :child ;
+    owl:disjointWith :girl ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :child ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :male ;
+                                    owl:onProperty :has__gender ] ;
+                            rdf:rest :nil ] ] ] .
+
+","boy is a type of a child.
+boy is different from a girl.
+boy is same as all of (a child, and must has gender a male).",A boy is a type of child and is different from a girl. A boy is specifically a child who must have a male gender.,gpt-4o,3,8,9,13,3,1.0,1.0,2.0,2.0,1.0,,,,,1.0,1.0,1.0,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Child,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:child a owl:Class ;
+    rdfs:subClassOf :person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has__age ;
+                                    owl:someValuesFrom [ a :datatype ;
+                                            owl:onDatatype :integer ;
+                                            owl:withRestrictions [ rdf:first [ :max_exclusive 18 ] ;
+                                                    rdf:rest :nil ] ] ] ;
+                            rdf:rest :nil ] ] ] .
+
+","child is a type of a person.
+child is same as all of (a person, and at least has age some must be max exclusive 18).",A child is a type of person who must be under the age of 18.,gpt-4o,2,8,11,18,4,1.0,1.0,3.0,3.0,1.0,1.0,1.0,1.0,,1.0,,,1.0,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Gender,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:gender a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:oneOf [ rdf:first :female ;
+                    rdf:rest [ rdf:first :male ;
+                            rdf:rest :nil ] ] ] .
+
+","gender is same as one of (a female, and a male).",Gender can be either female or male.,gpt-4o,1,5,5,8,2,1.0,,2.0,2.0,,,,,,,,,,1.0,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Girl,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:girl a owl:Class ;
+    rdfs:subClassOf :child ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :child ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :female ;
+                                    owl:onProperty :has__gender ] ;
+                            rdf:rest :nil ] ] ] .
+
+","girl is a type of a child.
+girl is same as all of (a child, and must has gender a female).",A girl is a type of child who must have the gender female.,gpt-4o,2,7,8,12,3,1.0,1.0,2.0,2.0,1.0,,,,,1.0,,1.0,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Hermit,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hermit a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:maxQualifiedCardinality ""0""^^xsd:nonNegativeInteger ;
+                                    owl:onClass :person ;
+                                    owl:onProperty :has__social__relation__with ] ;
+                            rdf:rest :nil ] ] ] .
+
+","hermit is same as all of (a person, and has at most 0 person social relation with).",A hermit is a person who has no social relations with other people.,gpt-4o,1,6,8,12,3,1.0,1.0,2.0,2.0,1.0,,,,,,,,,,1.0,1.0,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Man,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:man a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :adult ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :male ;
+                                    owl:onProperty :has__gender ] ;
+                            rdf:rest :nil ] ] ] .
+
+","man is same as all of (an adult, and must has gender a male).",A man is defined as an adult who must have the male gender.,gpt-4o,1,7,7,11,3,1.0,1.0,2.0,2.0,1.0,,,,,,,1.0,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Parent,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:parent a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :adult ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :has__child ;
+                                    owl:someValuesFrom :person ] ;
+                            rdf:rest :nil ] ] ] .
+
+","parent is same as all of (an adult, and at least has child some a person).",A parent is the same as an adult who has at least one child.,gpt-4o,1,7,7,11,3,1.0,1.0,2.0,2.0,1.0,1.0,,,,,,,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Person,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:person a owl:Class .
+
+",,,gpt-4o,0,2,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Social_Person,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:social_person a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :person ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:minQualifiedCardinality ""5""^^xsd:nonNegativeInteger ;
+                                    owl:onClass :person ;
+                                    owl:onProperty :has__social__relation__with ] ;
+                            rdf:rest :nil ] ] ] .
+
+","social person is same as all of (a person, and has at least 5 person social relation withs).",A social person is someone who is a person and has social relations with at least five other people.,gpt-4o,1,6,8,12,3,1.0,1.0,2.0,2.0,1.0,,,,,,,,,,,1.0,1.0,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Woman,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:woman a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :adult ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:hasValue :female ;
+                                    owl:onProperty :has__gender ] ;
+                            rdf:rest :nil ] ] ] .
+
+","woman is same as all of (an adult, and must has gender a female).",A woman is an adult who must have the gender female.,gpt-4o,1,7,7,11,3,1.0,1.0,2.0,2.0,1.0,,,,,,,1.0,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Beth_Doe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:beth__doe a owl:NamedIndividual,
+        :person ;
+    :has_age 32 .
+
+",beth doe has age 32.,Beth Doe is 32 years old.,gpt-4o,1,3,2,3,2,,,,,,,,,,,,,,,,,,1.0,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Daisy_Buchanan,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:daisy__buchanan a owl:NamedIndividual,
+        :person ;
+    :has_age 32 ;
+    :has_friend :john__doe ;
+    :has_gender :female .
+
+","daisy buchanan has age 32.
+daisy buchanan has friend a john doe.
+daisy buchanan has gender a female.",Daisy Buchanan is a 32-year-old female who is friends with John Doe.,gpt-4o,3,5,4,5,2,,,,,,,,,,,,,,,,,,1.0,1.0,1.0,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Female,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:female a owl:NamedIndividual,
+        :gender .
+
+",,,gpt-4o,0,3,1,2,2,,,,,,,,,,,,,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Jay_Gatsby,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:jay__gatsby a owl:NamedIndividual,
+        :person ;
+    :has_age 42 ;
+    :has_friend :beth__doe,
+        :daisy__buchanan,
+        :john__doe,
+        :john__smith,
+        :nick__carraway .
+
+","jay gatsby has age 42.
+jay gatsby has friend a beth doe.
+jay gatsby has friend a daisy buchanan.
+jay gatsby has friend a john doe.
+jay gatsby has friend a john smith.
+jay gatsby has friend a nick carraway.","Jay Gatsby, who is 42 years old, has friends named Beth Doe, Daisy Buchanan, John Doe, John Smith, and Nick Carraway.",gpt-4o,6,8,3,8,2,,,,,,,,,,,,,,,,,,1.0,5.0,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#John_Doe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:john__doe a owl:NamedIndividual,
+        :person ;
+    :has_age 34 ;
+    :has_brother :tom__doe ;
+    :has_daughter :mary__doe ;
+    :has_friend :john__smith ;
+    :has_sister :sarah__doe ;
+    :has_wife :beth__doe .
+
+","john doe has age 34.
+john doe has brother a tom doe.
+john doe has daughter a mary doe.
+john doe has friend a john smith.
+john doe has sister a sarah doe.
+john doe has wife a beth doe.","John Doe is 34 years old. He has a brother named Tom Doe, a daughter named Mary Doe, a friend named John Smith, a sister named Sarah Doe, and a wife named Beth Doe.",gpt-4o,6,8,7,8,2,,,,,,,,,,,,,,,,,,1.0,1.0,,1.0,1.0,1.0,1.0
+people,http://www.semanticweb.org/mdebe/ontologies/example#John_Smith,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:john__smith a owl:NamedIndividual,
+        :person ;
+    :has_age 43 .
+
+",john smith has age 43.,John Smith is 43 years old.,gpt-4o,1,3,2,3,2,,,,,,,,,,,,,,,,,,1.0,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Male,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:male a owl:NamedIndividual .
+
+",,,gpt-4o,0,2,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Mary_Doe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:mary__doe a owl:NamedIndividual,
+        :person ;
+    :has_sister :susan__doe .
+
+",mary doe has sister a susan doe.,Mary Doe has a sister named Susan Doe.,gpt-4o,1,4,2,3,2,,,,,,,,,,,,,,,,,,,,,,,1.0,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Miss_Havisham,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:miss__havisham a owl:NamedIndividual,
+        :person ;
+    :has_age 65 ;
+    :has_gender :female .
+
+","miss havisham has age 65.
+miss havisham has gender a female.",Miss Havisham is a 65-year-old female.,gpt-4o,2,4,3,4,2,,,,,,,,,,,,,,,,,,1.0,,1.0,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Nick_Carraway,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nick__carraway a owl:NamedIndividual,
+        :person ;
+    :has_age 28 .
+
+",nick carraway has age 28.,Nick Carraway is 28 years old.,gpt-4o,1,3,2,3,2,,,,,,,,,,,,,,,,,,1.0,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Sarah_Doe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:sarah__doe a owl:NamedIndividual,
+        :person .
+
+",,,gpt-4o,0,3,1,2,2,,,,,,,,,,,,,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Susan_Doe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:susan__doe a owl:NamedIndividual,
+        :person .
+
+",,,gpt-4o,0,3,1,2,2,,,,,,,,,,,,,,,,,,,,,,,,
+people,http://www.semanticweb.org/mdebe/ontologies/example#Tom_Doe,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:tom__doe a owl:NamedIndividual,
+        :person .
+
+",,,gpt-4o,0,3,1,2,2,,,,,,,,,,,,,,,,,,,,,,,,

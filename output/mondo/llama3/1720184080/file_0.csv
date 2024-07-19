@@ -1,0 +1,2371 @@
+ontology,root,fragment,text,llm_text,model,statements,unique_concepts,unique_relationships,total_relationships,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2000/01/rdf-schema#label,http://www.w3.org/2002/07/owl#onProperty,http://www.w3.org/2002/07/owl#someValuesFrom,http://www.w3.org/2002/07/owl#equivalentClass,http://www.w3.org/2002/07/owl#intersectionOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#first,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,http://purl.obolibrary.org/obo/IAO_0000115,http://purl.org/dc/terms/conformsTo,http://www.geneontology.org/formats/oboInOwl#hasDbXref,http://www.geneontology.org/formats/oboInOwl#hasExactSynonym,http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym,http://www.geneontology.org/formats/oboInOwl#id,http://www.geneontology.org/formats/oboInOwl#inSubset,http://www.w3.org/2004/02/skos/core#exactMatch,http://purl.obolibrary.org/obo/RO_0002175,http://purl.obolibrary.org/obo/IAO_0000233,http://www.w3.org/2000/01/rdf-schema#seeAlso,http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check,http://www.geneontology.org/formats/oboInOwl#hasAlternativeId,http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym,http://www.w3.org/2000/01/rdf-schema#comment,http://www.w3.org/2004/02/skos/core#closeMatch,http://purl.obolibrary.org/obo/mondo#excluded_subClassOf,http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym,https://w3id.org/semapv/vocab/crossSpeciesExactMatch,http://purl.obolibrary.org/obo/mondo#should_conform_to,http://purl.org/dc/terms/creator,http://purl.obolibrary.org/obo/IAO_0006012
+mondo,http://purl.obolibrary.org/obo/NCBITaxon_169440,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:coelopidae a owl:Class ;
+    rdfs:label ""Coelopidae"" ;
+    rdfs:subClassOf :sciomyzoidea .
+
+",coelopidae is a type of a sciomyzoidea.,"Coelopidae is a type of Sciomyzoidea, which means it belongs to the superfamily Sciomyzoidea within the infraorder Sciomoidea.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/ENVO_01001026,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:electromagnetic_radiation a owl:Class ;
+    rdfs:label ""electromagnetic radiation""@en ;
+    rdfs:subClassOf :radiation .
+
+",electromagnetic radiation is a type of a radiation.,"Electromagnetic radiation is a type of radiation, specifically.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://identifiers.org/hgnc/2328,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cpt1_a a owl:Class ;
+    rdfs:label ""CPT1A"" ;
+    rdfs:subClassOf :gene .
+
+",cpt1 a is a type of a gene.,Cpt1 A refers to a specific type of gene.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0016512,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:lumen_of_duodenum a owl:Class ;
+    rdfs:label ""lumen of duodenum"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :duodenum ],
+        :anatomical_space .
+
+","lumen of duodenum is a type of an anatomical space.
+lumen of duodenum is a type of at least part of some a duodenum.",The lumen of the duodenum is a type of anatomical space that is at least partially contained within the duodenum itself.,llama3,2,6,5,7,2,2,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0002039,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:cognitive_disorder a owl:Class ;
+    rdfs:label ""cognitive disorder"" ;
+    ns1:hasDbXref ""DOID:1561"",
+        ""ICD9:294.9"",
+        ""MEDGEN:40371"",
+        ""MESH:D019965"",
+        ""NCIT:C92196"",
+        ""SCTID:443265004"",
+        ""UMLS:C0009241"" ;
+    ns1:id ""MONDO:0002039"" ;
+    ns1:inSubset :otar ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :disease_disrupts ;
+            owl:someValuesFrom :cognitive_process ],
+        :psychiatric_disorder ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :psychiatric_disorder ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :disease_disrupts ;
+                                    owl:someValuesFrom :cognitive_process ] ;
+                            rdf:rest :nil ] ] ] ;
+    skos:exactMatch :40371,
+        :443265004,
+        :c0009241,
+        :d019965,
+        :doid_1561,
+        :ncit_c92196 ;
+    :conforms_to :specific_disease_by_disrupted_process.yaml ;
+    :has_definition ""A disease affects cognitive processes."" ;
+    :has_exact_synonym ""cognitive disease"",
+        ""cognitive disorder"" ;
+    :has_related_synonym ""organic mental disorder"" .
+
+","cognitive disorder conforms to a specific disease by disrupted process.yaml.
+cognitive disorder has definition a A disease affects cognitive processes..
+cognitive disorder has exact synonym a cognitive disease.
+cognitive disorder has exact synonym a cognitive disorder.
+cognitive disorder has related synonym an organic mental disorder.
+cognitive disorder is a type of a psychiatric disorder.
+cognitive disorder is a type of at least disease disrupts some a cognitive process.
+cognitive disorder is same as all of (a psychiatric disorder, and at least disease disrupts some a cognitive process).","Cognitive disorders are a specific type of disease that disrupts cognitive processes. They have exact synonyms such as cognitive diseases or cognitive disorders themselves. Relatedly, they can also be referred to as organic mental disorders. Moreover, cognitive disorders are a type of psychiatric disorder and are characterized by at least one disease disrupting some cognitive process.",llama3,8,15,17,37,4,2,1,2.0,2.0,1.0,1.0,2.0,2.0,1.0,1.0,7.0,2.0,1.0,1.0,1.0,6.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0100717,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abnormal_cementum_morphology a owl:Class ;
+    rdfs:label ""Abnormal cementum morphology"" ;
+    rdfs:subClassOf :abnormal_odontoid_tissue_morphology,
+        :abnormality_of_dental_structure .
+
+","abnormal cementum morphology is a type of an abnormal odontoid tissue morphology.
+abnormal cementum morphology is a type of an abnormality of dental structure.","Abnormal cementum morphology is an unusual shape or form of the odontoid tissue, which is also an irregularity in the dental structure itself.",llama3,2,4,3,4,1,2,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0010598,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abnormality_of_the_proximal_humeral_epiphysis a owl:Class ;
+    rdfs:label ""Abnormality of the proximal humeral epiphysis"" ;
+    rdfs:subClassOf :abnormality_of_the_humeral_epiphysis .
+
+",abnormality of the proximal humeral epiphysis is a type of an abnormality of the humeral epiphysis.,Abnormality of the proximal humeral epiphysis is a specific kind of abnormality affecting the humeral epiphysis in general.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/GO_0030148,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sphingolipid_biosynthetic_process a owl:Class ;
+    rdfs:label ""sphingolipid biosynthetic process"" ;
+    rdfs:subClassOf :membrane_lipid_biosynthetic_process,
+        :organonitrogen_compound_biosynthetic_process,
+        :sphingolipid_metabolic_process .
+
+","sphingolipid biosynthetic process is a type of a membrane lipid biosynthetic process.
+sphingolipid biosynthetic process is a type of a sphingolipid metabolic process.
+sphingolipid biosynthetic process is a type of an organonitrogen compound biosynthetic process.","The sphingolipid biosynthetic process is a membrane lipid biosynthetic process, it's also a sphingolipid metabolic process and specifically deals with the production of organonitrogen compounds.",llama3,3,5,3,5,1,3,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0013700,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:axial_musculature a owl:Class ;
+    rdfs:label ""axial musculature"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :system ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :main_body_axis ],
+        [ a owl:Restriction ;
+            owl:onProperty :attached_to ;
+            owl:someValuesFrom :axial_skeleton_plus_cranial_skeleton ],
+        :musculature .
+
+","axial musculature is a type of a musculature.
+axial musculature is a type of at least attached to some an axial skeleton plus cranial skeleton.
+axial musculature is a type of at least part of some a main body axis.
+axial musculature is a type of at least part of some a system.","Axial musculature refers to a specific kind of muscle that is attached to the axial skeleton, which includes both the cranial and vertebral components, and is also part of the main body axis, being an integral component of the overall bodily system.",llama3,4,9,5,15,4,4,1,3.0,3.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/ECTO_0000537,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exposure_to_toxin a owl:Class ;
+    rdfs:label ""exposure to toxin"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_exposure_stimulus ;
+            owl:someValuesFrom :toxin ],
+        :exposure_to_chemical_with_biological_effect ;
+    :has_definition ""An exposure to toxin."" .
+
+","exposure to toxin has definition a An exposure to toxin..
+exposure to toxin is a type of an exposure to chemical with biological effect.
+exposure to toxin is a type of at least has exposure stimulus some a toxin.","Exposure to toxin refers to the same thing as exposure to toxin, which is defined as an exposure to toxin. In other words, it's a self-referential definition. However, we can also infer that exposure to toxin is a type of exposure to chemical substances with biological effects, and more specifically, it involves some kind of stimulus from a toxin.",llama3,3,6,6,8,2,2,1,1.0,1.0,,,,,1.0,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0001254,"@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:urothelium_of_ureter a owl:Class ;
+    rdfs:label ""urothelium of ureter"" ;
+    ns1:RO_0002175 :homo_sapiens ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :contributes_to_morphology_of ;
+            owl:someValuesFrom :ureter ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :ureter ],
+        :meso_epithelium,
+        :mixed_endoderm_mesoderm_derived_structure,
+        :urothelium .
+
+","urothelium of ureter is a type of a meso epithelium.
+urothelium of ureter is a type of a mixed endoderm mesoderm derived structure.
+urothelium of ureter is a type of an urothelium.
+urothelium of ureter is a type of at least contributes to morphology of some an ureter.
+urothelium of ureter is a type of at least part of some an ureter.","The urothelium of the ureter is a type of meso-epithelium, mixed endoderm-mesoderm derived structure, and urothelium itself. It also contributes to the morphology and is a part of the ureter.",llama3,5,10,6,14,3,5,1,2.0,2.0,,,,,,,,,,,,,1.0,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0015482,"@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:right_hepatic_artery a owl:Class ;
+    rdfs:label ""right hepatic artery"" ;
+    ns1:RO_0002175 :homo_sapiens ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :connected_to ;
+            owl:someValuesFrom :proper_hepatic_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :right_lobe_of_liver ],
+        :hepatic_artery,
+        :liver_blood_vessel .
+
+","right hepatic artery is a type of a hepatic artery.
+right hepatic artery is a type of a liver blood vessel.
+right hepatic artery is a type of at least connected to some a proper hepatic artery.
+right hepatic artery is a type of at least part of some a right lobe of liver.","The right hepatic artery is a specific type of hepatic artery, which is a type of blood vessel that supplies the liver. It's also connected to the proper hepatic artery and is part of the right lobe of the liver.",llama3,4,10,6,13,3,4,1,2.0,2.0,,,,,,,,,,,,,1.0,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0030059,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:developmental_and_epileptic_encephalopathy_87 a owl:Class ;
+    rdfs:label ""developmental and epileptic encephalopathy, 87"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/4521""^^xsd:anyURI ;
+    ns1:hasDbXref ""DOID:0112221"",
+        ""GARD:16393"",
+        ""MEDGEN:1719688"",
+        ""OMIM:618916"",
+        ""UMLS:C5394501"" ;
+    ns1:id ""MONDO:0030059"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :otar,
+        :rare ;
+    rdfs:subClassOf :developmental_and_epileptic_encephalopathy ;
+    skos:exactMatch :1719688,
+        :618916,
+        :c5394501,
+        :doid_0112221 ;
+    :has_exact_synonym ""DEE87"",
+        ""EIEE87"",
+        ""EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 87"",
+        ""developmental and epileptic encephalopathy 87"",
+        ""epileptic encephalopathy, early infantile, 87"" .
+
+","developmental and epileptic encephalopathy 87 has exact synonym a DEE87.
+developmental and epileptic encephalopathy 87 has exact synonym a EIEE87.
+developmental and epileptic encephalopathy 87 has exact synonym a EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 87.
+developmental and epileptic encephalopathy 87 has exact synonym a developmental and epileptic encephalopathy 87.
+developmental and epileptic encephalopathy 87 has exact synonym an epileptic encephalopathy, early infantile, 87.
+developmental and epileptic encephalopathy 87 is a type of a developmental and epileptic encephalopathy.","DEVELOPMENTAL AND EPILEPTIC ENCEPHALOPATHY 87, also known as Early Infantile Epileptic Encephalopathy 87, is exactly the same thing as EIEE87 or DEE87. It's a type of developmental and epileptic encephalopathy, specifically early infantile epilepsy.",llama3,6,11,9,23,1,1,1,,,,,,,,,5.0,5.0,,1.0,4.0,4.0,,1.0,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CL_0000397,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ganglion_interneuron a owl:Class ;
+    rdfs:label ""ganglion interneuron"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_soma_location ;
+            owl:someValuesFrom :ganglion ],
+        :interneuron .
+
+","ganglion interneuron is a type of an interneuron.
+ganglion interneuron is a type of at least has soma location some a ganglion.",Ganglion interneurons are a type of interneuron that have their soma located within a ganglion.,llama3,2,6,5,7,2,2,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0800349,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:atrial_fibrillation_familial_16 a owl:Class ;
+    rdfs:label ""atrial fibrillation, familial, 16"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/5507""^^xsd:anyURI ;
+    ns1:hasDbXref ""MEDGEN:862136"",
+        ""UMLS:C4013699"" ;
+    ns1:id ""MONDO:0800349"" ;
+    ns1:inSubset :gard_rare,
+        :rare ;
+    rdfs:subClassOf :familial_atrial_fibrillation ;
+    skos:exactMatch :862136,
+        :c4013699 ;
+    :has_exact_synonym ""ATFB16"" .
+
+","atrial fibrillation familial 16 has exact synonym a ATFB16.
+atrial fibrillation familial 16 is a type of a familial atrial fibrillation.","Atrial fibrillation familial 16, which also goes by the exact synonym ATFB16, is a specific type of familial atrial fibrillation.",llama3,2,7,9,12,1,1,1,,,,,,,,,2.0,1.0,,1.0,2.0,2.0,,1.0,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0012744,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:dilated_cardiomyopathy_1_y a owl:Class ;
+    rdfs:label ""dilated cardiomyopathy 1Y"" ;
+    ns1:hasDbXref ""DOID:0110457"",
+        ""GARD:15530"",
+        ""MEDGEN:437215"",
+        ""MESH:C567507"",
+        ""OMIM:611878"",
+        ""UMLS:C2678476"" ;
+    ns1:id ""MONDO:0012744"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :rare ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_material_basis_in_germline_mutation_in ;
+            owl:someValuesFrom :tpm1 ],
+        :left_ventricular_noncompaction ;
+    skos:exactMatch :437215,
+        :611878,
+        :c2678476,
+        :c567507,
+        :doid_0110457 ;
+    :has_definition ""Any familial isolated dilated cardiomyopathy in which the cause of the disease is a mutation in the TPM1 gene."" ;
+    :has_exact_synonym ""CMD1Y"",
+        ""TPM1 familial isolated dilated cardiomyopathy"",
+        ""cardiomyopathy, dilated, type 1Y"",
+        ""dilated cardiomyopathy type 1Y"",
+        ""familial isolated dilated cardiomyopathy caused by mutation in TPM1"" ;
+    :has_related_synonym ""cardiomyopathy, dilated, 1Y"",
+        ""left ventricular noncompaction 9"" .
+
+","dilated cardiomyopathy 1 y has definition a Any familial isolated dilated cardiomyopathy in which the cause of the disease is a mutation in the TPM1 gene..
+dilated cardiomyopathy 1 y has exact synonym a CMD1Y.
+dilated cardiomyopathy 1 y has exact synonym a TPM1 familial isolated dilated cardiomyopathy.
+dilated cardiomyopathy 1 y has exact synonym a cardiomyopathy, dilated, type 1Y.
+dilated cardiomyopathy 1 y has exact synonym a dilated cardiomyopathy type 1Y.
+dilated cardiomyopathy 1 y has exact synonym a familial isolated dilated cardiomyopathy caused by mutation in TPM1.
+dilated cardiomyopathy 1 y has related synonym a cardiomyopathy, dilated, 1Y.
+dilated cardiomyopathy 1 y has related synonym a left ventricular noncompaction 9.
+dilated cardiomyopathy 1 y is a type of a left ventricular noncompaction.
+dilated cardiomyopathy 1 y is a type of at least has material basis in germline mutation in some a tpm1.","Dilated Cardiomyopathy Type 1Y, also known as TPM1 Familial Isolated Dilated Cardiomyopathy or CMD1Y, is a specific type of dilated cardiomyopathy caused by a germline mutation in the TPM1 gene. It's related to Left Ventricular Noncompaction 9 and is characterized by any familial isolated dilated cardiomyopathy resulting from a mutation in the TPM1 gene.",llama3,10,14,12,30,2,2,1,1.0,1.0,,,,,1.0,,6.0,5.0,2.0,1.0,3.0,5.0,,,,,,,,,,,,,,
+mondo,http://identifiers.org/hgnc/28852,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:syce1 a owl:Class ;
+    rdfs:label ""SYCE1"" ;
+    rdfs:subClassOf :gene .
+
+",syce1 is a type of a gene.,Syce1 is a type of gene.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://identifiers.org/hgnc/26576,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ky a owl:Class ;
+    rdfs:label ""KY"" ;
+    rdfs:subClassOf :gene .
+
+",ky is a type of a gene.,Ky is a type of gene.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CL_0002483,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hair_follicle_melanocyte a owl:Class ;
+    rdfs:label ""hair follicle melanocyte"" ;
+    rdfs:subClassOf :epidermal_melanocyte,
+        :hair_follicle_cell .
+
+","hair follicle melanocyte is a type of a hair follicle cell.
+hair follicle melanocyte is a type of an epidermal melanocyte.","Hair follicle melanocytes are a specific type of both hair follicle cells and epidermal melanocytes, suggesting that they have characteristics unique to these two categories.",llama3,2,4,3,4,1,2,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0010116,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:enlarged_epiphyses_of_the_hallux a owl:Class ;
+    rdfs:label ""Enlarged epiphyses of the hallux"" ;
+    rdfs:subClassOf :abnormality_of_the_epiphyses_of_the_hallux,
+        :enlarged_epiphyses_of_the_toes .
+
+","enlarged epiphyses of the hallux is a type of an abnormality of the epiphyses of the hallux.
+enlarged epiphyses of the hallux is a type of an enlarged epiphyses of the toes.","Enlarged epiphyses of the hallux, which is an abnormality of the epiphyses of the hallux, is also a type of enlarged epiphyses found in the toes.",llama3,2,4,3,4,1,2,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0012895,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scapular_muscle_hypertrophy a owl:Class ;
+    rdfs:label ""Scapular muscle hypertrophy"" ;
+    rdfs:subClassOf :skeletal_muscle_hypertrophy .
+
+",scapular muscle hypertrophy is a type of a skeletal muscle hypertrophy.,"Scapular muscle hypertrophy is a specific kind of skeletal muscle growth, which refers to the increase in size or thickness of muscles that connect to the scapula (shoulder blade).",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0019404,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:perineurioma a owl:Class ;
+    rdfs:label ""perineurioma"" ;
+    ns1:hasDbXref ""DOID:4697"",
+        ""GARD:12698"",
+        ""ICD9:215.9"",
+        ""ICDO:9571/0"",
+        ""MEDGEN:199712"",
+        ""NCIT:C4973"",
+        ""Orphanet:85102"",
+        ""SCTID:404036006"",
+        ""UMLS:C0751691"" ;
+    ns1:id ""MONDO:0019404"" ;
+    ns1:inSubset :disease_grouping,
+        :gard_rare,
+        :nord_rare,
+        :ordo_group_of_disorders,
+        :otar,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/12698/perineurioma""^^xsd:anyURI ;
+    rdfs:subClassOf :nerve_sheath_neoplasm,
+        :tumor_of_cranial_and_spinal_nerves ;
+    skos:exactMatch :199712,
+        :404036006,
+        :c0751691,
+        :doid_4697,
+        :ncit_c4973,
+        :orphanet_85102 ;
+    :has_definition ""A usually benign perineurioma not associated with a nerve, arising from the soft tissues."" ;
+    :has_exact_synonym ""perineurioma"" ;
+    :has_related_synonym ""soft tissue perineurioma"" .
+
+","perineurioma has definition a A usually benign perineurioma not associated with a nerve, arising from the soft tissues..
+perineurioma has exact synonym a perineurioma.
+perineurioma has related synonym a soft tissue perineurioma.
+perineurioma is a type of a nerve sheath neoplasm.
+perineurioma is a type of a tumor of cranial and spinal nerves.","Perineuriomas are typically benign tumors that arise from the soft tissues, not associated with a nerve. They have exact synonyms such as perineuriomas themselves, and related synonyms like soft tissue perineuriomas. Interestingly, perineuriomas can also be classified as types of nerve sheath neoplasms or tumors affecting cranial and spinal nerves.",llama3,5,16,11,30,1,2,1,,,,,,,1.0,,9.0,1.0,1.0,1.0,6.0,6.0,,,1.0,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0957530,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:breast_ovarian_cancer_familial_susceptibility_to_5 a owl:Class ;
+    rdfs:label ""breast-ovarian cancer, familial, susceptibility to, 5"" ;
+    ns1:hasDbXref ""MEDGEN:1841251"",
+        ""OMIM:620442"",
+        ""UMLS:C5830615"" ;
+    ns1:id ""MONDO:0957530"" ;
+    rdfs:subClassOf :breast_ovarian_cancer_familial_susceptibility_to ;
+    skos:exactMatch :1841251,
+        :620442,
+        :c5830615 .
+
+",breast ovarian cancer familial susceptibility to 5 is a type of a breast ovarian cancer familial susceptibility to.,"Breast Ovarian Cancer Familial Susceptibility to 5 is a type of Breast Ovarian Cancer Familial Susceptibility, which means that it's a specific subtype or category within the broader group of Breast Ovarian Cancer Familial Susceptibilities.",llama3,1,6,6,10,1,1,1,,,,,,,,,3.0,,,1.0,,3.0,,,,,,,,,,,,,,
+mondo,http://identifiers.org/hgnc/24579,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cib2 a owl:Class ;
+    rdfs:label ""CIB2"" ;
+    rdfs:subClassOf :gene .
+
+",cib2 is a type of a gene.,Cib2 is a type of gene.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0035540,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:pheochromocytoma_paraganglioma a owl:Class ;
+    rdfs:label ""pheochromocytoma-paraganglioma"" ;
+    ns1:hasDbXref ""GARD:22315"",
+        ""MEDGEN:1826130"",
+        ""Orphanet:573163"",
+        ""UMLS:C5681712"" ;
+    ns1:id ""MONDO:0035540"" ;
+    ns1:inSubset :gard_rare,
+        :ordo_group_of_disorders,
+        :rare ;
+    rdfs:subClassOf :adrenal_gland_neoplasm ;
+    skos:exactMatch :1826130,
+        :c5681712,
+        :orphanet_573163 ;
+    :has_definition ""A rare neuroendocrine tumor arising from chromaffin cells of the adrenal medulla (pheochromocytoma) or from sympathetic and parasympathetic ganglia (paraganglioma). These tumors are most often benign and may produce catecholamines in excess causing hypertension and sometimes severe acute cardiovascular complications."" .
+
+","pheochromocytoma paraganglioma has definition a A rare neuroendocrine tumor arising from chromaffin cells of the adrenal medulla (pheochromocytoma) or from sympathetic and parasympathetic ganglia (paraganglioma). These tumors are most often benign and may produce catecholamines in excess causing hypertension and sometimes severe acute cardiovascular complications..
+pheochromocytoma paraganglioma is a type of an adrenal gland neoplasm.","Pheochromocytoma Paraganglioma refers to a rare neuroendocrine tumor that originates from the chromaffin cells in the adrenal medulla or sympathetic and parasympathetic ganglia, which can be benign and produce excessive catecholamines leading to hypertension and potentially severe cardiovascular complications. This type of tumor is classified as an adrenal gland neoplasm.",llama3,2,9,8,15,1,1,1,,,,,,,1.0,,4.0,,,1.0,3.0,3.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0004923,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hyperphenylalaninemia a owl:Class ;
+    rdfs:label ""Hyperphenylalaninemia"" ;
+    rdfs:subClassOf :abnormal_circulating_phenylalanine_concentration .
+
+",hyperphenylalaninemia is a type of an abnormal circulating phenylalanine concentration.,Hyperphenylalaninemia is a type of condition characterized by an irregular or excessive level of phenylalanine in the bloodstream.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0006611,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exoskeleton a owl:Class ;
+    rdfs:label ""exoskeleton"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :integumental_system ],
+        :anatomical_cluster .
+
+","exoskeleton is a type of an anatomical cluster.
+exoskeleton is a type of at least part of some an integumental system.","Exoskeletons are a type of anatomical structure, and they're also a part of an integumentary system in certain organisms.",llama3,2,6,5,7,2,2,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/NCBITaxon_43786,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:culicomorpha a owl:Class ;
+    rdfs:label ""Culicomorpha"" ;
+    rdfs:subClassOf :nematocera .
+
+",culicomorpha is a type of a nematocera.,"Culicomorpha is a type of insect that belongs to the suborder Nematocera, which includes mosquitoes, midges, and crane flies.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0004404,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:distal_epiphysis_of_humerus a owl:Class ;
+    rdfs:label ""distal epiphysis of humerus"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :humerus ],
+        :distal_epiphysis,
+        :epiphysis_of_humerus .
+
+","distal epiphysis of humerus is a type of a distal epiphysis.
+distal epiphysis of humerus is a type of an epiphysis of humerus.
+distal epiphysis of humerus is a type of at least part of some a humerus.","The distal epiphysis of the humerus is a specific kind of epiphysis, and it's also a part of the humerus itself.",llama3,3,7,5,8,2,3,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0030024,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:neurodevelopmental_disorder_with_or_without_autistic_features_and_or_structural_brain_abnormalities a owl:Class ;
+    rdfs:label ""neurodevelopmental disorder with or without autistic features and/or structural brain abnormalities"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/3680""^^xsd:anyURI ;
+    ns1:hasDbXref ""MEDGEN:1714862"",
+        ""OMIM:618859"",
+        ""UMLS:C5394311"" ;
+    ns1:id ""MONDO:0030024"" ;
+    ns1:inSubset :otar ;
+    rdfs:subClassOf :mendelian_neurodevelopmental_disorder ;
+    skos:exactMatch :1714862,
+        :618859,
+        :c5394311 ;
+    :has_exact_synonym ""NEDASB"",
+        ""NEURODEVELOPMENTAL DISORDER WITH OR WITHOUT AUTISTIC FEATURES AND/OR STRUCTURAL BRAIN ABNORMALITIES"",
+        ""neurodevelopmental disorder with or without autistic features and/or structural brain abnormalities"" .
+
+","neurodevelopmental disorder with or without autistic features and or structural brain abnormalities has exact synonym a NEDASB.
+neurodevelopmental disorder with or without autistic features and or structural brain abnormalities has exact synonym a NEURODEVELOPMENTAL DISORDER WITH OR WITHOUT AUTISTIC FEATURES AND/OR STRUCTURAL BRAIN ABNORMALITIES.
+neurodevelopmental disorder with or without autistic features and or structural brain abnormalities has exact synonym a neurodevelopmental disorder with or without autistic features and/or structural brain abnormalities.
+neurodevelopmental disorder with or without autistic features and or structural brain abnormalities is a type of a mendelian neurodevelopmental disorder.","Here's the rewritten paragraph:
+
+Neurodevelopmental disorders with or without autistic features and/or structural brain abnormalities, also known as NEDASB, are exact synonyms for themselves. They're essentially the same thing. Additionally, these neurodevelopmental disorders fall under the broader category of Mendelian neurodevelopmental disorders.",llama3,4,7,9,15,1,1,1,,,,,,,,,3.0,3.0,,1.0,1.0,3.0,,1.0,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0012579,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/mondo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:autoimmune_pulmonary_alveolar_proteinosis a owl:Class ;
+    rdfs:label ""autoimmune pulmonary alveolar proteinosis"" ;
+    ns2:excluded_from_qc_check :qc_omim_subsumption.sparql ;
+    ns1:hasDbXref ""GARD:7499"",
+        ""MEDGEN:410079"",
+        ""MESH:C567049"",
+        ""NANDO:1200747"",
+        ""NANDO:1200748"",
+        ""NORD:1633"",
+        ""OMIM:610910"",
+        ""Orphanet:747"",
+        ""SCTID:707443007"",
+        ""UMLS:C1970472"" ;
+    ns1:id ""MONDO:0012579"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :orphanet_rare,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/7499/autoimmune-pulmonary-alveolar-proteinosis""^^xsd:anyURI ;
+    rdfs:subClassOf :autoimmune_disease,
+        :pulmonary_alveolar_proteinosis ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :pulmonary_alveolar_proteinosis ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :disease_has_basis_in_feature ;
+                                    owl:someValuesFrom :autoimmunity ] ;
+                            rdf:rest :nil ] ] ] ;
+    skos:exactMatch :410079,
+        :610910,
+        :707443007,
+        :c1970472,
+        :c567049,
+        :orphanet_747 ;
+    :has_definition ""Pulmonary alveolar proteinosis (PAP) is a rare lung disease characterized by the accumulation of a lipoproteinaceous substance in the distal air spaces which positively stains with periodic acid-Schiff (PAS)."" ;
+    :has_exact_synonym ""APAP"",
+        ""Pulmonary Alveolar Proteinosis"",
+        ""autoimmune PAP"",
+        ""iPAP"",
+        ""idiopathic PAP"",
+        ""idiopathic pulmonary alveolar proteinosis"" ;
+    :has_related_synonym ""PAP"",
+        ""PAP acquired"",
+        ""Pap, acquired"",
+        ""acquired pulmonary alveolar proteinosis"",
+        ""pulmonary alveolar lipoproteinosis acquired"",
+        ""pulmonary alveolar lipoproteinosis, acquired"",
+        ""pulmonary alveolar proteinosis acquired"",
+        ""pulmonary alveolar proteinosis autoimmune"",
+        ""pulmonary alveolar proteinosis, acquired"",
+        ""pulmonary alveolar proteinosis, autoimmune"" .
+
+","autoimmune pulmonary alveolar proteinosis has definition a Pulmonary alveolar proteinosis (PAP) is a rare lung disease characterized by the accumulation of a lipoproteinaceous substance in the distal air spaces which positively stains with periodic acid-Schiff (PAS)..
+autoimmune pulmonary alveolar proteinosis has exact synonym a APAP.
+autoimmune pulmonary alveolar proteinosis has exact synonym a Pulmonary Alveolar Proteinosis.
+autoimmune pulmonary alveolar proteinosis has exact synonym an autoimmune PAP.
+autoimmune pulmonary alveolar proteinosis has exact synonym an iPAP.
+autoimmune pulmonary alveolar proteinosis has exact synonym an idiopathic PAP.
+autoimmune pulmonary alveolar proteinosis has exact synonym an idiopathic pulmonary alveolar proteinosis.
+autoimmune pulmonary alveolar proteinosis has related synonym a PAP acquired.
+autoimmune pulmonary alveolar proteinosis has related synonym a PAP.
+autoimmune pulmonary alveolar proteinosis has related synonym a Pap, acquired.
+autoimmune pulmonary alveolar proteinosis has related synonym a pulmonary alveolar lipoproteinosis acquired.
+autoimmune pulmonary alveolar proteinosis has related synonym a pulmonary alveolar lipoproteinosis, acquired.
+autoimmune pulmonary alveolar proteinosis has related synonym a pulmonary alveolar proteinosis acquired.
+autoimmune pulmonary alveolar proteinosis has related synonym a pulmonary alveolar proteinosis autoimmune.
+autoimmune pulmonary alveolar proteinosis has related synonym a pulmonary alveolar proteinosis, acquired.
+autoimmune pulmonary alveolar proteinosis has related synonym a pulmonary alveolar proteinosis, autoimmune.
+autoimmune pulmonary alveolar proteinosis has related synonym an acquired pulmonary alveolar proteinosis.
+autoimmune pulmonary alveolar proteinosis is a type of a pulmonary alveolar proteinosis.
+autoimmune pulmonary alveolar proteinosis is a type of an autoimmune disease.
+autoimmune pulmonary alveolar proteinosis is same as all of (a pulmonary alveolar proteinosis, and at least disease has basis in feature some an autoimmunity).","Autoimmune Pulmonary Alveolar Proteinosis (APAP), also known as Pulmonary Alveolar Proteinosis or autoimmune PAP or iPAP or idiopathic PAP or idiopathic pulmonary alveolar proteinosis, is a rare lung disease characterized by the accumulation of a lipoproteinaceous substance in the distal air spaces that positively stains with periodic acid-Schiff (PAS). It's a type of Pulmonary Alveolar Proteinosis and an autoimmune disease, meaning it has its basis in some feature of autoimmunity.",llama3,20,20,18,55,3,2,1,1.0,1.0,1.0,1.0,2.0,2.0,1.0,,10.0,6.0,10.0,1.0,5.0,6.0,,,1.0,1.0,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0010305,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:absence_of_the_sacrum a owl:Class ;
+    rdfs:label ""Absence of the sacrum"" ;
+    rdfs:subClassOf :aplasia_hypoplasia_of_the_sacrum .
+
+",absence of the sacrum is a type of an aplasia hypoplasia of the sacrum.,The absence of the sacrum refers to a condition where there is either a partial or complete underdevelopment (aplasia) or incomplete development (hypoplasia) of this bony structure in the pelvis.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0014572,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:lichtenstein_knorr_syndrome a owl:Class ;
+    rdfs:label ""Lichtenstein-Knorr syndrome"" ;
+    ns1:hasDbXref ""DOID:0080065"",
+        ""GARD:17780"",
+        ""MEDGEN:898996"",
+        ""OMIM:616291"",
+        ""Orphanet:448251"",
+        ""UMLS:C4225383"" ;
+    ns1:id ""MONDO:0014572"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_material_basis_in_germline_mutation_in ;
+            owl:someValuesFrom :slc9_a1 ],
+        :autosomal_recessive_cerebellar_ataxia ;
+    skos:exactMatch :616291,
+        :898996,
+        :c4225383,
+        :doid_0080065,
+        :orphanet_448251 ;
+    :has_exact_synonym ""Lichtenstein-Knorr syndrome"",
+        ""SCAR19"",
+        ""autosomal recessive spinocerebellar ataxia type 19"",
+        ""progressive autosomal recessive ataxia-sensorineural hearing loss syndrome"" ;
+    :has_related_synonym ""LIKNS"",
+        ""autosomal recessive spinocerebellar ataxia 19"",
+        ""progressive autosomal recessive ataxia-deafness syndrome"",
+        ""spinocerebellar ataxia, autosomal recessive 19"" .
+
+","lichtenstein knorr syndrome has exact synonym a Lichtenstein-Knorr syndrome.
+lichtenstein knorr syndrome has exact synonym a SCAR19.
+lichtenstein knorr syndrome has exact synonym a progressive autosomal recessive ataxia-sensorineural hearing loss syndrome.
+lichtenstein knorr syndrome has exact synonym an autosomal recessive spinocerebellar ataxia type 19.
+lichtenstein knorr syndrome has related synonym a LIKNS.
+lichtenstein knorr syndrome has related synonym a progressive autosomal recessive ataxia-deafness syndrome.
+lichtenstein knorr syndrome has related synonym a spinocerebellar ataxia, autosomal recessive 19.
+lichtenstein knorr syndrome has related synonym an autosomal recessive spinocerebellar ataxia 19.
+lichtenstein knorr syndrome is a type of an autosomal recessive cerebellar ataxia.
+lichtenstein knorr syndrome is a type of at least has material basis in germline mutation in some a slc9 a1.","Lichtenstein-Knorr Syndrome, also known as SCAR19 or progressive autosomal recessive ataxia-sensorineural hearing loss syndrome, is an autosomal recessive spinocerebellar ataxia type 19 characterized by the material basis of germline mutations in SLC9A1. It's a type of autosomal recessive cerebellar ataxia with related synonyms including LIKNS and progressive autosomal recessive ataxia-deafness syndrome, and is also known as spinocerebellar ataxia, autosomal recessive 19.",llama3,10,17,11,33,2,2,1,1.0,1.0,,,,,,,6.0,4.0,4.0,1.0,6.0,5.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0800158,"@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix ns2: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inborn_disorder_of_glutamate_glutamine_and_aspartate_asparagine_metabolism a owl:Class ;
+    rdfs:label ""inborn disorder of glutamate/glutamine and aspartate/asparagine metabolism"" ;
+    ns1:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/4985""^^xsd:anyURI ;
+    ns2:id ""MONDO:0800158"" ;
+    ns2:inSubset :gard_rare,
+        :rare ;
+    rdfs:subClassOf :inborn_disorder_of_amino_acid_metabolism ;
+    :has_definition ""A disorder of amino acid metabolism that has its basis in the disruption of the metabolism of glutamate/glutamine and aspartate/asparagine."" .
+
+","inborn disorder of glutamate glutamine and aspartate asparagine metabolism has definition a A disorder of amino acid metabolism that has its basis in the disruption of the metabolism of glutamate/glutamine and aspartate/asparagine..
+inborn disorder of glutamate glutamine and aspartate asparagine metabolism is a type of an inborn disorder of amino acid metabolism.","There's a specific genetic condition affecting how our bodies process certain amino acids, specifically glutamate, glutamine, aspartate, and asparagine. This condition, known as an inborn disorder of amino acid metabolism, has its roots in the malfunctioning of these amino acid metabolic pathways. To be more precise, it's a type of inborn disorder that falls under the broader category of amino acid metabolism disorders.",llama3,2,5,7,8,1,1,1,,,,,,,1.0,,,,,1.0,2.0,,,1.0,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0002278,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:benign_colon_neoplasm a owl:Class ;
+    rdfs:label ""benign colon neoplasm"" ;
+    ns1:hasAlternativeId ""MONDO:0021466"" ;
+    ns1:hasDbXref ""DOID:235"",
+        ""ICD9:211.3"",
+        ""MEDGEN:525"",
+        ""NCIT:C2894"",
+        ""SCTID:92065004"",
+        ""UMLS:C0004991"" ;
+    ns1:id ""MONDO:0002278"" ;
+    ns1:inSubset :otar ;
+    rdfs:subClassOf :benign_neoplasm_of_large_intestine,
+        :colonic_neoplasm ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :benign_neoplasm ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :disease_has_location ;
+                                    owl:someValuesFrom :colon ] ;
+                            rdf:rest :nil ] ] ] ;
+    skos:exactMatch :525,
+        :92065004,
+        :c0004991,
+        :doid_235,
+        :ncit_c2894 ;
+    :conforms_to :benign_neoplasm.yaml ;
+    :has_broad_synonym ""colon neoplasm"",
+        ""colonic tumor"",
+        ""colonic tumour"" ;
+    :has_definition ""A non-metastasizing neoplasm arising from the wall of the colon."" ;
+    :has_exact_synonym ""benign colon neoplasm"",
+        ""benign colon tumor"",
+        ""benign colon tumour"",
+        ""benign colonic neoplasm"",
+        ""benign colonic tumor"",
+        ""benign colonic tumour"",
+        ""benign neoplasm of colon"",
+        ""benign neoplasm of the colon"",
+        ""benign tumor of colon"",
+        ""benign tumor of the colon"",
+        ""benign tumour of colon"",
+        ""benign tumour of the colon"",
+        ""colon benign neoplasm"",
+        ""colonic Mass"" ;
+    :has_related_synonym ""colonic benign neoplasm"" .
+
+","benign colon neoplasm conforms to a benign neoplasm.yaml.
+benign colon neoplasm has broad synonym a colon neoplasm.
+benign colon neoplasm has broad synonym a colonic tumor.
+benign colon neoplasm has broad synonym a colonic tumour.
+benign colon neoplasm has definition a A non-metastasizing neoplasm arising from the wall of the colon..
+benign colon neoplasm has exact synonym a benign colon neoplasm.
+benign colon neoplasm has exact synonym a benign colon tumor.
+benign colon neoplasm has exact synonym a benign colon tumour.
+benign colon neoplasm has exact synonym a benign colonic neoplasm.
+benign colon neoplasm has exact synonym a benign colonic tumor.
+benign colon neoplasm has exact synonym a benign colonic tumour.
+benign colon neoplasm has exact synonym a benign neoplasm of colon.
+benign colon neoplasm has exact synonym a benign neoplasm of the colon.
+benign colon neoplasm has exact synonym a benign tumor of colon.
+benign colon neoplasm has exact synonym a benign tumor of the colon.
+benign colon neoplasm has exact synonym a benign tumour of colon.
+benign colon neoplasm has exact synonym a benign tumour of the colon.
+benign colon neoplasm has exact synonym a colon benign neoplasm.
+benign colon neoplasm has exact synonym a colonic Mass.
+benign colon neoplasm has related synonym a colonic benign neoplasm.
+benign colon neoplasm is a type of a benign neoplasm of large intestine.
+benign colon neoplasm is a type of a colonic neoplasm.
+benign colon neoplasm is same as all of (a benign neoplasm, and at least disease has location some a colon).","A benign colon neoplasm refers to a non-metastasizing tumor that arises from the wall of the colon. It's also known by various names such as colon neoplasm, colonic tumor, or tumour. This type of neoplasm is characterized by its benign nature and does not spread to other parts of the body. It can be classified as a type of benign neoplasm affecting the large intestine, which includes the colon.",llama3,23,16,19,48,3,2,1,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,6.0,14.0,1.0,1.0,1.0,5.0,,,,,1.0,3.0,,,,,,,,
+mondo,http://identifiers.org/hgnc/11909,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:tnfrsf11_b a owl:Class ;
+    rdfs:label ""TNFRSF11B"" ;
+    rdfs:subClassOf :gene .
+
+",tnfrsf11 b is a type of a gene.,Tnfrsf11b is a type of gene.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/GO_0060349,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:bone_morphogenesis a owl:Class ;
+    rdfs:label ""bone morphogenesis"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :bone_development ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :skeletal_system_morphogenesis ],
+        :animal_organ_morphogenesis .
+
+","bone morphogenesis is a type of an animal organ morphogenesis.
+bone morphogenesis is a type of at least part of some a bone development.
+bone morphogenesis is a type of at least part of some a skeletal system morphogenesis.","Bone morphogenesis refers to the process of shaping and forming bones, which is a crucial part of animal organ development, specifically in the context of bone development itself, as well as within the broader framework of skeletal system morphogenesis.",llama3,3,7,5,11,3,3,1,2.0,2.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0004092,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hypothalamus_pituitary_axis a owl:Class ;
+    rdfs:label ""hypothalamus-pituitary axis"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :endocrine_system ],
+        [ a owl:Restriction ;
+            owl:onProperty :only_in_taxon ;
+            owl:someValuesFrom :chordata ],
+        :anatomical_system .
+
+","hypothalamus pituitary axis is a type of an anatomical system.
+hypothalamus pituitary axis is a type of at least only in taxon some a chordata.
+hypothalamus pituitary axis is a type of at least part of some an endocrine system.","The hypothalamic-pituitary axis is a specific type of anatomical system that exists exclusively within the Chordata taxon, and it's also a crucial component of an endocrine system.",llama3,3,8,5,11,3,3,1,2.0,2.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0012789,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dystonia_16 a owl:Class ;
+    rdfs:label ""dystonia 16"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/6752""^^xsd:anyURI ;
+    ns1:hasDbXref ""DOID:0090048"",
+        ""GARD:10539"",
+        ""MEDGEN:436979"",
+        ""MESH:C567430"",
+        ""NANDO:1200529"",
+        ""NCIT:C168729"",
+        ""OMIM:612067"",
+        ""Orphanet:210571"",
+        ""SCTID:722435003"",
+        ""UMLS:C2677567"" ;
+    ns1:id ""MONDO:0012789"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/10539/dystonia-16""^^xsd:anyURI ;
+    rdfs:subClassOf _:N91cb192c4e5a4451abc2d26ef7968fff,
+        :combined_dystonia,
+        :multifocal_dystonia,
+        :parkinsonian_disorder ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :inherited_dystonia ;
+                    rdf:rest [ rdf:first _:N91cb192c4e5a4451abc2d26ef7968fff ;
+                            rdf:rest :nil ] ] ] ;
+    skos:exactMatch :436979,
+        :612067,
+        :722435003,
+        :c2677567,
+        :c567430,
+        :doid_0090048,
+        :ncit_c168729,
+        :orphanet_210571 ;
+    :has_definition ""Dystonia 16 (DYT16) is a very rare and newly discovered movement disorder which is characterized by early-onset progressive limb dystonia, laryngeal and oromandibular dystonia, and parkinsonism."" ;
+    :has_exact_synonym ""DYT-PRKRA"",
+        ""DYT16"",
+        ""PRKRA dystonic disorder"",
+        ""dystonia 16"",
+        ""dystonia type 16"",
+        ""dystonic disorder caused by mutation in PRKRA"",
+        ""early-onset dystonia parkinsonism"" ;
+    :has_related_synonym ""Young-onset dystonia-(parkinsonism)"" .
+
+_:N91cb192c4e5a4451abc2d26ef7968fff a owl:Restriction ;
+    owl:onProperty :has_material_basis_in_germline_mutation_in ;
+    owl:someValuesFrom :prkra .
+
+","dystonia 16 has definition a Dystonia 16 (DYT16) is a very rare and newly discovered movement disorder which is characterized by early-onset progressive limb dystonia, laryngeal and oromandibular dystonia, and parkinsonism..
+dystonia 16 has exact synonym a DYT-PRKRA.
+dystonia 16 has exact synonym a DYT16.
+dystonia 16 has exact synonym a PRKRA dystonic disorder.
+dystonia 16 has exact synonym a dystonia 16.
+dystonia 16 has exact synonym a dystonia type 16.
+dystonia 16 has exact synonym a dystonic disorder caused by mutation in PRKRA.
+dystonia 16 has exact synonym an early-onset dystonia parkinsonism.
+dystonia 16 has related synonym a Young-onset dystonia-(parkinsonism).
+dystonia 16 is a type of a combined dystonia.
+dystonia 16 is a type of a multifocal dystonia.
+dystonia 16 is a type of a parkinsonian disorder.
+dystonia 16 is a type of at least has material basis in germline mutation in some a prkra.
+dystonia 16 is same as all of (an inherited dystonia, and at least has material basis in germline mutation in some a prkra).","Dystonia 16, also known as DYT-PRKRA, PRKRA dystonic disorder, or early-onset dystonia-parkinsonism, is a rare movement disorder characterized by progressive limb dystonia, laryngeal and oromandibular dystonia, and parkinsonian features. It is an inherited condition caused by germline mutations in the PRKRA gene, which makes it a type of combined dystonia, multifocal dystonia, and parkinsonian disorder.",llama3,14,24,18,55,4,4,1,2.0,2.0,1.0,1.0,2.0,2.0,1.0,,10.0,7.0,1.0,1.0,6.0,8.0,,1.0,1.0,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0007030,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:autosomal_dominant_aarskog_syndrome a owl:Class ;
+    rdfs:label ""autosomal dominant Aarskog syndrome"" ;
+    ns1:hasDbXref ""DOID:0111825"",
+        ""GARD:15029"",
+        ""MEDGEN:460570"",
+        ""MESH:C535331"",
+        ""NORD:702"",
+        ""OMIM:100050"",
+        ""SCTID:14921002"",
+        ""UMLS:C3149220"" ;
+    ns1:id ""MONDO:0007030"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :rare ;
+    rdfs:comment ""We place the DO class here as it is explicitly AD, but it's not clear if the intent is for the DO class to be equivalent to the classic X-linked form (the DO synonyms suggest this is the case)"" ;
+    rdfs:subClassOf :autosomal_dominant_disease,
+        :faciodigitogenital_syndrome ;
+    skos:exactMatch :100050,
+        :460570,
+        :c3149220,
+        :doid_0111825 ;
+    :has_related_synonym ""Aarskog Syndrome"",
+        ""Aarskog syndrome"",
+        ""Aarskog syndrome, autosomal dominant"",
+        ""Aarskog-Scott syndrome"",
+        ""faciogenital dysplasia"" .
+
+","autosomal dominant aarskog syndrome has related synonym a Aarskog Syndrome.
+autosomal dominant aarskog syndrome has related synonym a Aarskog syndrome, autosomal dominant.
+autosomal dominant aarskog syndrome has related synonym a Aarskog syndrome.
+autosomal dominant aarskog syndrome has related synonym a Aarskog-Scott syndrome.
+autosomal dominant aarskog syndrome has related synonym a faciogenital dysplasia.
+autosomal dominant aarskog syndrome is a type of a faciodigitogenital syndrome.
+autosomal dominant aarskog syndrome is a type of an autosomal dominant disease.","Autosomal dominant Aarskog Syndrome, also known as Aarskog-Scott Syndrome or Faciogenital Dysplasia, is a type of Autosomal Dominant Disease and a subtype of Faciodigitogenital Syndromes.",llama3,7,11,9,26,1,2,1,,,,,,,,,8.0,,5.0,1.0,3.0,4.0,,,,,,,1.0,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0002255,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:hypertrophic_elongation_of_cervix a owl:Class ;
+    rdfs:label ""hypertrophic elongation of cervix"" ;
+    ns1:hasDbXref ""DOID:2251"",
+        ""ICD9:622.6"",
+        ""MEDGEN:507825"",
+        ""SCTID:198353000"",
+        ""UMLS:C0020561"" ;
+    ns1:id ""MONDO:0002255"" ;
+    rdfs:subClassOf :cervix_disorder ;
+    skos:exactMatch :198353000,
+        :507825,
+        :c0020561,
+        :doid_2251 .
+
+",hypertrophic elongation of cervix is a type of a cervix disorder.,Hypertrophic elongation of the cervix is a specific kind of cervical disorder.,llama3,1,7,6,13,1,1,1,,,,,,,,,5.0,,,1.0,,4.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/GO_0050820,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:positive_regulation_of_coagulation a owl:Class ;
+    rdfs:label ""positive regulation of coagulation"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :positively_regulates ;
+            owl:someValuesFrom :coagulation ],
+        :positive_regulation_of_multicellular_organismal_process,
+        :regulation_of_coagulation .
+
+","positive regulation of coagulation is a type of a positive regulation of multicellular organismal process.
+positive regulation of coagulation is a type of a regulation of coagulation.
+positive regulation of coagulation is a type of at least positively regulates some a coagulation.","Positive regulation of coagulation refers to the process by which something promotes or enhances the overall functioning and organization of multicellular organisms, as well as regulating the clotting process itself.",llama3,3,7,5,8,2,3,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0009799,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supernumerary_spleens a owl:Class ;
+    rdfs:label ""Supernumerary spleens"" ;
+    rdfs:subClassOf :abnormal_spleen_morphology .
+
+",supernumerary spleens is a type of an abnormal spleen morphology.,"Supernumerary spleens refer to a rare and unusual condition where there are multiple spleens present, which is an irregularity in the normal structure of the spleen.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0006755,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:euthyroid_sick_syndrome a owl:Class ;
+    rdfs:label ""euthyroid sick syndrome"" ;
+    ns1:hasDbXref ""DOID:2856"",
+        ""EFO:1000931"",
+        ""ICD10CM:E07.81"",
+        ""ICD9:790.94"",
+        ""MEDGEN:41908"",
+        ""MESH:D005067"",
+        ""MedDRA:10015549"",
+        ""NCIT:C113170"",
+        ""SCTID:237542005"",
+        ""UMLS:C0015190"" ;
+    ns1:id ""MONDO:0006755"" ;
+    ns1:inSubset :otar ;
+    rdfs:subClassOf :syndromic_disease,
+        :thyroid_gland_disorder ;
+    skos:closeMatch :10015549 ;
+    skos:exactMatch :237542005,
+        :41908,
+        :c0015190,
+        :d005067,
+        :doid_2856,
+        :e07.81,
+        :ncit_c113170 ;
+    :has_definition ""Abnormal thyroid function tests, low triiodothyronine with elevated reverse triiodothyronine, in the setting of non-thyroidal illness."" ;
+    :has_exact_synonym ""euthyroid sick syndrome"",
+        ""sick euthyroid syndrome"",
+        ""sick-euthyroid syndrome"" .
+
+","euthyroid sick syndrome has definition a Abnormal thyroid function tests, low triiodothyronine with elevated reverse triiodothyronine, in the setting of non-thyroidal illness..
+euthyroid sick syndrome has exact synonym a sick euthyroid syndrome.
+euthyroid sick syndrome has exact synonym a sick-euthyroid syndrome.
+euthyroid sick syndrome has exact synonym an euthyroid sick syndrome.
+euthyroid sick syndrome is a type of a syndromic disease.
+euthyroid sick syndrome is a type of a thyroid gland disorder.","Euthyroid sick syndrome, also known as sick euthyroid syndrome or sick-euthyroid syndrome, is an exact synonym for itself. It's a type of syndromic disease and a type of thyroid gland disorder characterized by abnormal thyroid function tests, low triiodothyronine levels, and elevated reverse triiodothyronine levels, typically occurring in the context of non-thyroidal illness.",llama3,6,13,10,28,1,2,1,,,,,,,1.0,,10.0,3.0,,1.0,1.0,7.0,,,,,,,,1.0,,,,,,
+mondo,http://purl.obolibrary.org/obo/ECTO_0000207,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:exposure_to_carbon_monoxide a owl:Class ;
+    rdfs:label ""exposure to carbon monoxide"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_exposure_stimulus ;
+            owl:someValuesFrom :carbon_monoxide ],
+        :exposure_to_gas_molecular_entity,
+        :exposure_to_organic_compound,
+        :exposure_to_oxygen_molecular_entity ;
+    :has_definition ""An exposure to carbon monoxide."" .
+
+","exposure to carbon monoxide has definition a An exposure to carbon monoxide..
+exposure to carbon monoxide is a type of an exposure to gas molecular entity.
+exposure to carbon monoxide is a type of an exposure to organic compound.
+exposure to carbon monoxide is a type of an exposure to oxygen molecular entity.
+exposure to carbon monoxide is a type of at least has exposure stimulus some a carbon monoxide.","Exposure to carbon monoxide is defined as an exposure to carbon monoxide itself, and it's also classified as types of exposures: gas molecular entities, organic compounds, and oxygen molecular entities. In other words, being exposed to carbon monoxide is characterized by the presence of this specific substance, which can be categorized under these broader categories.",llama3,5,8,6,10,2,4,1,1.0,1.0,,,,,1.0,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CL_0002303,"@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:pigmented_ciliary_epithelial_cell a owl:Class ;
+    rdfs:label ""pigmented ciliary epithelial cell"" ;
+    ns1:RO_0002175 :homo_sapiens ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :ciliary_epithelium ],
+        :pigmented_epithelial_cell .
+
+","pigmented ciliary epithelial cell is a type of a pigmented epithelial cell.
+pigmented ciliary epithelial cell is a type of at least part of some a ciliary epithelium.","Pigmented ciliary epithelial cells are a type of pigmented epithelial cells, and they are also a part of the ciliary epithelium.",llama3,2,7,6,8,2,2,1,1.0,1.0,,,,,,,,,,,,,1.0,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0009836,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:pancreatitis_sclerosing_cholangitis_and_sicca_complex a owl:Class ;
+    rdfs:label ""pancreatitis, sclerosing cholangitis, and sicca complex"" ;
+    ns1:hasDbXref ""MEDGEN:340461"",
+        ""MESH:C564906"",
+        ""OMIM:260480"",
+        ""UMLS:C1850080"" ;
+    ns1:id ""MONDO:0009836"" ;
+    rdfs:subClassOf :hereditary_disease ;
+    skos:exactMatch :260480,
+        :340461,
+        :c1850080,
+        :c564906 ;
+    :has_exact_synonym ""pancreatitis, sclerosing cholangitis, and sicca complex"" .
+
+","pancreatitis sclerosing cholangitis and sicca complex has exact synonym a pancreatitis, sclerosing cholangitis, and sicca complex.
+pancreatitis sclerosing cholangitis and sicca complex is a type of a hereditary disease.","Sclerosing Pancreatitis, Primary Sclerosing Cholangitis, and Sicca Complex has an exact synonym, which is also known as Sclerosing Pancreatitis, Primary Sclerosing Cholangitis, and Sicca Complex. Additionally, this condition falls under the category of Hereditary Diseases.",llama3,2,7,7,13,1,1,1,,,,,,,,,4.0,1.0,,1.0,,4.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CL_0011030,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:dermal_microvascular_endothelial_cell a owl:Class ;
+    rdfs:label ""dermal microvascular endothelial cell"" ;
+    rdfs:subClassOf :dermis_blood_vessel_endothelial_cell,
+        :microvascular_endothelial_cell .
+
+","dermal microvascular endothelial cell is a type of a dermis blood vessel endothelial cell.
+dermal microvascular endothelial cell is a type of a microvascular endothelial cell.","Dermal microvascular endothelial cells are a specific type of dermis blood vessel endothelial cells, and also a type of microvascular endothelial cells in general.",llama3,2,4,3,4,1,2,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0008376,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:retinal_venous_beading a owl:Class ;
+    rdfs:label ""retinal venous beading"" ;
+    ns1:hasDbXref ""MEDGEN:422473"",
+        ""OMIM:180080"",
+        ""UMLS:C2939143"" ;
+    ns1:id ""MONDO:0008376"" ;
+    rdfs:subClassOf :hereditary_disease ;
+    skos:exactMatch :180080,
+        :422473,
+        :c2939143 ;
+    :has_exact_synonym ""retinal venous beading"" .
+
+","retinal venous beading has exact synonym a retinal venous beading.
+retinal venous beading is a type of a hereditary disease.","Retinal venous beading, also known as retinal venous beading, is a type of hereditary disease.",llama3,2,6,7,11,1,1,1,,,,,,,,,3.0,1.0,,1.0,,3.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0007290,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/mondo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:cataract_5_multiple_types a owl:Class ;
+    rdfs:label ""cataract 5 multiple types"" ;
+    ns2:excluded_from_qc_check :qc_omim_subsumption.sparql ;
+    ns1:hasDbXref ""DOID:0110255"",
+        ""MEDGEN:78608"",
+        ""MESH:C535342"",
+        ""OMIM:116800"",
+        ""UMLS:C0266537"" ;
+    ns1:id ""MONDO:0007290"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :otar,
+        :rare ;
+    rdfs:subClassOf _:N8c6c22b7b9724f0e9da20919073571f6,
+        :early_onset_non_syndromic_cataract ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :cataract ;
+                    rdf:rest [ rdf:first _:N8c6c22b7b9724f0e9da20919073571f6 ;
+                            rdf:rest :nil ] ] ] ;
+    skos:exactMatch :116800,
+        :78608,
+        :c0266537,
+        :c535342,
+        :doid_0110255 ;
+    :has_definition ""Any cataract (disease) in which the cause of the disease is a mutation in the HSF4 gene."" ;
+    :has_exact_synonym ""CTRCT5"",
+        ""HSF4 cataract (disease)"",
+        ""cataract (disease) caused by mutation in HSF4"" ;
+    :has_related_synonym ""cataract 5, multiple types"",
+        ""cataract, Marner type"",
+        ""cataract, lamellar"" .
+
+_:N8c6c22b7b9724f0e9da20919073571f6 a owl:Restriction ;
+    owl:onProperty :has_material_basis_in_germline_mutation_in ;
+    owl:someValuesFrom :hsf4 .
+
+","cataract 5 multiple types has definition a Any cataract (disease) in which the cause of the disease is a mutation in the HSF4 gene..
+cataract 5 multiple types has exact synonym a CTRCT5.
+cataract 5 multiple types has exact synonym a HSF4 cataract (disease).
+cataract 5 multiple types has exact synonym a cataract (disease) caused by mutation in HSF4.
+cataract 5 multiple types has related synonym a cataract 5, multiple types.
+cataract 5 multiple types has related synonym a cataract, Marner type.
+cataract 5 multiple types has related synonym a cataract, lamellar.
+cataract 5 multiple types is a type of an early onset non syndromic cataract.
+cataract 5 multiple types is a type of at least has material basis in germline mutation in some a hsf4.
+cataract 5 multiple types is same as all of (a cataract, and at least has material basis in germline mutation in some a hsf4).","Here's the rewritten paragraph:
+
+Cataract type 5, which involves multiple types, refers to any disease caused by a mutation in the HSF4 gene. It also goes by other names such as CTRCT5 or HSF4 cataract. This condition is characterized as an early-onset non-syndromic cataract and has its roots in germline mutations affecting the HSF4 gene. In essence, it's all about a type of cataract that arises from a genetic mutation in the HSF4 gene.",llama3,10,18,17,40,4,2,1,2.0,2.0,1.0,1.0,2.0,2.0,1.0,,5.0,3.0,3.0,1.0,4.0,5.0,,,,1.0,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0958093,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:non_syndromic_supernumerary_kidneys a owl:Class ;
+    rdfs:label ""non-syndromic supernumerary kidneys"" ;
+    ns1:hasDbXref ""Orphanet:652528"" ;
+    ns1:id ""MONDO:0958093"" ;
+    ns1:inSubset :gard_rare,
+        :ordo_disorder,
+        :orphanet_rare,
+        :rare ;
+    rdfs:subClassOf :kidney_disorder ;
+    skos:exactMatch :orphanet_652528 .
+
+",non syndromic supernumerary kidneys is a type of a kidney disorder.,"Non-syndromic supernumerary kidneys refers to a specific type of kidney disorder characterized by the presence of extra or supernumerary kidneys, without any other associated symptoms or syndromes.",llama3,1,8,7,10,1,1,1,,,,,,,,,1.0,,,1.0,4.0,1.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0001262,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:african_histoplasmosis a owl:Class ;
+    rdfs:label ""African histoplasmosis"" ;
+    ns1:hasDbXref ""DOID:11315"",
+        ""ICD9:115.10"",
+        ""MEDGEN:526120"",
+        ""SCTID:78511005"",
+        ""UMLS:C0220977"" ;
+    ns1:id ""MONDO:0001262"" ;
+    ns1:inSubset :gard_rare,
+        :rare ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :disease_has_infectious_agent ;
+            owl:someValuesFrom :histoplasma_capsulatum_var_duboisii ],
+        :histoplasma_capsulatum_infectious_disease ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :infectious_disease ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :disease_has_infectious_agent ;
+                                    owl:someValuesFrom :histoplasma_capsulatum_var_duboisii ] ;
+                            rdf:rest :nil ] ] ] ;
+    skos:exactMatch :526120,
+        :78511005,
+        :c0220977,
+        :doid_11315 ;
+    :conforms_to :infectious_disease_by_agent.yaml ;
+    :has_definition ""An disease or disorder caused by infection with Histoplasma capsulatum var. duboisii."" ;
+    :has_exact_synonym ""African histoplasmosis"",
+        ""Histoplasma capsulatum var. duboisii caused disease or disorder"",
+        ""Histoplasma capsulatum var. duboisii disease or disorder"",
+        ""Histoplasma capsulatum var. duboisii infectious disease"" ;
+    :has_related_synonym ""Histoplasma duboisii infection"",
+        ""infection by Histoplasma duboisii"",
+        ""large form histoplasmosis"" .
+
+","african histoplasmosis conforms to an infectious disease by agent.yaml.
+african histoplasmosis has definition a An disease or disorder caused by infection with Histoplasma capsulatum var. duboisii..
+african histoplasmosis has exact synonym a African histoplasmosis.
+african histoplasmosis has exact synonym a Histoplasma capsulatum var. duboisii caused disease or disorder.
+african histoplasmosis has exact synonym a Histoplasma capsulatum var. duboisii disease or disorder.
+african histoplasmosis has exact synonym a Histoplasma capsulatum var. duboisii infectious disease.
+african histoplasmosis has related synonym a Histoplasma duboisii infection.
+african histoplasmosis has related synonym a large form histoplasmosis.
+african histoplasmosis has related synonym an infection by Histoplasma duboisii.
+african histoplasmosis is a type of a histoplasma capsulatum infectious disease.
+african histoplasmosis is a type of at least disease has infectious agent some a histoplasma capsulatum var duboisii.
+african histoplasmosis is same as all of (an infectious disease, and at least disease has infectious agent some a histoplasma capsulatum var duboisii).","African Histoplasmosis is an infectious disease caused by the infection with Histoplasma capsulatum var. duboisii. It's also known as African Histoplasmosis, Histoplasma capsulatum var. duboisii caused disease or disorder, and Histoplasma capsulatum var. duboisii infectious disease. This condition is a type of histoplasma capsulatum infectious disease, characterized by the presence of an infectious agent, which in this case is Histoplasma capsulatum var. duboisii.",llama3,12,15,17,38,4,2,1,2.0,2.0,1.0,1.0,2.0,2.0,1.0,1.0,5.0,4.0,3.0,1.0,2.0,4.0,,,,,,,,,,,,,,
+mondo,http://identifiers.org/hgnc/5037,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:hnrnpdl a owl:Class ;
+    rdfs:label ""HNRNPDL"" ;
+    rdfs:subClassOf :gene .
+
+",hnrnpdl is a type of a gene.,"Here's the rewritten paragraph:
+
+HNRNPDL is a type of gene, specifically referring to a particular class of genes that are involved in various biological processes.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0010760,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:supraglenoid_tubercle a owl:Class ;
+    rdfs:label ""supraglenoid tubercle"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :coracoid_process_of_scapula ],
+        :skeletal_element_projection,
+        :tubercle .
+
+","supraglenoid tubercle is a type of a skeletal element projection.
+supraglenoid tubercle is a type of a tubercle.
+supraglenoid tubercle is a type of at least part of some a coracoid process of scapula.","The supraglenoid tubercle is a type of projection that is also a type of tubercle, and it's always found as part of the coracoid process on a scapula, never occurring independently.",llama3,3,7,5,8,2,3,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0015384,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:digestive_duplication_cyst_of_the_tongue a owl:Class ;
+    rdfs:label ""digestive duplication cyst of the tongue"" ;
+    ns1:hasDbXref ""GARD:19942"",
+        ""MEDGEN:1393450"",
+        ""Orphanet:141071"",
+        ""UMLS:C4512051"" ;
+    ns1:id ""MONDO:0015384"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :ordo_morphological_anomaly,
+        :orphanet_rare,
+        :rare ;
+    rdfs:subClassOf :cysts_and_fistulae_of_the_face_and_oral_cavity,
+        :tongue_disorder ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :cysts_and_fistulae_of_the_face_and_oral_cavity ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :disease_has_location ;
+                                    owl:someValuesFrom :tongue ] ;
+                            rdf:rest :nil ] ] ] ;
+    skos:exactMatch :1393450,
+        :c4512051,
+        :orphanet_141071 ;
+    :conforms_to :location.yaml ;
+    :has_definition ""Digestive duplication cyst of the tongue is an extremely rare otorhinolaryngological malformation which occurs during early embryogenesis and is characterized by a single, and on occasion multiple, cystic lesion that is most frequently located in the anterior portion of the tongue, either deeply embedded within it or superficially on it. Depending mostly on size and location of the cyst, patients could be asymptomatic or could present a wide array of symptoms, such as varying degrees of respiratory and feeding difficulties, lingual swelling and protrusion, dysphagia, and more rarely, recurrent bleeding or brownish discharge from a lingual sinus."" ;
+    :has_exact_synonym ""cysts and fistulae of the face and oral cavity of tongue"",
+        ""enteric duplication cyst of the tongue"",
+        ""foregut duplication cyst of the tongue"",
+        ""gastric duplication cyst of the tongue"",
+        ""tongue cysts and fistulae of the face and oral cavity"" .
+
+","digestive duplication cyst of the tongue conforms to a location.yaml.
+digestive duplication cyst of the tongue has definition a Digestive duplication cyst of the tongue is an extremely rare otorhinolaryngological malformation which occurs during early embryogenesis and is characterized by a single, and on occasion multiple, cystic lesion that is most frequently located in the anterior portion of the tongue, either deeply embedded within it or superficially on it. Depending mostly on size and location of the cyst, patients could be asymptomatic or could present a wide array of symptoms, such as varying degrees of respiratory and feeding difficulties, lingual swelling and protrusion, dysphagia, and more rarely, recurrent bleeding or brownish discharge from a lingual sinus..
+digestive duplication cyst of the tongue has exact synonym a cysts and fistulae of the face and oral cavity of tongue.
+digestive duplication cyst of the tongue has exact synonym a foregut duplication cyst of the tongue.
+digestive duplication cyst of the tongue has exact synonym a gastric duplication cyst of the tongue.
+digestive duplication cyst of the tongue has exact synonym a tongue cysts and fistulae of the face and oral cavity.
+digestive duplication cyst of the tongue has exact synonym an enteric duplication cyst of the tongue.
+digestive duplication cyst of the tongue is a type of a cysts and fistulae of the face and oral cavity.
+digestive duplication cyst of the tongue is a type of a tongue disorder.
+digestive duplication cyst of the tongue is same as all of (a cysts and fistulae of the face and oral cavity, and at least disease has location some a tongue).","Here's a rewritten paragraph that combines the information:
+
+A digestive duplication cyst of the tongue is an extremely rare otorhinolaryngological malformation characterized by a single or multiple cystic lesion located in the anterior portion of the tongue. This condition typically occurs during early embryogenesis and can present with various symptoms such as respiratory and feeding difficulties, lingual swelling and protrusion, dysphagia, and rarely, recurrent bleeding or brownish discharge from a lingual sinus. The exact synonyms for this condition include cysts and fistulae of the face and oral cavity of tongue, foregut duplication cyst of the tongue, gastric duplication cyst of the tongue, tongue cysts and fistulae of the face and oral cavity, and enteric duplication cyst of the tongue. It is a type of cysts and fistulae of the face and oral cavity, as well as a type of tongue disorder, specifically occurring in the location of the tongue.",llama3,10,18,16,35,3,2,1,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,4.0,5.0,,1.0,6.0,3.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0023573,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:kozlowski_warren_fisher_syndrome a owl:Class ;
+    rdfs:label ""Kozlowski Warren Fisher syndrome"" ;
+    ns1:hasDbXref ""GARD:353"",
+        ""MEDGEN:419831"",
+        ""MESH:C537614"",
+        ""UMLS:C2931546"" ;
+    ns1:id ""MONDO:0023573"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/353/kozlowski-warren-fisher-syndrome""^^xsd:anyURI ;
+    rdfs:subClassOf :syndromic_disease,
+        :thanatophoric_dysplasia ;
+    skos:exactMatch :419831,
+        :c2931546,
+        :c537614 ;
+    :has_related_synonym ""cloverleaf skull generalised bone dysplasia"",
+        ""cloverleaf skull generalized bone dysplasia"" .
+
+","kozlowski warren fisher syndrome has related synonym a cloverleaf skull generalised bone dysplasia.
+kozlowski warren fisher syndrome has related synonym a cloverleaf skull generalized bone dysplasia.
+kozlowski warren fisher syndrome is a type of a syndromic disease.
+kozlowski warren fisher syndrome is a type of a thanatophoric dysplasia.","Kozlowski Warren Fisher Syndrome, also known as Cloverleaf Skull and Generalized Bone Dysplasia, is a type of Syndromic Disease, specifically a subtype of Thanatophoric Dysplasia.",llama3,4,10,9,18,1,2,1,,,,,,,,,4.0,,2.0,1.0,3.0,3.0,,,1.0,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/GO_0005125,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cytokine_activity a owl:Class ;
+    rdfs:label ""cytokine activity"" ;
+    rdfs:subClassOf :receptor_ligand_activity .
+
+",cytokine activity is a type of a receptor ligand activity.,"Cytokine activity is a type of receptor-ligand activity, specifically referring to the interaction between cytokines (a type of signaling molecule) and their corresponding receptors on cells.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0009737,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:galactosialidosis a owl:Class ;
+    rdfs:label ""galactosialidosis"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/4948""^^xsd:anyURI ;
+    ns1:hasDbXref ""DOID:0080540"",
+        ""GARD:3953"",
+        ""ICD9:277.6"",
+        ""MEDGEN:82779"",
+        ""MESH:C536411"",
+        ""NANDO:1200119"",
+        ""NANDO:2200557"",
+        ""NCIT:C129928"",
+        ""OMIM:256540"",
+        ""Orphanet:351"",
+        ""SCTID:35691006"",
+        ""UMLS:C0268233"" ;
+    ns1:id ""MONDO:0009737"" ;
+    ns1:inSubset :clingen,
+        :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/3953/galactosialidosis""^^xsd:anyURI ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_material_basis_in_germline_mutation_in ;
+            owl:someValuesFrom :ctsa ],
+        :eye_disorder,
+        :lysosomal_storage_disease_with_skeletal_involvement,
+        :oligosaccharidosis ;
+    skos:exactMatch :256540,
+        :35691006,
+        :82779,
+        :c0268233,
+        :c536411,
+        :doid_0080540,
+        :ncit_c129928,
+        :orphanet_351 ;
+    :has_definition ""A lysosomal storage disease characterized by coarse facial features, macular ''cherry red spot'', and dysostosis multiplex. Clinical presentation can be heterogenous ranging from a severe, early-onset, rapidly progressive infantile form to late onset, slowly progressive juvenile/adult form."" ;
+    :has_exact_synonym ""Goldberg syndrome"",
+        ""galactosialidosis"",
+        ""neuraminidase deficiency with beta-galactosidase deficiency"" ;
+    :has_related_synonym ""GSL"",
+        ""PPCA deficiency"",
+        ""cathepsin A deficiency"",
+        ""cathepsin A deficiency of"",
+        ""lysosomal protective Protein deficiency"",
+        ""lysosomal protective protein deficiency of"",
+        ""neuraminidase/Beta-galactosidase expression"",
+        ""protective Protein/Cathepsin a deficiency"" .
+
+","galactosialidosis has definition a A lysosomal storage disease characterized by coarse facial features, macular ''cherry red spot'', and dysostosis multiplex. Clinical presentation can be heterogenous ranging from a severe, early-onset, rapidly progressive infantile form to late onset, slowly progressive juvenile/adult form..
+galactosialidosis has exact synonym a Goldberg syndrome.
+galactosialidosis has exact synonym a galactosialidosis.
+galactosialidosis has exact synonym a neuraminidase deficiency with beta-galactosidase deficiency.
+galactosialidosis has related synonym a GSL.
+galactosialidosis has related synonym a PPCA deficiency.
+galactosialidosis has related synonym a cathepsin A deficiency of.
+galactosialidosis has related synonym a cathepsin A deficiency.
+galactosialidosis has related synonym a lysosomal protective Protein deficiency.
+galactosialidosis has related synonym a lysosomal protective protein deficiency of.
+galactosialidosis has related synonym a neuraminidase/Beta-galactosidase expression.
+galactosialidosis has related synonym a protective Protein/Cathepsin a deficiency.
+galactosialidosis is a type of a lysosomal storage disease with skeletal involvement.
+galactosialidosis is a type of an eye disorder.
+galactosialidosis is a type of an oligosaccharidosis.
+galactosialidosis is a type of at least has material basis in germline mutation in some a ctsa.","Galactosialidosis, also known as Goldberg syndrome or galactosialidosis itself, is a lysosomal storage disease characterized by coarse facial features, macular ""cherry red spot"", and dysostosis multiplex. It can present clinically with varying degrees of severity, ranging from an early-onset, rapidly progressive infantile form to a late-onset, slowly progressive juvenile/adult form. This condition has material basis in germline mutations in the CTSB gene, which codes for cathepsin A, and is related to other conditions such as lysosomal protective protein deficiency, PPCA deficiency, neuraminidase/Beta-galactosidase expression, and oligosaccharidosis. It is also a type of lysosomal storage disease with skeletal involvement and an eye disorder.",llama3,16,23,14,51,2,4,1,1.0,1.0,,,,,1.0,,12.0,3.0,8.0,1.0,7.0,8.0,,1.0,1.0,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CHEBI_79314,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:flame_retardant a owl:Class ;
+    rdfs:label ""flame retardant"" ;
+    rdfs:subClassOf :application ;
+    :has_definition ""Any compound that is added to manufactured materials to inhibit, suppress, or delay the production of flames and so prevent the spread of fire."" .
+
+","flame retardant has definition a Any compound that is added to manufactured materials to inhibit, suppress, or delay the production of flames and so prevent the spread of fire..
+flame retardant is a type of an application.","Flame retardants are applications used to add compounds that inhibit, suppress, or delay the production of flames in manufactured materials, thereby preventing the spread of fire.",llama3,2,3,4,4,1,1,1,,,,,,,1.0,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0032582,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:nephrotic_syndrome_type_19 a owl:Class ;
+    rdfs:label ""nephrotic syndrome, type 19"" ;
+    ns1:hasDbXref ""DOID:0080394"",
+        ""GARD:16301"",
+        ""MEDGEN:1648305"",
+        ""OMIM:618178"",
+        ""UMLS:C4748552"" ;
+    ns1:id ""MONDO:0032582"" ;
+    ns1:inSubset :gard_rare,
+        :rare ;
+    rdfs:subClassOf :familial_nephrotic_syndrome ;
+    skos:exactMatch :1648305,
+        :618178,
+        :c4748552,
+        :doid_0080394 ;
+    :has_related_synonym ""NEPHROTIC SYNDROME, TYPE 19"",
+        ""NPHS19"" .
+
+","nephrotic syndrome type 19 has related synonym a NEPHROTIC SYNDROME, TYPE 19.
+nephrotic syndrome type 19 has related synonym a NPHS19.
+nephrotic syndrome type 19 is a type of a familial nephrotic syndrome.","Nephrotic Syndrome Type 19, also known as NPHS19, is a type of Familial Nephrotic Syndrome, and it's synonymous with both terms: Nephrotic Syndrome Type 19 and NPHS19.",llama3,3,9,8,17,1,1,1,,,,,,,,,5.0,,2.0,1.0,2.0,4.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0003448,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:benign_spiradenoma a owl:Class ;
+    rdfs:label ""benign spiradenoma"" ;
+    ns1:hasDbXref ""DOID:5444"",
+        ""ICDO:8403/0"",
+        ""MEDGEN:90768"",
+        ""NCIT:C4170"",
+        ""ONCOTREE:SPIR"",
+        ""SCTID:403938001"",
+        ""UMLS:C0334347"" ;
+    ns1:id ""MONDO:0003448"" ;
+    ns1:inSubset :otar ;
+    rdfs:comment ""Spiradenomas are usually benign. Malignant forms are rare."" ;
+    rdfs:subClassOf :benign_neoplasm_of_sweat_gland ;
+    skos:exactMatch :403938001,
+        :90768,
+        :c0334347,
+        :doid_5444,
+        :ncit_c4170 ;
+    :excluded_subclassof :apocrine_sweat_gland_neoplasm ;
+    :has_definition ""A benign epithelial neoplasm with eccrine or apocrine differentiation, arising from the sweat glands. It usually presents as a solitary, well circumscribed, firm nodule in the face and upper trunk. It is characterized by the presence of basaloid cells forming nodules in the dermis. Cases of carcinoma arising from long standing spiradenomas have been reported."" ;
+    :has_exact_synonym ""spiradenoma"" ;
+    :has_narrow_synonym ""benign eccrine spiradenoma"",
+        ""eccrine spiradenoma"",
+        ""eccrine spiradenoma (morphologic abnormality)"",
+        ""eccrine spiradenoma of skin"" ;
+    :has_related_synonym ""spiroma/spiradenoma"" .
+
+","benign spiradenoma excluded subClassOf an apocrine sweat gland neoplasm.
+benign spiradenoma has definition a A benign epithelial neoplasm with eccrine or apocrine differentiation, arising from the sweat glands. It usually presents as a solitary, well circumscribed, firm nodule in the face and upper trunk. It is characterized by the presence of basaloid cells forming nodules in the dermis. Cases of carcinoma arising from long standing spiradenomas have been reported..
+benign spiradenoma has exact synonym a spiradenoma.
+benign spiradenoma has narrow synonym a benign eccrine spiradenoma.
+benign spiradenoma has narrow synonym an eccrine spiradenoma (morphologic abnormality).
+benign spiradenoma has narrow synonym an eccrine spiradenoma of skin.
+benign spiradenoma has narrow synonym an eccrine spiradenoma.
+benign spiradenoma has related synonym a spiroma/spiradenoma.
+benign spiradenoma is a type of a benign neoplasm of sweat gland.","Benign Spiradenoma, also known as Spiradenoma or Benign Eccrine Spiradenoma, is a type of benign neoplasm that arises from the apocrine or eccrine sweat glands. It typically presents as a solitary, firm nodule on the face and upper trunk, characterized by the presence of basaloid cells forming nodules in the dermis. This condition is distinct from other types of skin tumors, such as carcinoma, which can arise from long-standing Spiradenomas.",llama3,9,10,13,26,1,1,1,,,,,,,1.0,,7.0,1.0,1.0,1.0,1.0,5.0,,,,,,,1.0,,1.0,4.0,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_1011802,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:congenital_merosin_deficient_muscular_dystrophy_non_human_animal a owl:Class ;
+    rdfs:label ""congenital merosin-deficient muscular dystrophy, non-human animal"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/7225""^^xsd:anyURI ;
+    ns1:hasDbXref ""OMIA:001619"" ;
+    ns1:id ""MONDO:1011802"" ;
+    rdfs:subClassOf :musculoskeletal_system_disorder_non_human_animal .
+
+",congenital merosin deficient muscular dystrophy non human animal is a type of a musculoskeletal system disorder non human animal.,Congenital merosin-deficient muscular dystrophy in non-human animals is a type of musculoskeletal system disorder affecting non-human animals.,llama3,1,3,6,6,1,1,1,,,,,,,,,1.0,,,1.0,,,,1.0,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_1011046,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nephrolithiasis_domestic_cat a owl:Class ;
+    rdfs:label ""nephrolithiasis, domestic cat"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/7075""^^xsd:anyURI ;
+    ns1:hasDbXref ""OMIA:000709-9685"" ;
+    ns1:id ""MONDO:1011046"" ;
+    rdfs:subClassOf :nephrolithiasis_non_human_animal,
+        :urolithiasis_domestic_cat ;
+    :cross_species_exact_match :nephrolithiasis ;
+    :has_definition ""Nephrolithiasis that occurs in domestic cat."" .
+
+","nephrolithiasis domestic cat cross species exact match a nephrolithiasis.
+nephrolithiasis domestic cat has definition a Nephrolithiasis that occurs in domestic cat..
+nephrolithiasis domestic cat is a type of a nephrolithiasis non human animal.
+nephrolithiasis domestic cat is a type of an urolithiasis domestic cat.","Here's the rewritten paragraph:
+
+Nephrolithiasis in domestic cats refers to a specific condition that occurs in felines, and it's defined as a type of kidney stone disease found only in non-human animals. Moreover, this condition is also classified as a type of urolithiasis, which is a broader category of urinary tract stones affecting domestic cats.",llama3,4,5,8,9,1,2,1,,,,,,,1.0,,1.0,,,1.0,,,,1.0,,,,,,,,,1.0,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0008562,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thumb_deformity_alopecia_pigmentation_anomaly_syndrome a owl:Class ;
+    rdfs:label ""thumb deformity-alopecia-pigmentation anomaly syndrome"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/7150""^^xsd:anyURI ;
+    ns1:hasDbXref ""GARD:5199"",
+        ""MEDGEN:348284"",
+        ""MESH:C566054"",
+        ""OMIM:188150"",
+        ""Orphanet:2251"",
+        ""Orphanet:79132"",
+        ""UMLS:C1861168"" ;
+    ns1:id ""MONDO:0008562"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :ordo_malformation_syndrome,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_characteristic ;
+            owl:someValuesFrom :rare ],
+        :disorder_of_development_or_morphogenesis ;
+    skos:exactMatch :188150,
+        :348284,
+        :c1861168,
+        :c566054,
+        :orphanet_2251 ;
+    :excluded_subclassof :congenital_limb_malformation,
+        :ectodermal_dysplasia_syndrome ;
+    :has_definition ""A rare, genetic, congenital limb malformation syndrome characterized by short stature, sparse scalp hair, hypoplastic, proximally-placed thumbs, and skin hyperpigmentation with areas of 'raindrop' depigmentation. Presence of a single, upper central incisor has also been reported. There have been no further descriptions in the literature since 1988."" ;
+    :has_exact_synonym ""thumb deformity and alopecia"" ;
+    :has_related_synonym ""congenital deformity of the thumb and congenital alopecia"",
+        ""hypotrichosis associated with congenital hypoplasia of the thumb"",
+        ""sparse hair, short stature, hypoplastic thumbs, single upper central incisor and abnormal skin pigmentation"",
+        ""thumb deformity, alopecia, pigmentation anomaly"" .
+
+","thumb deformity alopecia pigmentation anomaly syndrome excluded subClassOf a congenital limb malformation.
+thumb deformity alopecia pigmentation anomaly syndrome excluded subClassOf an ectodermal dysplasia syndrome.
+thumb deformity alopecia pigmentation anomaly syndrome has definition a A rare, genetic, congenital limb malformation syndrome characterized by short stature, sparse scalp hair, hypoplastic, proximally-placed thumbs, and skin hyperpigmentation with areas of 'raindrop' depigmentation. Presence of a single, upper central incisor has also been reported. There have been no further descriptions in the literature since 1988..
+thumb deformity alopecia pigmentation anomaly syndrome has exact synonym a thumb deformity and alopecia.
+thumb deformity alopecia pigmentation anomaly syndrome has related synonym a congenital deformity of the thumb and congenital alopecia.
+thumb deformity alopecia pigmentation anomaly syndrome has related synonym a hypotrichosis associated with congenital hypoplasia of the thumb.
+thumb deformity alopecia pigmentation anomaly syndrome has related synonym a sparse hair, short stature, hypoplastic thumbs, single upper central incisor and abnormal skin pigmentation.
+thumb deformity alopecia pigmentation anomaly syndrome has related synonym a thumb deformity, alopecia, pigmentation anomaly.
+thumb deformity alopecia pigmentation anomaly syndrome is a type of a disorder of development or morphogenesis.
+thumb deformity alopecia pigmentation anomaly syndrome is a type of at least has characteristic some a rare.","Here's the rewritten paragraph:
+
+Thumb Deformity Alopecia Pigmentation Anomaly Syndrome (TDAPAS) is a rare, genetic, congenital limb malformation characterized by short stature, sparse scalp hair, and unique thumb deformities. The syndrome also features hypoplastic thumbs with proximal placement, skin hyperpigmentation with areas of ""raindrop"" depigmentation, and occasionally, the presence of only one upper central incisor. Since 1988, there have been no further descriptions in the literature. TDAPAS is a type of developmental disorder that affects morphogenesis, characterized by a combination of rare features including thumb deformity, alopecia, and pigmentation anomalies.",llama3,10,20,14,36,2,2,1,1.0,1.0,,,,,1.0,,7.0,1.0,4.0,1.0,7.0,5.0,,1.0,,,,,,,2.0,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0100164,"@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:permanent_neonatal_diabetes_mellitus a owl:Class ;
+    rdfs:label ""permanent neonatal diabetes mellitus"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/4985""^^xsd:anyURI ;
+    dcterms:creator :0000_0001_5208_3432 ;
+    ns1:hasDbXref ""DOID:0060639"",
+        ""GARD:10457"",
+        ""MEDGEN:371484"",
+        ""MESH:C563425"",
+        ""NCIT:C114902"",
+        ""OMIMPS:606176"",
+        ""Orphanet:99885"",
+        ""SCTID:609565001"",
+        ""UMLS:C1833104"" ;
+    ns1:id ""MONDO:0100164"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/10457/permanent-neonatal-diabetes-mellitus""^^xsd:anyURI ;
+    rdfs:subClassOf :disorder_of_glycolysis,
+        :neonatal_diabetes_mellitus ;
+    skos:exactMatch :371484,
+        :609565001,
+        :c1833104,
+        :c563425,
+        :doid_0060639,
+        :ncit_c114902,
+        :orphanet_99885,
+        :ps606176 ;
+    :has_definition ""Permanent neonatal diabetes mellitus (PNDM) is a monogenic form of neonatal diabetes (NDM) characterized by persistent hyperglycemia within the first 12 months of life in general, requiring continuous insulin treatment."" ;
+    :has_exact_synonym ""PDMI"",
+        ""PNDM"",
+        ""monogenic diabetes of infancy"",
+        ""permanent diabetes mellitus of infancy"" ;
+    :has_related_synonym ""developmental delay, epilepsy, and neonatal diabetes"",
+        ""diabetes mellitus, permanent neonatal"",
+        ""diabetes mellitus, permanent neonatal, with neurologic features"",
+        ""diabetes mellitus, permanent, of infancy"" ;
+    :should_conform_to :omim_phenotypic_series.yaml .
+
+","permanent neonatal diabetes mellitus has definition a Permanent neonatal diabetes mellitus (PNDM) is a monogenic form of neonatal diabetes (NDM) characterized by persistent hyperglycemia within the first 12 months of life in general, requiring continuous insulin treatment..
+permanent neonatal diabetes mellitus has exact synonym a PDMI.
+permanent neonatal diabetes mellitus has exact synonym a PNDM.
+permanent neonatal diabetes mellitus has exact synonym a monogenic diabetes of infancy.
+permanent neonatal diabetes mellitus has exact synonym a permanent diabetes mellitus of infancy.
+permanent neonatal diabetes mellitus has related synonym a developmental delay, epilepsy, and neonatal diabetes.
+permanent neonatal diabetes mellitus has related synonym a diabetes mellitus, permanent neonatal, with neurologic features.
+permanent neonatal diabetes mellitus has related synonym a diabetes mellitus, permanent neonatal.
+permanent neonatal diabetes mellitus has related synonym a diabetes mellitus, permanent, of infancy.
+permanent neonatal diabetes mellitus is a type of a disorder of glycolysis.
+permanent neonatal diabetes mellitus is a type of a neonatal diabetes mellitus.
+permanent neonatal diabetes mellitus should conform to an omim phenotypic series.yaml.","Permanent Neonatal Diabetes Mellitus (PNDM) is a rare, genetic form of diabetes that develops in the first 12 months of life and requires continuous insulin treatment. It's also known as Permanent Diabetes Mellitus of Infancy, Monogenic Diabetes of Infancy, or PDMI. This condition often comes with related symptoms such as developmental delay and epilepsy. PNDM is a type of disorder affecting glycolysis and is classified under the broader category of Neonatal Diabetes Mellitus.",llama3,12,20,14,41,1,2,1,,,,,,,1.0,,9.0,4.0,4.0,1.0,6.0,8.0,,1.0,1.0,,,,,,,,,1.0,1.0,
+mondo,http://purl.obolibrary.org/obo/HP_0003027,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:mesomelia a owl:Class ;
+    rdfs:label ""Mesomelia"" ;
+    rdfs:subClassOf :limb_undergrowth .
+
+",mesomelia is a type of a limb undergrowth.,"Mesomelia is a type of limb abnormality characterized by underdevelopment or shortening of the limbs, specifically the middle segment of the arm or leg.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0004777,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:respiratory_system_submucosa a owl:Class ;
+    rdfs:label ""respiratory system submucosa"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :respiratory_system_connective_tissue ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :respiratory_system ],
+        :submucosa .
+
+","respiratory system submucosa is a type of a submucosa.
+respiratory system submucosa is a type of at least part of some a respiratory system connective tissue.
+respiratory system submucosa is a type of at least part of some a respiratory system.","The respiratory system's submucosa is a type of submucosa, specifically a part of the respiratory system's connective tissue.",llama3,3,7,5,11,3,3,1,2.0,2.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CHEBI_33833,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:heteroarene a owl:Class ;
+    rdfs:label ""heteroarene"" ;
+    rdfs:subClassOf :organic_aromatic_compound,
+        :organic_heterocyclic_compound ;
+    :has_definition ""A heterocyclic compound formally derived from an arene by replacement of one or more methine (-C=) and/or vinylene (-CH=CH-) groups by trivalent or divalent heteroatoms, respectively, in such a way as to maintain the continuous pi-electron system characteristic of aromatic systems and a number of out-of-plane pi-electrons corresponding to the Hueckel rule (4n+2)."" .
+
+","heteroarene has definition a A heterocyclic compound formally derived from an arene by replacement of one or more methine (-C=) and/or vinylene (-CH=CH-) groups by trivalent or divalent heteroatoms, respectively, in such a way as to maintain the continuous pi-electron system characteristic of aromatic systems and a number of out-of-plane pi-electrons corresponding to the Hueckel rule (4n+2)..
+heteroarene is a type of an organic aromatic compound.
+heteroarene is a type of an organic heterocyclic compound.","Heteroarenes are a specific type of organic compounds that belong to two categories: they are both aromatic and heterocyclic. Aromatic refers to the presence of a continuous pi-electron system, while heterocyclic means that one or more atoms in the ring are different from carbon and hydrogen.",llama3,3,4,4,5,1,2,1,,,,,,,1.0,,,,,,,,,,,,,,,,,,,,,
+mondo,http://identifiers.org/hgnc/6180,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:itpr1 a owl:Class ;
+    rdfs:label ""ITPR1"" ;
+    rdfs:subClassOf :gene .
+
+",itpr1 is a type of a gene.,Itpr1 is a type of gene.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/NCBITaxon_9989,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:rodentia a owl:Class ;
+    rdfs:label ""Rodentia"" ;
+    rdfs:subClassOf :glires .
+
+",rodentia is a type of a glires.,"Rodentia is a type of Glires, which means it falls under the category of Glires.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0011526,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abnormality_of_lens_shape a owl:Class ;
+    rdfs:label ""Abnormality of lens shape"" ;
+    rdfs:subClassOf :abnormal_lens_morphology .
+
+",abnormality of lens shape is a type of an abnormal lens morphology.,Abnormality of lens shape is a specific kind of irregular lens structure.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0003157,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:disappearing_bone_disease a owl:Class ;
+    rdfs:label ""disappearing bone disease"" ;
+    ns1:hasDbXref ""DOID:4837"",
+        ""ICD9:733.09"",
+        ""MEDGEN:45247"",
+        ""NANDO:1200878"",
+        ""NANDO:1200880"",
+        ""SCTID:240161003"",
+        ""UMLS:C0029436"" ;
+    ns1:id ""MONDO:0003157"" ;
+    ns1:inSubset :otar ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :disease_has_feature ;
+            owl:someValuesFrom :osteolysis ],
+        :syndromic_disease ;
+    skos:exactMatch :240161003,
+        :45247,
+        :c0029436,
+        :doid_4837 ;
+    :has_definition ""Syndromes of bone destruction where the cause is not obvious such as neoplasia, infection, or trauma. The destruction follows various patterns: massive (Gorham disease), multicentric (hajdu-cheney syndrome), or carpal/tarsal."" ;
+    :has_exact_synonym ""essential osteolysis"",
+        ""phantom bone disease"" ;
+    :has_related_synonym ""Gorham's disease"",
+        ""Gorham-Stout syndrome"",
+        ""massive osteolysis"" .
+
+","disappearing bone disease has definition a Syndromes of bone destruction where the cause is not obvious such as neoplasia, infection, or trauma. The destruction follows various patterns: massive (Gorham disease), multicentric (hajdu-cheney syndrome), or carpal/tarsal..
+disappearing bone disease has exact synonym a phantom bone disease.
+disappearing bone disease has exact synonym an essential osteolysis.
+disappearing bone disease has related synonym a Gorham's disease.
+disappearing bone disease has related synonym a Gorham-Stout syndrome.
+disappearing bone disease has related synonym a massive osteolysis.
+disappearing bone disease is a type of a syndromic disease.
+disappearing bone disease is a type of at least disease has feature some an osteolysis.","Disappearing Bone Disease, also known as Phantom Bone Disease or Essential Osteolysis, refers to a group of Syndromes characterized by unexplained bone destruction. This condition can manifest in various patterns, such as massive bone loss (Gorham's disease), multicentric involvement (Hajdu-Cheney syndrome), or localized destruction affecting specific joints like the wrist or ankle. It is a type of syndromic disease that typically involves osteolysis, which is the gradual loss of bone tissue.",llama3,8,11,12,26,2,2,1,1.0,1.0,,,,,1.0,,7.0,2.0,3.0,1.0,1.0,4.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CHR_9606-chr13p,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:13p_human_ a owl:Class ;
+    rdfs:label ""13p (Human)"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :in_taxon ;
+            owl:someValuesFrom :homo_sapiens ],
+        [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :chromosome_13_human_ ],
+        :chromosomal_region .
+
+","13p human is a type of a chromosomal region.
+13p human is a type of at least in taxon some a homo sapiens.
+13p human is a type of at least part of some a chromosome 13 human.","The chromosomal region 13p refers to the short arm of human chromosome 13, and it's found in humans (Homo sapiens) as well as other species that have this particular taxon. In other words, 13p is a part of chromosome 13 that exists in humans and possibly other organisms.",llama3,3,8,5,11,3,3,1,2.0,2.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0020219,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:motor_seizure a owl:Class ;
+    rdfs:label ""Motor seizure"" ;
+    rdfs:subClassOf :seizure .
+
+",motor seizure is a type of a seizure.,"Motor seizure is a specific kind of seizure, which is a broader category that encompasses various types of seizures.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CL_2000066,"@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:cardiac_ventricle_fibroblast a owl:Class ;
+    rdfs:label ""cardiac ventricle fibroblast"" ;
+    ns1:RO_0002175 :homo_sapiens ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :cardiac_ventricle ],
+        :fibroblast_of_cardiac_tissue .
+
+","cardiac ventricle fibroblast is a type of a fibroblast of cardiac tissue.
+cardiac ventricle fibroblast is a type of at least part of some a cardiac ventricle.","Cardiac ventricle fibroblasts are a type of fibroblasts found in cardiac tissue, and they are also a type of cell that makes up at least a portion of the cardiac ventricle itself.",llama3,2,7,6,8,2,2,1,1.0,1.0,,,,,,,,,,,,,1.0,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0009849,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hyperimmunoglobulinemia_d_with_periodic_fever a owl:Class ;
+    rdfs:label ""hyperimmunoglobulinemia D with periodic fever"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/6747""^^xsd:anyURI ;
+    ns1:hasDbXref ""DOID:0081450"",
+        ""GARD:2788"",
+        ""MEDGEN:140768"",
+        ""NANDO:1200866"",
+        ""NANDO:2200436"",
+        ""OMIM:260920"",
+        ""Orphanet:343"",
+        ""UMLS:C0398691"" ;
+    ns1:id ""MONDO:0009849"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_subtype_of_a_disorder,
+        :otar,
+        :rare ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_material_basis_in_germline_mutation_in ;
+            owl:someValuesFrom :mvk ],
+        :immune_system_disorder,
+        :mevalonate_kinase_deficiency ;
+    skos:exactMatch :140768,
+        :260920,
+        :c0398691,
+        :doid_0081450,
+        :orphanet_343 ;
+    :has_definition ""Hyperimmunoglobinemia D with periodic fever (HIDS) is a rare autoinflammatory disease characterized by periodic attacks of fever and a systemic inflammatory reaction (cervical lymphadenopathy, abdominal pain, vomiting, diarrhea, arthralgias and skin signs)."" ;
+    :has_exact_synonym ""HIDS"",
+        ""hyper-IgD syndrome"",
+        ""hyperimmunoglobinemia D with recurrent fever"",
+        ""hyperimmunoglobulinemia D syndrome"",
+        ""partial mevalonate kinase deficiency"" ;
+    :has_related_synonym ""hyper IgD syndrome"",
+        ""hyperimmunoglobulinemia D and periodic fever syndrome"",
+        ""periodic fever Dutch type"",
+        ""periodic fever, Dutch type"" .
+
+","hyperimmunoglobulinemia d with periodic fever has definition a Hyperimmunoglobinemia D with periodic fever (HIDS) is a rare autoinflammatory disease characterized by periodic attacks of fever and a systemic inflammatory reaction (cervical lymphadenopathy, abdominal pain, vomiting, diarrhea, arthralgias and skin signs)..
+hyperimmunoglobulinemia d with periodic fever has exact synonym a HIDS.
+hyperimmunoglobulinemia d with periodic fever has exact synonym a hyper-IgD syndrome.
+hyperimmunoglobulinemia d with periodic fever has exact synonym a hyperimmunoglobinemia D with recurrent fever.
+hyperimmunoglobulinemia d with periodic fever has exact synonym a hyperimmunoglobulinemia D syndrome.
+hyperimmunoglobulinemia d with periodic fever has exact synonym a partial mevalonate kinase deficiency.
+hyperimmunoglobulinemia d with periodic fever has related synonym a hyper IgD syndrome.
+hyperimmunoglobulinemia d with periodic fever has related synonym a hyperimmunoglobulinemia D and periodic fever syndrome.
+hyperimmunoglobulinemia d with periodic fever has related synonym a periodic fever Dutch type.
+hyperimmunoglobulinemia d with periodic fever has related synonym a periodic fever, Dutch type.
+hyperimmunoglobulinemia d with periodic fever is a type of a mevalonate kinase deficiency.
+hyperimmunoglobulinemia d with periodic fever is a type of an immune system disorder.
+hyperimmunoglobulinemia d with periodic fever is a type of at least has material basis in germline mutation in some a mvk.","Hyperimmunoglobulinemia D with periodic fever, also known as HIDS or hyper-IgD syndrome, is a rare autoinflammatory disease characterized by recurring episodes of fever and a systemic inflammatory response. This condition is marked by symptoms such as cervical lymphadenopathy, abdominal pain, vomiting, diarrhea, arthralgias, and skin manifestations. It is a type of immune system disorder with a genetic basis in germline mutations affecting the mevalonate kinase gene (MVK).",llama3,13,17,13,38,2,3,1,1.0,1.0,,,,,1.0,,8.0,5.0,4.0,1.0,5.0,5.0,,1.0,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0002262,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:capillary_lymphangioma a owl:Class ;
+    rdfs:label ""capillary lymphangioma"" ;
+    ns1:hasDbXref ""DOID:2286"",
+        ""MEDGEN:569678"",
+        ""NCIT:C27509"",
+        ""SCTID:445492005"",
+        ""UMLS:C0334543"" ;
+    ns1:id ""MONDO:0002262"" ;
+    ns1:inSubset :gard_rare,
+        :rare ;
+    rdfs:subClassOf :benign_blood_vessel_neoplasm,
+        :capillary_disorder,
+        :lymphangioma ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :lymphangioma ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :disease_has_location ;
+                                    owl:someValuesFrom :capillary ] ;
+                            rdf:rest :nil ] ] ] ;
+    skos:exactMatch :445492005,
+        :569678,
+        :c0334543,
+        :doid_2286 ;
+    :conforms_to :location.yaml ;
+    :has_definition ""A lymphangioma that involves the capillary."" ;
+    :has_exact_synonym ""capillary lymphangioma"" ;
+    :has_related_synonym ""cutaneous lymphangioma"" .
+
+","capillary lymphangioma conforms to a location.yaml.
+capillary lymphangioma has definition a A lymphangioma that involves the capillary..
+capillary lymphangioma has exact synonym a capillary lymphangioma.
+capillary lymphangioma has related synonym a cutaneous lymphangioma.
+capillary lymphangioma is a type of a benign blood vessel neoplasm.
+capillary lymphangioma is a type of a capillary disorder.
+capillary lymphangioma is a type of a lymphangioma.
+capillary lymphangioma is same as all of (a lymphangioma, and at least disease has location some a capillary).","Capillary lymphangioma is a type of benign blood vessel neoplasm that specifically involves the capillaries. It's also known as cutaneous lymphangioma, and it's characterized by an abnormal growth of capillaries in the skin. This condition is a type of lymphangioma, which is a swelling or tumor that affects the lymphatic vessels. Capillary lymphangioma can be considered synonymous with all types of lymphangiomas that occur in the capillaries.",llama3,8,16,17,31,3,3,1,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,5.0,1.0,1.0,1.0,2.0,4.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0014863,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:macrocephaly_dysmorphic_facies_and_psychomotor_retardation a owl:Class ;
+    rdfs:label ""macrocephaly, dysmorphic facies, and psychomotor retardation"" ;
+    ns1:hasDbXref ""MEDGEN:934733"",
+        ""OMIM:617011"",
+        ""UMLS:C4310766"" ;
+    ns1:id ""MONDO:0014863"" ;
+    ns1:inSubset :otar ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_material_basis_in_germline_mutation_in ;
+            owl:someValuesFrom :herc1 ],
+        :hereditary_disease ;
+    skos:exactMatch :617011,
+        :934733,
+        :c4310766 ;
+    :has_exact_synonym ""MDFPMR"",
+        ""macrocephaly, dysmorphic facies, and psychomotor retardation"",
+        ""macrocephaly, dysmorphic facies, and psychomotor retardation; MDFPMR"" .
+
+","macrocephaly dysmorphic facies and psychomotor retardation has exact synonym a MDFPMR.
+macrocephaly dysmorphic facies and psychomotor retardation has exact synonym a macrocephaly, dysmorphic facies, and psychomotor retardation.
+macrocephaly dysmorphic facies and psychomotor retardation has exact synonym a macrocephaly, dysmorphic facies, and psychomotor retardation; MDFPMR.
+macrocephaly dysmorphic facies and psychomotor retardation is a type of a hereditary disease.
+macrocephaly dysmorphic facies and psychomotor retardation is a type of at least has material basis in germline mutation in some a herc1.","Macrocephaly Dysmorphic Facies and Psychomotor Retardation (MDFPMR) is an exact synonym for Macrocephaly, Dysmorphic Facies, and Psychomotor Retardation. It's a type of hereditary disease that has material basis in germline mutation in some cases of HERC1.",llama3,5,10,10,18,2,2,1,1.0,1.0,,,,,,,3.0,3.0,,1.0,1.0,3.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/NCBITaxon_11320,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:influenza_a_virus a owl:Class ;
+    rdfs:label ""Influenza A virus"" ;
+    rdfs:subClassOf :alphainfluenzavirus_influenzae .
+
+",influenza a virus is a type of an alphainfluenzavirus influenzae.,"Influenza A virus is a specific type of Alphainfluenzavirus, which falls under the broader category of Influenzeae.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0008785,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:sideroblastic_anemia_2 a owl:Class ;
+    rdfs:label ""sideroblastic anemia 2"" ;
+    ns1:hasDbXref ""DOID:0060065"",
+        ""GARD:18381"",
+        ""MEDGEN:899109"",
+        ""MESH:C567145"",
+        ""OMIM:205950"",
+        ""UMLS:C4225425"" ;
+    ns1:id ""MONDO:0008785"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :rare ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_material_basis_in_germline_mutation_in ;
+            owl:someValuesFrom :slc25_a38 ],
+        :autosomal_recessive_sideroblastic_anemia ;
+    skos:exactMatch :205950,
+        :899109,
+        :c4225425,
+        :c567145,
+        :doid_0060065 ;
+    :has_related_synonym ""SIDBA2"",
+        ""anemia, sideroblastic, 2, pyridoxine-refractory"",
+        ""anemia, sideroblastic, pyridoxine-refractory, autosomal recessive"",
+        ""pyridoxine refractory sideroblastic anaemia"",
+        ""pyridoxine refractory sideroblastic anemia"",
+        ""sideroblastic anaemia pyridoxine-refractory autosomal recessive"",
+        ""sideroblastic anemia pyridoxine-refractory autosomal recessive"" .
+
+","sideroblastic anemia 2 has related synonym a SIDBA2.
+sideroblastic anemia 2 has related synonym a pyridoxine refractory sideroblastic anaemia.
+sideroblastic anemia 2 has related synonym a pyridoxine refractory sideroblastic anemia.
+sideroblastic anemia 2 has related synonym a sideroblastic anaemia pyridoxine-refractory autosomal recessive.
+sideroblastic anemia 2 has related synonym a sideroblastic anemia pyridoxine-refractory autosomal recessive.
+sideroblastic anemia 2 has related synonym an anemia, sideroblastic, 2, pyridoxine-refractory.
+sideroblastic anemia 2 has related synonym an anemia, sideroblastic, pyridoxine-refractory, autosomal recessive.
+sideroblastic anemia 2 is a type of an autosomal recessive sideroblastic anemia.
+sideroblastic anemia 2 is a type of at least has material basis in germline mutation in some a slc25 a38.","Sideroblastic anemia 2, also known as SIDBA2 or pyridoxine-refractory sideroblastic anemia, is a type of autosomal recessive anemia that has its roots in a germline mutation affecting the SLC25A38 gene. It's characterized by a material basis in genetic defects and shares synonyms such as anemia, sideroblastic, 2, pyridoxine-refractory, or autosomal recessive.",llama3,9,14,10,29,2,2,1,1.0,1.0,,,,,,,6.0,,7.0,1.0,3.0,5.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/GO_0071705,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:nitrogen_compound_transport a owl:Class ;
+    rdfs:label ""nitrogen compound transport"" ;
+    rdfs:subClassOf :transport .
+
+",nitrogen compound transport is a type of a transport.,Nitrogen compounds are transported through some kind of transportation method.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0009162,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ellis_van_creveld_syndrome a owl:Class ;
+    rdfs:label ""Ellis-van Creveld syndrome"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/4948""^^xsd:anyURI ;
+    ns1:hasDbXref ""DOID:12714"",
+        ""GARD:1301"",
+        ""ICD9:756.55"",
+        ""MEDGEN:8584"",
+        ""MESH:D004613"",
+        ""MedDRA:10008724"",
+        ""NCIT:C84684"",
+        ""NORD:1083"",
+        ""OMIM:225500"",
+        ""Orphanet:289"",
+        ""SCTID:62501005"",
+        ""UMLS:C0013903"" ;
+    ns1:id ""MONDO:0009162"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :ordo_malformation_syndrome,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/1301/ellis-van-creveld-syndrome""^^xsd:anyURI ;
+    rdfs:subClassOf :autosomal_recessive_disease,
+        :cardiogenetic_disease,
+        :ectodermal_dysplasia_syndrome,
+        :jeune_syndrome ;
+    skos:closeMatch :10008724 ;
+    skos:exactMatch :225500,
+        :62501005,
+        :8584,
+        :c0013903,
+        :d004613,
+        :doid_12714,
+        :ncit_c84684,
+        :orphanet_289 ;
+    :has_definition ""Ellis-van Creveld syndrome (EVC) is a skeletal and ectoderlam dysplasia characterized by a tetrad of short stature, postaxial polydactyly, ectodermal dysplasia, and congenital heart defects."" ;
+    :has_exact_synonym ""Chondroectodermal dysplasia"",
+        ""EVC"",
+        ""Ellis Van Creveld Syndrome"",
+        ""Ellis Van Creveld syndrome"",
+        ""Ellis-VAN Creveld syndrome"",
+        ""Ellis-van Creveld syndrome"",
+        ""Mesoectodermal dysplasia"",
+        ""mesodermic dysplasia"" .
+
+","ellis van creveld syndrome has definition a Ellis-van Creveld syndrome (EVC) is a skeletal and ectoderlam dysplasia characterized by a tetrad of short stature, postaxial polydactyly, ectodermal dysplasia, and congenital heart defects..
+ellis van creveld syndrome has exact synonym a Chondroectodermal dysplasia.
+ellis van creveld syndrome has exact synonym a EVC.
+ellis van creveld syndrome has exact synonym a Ellis Van Creveld Syndrome.
+ellis van creveld syndrome has exact synonym a Ellis Van Creveld syndrome.
+ellis van creveld syndrome has exact synonym a Ellis-VAN Creveld syndrome.
+ellis van creveld syndrome has exact synonym a Ellis-van Creveld syndrome.
+ellis van creveld syndrome has exact synonym a Mesoectodermal dysplasia.
+ellis van creveld syndrome has exact synonym a mesodermic dysplasia.
+ellis van creveld syndrome is a type of a cardiogenetic disease.
+ellis van creveld syndrome is a type of a jeune syndrome.
+ellis van creveld syndrome is a type of an autosomal recessive disease.
+ellis van creveld syndrome is a type of an ectodermal dysplasia syndrome.","Ellis-van Creveld Syndrome, also known as Chondroectodermal Dysplasia or EVC, is a rare genetic disorder characterized by short stature, postaxial polydactyly, ectodermal dysplasia, and congenital heart defects. It is an autosomal recessive condition that falls under the category of cardiogenetic diseases, Jeune syndrome, and ectodermal dysplasia syndromes.",llama3,13,22,12,46,1,4,1,,,,,,,1.0,,12.0,8.0,,1.0,7.0,8.0,,1.0,1.0,,,,,1.0,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0008116,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oculopharyngeal_muscular_dystrophy a owl:Class ;
+    rdfs:label ""oculopharyngeal muscular dystrophy"" ;
+    ns2:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/5658""^^xsd:anyURI ;
+    ns1:hasDbXref ""DOID:11719"",
+        ""GARD:7245"",
+        ""MEDGEN:75730"",
+        ""MESH:D039141"",
+        ""MedDRA:10052181"",
+        ""NANDO:1200493"",
+        ""NORD:1523"",
+        ""OMIMPS:164300"",
+        ""Orphanet:270"",
+        ""SCTID:77097004"",
+        ""UMLS:C0270952"" ;
+    ns1:id ""MONDO:0008116"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/7245/oculopharyngeal-muscular-dystrophy""^^xsd:anyURI ;
+    rdfs:subClassOf :myopathy_of_extraocular_muscle,
+        :progressive_muscular_dystrophy ;
+    skos:closeMatch :10052181 ;
+    skos:exactMatch :75730,
+        :77097004,
+        :c0270952,
+        :d039141,
+        :doid_11719,
+        :orphanet_270,
+        :ps164300 ;
+    :has_definition ""Oculopharyngeal muscular dystrophy (OPMD) is an adult-onset progressive myopathy characterized by progressive eyelid ptosis, dysphagia, dysarthria and proximal limb weakness."" ;
+    :has_exact_synonym ""OPMD"",
+        ""muscular dystrophy, oculopharyngeal"",
+        ""oculopharyngeal muscular dystrophy"" ;
+    :should_conform_to :omim_phenotypic_series.yaml .
+
+","oculopharyngeal muscular dystrophy has definition a Oculopharyngeal muscular dystrophy (OPMD) is an adult-onset progressive myopathy characterized by progressive eyelid ptosis, dysphagia, dysarthria and proximal limb weakness..
+oculopharyngeal muscular dystrophy has exact synonym a OPMD.
+oculopharyngeal muscular dystrophy has exact synonym a muscular dystrophy, oculopharyngeal.
+oculopharyngeal muscular dystrophy has exact synonym an oculopharyngeal muscular dystrophy.
+oculopharyngeal muscular dystrophy is a type of a myopathy of extraocular muscle.
+oculopharyngeal muscular dystrophy is a type of a progressive muscular dystrophy.
+oculopharyngeal muscular dystrophy should conform to an omim phenotypic series.yaml.","Oculopharyngeal muscular dystrophy, also known as OPMD, is an adult-onset progressive myopathy characterized by eyelid ptosis, difficulty swallowing, speech difficulties, and weakening of the muscles in the arms and legs. It's a type of myopathy that affects extraocular muscles and is considered a form of progressive muscular dystrophy.",llama3,7,19,13,37,1,2,1,,,,,,,1.0,,11.0,3.0,,1.0,6.0,7.0,,1.0,1.0,,,,,1.0,,,,1.0,,
+mondo,http://purl.obolibrary.org/obo/HP_0009136,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:duplication_involving_bones_of_the_feet a owl:Class ;
+    rdfs:label ""Duplication involving bones of the feet"" ;
+    rdfs:subClassOf :abnormal_foot_morphology,
+        :abnormal_lower_limb_bone_morphology .
+
+","duplication involving bones of the feet is a type of an abnormal foot morphology.
+duplication involving bones of the feet is a type of an abnormal lower limb bone morphology.","There's a duplication issue affecting the bones in the feet, which is a form of irregular foot shape, and also falls under the broader category of unusual shapes found in the lower limbs' bones.",llama3,2,4,3,4,1,2,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0000014,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:zone_of_skin a owl:Class ;
+    rdfs:label ""zone of skin"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :skin_of_body ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :dermis ],
+        [ a owl:Restriction ;
+            owl:onProperty :has_part ;
+            owl:someValuesFrom :skin_epidermis ],
+        :ectoderm_derived_structure,
+        :zone_of_organ .
+
+","zone of skin is a type of a zone of organ.
+zone of skin is a type of an ectoderm derived structure.
+zone of skin is a type of at least has part some a dermis.
+zone of skin is a type of at least has part some a skin epidermis.
+zone of skin is a type of at least part of some a skin of body.","The zone of skin refers to a specific area or region on the organ, which is derived from ectoderm and consists of at least parts of dermis and skin epidermis, being an integral part of the overall skin covering the human body.",llama3,5,10,5,16,4,5,1,3.0,3.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0001441,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:pica_disease a owl:Class ;
+    rdfs:label ""pica disease"" ;
+    ns1:hasDbXref ""DOID:12128"",
+        ""ICD9:307.52"",
+        ""MEDGEN:45917"",
+        ""MESH:D010842"",
+        ""NCIT:C92566"",
+        ""SCTID:14077003"",
+        ""UMLS:C0031873"" ;
+    ns1:id ""MONDO:0001441"" ;
+    rdfs:subClassOf :eating_disorder ;
+    skos:exactMatch :14077003,
+        :45917,
+        :c0031873,
+        :d010842,
+        :doid_12128,
+        :ncit_c92566 ;
+    :has_definition ""An eating disorder characterized by the persistent eating of nonnutritive substances such as clay or soil; this behavior must be inappropriate to the level of the individual's development."" ;
+    :has_exact_synonym ""Pica"",
+        ""Pica eating disorder"" .
+
+","pica disease has definition a An eating disorder characterized by the persistent eating of nonnutritive substances such as clay or soil; this behavior must be inappropriate to the level of the individual's development..
+pica disease has exact synonym a Pica eating disorder.
+pica disease has exact synonym a Pica.
+pica disease is a type of an eating disorder.","Pica disease, also known as Pica eating disorder or simply Pica, is a specific type of eating disorder characterized by the persistent and inappropriate consumption of non-nutritive substances like clay or soil, which is not typical for someone's age or developmental level.",llama3,4,9,8,20,1,1,1,,,,,,,1.0,,7.0,2.0,,1.0,,6.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0004436,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:proximal_epiphysis_of_middle_phalanx_of_manual_digit_2 a owl:Class ;
+    rdfs:label ""proximal epiphysis of middle phalanx of manual digit 2"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :part_of ;
+            owl:someValuesFrom :middle_phalanx_of_manual_digit_2 ],
+        :epiphysis_of_middle_phalanx_of_manus,
+        :proximal_epiphysis_of_phalanx_of_manual_digit_2 .
+
+","proximal epiphysis of middle phalanx of manual digit 2 is a type of a proximal epiphysis of phalanx of manual digit 2.
+proximal epiphysis of middle phalanx of manual digit 2 is a type of an epiphysis of middle phalanx of manus.
+proximal epiphysis of middle phalanx of manual digit 2 is a type of at least part of some a middle phalanx of manual digit 2.","The proximal epiphysis of the middle phalanx of the second manual digit is a specific type of epiphysis found on the middle phalanx of the second finger, and it's also an epiphysis that belongs to the middle phalanx of the hand. In other words, it's a part of the middle phalanx itself.",llama3,3,7,5,8,2,3,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/UBERON_0001980,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:arteriole a owl:Class ;
+    rdfs:label ""arteriole"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :contributes_to_morphology_of ;
+            owl:someValuesFrom :artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :connects ;
+            owl:someValuesFrom :capillary ],
+        [ a owl:Restriction ;
+            owl:onProperty :connects ;
+            owl:someValuesFrom :artery ],
+        :arterial_blood_vessel,
+        :blood_microvessel .
+
+","arteriole is a type of a blood microvessel.
+arteriole is a type of an arterial blood vessel.
+arteriole is a type of at least connects some a capillary.
+arteriole is a type of at least connects some an artery.
+arteriole is a type of at least contributes to morphology of some an artery.","Arterioles are a specific type of microvessel that can be found in the blood vessel system, specifically within arteries. They also connect capillaries and contribute to the overall shape or structure of arteries.",llama3,5,9,5,16,4,5,1,3.0,3.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/NCBITaxon_36830,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:clostridium_botulinum_e a owl:Class ;
+    rdfs:label ""Clostridium botulinum E"" ;
+    rdfs:subClassOf :clostridium_botulinum .
+
+",clostridium botulinum e is a type of a clostridium botulinum.,Clostridium botulinum E is a subspecies of Clostridium botulinum.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/CHEBI_35942,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:neurotransmitter_agent a owl:Class ;
+    rdfs:label ""neurotransmitter agent"" ;
+    rdfs:subClassOf :drug,
+        :pharmacological_role ;
+    :has_definition ""A substance used for its pharmacological action on any aspect of neurotransmitter systems. Neurotransmitter agents include agonists, antagonists, degradation inhibitors, uptake inhibitors, depleters, precursors, and modulators of receptor function."" .
+
+","neurotransmitter agent has definition a A substance used for its pharmacological action on any aspect of neurotransmitter systems. Neurotransmitter agents include agonists, antagonists, degradation inhibitors, uptake inhibitors, depleters, precursors, and modulators of receptor function..
+neurotransmitter agent is a type of a drug.
+neurotransmitter agent is a type of a pharmacological role.","Neurotransmitter agents are drugs that play a specific pharmacological role in the neurotransmitter system, which can include agonists, antagonists, degradation inhibitors, uptake inhibitors, depleters, precursors, and modulators of receptor function.",llama3,3,4,4,5,1,2,1,,,,,,,1.0,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_1010215,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:familial_adenomatous_polyposis_non_human_animal a owl:Class ;
+    rdfs:label ""familial adenomatous polyposis, non-human animal"" ;
+    ns1:hasDbXref ""OMIA:001916"" ;
+    ns1:id ""MONDO:1010215"" ;
+    rdfs:subClassOf :cancer_or_benign_tumor_non_human_animal,
+        :syndromic_disease_non_human_animal ;
+    :cross_species_exact_match :familial_adenomatous_polyposis_1 ;
+    :has_definition ""Familial adenomatous polyposis that occurs in non-human animals."" .
+
+","familial adenomatous polyposis non human animal cross species exact match a familial adenomatous polyposis 1.
+familial adenomatous polyposis non human animal has definition a Familial adenomatous polyposis that occurs in non-human animals..
+familial adenomatous polyposis non human animal is a type of a cancer or benign tumor non human animal.
+familial adenomatous polyposis non human animal is a type of a syndromic disease non human animal.","Familial Adenomatous Polyposis in non-human animals, also known as FAP-like syndrome, refers to an exact match with Familial Adenomatous Polyposis 1. This condition is characterized by the occurrence of benign or malignant tumors in non-human animals, which is a type of syndromic disease affecting these species.",llama3,4,5,7,8,1,2,1,,,,,,,1.0,,1.0,,,1.0,,,,,,,,,,,,,1.0,,,
+mondo,http://purl.obolibrary.org/obo/NCBITaxon_11036,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:venezuelan_equine_encephalitis_virus a owl:Class ;
+    rdfs:label ""Venezuelan equine encephalitis virus"" ;
+    rdfs:subClassOf :alphavirus .
+
+",venezuelan equine encephalitis virus is a type of an alphavirus.,"Venezuelan equine encephalitis virus is a specific kind of Alphavirus, which is a particular classification within the broader category of viruses.",llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/GO_1903942,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:positive_regulation_of_respiratory_gaseous_exchange a owl:Class ;
+    rdfs:label ""positive regulation of respiratory gaseous exchange"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :positively_regulates ;
+            owl:someValuesFrom :respiratory_gaseous_exchange_by_respiratory_system ],
+        :positive_regulation_of_multicellular_organismal_process,
+        :regulation_of_respiratory_gaseous_exchange .
+
+","positive regulation of respiratory gaseous exchange is a type of a positive regulation of multicellular organismal process.
+positive regulation of respiratory gaseous exchange is a type of a regulation of respiratory gaseous exchange.
+positive regulation of respiratory gaseous exchange is a type of at least positively regulates some a respiratory gaseous exchange by respiratory system.","The process of positive regulation of respiratory gaseous exchange is a specific type of positive regulation that occurs within multicellular organisms, and it's also a type of regulation that specifically affects the process of respiratory gaseous exchange itself. This regulation is achieved through the respiratory system, which positively regulates some aspect of respiratory gaseous exchange.",llama3,3,7,5,8,2,3,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0023021,"@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix ns2: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dwarfism_lethal_type_advanced_bone_age a owl:Class ;
+    rdfs:label ""dwarfism lethal type advanced bone age"" ;
+    ns1:IAO_0000233 ""https://github.com/monarch-initiative/mondo/issues/7700""^^xsd:anyURI ;
+    ns2:id ""MONDO:0023021"" ;
+    ns2:inSubset :obsoletion_candidate ;
+    rdfs:comment ""Reason of obsoletion: out of scope - MONDO:excludeHistoricalDisease. Term to consider: -"" ;
+    rdfs:seeAlso ""https://rarediseases.info.nih.gov/diseases/1986/dwarfism-lethal-type-advanced-bone-age""^^xsd:anyURI ;
+    rdfs:subClassOf :syndromic_disease ;
+    :scheduled_for_obsoletion_on_or_after ""2024-09-01"" .
+
+","dwarfism lethal type advanced bone age is a type of a syndromic disease.
+dwarfism lethal type advanced bone age scheduled for obsoletion on or after a 2024-09-01.","Dwarfism, Lethal Type, Advanced Bone Age refers to a specific syndrome that is classified as a type of syndromic disease. Additionally, this condition has been slated for obsolescence and will no longer be recognized as a distinct entity after September 1st, 2024.",llama3,2,4,9,9,1,1,1,,,,,,,,,,,,1.0,1.0,,,1.0,1.0,,,,1.0,,,,,,,1.0
+mondo,http://purl.obolibrary.org/obo/UBERON_0010678,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:manual_digit_4_phalanx_cartilage_element a owl:Class ;
+    rdfs:label ""manual digit 4 phalanx cartilage element"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :composed_primarily_of ;
+            owl:someValuesFrom :cartilage_tissue ],
+        [ a owl:Restriction ;
+            owl:onProperty :develops_from ;
+            owl:someValuesFrom :manual_digit_4_phalanx_pre_cartilage_condensation ],
+        :manual_digit_4_phalanx_endochondral_element,
+        :manual_digit_phalanx_cartilage_element .
+
+","manual digit 4 phalanx cartilage element is a type of a manual digit 4 phalanx endochondral element.
+manual digit 4 phalanx cartilage element is a type of a manual digit phalanx cartilage element.
+manual digit 4 phalanx cartilage element is a type of at least composed primarily of some a cartilage tissue.
+manual digit 4 phalanx cartilage element is a type of at least develops from some a manual digit 4 phalanx pre cartilage condensation.","A manual digit 4 phalanx cartilage element is a specific kind of manual digit phalanx endochondral element, which is also a type of manual digit phalanx cartilage element. This cartilage element is primarily composed of cartilage tissue and develops from the pre-cartilage condensation found in the manual digit 4 phalanx.",llama3,4,9,5,12,3,4,1,2.0,2.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/HP_0100705,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:abnormal_glial_cell_morphology a owl:Class ;
+    rdfs:label ""Abnormal glial cell morphology"" ;
+    rdfs:subClassOf :abnormal_nervous_system_morphology .
+
+",abnormal glial cell morphology is a type of an abnormal nervous system morphology.,Abnormal glial cell morphology is a type of abnormality that affects the overall structure of the nervous system.,llama3,1,3,3,3,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/GO_0090024,"@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:negative_regulation_of_neutrophil_chemotaxis a owl:Class ;
+    rdfs:label ""negative regulation of neutrophil chemotaxis"" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :negatively_regulates ;
+            owl:someValuesFrom :neutrophil_chemotaxis ],
+        :negative_regulation_of_granulocyte_chemotaxis,
+        :negative_regulation_of_neutrophil_migration,
+        :regulation_of_neutrophil_chemotaxis .
+
+","negative regulation of neutrophil chemotaxis is a type of a negative regulation of granulocyte chemotaxis.
+negative regulation of neutrophil chemotaxis is a type of a negative regulation of neutrophil migration.
+negative regulation of neutrophil chemotaxis is a type of a regulation of neutrophil chemotaxis.
+negative regulation of neutrophil chemotaxis is a type of at least negatively regulates some a neutrophil chemotaxis.","Negative regulation of neutrophil chemotaxis refers to the process by which something prevents or slows down neutrophil chemotaxis, which is the movement of neutrophils towards a chemical signal. This negative regulation can also be applied to granulocyte chemotaxis and neutrophil migration, suggesting that it's a broader phenomenon affecting different aspects of neutrophil behavior.",llama3,4,8,5,9,2,4,1,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0015635,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns2: <http://purl.obolibrary.org/obo/mondo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:porokeratotic_eccrine_ostial_and_dermal_duct_nevus a owl:Class ;
+    rdfs:label ""porokeratotic eccrine ostial and dermal duct nevus"" ;
+    ns2:excluded_from_qc_check :qc_single_child.sparql ;
+    ns1:hasDbXref ""GARD:20070"",
+        ""MEDGEN:96880"",
+        ""NCIT:C4740"",
+        ""Orphanet:166286"",
+        ""SCTID:239118007"",
+        ""UMLS:C0473579"" ;
+    ns1:id ""MONDO:0015635"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :ordo_disorder,
+        :orphanet_rare,
+        :otar,
+        :rare ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has_characteristic ;
+            owl:someValuesFrom :rare ],
+        :benign_eccrine_neoplasm,
+        :eccrine_sweat_gland_hamartoma,
+        :melanocytic_nevus ;
+    skos:exactMatch :239118007,
+        :96880,
+        :c0473579,
+        :ncit_c4740,
+        :orphanet_166286 ;
+    :excluded_subclassof :obsolete_inherited_skin_tumor ;
+    :has_definition ""A rare, congenital disorder of the eccrine sweat ducts that presents as grouped keratotic papules and plaques with a linear distribution and/or multiple punctate pits filled with tiny keratotic plugs resembling comedones. The lesion are usually located on the acral portion of a limb."" ;
+    :has_exact_synonym ""Porokeratotic eccrine duct and hair follicle Nevus"",
+        ""Porokeratotic eccrine nevus"",
+        ""comedo nevus of the palm"",
+        ""linear eccrine Nevus with comedones"" .
+
+","porokeratotic eccrine ostial and dermal duct nevus excluded subClassOf an obsolete inherited skin tumor.
+porokeratotic eccrine ostial and dermal duct nevus has definition a A rare, congenital disorder of the eccrine sweat ducts that presents as grouped keratotic papules and plaques with a linear distribution and/or multiple punctate pits filled with tiny keratotic plugs resembling comedones. The lesion are usually located on the acral portion of a limb..
+porokeratotic eccrine ostial and dermal duct nevus has exact synonym a Porokeratotic eccrine duct and hair follicle Nevus.
+porokeratotic eccrine ostial and dermal duct nevus has exact synonym a Porokeratotic eccrine nevus.
+porokeratotic eccrine ostial and dermal duct nevus has exact synonym a comedo nevus of the palm.
+porokeratotic eccrine ostial and dermal duct nevus has exact synonym a linear eccrine Nevus with comedones.
+porokeratotic eccrine ostial and dermal duct nevus is a type of a benign eccrine neoplasm.
+porokeratotic eccrine ostial and dermal duct nevus is a type of a melanocytic nevus.
+porokeratotic eccrine ostial and dermal duct nevus is a type of an eccrine sweat gland hamartoma.
+porokeratotic eccrine ostial and dermal duct nevus is a type of at least has characteristic some a rare.","Porokeratotic eccrine ostial and dermal duct nevus, also known as Porokeratotic eccrine duct and hair follicle Nevus, Porokeratotic eccrine nevus, comedo nevus of the palm, linear eccrine Nevus with comedones, is a rare, benign congenital disorder characterized by grouped keratotic papules and plaques with a linear distribution and/or multiple punctate pits filled with tiny keratotic plugs resembling comedones. It typically presents on the acral portion of a limb and is classified as a type of eccrine sweat gland hamartoma or melanocytic nevus, but not an inherited skin tumor.",llama3,10,21,13,34,2,4,1,1.0,1.0,,,,,1.0,,6.0,4.0,,1.0,6.0,5.0,,,,1.0,,,,,1.0,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0009800,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:blount_disease_adolescent a owl:Class ;
+    rdfs:label ""Blount disease, adolescent"" ;
+    ns1:hasDbXref ""GARD:15217"",
+        ""MEDGEN:462922"",
+        ""OMIM:259200"",
+        ""UMLS:C3151572"" ;
+    ns1:id ""MONDO:0009800"" ;
+    ns1:inSubset :gard_rare,
+        :nord_rare,
+        :rare ;
+    rdfs:subClassOf :blount_disease ;
+    skos:exactMatch :259200,
+        :462922,
+        :c3151572 ;
+    :has_exact_synonym ""Blount disease, adolescent"" ;
+    :has_related_synonym ""Osteochondrosis deformans tibiae, adolescent"",
+        ""tibia vara, adolescent"" .
+
+","blount disease adolescent has exact synonym a Blount disease, adolescent.
+blount disease adolescent has related synonym a Osteochondrosis deformans tibiae, adolescent.
+blount disease adolescent has related synonym a tibia vara, adolescent.
+blount disease adolescent is a type of a blount disease.","Blount's disease in adolescents is also known as Blount's disease, and it's synonymous with itself. Additionally, it's related to Osteochondrosis deformans tibiae and Tibia vara, both of which are conditions that affect the tibia in adolescent patients. Furthermore, Blount's disease in adolescents is a type of Blount's disease, indicating that it's a specific subset or manifestation of this condition.",llama3,4,9,9,17,1,1,1,,,,,,,,,4.0,1.0,2.0,1.0,3.0,3.0,,,,,,,,,,,,,,
+mondo,http://purl.obolibrary.org/obo/MONDO_0001658,"@prefix ns1: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:nontoxic_goiter a owl:Class ;
+    rdfs:label ""nontoxic goiter"" ;
+    ns1:hasDbXref ""DOID:13195"",
+        ""MEDGEN:113172"",
+        ""NCIT:C35271"",
+        ""SCTID:267369002"",
+        ""UMLS:C0221777"" ;
+    ns1:id ""MONDO:0001658"" ;
+    ns1:inSubset :otar ;
+    rdfs:subClassOf :goiter ;
+    skos:exactMatch :113172,
+        :c0221777,
+        :doid_13195,
+        :ncit_c35271 ;
+    :has_definition ""Sporadic enlargement of the thyroid gland that is not associated with changes in thyroid function or malignancy."" ;
+    :has_exact_synonym ""Nodule-thyroid, non tox"",
+        ""euthyroid goiter"",
+        ""euthyroid goitre"",
+        ""goiter, non-toxic"",
+        ""non-toxic goiter"",
+        ""non-toxic goitre"",
+        ""non-toxic simple goiter"",
+        ""non-toxic simple goitre"",
+        ""nontoxic goiter"" .
+
+","nontoxic goiter has definition a Sporadic enlargement of the thyroid gland that is not associated with changes in thyroid function or malignancy..
+nontoxic goiter has exact synonym a Nodule-thyroid, non tox.
+nontoxic goiter has exact synonym a goiter, non-toxic.
+nontoxic goiter has exact synonym a non-toxic goiter.
+nontoxic goiter has exact synonym a non-toxic goitre.
+nontoxic goiter has exact synonym a non-toxic simple goiter.
+nontoxic goiter has exact synonym a non-toxic simple goitre.
+nontoxic goiter has exact synonym a nontoxic goiter.
+nontoxic goiter has exact synonym an euthyroid goiter.
+nontoxic goiter has exact synonym an euthyroid goitre.
+nontoxic goiter is a type of a goiter.","Non-toxic goiter, also known as non-toxic goiter, nodule-thyroid, non tox, goiter, non-toxic, non-toxic goiter, non-toxic simple goiter, non-toxic simple goitre, nontoxic goiter, euthyroid goiter, and euthyroid goitre, is a type of goiter that is characterized by the sporadic enlargement of the thyroid gland without any changes in thyroid function or malignancy.",llama3,11,8,9,24,1,1,1,,,,,,,1.0,,5.0,9.0,,1.0,1.0,4.0,,,,,,,,,,,,,,

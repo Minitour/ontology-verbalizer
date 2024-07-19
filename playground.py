@@ -1,7 +1,7 @@
 import logging
 import os
 
-from core.nlp import ChatGptModel, LlamaModel
+from core.nlp import ChatGptModelParaphrase, LlamaModelParaphrase
 from core.process import Processor
 from core.sampler import Sampler
 
@@ -81,20 +81,15 @@ rephrased = {
 }
 
 if __name__ == '__main__':
-    # extra="""
-    # The sentence describes concepts taken from an ontology for situation-based access control to determine what role can access patients' medical records.
-    # """
+    llama_model = LlamaModelParaphrase('http://localhost:11434/v1', temperature=0.1)
+    openai_model = ChatGptModelParaphrase(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4o', temperature=0.7)
+    models = [openai_model, llama_model]
 
-    # model = None
-    llama_model = LlamaModel('http://localhost:11434/v1', temperature=0.1)
-    openai_model = ChatGptModel(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4o', temperature=0.7)
     sampler = Sampler(sample_n=100, seed=42)
-    processor = Processor(llm=openai_model, vocab_ignore=ignore, vocab_rephrased=rephrased, min_statements=1)
-    # processor.process('envo', './data/envo.owl', chunk_size=500)
-    # processor.process('sweet', './data/sweet.owl', chunk_size=500)
-    # processor.process('doid', './data/doid.owl', chunk_size=500)
-    # processor.process('pizza', './data/pizza.ttl', data_sampler=sampler)
-    # processor.process('people', './data/people.ttl')
-    # processor.process('foaf', './data/foaf.owl')
-    # processor.process('mondo', './data/mondo.owl', data_sampler=sampler)
-    processor.process('fma', './data/fma.owl', data_sampler=sampler)
+
+    for model in models:
+        processor = Processor(llm=model, vocab_ignore=ignore, vocab_rephrased=rephrased, min_statements=1)
+        processor.process('people', './data/people.ttl')
+        processor.process('pizza', './data/pizza.ttl')
+        processor.process('mondo', './data/mondo.owl', data_sampler=sampler)
+        processor.process('fma', './data/fma.owl', data_sampler=sampler)

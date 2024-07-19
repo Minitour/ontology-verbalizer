@@ -8,7 +8,7 @@ import pandas
 from rdflib import Graph, URIRef
 from tqdm import tqdm
 
-from core.nlp import LlamaModel, LanguageModel
+from core.nlp import LlamaModelParaphrase, ParaphraseLanguageModel
 from core.patterns.owl_disjoint import OwlDisjointWith
 from core.patterns.owl_first_rest import OwlFirstRestPattern
 from core.patterns.owl_restriction import OwlRestrictionPattern
@@ -24,7 +24,7 @@ class Processor:
     """
 
     def __init__(self,
-                 llm: LanguageModel = LlamaModel(base_url='http://localhost:11434/v1'),
+                 llm: ParaphraseLanguageModel = None,
                  patterns: list = None,
                  min_patterns_evaluated=0,
                  min_statements=2,
@@ -67,8 +67,10 @@ class Processor:
         timestamp = int(now.timestamp())
 
         # make output directory
-        out = f'{output_dir}/{name}/{timestamp}'
-        Path(out).mkdir(parents=True, exist_ok=True)
+        if self.llm:
+            out = f'{output_dir}/{name}/{self.llm.name}/{timestamp}'
+        else:
+            out = f'{output_dir}/{name}/{timestamp}'
 
         graph = self.get_graph_from_file(file_path)
 
@@ -88,11 +90,11 @@ class Processor:
         if sampler := data_sampler:
             samples = sampler.get_sample({'classes': classes, 'individuals': individuals})
             classes, individuals = samples['classes'], samples['individuals']
-
+        complete_dataset = []
         dataset = []
         partition = 0
         for entry in tqdm(classes + individuals, desc='Verbalizing'):
-            fragment, text, llm_text, count = verbalizer.verbalize(entry)
+            fragment, text, llm_text, stats = verbalizer.verbalize(entry)
 
             dataset.append({
                 'ontology': name,
@@ -100,20 +102,30 @@ class Processor:
                 'fragment': fragment,
                 'text': text,
                 'llm_text': llm_text,
-                'statements': count,
-                'llm': self.llm.name if self.llm else 'None'
+                'model': self.llm.name if self.llm else 'None',
+                'statements': stats.statements,
+                'unique_concepts': len(stats.concepts),
+                'unique_relationships': len(stats.relationship_counter),
+                'total_relationships': sum(stats.relationship_counter.values()),
+                **stats.relationship_counter
             })
             if len(dataset) == chunk_size:
+                complete_dataset.extend(dataset)
+                Path(out).mkdir(parents=True, exist_ok=True)
                 pandas.DataFrame(dataset).to_csv(f'{out}/file_{partition}.csv', index=False)
                 partition += 1
                 dataset = []
 
         if dataset:
+            complete_dataset.extend(dataset)
+            Path(out).mkdir(parents=True, exist_ok=True)
             pandas.DataFrame(dataset).to_csv(f'{out}/file_{partition}.csv', index=False)
 
-        print(f'Finished verbalizing')
+        logger.info('Finished verbalizing')
         if self.llm:
-            print(f'LLM usage cost: ${self.llm.cost}')
+            logger.info(f'LLM usage cost: ${self.llm.cost}')
+
+        return complete_dataset
 
     @staticmethod
     def _get_classes(graph):

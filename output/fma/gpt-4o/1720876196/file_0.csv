@@ -1,0 +1,1371 @@
+ontology,root,fragment,text,llm_text,model,statements,unique_concepts,unique_relationships,total_relationships,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#label,http://www.w3.org/2002/07/owl#equivalentClass,http://www.w3.org/2002/07/owl#onProperty,http://www.w3.org/2002/07/owl#someValuesFrom,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2002/07/owl#hasValue,http://purl.org/sig/ont/fma/FMAID,http://purl.org/sig/ont/fma/preferred_name,http://purl.org/sig/ont/fma/synonym,http://www.w3.org/2002/07/owl#disjointWith,http://purl.org/sig/ont/fma/non-English_equivalent,http://purl.org/sig/ont/fma/definition,http://www.w3.org/2002/07/owl#intersectionOf,http://www.w3.org/1999/02/22-rdf-syntax-ns#first,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,http://www.w3.org/2000/01/rdf-schema#comment
+fma,http://purl.org/sig/ont/fma/fma24966,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_hip a owl:Class ;
+    rdfs:label ""Left hip""@en ;
+    ns1:FMAID 24966 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ""Left"" ;
+            owl:onProperty :laterality ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :musculature_of_left_hip ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :pelvic_girdle_region_of_left_hip ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :vasculature_of_left_hip ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :left_hip_bone ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :integument_of_left_hip ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :left_hip_joint ],
+        :hip ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :femoral_region_of_left_hip ] ;
+    :preferred_name ""Left hip""^^xsd:string ;
+    :synonym ""Left hip region""^^xsd:string .
+
+","left hip is a type of a hip.
+left hip is a type of at least constitutional part some a left hip bone.
+left hip is a type of at least constitutional part some a left hip joint.
+left hip is a type of at least constitutional part some a musculature of left hip.
+left hip is a type of at least constitutional part some a vasculature of left hip.
+left hip is a type of at least constitutional part some an integument of left hip.
+left hip is a type of at least regional part of some a pelvic girdle region of left hip.
+left hip is a type of must laterality a Left.
+left hip is same as at least regional part of some a femoral region of left hip.
+left hip preferred name a Left hip.
+left hip synonym a Left hip region.","The left hip is a type of hip and must have laterality as Left. It includes essential components such as the left hip bone, left hip joint, musculature of the left hip, vasculature of the left hip, and the integument of the left hip. The left hip is also part of the pelvic girdle region and the femoral region of the left hip. The preferred name for this is ""Left hip,"" and it is also synonymously known as the ""Left hip region.""",gpt-4o,11,14,10,38,9,1,1,8,7,8,1.0,1,1,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma58869,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:posterior_segment_of_right_eyeball a owl:Class ;
+    rdfs:label ""Posterior segment of right eyeball""@en ;
+    ns1:FMAID 58869 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :right_optic_nerve ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :vitreous_chamber_of_right_eyeball ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :right_vitreous_body ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :wall_of_posterior_segment_of_right_eyeball ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :right_eyeball ],
+        :posterior_segment_of_eyeball ;
+    owl:disjointWith :posterior_segment_of_left_eyeball ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :right_optic_nerve ] ;
+    :preferred_name ""Posterior segment of right eyeball""^^xsd:string .
+
+","posterior segment of right eyeball is a type of a posterior segment of eyeball.
+posterior segment of right eyeball is a type of at least constitutional part some a right optic nerve.
+posterior segment of right eyeball is a type of at least constitutional part some a right vitreous body.
+posterior segment of right eyeball is a type of at least constitutional part some a vitreous chamber of right eyeball.
+posterior segment of right eyeball is a type of at least constitutional part some a wall of posterior segment of right eyeball.
+posterior segment of right eyeball is a type of at least regional part of some a right eyeball.
+posterior segment of right eyeball is different from a posterior segment of left eyeball.
+posterior segment of right eyeball is same as at least constitutional part some a right optic nerve.
+posterior segment of right eyeball preferred name a Posterior segment of right eyeball.","The posterior segment of the right eyeball is a specific type of the posterior segment of the eyeball. It includes essential parts like the right optic nerve, the right vitreous body, the vitreous chamber of the right eyeball, and the wall of the posterior segment of the right eyeball. Additionally, it is a regional part of the right eyeball and is distinct from the posterior segment of the left eyeball. The preferred name for this structure is the ""Posterior segment of the right eyeball.""",gpt-4o,9,12,9,30,7,1,1,6,6,6,,1,1,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma7096,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:right_atrium a owl:Class ;
+    rdfs:label ""Right atrium""@en ;
+    ns1:FMAID 7096 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :bounded_by ;
+            owl:someValuesFrom :surface_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :lymphatic_capillary_bed_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_left_of ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :left_posterior_atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :biatrial_part_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :cavity_of_right_atrium ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 3""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :tricuspid_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_left_of ;
+            owl:someValuesFrom :right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :superior_vena_cava ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :fibrous_ring_of_tricuspid_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :nerve_supply ;
+            owl:someValuesFrom :deep_cardiac_nerve_plexus ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :right_auricle ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 1""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_distally_with ;
+            owl:someValuesFrom :inferior_vena_cava ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :wall_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :posterior_to ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :superior_vena_cava ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :outflow_part_of_right_atrium ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 2""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :inferior_vena_cava ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :outflow_part_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :plane_of_fibrous_ring_of_tricuspid_valve ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Posterosuperior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Right""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :inflow_part_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :interatrial_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :systemic_capillary_bed_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :recurrent_atrioventricular_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :anterior_cardiac_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :small_cardiac_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :apex_of_heart ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Posterosuperior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Right""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_left_of ;
+            owl:someValuesFrom :right_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :anterosuperior_to ;
+            owl:someValuesFrom :inferior_vena_cava ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :right_side_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :right_atrium_proper ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 1""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cavity_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :sinoatrial_nodal_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :atrioventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :posterosuperior_to ;
+            owl:someValuesFrom :right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :crista_terminalis_branch_of_sinoatrial_nodal_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :intermediate_atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :interatrial_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :inflow_part_of_right_atrium ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 2""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :small_cardiac_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :wall_of_right_atrium ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 3""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :coronary_sinus ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :lateral_atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :medial_to ;
+            owl:someValuesFrom :right_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :neural_network_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :lymphatic_drainage ;
+            owl:someValuesFrom :right_bronchomediastinal_lymphatic_tree ],
+        :cardiac_atrium ;
+    owl:disjointWith :left_atrium ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :cardiac_atrium ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :continuous_with ;
+                                    owl:someValuesFrom :inferior_vena_cava ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:onProperty :continuous_with ;
+                                            owl:someValuesFrom :right_ventricle ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :regional_part_of ;
+                                                    owl:someValuesFrom :right_side_of_heart ] ;
+                                            rdf:rest :nil ] ] ] ] ] ;
+    :definition ""Right cardiac chamber which is continuous with the superior vena cava and inferior vena cava.""^^xsd:string ;
+    :non_english_equivalent ""Atrio derecho""^^xsd:string,
+        ""Atrium cordis dextrum""^^xsd:string,
+        ""Atrium dextrum""^^xsd:string,
+        ""Atrium droit""^^xsd:string,
+        ""Rechter Atrium""^^xsd:string ;
+    :preferred_name ""Right atrium""^^xsd:string ;
+    :synonym ""Right atrium of heart""^^xsd:string .
+
+","right atrium definition a Right cardiac chamber which is continuous with the superior vena cava and inferior vena cava..
+right atrium is a type of a cardiac atrium.
+right atrium is a type of at least anteroinferior to some a right ventricle.
+right atrium is a type of at least anteroinferior to some a superior vena cava.
+right atrium is a type of at least anterosuperior to some an inferior vena cava.
+right atrium is a type of at least arterial supply some a crista terminalis branch of sinoatrial nodal artery.
+right atrium is a type of at least arterial supply some a lateral atrial branch of right coronary artery.
+right atrium is a type of at least arterial supply some a left posterior atrial branch of right coronary artery.
+right atrium is a type of at least arterial supply some a posterior atrial branch of right coronary artery.
+right atrium is a type of at least arterial supply some a recurrent atrioventricular branch of right coronary artery.
+right atrium is a type of at least arterial supply some a sinoatrial nodal branch of right coronary artery.
+right atrium is a type of at least arterial supply some an anterior atrial branch of right coronary artery.
+right atrium is a type of at least arterial supply some an atrial branch of right coronary artery.
+right atrium is a type of at least arterial supply some an intermediate atrial branch of right coronary artery.
+right atrium is a type of at least attributed part some all of (at least related part some a cavity of right atrium, and must partition a Partition 3).
+right atrium is a type of at least attributed part some all of (at least related part some a right atrium proper, and must partition a Partition 1).
+right atrium is a type of at least attributed part some all of (at least related part some a right auricle, and must partition a Partition 1).
+right atrium is a type of at least attributed part some all of (at least related part some a wall of right atrium, and must partition a Partition 3).
+right atrium is a type of at least attributed part some all of (at least related part some an inflow part of right atrium, and must partition a Partition 2).
+right atrium is a type of at least attributed part some all of (at least related part some an outflow part of right atrium, and must partition a Partition 2).
+right atrium is a type of at least bounded by some a surface of right atrium.
+right atrium is a type of at least constitutional part some a cavity of right atrium.
+right atrium is a type of at least constitutional part some a fibrous ring of tricuspid valve.
+right atrium is a type of at least constitutional part some a lymphatic capillary bed of right atrium.
+right atrium is a type of at least constitutional part some a neural network of right atrium.
+right atrium is a type of at least constitutional part some a systemic capillary bed of right atrium.
+right atrium is a type of at least constitutional part some a tricuspid valve.
+right atrium is a type of at least constitutional part some a wall of right atrium.
+right atrium is a type of at least constitutional part some an atrioventricular septum.
+right atrium is a type of at least constitutional part some an interatrial septum.
+right atrium is a type of at least continuous distally with some an inferior vena cava.
+right atrium is a type of at least continuous with some a coronary sinus.
+right atrium is a type of at least continuous with some a right ventricle.
+right atrium is a type of at least continuous with some a small cardiac vein.
+right atrium is a type of at least continuous with some a superior vena cava.
+right atrium is a type of at least continuous with some an anterior cardiac vein.
+right atrium is a type of at least continuous with some an inferior vena cava.
+right atrium is a type of at least continuous with some an interatrial septum.
+right atrium is a type of at least direct left of some a left atrium.
+right atrium is a type of at least direct left of some a right lung.
+right atrium is a type of at least direct left of some a right ventricle.
+right atrium is a type of at least lymphatic drainage some a right bronchomediastinal lymphatic tree.
+right atrium is a type of at least medial to some a right lung.
+right atrium is a type of at least nerve supply some a deep cardiac nerve plexus.
+right atrium is a type of at least orientation some all of (at least related object some a plane of fibrous ring of tricuspid valve, and must anatomical coordinate a Posterosuperior, and must laterality a Right).
+right atrium is a type of at least orientation some all of (at least related object some an apex of heart, and must anatomical coordinate a Posterosuperior, and must laterality a Right).
+right atrium is a type of at least posterior to some a left atrium.
+right atrium is a type of at least posterosuperior to some a right ventricle.
+right atrium is a type of at least regional part of some a biatrial part of heart.
+right atrium is a type of at least regional part of some a right side of heart.
+right atrium is a type of at least regional part some an inflow part of right atrium.
+right atrium is a type of at least regional part some an outflow part of right atrium.
+right atrium is a type of at least venous drainage some a small cardiac vein.
+right atrium is different from a left atrium.
+right atrium is same as all of (a cardiac atrium, and at least continuous with some an inferior vena cava, and at least continuous with some a right ventricle, and at least regional part of some a right side of heart).
+right atrium non English equivalent a Atrio derecho.
+right atrium non English equivalent a Atrium cordis dextrum.
+right atrium non English equivalent a Atrium dextrum.
+right atrium non English equivalent a Atrium droit.
+right atrium non English equivalent a Rechter Atrium.
+right atrium preferred name a Right atrium.
+right atrium synonym a Right atrium of heart.","The right atrium is a right cardiac chamber continuous with the superior and inferior vena cava. It is a type of cardiac atrium and is located anteroinferior to the right ventricle and superior vena cava, and anterosuperior to the inferior vena cava. The right atrium receives its arterial supply from various branches of the right coronary artery, including the crista terminalis branch of the sinoatrial nodal artery, the lateral atrial branch, the left posterior atrial branch, the posterior atrial branch, the recurrent atrioventricular branch, the sinoatrial nodal branch, the anterior atrial branch, the atrial branch, and the intermediate atrial branch.
+
+The right atrium consists of several attributed parts, including the cavity of the right atrium, the right atrium proper, the right auricle, the wall of the right atrium, the inflow part, and the outflow part. It is bounded by the surface of the right atrium and contains constitutional parts such as the fibrous ring of the tricuspid valve, the lymphatic capillary bed, the neural network, the systemic capillary bed, the tricuspid valve, the wall of the right atrium, the atrioventricular septum, and the interatrial septum.
+
+The right atrium is continuous distally with the inferior vena cava, the coronary sinus, the right ventricle, the small cardiac vein, the superior vena cava, and the anterior cardiac vein. It is located to the left of the left atrium, the right lung, and the right ventricle. It drains lymph to the right bronchomediastinal lymphatic tree and receives nerve supply from the deep cardiac nerve plexus. The right atrium is oriented posterosuperior to the fibrous ring of the tricuspid valve and the apex of the heart, and it is posterior to the left atrium and posterosuperior to the right ventricle. It is a regional part of both the biatrial part and the right side of the heart, and it has venous drainage through the small cardiac vein.
+
+The right atrium is different from the left atrium but shares some common features such as being a cardiac atrium and continuous with the inferior vena cava and the right ventricle, and being a regional part of the right side of the heart. The right atrium has several non-English equivalents, including Atrio derecho, Atrium cordis dextrum, Atrium dextrum, Atrium droit, and Rechter Atrium. The preferred name is ""Right atrium"" and it is also known as the ""Right atrium of the heart.""",gpt-4o,62,65,16,343,82,1,1,72,62,52,10.0,1,1,1.0,1.0,5.0,1.0,9.0,22.0,22.0,
+fma,http://purl.org/sig/ont/fma/fma7097,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_atrium a owl:Class ;
+    rdfs:label ""Left atrium""@en ;
+    ns1:FMAID 7097 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :inferior_pulmonary_venous_tree ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :left_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :tributary ;
+            owl:someValuesFrom :left_common_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :left_superior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :apex_of_heart ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Posterosuperior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Left""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :outflow_part_of_left_atrium ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 2""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :tributary ;
+            owl:someValuesFrom :right_common_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :trunk_of_left_superior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :interatrial_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :trunk_of_left_superior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :crista_terminalis_branch_of_sinoatrial_nodal_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :sinoatrial_nodal_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cavity_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :wall_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :mitral_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :inflow_part_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :lymphatic_drainage ;
+            owl:someValuesFrom :left_bronchomediastinal_lymphatic_trunk ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :circumflex_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :medial_to ;
+            owl:someValuesFrom :left_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :inflow_part_of_left_atrium ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 2""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :biatrial_part_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :left_side_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :trunk_of_right_superior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :left_auricle ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 1""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :interatrial_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :basal_zone_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :bounded_by ;
+            owl:someValuesFrom :surface_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :recurrent_atrioventricular_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :oblique_vein_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :neural_network_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :outflow_part_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :atrial_branch_of_circumflex_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :lymphatic_capillary_bed_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :right_superior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :right_inferior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :great_cardiac_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :trunk_of_left_inferior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :fibrous_ring_of_mitral_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :plane_of_fibrous_ring_of_mitral_valve ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Posterosuperior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Left""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :left_posterior_atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :superior_pulmonary_venous_tree ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :systemic_capillary_bed_of_left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :anterosuperior_to ;
+            owl:someValuesFrom :trunk_of_left_inferior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :posterosuperior_to ;
+            owl:someValuesFrom :left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :trunk_of_right_inferior_pulmonary_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_atrial_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :left_atrium_proper ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 1""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :anterior_to ;
+            owl:someValuesFrom :right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :left_inferior_pulmonary_vein ],
+        :cardiac_atrium ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :cardiac_atrium ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :regional_part_of ;
+                                    owl:someValuesFrom :left_side_of_heart ] ;
+                            rdf:rest :nil ] ] ] ;
+    :definition ""Left cardiac chamber which is continuous with the pulmonary venous trunk.""^^xsd:string ;
+    :non_english_equivalent ""Atrio izquierdo""^^xsd:string,
+        ""Atrium cordis sinistrum""^^xsd:string,
+        ""Atrium gauche""^^xsd:string,
+        ""Atrium sinistrum""^^xsd:string,
+        ""Linker Atrium""^^xsd:string ;
+    :preferred_name ""Left atrium""^^xsd:string ;
+    :synonym ""Left atrium of heart""^^xsd:string .
+
+","left atrium definition a Left cardiac chamber which is continuous with the pulmonary venous trunk..
+left atrium is a type of a cardiac atrium.
+left atrium is a type of at least anterior to some a right atrium.
+left atrium is a type of at least anteroinferior to some a left ventricle.
+left atrium is a type of at least anteroinferior to some a trunk of left superior pulmonary vein.
+left atrium is a type of at least anterosuperior to some a trunk of left inferior pulmonary vein.
+left atrium is a type of at least arterial supply some a circumflex branch of left coronary artery.
+left atrium is a type of at least arterial supply some a crista terminalis branch of sinoatrial nodal artery.
+left atrium is a type of at least arterial supply some a left posterior atrial branch of right coronary artery.
+left atrium is a type of at least arterial supply some a posterior atrial branch of right coronary artery.
+left atrium is a type of at least arterial supply some a recurrent atrioventricular branch of right coronary artery.
+left atrium is a type of at least arterial supply some a sinoatrial nodal branch of right coronary artery.
+left atrium is a type of at least arterial supply some an atrial branch of circumflex coronary artery.
+left atrium is a type of at least arterial supply some an atrial branch of right coronary artery.
+left atrium is a type of at least attributed part some all of (at least related part some a left atrium proper, and must partition a Partition 1).
+left atrium is a type of at least attributed part some all of (at least related part some a left auricle, and must partition a Partition 1).
+left atrium is a type of at least attributed part some all of (at least related part some an inflow part of left atrium, and must partition a Partition 2).
+left atrium is a type of at least attributed part some all of (at least related part some an outflow part of left atrium, and must partition a Partition 2).
+left atrium is a type of at least bounded by some a surface of left atrium.
+left atrium is a type of at least constitutional part some a cavity of left atrium.
+left atrium is a type of at least constitutional part some a fibrous ring of mitral valve.
+left atrium is a type of at least constitutional part some a lymphatic capillary bed of left atrium.
+left atrium is a type of at least constitutional part some a mitral valve.
+left atrium is a type of at least constitutional part some a neural network of left atrium.
+left atrium is a type of at least constitutional part some a systemic capillary bed of left atrium.
+left atrium is a type of at least constitutional part some a wall of left atrium.
+left atrium is a type of at least constitutional part some an interatrial septum.
+left atrium is a type of at least continuous with some a left inferior pulmonary vein.
+left atrium is a type of at least continuous with some a left superior pulmonary vein.
+left atrium is a type of at least continuous with some a left ventricle.
+left atrium is a type of at least continuous with some a right inferior pulmonary vein.
+left atrium is a type of at least continuous with some a right superior pulmonary vein.
+left atrium is a type of at least continuous with some a superior pulmonary venous tree.
+left atrium is a type of at least continuous with some a trunk of left inferior pulmonary vein.
+left atrium is a type of at least continuous with some a trunk of left superior pulmonary vein.
+left atrium is a type of at least continuous with some a trunk of right inferior pulmonary vein.
+left atrium is a type of at least continuous with some a trunk of right superior pulmonary vein.
+left atrium is a type of at least continuous with some an inferior pulmonary venous tree.
+left atrium is a type of at least continuous with some an interatrial septum.
+left atrium is a type of at least direct right of some a left lung.
+left atrium is a type of at least direct right of some a left ventricle.
+left atrium is a type of at least direct right of some a right atrium.
+left atrium is a type of at least lymphatic drainage some a left bronchomediastinal lymphatic trunk.
+left atrium is a type of at least medial to some a left lung.
+left atrium is a type of at least orientation some all of (at least related object some a plane of fibrous ring of mitral valve, and must anatomical coordinate a Posterosuperior, and must laterality a Left).
+left atrium is a type of at least orientation some all of (at least related object some an apex of heart, and must anatomical coordinate a Posterosuperior, and must laterality a Left).
+left atrium is a type of at least posterosuperior to some a left ventricle.
+left atrium is a type of at least regional part of some a basal zone of heart.
+left atrium is a type of at least regional part of some a biatrial part of heart.
+left atrium is a type of at least regional part of some a left side of heart.
+left atrium is a type of at least regional part some an inflow part of left atrium.
+left atrium is a type of at least regional part some an outflow part of left atrium.
+left atrium is a type of at least tributary some a left common pulmonary vein.
+left atrium is a type of at least tributary some a right common pulmonary vein.
+left atrium is a type of at least venous drainage some a great cardiac vein.
+left atrium is a type of at least venous drainage some an oblique vein of left atrium.
+left atrium is same as all of (a cardiac atrium, and at least regional part of some a left side of heart).
+left atrium non English equivalent a Atrio izquierdo.
+left atrium non English equivalent a Atrium cordis sinistrum.
+left atrium non English equivalent a Atrium gauche.
+left atrium non English equivalent a Atrium sinistrum.
+left atrium non English equivalent a Linker Atrium.
+left atrium preferred name a Left atrium.
+left atrium synonym a Left atrium of heart.","The left atrium is a left cardiac chamber that is continuous with the pulmonary venous trunk. It is a type of cardiac atrium and is located at least anterior to the right atrium, anteroinferior to the left ventricle and the trunk of the left superior pulmonary vein, and anterosuperior to the trunk of the left inferior pulmonary vein. The left atrium receives arterial supply from various branches, including the circumflex branch of the left coronary artery, the crista terminalis branch of the sinoatrial nodal artery, the left posterior atrial branch of the right coronary artery, the posterior atrial branch of the right coronary artery, the recurrent atrioventricular branch of the right coronary artery, the sinoatrial nodal branch of the right coronary artery, the atrial branch of the circumflex coronary artery, and the atrial branch of the right coronary artery.
+
+The left atrium comprises several attributed parts: the left atrium proper, the left auricle, the inflow part of the left atrium, and the outflow part of the left atrium. It is bounded by the surface of the left atrium and includes constitutional parts like the cavity of the left atrium, the fibrous ring of the mitral valve, the lymphatic capillary bed of the left atrium, the mitral valve, the neural network of the left atrium, the systemic capillary bed of the left atrium, the wall of the left atrium, and the interatrial septum.
+
+Continuity exists between the left atrium and various structures such as the left inferior pulmonary vein, the left superior pulmonary vein, the left ventricle, the right inferior pulmonary vein, the right superior pulmonary vein, the superior pulmonary venous tree, the trunks of the left and right inferior and superior pulmonary veins, the inferior pulmonary venous tree, and the interatrial septum.
+
+The left atrium is positioned directly right of the left lung, left ventricle, and right atrium. It undergoes lymphatic drainage through the left bronchomediastinal lymphatic trunk. It is medial to the left lung and oriented in coordination with the posterosuperior plane of the fibrous ring of the mitral valve and the apex of the heart. The left atrium is posterosuperior to the left ventricle and regionally part of the basal zone of the heart, the biatrial part of the heart, and the left side of the heart. It also includes the inflow and outflow parts of the left atrium. The left atrium has tributaries from the left and right common pulmonary veins and venous drainage through the great cardiac vein and the oblique vein of the left atrium.
+
+The left atrium is the same as a cardiac atrium and regionally part of the left side of the heart. It has several non-English equivalents such as ""Atrio izquierdo,"" ""Atrium cordis sinistrum,"" ""Atrium gauche,"" ""Atrium sinistrum,"" and ""Linker Atrium."" The preferred name for this structure is the ""Left atrium,"" with a synonym being ""Left atrium of heart.""",gpt-4o,64,71,15,320,77,1,1,69,61,55,8.0,1,1,1.0,,5.0,1.0,7.0,16.0,16.0,
+fma,http://purl.org/sig/ont/fma/fma7098,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:right_ventricle a owl:Class ;
+    rdfs:label ""Right ventricle""@en ;
+    ns1:FMAID 7098 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :pulmonary_trunk ],
+        [ a owl:Restriction ;
+            owl:onProperty :nerve_supply ;
+            owl:someValuesFrom :right_coronary_nerve_plexus ],
+        [ a owl:Restriction ;
+            owl:onProperty :medial_to ;
+            owl:someValuesFrom :right_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_branch_of_anterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :small_cardiac_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :biventricular_part_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_left_of ;
+            owl:someValuesFrom :left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :interventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_interventricular_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :fibrous_ring_of_tricuspid_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :lymphatic_capillary_bed_of_right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :bounded_by ;
+            owl:someValuesFrom :surface_of_right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :wall_of_right_ventricle ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 1""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :apex_of_heart ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Anterosuperior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Right""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :pulmonary_trunk ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cavity_of_right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :neural_network_of_right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :inflow_part_of_right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :outflow_part_of_right_ventricle ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 2""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :right_side_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_left_of ;
+            owl:someValuesFrom :right_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :superior_to ;
+            owl:someValuesFrom :diaphragm ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :pulmonary_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :lymphatic_drainage ;
+            owl:someValuesFrom :right_bronchomediastinal_lymphatic_trunk ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :systemic_capillary_bed_of_right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :interventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :ventricular_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :tricuspid_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :outflow_part_of_right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :posterior_to ;
+            owl:someValuesFrom :left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :great_cardiac_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :plane_of_fibrous_ring_of_tricuspid_valve ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Anteroinferior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Right""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :cavity_of_right_ventricle ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 1""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :wall_of_right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :posterosuperior_to ;
+            owl:someValuesFrom :right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :pulmonary_trunk ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :inflow_part_of_right_ventricle ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 2""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :absent_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :nerve_supply ;
+            owl:someValuesFrom :deep_cardiac_nerve_plexus ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :mid_zone_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :absent_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :right_atrium ],
+        :cardiac_ventricle ;
+    owl:disjointWith :left_ventricle ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :cardiac_ventricle ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :regional_part_of ;
+                                    owl:someValuesFrom :right_side_of_heart ] ;
+                            rdf:rest :nil ] ] ] ;
+    :definition ""Right cardiac chamber which is continuous with the pulmonary arterial trunk.""^^xsd:string ;
+    :non_english_equivalent ""Rechter Ventrikel""^^xsd:string,
+        ""Ventricule droit""^^xsd:string,
+        ""Ventriculus cordis dexter""^^xsd:string,
+        ""Ventriculus dexter""^^xsd:string,
+        ""Ventrículo derecho""^^xsd:string ;
+    :preferred_name ""Right ventricle""^^xsd:string ;
+    :synonym ""Right ventricle of heart""^^xsd:string .
+
+","right ventricle definition a Right cardiac chamber which is continuous with the pulmonary arterial trunk..
+right ventricle is a type of a cardiac ventricle.
+right ventricle is a type of at least anteroinferior to some a pulmonary trunk.
+right ventricle is a type of at least anteroinferior to some a right atrium.
+right ventricle is a type of at least arterial supply some a posterior interventricular branch of left coronary artery.
+right ventricle is a type of at least arterial supply some a posterior interventricular branch of right coronary artery.
+right ventricle is a type of at least arterial supply some a ventricular branch of right coronary artery.
+right ventricle is a type of at least arterial supply some an absent left coronary artery.
+right ventricle is a type of at least arterial supply some an absent right coronary artery.
+right ventricle is a type of at least arterial supply some an anterior branch of anterior interventricular branch of left coronary artery.
+right ventricle is a type of at least arterial supply some an anterior interventricular branch of left coronary artery.
+right ventricle is a type of at least attributed part some all of (at least related part some a cavity of right ventricle, and must partition a Partition 1).
+right ventricle is a type of at least attributed part some all of (at least related part some a wall of right ventricle, and must partition a Partition 1).
+right ventricle is a type of at least attributed part some all of (at least related part some an inflow part of right ventricle, and must partition a Partition 2).
+right ventricle is a type of at least attributed part some all of (at least related part some an outflow part of right ventricle, and must partition a Partition 2).
+right ventricle is a type of at least bounded by some a surface of right ventricle.
+right ventricle is a type of at least constitutional part some a cavity of right ventricle.
+right ventricle is a type of at least constitutional part some a fibrous ring of tricuspid valve.
+right ventricle is a type of at least constitutional part some a lymphatic capillary bed of right ventricle.
+right ventricle is a type of at least constitutional part some a neural network of right ventricle.
+right ventricle is a type of at least constitutional part some a pulmonary valve.
+right ventricle is a type of at least constitutional part some a systemic capillary bed of right ventricle.
+right ventricle is a type of at least constitutional part some a tricuspid valve.
+right ventricle is a type of at least constitutional part some a wall of right ventricle.
+right ventricle is a type of at least constitutional part some an interventricular septum.
+right ventricle is a type of at least continuous with some a pulmonary trunk.
+right ventricle is a type of at least continuous with some a right atrium.
+right ventricle is a type of at least continuous with some an interventricular septum.
+right ventricle is a type of at least direct left of some a left ventricle.
+right ventricle is a type of at least direct left of some a right lung.
+right ventricle is a type of at least direct right of some a pulmonary trunk.
+right ventricle is a type of at least direct right of some a right atrium.
+right ventricle is a type of at least lymphatic drainage some a right bronchomediastinal lymphatic trunk.
+right ventricle is a type of at least medial to some a right lung.
+right ventricle is a type of at least nerve supply some a deep cardiac nerve plexus.
+right ventricle is a type of at least nerve supply some a right coronary nerve plexus.
+right ventricle is a type of at least orientation some all of (at least related object some a plane of fibrous ring of tricuspid valve, and must anatomical coordinate a Anteroinferior, and must laterality a Right).
+right ventricle is a type of at least orientation some all of (at least related object some an apex of heart, and must anatomical coordinate a Anterosuperior, and must laterality a Right).
+right ventricle is a type of at least posterior to some a left ventricle.
+right ventricle is a type of at least posterosuperior to some a right atrium.
+right ventricle is a type of at least regional part of some a biventricular part of heart.
+right ventricle is a type of at least regional part of some a mid zone of heart.
+right ventricle is a type of at least regional part of some a right side of heart.
+right ventricle is a type of at least regional part some an inflow part of right ventricle.
+right ventricle is a type of at least regional part some an outflow part of right ventricle.
+right ventricle is a type of at least superior to some a diaphragm.
+right ventricle is a type of at least venous drainage some a great cardiac vein.
+right ventricle is a type of at least venous drainage some a small cardiac vein.
+right ventricle is different from a left ventricle.
+right ventricle is same as all of (a cardiac ventricle, and at least regional part of some a right side of heart).
+right ventricle non English equivalent a Rechter Ventrikel.
+right ventricle non English equivalent a Ventricule droit.
+right ventricle non English equivalent a Ventriculus cordis dexter.
+right ventricle non English equivalent a Ventriculus dexter.
+right ventricle non English equivalent a Ventrículo derecho.
+right ventricle preferred name a Right ventricle.
+right ventricle synonym a Right ventricle of heart.","The right ventricle, a right cardiac chamber, is continuous with the pulmonary arterial trunk. It is a type of cardiac ventricle and is situated anteroinferior to the pulmonary trunk and the right atrium. The right ventricle receives arterial supply from various branches, including the posterior interventricular branches of both the right and left coronary arteries, the ventricular branch of the right coronary artery, and the anterior interventricular branch of the left coronary artery. Additionally, it has arterial supply from the absent left and right coronary arteries and the anterior branch of the anterior interventricular branch of the left coronary artery.
+
+The right ventricle includes several attributed parts, such as the cavity and wall of the right ventricle, inflow and outflow parts, all partitioned into specific segments. It is bounded by the surface of the right ventricle and constitutionally includes the cavity, fibrous ring of the tricuspid valve, lymphatic capillary bed, neural network, pulmonary valve, systemic capillary bed, tricuspid valve, wall, and interventricular septum.
+
+The right ventricle is continuous with the pulmonary trunk, right atrium, and interventricular septum, located directly to the left of the left ventricle and right lung, and to the right of the pulmonary trunk and right atrium. Its lymphatic drainage is through the right bronchomediastinal lymphatic trunk, and it is medial to the right lung. The nerve supply comes from the deep cardiac nerve plexus and the right coronary nerve plexus.
+
+In terms of orientation, the right ventricle is aligned with the plane of the fibrous ring of the tricuspid valve and the apex of the heart, with coordinates being anteroinferior and anterosuperior, respectively, and both with right laterality. It is positioned posterior to the left ventricle, posterosuperior to the right atrium, and is a regional part of the biventricular part of the heart, mid zone, and right side of the heart. It also includes inflow and outflow parts and is superior to the diaphragm. Venous drainage is through the great and small cardiac veins.
+
+The right ventricle is distinct from the left ventricle and can be described as a cardiac ventricle and a regional part of the right side of the heart. Non-English equivalents include ""Rechter Ventrikel,"" ""Ventricule droit,"" ""Ventriculus cordis dexter,"" ""Ventriculus dexter,"" and ""Ventrículo derecho."" Its preferred name is ""Right ventricle,"" and it is also known synonymously as the ""Right ventricle of heart.""",gpt-4o,57,62,16,289,69,1,1,61,53,47,8.0,1,1,1.0,1.0,5.0,1.0,7.0,16.0,16.0,
+fma,http://purl.org/sig/ont/fma/fma7101,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_ventricle a owl:Class ;
+    rdfs:label ""Left ventricle""@en ;
+    ns1:FMAID 7101 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :diagonal_branch_of_anterior_descending_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :ascending_aorta ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :aortic_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :mitral_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :left_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :nerve_supply ;
+            owl:someValuesFrom :superficial_cardiac_nerve_plexus ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :nerve_supply ;
+            owl:someValuesFrom :deep_cardiac_nerve_plexus ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :coronary_sinus ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :atrioventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :neural_network_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :interventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_interventricular_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :outflow_part_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :plane_of_fibrous_ring_of_tricuspid_valve ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Anteroinferior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Left""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :absent_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :left_side_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :anteroinferior_to ;
+            owl:someValuesFrom :ascending_aorta ],
+        [ a owl:Restriction ;
+            owl:onProperty :orientation ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_object ;
+                                    owl:someValuesFrom :apex_of_heart ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Posteroinferior""^^xsd:string ;
+                                            owl:onProperty :anatomical_coordinate ] ;
+                                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                    owl:hasValue ""Left""^^xsd:string ;
+                                                    owl:onProperty :laterality ] ;
+                                            rdf:rest :nil ] ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_ventricular_branch_of_circumflex_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :absent_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :biventricular_part_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_ventricular_branch_of_circumflex_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :interventricular_septum ],
+        [ a owl:Restriction ;
+            owl:onProperty :lymphatic_drainage ;
+            owl:someValuesFrom :left_bronchomediastinal_lymphatic_trunk ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :anterior_branch_of_anterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :right_posterolateral_branch_of_right_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :variant_branch_of_right_coronary_arterial_tree ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :left_marginal_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_right_of ;
+            owl:someValuesFrom :right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :wall_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :fibrous_ring_of_mitral_valve ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cavity_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :posterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :superior_to ;
+            owl:someValuesFrom :diaphragm ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :left_anterior_branch_of_anterior_interventricular_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :bounded_by ;
+            owl:someValuesFrom :surface_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :lymphatic_capillary_bed_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :anterosuperior_to ;
+            owl:someValuesFrom :right_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :venous_drainage ;
+            owl:someValuesFrom :cardiac_vein ],
+        [ a owl:Restriction ;
+            owl:onProperty :medial_to ;
+            owl:someValuesFrom :left_lung ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :inflow_part_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :direct_left_of ;
+            owl:someValuesFrom :ascending_aorta ],
+        [ a owl:Restriction ;
+            owl:onProperty :posterosuperior_to ;
+            owl:someValuesFrom :left_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :arterial_supply ;
+            owl:someValuesFrom :circumflex_branch_of_left_coronary_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :systemic_capillary_bed_of_left_ventricle ],
+        :cardiac_ventricle ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :cardiac_ventricle ;
+                    rdf:rest [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :regional_part_of ;
+                                    owl:someValuesFrom :left_side_of_heart ] ;
+                            rdf:rest :nil ] ] ] ;
+    :definition ""Left cardiac chamber which is continuous with the aorta.""^^xsd:string ;
+    :non_english_equivalent ""Linker Ventrikel""^^xsd:string,
+        ""Ventricule gauche""^^xsd:string,
+        ""Ventriculus cordis sinister""^^xsd:string,
+        ""Ventriculus sinister""^^xsd:string,
+        ""Ventrículo izquierdo""^^xsd:string ;
+    :preferred_name ""Left ventricle""^^xsd:string ;
+    :synonym ""Left ventricle of heart""^^xsd:string .
+
+","left ventricle definition a Left cardiac chamber which is continuous with the aorta..
+left ventricle is a type of a cardiac ventricle.
+left ventricle is a type of at least anteroinferior to some a left atrium.
+left ventricle is a type of at least anteroinferior to some an ascending aorta.
+left ventricle is a type of at least anterosuperior to some a right ventricle.
+left ventricle is a type of at least arterial supply some a circumflex branch of left coronary artery.
+left ventricle is a type of at least arterial supply some a diagonal branch of anterior descending branch of left coronary artery.
+left ventricle is a type of at least arterial supply some a left anterior branch of anterior interventricular branch of left coronary artery.
+left ventricle is a type of at least arterial supply some a left marginal artery.
+left ventricle is a type of at least arterial supply some a posterior interventricular branch of left coronary artery.
+left ventricle is a type of at least arterial supply some a posterior interventricular branch of right coronary artery.
+left ventricle is a type of at least arterial supply some a posterior ventricular branch of circumflex coronary artery.
+left ventricle is a type of at least arterial supply some a right posterolateral branch of right coronary artery.
+left ventricle is a type of at least arterial supply some a variant branch of right coronary arterial tree.
+left ventricle is a type of at least arterial supply some an absent left coronary artery.
+left ventricle is a type of at least arterial supply some an absent right coronary artery.
+left ventricle is a type of at least arterial supply some an anterior branch of anterior interventricular branch of left coronary artery.
+left ventricle is a type of at least arterial supply some an anterior interventricular branch of left coronary artery.
+left ventricle is a type of at least arterial supply some an anterior ventricular branch of circumflex coronary artery.
+left ventricle is a type of at least bounded by some a surface of left ventricle.
+left ventricle is a type of at least constitutional part some a cavity of left ventricle.
+left ventricle is a type of at least constitutional part some a fibrous ring of mitral valve.
+left ventricle is a type of at least constitutional part some a lymphatic capillary bed of left ventricle.
+left ventricle is a type of at least constitutional part some a mitral valve.
+left ventricle is a type of at least constitutional part some a neural network of left ventricle.
+left ventricle is a type of at least constitutional part some a systemic capillary bed of left ventricle.
+left ventricle is a type of at least constitutional part some a wall of left ventricle.
+left ventricle is a type of at least constitutional part some an aortic valve.
+left ventricle is a type of at least constitutional part some an atrioventricular septum.
+left ventricle is a type of at least constitutional part some an interventricular septum.
+left ventricle is a type of at least continuous with some a left atrium.
+left ventricle is a type of at least continuous with some an ascending aorta.
+left ventricle is a type of at least continuous with some an interventricular septum.
+left ventricle is a type of at least direct left of some an ascending aorta.
+left ventricle is a type of at least direct right of some a left atrium.
+left ventricle is a type of at least direct right of some a left lung.
+left ventricle is a type of at least direct right of some a right ventricle.
+left ventricle is a type of at least lymphatic drainage some a left bronchomediastinal lymphatic trunk.
+left ventricle is a type of at least medial to some a left lung.
+left ventricle is a type of at least nerve supply some a deep cardiac nerve plexus.
+left ventricle is a type of at least nerve supply some a superficial cardiac nerve plexus.
+left ventricle is a type of at least orientation some all of (at least related object some a plane of fibrous ring of tricuspid valve, and must anatomical coordinate a Anteroinferior, and must laterality a Left).
+left ventricle is a type of at least orientation some all of (at least related object some an apex of heart, and must anatomical coordinate a Posteroinferior, and must laterality a Left).
+left ventricle is a type of at least posterosuperior to some a left atrium.
+left ventricle is a type of at least regional part of some a biventricular part of heart.
+left ventricle is a type of at least regional part of some a left side of heart.
+left ventricle is a type of at least regional part some an inflow part of left ventricle.
+left ventricle is a type of at least regional part some an outflow part of left ventricle.
+left ventricle is a type of at least superior to some a diaphragm.
+left ventricle is a type of at least venous drainage some a cardiac vein.
+left ventricle is a type of at least venous drainage some a coronary sinus.
+left ventricle is same as all of (a cardiac ventricle, and at least regional part of some a left side of heart).
+left ventricle non English equivalent a Linker Ventrikel.
+left ventricle non English equivalent a Ventricule gauche.
+left ventricle non English equivalent a Ventriculus cordis sinister.
+left ventricle non English equivalent a Ventriculus sinister.
+left ventricle non English equivalent a Ventrículo izquierdo.
+left ventricle preferred name a Left ventricle.
+left ventricle synonym a Left ventricle of heart.","The left ventricle is the left cardiac chamber that is continuous with the aorta. It is a type of cardiac ventricle and is located anteroinferior to the left atrium and the ascending aorta, and anterosuperior to the right ventricle. It receives arterial supply from various branches of the coronary arteries, including the circumflex branch, diagonal branch of the anterior descending branch, left anterior branch of the anterior interventricular branch, left marginal artery, posterior interventricular branch, and others. Additionally, the left ventricle contains several constitutional parts, such as the cavity, fibrous ring of the mitral valve, lymphatic capillary bed, mitral valve, neural network, systemic capillary bed, wall, aortic valve, atrioventricular septum, and interventricular septum. It is continuous with the left atrium, ascending aorta, and interventricular septum, and is positioned directly left of the ascending aorta, directly right of the left atrium, left lung, and right ventricle. The left ventricle has lymphatic drainage to the left bronchomediastinal lymphatic trunk and is medially located to the left lung. It receives nerve supply from the deep and superficial cardiac nerve plexuses and is oriented in relation to the plane of the fibrous ring of the tricuspid valve and the apex of the heart. The left ventricle is also superior to the diaphragm and part of the biventricular region and the left side of the heart. It has venous drainage through the cardiac vein and coronary sinus. In other languages, it is known as Linker Ventrikel, Ventricule gauche, Ventriculus cordis sinister, Ventriculus sinister, and Ventrículo izquierdo. The preferred name is ""Left ventricle,"" and it is also synonymously referred to as the ""Left ventricle of heart.""",gpt-4o,59,66,15,252,60,1,1,56,52,50,4.0,1,1,1.0,,5.0,1.0,3.0,8.0,8.0,
+fma,http://purl.org/sig/ont/fma/fma7154,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:head a owl:Class ;
+    rdfs:label ""Head""@en ;
+    ns1:FMAID 7154 ;
+    rdfs:comment """"""Old definition (retired 03-31-2017):
+Cardinal body part, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the skull, it is partially surrounded by skin of head. """"""^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :dental_arcade ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :vasculature_of_head ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :skeletal_system_of_head ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :neural_network_of_head ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :face ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 1""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :deep_fascial_system_of_head ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :set_of_all_lobular_organs_of_face ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :integument_of_head ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :head_proper ],
+        [ a owl:Restriction ;
+            owl:onProperty :lymphatic_drainage ;
+            owl:someValuesFrom :deep_cervical_lymphatic_chain ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :face ],
+        [ a owl:Restriction ;
+            owl:onProperty :attributed_part ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                    owl:onProperty :related_part ;
+                                    owl:someValuesFrom :head_proper ] ;
+                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                            owl:hasValue ""Partition 1""^^xsd:string ;
+                                            owl:onProperty :partition ] ;
+                                    rdf:rest :nil ] ] ] ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :craniocervical_region ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :musculature_of_head ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :brain ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :male_adult_human_body ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :set_of_eyeballs ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :adult_human_body ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :female_adult_human_body ],
+        :cardinal_body_part ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ rdf:first :cardinal_body_part ;
+                    rdf:rest [ rdf:first [ a owl:Class ;
+                                    owl:intersectionOf [ rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty :regional_part ;
+                                                    owl:someValuesFrom :face ] ;
+                                            rdf:rest [ rdf:first [ a owl:Restriction ;
+                                                            owl:onProperty :regional_part ;
+                                                            owl:someValuesFrom :head_proper ] ;
+                                                    rdf:rest :nil ] ] ] ;
+                            rdf:rest :nil ] ] ] ;
+    :definition ""cardinal body part, each instance of which has as its constitutional part some skull. Examples: There is only one head.""^^xsd:string ;
+    :non_english_equivalent ""Cabeza""^^xsd:string,
+        ""Caput""^^xsd:string,
+        ""Chef ou tête""^^xsd:string,
+        ""Kopf""^^xsd:string,
+        ""Tête""^^xsd:string,
+        ""Ulo""^^xsd:string ;
+    :preferred_name ""Head""^^xsd:string .
+
+","head definition a cardinal body part, each instance of which has as its constitutional part some skull. Examples: There is only one head..
+head is a type of a cardinal body part.
+head is a type of at least attributed part some all of (at least related part some a face, and must partition a Partition 1).
+head is a type of at least attributed part some all of (at least related part some a head proper, and must partition a Partition 1).
+head is a type of at least constitutional part some a brain.
+head is a type of at least constitutional part some a deep fascial system of head.
+head is a type of at least constitutional part some a dental arcade.
+head is a type of at least constitutional part some a musculature of head.
+head is a type of at least constitutional part some a neural network of head.
+head is a type of at least constitutional part some a set of all lobular organs of face.
+head is a type of at least constitutional part some a set of eyeballs.
+head is a type of at least constitutional part some a skeletal system of head.
+head is a type of at least constitutional part some a vasculature of head.
+head is a type of at least constitutional part some an integument of head.
+head is a type of at least lymphatic drainage some a deep cervical lymphatic chain.
+head is a type of at least regional part of some a craniocervical region.
+head is a type of at least regional part of some a female adult human body.
+head is a type of at least regional part of some a male adult human body.
+head is a type of at least regional part of some an adult human body.
+head is a type of at least regional part some a face.
+head is a type of at least regional part some a head proper.
+head is same as all of (a cardinal body part, and all of (at least regional part some a face, and at least regional part some a head proper)).
+head non English equivalent a Cabeza.
+head non English equivalent a Caput.
+head non English equivalent a Chef ou tête.
+head non English equivalent a Kopf.
+head non English equivalent a Tête.
+head non English equivalent a Ulo.
+head preferred name a Head.","The head is a cardinal body part that includes a skull as its constitutional part. Each head has various specific parts and attributes, such as a face and a head proper, which must be partitioned in a particular way. The head also contains critical components like the brain, the deep fascial system, the dental arcade, the musculature, the neural network, all lobular organs of the face, the eyeballs, the skeletal system, and the vasculature. Additionally, it includes the integument of the head and has lymphatic drainage through the deep cervical lymphatic chain. Regionally, the head is part of the craniocervical region and is present in both female and male adult human bodies, as well as in an adult human body, face, and head proper.
+
+In non-English languages, the head is known as ""Cabeza"" in Spanish, ""Caput"" in Latin, ""Chef ou tête"" in French, ""Kopf"" in German, ""Tête"" in French, and ""Ulo"" in another language. The preferred term for this body part is ""Head.""",gpt-4o,29,29,15,132,30,1,1,25,23,20,2.0,1,1,,,6.0,1.0,4.0,8.0,8.0,1.0

@@ -1,0 +1,2071 @@
+ontology,root,fragment,text,llm_text,model,statements,unique_concepts,unique_relationships,total_relationships,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#label,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.w3.org/2002/07/owl#onProperty,http://www.w3.org/2002/07/owl#someValuesFrom,http://purl.org/sig/ont/fma/FMAID,http://purl.org/sig/ont/fma/preferred_name,http://purl.org/sig/ont/fma/synonym,http://www.w3.org/2002/07/owl#disjointWith,http://purl.org/sig/ont/fma/Talairach,http://purl.org/sig/ont/fma/non-English_equivalent,http://purl.org/sig/ont/fma/definition,http://www.w3.org/2000/01/rdf-schema#comment,http://purl.org/sig/ont/fma/EuProstate27,http://purl.org/sig/ont/fma/EuProstate16
+fma,http://purl.org/sig/ont/fma/fma6763,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gray_communicating_ramus_of_left_sixth_intercostal_nerve a owl:Class ;
+    rdfs:label ""Gray communicating ramus of left sixth intercostal nerve""@en ;
+    ns1:FMAID 6763 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :branch_of ;
+            owl:someValuesFrom :left_sixth_intercostal_nerve ],
+        :gray_communicating_ramus_of_sixth_intercostal_nerve ;
+    :preferred_name ""Gray communicating ramus of left sixth intercostal nerve""^^xsd:string ;
+    :synonym ""Gray communicating ramus of left sixth thoracic anterior ramus""^^xsd:string,
+        ""Gray ramus communicans of left sixth intercostal nerve""^^xsd:string .
+
+","gray communicating ramus of left sixth intercostal nerve is a type of a gray communicating ramus of sixth intercostal nerve.
+gray communicating ramus of left sixth intercostal nerve is a type of at least branch of some a left sixth intercostal nerve.
+gray communicating ramus of left sixth intercostal nerve preferred name a Gray communicating ramus of left sixth intercostal nerve.
+gray communicating ramus of left sixth intercostal nerve synonym a Gray communicating ramus of left sixth thoracic anterior ramus.
+gray communicating ramus of left sixth intercostal nerve synonym a Gray ramus communicans of left sixth intercostal nerve.","The gray communicating ramus of the left 6th intercostal nerve is also known as the Gray ramus communicans of the left 6th intercostal nerve or the Gray ramus communicans of the left 6th thoracic anterior ramus, and it's a type of branch from the left 6th intercostal nerve.",llama3,5,6,8,11,2,1,2,1.0,1.0,1,1.0,2.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma39544,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:epimysium_of_fourth_lumbrical_of_left_hand a owl:Class ;
+    rdfs:label ""Epimysium of fourth lumbrical of left hand""@en ;
+    ns1:FMAID 39544 ;
+    rdfs:subClassOf :epimysium_of_fourth_lumbrical_of_hand ;
+    :preferred_name ""Epimysium of fourth lumbrical of left hand""^^xsd:string .
+
+","epimysium of fourth lumbrical of left hand is a type of an epimysium of fourth lumbrical of hand.
+epimysium of fourth lumbrical of left hand preferred name a Epimysium of fourth lumbrical of left hand.","The epimysium of the fourth lumbrical of the left hand is also known as the epimysium of the fourth lumbrical of the hand, and its preferred name is indeed the ""Epimysium of the fourth lumbrical of the left hand"".",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma23613,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:distal_metaphysis_of_right_ulna a owl:Class ;
+    rdfs:label ""Distal metaphysis of right ulna""@en ;
+    ns1:FMAID 23613 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :periosteum_of_distal_metaphysis_of_right_ulna ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :diaphysis_of_right_ulna ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :bony_part_of_distal_metaphysis_of_right_ulna ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :bone_of_distal_metaphysis_of_right_ulna ],
+        :distal_metaphysis_of_ulna ;
+    owl:disjointWith :distal_metaphysis_of_left_ulna ;
+    :preferred_name ""Distal metaphysis of right ulna""^^xsd:string .
+
+","distal metaphysis of right ulna is a type of a distal metaphysis of ulna.
+distal metaphysis of right ulna is a type of at least regional part of some a diaphysis of right ulna.
+distal metaphysis of right ulna is a type of at least regional part some a bone of distal metaphysis of right ulna.
+distal metaphysis of right ulna is a type of at least regional part some a bony part of distal metaphysis of right ulna.
+distal metaphysis of right ulna is a type of at least regional part some a periosteum of distal metaphysis of right ulna.
+distal metaphysis of right ulna is different from a distal metaphysis of left ulna.
+distal metaphysis of right ulna preferred name a Distal metaphysis of right ulna.","The distal metaphysis of the right ulna refers to a specific part of the bone, which is a regional part of the diaphysis or bony structure of the right ulna. It's distinct from its counterpart on the left side and has a unique periosteum covering. The preferred name for this anatomical feature is indeed ""Distal metaphysis of right ulna"".",llama3,7,11,8,22,5,1,5,4.0,4.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma284165,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:internal_pyramidal_layer_of_right_brodmann_area_40 a owl:Class ;
+    rdfs:label ""Internal pyramidal layer of right Brodmann area 40""@en ;
+    ns1:FMAID 284165 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :right_brodmann_area_40 ],
+        :internal_pyramidal_layer_of_brodmann_area_40 ;
+    owl:disjointWith :internal_pyramidal_layer_of_left_brodmann_area_40 ;
+    :preferred_name ""Internal pyramidal layer of right Brodmann area 40""^^xsd:string .
+
+","internal pyramidal layer of right brodmann area 40 is a type of an internal pyramidal layer of brodmann area 40.
+internal pyramidal layer of right brodmann area 40 is a type of at least constitutional part of some a right brodmann area 40.
+internal pyramidal layer of right brodmann area 40 is different from an internal pyramidal layer of left brodmann area 40.
+internal pyramidal layer of right brodmann area 40 preferred name a Internal pyramidal layer of right Brodmann area 40.","The internal pyramidal layer of the right Brodmann area 40 is a specific type of internal pyramidal layer found in the right Brodmann area 40, and it's a constitutional part of that region. Notably, this layer is distinct from its counterpart on the left side, and its preferred name is indeed the ""Internal pyramidal layer of right Brodmann area 40"".",llama3,4,7,8,10,2,1,2,1.0,1.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma235230,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:compact_bone_of_parietal_bone a owl:Class ;
+    rdfs:label ""Compact bone of parietal bone""@en ;
+    ns1:FMAID 235230 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :bone_of_parietal_bone ],
+        :compact_bone_of_skull_bone ;
+    :preferred_name ""Compact bone of parietal bone""^^xsd:string .
+
+","compact bone of parietal bone is a type of a compact bone of skull bone.
+compact bone of parietal bone is a type of at least regional part of some a bone of parietal bone.
+compact bone of parietal bone preferred name a Compact bone of parietal bone.","The compact bone of the parietal bone is a specific type of compact bone that belongs to the skull, and it's also referred to as the compact bone of the parietal bone itself.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma27814,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:synovial_fluid_of_c6_c7_vertebral_arch_joint a owl:Class ;
+    rdfs:label ""Synovial fluid of C6-C7 vertebral arch joint""@en ;
+    ns1:FMAID 27814 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :contained_in ;
+            owl:someValuesFrom :synovial_cavity_of_c6_c7_vertebral_arch_joint ],
+        :synovial_fluid_of_cervical_vertebral_arch_joint ;
+    :preferred_name ""Synovial fluid of C6-C7 vertebral arch joint""^^xsd:string .
+
+","synovial fluid of c6 c7 vertebral arch joint is a type of a synovial fluid of cervical vertebral arch joint.
+synovial fluid of c6 c7 vertebral arch joint is a type of at least contained in some a synovial cavity of c6 c7 vertebral arch joint.
+synovial fluid of c6 c7 vertebral arch joint preferred name a Synovial fluid of C6-C7 vertebral arch joint.","The synovial fluid found in the joint connecting the C6 and C7 vertebrae is also known as the synovial fluid of cervical vertebral arch joints, and it's specifically contained within the synovial cavity of this particular joint. Its preferred name is Synovial fluid of C6-C7 vertebral arch joint.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma8104,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:non_articular_part_of_tubercle_of_left_fifth_rib a owl:Class ;
+    rdfs:label ""Non-articular part of tubercle of left fifth rib""@en ;
+    ns1:FMAID 8104 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :tubercle_of_left_fifth_rib ],
+        :non_articular_part_of_tubercle_of_fifth_rib ;
+    :preferred_name ""Non-articular part of tubercle of left fifth rib""^^xsd:string .
+
+","non articular part of tubercle of left fifth rib is a type of a non articular part of tubercle of fifth rib.
+non articular part of tubercle of left fifth rib is a type of at least regional part of some a tubercle of left fifth rib.
+non articular part of tubercle of left fifth rib preferred name a Non-articular part of tubercle of left fifth rib.","The non-articular part of the tubercle on the left 5th rib is specifically referred to as the ""Non-articular part of the tubercle of the left 5th rib"". This anatomical feature can be classified into two categories: it's a type of regional part of some tubercle of the left 5th rib, and it's also a type of non-articular part of the tubercle of the left 5th rib.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma55083,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_lateral_pharyngeal_space a owl:Class ;
+    rdfs:label ""Left lateral pharyngeal space""@en ;
+    ns1:FMAID 55083 ;
+    rdfs:subClassOf :lateral_pharyngeal_space ;
+    :preferred_name ""Left lateral pharyngeal space""^^xsd:string ;
+    :synonym ""Left parapharyngeal space""^^xsd:string .
+
+","left lateral pharyngeal space is a type of a lateral pharyngeal space.
+left lateral pharyngeal space preferred name a Left lateral pharyngeal space.
+left lateral pharyngeal space synonym a Left parapharyngeal space.","The left lateral pharyngeal space, also known as the Left lateral pharyngeal space or simply the Left parapharyngeal space, is a type of lateral pharyngeal space.",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma51766,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:periosteum_of_right_intermediate_cuneiform_bone a owl:Class ;
+    rdfs:label ""Periosteum of right intermediate cuneiform bone""@en ;
+    ns1:FMAID 51766 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :bony_part_of_right_intermediate_cuneiform_bone ],
+        :periosteum_of_intermediate_cuneiform_bone ;
+    owl:disjointWith :periosteum_of_left_intermediate_cuneiform_bone ;
+    :preferred_name ""Periosteum of right intermediate cuneiform bone""^^xsd:string ;
+    :synonym ""Right intermediate cuneiform periosteum""^^xsd:string .
+
+","periosteum of right intermediate cuneiform bone is a type of a periosteum of intermediate cuneiform bone.
+periosteum of right intermediate cuneiform bone is a type of at least constitutional part of some a bony part of right intermediate cuneiform bone.
+periosteum of right intermediate cuneiform bone is different from a periosteum of left intermediate cuneiform bone.
+periosteum of right intermediate cuneiform bone preferred name a Periosteum of right intermediate cuneiform bone.
+periosteum of right intermediate cuneiform bone synonym a Right intermediate cuneiform periosteum.","The periosteum of the right intermediate cuneiform bone is a type of periosteum found on the intermediate cuneiform bone, specifically on the right side. It's a constitutional part of this bony structure and has no equivalent on the left side. The preferred name for this periosteum is ""Periosteum of right intermediate cuneiform bone"", and it can also be referred to as ""Right intermediate cuneiform periosteum"".",llama3,5,7,9,11,2,1,2,1.0,1.0,1,1.0,1.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma283688,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:external_granular_layer_of_right_brodmann_area_46 a owl:Class ;
+    rdfs:label ""External granular layer of right Brodmann area 46""@en ;
+    ns1:FMAID 283688 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :right_brodmann_area_46 ],
+        :external_granular_layer_of_brodmann_area_46 ;
+    owl:disjointWith :external_granular_layer_of_left_brodmann_area_46 ;
+    :preferred_name ""External granular layer of right Brodmann area 46""^^xsd:string .
+
+","external granular layer of right brodmann area 46 is a type of an external granular layer of brodmann area 46.
+external granular layer of right brodmann area 46 is a type of at least constitutional part of some a right brodmann area 46.
+external granular layer of right brodmann area 46 is different from an external granular layer of left brodmann area 46.
+external granular layer of right brodmann area 46 preferred name a External granular layer of right Brodmann area 46.","The external granular layer of the right Brodmann area 46, also known as the External granular layer of right Brodmann area 46, is a specific type of part within the right Brodmann area 46. It's distinct from its counterpart on the left side and has no other equivalent parts elsewhere.",llama3,4,7,8,10,2,1,2,1.0,1.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma81302,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nerve_to_left_teres_major a owl:Class ;
+    rdfs:label ""Nerve to left teres major""@en ;
+    ns1:FMAID 81302 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :branch_of ;
+            owl:someValuesFrom :left_inferior_subscapular_nerve ],
+        [ a owl:Restriction ;
+            owl:onProperty :nerve_supply_of ;
+            owl:someValuesFrom :left_teres_major ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_proximally_with ;
+            owl:someValuesFrom :trunk_of_left_inferior_subscapular_nerve ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :peripheral_segment_of_left_inferior_subscapular_nerve ],
+        :nerve_to_teres_major ;
+    :preferred_name ""Nerve to left teres major""^^xsd:string .
+
+","nerve to left teres major is a type of a nerve to teres major.
+nerve to left teres major is a type of at least branch of some a left inferior subscapular nerve.
+nerve to left teres major is a type of at least continuous proximally with some a trunk of left inferior subscapular nerve.
+nerve to left teres major is a type of at least nerve supply of some a left teres major.
+nerve to left teres major is a type of at least regional part of some a peripheral segment of left inferior subscapular nerve.
+nerve to left teres major preferred name a Nerve to left teres major.","The Nerve to the Left Teres Major, also known as the Nerve to the Left Teres Major, is a type of nerve that originates from at least one branch of the Left Inferior Subscapular Nerve and is continuous proximally with the trunk of the same nerve. It supplies the Left Teres Major muscle and is a regional part of the peripheral segment of the Left Inferior Subscapular Nerve.",llama3,6,12,7,21,5,1,5,4.0,4.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma58394,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:superficial_fascia_of_left_free_upper_limb a owl:Class ;
+    rdfs:label ""Superficial fascia of left free upper limb""@en ;
+    ns1:FMAID 58394 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :superficial_fascia_of_left_upper_limb ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :integument_of_left_free_upper_limb ],
+        :superficial_fascia_of_free_upper_limb ;
+    :preferred_name ""Superficial fascia of left free upper limb""^^xsd:string .
+
+","superficial fascia of left free upper limb is a type of a superficial fascia of free upper limb.
+superficial fascia of left free upper limb is a type of at least constitutional part of some an integument of left free upper limb.
+superficial fascia of left free upper limb is a type of at least regional part of some a superficial fascia of left upper limb.
+superficial fascia of left free upper limb preferred name a Superficial fascia of left free upper limb.","The superficial fascia of the left free upper limb, also known as the Superficial fascia of the left free upper limb, is a type of superficial fascia found in the left upper limb. It's a constitutional part of the integument and a regional part of the superficial fascia within that same limb.",llama3,4,8,7,13,3,1,3,2.0,2.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma34394,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:periosteum_of_distal_epiphysis_of_right_radius a owl:Class ;
+    rdfs:label ""Periosteum of distal epiphysis of right radius""@en ;
+    ns1:FMAID 34394 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :distal_epiphysis_of_right_radius ],
+        :periosteum_of_distal_epiphysis_of_radius ;
+    owl:disjointWith :periosteum_of_distal_epiphysis_of_left_radius ;
+    :preferred_name ""Periosteum of distal epiphysis of right radius""^^xsd:string ;
+    :synonym ""Periosteum of distal end of right radius""^^xsd:string,
+        ""Periosteum of lower end of right radius""^^xsd:string .
+
+","periosteum of distal epiphysis of right radius is a type of a periosteum of distal epiphysis of radius.
+periosteum of distal epiphysis of right radius is a type of at least regional part of some a distal epiphysis of right radius.
+periosteum of distal epiphysis of right radius is different from a periosteum of distal epiphysis of left radius.
+periosteum of distal epiphysis of right radius preferred name a Periosteum of distal epiphysis of right radius.
+periosteum of distal epiphysis of right radius synonym a Periosteum of distal end of right radius.
+periosteum of distal epiphysis of right radius synonym a Periosteum of lower end of right radius.","The periosteum of the distal epiphysis of the right radius is a type of periosteum found on the distal epiphysis of the radius, specifically on the right side. It's also a regional part of that same distal epiphysis. Notably, it's distinct from its counterpart on the left radius. This tissue has been given the preferred name ""Periosteum of distal epiphysis of right radius"", and is alternatively known as both the ""Periosteum of distal end of right radius"" and the ""Periosteum of lower end of right radius"".",llama3,6,7,9,12,2,1,2,1.0,1.0,1,1.0,2.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma58243,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_lens a owl:Class ;
+    rdfs:label ""Left lens""@en ;
+    ns1:FMAID 58243 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :nucleus_of_left_lens ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :capsule_of_left_lens ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :left_lens_fiber_mass ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :left_posterior_lens ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :left_eyeball ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :anterior_segment_of_left_eyeball ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :epithelium_of_left_lens ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :left_anterior_lens ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :cortex_of_left_lens ],
+        :lens ;
+    :preferred_name ""Left lens""^^xsd:string ;
+    :synonym ""Lens of left eye""^^xsd:string .
+
+","left lens is a type of a lens.
+left lens is a type of at least constitutional part of some an anterior segment of left eyeball.
+left lens is a type of at least constitutional part some a capsule of left lens.
+left lens is a type of at least constitutional part some a left lens fiber mass.
+left lens is a type of at least constitutional part some an epithelium of left lens.
+left lens is a type of at least regional part of some a left eyeball.
+left lens is a type of at least regional part some a cortex of left lens.
+left lens is a type of at least regional part some a left anterior lens.
+left lens is a type of at least regional part some a left posterior lens.
+left lens is a type of at least regional part some a nucleus of left lens.
+left lens preferred name a Left lens.
+left lens synonym a Lens of left eye.","The left lens, also known as the Lens of the left eye, is a constitutional part of the anterior segment of the left eyeball, specifically being a part of the capsule, fiber mass, epithelium, and cortex of the lens itself. It can be further divided into regional parts such as the nucleus, anterior, and posterior regions.",llama3,12,17,8,42,10,1,10,9.0,9.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma32161,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:periosteum_of_superior_articular_process_of_fourth_lumbar_vertebra a owl:Class ;
+    rdfs:label ""Periosteum of superior articular process of fourth lumbar vertebra""@en ;
+    ns1:FMAID 32161 ;
+    rdfs:subClassOf :periosteum_of_superior_articular_process_of_lumbar_vertebra ;
+    :preferred_name ""Periosteum of superior articular process of fourth lumbar vertebra""^^xsd:string .
+
+","periosteum of superior articular process of fourth lumbar vertebra is a type of a periosteum of superior articular process of lumbar vertebra.
+periosteum of superior articular process of fourth lumbar vertebra preferred name a Periosteum of superior articular process of fourth lumbar vertebra.","The periosteum of the superior articular process of the 4th lumbar vertebra is also known as the periosteum of the superior articular process of the lumbar vertebra, and its preferred name is indeed the ""Periosteum of superior articular process of fourth lumbar vertebra"".",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma312082,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:segment_of_synovial_capsule_of_knee_joint a owl:Class ;
+    rdfs:label ""Segment of synovial capsule of knee joint""@en ;
+    ns1:FMAID 312082 ;
+    rdfs:subClassOf :segment_of_synovial_joint ;
+    :preferred_name ""Segment of synovial capsule of knee joint""^^xsd:string .
+
+","segment of synovial capsule of knee joint is a type of a segment of synovial joint.
+segment of synovial capsule of knee joint preferred name a Segment of synovial capsule of knee joint.","The preferred term for the segment of synovial capsule of the knee joint is indeed the ""Segment of synovial capsule of knee joint"". This specific part of the synovial joint, which surrounds the knee joint, has this very name as its official designation.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma269873,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:right_lower_central_incisor_tooth_socket_space a owl:Class ;
+    rdfs:label ""Right lower central incisor tooth socket space""@en ;
+    ns1:FMAID 269873 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :right_lower_central_incisor_tooth_socket ],
+        [ a owl:Restriction ;
+            owl:onProperty :surrounded_by ;
+            owl:someValuesFrom :right_lower_central_incisor_tooth_bony_socket ],
+        [ a owl:Restriction ;
+            owl:onProperty :contains ;
+            owl:someValuesFrom :right_lower_central_incisor_tooth ],
+        :central_lower_incisor_tooth_socket_space ;
+    owl:disjointWith :left_lower_central_incisor_tooth_socket_space ;
+    :preferred_name ""Right lower central incisor tooth socket space""^^xsd:string ;
+    :synonym ""Socket space 25""^^xsd:string,
+        ""Socket space for right lower central secondary incisor tooth""^^xsd:string,
+        ""Socket space for tooth 25""^^xsd:string .
+
+","right lower central incisor tooth socket space is a type of a central lower incisor tooth socket space.
+right lower central incisor tooth socket space is a type of at least constitutional part of some a right lower central incisor tooth socket.
+right lower central incisor tooth socket space is a type of at least contains some a right lower central incisor tooth.
+right lower central incisor tooth socket space is a type of at least surrounded by some a right lower central incisor tooth bony socket.
+right lower central incisor tooth socket space is different from a left lower central incisor tooth socket space.
+right lower central incisor tooth socket space preferred name a Right lower central incisor tooth socket space.
+right lower central incisor tooth socket space synonym a Socket space 25.
+right lower central incisor tooth socket space synonym a Socket space for right lower central secondary incisor tooth.
+right lower central incisor tooth socket space synonym a Socket space for tooth 25.","The right lower central incisor tooth socket space is a specific type of central incisor tooth socket space, and it's also considered a constitutional part of the right lower central incisor tooth itself. This socket space contains the right lower central incisor tooth and is surrounded by its bony socket. It's distinct from the left lower central incisor tooth socket space, and its preferred name is indeed ""Right lower central incisor tooth socket space"".",llama3,9,11,9,21,4,1,4,3.0,3.0,1,1.0,3.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma234920,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lymphatic_vessel_of_upper_limb a owl:Class ;
+    rdfs:label ""Lymphatic vessel of upper limb""@en ;
+    ns1:FMAID 234920 ;
+    rdfs:subClassOf :vessel_of_lymphatic_chain ;
+    :preferred_name ""Lymphatic vessel of upper limb""^^xsd:string .
+
+","lymphatic vessel of upper limb is a type of a vessel of lymphatic chain.
+lymphatic vessel of upper limb preferred name a Lymphatic vessel of upper limb.","The preferred name for the ""lymphatic vessel of upper limb"" is actually just that - a ""Lymphatic vessel of upper limb"". It's a specific type of vessel, part of the lymphatic chain, and its primary function is to facilitate the flow of lymphatic fluid in the upper limb.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma47277,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tendon_of_left_flexor_hallucis_brevis a owl:Class ;
+    rdfs:label ""Tendon of left flexor hallucis brevis""@en ;
+    ns1:FMAID 47277 ;
+    rdfs:subClassOf :tendon_of_flexor_hallucis_brevis ;
+    :preferred_name ""Tendon of left flexor hallucis brevis""^^xsd:string ;
+    :synonym ""Left flexor hallucis brevis tendon""^^xsd:string .
+
+","tendon of left flexor hallucis brevis is a type of a tendon of flexor hallucis brevis.
+tendon of left flexor hallucis brevis preferred name a Tendon of left flexor hallucis brevis.
+tendon of left flexor hallucis brevis synonym a Left flexor hallucis brevis tendon.","The tendon of the left flexor hallucis brevis, also known as the left flexor hallucis brevis tendon or simply the Tendon of left flexor hallucis brevis, is another name for itself.",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma44828,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:muscular_branch_of_anterior_interosseous_nerve a owl:Class ;
+    rdfs:label ""Muscular branch of anterior interosseous nerve""@en ;
+    ns1:FMAID 44828 ;
+    rdfs:subClassOf :branch_of_anterior_interosseous_nerve ;
+    owl:disjointWith :articular_branch_of_anterior_interosseous_nerve ;
+    :preferred_name ""Muscular branch of anterior interosseous nerve""^^xsd:string .
+
+","muscular branch of anterior interosseous nerve is a type of a branch of anterior interosseous nerve.
+muscular branch of anterior interosseous nerve is different from an articular branch of anterior interosseous nerve.
+muscular branch of anterior interosseous nerve preferred name a Muscular branch of anterior interosseous nerve.","The muscular branch of the anterior interosseous nerve is a specific type of branch that originates from the anterior interosseous nerve, and it's distinct from the articular branch. Its preferred name is indeed the muscular branch of the anterior interosseous nerve.",llama3,3,4,6,6,1,1,1,,,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma20612,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:space_of_peritoneal_fossa a owl:Class ;
+    rdfs:label ""Space of peritoneal fossa""@en ;
+    ns1:FMAID 20612 ;
+    rdfs:subClassOf :subdivision_of_cavity_of_greater_sac ;
+    :preferred_name ""Space of peritoneal fossa""^^xsd:string ;
+    :synonym ""Peritoneal fossa (space)"" .
+
+","space of peritoneal fossa is a type of a subdivision of cavity of greater sac.
+space of peritoneal fossa preferred name a Space of peritoneal fossa.
+space of peritoneal fossa synonym a Peritoneal fossa (space).","The space of peritoneal fossa, also known as the Peritoneal fossa (space), is a subdivision within the cavity of the greater sac.",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma82385,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_tenth_levator_costae a owl:Class ;
+    rdfs:label ""Left tenth levator costae""@en ;
+    ns1:FMAID 82385 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :nerve_supply ;
+            owl:someValuesFrom :nerve_to_left_tenth_levator_costae ],
+        :tenth_levator_costae ;
+    :preferred_name ""Left tenth levator costae""^^xsd:string .
+
+","left tenth levator costae is a type of a tenth levator costae.
+left tenth levator costae is a type of at least nerve supply some a nerve to left tenth levator costae.
+left tenth levator costae preferred name a Left tenth levator costae.","The left tenth levator costae, also known as the left tenth levator costae, has a nerve supply that includes at least one nerve that innervates it. Its preferred name is indeed the left tenth levator costae itself.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma13771,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cavity_of_right_fifth_costotransverse_joint a owl:Class ;
+    rdfs:label ""Cavity of right fifth costotransverse joint""@en ;
+    ns1:FMAID 13771 ;
+    rdfs:subClassOf :cavity_of_fifth_costotransverse_joint ;
+    owl:disjointWith :cavity_of_left_fifth_costotransverse_joint ;
+    :preferred_name ""Cavity of right fifth costotransverse joint""^^xsd:string ;
+    :synonym ""Right fifth costotransverse joint cavity""^^xsd:string .
+
+","cavity of right fifth costotransverse joint is a type of a cavity of fifth costotransverse joint.
+cavity of right fifth costotransverse joint is different from a cavity of left fifth costotransverse joint.
+cavity of right fifth costotransverse joint preferred name a Cavity of right fifth costotransverse joint.
+cavity of right fifth costotransverse joint synonym a Right fifth costotransverse joint cavity.","The cavity of the right fifth costotransverse joint is a specific type of cavity, distinct from its left counterpart. It's also referred to as the ""Cavity of right fifth costotransverse joint"" or simply the ""Right fifth costotransverse joint cavity"".",llama3,4,4,7,7,1,1,1,,,1,1.0,1.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma22500,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:femoral_nutrient_artery a owl:Class ;
+    rdfs:label ""Femoral nutrient artery""@en ;
+    ns1:FMAID 22500 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :branch_of ;
+            owl:someValuesFrom :deep_femoral_artery ],
+        :perforating_femoral_artery ;
+    :preferred_name ""Femoral nutrient artery""^^xsd:string .
+
+","femoral nutrient artery is a type of a perforating femoral artery.
+femoral nutrient artery is a type of at least branch of some a deep femoral artery.
+femoral nutrient artery preferred name a Femoral nutrient artery.","The femoral nutrient artery, also known as the Femoral nutrient artery, is a type of perforating femoral artery and is always a branch of a deep femoral artery, but it's not necessarily the only one.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma241616,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bone_of_distal_metaphysis_of_distal_phalanx_of_left_little_finger a owl:Class ;
+    rdfs:label ""Bone of distal metaphysis of distal phalanx of left little finger""@en ;
+    ns1:FMAID 241616 ;
+    rdfs:subClassOf :bone_of_distal_metaphysis_of_distal_phalanx_of_little_finger ;
+    :preferred_name ""Bone of distal metaphysis of distal phalanx of left little finger""^^xsd:string .
+
+","bone of distal metaphysis of distal phalanx of left little finger is a type of a bone of distal metaphysis of distal phalanx of little finger.
+bone of distal metaphysis of distal phalanx of left little finger preferred name a Bone of distal metaphysis of distal phalanx of left little finger.","The bone of the distal metaphysis of the distal phalanx of the left little finger is specifically referred to as the ""Bone of distal metaphysis of distal phalanx of left little finger"", and it's also a type of bone found in the distal metaphysis of the distal phalanx of the little finger.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma65165,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:epimysium_of_right_tibialis_posterior a owl:Class ;
+    rdfs:label ""Epimysium of right tibialis posterior""@en ;
+    ns1:FMAID 65165 ;
+    rdfs:subClassOf :epimysium_of_tibialis_posterior ;
+    owl:disjointWith :epimysium_of_left_tibialis_posterior ;
+    :preferred_name ""Epimysium of right tibialis posterior""^^xsd:string ;
+    :synonym ""Right tibialis posterior epimysium""^^xsd:string .
+
+","epimysium of right tibialis posterior is a type of an epimysium of tibialis posterior.
+epimysium of right tibialis posterior is different from an epimysium of left tibialis posterior.
+epimysium of right tibialis posterior preferred name a Epimysium of right tibialis posterior.
+epimysium of right tibialis posterior synonym a Right tibialis posterior epimysium.","The epimysium of the right tibialis posterior muscle is a specific type of covering, and it's distinct from its counterpart on the left side. It also goes by the preferred name ""Epimysium of right tibialis posterior"" or the synonym ""Right tibialis posterior epimysium"".",llama3,4,4,7,7,1,1,1,,,1,1.0,1.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma24787,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sixth_cervical_vertebral_arch a owl:Class ;
+    rdfs:label ""Sixth cervical vertebral arch""@en ;
+    ns1:FMAID 24787 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :left_inferior_articular_process_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :left_pedicle_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :right_pedicle_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :spinous_process_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :bony_part_of_sixth_cervical_vertebral_arch ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :right_superior_articular_process_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :right_transverse_process_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :left_superior_articular_process_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :left_lamina_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :right_inferior_articular_process_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :left_transverse_process_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :right_lamina_of_sixth_cervical_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :periosteum_of_sixth_cervical_vertebral_arch ],
+        :cervical_vertebral_arch ;
+    :preferred_name ""Sixth cervical vertebral arch""^^xsd:string ;
+    :synonym ""Arch of sixth cervical vertebra""^^xsd:string .
+
+","sixth cervical vertebral arch is a type of a cervical vertebral arch.
+sixth cervical vertebral arch is a type of at least regional part of some a sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a bony part of sixth cervical vertebral arch.
+sixth cervical vertebral arch is a type of at least regional part some a left inferior articular process of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a left lamina of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a left pedicle of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a left superior articular process of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a left transverse process of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a periosteum of sixth cervical vertebral arch.
+sixth cervical vertebral arch is a type of at least regional part some a right inferior articular process of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a right lamina of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a right pedicle of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a right superior articular process of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a right transverse process of sixth cervical vertebra.
+sixth cervical vertebral arch is a type of at least regional part some a spinous process of sixth cervical vertebra.
+sixth cervical vertebral arch preferred name a Sixth cervical vertebral arch.
+sixth cervical vertebral arch synonym a Arch of sixth cervical vertebra.","The sixth cervical vertebral arch is a type of cervical vertebral arch, and it's also a regional part of the sixth cervical vertebra. Specifically, it can be found as a regional part of various bony structures within the sixth cervical vertebra, including the inferior articular processes, lamina, pedicles, superior articular processes, transverse processes, and spinous process.",llama3,17,20,8,62,15,1,15,14.0,14.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma8949,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:joint_of_head_of_right_tenth_rib a owl:Class ;
+    rdfs:label ""Joint of head of right tenth rib""@en ;
+    ns1:FMAID 8949 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cavity_of_joint_of_right_tenth_costal_head ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :articular_capsule_of_joint_of_head_of_right_tenth_rib ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :radiate_ligament_of_head_of_right_tenth_rib ],
+        [ a owl:Restriction ;
+            owl:onProperty :member_of ;
+            owl:someValuesFrom :set_of_costovertebral_joints ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :articular_facet_of_head_of_right_tenth_rib ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :right_costal_facet_of_body_of_tenth_thoracic_vertebra ],
+        [ a owl:Restriction ;
+            owl:onProperty :member_of ;
+            owl:someValuesFrom :set_of_joints_of_t10_t11_vertebrae ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :right_superior_costal_facet_of_body_of_tenth_thoracic_vertebra ],
+        :joint_of_head_of_tenth_rib ;
+    owl:disjointWith :joint_of_head_of_left_tenth_rib ;
+    :preferred_name ""Joint of head of right tenth rib""^^xsd:string ;
+    :synonym ""Joint of right tenth costal head""^^xsd:string,
+        ""Right tenth costal head joint""^^xsd:string,
+        ""Right tenth costovertebral joint""^^xsd:string .
+
+","joint of head of right tenth rib is a type of a joint of head of tenth rib.
+joint of head of right tenth rib is a type of at least constitutional part some a cavity of joint of right tenth costal head.
+joint of head of right tenth rib is a type of at least constitutional part some a radiate ligament of head of right tenth rib.
+joint of head of right tenth rib is a type of at least constitutional part some a right costal facet of body of tenth thoracic vertebra.
+joint of head of right tenth rib is a type of at least constitutional part some a right superior costal facet of body of tenth thoracic vertebra.
+joint of head of right tenth rib is a type of at least constitutional part some an articular capsule of joint of head of right tenth rib.
+joint of head of right tenth rib is a type of at least constitutional part some an articular facet of head of right tenth rib.
+joint of head of right tenth rib is a type of at least member of some a set of costovertebral joints.
+joint of head of right tenth rib is a type of at least member of some a set of joints of t10 t11 vertebrae.
+joint of head of right tenth rib is different from a joint of head of left tenth rib.
+joint of head of right tenth rib preferred name a Joint of head of right tenth rib.
+joint of head of right tenth rib synonym a Joint of right tenth costal head.
+joint of head of right tenth rib synonym a Right tenth costal head joint.
+joint of head of right tenth rib synonym a Right tenth costovertebral joint.","The joint of the head of the right 10th rib is a type of joint that has at least some constitutional parts, which include: a part of the cavity of the right 10th costal head, a radiate ligament of the head of the right 10th rib, a right costal facet of the body of the 10th thoracic vertebra, and a right superior costal facet of the body of the 10th thoracic vertebra. It is also part of an articular capsule and has an articular facet on the head of the right 10th rib. This joint is a member of the set of costovertebral joints and is distinct from the joint of the head of the left 10th rib.",llama3,14,15,9,41,9,1,9,8.0,8.0,1,1.0,3.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma72657,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:right_inferior_frontal_gyrus a owl:Class ;
+    rdfs:label ""Right inferior frontal gyrus""@en ;
+    ns1:FMAID 72657 ;
+    ns1:Talairach ""187""^^xsd:string,
+        ""229""^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :triangular_part_of_right_inferior_frontal_gyrus ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :orbital_part_of_right_inferior_frontal_gyrus ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :superolateral_segment_of_right_frontal_lobe ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :gray_matter_of_right_inferior_frontal_gyrus ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :right_frontal_lobe ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :opercular_part_of_right_inferior_frontal_gyrus ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :white_matter_of_right_inferior_frontal_gyrus ],
+        :inferior_frontal_gyrus ;
+    owl:disjointWith :left_inferior_frontal_gyrus ;
+    :preferred_name ""Right inferior frontal gyrus""^^xsd:string .
+
+","right inferior frontal gyrus is a type of an inferior frontal gyrus.
+right inferior frontal gyrus is a type of at least constitutional part some a gray matter of right inferior frontal gyrus.
+right inferior frontal gyrus is a type of at least constitutional part some a white matter of right inferior frontal gyrus.
+right inferior frontal gyrus is a type of at least regional part of some a right frontal lobe.
+right inferior frontal gyrus is a type of at least regional part of some a superolateral segment of right frontal lobe.
+right inferior frontal gyrus is a type of at least regional part some a triangular part of right inferior frontal gyrus.
+right inferior frontal gyrus is a type of at least regional part some an opercular part of right inferior frontal gyrus.
+right inferior frontal gyrus is a type of at least regional part some an orbital part of right inferior frontal gyrus.
+right inferior frontal gyrus is different from a left inferior frontal gyrus.
+right inferior frontal gyrus preferred name a Right inferior frontal gyrus.","The right inferior frontal gyrus is a specific type of inferior frontal gyrus, characterized by being composed of both gray and white matter. It's a regional part of the right frontal lobe, specifically the superolateral segment, which includes the triangular, opercular, and orbital parts. Notably, it differs from its left counterpart, with the preferred name being the Right inferior frontal gyrus.",llama3,10,15,9,36,8,1,8,7.0,7.0,1,1.0,,1.0,2.0,,,,,
+fma,http://purl.org/sig/ont/fma/fma33455,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dorsal_surface_of_capitate a owl:Class ;
+    rdfs:label ""Dorsal surface of capitate""@en ;
+    ns1:FMAID 33455 ;
+    rdfs:subClassOf :subdivision_of_surface_of_capitate ;
+    :preferred_name ""Dorsal surface of capitate""^^xsd:string ;
+    :synonym ""Dorsal surface of capitate bone""^^xsd:string .
+
+","dorsal surface of capitate is a type of a subdivision of surface of capitate.
+dorsal surface of capitate preferred name a Dorsal surface of capitate.
+dorsal surface of capitate synonym a Dorsal surface of capitate bone.","The dorsal surface of the capitate, also known as the dorsal surface of the capitate or simply the dorsal surface of the capitate bone, is a subdivision of the surface of the capitate.",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma59950,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:superficial_part_of_left_submandibular_gland a owl:Class ;
+    rdfs:label ""Superficial part of left submandibular gland""@en ;
+    ns1:FMAID 59950 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :left_submandibular_gland ],
+        :superficial_part_of_submandibular_gland ;
+    :preferred_name ""Superficial part of left submandibular gland""^^xsd:string .
+
+","superficial part of left submandibular gland is a type of a superficial part of submandibular gland.
+superficial part of left submandibular gland is a type of at least regional part of some a left submandibular gland.
+superficial part of left submandibular gland preferred name a Superficial part of left submandibular gland.","The superficial part of the left submandibular gland, also known as the superficial part of the left submandibular gland, is a regional part of the left submandibular gland and its preferred name is indeed the ""Superficial part of left submandibular gland"".",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma16344,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:articular_facet_of_superior_articular_process_of_first_lumbar_vertebra a owl:Class ;
+    rdfs:label ""Articular facet of superior articular process of first lumbar vertebra""@en ;
+    ns1:FMAID 16344 ;
+    rdfs:subClassOf :articular_facet_of_superior_articular_process_of_lumbar_vertebra ;
+    :preferred_name ""Articular facet of superior articular process of first lumbar vertebra""^^xsd:string .
+
+","articular facet of superior articular process of first lumbar vertebra is a type of an articular facet of superior articular process of lumbar vertebra.
+articular facet of superior articular process of first lumbar vertebra preferred name a Articular facet of superior articular process of first lumbar vertebra.","The specific aspect of the uppermost joint of the first lumbar spine is similar to, and also referred to as, an articular facet of the uppermost joint of any other lumbar spine.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma318464,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:skeletal_muscle_tissue_of_right_incisivus_labii_inferioris a owl:Class ;
+    rdfs:label ""Skeletal muscle tissue of right incisivus labii inferioris""@en ;
+    ns1:FMAID 318464 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :muscle_body_of_right_incisivus_labii_inferioris ],
+        :skeletal_muscle_tissue_of_incisivus_labii_inferioris ;
+    owl:disjointWith :skeletal_muscle_tissue_of_left_incisivus_labii_inferioris ;
+    :preferred_name ""Skeletal muscle tissue of right incisivus labii inferioris""^^xsd:string .
+
+","skeletal muscle tissue of right incisivus labii inferioris is a type of a skeletal muscle tissue of incisivus labii inferioris.
+skeletal muscle tissue of right incisivus labii inferioris is a type of at least constitutional part of some a muscle body of right incisivus labii inferioris.
+skeletal muscle tissue of right incisivus labii inferioris is different from a skeletal muscle tissue of left incisivus labii inferioris.
+skeletal muscle tissue of right incisivus labii inferioris preferred name a Skeletal muscle tissue of right incisivus labii inferioris.","The skeletal muscle tissue found in the right incisivus labii inferioris is a specific type of skeletal muscle tissue that belongs to the same category as the skeletal muscle tissue found in the incisivus labii inferioris. It is also a part of the overall muscular structure of the right incisivus labii inferioris, and is distinct from its counterpart on the left side. The preferred name for this type of tissue is indeed ""Skeletal muscle tissue of right incisivus labii inferioris"".",llama3,4,7,8,10,2,1,2,1.0,1.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma31753,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:first_pelvic_sacral_foramen a owl:Class ;
+    rdfs:label ""First pelvic sacral foramen""@en ;
+    ns1:FMAID 31753 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :first_sacral_vertebra ],
+        :pelvic_sacral_foramen ;
+    :preferred_name ""First pelvic sacral foramen""^^xsd:string ;
+    :synonym ""First anterior sacral foramen""^^xsd:string .
+
+","first pelvic sacral foramen is a type of a pelvic sacral foramen.
+first pelvic sacral foramen is a type of at least regional part of some a first sacral vertebra.
+first pelvic sacral foramen preferred name a First pelvic sacral foramen.
+first pelvic sacral foramen synonym a First anterior sacral foramen.","The first pelvic sacral foramen, also known as the First anterior sacral foramen or simply referred to as the First pelvic sacral foramen, is a type of regional part that belongs to the first sacral vertebra.",llama3,4,6,8,10,2,1,2,1.0,1.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma59873,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seromucous_acinus_of_salivary_gland a owl:Class ;
+    rdfs:label ""Seromucous acinus of salivary gland""@en ;
+    ns1:FMAID 59873 ;
+    rdfs:subClassOf :acinus_of_salivary_gland ;
+    :preferred_name ""Seromucous acinus of salivary gland""^^xsd:string ;
+    :synonym ""Mixed acinus of salivary gland""^^xsd:string .
+
+","seromucous acinus of salivary gland is a type of an acinus of salivary gland.
+seromucous acinus of salivary gland preferred name a Seromucous acinus of salivary gland.
+seromucous acinus of salivary gland synonym a Mixed acinus of salivary gland.","The seromucous acinus of the salivary gland is also known as a mixed acinus of the salivary gland, and its preferred name is indeed the seromucous acinus of the salivary gland itself.",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma41165,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:compact_bone_of_proximal_phalanx_of_left_middle_finger a owl:Class ;
+    rdfs:label ""Compact bone of proximal phalanx of left middle finger""@en ;
+    ns1:FMAID 41165 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :bone_of_proximal_phalanx_of_left_middle_finger ],
+        :compact_bone_of_proximal_phalanx_of_middle_finger ;
+    :preferred_name ""Compact bone of proximal phalanx of left middle finger""^^xsd:string .
+
+","compact bone of proximal phalanx of left middle finger is a type of a compact bone of proximal phalanx of middle finger.
+compact bone of proximal phalanx of left middle finger is a type of at least regional part of some a bone of proximal phalanx of left middle finger.
+compact bone of proximal phalanx of left middle finger preferred name a Compact bone of proximal phalanx of left middle finger.","The compact bone of the proximal phalanx of the left middle finger is specifically referred to as the compact bone of the proximal phalanx of the left middle finger, and it's also a type of regional part of the bone in that area. It shares characteristics with the compact bone of the proximal phalanx of the middle finger, which is essentially the same structure but on the opposite hand.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma50255,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:set_of_right_prevertebral_muscles a owl:Class ;
+    rdfs:label ""Set of right prevertebral muscles""@en ;
+    ns1:FMAID 50255 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :member ;
+            owl:someValuesFrom :right_longus_capitis ],
+        [ a owl:Restriction ;
+            owl:onProperty :member ;
+            owl:someValuesFrom :right_psoas_major ],
+        [ a owl:Restriction ;
+            owl:onProperty :member ;
+            owl:someValuesFrom :right_quadratus_lumborum ],
+        [ a owl:Restriction ;
+            owl:onProperty :member ;
+            owl:someValuesFrom :right_psoas_minor ],
+        [ a owl:Restriction ;
+            owl:onProperty :member ;
+            owl:someValuesFrom :right_longus_colli ],
+        :set_of_prevertebral_muscles ;
+    :preferred_name ""Set of right prevertebral muscles""^^xsd:string ;
+    :synonym ""Right prevertebral muscles set""^^xsd:string .
+
+","set of right prevertebral muscles is a type of a set of prevertebral muscles.
+set of right prevertebral muscles is a type of at least member some a right longus capitis.
+set of right prevertebral muscles is a type of at least member some a right longus colli.
+set of right prevertebral muscles is a type of at least member some a right psoas major.
+set of right prevertebral muscles is a type of at least member some a right psoas minor.
+set of right prevertebral muscles is a type of at least member some a right quadratus lumborum.
+set of right prevertebral muscles preferred name a Set of right prevertebral muscles.
+set of right prevertebral muscles synonym a Right prevertebral muscles set.","The set of right prevertebral muscles is a specific group of muscles that includes at least some members of the right longus capitis, right longus colli, right psoas major, right psoas minor, and right quadratus lumborum muscles.",llama3,8,10,8,26,6,1,6,5.0,5.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma280331,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:region_of_posterior_lens_capsule a owl:Class ;
+    rdfs:label ""Region of posterior lens capsule""@en ;
+    ns1:FMAID 280331 ;
+    rdfs:subClassOf :region_of_lens_capsule ;
+    :preferred_name ""Region of posterior lens capsule""^^xsd:string .
+
+","region of posterior lens capsule is a type of a region of lens capsule.
+region of posterior lens capsule preferred name a Region of posterior lens capsule.","The ""Region of posterior lens capsule"" is the preferred name for the region of posterior lens capsule, which is a type of region of lens capsule.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma53819,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:epimysium_of_incisivus_labii_superioris a owl:Class ;
+    rdfs:label ""Epimysium of incisivus labii superioris""@en ;
+    ns1:FMAID 53819 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :muscle_body_of_incisivus_labii_superioris ],
+        :fascia_of_incisivus_labii_superioris ;
+    owl:disjointWith :perimysium_of_incisivus_labii_superioris ;
+    :preferred_name ""Epimysium of incisivus labii superioris""^^xsd:string ;
+    :synonym ""Incisivus labii superioris epimysium""^^xsd:string .
+
+","epimysium of incisivus labii superioris is a type of a fascia of incisivus labii superioris.
+epimysium of incisivus labii superioris is a type of at least constitutional part of some a muscle body of incisivus labii superioris.
+epimysium of incisivus labii superioris is different from a perimysium of incisivus labii superioris.
+epimysium of incisivus labii superioris preferred name a Epimysium of incisivus labii superioris.
+epimysium of incisivus labii superioris synonym a Incisivus labii superioris epimysium.","The epimysium of the incisivus labii superioris is a type of fascia that belongs to this specific muscle, and it's not the same as perimysium. It's also a constitutional part of the muscle body itself. This structure has its own preferred name, which is Epimysium of incisivus labii superioris, and it can also be referred to by its synonym, Incisivus labii superioris epimysium.",llama3,5,7,9,11,2,1,2,1.0,1.0,1,1.0,1.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma0327142,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:synovial_plica a owl:Class ;
+    rdfs:label ""Synovial plica""@en ;
+    ns1:FMAID 327142 ;
+    rdfs:subClassOf :anatomical_fold ;
+    :preferred_name ""Synovial plica""^^xsd:string .
+
+","synovial plica is a type of an anatomical fold.
+synovial plica preferred name a Synovial plica.","Synovial Plica, which is also known as the preferred name for this anatomical fold, is indeed a type of synovial plica itself.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma72632,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hypoglossal_nerve_tract a owl:Class ;
+    rdfs:label ""Hypoglossal nerve tract""@en ;
+    ns1:FMAID 72632 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :medulla_oblongata ],
+        :root_of_cranial_nerve ;
+    :non_english_equivalent ""Fibrae nervi hypoglossi""^^xsd:string ;
+    :preferred_name ""Hypoglossal nerve tract""^^xsd:string ;
+    :synonym ""Central part of hypoglossal nerve""^^xsd:string,
+        ""Hypoglossal nerve fibers""^^xsd:string,
+        ""Root of hypoglossal nerve""^^xsd:string .
+
+","hypoglossal nerve tract is a type of a root of cranial nerve.
+hypoglossal nerve tract is a type of at least constitutional part of some a medulla oblongata.
+hypoglossal nerve tract non English equivalent a Fibrae nervi hypoglossi.
+hypoglossal nerve tract preferred name a Hypoglossal nerve tract.
+hypoglossal nerve tract synonym a Central part of hypoglossal nerve.
+hypoglossal nerve tract synonym a Hypoglossal nerve fibers.
+hypoglossal nerve tract synonym a Root of hypoglossal nerve.","The hypoglossal nerve tract is a type of root, specifically the cranial nerve root. It's also a constitutional part of the medulla oblongata and can be referred to as the Fibrae nervi hypoglossi in non-English contexts. The preferred name for this structure is the Hypoglossal nerve tract, and it has several synonyms including the Central part of hypoglossal nerve, Hypoglossal nerve fibers, and Root of hypoglossal nerve.",llama3,7,6,9,13,2,1,2,1.0,1.0,1,1.0,3.0,,,1.0,,,,
+fma,http://purl.org/sig/ont/fma/fma77946,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trunk_of_mammary_tributary_of_axillary_vein a owl:Class ;
+    rdfs:label ""Trunk of mammary tributary of axillary vein""@en ;
+    ns1:FMAID 77946 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :mammary_tributary_of_axillary_vein ],
+        :trunk_of_tributary_of_axillary_vein ;
+    :preferred_name ""Trunk of mammary tributary of axillary vein""^^xsd:string .
+
+","trunk of mammary tributary of axillary vein is a type of a trunk of tributary of axillary vein.
+trunk of mammary tributary of axillary vein is a type of at least regional part of some a mammary tributary of axillary vein.
+trunk of mammary tributary of axillary vein preferred name a Trunk of mammary tributary of axillary vein.","The trunk of the mammary tributary of the axillary vein is also known as the trunk of the mammary tributary of the axillary vein, and it's specifically a regional part of the mammary tributary of the axillary vein, with its preferred name being the Trunk of mammary tributary of axillary vein.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma22661,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:third_part_of_axillary_artery a owl:Class ;
+    rdfs:label ""Third part of axillary artery""@en ;
+    ns1:FMAID 22661 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :branch ;
+            owl:someValuesFrom :lateral_thoracic_artery ],
+        :zone_of_axillary_artery ;
+    :preferred_name ""Third part of axillary artery""^^xsd:string .
+
+","third part of axillary artery is a type of a zone of axillary artery.
+third part of axillary artery is a type of at least branch some a lateral thoracic artery.
+third part of axillary artery preferred name a Third part of axillary artery.","The third part of the axillary artery is a specific region within the axillary artery, and it's also known as the terminal segment of the axillary artery. Additionally, this part of the axillary artery is at least one branch of the lateral thoracic artery, but not exclusively so - it can be any branch of the lateral thoracic artery or another similar vessel.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma7282,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cardiac_muscle_tissue_of_right_atrium a owl:Class ;
+    rdfs:label ""Cardiac muscle tissue of right atrium""@en ;
+    ns1:FMAID 7282 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :myocardium_of_right_atrium_proper ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :superficial_layer_of_myocardium_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :fibrocollagenous_connective_tissue_of_cardiac_muscle_tissue_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cardiac_muscle_fasciculus_of_right_atrium ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :deep_layer_of_myocardium_of_right_atrium ],
+        :cardiac_muscle_tissue_of_atrium ;
+    owl:disjointWith :cardiac_muscle_tissue_of_left_atrium ;
+    :preferred_name ""Cardiac muscle tissue of right atrium""^^xsd:string .
+
+","cardiac muscle tissue of right atrium is a type of a cardiac muscle tissue of atrium.
+cardiac muscle tissue of right atrium is a type of at least constitutional part of some a deep layer of myocardium of right atrium.
+cardiac muscle tissue of right atrium is a type of at least constitutional part of some a myocardium of right atrium proper.
+cardiac muscle tissue of right atrium is a type of at least constitutional part of some a superficial layer of myocardium of right atrium.
+cardiac muscle tissue of right atrium is a type of at least constitutional part some a cardiac muscle fasciculus of right atrium.
+cardiac muscle tissue of right atrium is a type of at least constitutional part some a fibrocollagenous connective tissue of cardiac muscle tissue of right atrium.
+cardiac muscle tissue of right atrium is different from a cardiac muscle tissue of left atrium.
+cardiac muscle tissue of right atrium preferred name a Cardiac muscle tissue of right atrium.","The cardiac muscle tissue found in the right atrium is a type of cardiac muscle tissue that is part of the atrial myocardium, specifically the deep layer or superficial layer of the right atrial myocardium proper. It's also composed of cardiac muscle fasciculi and fibrocollagenous connective tissue. This type of tissue is unique to the right atrium and differs from the cardiac muscle tissue found in the left atrium.",llama3,8,12,8,26,6,1,6,5.0,5.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma51465,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:periosteum_of_distal_third_of_left_calcaneus a owl:Class ;
+    rdfs:label ""Periosteum of distal third of left calcaneus""@en ;
+    ns1:FMAID 51465 ;
+    rdfs:subClassOf :periosteum_of_distal_third_of_calcaneus ;
+    :preferred_name ""Periosteum of distal third of left calcaneus""^^xsd:string ;
+    :synonym ""Periosteum of anterior part of left calcaneus""^^xsd:string .
+
+","periosteum of distal third of left calcaneus is a type of a periosteum of distal third of calcaneus.
+periosteum of distal third of left calcaneus preferred name a Periosteum of distal third of left calcaneus.
+periosteum of distal third of left calcaneus synonym a Periosteum of anterior part of left calcaneus.","The periosteum of the distal third of the left calcaneus is also known as the periosteum of the distal third of the calcaneus, and its preferred name is the periosteum of the distal third of the left calcaneus. Additionally, it can be referred to synonymously as the periosteum of the anterior part of the left calcaneus.",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma81780,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nerve_to_right_fifth_thoracic_rotator a owl:Class ;
+    rdfs:label ""Nerve to right fifth thoracic rotator""@en ;
+    ns1:FMAID 81780 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :nerve_supply_of ;
+            owl:someValuesFrom :right_fifth_thoracic_rotator ],
+        :nerve_to_fifth_thoracic_rotator ;
+    owl:disjointWith :nerve_to_left_fifth_thoracic_rotator ;
+    :preferred_name ""Nerve to right fifth thoracic rotator""^^xsd:string .
+
+","nerve to right fifth thoracic rotator is a type of a nerve to fifth thoracic rotator.
+nerve to right fifth thoracic rotator is a type of at least nerve supply of some a right fifth thoracic rotator.
+nerve to right fifth thoracic rotator is different from a nerve to left fifth thoracic rotator.
+nerve to right fifth thoracic rotator preferred name a Nerve to right fifth thoracic rotator.","The nerve to the right 5th thoracic rotator is a type of nerve that supplies the right 5th thoracic rotator, and it's distinct from the nerve that supplies the left 5th thoracic rotator. Its preferred name is indeed ""Nerve to right fifth thoracic rotator"".",llama3,4,7,8,10,2,1,2,1.0,1.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma28465,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:surface_of_left_articular_process_of_third_thoracic_vertebra a owl:Class ;
+    rdfs:label ""Surface of left articular process of third thoracic vertebra""@en ;
+    ns1:FMAID 28465 ;
+    rdfs:subClassOf :surface_of_articular_process_of_third_thoracic_vertebra ;
+    :preferred_name ""Surface of left articular process of third thoracic vertebra""^^xsd:string .
+
+","surface of left articular process of third thoracic vertebra is a type of a surface of articular process of third thoracic vertebra.
+surface of left articular process of third thoracic vertebra preferred name a Surface of left articular process of third thoracic vertebra.","The surface of the left articular process of the third thoracic vertebra is officially known as the ""Surface of the left articular process of the third thoracic vertebra"".",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma84239,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_primary_first_upper_molar_tooth a owl:Class ;
+    rdfs:label ""Left primary first upper molar tooth""@en ;
+    ns1:FMAID 84239 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :member_of ;
+            owl:someValuesFrom :primary_dentition ],
+        :primary_first_upper_molar_tooth ;
+    :preferred_name ""Left primary first upper molar tooth""^^xsd:string ;
+    :synonym ""Left upper first deciduous molar tooth""^^xsd:string,
+        ""Left upper primary tooth D""^^xsd:string,
+        ""Tooth I""^^xsd:string .
+
+","left primary first upper molar tooth is a type of a primary first upper molar tooth.
+left primary first upper molar tooth is a type of at least member of some a primary dentition.
+left primary first upper molar tooth preferred name a Left primary first upper molar tooth.
+left primary first upper molar tooth synonym a Left upper first deciduous molar tooth.
+left primary first upper molar tooth synonym a Left upper primary tooth D.
+left primary first upper molar tooth synonym a Tooth I.","The left primary first upper molar tooth is a type of primary first upper molar tooth, and it's also a part of the primary dentition. It has several preferred names, including ""Left primary first upper molar tooth"", but it's also commonly referred to as the ""Left upper first deciduous molar tooth"", ""Left upper primary tooth D"", or simply ""Tooth I"".",llama3,6,6,8,12,2,1,2,1.0,1.0,1,1.0,3.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma67314,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dendrite a owl:Class ;
+    rdfs:label ""Dendrite""@en ;
+    ns1:FMAID 67314 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :cell_body_of_neuron ],
+        [ a owl:Restriction ;
+            owl:onProperty :connection_type ;
+            owl:someValuesFrom :chemical_synapse ],
+        :neurite ;
+    :definition ""Neurite which has as its direct parts a dendrite proper and a set of dendritic spines.""^^xsd:string ;
+    :preferred_name ""Dendrite""^^xsd:string .
+
+","dendrite definition a Neurite which has as its direct parts a dendrite proper and a set of dendritic spines..
+dendrite is a type of a neurite.
+dendrite is a type of at least connection type some a chemical synapse.
+dendrite is a type of at least continuous with some a cell body of neuron.
+dendrite preferred name a Dendrite.","A dendrite is a specific type of neurite, characterized by having a direct part consisting of the dendrite proper and a set of dendritic spines. It's also a type of neurite that can be connected to other neurons through chemical synapses, and it's continuous with the cell body of a neuron.",llama3,5,8,8,14,3,1,3,2.0,2.0,1,1.0,,,,,1.0,,,
+fma,http://purl.org/sig/ont/fma/fma306079,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_posterior_middle_cingulate_gyrus a owl:Class ;
+    rdfs:label ""Left posterior middle cingulate gyrus""@en ;
+    ns1:FMAID 306079 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :dorsal_segment_of_left_posterior_middle_cingulate_gyrus ],
+        [ a owl:Restriction ;
+            owl:onProperty :part ;
+            owl:someValuesFrom :ventral_segment_of_left_posterior_middle_cingulate_gyrus ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :left_middle_cingulate_gyrus ],
+        :posterior_middle_cingulate_gyrus ;
+    :preferred_name ""Left posterior middle cingulate gyrus""^^xsd:string ;
+    :synonym ""Left posterior part of middle cingulate gyrus""^^xsd:string .
+
+","left posterior middle cingulate gyrus is a type of a posterior middle cingulate gyrus.
+left posterior middle cingulate gyrus is a type of at least part some a ventral segment of left posterior middle cingulate gyrus.
+left posterior middle cingulate gyrus is a type of at least regional part of some a left middle cingulate gyrus.
+left posterior middle cingulate gyrus is a type of at least regional part some a dorsal segment of left posterior middle cingulate gyrus.
+left posterior middle cingulate gyrus preferred name a Left posterior middle cingulate gyrus.
+left posterior middle cingulate gyrus synonym a Left posterior part of middle cingulate gyrus.","The left posterior middle cingulate gyrus is essentially the same as itself, but it can also be considered a part or region within the ventral segment of its own structure, or a regional part of the left middle cingulate gyrus, including its dorsal segment. It's also known by its preferred name, ""Left posterior middle cingulate gyrus"", and has the synonym ""Left posterior part of middle cingulate gyrus"".",llama3,6,10,8,18,4,1,4,3.0,3.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma225563,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bony_part_of_seventh_rib a owl:Class ;
+    rdfs:label ""Bony part of seventh rib""@en ;
+    ns1:FMAID 225563 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :seventh_rib ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :medullary_cavity_of_seventh_rib ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :bone_of_seventh_rib ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :vasculature_of_bony_part_of_seventh_rib ],
+        :bony_part_of_rib ;
+    :preferred_name ""Bony part of seventh rib""^^xsd:string .
+
+","bony part of seventh rib is a type of a bony part of rib.
+bony part of seventh rib is a type of at least constitutional part of some a seventh rib.
+bony part of seventh rib is a type of at least constitutional part some a bone of seventh rib.
+bony part of seventh rib is a type of at least constitutional part some a medullary cavity of seventh rib.
+bony part of seventh rib is a type of at least constitutional part some a vasculature of bony part of seventh rib.
+bony part of seventh rib preferred name a Bony part of seventh rib.","The bony part of the 7th rib, also known as the ""Bony part of seventh rib"", is a type of rib, specifically a constitutional part of the 7th rib bone, and more precisely, it's a constitutional part of the medullary cavity or vasculature within that same 7th rib.",llama3,6,10,7,21,5,1,5,4.0,4.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma291945,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:postganglionic_segment_of_posterior_root_of_second_cervical_spinal_nerve a owl:Class ;
+    rdfs:label ""Postganglionic segment of posterior root of second cervical spinal nerve""@en ;
+    ns1:FMAID 291945 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :posterior_root_of_second_cervical_nerve ],
+        :postganglionic_segment_of_posterior_root_of_cervical_spinal_nerve ;
+    :preferred_name ""Postganglionic segment of posterior root of second cervical spinal nerve""^^xsd:string .
+
+","postganglionic segment of posterior root of second cervical spinal nerve is a type of a postganglionic segment of posterior root of cervical spinal nerve.
+postganglionic segment of posterior root of second cervical spinal nerve is a type of at least regional part of some a posterior root of second cervical nerve.
+postganglionic segment of posterior root of second cervical spinal nerve preferred name a Postganglionic segment of posterior root of second cervical spinal nerve.","The postganglionic segment of the posterior root of the second cervical spinal nerve is specifically referred to as its own preferred name, which is also the postganglionic segment of the posterior root of the second cervical spinal nerve. Additionally, it can be classified as a regional part of some posterior root of the second cervical nerve, and it's also a type of postganglionic segment found in the posterior roots of cervical spinal nerves.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma35519,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subtendinous_bursa_of_right_infraspinatus_muscle a owl:Class ;
+    rdfs:label ""Subtendinous bursa of right infraspinatus muscle""@en ;
+    ns1:FMAID 35519 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :scapular_part_of_right_shoulder ],
+        [ a owl:Restriction ;
+            owl:onProperty :member_of ;
+            owl:someValuesFrom :set_of_bursae_of_right_shoulder ],
+        :subtendinous_bursa_of_infraspinatus_muscle ;
+    owl:disjointWith :subtendinous_bursa_of_left_infraspinatus_muscle ;
+    :preferred_name ""Subtendinous bursa of right infraspinatus muscle""^^xsd:string .
+
+","subtendinous bursa of right infraspinatus muscle is a type of a subtendinous bursa of infraspinatus muscle.
+subtendinous bursa of right infraspinatus muscle is a type of at least constitutional part of some a scapular part of right shoulder.
+subtendinous bursa of right infraspinatus muscle is a type of at least member of some a set of bursae of right shoulder.
+subtendinous bursa of right infraspinatus muscle is different from a subtendinous bursa of left infraspinatus muscle.
+subtendinous bursa of right infraspinatus muscle preferred name a Subtendinous bursa of right infraspinatus muscle.","The subtendinous bursa of the right infraspinatus muscle is a type of subtendinous bursa found in the infraspinatus muscle, specifically on the right side. It's also considered a constitutional part of the scapular region within the right shoulder and is one of several bursae present in this area. Notably, it differs from its counterpart on the left side. Its preferred name is indeed the subtendinous bursa of the right infraspinatus muscle.",llama3,5,9,8,14,3,1,3,2.0,2.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma24463,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:distal_phalanx_of_right_little_finger a owl:Class ;
+    rdfs:label ""Distal phalanx of right little finger""@en ;
+    ns1:FMAID 24463 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :distal_epiphysis_of_distal_phalanx_of_right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :vasculature_of_distal_phalanx_of_right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :bony_part_of_distal_phalanx_of_right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :articular_cartilage_of_proximal_epiphysis_of_distal_phalanx_of_right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :articular_cartilage_of_distal_epiphysis_of_distal_phalanx_of_right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :proximal_epiphysis_of_distal_phalanx_of_right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :diaphysis_of_distal_phalanx_of_right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :articulates_with ;
+            owl:someValuesFrom :middle_phalanx_of_right_little_finger ],
+        [ a owl:Restriction ;
+            owl:onProperty :member_of ;
+            owl:someValuesFrom :set_of_phalanges_of_right_little_finger ],
+        :distal_phalanx_of_little_finger ;
+    :preferred_name ""Distal phalanx of right little finger""^^xsd:string ;
+    :synonym ""Distal phalanx of fifth digit of right hand""^^xsd:string,
+        ""Distal phalanx of right fifth finger""^^xsd:string,
+        ""Fifth distal phalanx of right hand""^^xsd:string .
+
+","distal phalanx of right little finger is a type of a distal phalanx of little finger.
+distal phalanx of right little finger is a type of at least articulates with some a middle phalanx of right little finger.
+distal phalanx of right little finger is a type of at least constitutional part of some a right little finger.
+distal phalanx of right little finger is a type of at least constitutional part some a bony part of distal phalanx of right little finger.
+distal phalanx of right little finger is a type of at least constitutional part some a vasculature of distal phalanx of right little finger.
+distal phalanx of right little finger is a type of at least constitutional part some an articular cartilage of distal epiphysis of distal phalanx of right little finger.
+distal phalanx of right little finger is a type of at least constitutional part some an articular cartilage of proximal epiphysis of distal phalanx of right little finger.
+distal phalanx of right little finger is a type of at least member of some a set of phalanges of right little finger.
+distal phalanx of right little finger is a type of at least regional part some a diaphysis of distal phalanx of right little finger.
+distal phalanx of right little finger is a type of at least regional part some a distal epiphysis of distal phalanx of right little finger.
+distal phalanx of right little finger is a type of at least regional part some a proximal epiphysis of distal phalanx of right little finger.
+distal phalanx of right little finger preferred name a Distal phalanx of right little finger.
+distal phalanx of right little finger synonym a Distal phalanx of fifth digit of right hand.
+distal phalanx of right little finger synonym a Distal phalanx of right fifth finger.
+distal phalanx of right little finger synonym a Fifth distal phalanx of right hand.","The distal phalanx of the right little finger is a type of distal phalanx that articulates with the middle phalanx, is a constitutional part of the right little finger, and is composed of bony parts, vasculature, articular cartilage, and other components. It's also a member of the set of phalanges in the right little finger and has regional parts such as diaphysis, distal epiphysis, and proximal epiphysis.",llama3,15,19,8,48,11,1,11,10.0,10.0,1,1.0,3.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma38654,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:skin_of_lateral_part_of_left_ring_finger a owl:Class ;
+    rdfs:label ""Skin of lateral part of left ring finger""@en ;
+    ns1:FMAID 38654 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :skin_of_left_ring_finger ],
+        :skin_of_lateral_part_of_ring_finger ;
+    :preferred_name ""Skin of lateral part of left ring finger""^^xsd:string ;
+    :synonym ""Skin of lateral part of fourth digit of left hand""^^xsd:string,
+        ""Skin of lateral part of left fourth finger""^^xsd:string .
+
+","skin of lateral part of left ring finger is a type of a skin of lateral part of ring finger.
+skin of lateral part of left ring finger is a type of at least regional part of some a skin of left ring finger.
+skin of lateral part of left ring finger preferred name a Skin of lateral part of left ring finger.
+skin of lateral part of left ring finger synonym a Skin of lateral part of fourth digit of left hand.
+skin of lateral part of left ring finger synonym a Skin of lateral part of left fourth finger.","The skin on the outer side of the left ring finger is also known as the skin on the outer side of the ring finger, and it's specifically referred to as the skin on the outer side of the left ring finger or the skin on the outer side of the fourth digit of the left hand, which is equivalent to saying the skin on the outer side of the left fourth finger.",llama3,5,6,8,11,2,1,2,1.0,1.0,1,1.0,2.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma0326016,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:segment_of_skin_of_pinna a owl:Class ;
+    rdfs:label ""Segment of skin of pinna""@en ;
+    ns1:FMAID 326016 ;
+    rdfs:subClassOf :segment_of_skin_of_external_ear ;
+    :preferred_name ""Segment of skin of pinna""^^xsd:string .
+
+","segment of skin of pinna is a type of a segment of skin of external ear.
+segment of skin of pinna preferred name a Segment of skin of pinna.","The preferred term for the segment of skin on the pinna, which is a part of the external ear, is indeed ""Segment of skin of pinna"".",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma78112,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trunk_of_spinal_tributary_of_left_first_lumbar_vein a owl:Class ;
+    rdfs:label ""Trunk of spinal tributary of left first lumbar vein""@en ;
+    ns1:FMAID 78112 ;
+    rdfs:subClassOf :trunk_of_spinal_tributary_of_first_lumbar_vein ;
+    :preferred_name ""Trunk of spinal tributary of left first lumbar vein""^^xsd:string .
+
+","trunk of spinal tributary of left first lumbar vein is a type of a trunk of spinal tributary of first lumbar vein.
+trunk of spinal tributary of left first lumbar vein preferred name a Trunk of spinal tributary of left first lumbar vein.","The preferred name for the ""trunk of spinal tributary of left first lumbar vein"" is actually just that - the ""Trunk of spinal tributary of left first lumbar vein"". It's essentially the same thing, with no additional information or distinction.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma77820,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deep_lymphatic_plexus_of_left_testis a owl:Class ;
+    rdfs:label ""Deep lymphatic plexus of left testis""@en ;
+    ns1:FMAID 77820 ;
+    rdfs:subClassOf :deep_lymphatic_plexus_of_testis ;
+    :preferred_name ""Deep lymphatic plexus of left testis""^^xsd:string .
+
+","deep lymphatic plexus of left testis is a type of a deep lymphatic plexus of testis.
+deep lymphatic plexus of left testis preferred name a Deep lymphatic plexus of left testis.","The preferred name for the ""Deep lymphatic plexus of left testis"" is indeed the ""Deep lymphatic plexus of left testis"". It's essentially the same thing, just with a more specific and detailed description.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma283837,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plexiform_layer_of_left_brodmann_area_23 a owl:Class ;
+    rdfs:label ""Plexiform layer of left Brodmann area 23""@en ;
+    ns1:FMAID 283837 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :left_brodmann_area_23 ],
+        :plexiform_layer_of_brodmann_area_23 ;
+    :preferred_name ""Plexiform layer of left Brodmann area 23""^^xsd:string .
+
+","plexiform layer of left brodmann area 23 is a type of a plexiform layer of brodmann area 23.
+plexiform layer of left brodmann area 23 is a type of at least constitutional part of some a left brodmann area 23.
+plexiform layer of left brodmann area 23 preferred name a Plexiform layer of left Brodmann area 23.","The plexiform layer of the left Brodmann area 23, also known as the Plexiform layer of the left Brodmann area 23, is a type of plexiform layer found within the left Brodmann area 23 and is a constitutional part of this region.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma45836,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:muscle_fasciculus_of_right_internal_oblique a owl:Class ;
+    rdfs:label ""Muscle fasciculus of right internal oblique""@en ;
+    ns1:FMAID 45836 ;
+    rdfs:subClassOf :muscle_fasciculus_of_internal_oblique ;
+    owl:disjointWith :muscle_fasciculus_of_left_internal_oblique ;
+    :preferred_name ""Muscle fasciculus of right internal oblique""^^xsd:string .
+
+","muscle fasciculus of right internal oblique is a type of a muscle fasciculus of internal oblique.
+muscle fasciculus of right internal oblique is different from a muscle fasciculus of left internal oblique.
+muscle fasciculus of right internal oblique preferred name a Muscle fasciculus of right internal oblique.","The muscle fasciculus of the right internal oblique is a type of muscle fasciculus found in the internal oblique muscle, but it's distinct from its counterpart on the left side. Its preferred name is indeed ""muscle fasciculus of the right internal oblique"".",llama3,3,4,6,6,1,1,1,,,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma83261,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bony_part_of_distal_phalanx_of_big_toe a owl:Class ;
+    rdfs:label ""Bony part of distal phalanx of big toe""@en ;
+    ns1:FMAID 83261 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :bone_of_distal_phalanx_of_big_toe ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :distal_phalanx_of_big_toe ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :periosteum_of_distal_phalanx_of_big_toe ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :vasculature_of_bony_part_of_distal_phalanx_of_big_toe ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :medullary_cavity_of_distal_phalanx_of_big_toe ],
+        :bony_part_of_phalanx_of_big_toe ;
+    :preferred_name ""Bony part of distal phalanx of big toe""^^xsd:string ;
+    :synonym ""Bony part of distal phalanx of great toe""^^xsd:string .
+
+","bony part of distal phalanx of big toe is a type of a bony part of phalanx of big toe.
+bony part of distal phalanx of big toe is a type of at least constitutional part of some a distal phalanx of big toe.
+bony part of distal phalanx of big toe is a type of at least constitutional part some a bone of distal phalanx of big toe.
+bony part of distal phalanx of big toe is a type of at least constitutional part some a medullary cavity of distal phalanx of big toe.
+bony part of distal phalanx of big toe is a type of at least constitutional part some a periosteum of distal phalanx of big toe.
+bony part of distal phalanx of big toe is a type of at least constitutional part some a vasculature of bony part of distal phalanx of big toe.
+bony part of distal phalanx of big toe preferred name a Bony part of distal phalanx of big toe.
+bony part of distal phalanx of big toe synonym a Bony part of distal phalanx of great toe.","The bony part of the distal phalanx of the big toe is specifically referred to as the ""Bony part of distal phalanx of big toe"" and also known as the ""Bony part of distal phalanx of great toe"". It's a constitutional part of the distal phalanx, which includes the medullary cavity, periosteum, vasculature, and bone itself.",llama3,8,11,8,26,6,1,6,5.0,5.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma259435,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cavity_of_left_humerus a owl:Class ;
+    rdfs:label ""Cavity of left humerus""@en ;
+    ns1:FMAID 259435 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :network_of_trabecular_spaces_in_bone_tissue_of_left_humerus ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :medullary_cavity_of_left_humerus ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :left_humerus ],
+        :cavity_of_humerus ;
+    :preferred_name ""Cavity of left humerus""^^xsd:string .
+
+","cavity of left humerus is a type of a cavity of humerus.
+cavity of left humerus is a type of at least constitutional part of some a left humerus.
+cavity of left humerus is a type of at least regional part some a medullary cavity of left humerus.
+cavity of left humerus is a type of at least regional part some a network of trabecular spaces in bone tissue of left humerus.
+cavity of left humerus preferred name a Cavity of left humerus.","The cavity of the left humerus refers to a specific type of cavity found within the humerus, which is a constitutional part of the left humerus itself. It can be further classified as a regional part of the medullary cavity, which is a network of trabecular spaces present in the bone tissue of the left humerus. The preferred name for this cavity is indeed the ""Cavity of the Left Humerus"".",llama3,5,9,7,17,4,1,4,3.0,3.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma47013,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:epimysium_of_left_adductor_magnus a owl:Class ;
+    rdfs:label ""Epimysium of left adductor magnus""@en ;
+    ns1:FMAID 47013 ;
+    rdfs:subClassOf :epimysium_of_adductor_magnus ;
+    :preferred_name ""Epimysium of left adductor magnus""^^xsd:string ;
+    :synonym ""Left adductor magnus epimysium""^^xsd:string .
+
+","epimysium of left adductor magnus is a type of an epimysium of adductor magnus.
+epimysium of left adductor magnus preferred name a Epimysium of left adductor magnus.
+epimysium of left adductor magnus synonym a Left adductor magnus epimysium.","The epimysium of the left adductor magnus muscle has a specific name, which is the ""Epimysium of the left adductor magnus"". It also goes by another name, which is simply the ""Left adductor magnus epimysium"".",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma224118,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:integument_of_zygomatic_part_of_left_cheek a owl:Class ;
+    rdfs:label ""Integument of zygomatic part of left cheek""@en ;
+    ns1:FMAID 224118 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :superficial_fascia_of_zygomatic_part_of_left_cheek ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :zygomatic_part_of_left_cheek ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :integument_of_left_cheek ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :skin_of_zygomatic_part_of_left_cheek ],
+        :integument_of_zygomatic_part_of_cheek ;
+    :preferred_name ""Integument of zygomatic part of left cheek""^^xsd:string .
+
+","integument of zygomatic part of left cheek is a type of an integument of zygomatic part of cheek.
+integument of zygomatic part of left cheek is a type of at least constitutional part of some a zygomatic part of left cheek.
+integument of zygomatic part of left cheek is a type of at least constitutional part some a skin of zygomatic part of left cheek.
+integument of zygomatic part of left cheek is a type of at least constitutional part some a superficial fascia of zygomatic part of left cheek.
+integument of zygomatic part of left cheek is a type of at least regional part of some an integument of left cheek.
+integument of zygomatic part of left cheek preferred name a Integument of zygomatic part of left cheek.","The integument of the zygomatic part of the left cheek refers to the skin and superficial fascia that covers this specific area, which is a constitutional part of the overall integument of the left cheek.",llama3,6,11,7,21,5,1,5,4.0,4.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma64710,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fibrous_membrane_of_articular_capsule_of_distal_interphalangeal_joint_of_left_fourth_toe a owl:Class ;
+    rdfs:label ""Fibrous membrane of articular capsule of distal interphalangeal joint of left fourth toe""@en ;
+    ns1:FMAID 64710 ;
+    rdfs:subClassOf :fibrous_membrane_of_articular_capsule_of_distal_interphalangeal_joint_of_fourth_toe ;
+    :preferred_name ""Fibrous membrane of articular capsule of distal interphalangeal joint of left fourth toe""^^xsd:string .
+
+","fibrous membrane of articular capsule of distal interphalangeal joint of left fourth toe is a type of a fibrous membrane of articular capsule of distal interphalangeal joint of fourth toe.
+fibrous membrane of articular capsule of distal interphalangeal joint of left fourth toe preferred name a Fibrous membrane of articular capsule of distal interphalangeal joint of left fourth toe.","The fibrous membrane of the articular capsule in the distal interphalangeal joint of the left fourth toe is also known as the fibrous membrane of the articular capsule in the distal interphalangeal joint of the fourth toe, and its preferred name is the Fibrous membrane of articular capsule of distal interphalangeal joint of left fourth toe.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma293170,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:musculoskeletal_system_of_perineum a owl:Class ;
+    rdfs:label ""Musculoskeletal system of perineum""@en ;
+    ns1:FMAID 293170 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :musculature_of_perineum ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :skeletal_system_of_perineum ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :musculoskeletal_system_of_trunk ],
+        :musculoskeletal_system_of_subdivision_of_trunk ;
+    :preferred_name ""Musculoskeletal system of perineum""^^xsd:string .
+
+","musculoskeletal system of perineum is a type of a musculoskeletal system of subdivision of trunk.
+musculoskeletal system of perineum is a type of at least constitutional part some a musculature of perineum.
+musculoskeletal system of perineum is a type of at least constitutional part some a skeletal system of perineum.
+musculoskeletal system of perineum is a type of at least regional part of some a musculoskeletal system of trunk.
+musculoskeletal system of perineum preferred name a Musculoskeletal system of perineum.","The musculoskeletal system of the perineum is a type of subdivision within the musculoskeletal system of the trunk, specifically comprising constitutional parts of the perineal musculature and skeletal system. It can also be considered as a regional part of the larger musculoskeletal system of the trunk, with its preferred name being the Musculoskeletal system of the perineum.",llama3,5,9,7,17,4,1,4,3.0,3.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma66788,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:type_b_synoviocyte a owl:Class ;
+    rdfs:label ""Type B synoviocyte""@en ;
+    ns1:FMAID 66788 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :synovial_intima ],
+        :synoviocyte ;
+    :preferred_name ""Type B synoviocyte""^^xsd:string ;
+    :synonym ""Type B synovial cell""^^xsd:string .
+
+","type b synoviocyte is a type of a synoviocyte.
+type b synoviocyte is a type of at least constitutional part of some a synovial intima.
+type b synoviocyte preferred name a Type B synoviocyte.
+type b synoviocyte synonym a Type B synovial cell.","Here's the rewritten paragraph:
+
+Type B synoviocytes are a specific type of synoviocyte, and they also make up at least a part of the synovial intima in some cases. They're commonly referred to as Type B synoviocytes, with their preferred name being exactly that - Type B synoviocyte. Another way to describe them is by using the synonym ""Type B synovial cell"".",llama3,4,6,8,10,2,1,2,1.0,1.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma47011,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:epimysium_of_adductor_magnus a owl:Class ;
+    rdfs:label ""Epimysium of adductor magnus""@en ;
+    ns1:FMAID 47011 ;
+    rdfs:subClassOf :fascia_of_adductor_magnus ;
+    owl:disjointWith :perimysium_of_adductor_magnus ;
+    :preferred_name ""Epimysium of adductor magnus""^^xsd:string ;
+    :synonym ""Adductor magnus epimysium""^^xsd:string .
+
+","epimysium of adductor magnus is a type of a fascia of adductor magnus.
+epimysium of adductor magnus is different from a perimysium of adductor magnus.
+epimysium of adductor magnus preferred name a Epimysium of adductor magnus.
+epimysium of adductor magnus synonym a Adductor magnus epimysium.","The epimysium of the adductor magnus muscle is a type of fascia that surrounds it, and it has its own unique characteristics. It's distinct from the perimysium, which is another layer of connective tissue found within the muscle itself. The preferred name for this structure is indeed ""Epimysium of adductor magnus"", and it also goes by the synonym ""Adductor magnus epimysium"".",llama3,4,4,7,7,1,1,1,,,1,1.0,1.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma61675,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_perineofemoral_line a owl:Class ;
+    rdfs:label ""Left perineofemoral line""@en ;
+    ns1:FMAID 61675 ;
+    rdfs:subClassOf :perineofemoral_line ;
+    :preferred_name ""Left perineofemoral line""^^xsd:string ;
+    :synonym ""Left perineofemoral crease""^^xsd:string .
+
+","left perineofemoral line is a type of a perineofemoral line.
+left perineofemoral line preferred name a Left perineofemoral line.
+left perineofemoral line synonym a Left perineofemoral crease.","The left perineofemoral line, also known as the Left perineofemoral line or simply referred to as the Left perineofemoral crease, is a type of its own kind.",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma264700,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ectomolare a owl:Class ;
+    rdfs:label ""Ectomolare""@en ;
+    ns1:FMAID 264700 ;
+    rdfs:subClassOf :anatomical_point_of_skull ;
+    :preferred_name ""Ectomolare""^^xsd:string .
+
+","ectomolare is a type of an anatomical point of skull.
+ectomolare preferred name a Ectomolare.","The ectomolare, which is also referred to as the Ectomolare, is a specific anatomical point on the skull.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma241614,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bone_of_distal_metaphysis_of_distal_phalanx_of_right_little_finger a owl:Class ;
+    rdfs:label ""Bone of distal metaphysis of distal phalanx of right little finger""@en ;
+    ns1:FMAID 241614 ;
+    rdfs:subClassOf :bone_of_distal_metaphysis_of_distal_phalanx_of_little_finger ;
+    owl:disjointWith :bone_of_distal_metaphysis_of_distal_phalanx_of_left_little_finger ;
+    :preferred_name ""Bone of distal metaphysis of distal phalanx of right little finger""^^xsd:string .
+
+","bone of distal metaphysis of distal phalanx of right little finger is a type of a bone of distal metaphysis of distal phalanx of little finger.
+bone of distal metaphysis of distal phalanx of right little finger is different from a bone of distal metaphysis of distal phalanx of left little finger.
+bone of distal metaphysis of distal phalanx of right little finger preferred name a Bone of distal metaphysis of distal phalanx of right little finger.","The bone of the distal metaphysis of the distal phalanx of the right little finger is a specific type of bone, distinct from its counterpart on the left little finger. Its official name is indeed ""Bone of distal metaphysis of distal phalanx of right little finger"".",llama3,3,4,6,6,1,1,1,,,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma315481,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vasculature_of_endosteum_of_left_maxilla a owl:Class ;
+    rdfs:label ""Vasculature of endosteum of left maxilla""@en ;
+    ns1:FMAID 315481 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :vasculature_of_left_maxilla ],
+        :vasculature_of_endosteum_of_maxilla ;
+    :preferred_name ""Vasculature of endosteum of left maxilla""^^xsd:string .
+
+","vasculature of endosteum of left maxilla is a type of a vasculature of endosteum of maxilla.
+vasculature of endosteum of left maxilla is a type of at least regional part of some a vasculature of left maxilla.
+vasculature of endosteum of left maxilla preferred name a Vasculature of endosteum of left maxilla.","The vasculature of the endosteum of the left maxilla refers to a specific type of blood vessel network found in the bone marrow of the left upper jawbone, which is a part of the overall vasculature of the maxilla. This term is also known as the Vasculature of the endosteum of the left maxilla.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma83332,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subendocardial_branch_of_septal_division_of_left_branch_of_atrioventricular_bundle a owl:Class ;
+    rdfs:label ""Subendocardial branch of septal division of left branch of atrioventricular bundle""@en ;
+    ns1:FMAID 83332 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :regular_ventricular_cardiac_myocyte ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :purkinje_myocyte_of_atrioventricular_bundle ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :conducting_system_of_left_ventricle ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :conducting_system_of_heart ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part ;
+            owl:someValuesFrom :cardiac_endomysium ],
+        [ a owl:Restriction ;
+            owl:onProperty :continuous_with ;
+            owl:someValuesFrom :septal_division_of_left_branch_of_atrioventricular_bundle ],
+        :subdivision_of_conducting_system_of_heart ;
+    :definition ""Subdivision of conducting system of heart which is interpersed with the regular cardiac myocyte on the left stratum of the interventricular septum.""^^xsd:string ;
+    :preferred_name ""Subendocardial branch of septal division of left branch of atrioventricular bundle""^^xsd:string .
+
+","subendocardial branch of septal division of left branch of atrioventricular bundle definition a Subdivision of conducting system of heart which is interpersed with the regular cardiac myocyte on the left stratum of the interventricular septum..
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of a subdivision of conducting system of heart.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least constitutional part some a cardiac endomysium.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least constitutional part some a purkinje myocyte of atrioventricular bundle.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least continuous with some a regular ventricular cardiac myocyte.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least continuous with some a septal division of left branch of atrioventricular bundle.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least regional part of some a conducting system of heart.
+subendocardial branch of septal division of left branch of atrioventricular bundle is a type of at least regional part of some a conducting system of left ventricle.
+subendocardial branch of septal division of left branch of atrioventricular bundle preferred name a Subendocardial branch of septal division of left branch of atrioventricular bundle.","The subendocardial branch of the septal division of the left branch of the atrioventricular bundle is a subdivision of the heart's conducting system, situated within the cardiac myocytes on the left stratum of the interventricular septum. It is a constitutional part of the cardiac endomysium and Purkinje myocyte of the atrioventricular bundle, continuous with regular ventricular cardiac myocytes. This regional part of the conducting system plays a crucial role in the heart's functioning, particularly in the left ventricle.",llama3,9,13,8,30,7,1,7,6.0,6.0,1,1.0,,,,,1.0,,,
+fma,http://purl.org/sig/ont/fma/fma25054,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subdivision_of_trunk a owl:Class ;
+    rdfs:label ""Subdivision of trunk""@en ;
+    ns1:FMAID 25054 ;
+    rdfs:comment """"""subdivision of cardinal body part, each instance of which is a regional part of trunk. Examples: back, front of trunk, thorax, abdomen, pelvis.
+""""""^^xsd:string ;
+    rdfs:subClassOf :subdivision_of_body_proper ;
+    :preferred_name ""Subdivision of trunk""^^xsd:string ;
+    :synonym ""Region of trunk""^^xsd:string,
+        ""Trunk subdivision""^^xsd:string .
+
+","subdivision of trunk is a type of a subdivision of body proper.
+subdivision of trunk preferred name a Subdivision of trunk.
+subdivision of trunk synonym a Region of trunk.
+subdivision of trunk synonym a Trunk subdivision.","The subdivision of the trunk, also known as a region or trunk subdivision, refers to a specific part of the human body that is a type of subdivision within the overall body proper.",llama3,4,3,7,8,1,1,1,,,1,1.0,2.0,,,,,1.0,,
+fma,http://purl.org/sig/ont/fma/fma51820,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bone_of_distal_phalanx_of_left_big_toe a owl:Class ;
+    rdfs:label ""Bone of distal phalanx of left big toe""@en ;
+    ns1:FMAID 51820 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :compact_bone_of_distal_phalanx_of_left_big_toe ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :bony_part_of_distal_phalanx_of_left_big_toe ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :trabecular_bone_of_distal_phalanx_of_left_big_toe ],
+        :bone_of_distal_phalanx_of_big_toe ;
+    :preferred_name ""Bone of distal phalanx of left big toe""^^xsd:string ;
+    :synonym ""Bone of distal phalanx of left great toe""^^xsd:string .
+
+","bone of distal phalanx of left big toe is a type of a bone of distal phalanx of big toe.
+bone of distal phalanx of left big toe is a type of at least constitutional part of some a bony part of distal phalanx of left big toe.
+bone of distal phalanx of left big toe is a type of at least regional part some a compact bone of distal phalanx of left big toe.
+bone of distal phalanx of left big toe is a type of at least regional part some a trabecular bone of distal phalanx of left big toe.
+bone of distal phalanx of left big toe preferred name a Bone of distal phalanx of left big toe.
+bone of distal phalanx of left big toe synonym a Bone of distal phalanx of left great toe.","The bone of the distal phalanx of the left big toe is a type of bone found in the distal phalanx of the big toe, and it's also a constitutional part, regional part, or compact/trabecular bone of that specific area. It's officially known as the ""Bone of distal phalanx of left big toe"" and can also be referred to as the ""Bone of distal phalanx of left great toe"".",llama3,6,9,8,18,4,1,4,3.0,3.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma85653,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wall_of_trunk_of_middle_suprarenal_artery a owl:Class ;
+    rdfs:label ""Wall of trunk of middle suprarenal artery""@en ;
+    ns1:FMAID 85653 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :trunk_of_middle_suprarenal_artery ],
+        :wall_of_trunk_of_artery ;
+    :preferred_name ""Wall of trunk of middle suprarenal artery""^^xsd:string .
+
+","wall of trunk of middle suprarenal artery is a type of a wall of trunk of artery.
+wall of trunk of middle suprarenal artery is a type of at least constitutional part of some a trunk of middle suprarenal artery.
+wall of trunk of middle suprarenal artery preferred name a Wall of trunk of middle suprarenal artery.","The wall of the trunk of the middle suprarenal artery, also known as the Wall of trunk of middle suprarenal artery, is essentially the same thing as the constitutional part of the trunk of the middle suprarenal artery.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma50426,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:left_thalamotuberal_artery a owl:Class ;
+    rdfs:label ""Left thalamotuberal artery""@en ;
+    ns1:FMAID 50426 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part ;
+            owl:someValuesFrom :trunk_of_left_thalamotuberal_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :branch_of ;
+            owl:someValuesFrom :left_posterior_communicating_artery ],
+        :thalamotuberal_artery ;
+    :preferred_name ""Left thalamotuberal artery""^^xsd:string .
+
+","left thalamotuberal artery is a type of a thalamotuberal artery.
+left thalamotuberal artery is a type of at least branch of some a left posterior communicating artery.
+left thalamotuberal artery is a type of at least regional part some a trunk of left thalamotuberal artery.
+left thalamotuberal artery preferred name a Left thalamotuberal artery.","The left thalamotuberal artery, also known as the Left thalamotuberal artery, is a type of branch that originates from the left posterior communicating artery and is a regional part of the trunk of the same artery.",llama3,4,8,7,13,3,1,3,2.0,2.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma0323568,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:superficial_fascia_of_plantar_part_of_toe a owl:Class ;
+    rdfs:label ""Superficial fascia of plantar part of toe""@en ;
+    ns1:FMAID 323568 ;
+    rdfs:subClassOf :superficial_fascia_of_region_of_toe ;
+    :preferred_name ""Superficial fascia of plantar part of toe""^^xsd:string .
+
+","superficial fascia of plantar part of toe is a type of a superficial fascia of region of toe.
+superficial fascia of plantar part of toe preferred name a Superficial fascia of plantar part of toe.","The superficial fascia of the plantar part of the toe, also known as the superficial fascia of the plantar part of the toe, is a type of superficial fascia that specifically refers to the region of the toe.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma60292,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:body_of_nail_of_third_toe a owl:Class ;
+    rdfs:label ""Body of nail of third toe""@en ;
+    ns1:FMAID 60292 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :nail_of_third_toe ],
+        :body_of_nail_of_toe ;
+    :preferred_name ""Body of nail of third toe""^^xsd:string .
+
+","body of nail of third toe is a type of a body of nail of toe.
+body of nail of third toe is a type of at least regional part of some a nail of third toe.
+body of nail of third toe preferred name a Body of nail of third toe.","The ""Body of nail of third toe"" is also known as the ""Body of nail of third toe"", and it's a specific part of the nail on the third toe, which is a regional part of that particular nail.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma301459,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:head_of_right_pectoralis_major a owl:Class ;
+    rdfs:label ""Head of right pectoralis major""@en ;
+    ns1:FMAID 301459 ;
+    rdfs:subClassOf :head_of_pectoralis_major ;
+    owl:disjointWith :head_of_left_pectoralis_major ;
+    :preferred_name ""Head of right pectoralis major""^^xsd:string .
+
+","head of right pectoralis major is a type of a head of pectoralis major.
+head of right pectoralis major is different from a head of left pectoralis major.
+head of right pectoralis major preferred name a Head of right pectoralis major.","The head of the right pectoralis major muscle, also known as the ""Head of right pectoralis major"", is a specific type of head that belongs to the pectoralis major muscle. Notably, it differs from its counterpart on the left side, and its preferred name is indeed ""Head of right pectoralis major"".",llama3,3,4,6,6,1,1,1,,,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma4421,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:muscular_branch_of_lateral_branch_of_dorsal_branch_of_left_third_posterior_intercostal_artery a owl:Class ;
+    rdfs:label ""Muscular branch of lateral branch of dorsal branch of left third posterior intercostal artery""@en ;
+    ns1:FMAID 4421 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :branch_of ;
+            owl:someValuesFrom :lateral_branch_of_dorsal_branch_of_left_third_posterior_intercostal_artery ],
+        :muscular_branch_of_lateral_branch_of_dorsal_branch_of_third_posterior_intercostal_artery ;
+    :preferred_name ""Muscular branch of lateral branch of dorsal branch of left third posterior intercostal artery""^^xsd:string .
+
+","muscular branch of lateral branch of dorsal branch of left third posterior intercostal artery is a type of a muscular branch of lateral branch of dorsal branch of third posterior intercostal artery.
+muscular branch of lateral branch of dorsal branch of left third posterior intercostal artery is a type of at least branch of some a lateral branch of dorsal branch of left third posterior intercostal artery.
+muscular branch of lateral branch of dorsal branch of left third posterior intercostal artery preferred name a Muscular branch of lateral branch of dorsal branch of left third posterior intercostal artery.","The muscular branch of the lateral branch of the dorsal branch of the left third posterior intercostal artery is also known as the muscular branch of the lateral branch of the dorsal branch of the third posterior intercostal artery, and it's a type of branch that originates from the lateral branch of the dorsal branch of the left third posterior intercostal artery.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma0328766,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:posteromedial_part_of_right_side_of_middle_part_of_peripheral_zone_of_prostate a owl:Class ;
+    rdfs:label ""Posteromedial part of right side of middle part of peripheral zone of prostate""@en ;
+    ns1:FMAID 328766 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :medial_to ;
+            owl:someValuesFrom :posterolateral_part_of_right_side_of_middle_part_of_peripheral_zone_of_prostate ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :right_side_of_middle_part_of_peripheral_zone_of_prostate ],
+        :subdivision_of_middle_part_of_peripheral_zone_of_prostate ;
+    owl:disjointWith :lateral_part_of_right_side_of_middle_part_of_peripheral_zone_of_prostate,
+        :posterolateral_part_of_right_side_of_middle_part_of_peripheral_zone_of_prostate,
+        :posteromedial_part_of_left_side_of_middle_part_of_peripheral_zone_of_prostate ;
+    :pi_rads_v1_16_id ""3p""^^xsd:string ;
+    :pi_rads_v1_27_id ""3p""^^xsd:string .
+
+","posteromedial part of right side of middle part of peripheral zone of prostate PI RADS v1 16 ID a 3p.
+posteromedial part of right side of middle part of peripheral zone of prostate PI RADS v1 27 ID a 3p.
+posteromedial part of right side of middle part of peripheral zone of prostate is a type of a subdivision of middle part of peripheral zone of prostate.
+posteromedial part of right side of middle part of peripheral zone of prostate is a type of at least medial to some a posterolateral part of right side of middle part of peripheral zone of prostate.
+posteromedial part of right side of middle part of peripheral zone of prostate is a type of at least regional part of some a right side of middle part of peripheral zone of prostate.
+posteromedial part of right side of middle part of peripheral zone of prostate is different from (a posterolateral part of right side of middle part of peripheral zone of prostate, and a posteromedial part of left side of middle part of peripheral zone of prostate, and a lateral part of right side of middle part of peripheral zone of prostate).","The posteromedial part of the right side of the middle part of the peripheral zone of the prostate is a specific region that can be classified as PI RADS v1 16 or 27. This area is a type of subdivision within the middle part of the peripheral zone, and it's characterized by being medial to some parts and regional to others on the right side. Notably, this region is distinct from other areas such as the posterolateral part of the right side, the posteromedial part of the left side, or the lateral part of the right side.",llama3,6,10,9,17,3,1,3,2.0,2.0,1,,,3.0,,,,,1.0,1.0
+fma,http://purl.org/sig/ont/fma/fma225631,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:articular_part_of_humerus a owl:Class ;
+    rdfs:label ""Articular part of humerus""@en ;
+    ns1:FMAID 225631 ;
+    rdfs:subClassOf :articular_part_of_long_bone ;
+    :preferred_name ""Articular part of humerus""^^xsd:string .
+
+","articular part of humerus is a type of an articular part of long bone.
+articular part of humerus preferred name a Articular part of humerus.","The articular part of the humerus, which is also known as the articular part of the humerus, is a specific type of articular part found in long bones.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma312449,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fetal_tongue a owl:Class ;
+    rdfs:label ""Fetal tongue""@en ;
+    ns1:FMAID 312449 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :transforms_into ;
+            owl:someValuesFrom :tongue ],
+        [ a owl:Restriction ;
+            owl:onProperty :transforms_from ;
+            owl:someValuesFrom :embryonic_tongue ],
+        :developmental_cluster ;
+    :preferred_name ""Fetal tongue""^^xsd:string .
+
+","fetal tongue is a type of a developmental cluster.
+fetal tongue is a type of at least transforms from some an embryonic tongue.
+fetal tongue is a type of at least transforms into some a tongue.
+fetal tongue preferred name a Fetal tongue.","The fetal tongue is a developmental cluster that transforms from an embryonic tongue and eventually turns into a tongue, and its preferred name is indeed the ""Fetal tongue"".",llama3,4,8,7,13,3,1,3,2.0,2.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma296487,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:surface_of_anatomical_neck_of_humerus a owl:Class ;
+    rdfs:label ""Surface of anatomical neck of humerus""@en ;
+    ns1:FMAID 296487 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :surface_of_proximal_epiphysis_of_humerus ],
+        :surface_of_region_of_humerus ;
+    :preferred_name ""Surface of anatomical neck of humerus""^^xsd:string .
+
+","surface of anatomical neck of humerus is a type of a surface of region of humerus.
+surface of anatomical neck of humerus is a type of at least regional part of some a surface of proximal epiphysis of humerus.
+surface of anatomical neck of humerus preferred name a Surface of anatomical neck of humerus.","The surface of the anatomical neck of the humerus is a region on the humerus, specifically a part of the proximal epiphysis, and it's also referred to as the surface of the anatomical neck of the humerus itself.",llama3,3,6,7,9,2,1,2,1.0,1.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma275668,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulcal_segment_of_inferior_parietal_lobule a owl:Class ;
+    rdfs:label ""Sulcal segment of inferior parietal lobule""@en ;
+    ns1:FMAID 275668 ;
+    rdfs:subClassOf :segment_of_inferior_parietal_lobule ;
+    :preferred_name ""Sulcal segment of inferior parietal lobule""^^xsd:string .
+
+","sulcal segment of inferior parietal lobule is a type of a segment of inferior parietal lobule.
+sulcal segment of inferior parietal lobule preferred name a Sulcal segment of inferior parietal lobule.","The sulcal segment of the inferior parietal lobule, also known as the sulcal segment of the inferior parietal lobule, is its own preferred name.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma15476,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lateral_tributary_of_dorsal_tributary_of_left_third_lumbar_vein a owl:Class ;
+    rdfs:label ""Lateral tributary of dorsal tributary of left third lumbar vein""@en ;
+    ns1:FMAID 15476 ;
+    rdfs:subClassOf :lateral_tributary_of_dorsal_tributary_of_third_lumbar_vein ;
+    :preferred_name ""Lateral tributary of dorsal tributary of left third lumbar vein""^^xsd:string .
+
+","lateral tributary of dorsal tributary of left third lumbar vein is a type of a lateral tributary of dorsal tributary of third lumbar vein.
+lateral tributary of dorsal tributary of left third lumbar vein preferred name a Lateral tributary of dorsal tributary of left third lumbar vein.","The preferred name for the lateral tributary of the dorsal tributary of the left third lumbar vein is actually the lateral tributary of the dorsal tributary of the left third lumbar vein itself, which is a type of a lateral tributary of the dorsal tributary of the third lumbar vein.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma275999,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:right_level_i_axillary_lymph_node a owl:Class ;
+    rdfs:label ""Right level I axillary lymph node""@en ;
+    ns1:FMAID 275999 ;
+    rdfs:subClassOf :level_i_axillary_lymph_node ;
+    owl:disjointWith :left_level_i_axillary_lymph_node ;
+    :preferred_name ""Right level I axillary lymph node""^^xsd:string .
+
+","right level i axillary lymph node is a type of a level i axillary lymph node.
+right level i axillary lymph node is different from a left level i axillary lymph node.
+right level i axillary lymph node preferred name a Right level I axillary lymph node.","A right-level-I-axillary-lymph-node is the same as itself, meaning it's an identical entity. It's distinct from its counterpart on the left side, which would be referred to as a left-level-I-axillary-lymph-node. The preferred name for this specific type of lymph node is indeed ""Right level I axillary lymph node"".",llama3,3,4,6,6,1,1,1,,,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma55949,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trigeminal_impression a owl:Class ;
+    rdfs:label ""Trigeminal impression""@en ;
+    ns1:FMAID 55949 ;
+    rdfs:subClassOf :subdivision_of_surface_of_temporal_bone ;
+    :non_english_equivalent ""Impressio trigeminalis""^^xsd:string,
+        ""Impression trigéminale""^^xsd:string ;
+    :preferred_name ""Trigeminal impression""^^xsd:string ;
+    :synonym ""Meckel's groove""^^xsd:string .
+
+","trigeminal impression is a type of a subdivision of surface of temporal bone.
+trigeminal impression non English equivalent a Impressio trigeminalis.
+trigeminal impression non English equivalent a Impression trigéminale.
+trigeminal impression preferred name a Trigeminal impression.
+trigeminal impression synonym a Meckel's groove.","The term ""Trigeminal impression"" refers to a specific subdivision of the surface of the temporal bone, also known as Impressio trigeminalis or Impression trigéminale in non-English languages. This anatomical feature is alternatively referred to as Meckel's groove, and its preferred name is indeed Trigeminal impression.",llama3,5,3,7,8,1,1,1,,,1,1.0,1.0,,,2.0,,,,
+fma,http://purl.org/sig/ont/fma/fma18629,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:germinal_epithelium_of_ovary a owl:Class ;
+    rdfs:label ""Germinal epithelium of ovary""@en ;
+    ns1:FMAID 18629 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :capsule_of_ovary ],
+        :simple_cuboidal_epithelium ;
+    :preferred_name ""Germinal epithelium of ovary""^^xsd:string ;
+    :synonym ""Epithelium superficiale (Ovarium)""^^xsd:string .
+
+","germinal epithelium of ovary is a type of a simple cuboidal epithelium.
+germinal epithelium of ovary is a type of at least constitutional part of some a capsule of ovary.
+germinal epithelium of ovary preferred name a Germinal epithelium of ovary.
+germinal epithelium of ovary synonym a Epithelium superficiale (Ovarium).","The germinal epithelium of the ovary is a type of simple cuboidal epithelium, which is also known as the epithelium superficiale or Germinal epithelium of the ovary. It's a constitutional part of some capsules within the ovary, and it's preferred to be referred to by its specific name, Germinal epithelium of the ovary.",llama3,4,6,8,10,2,1,2,1.0,1.0,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma19697,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:region_of_muscle_layer_of_male_urethra a owl:Class ;
+    rdfs:label ""Region of muscle layer of male urethra""@en ;
+    ns1:FMAID 19697 ;
+    rdfs:subClassOf :region_of_muscle_layer_of_urethra ;
+    owl:disjointWith :region_of_muscle_layer_of_femaleurethra ;
+    :preferred_name ""Region of muscle layer of male urethra""^^xsd:string ;
+    :synonym ""Muscle layer of segment of male urethra""^^xsd:string .
+
+","region of muscle layer of male urethra is a type of a region of muscle layer of urethra.
+region of muscle layer of male urethra is different from a region of muscle layer of femaleurethra.
+region of muscle layer of male urethra preferred name a Region of muscle layer of male urethra.
+region of muscle layer of male urethra synonym a Muscle layer of segment of male urethra.","The region of the muscle layer in the male urethra is a specific type of region found only in the urethra, and it's distinct from the region found in the female urethra. It's also known as the ""Region of muscle layer of male urethra"" or more informally referred to as the ""Muscle layer of segment of male urethra"".",llama3,4,4,7,7,1,1,1,,,1,1.0,1.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma79362,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trunk_of_lower_sternocleidomastoid_branch_of_left_occipital_artery a owl:Class ;
+    rdfs:label ""Trunk of lower sternocleidomastoid branch of left occipital artery""@en ;
+    ns1:FMAID 79362 ;
+    rdfs:subClassOf :trunk_of_lower_sternocleidomastoid_branch_of_occipital_artery ;
+    :preferred_name ""Trunk of lower sternocleidomastoid branch of left occipital artery""^^xsd:string .
+
+","trunk of lower sternocleidomastoid branch of left occipital artery is a type of a trunk of lower sternocleidomastoid branch of occipital artery.
+trunk of lower sternocleidomastoid branch of left occipital artery preferred name a Trunk of lower sternocleidomastoid branch of left occipital artery.","The preferred name for the trunk of the lower sternocleidomastoid branch of the left occipital artery is indeed the ""Trunk of lower sternocleidomastoid branch of left occipital artery"". This suggests that there is no other acceptable or commonly used term for this specific anatomical structure.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma43860,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:anterior_border_of_shaft_of_right_fibula a owl:Class ;
+    rdfs:label ""Anterior border of shaft of right fibula""@en ;
+    ns1:FMAID 43860 ;
+    rdfs:subClassOf :anterior_border_of_shaft_of_fibula ;
+    owl:disjointWith :anterior_border_of_shaft_of_left_fibula ;
+    :preferred_name ""Anterior border of shaft of right fibula""^^xsd:string .
+
+","anterior border of shaft of right fibula is a type of an anterior border of shaft of fibula.
+anterior border of shaft of right fibula is different from an anterior border of shaft of left fibula.
+anterior border of shaft of right fibula preferred name a Anterior border of shaft of right fibula.","The anterior border of the shaft of the right fibula is identical to that of the fibula, but it's distinct from its counterpart on the left side. Its official and preferred name is indeed the ""Anterior border of shaft of right fibula"".",llama3,3,4,6,6,1,1,1,,,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma17224,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:surface_of_small_intestine a owl:Class ;
+    rdfs:label ""Surface of small intestine""@en ;
+    ns1:FMAID 17224 ;
+    rdfs:subClassOf :surface_of_organ ;
+    :preferred_name ""Surface of small intestine""^^xsd:string ;
+    :synonym ""Small intestinal surface""^^xsd:string .
+
+","surface of small intestine is a type of a surface of organ.
+surface of small intestine preferred name a Surface of small intestine.
+surface of small intestine synonym a Small intestinal surface.","The surface of the small intestine, also known as the Small intestinal surface or simply the Surface of small intestine, is a type of surface that belongs to an organ, specifically the small intestine.",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma83048,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cavity_of_smooth_endoplasmic_reticulum_vesicle a owl:Class ;
+    rdfs:label ""Cavity of smooth endoplasmic reticulum vesicle""@en ;
+    ns1:FMAID 83048 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :contains ;
+            owl:someValuesFrom :matrix_of_smooth_endoplasmic_reticulum_vesicle ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :smooth_endoplasmic_reticulum_vesicle ],
+        :cavity_of_endoplasmic_reticulum_vesicle ;
+    owl:disjointWith :cavity_of_rough_endoplasmic_reticulum_vesicle ;
+    :preferred_name ""Cavity of smooth endoplasmic reticulum vesicle""^^xsd:string ;
+    :synonym ""Smooth endoplasmic reticulum vesicle cavity""^^xsd:string .
+
+","cavity of smooth endoplasmic reticulum vesicle is a type of a cavity of endoplasmic reticulum vesicle.
+cavity of smooth endoplasmic reticulum vesicle is a type of at least constitutional part of some a smooth endoplasmic reticulum vesicle.
+cavity of smooth endoplasmic reticulum vesicle is a type of at least contains some a matrix of smooth endoplasmic reticulum vesicle.
+cavity of smooth endoplasmic reticulum vesicle is different from a cavity of rough endoplasmic reticulum vesicle.
+cavity of smooth endoplasmic reticulum vesicle preferred name a Cavity of smooth endoplasmic reticulum vesicle.
+cavity of smooth endoplasmic reticulum vesicle synonym a Smooth endoplasmic reticulum vesicle cavity.","The cavity within a smooth endoplasmic reticulum vesicle is a type of internal compartment found in these vesicles, and it's also a constitutional part of the vesicle itself. This cavity contains some kind of matrix specific to smooth endoplasmic reticulum vesicles. It's distinct from the cavities found within rough endoplasmic reticulum vesicles. The preferred name for this structure is the ""Cavity of smooth endoplasmic reticulum vesicle"", and it's also commonly referred to as the ""Smooth endoplasmic reticulum vesicle cavity"".",llama3,6,9,9,15,3,1,3,2.0,2.0,1,1.0,1.0,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma50820,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inferior_bulb_of_right_internal_jugular_vein a owl:Class ;
+    rdfs:label ""Inferior bulb of right internal jugular vein""@en ;
+    ns1:FMAID 50820 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :right_internal_jugular_vein ],
+        :inferior_bulb_of_internal_jugular_vein ;
+    owl:disjointWith :inferior_bulb_of_left_internal_jugular_vein ;
+    :preferred_name ""Inferior bulb of right internal jugular vein""^^xsd:string .
+
+","inferior bulb of right internal jugular vein is a type of an inferior bulb of internal jugular vein.
+inferior bulb of right internal jugular vein is a type of at least regional part of some a right internal jugular vein.
+inferior bulb of right internal jugular vein is different from an inferior bulb of left internal jugular vein.
+inferior bulb of right internal jugular vein preferred name a Inferior bulb of right internal jugular vein.","The inferior bulb of the right internal jugular vein is a specific type of inferior bulb that is part of the right internal jugular vein, and it's distinct from its left-sided counterpart. It's also worth noting that this structure has a preferred name, which is indeed ""Inferior bulb of right internal jugular vein"".",llama3,4,7,8,10,2,1,2,1.0,1.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma83858,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:decussation_of_neuraxis a owl:Class ;
+    rdfs:label ""Decussation of neuraxis""@en ;
+    ns1:FMAID 83858 ;
+    rdfs:subClassOf :segment_of_white_matter_of_neuraxis ;
+    :preferred_name ""Decussation of neuraxis""^^xsd:string ;
+    :synonym ""Neuraxis decussation""^^xsd:string .
+
+","decussation of neuraxis is a type of a segment of white matter of neuraxis.
+decussation of neuraxis preferred name a Decussation of neuraxis.
+decussation of neuraxis synonym a Neuraxis decussation.","The term ""Decussation of the neuraxis"" refers to a specific segment of white matter within the neuraxis, and it is also known as the ""Neuraxis decussation"".",llama3,3,3,6,6,1,1,1,,,1,1.0,1.0,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma23176,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lateral_mammary_branch_of_right_lateral_thoracic_artery a owl:Class ;
+    rdfs:label ""Lateral mammary branch of right lateral thoracic artery""@en ;
+    ns1:FMAID 23176 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :branch_of ;
+            owl:someValuesFrom :right_lateral_thoracic_artery ],
+        [ a owl:Restriction ;
+            owl:onProperty :regional_part_of ;
+            owl:someValuesFrom :right_lateral_thoracic_artery ],
+        :lateral_mammary_branch_of_lateral_thoracic_artery ;
+    owl:disjointWith :lateral_mammary_branch_of_left_lateral_thoracic_artery ;
+    :preferred_name ""Lateral mammary branch of right lateral thoracic artery""^^xsd:string .
+
+","lateral mammary branch of right lateral thoracic artery is a type of a lateral mammary branch of lateral thoracic artery.
+lateral mammary branch of right lateral thoracic artery is a type of at least branch of some a right lateral thoracic artery.
+lateral mammary branch of right lateral thoracic artery is a type of at least regional part of some a right lateral thoracic artery.
+lateral mammary branch of right lateral thoracic artery is different from a lateral mammary branch of left lateral thoracic artery.
+lateral mammary branch of right lateral thoracic artery preferred name a Lateral mammary branch of right lateral thoracic artery.","The lateral mammary branch of the right lateral thoracic artery is a type of lateral mammary branch, specifically belonging to the right lateral thoracic artery. It's also a regional part of this artery and has no equivalent on the left side. Its preferred name is indeed ""Lateral mammary branch of right lateral thoracic artery"".",llama3,5,8,8,14,3,1,3,2.0,2.0,1,1.0,,1.0,,,,,,
+fma,http://purl.org/sig/ont/fma/fma232399,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:set_of_lateral_cervical_lymphatic_vessels a owl:Class ;
+    rdfs:label ""Set of lateral cervical lymphatic vessels""@en ;
+    ns1:FMAID 232399 ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :lateral_cervical_lymphatic_chain ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutional_part_of ;
+            owl:someValuesFrom :jugular_lymphatic_chain ],
+        :set_of_lymphatic_vessels_of_neck ;
+    :preferred_name ""Set of lateral cervical lymphatic vessels""^^xsd:string .
+
+","set of lateral cervical lymphatic vessels is a type of a set of lymphatic vessels of neck.
+set of lateral cervical lymphatic vessels is a type of at least constitutional part of some a jugular lymphatic chain.
+set of lateral cervical lymphatic vessels is a type of at least constitutional part of some a lateral cervical lymphatic chain.
+set of lateral cervical lymphatic vessels preferred name a Set of lateral cervical lymphatic vessels.","The set of lateral cervical lymphatic vessels, also known as the Set of lateral cervical lymphatic vessels, are a type of lymphatic vessel found in the neck and are part of either the jugular lymphatic chain or the lateral cervical lymphatic chain.",llama3,4,7,7,13,3,1,3,2.0,2.0,1,1.0,,,,,,,,
+fma,http://purl.org/sig/ont/fma/fma69887,"@prefix ns1: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trunk_of_cutaneous_part_of_left_posterior_scrotal_artery a owl:Class ;
+    rdfs:label ""Trunk of cutaneous part of left posterior scrotal artery""@en ;
+    ns1:FMAID 69887 ;
+    rdfs:subClassOf :trunk_of_cutaneous_part_of_posterior_scrotal_artery ;
+    :preferred_name ""Trunk of cutaneous part of left posterior scrotal artery""^^xsd:string .
+
+","trunk of cutaneous part of left posterior scrotal artery is a type of a trunk of cutaneous part of posterior scrotal artery.
+trunk of cutaneous part of left posterior scrotal artery preferred name a Trunk of cutaneous part of left posterior scrotal artery.","The ""Trunk of cutaneous part of left posterior scrotal artery"" is the official name for the trunk of the cutaneous part of the left posterior scrotal artery, which is essentially the same thing as saying it's a synonym or alias for that specific anatomical structure.",llama3,2,3,5,5,1,1,1,,,1,1.0,,,,,,,,

@@ -1,4 +1,6 @@
+import dataclasses
 import re
+from collections import Counter
 from dataclasses import dataclass
 from typing import Type
 
@@ -7,7 +9,7 @@ from rdflib import RDFS, RDF, OWL
 from rdflib import URIRef, Literal, BNode
 from rdflib.term import Node
 
-from core.nlp import LanguageModel
+from core.nlp import ParaphraseLanguageModel
 from core.patterns import Pattern
 from core.vocabulary import Vocabulary
 
@@ -123,6 +125,8 @@ class VerbalizerModelUsageConfig:
 class VerbalizerInstanceStats:
     patterns_evaluated = 0
     statements = 0
+    relationship_counter: Counter = dataclasses.field(default_factory=Counter)
+    concepts: set = dataclasses.field(default_factory=set)
 
 
 class Verbalizer:
@@ -131,7 +135,7 @@ class Verbalizer:
     def __init__(self, graph: Graph,
                  vocabulary: Vocabulary,
                  patterns: list[Type[Pattern]] = None,
-                 language_model: LanguageModel = None,
+                 language_model: ParaphraseLanguageModel = None,
                  usage_config: VerbalizerModelUsageConfig = None):
         self.graph = graph
         self.vocab = vocabulary
@@ -139,7 +143,7 @@ class Verbalizer:
         self.llm_config = usage_config or VerbalizerModelUsageConfig()
         self.patterns = [pattern(graph, self, vocabulary) for pattern in patterns or []]
 
-    def verbalize(self, starting_concept) -> (str, str, str, int):
+    def verbalize(self, starting_concept) -> (str, str, str, VerbalizerInstanceStats):
         """
         Returns the Turtle Fragment and its corresponding textual description. Also returns a number which is the
         number of sentences
@@ -160,6 +164,17 @@ class Verbalizer:
         text = '\n'.join(sorted(sentences))
         onto_fragment: str = self.generate_fragment(triples)
 
+        # update stats
+        for triple in triples:
+            subject, predicate, obj = triple
+            stats.relationship_counter[predicate] += 1
+
+            if isinstance(subject, URIRef):
+                stats.concepts.add(subject)
+
+            if isinstance(obj, URIRef):
+                stats.concepts.add(obj)
+
         stats.statements = len(sentences)
 
         # convert the pseudo text into proper English.
@@ -168,7 +183,7 @@ class Verbalizer:
         if use_llm:
             llm_text = self.llm.pseudo_to_text(text, extra=self.llm_config.extra_context)
 
-        return onto_fragment, text, llm_text, len(node.references)
+        return onto_fragment, text, llm_text, stats
 
     def _verbalize_as_text_from(self,
                                 node: VerbalizationNode,
