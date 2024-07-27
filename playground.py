@@ -1,9 +1,9 @@
 import logging
 import os
 
-from core.nlp import ChatGptModelParaphrase, LlamaModelParaphrase
-from core.process import Processor
-from core.sampler import Sampler
+from verbalizer.nlp import ChatGptModelParaphrase, LlamaModelParaphrase
+from verbalizer.process import Processor
+from verbalizer.sampler import Sampler
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

@@ -1,8 +1,8 @@
 from rdflib import URIRef
 
-from core.patterns import Pattern
-from core.verbalizer import VerbalizationNode, VerbalizationEdge
-from core.vocabulary import Vocabulary
+from verbalizer.patterns import Pattern
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
+from verbalizer.vocabulary import Vocabulary
 
 
 class OwlDisjointWith(Pattern):

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ontology-verbalizer"
+version = "1.0.0"
+description = "A Python package for ontology verbalization"
+authors = ["Antonio Zaitoun <tony.z.1711@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rdflib = "~7.0.0"
+openai = "~1.12.0"
+pandas = "~2.2.0"
+tqdm = "~4.66.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

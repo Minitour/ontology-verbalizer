@@ -10,9 +10,9 @@ from rdflib import RDFS, RDF, OWL
 from rdflib import URIRef, Literal, BNode
 from rdflib.term import Node
 
-from core.nlp import ParaphraseLanguageModel
-from core.patterns import Pattern
-from core.vocabulary import Vocabulary
+from verbalizer.nlp import ParaphraseLanguageModel
+from verbalizer.patterns import Pattern
+from verbalizer.vocabulary import Vocabulary
 
 _RE_COMBINE_WHITESPACE = re.compile(r"\s+")
 

@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 from rdflib import Graph
 from rdflib.term import Node
 
-from core.vocabulary import Vocabulary
+from verbalizer.vocabulary import Vocabulary
 
 
 class Pattern(ABC):

@@ -1,6 +1,6 @@
 import os
 
-from core.nlp import LlamaModelParaphrase, ChatGptModelParaphrase
+from verbalizer.nlp import LlamaModelParaphrase, ChatGptModelParaphrase
 
 examples = [
     """

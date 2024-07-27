@@ -1,7 +1,7 @@
-from core.patterns import Pattern
+from verbalizer.patterns import Pattern
 from rdflib import URIRef
 
-from core.verbalizer import VerbalizationNode, VerbalizationEdge
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
 
 
 class OwlFirstRestPattern(Pattern):

@@ -5,10 +5,10 @@ from unittest.mock import patch
 
 from rdflib import URIRef
 
-from core.nlp import ChatGptModelParaphrase, LlamaModelParaphrase
-from core.process import Processor
-from core.sampler import Sampler
-from core.verbalizer import VerbalizerInstanceStats, VerbalizationNode, _RE_COMBINE_WHITESPACE
+from verbalizer.nlp import ChatGptModelParaphrase, LlamaModelParaphrase
+from verbalizer.process import Processor
+from verbalizer.sampler import Sampler
+from verbalizer.verbalizer import VerbalizerInstanceStats, VerbalizationNode, _RE_COMBINE_WHITESPACE
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -101,7 +101,7 @@ def _verbalization_function_patch(self, starting_concept):
 
 class EvaluateVerbalizationOfOwl(unittest.TestCase):
 
-    @patch('core.verbalizer.Verbalizer.verbalize', _verbalization_function_patch)
+    @patch('verbalizer.verbalizer.Verbalizer.verbalize', _verbalization_function_patch)
     def test_evaluation(self):
 
         llama_model = LlamaModelParaphrase('http://localhost:11434/v1', temperature=0.1)

@@ -1,7 +1,7 @@
 from rdflib import URIRef
 
-from core.patterns import Pattern
-from core.verbalizer import VerbalizationNode, VerbalizationEdge
+from verbalizer.patterns import Pattern
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
 
 
 class OwlRestrictionPattern(Pattern):

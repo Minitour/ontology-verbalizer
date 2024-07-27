@@ -8,12 +8,12 @@ import pandas
 from rdflib import Graph, URIRef
 from tqdm import tqdm
 
-from core.nlp import ParaphraseLanguageModel
-from core.patterns.owl_disjoint import OwlDisjointWith
-from core.patterns.owl_first_rest import OwlFirstRestPattern
-from core.patterns.owl_restriction import OwlRestrictionPattern
-from core.sampler import Sampler
-from core.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
+from verbalizer.nlp import ParaphraseLanguageModel
+from verbalizer.patterns.owl_disjoint import OwlDisjointWith
+from verbalizer.patterns.owl_first_rest import OwlFirstRestPattern
+from verbalizer.patterns.owl_restriction import OwlRestrictionPattern
+from verbalizer.sampler import Sampler
+from verbalizer.verbalizer import Vocabulary, Verbalizer, VerbalizerModelUsageConfig
 
 logger = logging.getLogger(__name__)
 
