@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ontology-verbalizer"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Python package for ontology verbalization"
 authors = ["Antonio Zaitoun <tony.z.1711@gmail.com>"]
 license = "MIT"
