@@ -8,7 +8,7 @@ import pandas
 from rdflib import Graph, URIRef
 from tqdm import tqdm
 
-from core.nlp import LlamaModelParaphrase, ParaphraseLanguageModel
+from core.nlp import ParaphraseLanguageModel
 from core.patterns.owl_disjoint import OwlDisjointWith
 from core.patterns.owl_first_rest import OwlFirstRestPattern
 from core.patterns.owl_restriction import OwlRestrictionPattern
