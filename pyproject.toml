@@ -5,6 +5,10 @@ description = "A Python package for ontology verbalization"
 authors = ["Antonio Zaitoun <tony.z.1711@gmail.com>"]
 license = "MIT"
 
+packages = [
+    { include = "verbalizer" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.9"
 rdflib = "~7.0.0"
