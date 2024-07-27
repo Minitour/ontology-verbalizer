@@ -1,5 +1,6 @@
 import dataclasses
 import re
+import typing
 from collections import Counter
 from dataclasses import dataclass
 from typing import Type
@@ -25,10 +26,17 @@ class VerbalizationEdge:
 
     @property
     def display(self):
+        """
+        Get the edge display (relationship label)
+        """
         return self._display
 
     @display.setter
     def display(self, value):
+        """
+        Set the edge display. Can be set only if not set already. Otherwise the value is ignored.
+        :param value: The value.
+        """
         if not self._display:
             self._display = value
 
@@ -36,6 +44,10 @@ class VerbalizationEdge:
         return self.display
 
     def verbalize(self) -> str:
+        """
+        Traverse the edge to the next node to perform verbalization. This is a recursive operation.
+        :return The verbalized text.
+        """
         display = self.display
 
         if not display:
@@ -64,12 +76,24 @@ class VerbalizationNode:
         self._display = None
 
     def add_edge(self, edge: VerbalizationEdge):
+        """
+        Add a new edge to the node.
+        :param edge: New edge.
+        """
         self.references.append(edge)
 
     def get_path(self):
+        """
+        Get the full path including the current node.
+        :return: List of tuple (URIRef, URIRef)
+        """
         return list(self._true_path)
 
     def get_parent_path(self):
+        """
+        Get the full path excluding the current node.
+        :return: List of tuple (URIRef, URIRef)
+        """
         return list(self._true_path[:-1])
 
     def get_next_node(self, relationship, concept):
@@ -80,10 +104,17 @@ class VerbalizationNode:
 
     @property
     def display(self):
+        """
+        Get the node display (concept label)
+        """
         return self._display
 
     @display.setter
     def display(self, value):
+        """
+        Set the node display. Can be set only if not set already. Otherwise the value is ignored.
+        :param value: The value.
+        """
         if self._display is None:
             self._display = value
 
@@ -91,12 +122,20 @@ class VerbalizationNode:
         return self.display
 
     def verbalize(self) -> str:
+        """
+        Traverse the node to the next node via the edges to perform verbalization. This is a recursive operation.
+        :return The verbalized text.
+        """
+        # Resolve sentences from edges
         sentences = [edge.verbalize().strip() for edge in self.references]
 
         display = self.display
+
+        # For Blank Nodes, remove the display.
         if isinstance(self.concept, BNode):
             display = ''
 
+        # Group multiple sentences together using `and`.
         if len(sentences) >= 2:
             next_text = f' ({", and ".join(sentences)})'
         elif len(sentences) == 1:
@@ -104,18 +143,22 @@ class VerbalizationNode:
         else:
             next_text = ''
 
+        # Add indefinite articles
         if not isinstance(display, str) or not display:
-            a_word = ''
+            indefinite_article = ''
         elif display[0] in {'a', 'e', 'i', 'o', 'u'}:
-            a_word = 'an '
+            indefinite_article = 'an '
         else:
-            a_word = 'a '
+            indefinite_article = 'a '
 
-        return f'{a_word}{display}{next_text}'
+        return f'{indefinite_article}{display}{next_text}'
 
 
 @dataclass
 class VerbalizerModelUsageConfig:
+    """
+    Object used to configure when and how LLM shall be used.
+    """
     min_patterns_evaluated: int = 0
     min_statements: int = 1
     extra_context: str = ""
@@ -123,6 +166,9 @@ class VerbalizerModelUsageConfig:
 
 @dataclass
 class VerbalizerInstanceStats:
+    """
+    Object used to collect statistics.
+    """
     patterns_evaluated = 0
     statements = 0
     relationship_counter: Counter = dataclasses.field(default_factory=Counter)
@@ -143,10 +189,11 @@ class Verbalizer:
         self.llm_config = usage_config or VerbalizerModelUsageConfig()
         self.patterns = [pattern(graph, self, vocabulary) for pattern in patterns or []]
 
-    def verbalize(self, starting_concept) -> (str, str, str, VerbalizerInstanceStats):
+    def verbalize(self, starting_concept: typing.Union[str, URIRef]) -> (str, str, str, VerbalizerInstanceStats):
         """
-        Returns the Turtle Fragment and its corresponding textual description. Also returns a number which is the
-        number of sentences
+        Returns the Turtle fragment, CNL statement, LLM verbalized textual description, and stats.
+        :param starting_concept: The URI of the concept to verbalize.
+        :return: (fragment, CNL text, LLM text, stats)
         """
         sentences = []
         triples = []
@@ -218,12 +265,12 @@ class Verbalizer:
             break
 
         # set node display
-        node.display = vocab.get_cls_label(node.concept)
+        node.display = vocab.get_class_label(node.concept)
 
         for result in results:
             relation, obj_2 = result
 
-            relation_display = vocab.get_rel_label(relation)
+            relation_display = vocab.get_relationship_label(relation)
 
             if relation_display == Vocabulary.IGNORE_VALUE:
                 triple_collector.append((node.concept, relation, obj_2))
@@ -243,7 +290,7 @@ class Verbalizer:
                 next_node = node.get_next_node(relation, obj_2)
 
             if isinstance(obj_2, URIRef):
-                obj_display_2 = vocab.get_cls_label(obj_2)
+                obj_display_2 = vocab.get_class_label(obj_2)
             elif isinstance(obj_2, Literal):
                 obj_display_2 = obj_2.toPython()
             elif isinstance(obj_2, BNode):
@@ -253,18 +300,6 @@ class Verbalizer:
                 obj_display_2 = None
 
             next_node.display = obj_display_2
-
-    @classmethod
-    def get_reference_expression(cls, t: Node, index: int):
-        """
-        Util function
-        """
-        if isinstance(t, URIRef):
-            return f'<{t.toPython()}>'
-        if isinstance(t, BNode):
-            return f'?o{index}'
-
-        return None
 
     @classmethod
     def next_step_query_builder(cls, node: VerbalizationNode) -> str:
@@ -290,12 +325,12 @@ class Verbalizer:
         filters = []
         for i, (t, p) in enumerate(trail):
             is_last = i == len(trail) - 1
-            ref = cls.get_reference_expression(t, index=i)
+            ref = cls._get_reference_expression(t, index=i)
             if is_last:
                 exp = f'{ref} ?p ?o'
             else:
                 next_t, _ = trail[i + 1]
-                next_ref = cls.get_reference_expression(next_t, index=i + 1)
+                next_ref = cls._get_reference_expression(next_t, index=i + 1)
                 exp = f'{ref} <{p.toPython()}> {next_ref}'
 
             if isinstance(t, BNode):
@@ -327,19 +362,19 @@ class Verbalizer:
             object_node = obj
 
             if isinstance(subject, URIRef):
-                subject_vocab_rep = self.vocab.get_cls_label(subject)
+                subject_vocab_rep = self.vocab.get_class_label(subject)
                 if subject_vocab_rep == Vocabulary.IGNORE_VALUE:
                     continue
                 subject_node = display_to_uri(subject_vocab_rep)
 
             if isinstance(obj, URIRef) and not obj.toPython().startswith(str(OWL)):
-                object_vocab_rep = self.vocab.get_cls_label(obj)
+                object_vocab_rep = self.vocab.get_class_label(obj)
                 if object_vocab_rep == Vocabulary.IGNORE_VALUE:
                     continue
                 object_node = display_to_uri(object_vocab_rep)
 
             if not self._starts_with_one_of(predicate_node.toPython(), [OWL, RDF, RDFS]):
-                label = self.vocab.get_rel_label(predicate)
+                label = self.vocab.get_relationship_label(predicate)
                 if label == Vocabulary.IGNORE_VALUE:
                     label = predicate
                 predicate_node = display_to_uri(label)
@@ -348,23 +383,46 @@ class Verbalizer:
 
             # If subject or object have labels - add them as rdfs:label
             if add_labels:
-                if isinstance(subject, URIRef) and self.vocab.get_cls_label(subject):
-                    g.add((subject_node, RDFS.label, Literal(self.vocab.get_cls_label(subject))))
+                if isinstance(subject, URIRef) and self.vocab.get_class_label(subject):
+                    g.add((subject_node, RDFS.label, Literal(self.vocab.get_class_label(subject))))
 
                 if isinstance(obj, URIRef) and \
-                        self.vocab.get_cls_label(obj) and \
+                        self.vocab.get_class_label(obj) and \
                         not obj.toPython().startswith(str(OWL)):
-                    g.add((object_node, RDFS.label, Literal(self.vocab.get_cls_label(obj))))
+                    g.add((object_node, RDFS.label, Literal(self.vocab.get_class_label(obj))))
 
         fragment = g.serialize(format='turtle')
         return '\n'.join(fragment.split("\n")[1:])
 
     @staticmethod
     def _starts_with_one_of(val: str, items: list):
+        """
+        Helper function to check if list contains an element that starts with the provided value.
+        :param val: The value to check.
+        :param items: The list
+        :return: True if at least one item begins with the provided string.
+        """
         return any([val.startswith(str(e)) for e in items])
 
     def _check_llm_usage_policy(self, stats: VerbalizerInstanceStats) -> bool:
+        """
+        Helper function used to check if LLM should be invoked.
+        :param stats: Stats collected.
+        :return: True if met.
+        """
         return all([
             stats.patterns_evaluated >= self.llm_config.min_patterns_evaluated,
             stats.statements >= self.llm_config.min_statements
         ])
+
+    @classmethod
+    def _get_reference_expression(cls, t: Node, index: int):
+        """
+        Util function, used to convert Node t to a queryable expression.
+        """
+        if isinstance(t, URIRef):
+            return f'<{t.toPython()}>'
+        if isinstance(t, BNode):
+            return f'?o{index}'
+
+        return None

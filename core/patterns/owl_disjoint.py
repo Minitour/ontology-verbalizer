@@ -27,13 +27,13 @@ class OwlDisjointWith(Pattern):
         )
         intermediate_node.display = ''
         intermediate_edge = VerbalizationEdge(URIRef(self.disjoint_relation), intermediate_node)
-        intermediate_edge.display = self.vocab.get_rel_label(self.disjoint_relation)
+        intermediate_edge.display = self.vocab.get_relationship_label(self.disjoint_relation)
         node.add_edge(intermediate_edge)
         for (relation, obj) in query_results:
             if relation != URIRef(self.disjoint_relation):
                 continue
             next_node = VerbalizationNode(obj, parent_path=node.get_parent_path() + [(node.concept, relation)])
-            next_node.display = self.vocab.get_cls_label(obj)
+            next_node.display = self.vocab.get_class_label(obj)
             edge = VerbalizationEdge(URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#collection'), next_node)
             edge.display = '#collection'
             intermediate_node.add_edge(edge)
@@ -43,7 +43,7 @@ class OwlDisjointWith(Pattern):
         for (relation, obj) in query_results:
             if relation == URIRef(self.disjoint_relation):
                 continue
-            relation_display = self.vocab.get_rel_label(relation)
+            relation_display = self.vocab.get_relationship_label(relation)
 
             if relation_display == Vocabulary.IGNORE_VALUE:
                 triple_collector.append((node.concept, relation, obj))

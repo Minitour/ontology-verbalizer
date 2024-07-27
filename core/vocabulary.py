@@ -56,7 +56,12 @@ class Vocabulary:
     }
     """
 
-    def __init__(self, graph, ignore: set = None, rephrased: dict[str, str] = None):
+    def __init__(self, graph: Graph, ignore: set = None, rephrased: dict[str, str] = None):
+        """
+        :param graph: The ontology.
+        :param ignore: URIs to ignore.
+        :param rephrased: URIs to rephrase/rename
+        """
         logger.info('Initializing vocabulary')
         self._graph = graph
         self.relationship_labels = self._get_ontology_relationship_labels()
@@ -66,12 +71,27 @@ class Vocabulary:
         self._ignore_list = ignore or {}
 
     def should_ignore(self, uri: str):
+        """
+        Check if URI should be ignored or not.
+        """
         return uri in self._ignore_list
 
-    def get_rel_label(self, val, default=None) -> str:
+    def get_relationship_label(self, val, default=None) -> str:
+        """
+        Get relationship label.
+        :param val: The URI to lookup with.
+        :param default: Default value if not found.
+        :return: string.
+        """
         return self._util_lookup(self.relationship_labels, val) or default
 
-    def get_cls_label(self, val, default=None) -> str:
+    def get_class_label(self, val, default=None) -> str:
+        """
+        Get class label.
+        :param val: The URI to lookup with.
+        :param default: Default value if not found.
+        :return: string.
+        """
         return self._util_lookup(self.object_labels, val) or default
 
     def _get_ontology_relationship_labels(self) -> dict[str, str]:
@@ -123,6 +143,18 @@ class Vocabulary:
         return object_labels
 
     def _util_lookup(self, dictionary, val):
+        """
+        Helper function used to perform lookup in a given dictionary using a key.
+
+        If the value is found, it is returned.
+        If the value is in the ignore list, a `IGNORE_VALUE` object is returned.
+        If a rephrase configuration is set of the key, it is returned.
+        If not found, text extraction is attempt from the key URI.
+
+        :param dictionary: The dictionary to look in.
+        :param val: The key to lookup with.
+        :return: The value.
+        """
         if isinstance(val, URIRef):
             val = val.toPython()
 
@@ -166,6 +198,9 @@ class Vocabulary:
         return re.sub('([a-z0-9])([A-Z])', r'\1_\2', name).lower()
 
     def _load_imports(self):
+        """
+        Loads concepts from imports. This is done by creating a new instance of Vocabulary, using the imported graph.
+        """
         owl_imports = {o[0].toPython() for o in self._graph.query("SELECT DISTINCT ?o WHERE { ?s owl:imports ?o }")}
         for owl_import in owl_imports:
             logging.info(f'LOADING IMPORT: {owl_import}')

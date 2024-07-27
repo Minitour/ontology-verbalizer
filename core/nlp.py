@@ -1,4 +1,5 @@
 import logging
+from abc import ABC, abstractmethod
 from typing import Optional
 
 from openai import OpenAI
@@ -49,20 +50,38 @@ def get_messages(pseudo_text: str, extra_context: Optional[str] = None):
     ]
 
 
-class ParaphraseLanguageModel:
+class ParaphraseLanguageModel(ABC):
+
+    @abstractmethod
     def pseudo_to_text(self, pseudo_text: str, extra: str = None) -> str:
+        """
+        Given a pseudo text or controlled natural language, return a rephrased version of that same text.
+        :param pseudo_text: The CNL set of statements,
+        :param extra: Additional context to include as part of the prompt.
+        :return: Paraphrased text.
+        """
         return pseudo_text
 
     @property
     def cost(self) -> float:
+        """
+        The usage cost so far of the model.
+        """
         return 0.0
 
     @property
     def name(self) -> str:
+        """
+        The name of the model used.
+        """
         return 'Unknown'
 
 
 class ChatGptModelParaphrase(ParaphraseLanguageModel):
+    """
+    OpenAI wrapper implementation.
+    """
+
     models = {
         "gpt-4o": {
             "input": 0.005,
@@ -150,6 +169,10 @@ class ChatGptModelParaphrase(ParaphraseLanguageModel):
 
 
 class LlamaModelParaphrase(ParaphraseLanguageModel):
+    """
+    Llama model wrapper implementation.
+    """
+
     def __init__(self, base_url, model='llama3', temperature=0.5):
         self.temperature = temperature
         self.model = model

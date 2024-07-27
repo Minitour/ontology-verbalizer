@@ -52,7 +52,8 @@ class Processor:
 
     def process(self, name: str,
                 file_path: str,
-                output_dir: str = './output', chunk_size: int = 1000,
+                output_dir: str = './output',
+                chunk_size: int = 1000,
                 data_sampler: Optional[Sampler] = None):
         """
         Start the verbalization process.
@@ -129,6 +130,11 @@ class Processor:
 
     @staticmethod
     def _get_classes(graph):
+        """
+        Get all owl:Class and their labels.
+        :param graph: The ontology.
+        :return: A list of URIRef objects.
+        """
         query = """
                 SELECT ?o ?label
                 WHERE {
@@ -146,6 +152,11 @@ class Processor:
 
     @staticmethod
     def _get_individuals(graph):
+        """
+        Get all owl:NamedIndividual and their labels.
+        :param graph: The ontology.
+        :return: A list of URIRef objects.
+        """
         query = """
                         SELECT ?o ?label
                         WHERE {

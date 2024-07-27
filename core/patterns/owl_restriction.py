@@ -88,8 +88,8 @@ class OwlRestrictionPattern(Pattern):
             node=next_node
         )
 
-        quantifier_relation_label = self.vocab.get_rel_label(quantifier_relation)
-        property_relation_label = self.vocab.get_cls_label(property_relation)
+        quantifier_relation_label = self.vocab.get_relationship_label(quantifier_relation)
+        property_relation_label = self.vocab.get_class_label(property_relation)
 
         if quantifier_relation.toPython().endswith('someValuesFrom'):
             edge.display = f'at least {property_relation_label} some'
@@ -107,7 +107,7 @@ class OwlRestrictionPattern(Pattern):
         return [(reference.relationship, reference.node.concept) for reference in node.references]
 
     def _handle_cardinality(self, quantifier_relation, property_relation, obj_literal, on_class) -> str:
-        property_relation_label = self.vocab.get_cls_label(property_relation)
+        property_relation_label = self.vocab.get_class_label(property_relation)
         literal_value = obj_literal.toPython()
         on_class_label = ' '
 
@@ -117,7 +117,7 @@ class OwlRestrictionPattern(Pattern):
             property_relation_label = property_relation_label.replace('has ', '')
 
         if on_class:
-            on_class_label = f' {self.vocab.get_cls_label(on_class)} '
+            on_class_label = f' {self.vocab.get_class_label(on_class)} '
 
         if quantifier_relation.endswith('cardinality') and literal_value == 0:
             return f'has zero {on_class_label} {property_relation_label}s'
