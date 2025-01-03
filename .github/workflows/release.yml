@@ -29,7 +29,7 @@ jobs:
 
     - name: Run unit tests
       run: |
-        python -m unittest discover tests
+        pytest
 
   release:
     name: Publish Python Package
