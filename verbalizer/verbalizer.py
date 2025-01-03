@@ -16,6 +16,8 @@ from verbalizer.vocabulary import Vocabulary
 
 _RE_COMBINE_WHITESPACE = re.compile(r"\s+")
 
+default_patterns = []
+
 
 class VerbalizationEdge:
 
@@ -178,16 +180,18 @@ class VerbalizerInstanceStats:
 class Verbalizer:
     prefix = 'https://zaitoun.dev/onto/'
 
-    def __init__(self, graph: Graph,
-                 vocabulary: Vocabulary,
-                 patterns: list[Type[Pattern]] = None,
-                 language_model: ParaphraseLanguageModel = None,
-                 usage_config: VerbalizerModelUsageConfig = None):
-        self.graph = graph
+    def __init__(
+            self,
+            vocabulary: Vocabulary,
+            patterns: list[Type[Pattern]] = None,
+            language_model: ParaphraseLanguageModel = None,
+            usage_config: VerbalizerModelUsageConfig = None
+    ):
+        self.graph = vocabulary.graph
         self.vocab = vocabulary
         self.llm = language_model
-        self.llm_config = usage_config or VerbalizerModelUsageConfig()
-        self.patterns = [pattern(graph, self, vocabulary) for pattern in patterns or []]
+        self.llm_config = usage_config or VerbalizerModelUsageConfig(0,2,"")
+        self.patterns = [pattern(self.graph, self, vocabulary) for pattern in patterns or default_patterns]
 
     def verbalize(self, starting_concept: typing.Union[str, URIRef]) -> (str, str, str, VerbalizerInstanceStats):
         """
@@ -195,7 +199,7 @@ class Verbalizer:
         :param starting_concept: The URI of the concept to verbalize.
         :return: (fragment, CNL text, LLM text, stats)
         """
-        sentences = []
+        sentences = set()
         triples = []
         stats = VerbalizerInstanceStats()
 
@@ -206,7 +210,7 @@ class Verbalizer:
         self._verbalize_as_text_from(node, self.vocab, triples, stats)
 
         for ref in node.references:
-            sentences.append(_RE_COMBINE_WHITESPACE.sub(" ", f'{node.display} {ref.verbalize().strip()}.').strip())
+            sentences.add(_RE_COMBINE_WHITESPACE.sub(" ", f'{node.display} {ref.verbalize().strip()}.').strip())
 
         text = '\n'.join(sorted(sentences))
         onto_fragment: str = self.generate_fragment(triples)
@@ -273,7 +277,8 @@ class Verbalizer:
             relation_display = vocab.get_relationship_label(relation)
 
             if relation_display == Vocabulary.IGNORE_VALUE:
-                triple_collector.append((node.concept, relation, obj_2))
+                if self.vocab.should_keep(relation):
+                    triple_collector.append((node.concept, relation, obj_2))
                 continue
 
             if not results_normalized:
@@ -362,13 +367,13 @@ class Verbalizer:
             object_node = obj
 
             if isinstance(subject, URIRef):
-                subject_vocab_rep = self.vocab.get_class_label(subject)
+                subject_vocab_rep = self.vocab.get_class_label(subject, default=subject.toPython())
                 if subject_vocab_rep == Vocabulary.IGNORE_VALUE:
                     continue
                 subject_node = display_to_uri(subject_vocab_rep)
 
             if isinstance(obj, URIRef) and not obj.toPython().startswith(str(OWL)):
-                object_vocab_rep = self.vocab.get_class_label(obj)
+                object_vocab_rep = self.vocab.get_class_label(obj, default=obj.toPython())
                 if object_vocab_rep == Vocabulary.IGNORE_VALUE:
                     continue
                 object_node = display_to_uri(object_vocab_rep)
@@ -376,7 +381,7 @@ class Verbalizer:
             if not self._starts_with_one_of(predicate_node.toPython(), [OWL, RDF, RDFS]):
                 label = self.vocab.get_relationship_label(predicate)
                 if label == Vocabulary.IGNORE_VALUE:
-                    label = predicate
+                    continue
                 predicate_node = display_to_uri(label)
 
             g.add((subject_node, predicate_node, object_node))

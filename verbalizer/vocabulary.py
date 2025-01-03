@@ -56,25 +56,41 @@ class Vocabulary:
     }
     """
 
-    def __init__(self, graph: Graph, ignore: set = None, rephrased: dict[str, str] = None):
+    def __init__(self, graph: Graph, ignore: set[str] = None, guard: set[str] = None, rephrased: dict[str, str] = None):
         """
         :param graph: The ontology.
         :param ignore: URIs to ignore.
+        :param guard: URIs to keep in the fragment even if they are in the ignore list.
         :param rephrased: URIs to rephrase/rename
         """
         logger.info('Initializing vocabulary')
-        self._graph = graph
+        self.graph = graph
         self.relationship_labels = self._get_ontology_relationship_labels()
         self.object_labels = self._get_ontology_object_labels()
         self._load_imports()
         self.rephrased = rephrased or dict()
         self._ignore_list = ignore or {}
+        self._guard_list = guard or {
+            'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
+            'http://www.w3.org/2000/01/rdf-schema#label',
+            'http://www.w3.org/2002/07/owl#onDatatype'
+        }
 
-    def should_ignore(self, uri: str):
+    def should_ignore(self, uri: str | URIRef) -> bool:
         """
         Check if URI should be ignored or not.
         """
+        if isinstance(uri, URIRef):
+            uri = uri.toPython()
         return uri in self._ignore_list
+
+    def should_keep(self, uri: str | URIRef) -> bool:
+        """
+        Check if URI should be kept in the fragment or not.
+        """
+        if isinstance(uri, URIRef):
+            uri = uri.toPython()
+        return uri in self._guard_list
 
     def get_relationship_label(self, val, default=None) -> str:
         """
@@ -98,7 +114,7 @@ class Vocabulary:
         """
         Returns a IRI (URI) to label dictionary.
         """
-        results = self._graph.query(self.RELATIONSHIP_QUERY)
+        results = self.graph.query(self.RELATIONSHIP_QUERY)
         ontology_relations = {}
 
         for result in tqdm(results, desc='Loading Ontology Relationship Labels'):
@@ -120,7 +136,7 @@ class Vocabulary:
         """
         Returns a IRI (URI) to label dictionary.
         """
-        results = self._graph.query(self.OBJECTS_QUERY)
+        results = self.graph.query(self.OBJECTS_QUERY)
         object_labels = {}
         for result in tqdm(results, desc='Loading Ontology Object Labels'):
             iri, label = result
@@ -201,7 +217,7 @@ class Vocabulary:
         """
         Loads concepts from imports. This is done by creating a new instance of Vocabulary, using the imported graph.
         """
-        owl_imports = {o[0].toPython() for o in self._graph.query("SELECT DISTINCT ?o WHERE { ?s owl:imports ?o }")}
+        owl_imports = {o[0].toPython() for o in self.graph.query("SELECT DISTINCT ?o WHERE { ?s owl:imports ?o }")}
         for owl_import in owl_imports:
             logging.info(f'LOADING IMPORT: {owl_import}')
             graph = Graph()
