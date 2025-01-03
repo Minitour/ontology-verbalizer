@@ -42,12 +42,24 @@ model = ChatGptModelParaphrase(api_key='sk-xyz', model='gpt-4o', temperature=0.7
 
 ```python
 from verbalizer.process import Processor
+from verbalizer.vocabulary import Vocabulary
+from verbalizer import Verbalizer
 
-ontology = 'pizza.ttl'
-name = 'pizza'
-processor = Processor(llm=model, vocab_ignore=ignore, vocab_rephrased=rephrased, min_statements=1)
-processor.process(name, ontology, output_dir='/path/to/my/output')
+ontology = Processor.from_file('pizza.ttl')
+
+# create vocabulary and verbalizer
+vocab = Vocabulary(ontology, ignore=ignore, rephrased=rephrased)
+verbalizer = Verbalizer(vocab)
+
+# start verbalization process
+results = Processor.verbalize_with(verbalizer, namespace="pizza", output_dir="./output")
 ```
+
+## Examples
+
+<details>
+
+<summary>Expand to see examples</summary>
 
 <table border="1">
     <tr>
@@ -176,3 +188,20 @@ processor.process(name, ontology, output_dir='/path/to/my/output')
         </td>
     </tr>
 </table>
+
+</details>
+
+
+## Citation
+
+```
+@inproceedings{zaitoun2024generating,
+  title={Generating Ontology-Learning Training-Data through Verbalization},
+  author={Zaitoun, Antonio and Sagi, Tomer and Peleg, Mor},
+  booktitle={Proceedings of the AAAI Symposium Series},
+  volume={4},
+  number={1},
+  pages={233--241},
+  year={2024}
+}
+```

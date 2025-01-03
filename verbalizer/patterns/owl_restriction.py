@@ -1,7 +1,7 @@
 from rdflib import URIRef
 
 from verbalizer.patterns import Pattern
-from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge, default_patterns
 
 
 class OwlRestrictionPattern(Pattern):
@@ -127,3 +127,5 @@ class OwlRestrictionPattern(Pattern):
             return f'has at least {literal_value}{on_class_label}{property_relation_label}{relation_plural_s}'
         elif quantifier_relation.endswith('maxCardinality') or quantifier_relation.endswith('maxQualifiedCardinality'):
             return f'has at most {literal_value}{on_class_label}{property_relation_label}{relation_plural_s}'
+
+default_patterns.append(OwlRestrictionPattern)

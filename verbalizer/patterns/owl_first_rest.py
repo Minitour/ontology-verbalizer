@@ -1,7 +1,7 @@
 from verbalizer.patterns import Pattern
 from rdflib import URIRef
 
-from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge, default_patterns
 
 
 class OwlFirstRestPattern(Pattern):
@@ -37,3 +37,5 @@ class OwlFirstRestPattern(Pattern):
             current = rest_node
 
         return [(reference.relationship, reference.node.concept) for reference in node.references]
+
+default_patterns.append(OwlFirstRestPattern)

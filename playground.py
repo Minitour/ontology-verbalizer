@@ -4,6 +4,8 @@ import os
 from verbalizer.nlp import ChatGptModelParaphrase, LlamaModelParaphrase
 from verbalizer.process import Processor
 from verbalizer.sampler import Sampler
+from verbalizer.verbalizer import Verbalizer
+from verbalizer.vocabulary import Vocabulary
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -87,9 +89,19 @@ if __name__ == '__main__':
 
     sampler = Sampler(sample_n=100, seed=42)
 
+    ontologies = [
+        ('people', Processor.from_file('./data/people.ttl')),
+        ('pizza', Processor.from_file('./data/pizza.ttl')),
+        ('mondo', Processor.from_file('./data/mondo.owl')),
+        ('fma', Processor.from_file('./data/fma.owl')),
+    ]
+
+    vocabularies = [
+        (namespace, Vocabulary(ontology, ignore=ignore, rephrased=rephrased))
+        for namespace, ontology in ontologies
+    ]
+
     for model in models:
-        processor = Processor(llm=model, vocab_ignore=ignore, vocab_rephrased=rephrased, min_statements=1)
-        processor.process('people', './data/people.ttl')
-        processor.process('pizza', './data/pizza.ttl')
-        processor.process('mondo', './data/mondo.owl', data_sampler=sampler)
-        processor.process('fma', './data/fma.owl', data_sampler=sampler)
+        for namespace, vocabulary in vocabularies:
+            verbalizer = Verbalizer(vocabulary, language_model=model)
+            results = Processor.verbalize_with(verbalizer, namespace=namespace, output_dir="./output", sampler=sampler)

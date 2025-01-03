@@ -1,7 +1,7 @@
 from rdflib import URIRef
 
 from verbalizer.patterns import Pattern
-from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge, default_patterns
 from verbalizer.vocabulary import Vocabulary
 
 
@@ -46,7 +46,8 @@ class OwlDisjointWith(Pattern):
             relation_display = self.vocab.get_relationship_label(relation)
 
             if relation_display == Vocabulary.IGNORE_VALUE:
-                triple_collector.append((node.concept, relation, obj))
+                if self.vocab.should_keep(relation):
+                    triple_collector.append((node.concept, relation, obj))
                 continue
 
             next_node = VerbalizationNode(obj, parent_path=node.get_parent_path() + [(node.concept, relation)])
@@ -56,3 +57,5 @@ class OwlDisjointWith(Pattern):
             triple_collector.append((node.concept, relation, obj))
 
         return [(reference.relationship, reference.node.concept) for reference in node.references]
+
+default_patterns.append(OwlDisjointWith)

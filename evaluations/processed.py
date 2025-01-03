@@ -113,4 +113,4 @@ class EvaluateVerbalizationOfOwl(unittest.TestCase):
             for ontology_name, contents in ontologies.items():
                 file = contents['file']
                 sampler = CustomSampler(samples=contents['samples'])
-                processor.process(ontology_name, file, data_sampler=sampler)
+                processor.verbalize_with(ontology_name, file, sampler=sampler)
