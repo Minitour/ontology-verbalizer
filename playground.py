@@ -1,7 +1,7 @@
 import logging
 import os
 
-from verbalizer.nlp import ChatGptModelParaphrase, LlamaModelParaphrase
+from verbalizer.nlp import ChatGptModelParaphrase
 from verbalizer.process import Processor
 from verbalizer.sampler import Sampler
 from verbalizer.verbalizer import Verbalizer
@@ -83,9 +83,8 @@ rephrased = {
 }
 
 if __name__ == '__main__':
-    llama_model = LlamaModelParaphrase('http://localhost:11434/v1', temperature=0.1)
     openai_model = ChatGptModelParaphrase(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4o', temperature=0.7)
-    models = [openai_model, llama_model]
+    models = [openai_model]
 
     sampler = Sampler(sample_n=100, seed=42)
 

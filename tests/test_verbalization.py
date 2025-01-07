@@ -1,3 +1,4 @@
+import types
 import unittest
 
 from rdflib import Graph
@@ -64,3 +65,16 @@ class TestVerbalization(unittest.TestCase):
 
         # although we sampled 10, only 7 were applicable.
         self.assertEqual(7, len(results))
+
+    def test_verbalization_with_generator(self):
+        ontology = Processor.from_file('./data/foaf.owl')
+
+        # create vocabulary
+        vocab = Vocabulary(ontology, ignore=ignore_iri, rephrased=rename_iri)
+
+        # create verbalizer
+        verbalizer = Verbalizer(vocab)
+
+        results = Processor.verbalize_with(verbalizer, namespace='foaf', as_generator=True)
+        self.assertTrue(isinstance(results, types.GeneratorType))
+        self.assertEqual(12, len(list(results)))
