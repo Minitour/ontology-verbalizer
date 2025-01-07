@@ -27,7 +27,31 @@ class Processor:
                        namespace: str,
                        output_dir: Optional[str] = None,
                        chunk_size: int = 1000,
-                       sampler: Optional[Sampler] = None):
+                       sampler: Optional[Sampler] = None,
+                       as_generator: bool = False):
+        gen = cls.verbalize_with_stream(
+            verbalizer,
+            namespace=namespace,
+            output_dir=output_dir,
+            chunk_size=chunk_size,
+            sampler=sampler,
+            as_generator=as_generator
+        )
+        if as_generator:
+            return gen
+
+        return next(gen)
+
+    @classmethod
+    def verbalize_with_stream(
+            cls,
+            verbalizer: Verbalizer,
+            *,
+            namespace: str,
+            output_dir: Optional[str] = None,
+            chunk_size: int = 1000,
+            sampler: Optional[Sampler] = None,
+            as_generator: bool = False):
         """
         Start the verbalization process.
         :param verbalizer: The verbalizer to use.
@@ -35,6 +59,7 @@ class Processor:
         :param output_dir: Name of the output directory.
         :param chunk_size: Number of entries (rows) per file. default = 1000
         :param sampler: A sampling configuration, use to sample large ontologies.
+        :param as_generator: If True, returns a generator instead of a list.
         """
 
         # current timestamp
@@ -67,7 +92,7 @@ class Processor:
             if stats.statements == 0:
                 continue
 
-            chunk_dataset.append({
+            element = {
                 'ontology': namespace,
                 'root': entry,
                 'fragment': fragment,
@@ -79,7 +104,12 @@ class Processor:
                 'unique_relationships': len(stats.relationship_counter),
                 'total_relationships': sum(stats.relationship_counter.values()),
                 **stats.relationship_counter
-            })
+            }
+
+            chunk_dataset.append(element)
+
+            if as_generator:
+                yield element
 
             if len(chunk_dataset) != chunk_size:
                 continue
@@ -104,7 +134,8 @@ class Processor:
         if llm:
             logger.info(f'LLM usage cost: ${llm.cost}')
 
-        return full_dataset
+        if not as_generator:
+            yield full_dataset
 
     @staticmethod
     def _get_classes(graph):

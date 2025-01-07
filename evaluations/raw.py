@@ -1,6 +1,6 @@
 import os
 
-from verbalizer.nlp import LlamaModelParaphrase, ChatGptModelParaphrase
+from verbalizer.nlp import ChatGptModelParaphrase
 
 examples = [
     """
@@ -556,9 +556,9 @@ examples = [
 ]
 
 if __name__ == '__main__':
-    llama_model = LlamaModelParaphrase('http://localhost:11434/v1', temperature=0.1)
+    # llama_model = LlamaModelParaphrase('http://localhost:11434/v1', temperature=0.1)
     openai_model = ChatGptModelParaphrase(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4o', temperature=0.7)
-    models = [openai_model, llama_model]
+    models = [openai_model]
 
     for model in models:
         print(f'Running on {model.name}:')
