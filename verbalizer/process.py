@@ -29,6 +29,29 @@ class Processor:
                        chunk_size: int = 1000,
                        sampler: Optional[Sampler] = None,
                        as_generator: bool = False):
+        gen = cls.verbalize_with_stream(
+            verbalizer,
+            namespace=namespace,
+            output_dir=output_dir,
+            chunk_size=chunk_size,
+            sampler=sampler,
+            as_generator=as_generator
+        )
+        if as_generator:
+            return gen
+
+        return next(gen)
+
+    @classmethod
+    def verbalize_with_stream(
+            cls,
+            verbalizer: Verbalizer,
+            *,
+            namespace: str,
+            output_dir: Optional[str] = None,
+            chunk_size: int = 1000,
+            sampler: Optional[Sampler] = None,
+            as_generator: bool = False):
         """
         Start the verbalization process.
         :param verbalizer: The verbalizer to use.
@@ -112,7 +135,7 @@ class Processor:
             logger.info(f'LLM usage cost: ${llm.cost}')
 
         if not as_generator:
-            return full_dataset
+            yield full_dataset
 
     @staticmethod
     def _get_classes(graph):
