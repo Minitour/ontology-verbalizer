@@ -1,5 +1,10 @@
 # OWL Ontology Verbalizer
 
+![PyPI - Version](https://img.shields.io/pypi/v/ontology-verbalizer)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ontology-verbalizer)
+![](https://github.com/Minitour/ontology-verbalizer/actions/workflows/release.yml/badge.svg)
+
+
 ## Installation
 
 ```shell
