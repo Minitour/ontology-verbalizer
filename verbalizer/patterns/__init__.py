@@ -35,3 +35,7 @@ class Pattern(ABC):
         regardless of whether they were used or not in the construction of the nodes and edges.
         """
         return []
+
+    @classmethod
+    def guarded_iris(cls) -> set[str]:
+        return set()

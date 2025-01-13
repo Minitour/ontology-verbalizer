@@ -19,6 +19,14 @@ _RE_COMBINE_WHITESPACE = re.compile(r"\s+")
 default_patterns = []
 
 
+class VerbalizationError(Exception):
+    pass
+
+
+class VerbalizationInitError(Exception):
+    pass
+
+
 class VerbalizationEdge:
 
     def __init__(self, relationship, node: 'VerbalizationNode'):
@@ -52,7 +60,7 @@ class VerbalizationEdge:
         """
         display = self.display
 
-        if not display:
+        if not isinstance(display, str):
             display = ''
 
         if display.startswith('#'):
@@ -190,8 +198,9 @@ class Verbalizer:
         self.graph = vocabulary.graph
         self.vocab = vocabulary
         self.llm = language_model
-        self.llm_config = usage_config or VerbalizerModelUsageConfig(0,2,"")
+        self.llm_config = usage_config or VerbalizerModelUsageConfig(0, 2, "")
         self.patterns = [pattern(self.graph, self, vocabulary) for pattern in patterns or default_patterns]
+        self._check_conflicts()
 
     def verbalize(self, starting_concept: typing.Union[str, URIRef]) -> (str, str, str, VerbalizerInstanceStats):
         """
@@ -257,6 +266,7 @@ class Verbalizer:
         results = self.graph.query(query)
 
         results_normalized = False
+        required_iris = set()
 
         # check patterns
         for pattern in self.patterns:
@@ -264,6 +274,7 @@ class Verbalizer:
                 continue
 
             results = pattern.normalize(node, triple_collector)
+            required_iris = pattern.guarded_iris()
             results_normalized = True
             stats.patterns_evaluated += 1
             break
@@ -275,6 +286,9 @@ class Verbalizer:
             relation, obj_2 = result
 
             relation_display = vocab.get_relationship_label(relation)
+
+            if str(relation) in required_iris and relation_display == Vocabulary.IGNORE_VALUE:
+                raise VerbalizationError(f'Cannot perform verbalization because required IRI {relation} is ignored.')
 
             if relation_display == Vocabulary.IGNORE_VALUE:
                 if self.vocab.should_keep(relation):
@@ -354,7 +368,7 @@ class Verbalizer:
         def display_to_uri(display: str) -> URIRef:
             if display.startswith('http'):
                 return URIRef(display)
-            identifier = re.sub('[^a-zA-Z0-9 \n\.]', ' ', display).lower().replace(' ', '_')
+            identifier = re.sub('[^a-zA-Z0-9 \n]', ' ', display).lower().replace(' ', '_')
             return URIRef(self.prefix + identifier)
 
         g = Graph()
@@ -431,3 +445,14 @@ class Verbalizer:
             return f'?o{index}'
 
         return None
+
+    def _check_conflicts(self):
+        """
+        Check if vocabulary and patterns have any conflicts.
+        """
+        for pattern in self.patterns:
+            for iri in pattern.guarded_iris():
+                if not self.vocab.should_ignore(iri):
+                    continue
+
+                raise VerbalizationInitError(f'The IRI {iri} should not be ignored because it is used in a pattern.')
