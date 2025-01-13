@@ -1,7 +1,7 @@
 from rdflib import URIRef
 
 from verbalizer.patterns import Pattern
-from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge, default_patterns
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
 from verbalizer.vocabulary import Vocabulary
 
 
@@ -58,4 +58,6 @@ class OwlDisjointWith(Pattern):
 
         return [(reference.relationship, reference.node.concept) for reference in node.references]
 
-default_patterns.append(OwlDisjointWith)
+    @classmethod
+    def guarded_iris(cls) -> set[str]:
+        return {cls.disjoint_relation}

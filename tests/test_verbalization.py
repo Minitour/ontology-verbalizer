@@ -5,8 +5,10 @@ from rdflib import Graph
 
 from verbalizer.process import Processor
 from verbalizer.sampler import Sampler
+from verbalizer.verbalizer import VerbalizationError, VerbalizationInitError
 from verbalizer.vocabulary import Vocabulary
 from verbalizer import Verbalizer
+from verbalizer.patterns import owl_disjoint, owl_restriction, owl_first_rest
 
 rename_iri = {
     'http://www.w3.org/2002/07/owl#equivalentClass': 'is same as',
@@ -78,3 +80,14 @@ class TestVerbalization(unittest.TestCase):
         results = Processor.verbalize_with(verbalizer, namespace='foaf', as_generator=True)
         self.assertTrue(isinstance(results, types.GeneratorType))
         self.assertEqual(12, len(list(results)))
+
+    def test_with_error_with_pattern(self):
+        ignore = {
+            "http://www.w3.org/2002/07/owl#disjointWith"
+        }
+        patterns = [owl_disjoint.OwlDisjointWith, owl_restriction.OwlRestrictionPattern,
+                    owl_first_rest.OwlFirstRestPattern]
+        ontology = Processor.from_file('./data/foaf.owl')
+        vocabulary = Vocabulary(ontology, ignore=ignore, rephrased=rename_iri)
+        with self.assertRaises(VerbalizationInitError):
+            verbalizer = Verbalizer(vocabulary, patterns=patterns)

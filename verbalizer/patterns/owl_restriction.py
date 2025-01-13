@@ -1,7 +1,7 @@
 from rdflib import URIRef
 
 from verbalizer.patterns import Pattern
-from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge, default_patterns
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
 
 
 class OwlRestrictionPattern(Pattern):
@@ -63,7 +63,7 @@ class OwlRestrictionPattern(Pattern):
                 quantifier_relation = relation
                 literal_value = obj
 
-                # initialize next_node only if it hasn't be initialized yet.
+                # initialize next_node only if it hasn't been initialized yet.
                 if next_node is None:
                     next_node = VerbalizationNode(
                         concept='',
@@ -128,4 +128,17 @@ class OwlRestrictionPattern(Pattern):
         elif quantifier_relation.endswith('maxCardinality') or quantifier_relation.endswith('maxQualifiedCardinality'):
             return f'has at most {literal_value}{on_class_label}{property_relation_label}{relation_plural_s}'
 
-default_patterns.append(OwlRestrictionPattern)
+    @classmethod
+    def guarded_iris(cls) -> set[str]:
+        return {
+            'http://www.w3.org/2002/07/owl#someValuesFrom',
+            'http://www.w3.org/2002/07/owl#allValuesFrom',
+            'http://www.w3.org/2002/07/owl#hasValue',
+            'http://www.w3.org/2002/07/owl#cardinality',
+            'http://www.w3.org/2002/07/owl#minCardinality',
+            'http://www.w3.org/2002/07/owl#maxCardinality',
+            'http://www.w3.org/2002/07/owl#qualifiedCardinality',
+            'http://www.w3.org/2002/07/owl#minQualifiedCardinality',
+            'http://www.w3.org/2002/07/owl#maxQualifiedCardinality',
+            'http://www.w3.org/2002/07/owl#onClass'
+        }

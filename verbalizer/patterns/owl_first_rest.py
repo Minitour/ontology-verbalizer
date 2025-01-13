@@ -1,7 +1,7 @@
 from verbalizer.patterns import Pattern
 from rdflib import URIRef
 
-from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge, default_patterns
+from verbalizer.verbalizer import VerbalizationNode, VerbalizationEdge
 
 
 class OwlFirstRestPattern(Pattern):
@@ -38,4 +38,6 @@ class OwlFirstRestPattern(Pattern):
 
         return [(reference.relationship, reference.node.concept) for reference in node.references]
 
-default_patterns.append(OwlFirstRestPattern)
+    @classmethod
+    def guarded_iris(cls) -> set[str]:
+        return set()
